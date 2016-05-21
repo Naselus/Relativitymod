@@ -1,0 +1,2158 @@
+##################
+### TECH COSTS ###
+##################
+#If you change any of these, use replace in files so the values are the same across all files
+
+@tier1cost1 = 240
+@tier1cost2 = 360
+@tier1cost3 = 480
+@tier1cost4 = 600
+
+@tier2cost1 = 900
+@tier2cost2 = 1200
+@tier2cost3 = 1500
+@tier2cost4 = 1800
+
+@tier3cost1 = 2320
+@tier3cost2 = 2840
+@tier3cost3 = 3360
+@tier3cost4 = 3880
+
+@tier4cost1 = 4660
+@tier4cost2 = 5460
+@tier4cost3 = 6260
+@tier4cost4 = 7060
+
+@tier5cost1 = 8140
+@tier5cost2 = 9220
+@tier5cost3 = 10300
+@tier5cost4 = 11380
+
+@tier6cost1 = 12800
+@tier6cost2 = 14220
+@tier6cost3 = 15640
+@tier6cost4 = 17060
+
+@tier7cost1 = 18860
+@tier7cost2 = 20660
+@tier7cost3 = 22460
+@tier7cost4 = 24260
+
+@tier8cost1 = 26480
+@tier8cost2 = 28700
+@tier8cost3 = 30920
+@tier8cost4 = 33140
+
+@tier9cost1 = 35800
+@tier9cost2 = 38460
+@tier9cost3 = 41120
+@tier9cost4 = 43780
+
+####################
+### TECH WEIGHTS ###
+####################
+
+@tier1weight1 = 100
+@tier1weight2 = 98
+@tier1weight3 = 96
+@tier1weight4 = 94
+
+@tier2weight1 = 92
+@tier2weight2 = 90
+@tier2weight3 = 88
+@tier2weight4 = 86
+
+@tier3weight1 = 84
+@tier3weight2 = 82
+@tier3weight3 = 80
+@tier3weight4 = 78
+
+@tier4weight1 = 76
+@tier4weight2 = 74
+@tier4weight3 = 72
+@tier4weight4 = 70
+
+@tier5weight1 = 68
+@tier5weight2 = 66
+@tier5weight3 = 64
+@tier5weight4 = 62
+
+@tier6weight1 = 60
+@tier6weight2 = 58
+@tier6weight3 = 56
+@tier6weight4 = 54
+
+@tier7weight1 = 52
+@tier7weight2 = 50
+@tier7weight3 = 48
+@tier7weight4 = 46
+
+@tier8weight1 = 44
+@tier8weight2 = 42
+@tier8weight3 = 40
+@tier8weight4 = 38
+
+@tier9weight1 = 36
+@tier9weight2 = 34
+@tier9weight3 = 32
+@tier9weight4 = 30
+
+
+##################
+####Xenology
+##################
+
+tech_alien_life_studies = {
+	cost = @tier1cost3
+	area = society
+	tier = 1
+	category = { xenology }
+	prerequisites = { "tech_biolab_1" }
+	weight = @tier1weight3
+	
+	weight_modifier = {
+		modifier = {
+			factor = 2
+			has_ethic = ethic_xenophile
+		}
+		modifier = {
+			factor = 3
+			has_ethic = ethic_fanatic_xenophile
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_xenology"
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = { has_country_flag = first_alien_life }
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_xenophile
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_xenophile
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_xenology"
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = { has_country_flag = first_alien_life }
+		}
+	}
+}
+
+#Xeno Zoo
+tech_xeno_zoo = {
+	cost = @tier1cost4
+	area = society
+	tier = 1
+	category = { xenology }
+	prerequisites = { "tech_alien_life_studies" }
+	weight = @tier1weight4
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0.50
+			NOT = {
+				has_ethic = ethic_xenophile
+			}
+		}
+		modifier = {
+			factor = 1.50
+			has_ethic = ethic_fanatic_xenophile
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_xenology"
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				has_ethic = ethic_xenophobe
+				has_ethic = ethic_fanatic_xenophobe
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = { has_country_flag = first_alien_life }
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_xenophile
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_xenophile
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_xenology"
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = { has_country_flag = first_alien_life }
+		}
+	}
+}
+
+#Xeno Integration
+tech_xeno_integration = {
+	cost = @tier2cost1
+	area = society
+	category = { xenology }
+	tier = 2	
+	prerequisites = { "tech_xeno_relations" }
+	weight = @tier2weight1
+	
+	# leaders from other species available
+	
+	weight_modifier = {	
+		modifier = {
+			factor = 0.50
+			NOT = {
+				research_leader = {
+					area = society
+					has_trait = "leader_trait_expertise_statecraft"
+				}
+			}
+		}
+		modifier = {
+			factor = 3
+			has_ethic = ethic_xenophile
+		}
+		modifier = {
+			factor = 6
+			has_ethic = ethic_fanatic_xenophile
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				has_ethic = ethic_xenophobe
+				has_ethic = ethic_fanatic_xenophobe
+			}
+		}
+		modifier = {  # checks if there's any Pops not belonging to main species in the Empire
+			factor = 0
+			NOT = {
+				any_owned_pop = {
+					NOT = {
+						is_same_species = ROOT
+					}
+				}
+			}
+		}
+	}
+}
+# ##################
+# Trade
+# ##################
+
+
+
+
+#######################
+####Diplomacy
+#######################
+
+#Xeno Outreach
+tech_xeno_outreach = {
+	cost = 0
+	area = society
+	category = { diplomacy }
+	tier = 0
+	start_tech = yes
+}
+
+#Xeno Relations
+tech_xeno_relations = {
+	cost = 0
+	area = society
+	category = { diplomacy }
+	tier = 0
+	start_tech = yes
+
+	# unlocks alliances
+	prereqfor_desc = {
+		diplo_action = {
+			title = "TECH_UNLOCK_DIPLOMATIC_ACTION_CREATE_ALLIANCE_TITLE"
+			desc = "TECH_UNLOCK_DIPLOMATIC_ACTION_CREATE_ALLIANCE_DESC"
+		}
+	}	
+}
+
+#Xeno Supremacy
+tech_xeno_supremacy = {
+	cost = 0
+	area = society
+	category = { diplomacy }
+	tier = 0
+	start_tech = yes
+
+	# unlocks vassals
+	prereqfor_desc = {
+		diplo_action = {
+			title = "TECH_UNLOCK_DIPLOMATIC_ACTION_CREATE_VASSAL_TITLE"
+			desc = "TECH_UNLOCK_DIPLOMATIC_ACTION_CREATE_VASSAL_DESC"
+		}
+	}
+}
+
+tech_xeno_diplomacy = {
+	cost = @tier2cost1
+	area = society
+	category = { diplomacy }
+	tier = 2	
+	weight = @tier2weight1
+	
+	# unlocks federations
+	prereqfor_desc = {
+		diplo_action = {
+			title = "TECH_UNLOCK_DIPLOMATIC_ACTION_CREATE_FEDERATION_TITLE"
+			desc = "TECH_UNLOCK_DIPLOMATIC_ACTION_CREATE_FEDERATION_DESC"
+		}
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0.50
+			OR = {
+				has_ethic = ethic_xenophobe
+				has_ethic = ethic_fanatic_xenophobe
+			}
+		}
+		modifier = {
+			factor = 4
+			OR = {
+				has_ethic = ethic_xenophile
+				has_ethic = ethic_fanatic_xenophile
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+		modifier = {
+			factor = 0
+			num_communications < 1
+		}
+		modifier = {
+			factor = 3
+			num_communications > 3
+		}		
+	}
+	
+	weight_groups = {
+		diplomacy
+	}
+	mod_weight_if_group_picked = {
+		diplomacy = 0.25
+	}
+	
+	ai_weight = {
+		factor = 3
+		modifier = {
+			factor = 10
+			has_ai_personality_type = federation_builder
+		}	
+		modifier = {
+			factor = 2
+			has_ethic = ethic_xenophile
+		}
+		modifier = {
+			factor = 4
+			has_ethic = ethic_fanatic_xenophile
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+}
+
+#####################
+####Influence
+#####################
+
+#Galactic Ambitions
+tech_galactic_ambitions = {
+	cost = @tier1cost4
+	area = society
+	category = { influence }
+	tier = 1	
+	prerequisites = { "tech_xeno_outreach" }
+	weight = @tier1weight4
+	
+	modifier = {
+		country_border_mult = 0.2
+	}
+	
+	prereqfor_desc = {
+		intel = {
+			title = "TECH_UNLOCK_SURVEY_INTEL_TITLE"
+			desc = "TECH_UNLOCK_SURVEY_INTEL_DESC"
+		}	
+	}
+	
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_BORDER_EXTRUDER_2_TITLE"
+			desc = "TECH_UNLOCK_BORDER_EXTRUDER_2_DESC"
+		}
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 2
+			num_communications > 2
+		}
+		modifier = {
+			factor = 2
+			num_communications > 3
+		}			
+		modifier = {
+			factor = 2
+			num_communications > 4
+		}			
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+		modifier = {
+			factor = 0
+			num_communications < 1
+		}		
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 2
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+}
+
+#Manifest Destiny
+tech_manifest_destiny = {
+	cost = @tier2cost3
+	area = society
+	category = { influence }
+	tier = 2
+	is_rare = yes	
+	prerequisites = { "tech_galactic_ambitions" }
+	weight = @tier2weight3
+		
+	modifier = {
+		# reduced influence-cost in war-negotiation
+		country_border_mult = 0.2
+	}
+	
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_BORDER_EXTRUDER_3_TITLE"
+			desc = "TECH_UNLOCK_BORDER_EXTRUDER_3_DESC"
+		}
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0.25
+			NOT = {
+				research_leader = {
+					area = society
+					has_trait = "leader_trait_expertise_statecraft"
+				}
+			}
+		}
+		modifier = {
+			factor = 1.05
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_maniacal"
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_spark_of_genius"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 2
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+}
+
+# ##################
+# Public Opinion/Happiness
+# ##################
+
+tech_paradise_dome = {
+	cost = @tier1cost3
+	area = society
+	tier = 1
+	category = { public_opinion }
+	is_rare = yes
+	prerequisites = { "tech_planetary_unification" }
+	weight = @tier1weight3
+	
+	#unlocks Paradise Dome building
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					has_ethic = ethic_pacifist
+					has_ethic = ethic_fanatic_pacifist
+				}
+			}
+		}
+		modifier = {
+			factor = 3
+			has_ethic = ethic_fanatic_spiritualist
+		}
+	}	
+	
+	ai_weight = {
+		modifier = {
+			factor = 2
+			has_ethic = ethic_fanatic_pacifist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}	
+	}
+}
+
+#Hyper-Entertainment Forum
+tech_hyper_entertainment_forum = {
+	cost = @tier2cost1
+	area = society
+	tier = 2
+	category = { public_opinion }
+	prerequisites = { "tech_colonial_centralization" }
+	weight = @tier2weight1
+	is_rare = yes
+	
+	# unlocks Hyper-Entertainment planet wonder
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					has_ethic = ethic_individualist
+					has_ethic = ethic_fanatic_individualist
+				}
+			}
+		}
+		modifier = {
+			factor = 3
+			OR = {
+				has_ethic = ethic_individualist
+				has_ethic = ethic_fanatic_individualist
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 3
+			OR = {
+				has_ethic = ethic_individualist
+				has_ethic = ethic_fanatic_individualist
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+}
+
+###################
+####Military Theory
+###################
+# ##################
+# Fleet Organization
+# ##################
+
+#Doctrine: Space Combat
+tech_doctrine_fleet_size_1 = {
+	cost = @tier1cost1
+	area = society
+	tier = 1
+	category = { military_theory }
+	weight = @tier1weight1
+	
+	modifier = {
+		navy_size_mult = 0.10
+	}
+	
+	weight_modifier = {
+		factor = 3
+		modifier = {
+			factor = 0.65
+			has_ethic = ethic_fanatic_pacifist
+		}
+		modifier = {
+			factor = 0.8
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 3
+		modifier = {
+			factor = 0.65
+			has_ethic = ethic_fanatic_pacifist
+		}
+		modifier = {
+			factor = 0.8
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+}
+
+#Doctrine: Reactive Formations
+tech_doctrine_fleet_size_2 = {
+	cost = @tier1cost3
+	area = society
+	tier = 1
+	category = { military_theory }
+	prerequisites = { "tech_doctrine_fleet_size_1" }
+	weight = @tier1weight3
+	
+	modifier = {
+		navy_size_mult = 0.10
+	}
+	
+	weight_modifier = {
+		factor = 3
+		modifier = {
+			factor = 0.65
+			has_ethic = ethic_fanatic_pacifist
+		}
+		modifier = {
+			factor = 0.8
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 3
+		modifier = {
+			factor = 0.65
+			has_ethic = ethic_fanatic_pacifist
+		}
+		modifier = {
+			factor = 0.8
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+}
+
+#Doctrine: Interstellar Warfare
+tech_doctrine_fleet_size_3 = {
+	cost = @tier2cost1
+	area = society
+	tier = 2
+	category = { military_theory }
+	prerequisites = { "tech_doctrine_fleet_size_2" }
+	weight = @tier2weight1
+	
+	modifier = {
+		navy_size_mult = 0.10
+	}
+	
+	weight_modifier = {
+		factor = 3
+		modifier = {
+			factor = 0.65
+			has_ethic = ethic_fanatic_pacifist
+		}
+		modifier = {
+			factor = 0.8
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 3
+		modifier = {
+			factor = 0.65
+			has_ethic = ethic_fanatic_pacifist
+		}
+		modifier = {
+			factor = 0.8
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+}
+
+#Doctrine: Fluid Fleet Templates
+tech_doctrine_fleet_size_4 = {
+	cost = @tier2cost4
+	area = society
+	tier = 2
+	category = { military_theory }
+	prerequisites = { "tech_doctrine_fleet_size_3" }
+	weight = @tier2weight4
+	
+	modifier = {
+		navy_size_mult = 0.10
+	}
+	
+	weight_modifier = {
+		factor = 3
+		modifier = {
+			factor = 0.65
+			has_ethic = ethic_fanatic_pacifist
+		}
+		modifier = {
+			factor = 0.8
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 3
+		modifier = {
+			factor = 0.65
+			has_ethic = ethic_fanatic_pacifist
+		}
+		modifier = {
+			factor = 0.8
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+}
+
+#Doctrine: Armada Battle Formation
+tech_doctrine_fleet_size_5 = {
+	cost = @tier3cost1
+	area = society
+	tier = 3
+	category = { military_theory }
+	prerequisites = { "tech_doctrine_fleet_size_4" }
+	weight = @tier3weight1
+	
+	modifier = {
+		navy_size_mult = 0.10
+	}
+	
+	weight_modifier = {
+		factor = 3
+		modifier = {
+			factor = 0.65
+			has_ethic = ethic_fanatic_pacifist
+		}
+		modifier = {
+			factor = 0.8
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 3
+		modifier = {
+			factor = 0.65
+			has_ethic = ethic_fanatic_pacifist
+		}
+		modifier = {
+			factor = 0.8
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+}
+
+#Interstellar Fleet Traditions
+tech_interstellar_fleet_traditions = {
+	cost = @tier1cost4
+	area = society
+	tier = 1
+	category = { military_theory }
+	prerequisites = { "tech_doctrine_fleet_size_2" }
+	weight = @tier1weight4
+		
+	#unlocks fleet academy & navigator's guild modules
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0.65
+			has_ethic = ethic_fanatic_pacifist
+		}
+		modifier = {
+			factor = 0.8
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 0.65
+			has_ethic = ethic_fanatic_pacifist
+		}
+		modifier = {
+			factor = 0.8
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+}
+
+#Doctrine: Fleet Support 
+tech_doctrine_fleet_support = {
+	cost = @tier1cost2
+	area = society
+	tier = 1
+	category = { military_theory }
+	prerequisites = { "tech_doctrine_fleet_size_1" }
+	weight = @tier1weight2
+	
+	#unlocks crew quarters and engineering bay modules
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0.65
+			has_ethic = ethic_fanatic_pacifist
+		}
+		modifier = {
+			factor = 0.8
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 0.65
+			has_ethic = ethic_fanatic_pacifist
+		}
+		modifier = {
+			factor = 0.8
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+}
+
+tech_doctrine_command_matrix = {
+	cost = @tier2cost2
+	area = society
+	tier = 2
+	category = { military_theory }
+	prerequisites = { "tech_doctrine_fleet_size_3" }
+	weight = @tier2weight2
+	
+	modifier = { 
+		ship_upkeep_mult = -0.1 
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				research_leader = {
+					area = society
+					has_trait = "leader_trait_expertise_military_theory"
+				}
+			}
+		}
+		modifier = {
+			factor = 0.65
+			has_ethic = ethic_fanatic_pacifist
+		}
+		modifier = {
+			factor = 0.8
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 0.65
+			has_ethic = ethic_fanatic_pacifist
+		}
+		modifier = {
+			factor = 0.8
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+}
+
+#Doctrine: Refit Standards
+tech_doctrine_refit_standards = {
+	cost = @tier1cost4
+	area = society
+	tier = 2
+	category = { military_theory }
+	prerequisites = { "tech_doctrine_fleet_size_2" }
+	weight = @tier1weight4
+	
+	modifier = { 
+		country_ship_upgrade_cost_mult = -0.15
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0.65
+			has_ethic = ethic_fanatic_pacifist
+		}
+		modifier = {
+			factor = 0.8
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 0.65
+			has_ethic = ethic_fanatic_pacifist
+		}
+		modifier = {
+			factor = 0.8
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+}
+
+
+# ##################
+# Army Organization
+# ##################
+tech_centralized_command = {
+	cost = @tier1cost1
+	area = society
+	tier = 1
+	category = { military_theory }
+	weight = @tier1weight1
+	
+	modifier = { 
+		army_upkeep_mult = -0.1
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0.65
+			has_ethic = ethic_fanatic_pacifist
+		}
+		modifier = {
+			factor = 0.8
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 0.65
+			has_ethic = ethic_fanatic_pacifist
+		}
+		modifier = {
+			factor = 0.8
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+}
+
+#Combat Training
+tech_combat_training = {
+	cost = @tier1cost4
+	area = society
+	tier = 1
+	category = { military_theory }
+	prerequisites = { "tech_centralized_command" }
+	weight = @tier1weight4
+	
+	# unlocks army training-centre
+	
+	modifier = { 
+		army_upkeep_mult = -0.1
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0.65
+			has_ethic = ethic_fanatic_pacifist
+		}
+		modifier = {
+			factor = 0.8
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 0.65
+			has_ethic = ethic_fanatic_pacifist
+		}
+		modifier = {
+			factor = 0.8
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+}
+#Virtual Combat Simulations
+tech_virtual_combat_arena = {
+	cost = @tier1cost3
+	area = society
+	tier = 1
+	category = { military_theory }
+	is_rare = yes
+	prerequisites = { "tech_centralized_command" }
+	weight = @tier1weight3
+	
+	#unlocks Coliseum planetary wonder
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					has_ethic = ethic_militarist
+					has_ethic = ethic_fanatic_militarist
+				}
+			}
+		}
+		modifier = {
+			factor = 1.10
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_substance_abuser"
+			}
+		}
+		modifier = {
+			factor = 4
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}	
+	
+	ai_weight = {
+		modifier = {
+			factor = 2
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}	
+	}
+}
+
+
+######################
+####Statecraft
+######################
+
+tech_planetary_government = {
+	cost = 0
+	area = society
+	tier = 0
+	category = { statecraft }
+	start_tech = yes
+	
+	# unlocks Planetary Outpost
+}
+
+#Planetary Unification
+tech_planetary_unification = {
+	cost = @tier1cost1
+	area = society
+	tier = 1
+	category = { statecraft }
+	prerequisites = { "tech_planetary_government" }
+	weight = @tier1weight1
+	
+	modifier = {
+		influence_gain_add = 1
+	}
+	# also unlocks planet-happiness edict
+	
+	weight_modifier = {
+		factor = 4
+		modifier = {
+			factor = 0.75
+			NOT = {
+				OR = {
+					has_ethic = ethic_pacifist
+					has_ethic = ethic_fanatic_pacifist
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 2
+		modifier = {
+			factor = 0.75
+			NOT = {
+				OR = {
+					has_ethic = ethic_pacifist
+					has_ethic = ethic_fanatic_pacifist
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_collectivist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_collectivist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+}
+
+#Colonial Centralization
+tech_colonial_centralization = {
+	cost = @tier1cost4
+	area = society
+	tier = 1
+	category = { statecraft }
+	prerequisites = { "tech_planetary_unification" }
+	weight = @tier1weight4
+	
+	# unlocks Planetary Capital
+	# unlocks production-targets edict
+	
+	modifier = {
+		influence_gain_add = 1
+	}
+	
+	weight_modifier = {
+		factor = 4
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+	}
+}
+
+#Galactic Administration
+tech_galactic_administration = {
+	cost = @tier2cost2
+	area = society
+	tier = 2
+	category = { statecraft }
+	prerequisites = { "tech_colonial_centralization" }
+	weight = @tier2weight2
+	
+	# unlocks Empire Capital-Complex, advanced government forms
+	prereqfor_desc = {
+		government = {
+			title = "TECH_UNLOCK_ADVANCED_GOVERNMENT_FORMS_TITLE"
+			desc = "TECH_UNLOCK_ADVANCED_GOVERNMENT_FORMS_DESC"
+		}
+	}
+	
+	modifier = {
+		influence_gain_add = 1
+	}
+	
+	weight_modifier = {
+		factor = 4
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+}
+#Adaptive Bureaucracy
+tech_adaptive_bureaucracy = {
+	cost = @tier1cost2
+	area = society
+	tier = 1
+	category = { statecraft }
+	prerequisites = { "tech_planetary_unification" }
+	weight = @tier1weight2
+	
+	modifier = {
+		country_leader_cap = 2
+		edict_influence_cost = -0.15
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0.5
+			num_owned_planets < 2
+		}
+		modifier = {
+			factor = 1.5
+			num_owned_planets > 2
+		}		
+		modifier = {
+			factor = 1.5
+			num_owned_planets > 3
+		}
+		modifier = {
+			factor = 1.5
+			num_owned_planets > 4
+		}	
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+}
+#Living State
+tech_living_state = {
+	cost = @tier2cost2
+	area = society
+	tier = 2
+	category = { statecraft }
+	prerequisites = { "tech_colonial_centralization" }
+	weight = @tier2weight2
+	
+	modifier = {
+		country_leader_cap = 2
+		country_leader_pool_size = 1
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0.5
+			num_owned_planets < 5
+		}	
+		modifier = {
+			factor = 1.5
+			num_owned_planets > 5
+		}		
+		modifier = {
+			factor = 1.5
+			num_owned_planets > 6
+		}
+		modifier = {
+			factor = 1.5
+			num_owned_planets > 7
+		}	
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_ethic = ethic_collectivist
+				has_ethic = ethic_fanatic_collectivist			
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+}
+
+#Collective Self
+tech_collective_self = {
+	cost = @tier3cost2
+	area = society
+	tier = 3
+	category = { statecraft }
+	prerequisites = { "tech_living_state" }
+	weight = @tier3weight2
+	
+	modifier = {
+		country_leader_cap = 2
+		leader_influence_cost = -0.10
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0.5
+			num_owned_planets < 7
+		}	
+		modifier = {
+			factor = 1.5
+			num_owned_planets > 8
+		}		
+		modifier = {
+			factor = 1.5
+			num_owned_planets > 9
+		}
+		modifier = {
+			factor = 1.5
+			num_owned_planets > 10
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+				has_ethic = ethic_collectivist
+				has_ethic = ethic_fanatic_collectivist			
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				has_ethic = ethic_individualist
+				has_ethic = ethic_fanatic_individualist	
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+}
+#####################
+####Social Engineering/Slavery
+#####################
+
+#Galactic Benevolence
+tech_galactic_benevolence = {
+	cost = @tier2cost2
+	area = society
+	tier = 2
+	category = { social_engineering }	
+	prerequisites = { "tech_galactic_administration" }
+	weight = @tier2weight2
+	is_rare = yes
+	
+	# unlocks Ministry of Benevolence empire wonder
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0.50
+			NOT = {
+				research_leader = {
+					area = society
+					has_trait = "leader_trait_expertise_statecraft"
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					has_ethic = ethic_collectivist
+					has_ethic = ethic_fanatic_collectivist
+				}
+			}
+		}
+		modifier = {
+			factor = 3
+			OR = {
+				has_ethic = ethic_collectivist
+				has_ethic = ethic_fanatic_collectivist
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 3
+			has_ethic = ethic_fanatic_collectivist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+}
+
+
+
+tech_ethical_equations = {
+	cost = @tier1cost2
+	area = society
+	tier = 0
+	category = { social_engineering }
+	start_tech = yes
+	weight = @tier1weight2
+	
+	#unlocks slavery
+	
+	weight_modifier = {
+		factor = 2
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_collectivist
+		}
+		modifier = {
+			factor = 2
+			has_ethic = ethic_fanatic_collectivist
+		}
+		modifier = {
+			factor = 0.05
+			has_ethic = ethic_individualist
+		}
+		modifier = {
+			factor = 0
+			has_ethic = ethic_fanatic_individualist
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+}
+
+#Neural Implants
+tech_neural_implants = {
+	cost = @tier1cost4
+	area = society
+	tier = 1
+	category = { social_engineering }
+	prerequisites = { "tech_ethical_equations" "tech_genome_mapping" }
+	weight = @tier1weight4
+	
+	# unlocks slave processing plant, slave armies
+	
+	weight_modifier = {
+		modifier = {
+			factor = 2
+			any_owned_pop = { is_enslaved = yes }
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_ethic = ethic_collectivist
+				has_ethic = ethic_fanatic_collectivist
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				has_policy_flag = slavery_allowed_all
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 3
+			AND = {
+				has_policy_flag = slavery_allowed_all
+				any_owned_pop = { is_enslaved = yes }
+			}
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_ethic = ethic_collectivist
+				has_ethic = ethic_fanatic_collectivist
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+}
+
+#Artificial Moral Codes
+tech_artificial_moral_codes = {
+	cost = @tier2cost2
+	area = society
+	tier = 2
+	category = { social_engineering }
+	weight = @tier2weight3
+	
+	modifier = {
+		pop_resettlement_cost_mult = -0.1
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+}
+
+#Synthetic Thought Patterns
+tech_synthetic_thought_patterns = {
+	cost = @tier2cost4
+	area = society
+	tier = 2
+	category = { social_engineering }
+	is_rare = yes	
+	prerequisites = { "tech_artificial_moral_codes" }
+	weight = @tier2weight4
+	
+	modifier = {
+		edict_influence_cost = -0.15
+		pop_resettlement_cost_mult = -0.1
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_spark_of_genius"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+}
+
+#Will to Power
+tech_will_to_power = {
+	cost = @tier3cost3
+	area = society
+	tier = 3
+	category = { social_engineering }
+	is_rare = yes	
+	prerequisites = { "tech_synthetic_thought_patterns" }
+	weight = @tier3weight3
+
+	# unlocks spaceport-module: orbital mind control laser
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0.20
+			NOT = {
+				OR = {
+					has_ethic = ethic_collectivist
+					has_ethic = ethic_fanatic_collectivist
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_spark_of_genius"
+			}
+		}
+		modifier = {
+			factor = 5
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_maniacal"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 3 #rare tech
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+}
+
+#Purity Campaigns
+tech_purity_campaigns = {
+	cost = @tier1cost2
+	area = society
+	tier = 1
+	category = { social_engineering }	
+	prerequisites = { "tech_planetary_government" }
+	weight = @tier1weight2
+	is_rare = yes
+	
+	# unlocks Monument to Purity planetary wonder
+	# edict towards keeping species - you dont take kindly to - out
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0.50
+			NOT = {
+				research_leader = {
+					area = society
+					has_trait = "leader_trait_expertise_statecraft"
+				}
+			}
+		}
+		modifier = {
+			factor = 3
+			OR = {
+				has_ethic = ethic_xenophobe
+				has_ethic = ethic_fanatic_xenophobe
+			}
+		}	
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					has_ethic = ethic_xenophobe
+					has_ethic = ethic_fanatic_xenophobe
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			num_communications < 1
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 3
+			has_ethic = ethic_fanatic_xenophobe
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+}
+# ##################
+# Other
+# ##################
+

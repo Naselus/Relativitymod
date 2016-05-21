@@ -1,0 +1,82 @@
+Version 102.0.1
+
+* Added Linear Happiness mod by dskod1
+* re-added ethic difference happiness modifiers
+* Increased base tech alternatives to 5
+* Increased pop tech cost to 3% (from 2%)
+* direct planet control increased to 75
+* Base number of sectors increased to 20
+* Influence costs removed from buildings
+* flat influence costs removed from planetary edits (now cost inf-per-turn).
+* Removed influence cost and maintenance from Forntier Outposts.
+* Split basic science lab into 3 separate buildings
+* Gave lower-tier capitals some influence output
+* Removed off-sciences from advanced science labs - so a physics lab gives just 2 physics, nothing else.
+* AI now uses all sector types.
+* Military sector AI now builds warships (just destroyers and corvettes)
+* included unofficial bug fixes by Ramiel (changelog included with credits)
+* Maximum possible fleet size increased to 10k
+* Removed growth bonus for food surpluses
+* Combat balance changes:
+	* Autocannons now fire very quickly.
+	* Mass drivers ignore 50% shields.
+	* Kinetic Artillery ignores 100% shields.
+	* Point Defense has had it's accuracy reduced to 25% (from 40%) and it's rate of fire has been reduced (from 7 to 10).
+	* Range and flight time of missiles improved.
+* Doubled MTTH of neighbour introductions.
+* increased MTTH of not-neighbour introductions to 25 years.
+* Changed 'minerals' to 'production' and 'energy credtis' to 'credits'.
+* Added 3 tiers of power - Power, High-energy plasma and Energon.
+* Addede 3 tiers of metals - Tritanitum, Adamantine and Omegadine.
+* T1 buildings are free. T2 buildings need power. T3 buildings need High energy plasma. T4+ buildings need Energon.
+* Added new mines to produce Tritanium, Adamantine and Omegadine.
+* Added new mineral processing plants to convert tritanium adamantine and omagedine into production. Tritanium goes 2,4,6,8,10. Adamantine goes 4,8,12,16,20. Omegadine gives 8,16,24,32,40.
+* Added Nutrients and Luxury Goods. These are used by capital buildings.
+* Farms now produce nutrients.
+* Capital buildings are now the only way to produce food.
+* Colony capitals now consume Nutrients.
+* Added banks which consume power and produce money.
+* Added 5 more mineral processing technologies.
+* Changed deposits to make resources more common
+* removed all mineral, food and energy deposits
+* Added despoits of metals and energy sources. 
+* Added a bank and a Tritanium mineral processing planet to starting planets.
+* localized a bunch of stuff. I hate localizing.
+* Incorporated v 1.2 of Craftomega's More Spaceport modules. Have made some major alterations to bring it into the new economy.
+* switched all spaceport modules to the new economy.
+
+
+102.0.2
+
+* Fixed formatting errors in the weapons csv file.
+* added new localizations.
+* Embassies can be made again
+* Basic Mineral Processing Plant now avaialble from the start
+* Mine output reduced to 1/2/3/4/5
+* Limited to using any given Planetary edict on only 1 planet at a time. Planetary edicts now cost inf/month.
+* AI no longer thinks processing plants are special builgings (in the hope it'll build them).
+* Tweaked a whole bunch of AI values to try to get it to understand the economy.
+* Increased meximum credits to 250,000
+* AI now prioritizes buildings more
+* AI now ignores tile bonuses.
+* Added production loops to buildings so the AI will use them.
+* Deleted a bunch of files we haven't modified yet to reduce dl size
+
+102.0.3
+
+* Beat AI up until it did what I want it to.
+* First pass of the tech rework.
+* Made science less plentiful off-world.
+* neutronium should now make up about 90% of nuetron stars.
+* Buffed mineral output from capital a bit to kick-start the AI
+* Re-organized the empire initializers so that the AI benefts more from adjacency.
+* Added new icons by Trak
+* Leaders now start younger (18-25)
+* Leaders now capped at 5 until you research some techs (currently pegged on placeholders).
+* Leaders can now level up to 10.
+* Liberated slaves stay angry for 10 years
+* Genocideed pops stay angry for 20 years.
+* All basic traits much reduced in power, but all leaders start with 2.
+* ship credit maintenance cost doubled.
+* Maintenance reduction from being at a station doubled.
+* Leaders now gain traits from leveling multiple times

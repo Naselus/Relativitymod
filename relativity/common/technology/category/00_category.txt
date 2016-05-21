@@ -1,0 +1,224 @@
+####
+#	Technology categories
+#
+#	weight_modifier = {
+#		factor = 1
+#		modifier = {
+#			add = 10
+#			OR = {
+#				has_government = "military_dictatorship"
+#				has_government = "martial_empire"
+#			}
+#		}
+#	}
+####
+
+#######Engineering###### 
+
+spaceport_expansion = {
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_computing.dds"
+}
+
+ai = {
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_materials.dds"
+}
+
+terraforming = {
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_voidcraft.dds"
+}
+
+engineering_labs = {
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_voidcraft.dds"
+}
+
+field_manipulation = {
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_field_manipulation.dds"
+}
+
+sensors = {
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_materials.dds"
+}
+
+strikecraft = {
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_voidcraft.dds"
+}
+
+materials = {
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_voidcraft.dds"
+}
+
+thrusters = {
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_materials.dds"
+}
+
+voidcraft = {
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_voidcraft.dds"
+}
+
+
+########Economy############   
+
+industry = {
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_industry.dds"
+}
+
+mineral_processing = {
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_industry.dds"
+}
+
+power_plants = {
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_industry.dds"
+}
+
+mining = {
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_industry.dds"
+}
+
+armor = {
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_industry.dds"
+}
+
+power_hubs = {
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_industry.dds"
+}
+
+farming = {
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_materials.dds"
+}
+
+orbital_stations = {
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_industry.dds"
+}
+
+spaceport_economics = {
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_industry.dds"
+}
+
+economics_institutes = {
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_industry.dds"
+}
+
+financial_regulation = {
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_industry.dds"
+}
+
+banking = {
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_industry.dds"
+}
+########Society############# 
+
+statecraft = {
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_statecraft.dds"
+}
+
+edicts = {
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_statecraft.dds"
+}
+
+public_opinion = {
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_industry.dds"
+}
+
+influence = {
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_industry.dds"
+}
+
+diplomacy = {
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_industry.dds"
+}
+
+sector_management = {
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_industry.dds"
+}
+
+xenology = {
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_industry.dds"
+}
+
+social_engineering = {
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_industry.dds"
+}
+
+military_theory = {
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_military_theory.dds"
+}
+
+societal_research = {
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_military_theory.dds"
+}
+########Physics############ 
+
+particles = {
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_particles.dds"
+}
+
+ballistics = {
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_voidcraft.dds"
+}
+
+rocketry = {
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_rocketry.dds"
+}
+
+ground_combat = {
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_voidcraft.dds"
+}
+
+physics_labs = {
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_voidcraft.dds"
+}
+
+reactors = {
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_computing.dds"
+}
+
+ftl_travel = {
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_computing.dds"
+}
+
+xeno_weaponry = {
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_computing.dds"
+}
+
+computing = {
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_computing.dds"
+}
+
+
+#####Biology##########  
+
+bio_labs = {
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_particles.dds"
+}
+
+xenobiology = {
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_voidcraft.dds"
+}
+
+biology = {
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_voidcraft.dds"
+}
+
+genetics = {
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_military_theory.dds"
+}
+
+psionics = {
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_psionics.dds"
+}
+
+surveying_techniques = {
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_voidcraft.dds"
+}
+
+new_worlds = {
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_new_worlds.dds"
+}
+
+xeno_tech = {
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_new_worlds.dds"
+}
+
+
+
+

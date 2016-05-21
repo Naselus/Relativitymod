@@ -1,0 +1,162 @@
+############################
+#
+# Spread of communications
+#
+# Written by Martin Anward
+#
+############################
+
+namespace = communications_spread
+
+# Communications - neighbor
+country_event = {
+	id = communications_spread.1
+	title = "communications_spread.1.name"
+	desc = "communications_spread.1.desc"
+	picture = GFX_evt_star_chart
+	show_sound = event_alien_signal
+	
+	trigger = {
+		is_country_type = default
+		NOT = { has_country_flag = starting_event }
+		any_neighbor_country = {
+			is_country_type = default
+			NOT = { is_country = ROOT }
+			has_communications = ROOT
+			any_neighbor_country = {
+				is_country_type = default
+				NOT = { is_country = ROOT }
+				has_communications = PREV
+				NOT = { has_communications = ROOT }
+			}
+		}
+	}
+	
+	immediate = {
+		random_neighbor_country = {
+			limit = {		
+				is_country_type = default
+				NOT = { is_country = ROOT }
+				has_communications = ROOT
+				any_neighbor_country = {
+					is_country_type = default
+					NOT = { is_country = ROOT }
+					has_communications = PREV
+					NOT = { has_communications = ROOT }
+				}				
+			}
+			save_event_target_as = CommSpreader
+			random_neighbor_country = {
+				limit = {
+					is_country_type = default
+					NOT = { is_country = ROOT }
+					has_communications = PREV
+					NOT = { has_communications = ROOT }
+				}
+				save_event_target_as = contact_empire
+				establish_communications_no_message = root
+			}				
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = "communications_spread.1.a"		
+		custom_tooltip = communications_spread.1.tooltip
+		hidden_effect = {
+			country_event = { id = action.1 }
+			event_target:contact_empire = {
+				country_event = { id = communications_spread.2 }
+			}
+		}			
+	}
+}
+
+country_event = {
+	id = communications_spread.2
+	title = "communications_spread.2.name"
+	desc = "communications_spread.2.desc"
+	picture = GFX_evt_star_chart
+	show_sound = event_alien_signal
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "communications_spread.2.a"			
+		custom_tooltip = communications_spread.2.tooltip
+		hidden_effect = {
+			FROM = { save_event_target_as = contact_empire }
+			country_event = { id = action.1 }		
+		}
+	}
+}
+
+# Communications - any
+country_event = {
+	id = communications_spread.3
+	title = "communications_spread.1.name"
+	desc = "communications_spread.1.desc"
+	picture = GFX_evt_star_chart
+	show_sound = event_alien_signal
+	
+	trigger = {
+		is_country_type = default
+		NOT = { has_country_flag = starting_event }
+		any_country = {
+			is_country_type = default
+			NOT = { is_country = ROOT }
+			has_communications = ROOT
+			any_neighbor_country = {
+				is_country_type = default
+				NOT = { is_country = ROOT }
+				has_communications = PREV
+				NOT = { has_communications = ROOT }
+			}
+		}
+	}
+	
+	immediate = {
+		random_country = {
+			limit = {		
+				is_country_type = default
+				NOT = { is_country = ROOT }
+				has_communications = ROOT
+				any_neighbor_country = {
+					is_country_type = default
+					NOT = { is_country = ROOT }
+					has_communications = PREV
+					NOT = { has_communications = ROOT }
+				}				
+			}
+			save_event_target_as = CommSpreader
+			random_neighbor_country = {
+				limit = {
+					is_country_type = default
+					NOT = { is_country = ROOT }
+					has_communications = PREV
+					NOT = { has_communications = ROOT }
+				}
+				save_event_target_as = contact_empire
+				establish_communications_no_message = root
+			}				
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 300
+	}
+
+	option = {
+		name = "communications_spread.1.a"		
+		custom_tooltip = communications_spread.1.tooltip
+		hidden_effect = {
+			country_event = { id = action.1 }
+			event_target:contact_empire = {
+				country_event = { id = communications_spread.2 }
+			}
+		}
+	}
+}

@@ -1,0 +1,19 @@
+events\anomaly_events_3.txt
+
+Fix Old Gods final event, allowing POPs to change ethos properly.  Thanks to Randarkmaan (just copied his fix)
+
+events\orbital_bombardment.txt
+
+Fix Prethoryn Infected worlds from being unclearable, they will now convert to barren worlds as intended
+
+common\ship_sizes\00_ship_sizes.txt
+
+Transports can now be designed in the ship designer.  Thanks to jakt (just copied his fix)
+
+common\component_templates\00_strike_craft.txt
+
+Range has been doubled on original strike craft, and improves incrementally with tech. - abnwtwtud
+
+events\game_start.txt
+
+Sol will not be generated as a random planet if player starts on Sol. - TFL_Lion
