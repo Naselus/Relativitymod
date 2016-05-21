@@ -1,0 +1,46 @@
+###########################
+### TECH COSTS - REPEATABLE  ###
+###########################
+
+@repeatableTechBaseCost = 1500
+@repeatableTechLevelCost = 480
+
+
+###########################
+### TECH WEIGHTS - REPEATABLE  ###
+###########################
+
+@repeatableTechWeight = 25
+@repatableTechFactor = 0.5
+
+
+tech_repeatable_improved_shield_output = {
+	area = physics
+	cost = @repeatableTechBaseCost
+	cost_per_level = @repeatableTechLevelCost
+	tier = 2
+	category = { field_manipulation }
+	ai_update_type = military
+	levels = -1
+	prerequisites = {"tech_shields_2"}
+	weight = @repeatableTechWeight
+	
+	weight_modifier = {
+		factor = @repatableTechFactor
+	}
+	
+	ai_weight = {
+		factor = 1.0
+	}
+	
+	weight_groups = {
+		repeatable
+	}
+	mod_weight_if_group_picked = {
+		repeatable = 0.01
+	}
+	
+	modifier = {
+		ship_shield_hp_mult = 0.05
+	}
+}

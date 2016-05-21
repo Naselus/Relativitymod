@@ -1,0 +1,45 @@
+
+###########################
+### TECH COSTS - REPEATABLE  ###
+###########################
+
+@repeatableTechBaseCost = 1500
+@repeatableTechLevelCost = 480
+
+
+###########################
+### TECH WEIGHTS - REPEATABLE  ###
+###########################
+
+@repeatableTechWeight = 25
+@repatableTechFactor = 0.5
+
+tech_repeatable_improved_edict_length = {
+	area = society
+	cost = @repeatableTechBaseCost
+	cost_per_level = @repeatableTechLevelCost
+	tier = 2
+	category = { edicts }
+	levels = -1
+	prerequisites = { "tech_artificial_moral_codes" }
+	weight = @repeatableTechWeight
+	
+	weight_modifier = {
+		factor = @repatableTechFactor
+	}
+	
+	ai_weight = {
+		factor = 1.0
+	}
+	
+	weight_groups = {
+		repeatable
+	}
+	mod_weight_if_group_picked = {
+		repeatable = 0.01
+	}
+	
+	modifier = {
+		edict_length_mult = 0.1
+	}
+}
