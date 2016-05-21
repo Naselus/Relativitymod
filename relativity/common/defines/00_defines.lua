@@ -730,7 +730,7 @@ NDefines = {
 		MILITARY_POWER_DAMAGE_WEIGHT		= 0.5,
 		MILITARY_POWER_SPACEPORT_MULT 		= 1,
 		MILITARY_POWER_SCALE				= 0.25,
-		MILITARY_POWER_EXPONENT				= 0.75,	-- math: power = ( ( effective_health * damage_per_day ) ^ exponent ) * scale
+		MILITARY_POWER_EXPONENT				= 0.55,	-- math: power = ( ( effective_health * damage_per_day ) ^ exponent ) * scale
 		MILITARY_POWER_ESTIMATED_ARMOR_PENETRATION	= 0.3,	-- use as an estimated armor penetration in formula damage_reduction *= 1 - armor_penetration.
 	},
 
@@ -998,24 +998,24 @@ NDefines = {
 		
 		NON_MINED_RESOURCES_ENERGY_WANT_FACTOR = 1,	-- If 100% of AI's resources in space are unmined, increase desire for energy by this
 		
-		MILITARY_STATION_BUDGET_FRACTION = 0.10,	-- AI will spend this fraction of their income on military stations
+		MILITARY_STATION_BUDGET_FRACTION = 0.30,	-- AI will spend this fraction of their income on military stations
 		SAVINGS_BUDGET_FRACTION = 0.00, 		-- AI will spend this fraction of their income on savings (normally not needed as fleets in dock will result in energy surplus)
 		ARMY_BUDGET_FRACTION = 0.05,   			-- AI will spend this fraction of their income on armies
 		NAVY_BUDGET_FRACTION = 0.15, 			-- AI will spend this fraction of their income on ships
 		STATION_BUDGET_FRACTION = 0.35, 		-- AI will spend this fraction of their income on stations
-		BUILDING_BUDGET_FRACTION = 0.30, 		-- AI will spend this fraction of their income on buildings
+		BUILDING_BUDGET_FRACTION = 0.10, 		-- AI will spend this fraction of their income on buildings
 		ROBOT_BUDGET_FRACTION = 0.05,			-- AI will spend this fraction of their income on robots (transfered to stations if they don't use robots)
 		
 		SHIPSIZE_BUDGET_FACTOR = 0.05,			-- For each ship size unlocked, increase navy budget by this amount
 		NAVAL_CAPACITY_BUDGET_MAX = 100,		-- At this naval capacity, AI puts max budget into ships
-		PLANET_BUDGET_FACTOR = 0.0,			-- When AI has few planets, it will decrease building/mil station budget by this and put it into colonies/stations instead
+		PLANET_BUDGET_FACTOR = 0.10,			-- When AI has few planets, it will decrease building/mil station budget by this and put it into colonies/stations instead
 		MAX_PLANETS_FOR_BUDGET_FACTOR = 2,		-- At this amount of planets, budget is normalized
 
 		MINERAL_MILITARY_STATION_BUDGET_FRACTION = 0.05, -- AI will spend this fraction of their stored minerals on military stations
 		MINERAL_NAVY_BUDGET_FRACTION = 0.10, 	-- AI will spend this fraction of their stored minerals on ships
-		MINERAL_STATION_BUDGET_FRACTION = 0.15, -- AI will spend this fraction of their stored minerals on stations (used for spaceport instead when it needs a new spaceport)
+		MINERAL_STATION_BUDGET_FRACTION = 0.20, -- AI will spend this fraction of their stored minerals on stations (used for spaceport instead when it needs a new spaceport)
 		MINERAL_BUILDING_BUDGET_FRACTION = 0.20,-- AI will spend this fraction of their stored minerals on buildings (used for spaceport instead when it needs a new spaceport)
-		MINERAL_SPACEPORT_BUDGET_FRACTION = 0.10, -- AI will spend this fraction of their stored minerals on spaceport modules
+		MINERAL_SPACEPORT_BUDGET_FRACTION = 0.05, -- AI will spend this fraction of their stored minerals on spaceport modules
 		MINERAL_COLONY_BUDGET_FRACTION = 0.20,
 		MINERAL_ARMY_BUDGET_FRACTION = 0.05,	-- AI will spend this fraction on armies
 		MINERAL_TILE_BLOCKER_BUDGET_FRACTION = 0.05,	-- AI will spend this fraction on tile blockers
@@ -1023,19 +1023,19 @@ NDefines = {
 		
 		DISBAND_THRESHOLD = 0.8,			-- If budget does not cover at least this fraction of the navy maintenance, disband ships & stations
 		MIN_NAVY_BUDGET = 3,			-- Always add this amount to the navy budget so we can have at least a few ships
-		MIN_ARMY_BUDGET = 2,			-- Always add this amount to the army budget so we can have at least a few armies
+		MIN_ARMY_BUDGET = 1,			-- Always add this amount to the army budget so we can have at least a few armies
 		
 		-- Below values are increased when mineral storage capacity goes up
 		MAX_MINERALS_STORED_MILITARY_STATIONS = 1000,	-- Minerals AI will store for mil stations when it needs more
-		MIN_MINERALS_STORED_MILITARY_STATIONS = 0,	-- Minerals AI will store for mil stations when it does not need more
+		MIN_MINERALS_STORED_MILITARY_STATIONS = 100,	-- Minerals AI will store for mil stations when it does not need more
 		MAX_MINERALS_STORED_NAVY = 1000,				-- Minerals AI will store for navy when it needs more
 		MIN_MINERALS_STORED_NAVY = 250,				-- Minerals AI will store for navy when it does not need more 
 		MAX_MINERALS_STORED_BUILDINGS = 1000,		-- Minerals AI will store for buildings when it needs more
 		MIN_MINERALS_STORED_BUILDINGS = 350,		-- Minerals AI will store for buildings when it does not need more
 		MAX_MINERALS_STORED_STATIONS = 500,			-- Minerals AI will store for stations when it needs more
-		MIN_MINERALS_STORED_STATIONS = 0,			-- Minerals AI will store for stations when it does not need more
+		MIN_MINERALS_STORED_STATIONS = 100,			-- Minerals AI will store for stations when it does not need more
 		MAX_MINERALS_STORED_SPACEPORT = 500,		-- Minerals AI will store for spaceport when it needs more
-		MIN_MINERALS_STORED_SPACEPORT = 0,		-- Minerals AI will store for spaceport when it does not need more
+		MIN_MINERALS_STORED_SPACEPORT = 100,		-- Minerals AI will store for spaceport when it does not need more
 		MAX_MINERALS_STORED_COLONIES = 360,		-- Minerals AI will store for colonies when it needs more
 		MIN_MINERALS_STORED_COLONIES = 350,			-- Minerals AI will store for colonies when it does not need more		
 		MAX_MINERALS_STORED_ARMIES = 300,			-- Minerals AI will store for armies when it needs more
@@ -1052,7 +1052,7 @@ NDefines = {
 		MAX_MINERALS_SPENT_ON_NAVY = 0.50,			-- Spend no more than this fraction of mineral income on navy maintenance
 
 		EXPECTED_MINERALS_BASE = 10,				-- AI expects to make this base amount in minerals
-		EXPECTED_MINERALS_PER_POP = 0.75,				-- AI expects to make about their num pops x this in minerals
+		EXPECTED_MINERALS_PER_POP = 0.5,				-- AI expects to make about their num pops x this in minerals
 		EXPECTED_TECH_BASE = 10,						-- AI expects to make this base amount in tech
 		EXPECTED_TECH_PER_POP = 1,					-- AI expects to make about their num pops x this in tech
 		EXPECTED_ENERGY_BASE = 10,					-- AI expects to make this base amount in energy
@@ -1078,7 +1078,7 @@ NDefines = {
 
 		COLONIZER_SHIPS_MAX = 1,				-- Maximum number of colonizer ships of AI
 		RESEARCH_SHIPS_MAX = 2,					-- Maximum number of research ships of AI
-		CONSTRUCTOR_SHIPS_MAX = 4,				-- Maximum number of constructor ships of AI
+		CONSTRUCTOR_SHIPS_MAX = 3,				-- Maximum number of constructor ships of AI
 
 		LEADER_FRACTION_SCIENTIST = 0.6,		-- Fraction of AI Leaders that should be scientists
 		LEADER_FRACTION_ADMIRAL = 0.1,			-- Fraction of admirals
@@ -1102,15 +1102,15 @@ NDefines = {
 		TECH_NEED_MULT_VALUE = 10,				-- Tech need value will multiplied by this value e.g. when certain diplomacy techs are needed
 
 		INFLUENCE_FRACTION_LEADERS = 0.30,		-- Fraction of AI Influence that goes to electing new leader
-		INFLUENCE_FRACTION_EDICTS = 0.10,		-- Fraction of AI Influence that goes to edicts
+		INFLUENCE_FRACTION_EDICTS = 0.40,		-- Fraction of AI Influence that goes to edicts
 		INFLUENCE_FRACTION_FACTIONS = 0.30,		-- Fraction of AI Influence that is used on fractions
-		INFLUENCE_FRACTION_SAVINGS = 0.30,			-- Fraction of AI influence that is saved
+		INFLUENCE_FRACTION_SAVINGS = 0.0,			-- Fraction of AI influence that is saved
 		
-		INFLUENCE_MAX_STORED_PER_POST = 200,				-- Max stored in any single influence budget post
+		INFLUENCE_MAX_STORED_PER_POST = 00,				-- Max stored in any single influence budget post
 		
 		INFLUENCE_BUDGET_STATIONS = 0.35,			-- Fraction of monthly influence that is used on stations (frontier outposts)
-		INFLUENCE_BUDGET_EDICTS = 0.25,				-- Fraction of monthly influence that is used on edicts
-		INFLUENCE_BUDGET_SAVINGS = 0.40,				-- Fraction of monthly influence that is saved
+		INFLUENCE_BUDGET_EDICTS = 0.65,				-- Fraction of monthly influence that is used on edicts
+		INFLUENCE_BUDGET_SAVINGS = 0.0,				-- Fraction of monthly influence that is saved
 
 		THREAT_TRUCE_MONTHS = 12,				-- AI will not consider the opponent a threat if this many months are left on a truce
 		FLEET_BALANCE_THREAT = 0.5,				-- If FleetPower of AI / FleetPower of Enemy is lower than this, AI will consider the country a threat
@@ -1156,8 +1156,8 @@ NDefines = {
 		
 		OUTPOST_STATION_RESOURCES_BUILD = 7,			-- AI should build outpost station if system has more than this many resources
 		OUTPOST_STATION_RESOURCES_NEIGHBORS_BUILD = 20, -- AI should build oupost station if neighboring systems have these many resources
-		OUTPOST_STATION_DISTANCE_MIN = 30,			-- AI consideres station in neighboring system if square distance is less than this value
-		OUTPOST_STATION_DISTANCE_MAX = 50,			-- AI consideres station in neighboring system if square distance is higher than this value from a colony
+		OUTPOST_STATION_DISTANCE_MIN = 20,			-- AI consideres station in neighboring system if square distance is less than this value
+		OUTPOST_STATION_DISTANCE_MAX = 30,			-- AI consideres station in neighboring system if square distance is higher than this value from a colony
 		OUTPOST_STATION_RANGE = 20,					-- AI consider outpost station to be able to extrude border about this far
 		
 		MAX_CAPITAL_UPGRADE_BEFORE_PLANET_FULL = 3,	-- AI will not upgrade capital above this level before the planet is full (in pops)

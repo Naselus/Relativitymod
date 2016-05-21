@@ -649,12 +649,6 @@ country_event = {
 			if = {
 				limit = {
 					leader_class = scientist
-					NOT = {
-						has_leader_flag = has_gained_level_trait
-						is_researching_area = society
-						is_researching_area = engineering
-						is_researching_area = physics
-					}
 				}
 				#if = {
 				#	limit = {
@@ -675,8 +669,8 @@ country_event = {
 				#	}
 				#}
 				random_list = {
-					93 = { }
-					7 = {
+					1 = { }
+					99 = {
 						modifier = {
 							factor = 1.5
 							OR = {
@@ -982,11 +976,10 @@ country_event = {
 			if = {
 				limit = {
 					leader_class = admiral
-					#NOT = { has_leader_flag = has_gained_level_trait }
 				}
 				random_list = {
-					93 = { }
-					7 = {
+					1 = { }
+					99 = {
 						modifier = {
 							factor = 1.5
 							OR = {
@@ -1160,11 +1153,10 @@ country_event = {
 			if = {
 				limit = {
 					leader_class = governor
-					#NOT = { has_leader_flag = has_gained_level_trait }
 				}
 				random_list = {
-					90 = { }
-					10 = {
+					1 = { }
+					99 = {
 						modifier = {
 							factor = 1.5
 							OR = {
@@ -1283,11 +1275,10 @@ country_event = {
 			if = {
 				limit = {
 					leader_class = general
-					#NOT = { has_leader_flag = has_gained_level_trait }
 				}
 				random_list = {
-					90 = { }
-					10 = {
+					1 = { }
+					99 = {
 						modifier = {
 							factor = 1.5
 							OR = {
@@ -1439,11 +1430,10 @@ country_event = {
 			if = {
 				limit = {
 					leader_class = ruler
-					#NOT = { has_leader_flag = has_gained_level_trait }
 				}
 				random_list = {
-					90 = { }
-					10 = {
+					1 = { }
+					99 = {
 						modifier = {
 							factor = 1.5
 							OR = {
