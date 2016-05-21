@@ -80,3 +80,6 @@ Version 102.0.1
 * ship credit maintenance cost doubled.
 * Maintenance reduction from being at a station doubled.
 * Leaders now gain traits from leveling multiple times
+* First pass of the stations rework
+* Threat tweaked a bit so the AI is less psycotic
+* 

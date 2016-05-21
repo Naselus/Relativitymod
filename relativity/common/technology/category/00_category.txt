@@ -43,7 +43,7 @@ strikecraft = {
 	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_voidcraft.dds"
 }
 
-materials = {
+armor = {
 	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_voidcraft.dds"
 }
 
@@ -58,7 +58,7 @@ voidcraft = {
 
 ########Economy############   
 
-industry = {
+mining = {
 	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_industry.dds"
 }
 
@@ -67,14 +67,6 @@ mineral_processing = {
 }
 
 power_plants = {
-	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_industry.dds"
-}
-
-mining = {
-	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_industry.dds"
-}
-
-armor = {
 	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_industry.dds"
 }
 
@@ -180,10 +172,6 @@ xeno_weaponry = {
 	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_computing.dds"
 }
 
-computing = {
-	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_computing.dds"
-}
-
 
 #####Biology##########  
 
@@ -192,10 +180,6 @@ bio_labs = {
 }
 
 xenobiology = {
-	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_voidcraft.dds"
-}
-
-biology = {
 	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_voidcraft.dds"
 }
 
