@@ -95,4 +95,4 @@ Version 102.0.1
 * AI more keen on forntier outposts
 * AI no longer saves influence
 * AI spends a lot more inf on edicts
-* 
+* Rebalanced weapons a lot
