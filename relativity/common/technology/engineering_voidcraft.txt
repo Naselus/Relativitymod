@@ -1,0 +1,499 @@
+##################
+### TECH COSTS ###
+##################
+#If you change any of these, use replace in files so the values are the same across all files
+
+@tier1cost1 = 240
+@tier1cost2 = 360
+@tier1cost3 = 480
+@tier1cost4 = 600
+
+@tier2cost1 = 900
+@tier2cost2 = 1200
+@tier2cost3 = 1500
+@tier2cost4 = 1800
+
+@tier3cost1 = 2320
+@tier3cost2 = 2840
+@tier3cost3 = 3360
+@tier3cost4 = 3880
+
+@tier4cost1 = 4660
+@tier4cost2 = 5460
+@tier4cost3 = 6260
+@tier4cost4 = 7060
+
+@tier5cost1 = 8140
+@tier5cost2 = 9220
+@tier5cost3 = 10300
+@tier5cost4 = 11380
+
+@tier6cost1 = 12800
+@tier6cost2 = 14220
+@tier6cost3 = 15640
+@tier6cost4 = 17060
+
+@tier7cost1 = 18860
+@tier7cost2 = 20660
+@tier7cost3 = 22460
+@tier7cost4 = 24260
+
+@tier8cost1 = 26480
+@tier8cost2 = 28700
+@tier8cost3 = 30920
+@tier8cost4 = 33140
+
+@tier9cost1 = 35800
+@tier9cost2 = 38460
+@tier9cost3 = 41120
+@tier9cost4 = 43780
+
+####################
+### TECH WEIGHTS ###
+####################
+
+@tier1weight1 = 100
+@tier1weight2 = 98
+@tier1weight3 = 96
+@tier1weight4 = 94
+
+@tier2weight1 = 92
+@tier2weight2 = 90
+@tier2weight3 = 88
+@tier2weight4 = 86
+
+@tier3weight1 = 84
+@tier3weight2 = 82
+@tier3weight3 = 80
+@tier3weight4 = 78
+
+@tier4weight1 = 76
+@tier4weight2 = 74
+@tier4weight3 = 72
+@tier4weight4 = 70
+
+@tier5weight1 = 68
+@tier5weight2 = 66
+@tier5weight3 = 64
+@tier5weight4 = 62
+
+@tier6weight1 = 60
+@tier6weight2 = 58
+@tier6weight3 = 56
+@tier6weight4 = 54
+
+@tier7weight1 = 52
+@tier7weight2 = 50
+@tier7weight3 = 48
+@tier7weight4 = 46
+
+@tier8weight1 = 44
+@tier8weight2 = 42
+@tier8weight3 = 40
+@tier8weight4 = 38
+
+@tier9weight1 = 36
+@tier9weight2 = 34
+@tier9weight3 = 32
+@tier9weight4 = 30
+
+#################
+####Ships, Shipyards, and Fortresses
+#################
+
+tech_cruiser_yard = {
+	cost = @tier2cost4
+	area = engineering
+	tier = 2
+	category = { voidcraft }	
+	prerequisites = { "tech_spaceport_5" }
+	weight = @tier2weight4
+		
+	## unlock cruiser assembly yard
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+}
+
+tech_battleship_yard = {
+	cost = @tier3cost3
+	area = engineering
+	tier = 2
+	category = { voidcraft }	
+	prerequisites = { "tech_spaceport_6" }
+	weight = @tier3weight3
+		
+	## unlock battleship assembly yard
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+}
+
+
+tech_corvette_yard_2 = {
+	cost = @tier3cost4
+	area = engineering
+	tier = 3
+	is_rare = no
+	category = { voidcraft }	
+	prerequisites = { "tech_spaceport_4" }
+	weight = @tier3weight4
+		
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+}
+
+tech_destroyer_yard_2 = {
+	cost = @tier4cost2
+	area = engineering
+	tier = 4
+	is_rare = no
+	category = { voidcraft }	
+	prerequisites = { "tech_spaceport_5" }
+	weight = @tier4weight2
+		
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+}
+
+tech_cruiser_yard_2 = {
+	cost = @tier4cost4
+	area = engineering
+	tier = 4
+	is_rare = no
+	category = { voidcraft }	
+	prerequisites = { "tech_cruiser_yard" }
+	weight = @tier4weight4
+		
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+}
+
+tech_battleship_yard_2 = {
+	cost = @tier5cost2
+	area = engineering
+	tier = 5
+	is_rare = no
+	category = { voidcraft }	
+	prerequisites = { "tech_battleship_yard" }
+	weight = @tier5weight2
+		
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+}
+
+#Defense Stations
+
+#Defense Platform
+tech_space_defense_station_1 = {
+	cost = @tier1cost1
+	area = engineering
+	tier = 1
+	category = { voidcraft }	
+	prerequisites = { "tech_space_construction" }
+	weight = @tier1weight1
+	
+	weight_modifier = {
+		modifier = {
+			factor = 2
+			is_ai = yes
+		}
+		modifier = {
+			factor = 5
+			has_technology = tech_spaceport_2
+		}	
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_ethic = ethic_militarist
+				has_ethic = ethic_fanatic_militarist
+			}
+		}
+	}
+	
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_UNLOCK_DEFENSE_PLATFORM_TITLE"
+			desc = "TECH_UNLOCK_DEFENSE_PLATFORM_DESC"
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+		
+	## unlock defense platform
+}
+
+#Defense Station
+tech_space_defense_station_2 = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { voidcraft }	
+	prerequisites = { "tech_space_defense_station_1" }
+	weight = @tier2weight1
+	
+	weight_modifier = {
+		modifier = {
+			factor = 2
+			is_ai = yes
+		}		
+		modifier = {
+			factor = 5
+			has_technology = tech_spaceport_4
+		}		
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_ethic = ethic_militarist
+				has_ethic = ethic_fanatic_militarist
+			}
+		}
+	}
+	
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_UNLOCK_DEFENSE_STATION_TITLE"
+			desc = "TECH_UNLOCK_DEFENSE_STATION_DESC"
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+		
+	## unlock defense station
+}
+
+#Fortress
+tech_space_defense_station_3 = {
+	cost = @tier3cost1
+	area = engineering
+	tier = 3
+	category = { voidcraft }	
+	prerequisites = { "tech_space_defense_station_2" }
+	weight = @tier3weight1
+	
+	weight_modifier = {
+		modifier = {
+			factor = 5
+			has_technology = tech_spaceport_6
+		}		
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_ethic = ethic_militarist
+				has_ethic = ethic_fanatic_militarist
+			}
+		}
+	}
+	
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_UNLOCK_FORTRESS_TITLE"
+			desc = "TECH_UNLOCK_FORTRESS_DESC"
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+		
+	## unlock space fortress
+}
+
+#Corps of Engineers
+tech_space_defense_station_improvement = {
+	cost = @tier2cost3
+	area = engineering
+	tier = 2
+	category = { voidcraft }		
+	prerequisites = { "tech_space_defense_station_2" }
+	is_rare = yes
+	weight = @tier2weight3
+	
+	# unlocks spaceport-module - reinforced hull layers	
+	# unlock defense station +25% HP and -10% cost
+	
+	modifier = {
+		shipclass_military_station_build_cost_mult = -0.15
+		shipclass_military_station_hit_points_mult = 0.25
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0.25
+			NOT = {
+				research_leader = {
+					area = engineering
+					has_trait = "leader_trait_expertise_voidcraft"
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_ethic = ethic_militarist
+				has_ethic = ethic_fanatic_militarist
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+}
