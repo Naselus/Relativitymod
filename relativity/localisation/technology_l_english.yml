@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
  
  # ###################################
  # Categories
@@ -2073,7 +2073,7 @@ l_english:
  tech_xenobiology_6_desc:1 "\n\n"
  tech_xenobiology_7:0 ""
  tech_xenobiology_7_desc:1 "\n\n"
- tech_xenobiology_80 ""
+ tech_xenobiology_8:0 ""
  tech_xenobiology_8_desc:1 "\n\n"
  tech_xenobiology_9:0 ""
  tech_xenobiology_9_desc:1 "\n\n"
