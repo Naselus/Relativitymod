@@ -263,7 +263,7 @@ building_power_plant_5 = {
 	}
 	
 	prerequisites = {
-		"tech_power_plant_4"
+		"tech_power_plant_5"
 	}	
 }
 
@@ -688,7 +688,7 @@ building_hydroponics_farm_5 = {
 	
 	
 	prerequisites = {
-		"tech_nano_vitality_crops"
+		"tech_nutrient_replication"
 	}	
 }
 
@@ -992,7 +992,7 @@ building_mining_network_5 = {
 	}
 	
 	prerequisites = {
-		"tech_mining_network_4"
+		"tech_mining_network_5"
 	}	
 }
 
