@@ -105,8 +105,6 @@ tech_sector_management_1 = {
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
-	
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -120,10 +118,9 @@ tech_sector_management_2 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { sector_management }
+	prerequisites = { "tech_sector_management_1" }	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -138,11 +135,10 @@ tech_sector_management_3 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { sector_management }
+	prerequisites = { "tech_sector_management_2" }	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
-	
+
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -156,10 +152,9 @@ tech_sector_management_4 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { sector_management }
+	prerequisites = { "tech_sector_management_3" }		
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -174,10 +169,8 @@ tech_sector_management_5 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { sector_management }
+	prerequisites = { "tech_sector_management_4" }	
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -192,11 +185,10 @@ tech_sector_management_6 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { sector_management }
+	prerequisites = { "tech_sector_management_5" }		
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
-	
+
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -210,11 +202,10 @@ tech_sector_management_7 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { sector_management }
+	prerequisites = { "tech_sector_management_6" }	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
-	
+		
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -228,10 +219,9 @@ tech_sector_management_8 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { sector_management }
+	prerequisites = { "tech_sector_management_7" }		
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -246,10 +236,9 @@ tech_sector_management_9 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { sector_management }
+	prerequisites = { "tech_sector_management_8" }	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -264,10 +253,9 @@ tech_sector_management_10 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { sector_management }
+	prerequisites = { "tech_sector_management_9" }		
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -282,10 +270,10 @@ tech_sector_management_11 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { sector_management }
+	prerequisites = { "tech_sector_management_10" }	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -300,11 +288,9 @@ tech_sector_management_12 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { sector_management }
+	prerequisites = { "tech_sector_management_11" }	
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
-	
+
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -318,10 +304,9 @@ tech_sector_management_13 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { sector_management }
+	prerequisites = { "tech_sector_management_12" }	
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -336,10 +321,9 @@ tech_sector_management_14 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { sector_management }
+	prerequisites = { "tech_sector_management_13" }	
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -354,11 +338,9 @@ tech_sector_management_15 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { sector_management }
+	prerequisites = { "tech_sector_management_14" }	
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
-	
+
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -372,11 +354,9 @@ tech_sector_management_16 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { sector_management }
+	prerequisites = { "tech_sector_management_15" }	
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
-	
+
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -390,11 +370,9 @@ tech_sector_management_17 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { sector_management }
+	prerequisites = { "tech_sector_management_16" }	
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
-	
+
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -408,11 +386,9 @@ tech_sector_management_18 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { sector_management }
+	prerequisites = { "tech_sector_management_17" }	
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
-	
+
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -426,11 +402,10 @@ tech_sector_management_19 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { sector_management }
+	prerequisites = { "tech_sector_management_18" }		
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
-	
+
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -444,11 +419,9 @@ tech_sector_management_20 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { sector_management }
+	prerequisites = { "tech_sector_management_19" }	
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
-	
+
 	ai_weight = {
 		modifier = {
 			factor = 0

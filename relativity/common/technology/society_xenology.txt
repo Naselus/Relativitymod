@@ -279,10 +279,11 @@ tech_xenology_4 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { xenology }
+	prerequisites = { "tech_xeno_integration" }
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -297,10 +298,11 @@ tech_xenology_5 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { xenology }
+	prerequisites = { "tech_xenology_4" }
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -315,10 +317,11 @@ tech_xenology_6 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { xenology }
+	prerequisites = { "tech_xenology_5" }	
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -333,10 +336,11 @@ tech_xenology_7 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { xenology }
+	prerequisites = { "tech_xenology_6" }	
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -350,10 +354,11 @@ tech_xenology_8 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { xenology }
+	prerequisites = { "tech_xenology_7" }	
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -368,10 +373,11 @@ tech_xenology_9 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { xenology }
+	prerequisites = { "tech_xenology_8" }	
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -386,10 +392,11 @@ tech_xenology_10 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { xenology }
+	prerequisites = { "tech_xenology_9" }	
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -404,10 +411,11 @@ tech_xenology_11 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { xenology }
+	prerequisites = { "tech_xenology_10" }	
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -422,10 +430,11 @@ tech_xenology_12 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { xenology }
+	prerequisites = { "tech_xenology_11" }	
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -440,10 +449,11 @@ tech_xenology_13 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { xenology }
+	prerequisites = { "tech_xenology_12" }	
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -458,10 +468,11 @@ tech_xenology_14 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { xenology }
+	prerequisites = { "tech_xenology_13" }	
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -476,10 +487,11 @@ tech_xenology_15 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { xenology }
+	prerequisites = { "tech_xenology_14" }	
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -494,10 +506,11 @@ tech_xenology_16 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { xenology }
+	prerequisites = { "tech_xenology_15" }	
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -512,10 +525,11 @@ tech_xenology_17 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { xenology }
+	prerequisites = { "tech_xenology_16" }	
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -530,10 +544,11 @@ tech_xenology_18 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { xenology }
+	prerequisites = { "tech_xenology_17" }	
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -548,10 +563,11 @@ tech_xenology_19 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { xenology }
+	prerequisites = { "tech_xenology_18" }	
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -566,10 +582,11 @@ tech_xenology_20 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { xenology }
+	prerequisites = { "tech_xenology_19" }	
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {

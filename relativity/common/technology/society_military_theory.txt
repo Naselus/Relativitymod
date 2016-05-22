@@ -907,10 +907,9 @@ tech_military_theory_13 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { military_theory }
+	prerequisites = { "tech_virtual_combat_arena" }
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -926,9 +925,7 @@ tech_military_theory_14 = {
 	tier = 2
 	category = { military_theory }
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
+	prerequisites = { "tech_military_theory_14" }
 	
 	ai_weight = {
 		modifier = {
@@ -943,10 +940,9 @@ tech_military_theory_15 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { military_theory }
+	prerequisites = { "tech_military_theory_14" }
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -961,10 +957,9 @@ tech_military_theory_16 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { military_theory }
+	prerequisites = { "tech_military_theory_14" }
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -979,10 +974,9 @@ tech_military_theory_17 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { military_theory }
+	prerequisites = { "tech_military_theory_14" }	
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -997,11 +991,9 @@ tech_military_theory_18 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { military_theory }
+	prerequisites = { "tech_military_theory_14" }	
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
-	
+
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -1015,10 +1007,9 @@ tech_military_theory_19 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { military_theory }
+	prerequisites = { "tech_military_theory_14" }
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -1033,10 +1024,9 @@ tech_military_theory_20 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { military_theory }
+	prerequisites = { "tech_military_theory_14" }	
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {

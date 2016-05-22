@@ -245,11 +245,10 @@ tech_influence_3 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { influence }
+	prerequisites = { "tech_manifest_destiny" }
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
-	
+
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -263,10 +262,9 @@ tech_influence_4 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { influence }
+	prerequisites = { "tech_influence_3" }
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -281,10 +279,10 @@ tech_influence_5 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { influence }
+	prerequisites = { "tech_influence_4" }
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -299,10 +297,11 @@ tech_influence_6 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { influence }
+	prerequisites = { "tech_influence_5" }	
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -317,10 +316,9 @@ tech_influence_7 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { influence }
+	prerequisites = { "tech_influence_6" }	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -335,10 +333,10 @@ tech_influence_8 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { influence }
+	prerequisites = { "tech_influence_7" }		
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -353,11 +351,10 @@ tech_influence_9 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { influence }
+	prerequisites = { "tech_influence_8" }		
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
-	
+
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -371,10 +368,10 @@ tech_influence_10 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { influence }
+	prerequisites = { "tech_influence_9" }	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -389,11 +386,10 @@ tech_influence_11 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { influence }
+	prerequisites = { "tech_influence_10" }	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
-	
+
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -407,11 +403,10 @@ tech_influence_12 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { influence }
+	prerequisites = { "tech_influence_11" }	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
-	
+
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -425,11 +420,10 @@ tech_influence_13 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { influence }
+	prerequisites = { "tech_influence_12" }	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
-	
+		
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -443,11 +437,10 @@ tech_influence_14 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { influence }
+	prerequisites = { "tech_influence_13" }		
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
-	
+
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -461,10 +454,10 @@ tech_influence_15 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { influence }
+	prerequisites = { "tech_influence_14" }			
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -479,10 +472,10 @@ tech_influence_16 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { influence }
+	prerequisites = { "tech_influence_15" }		
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -497,10 +490,10 @@ tech_influence_17 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { influence }
+	prerequisites = { "tech_influence_16" }		
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -515,10 +508,10 @@ tech_influence_18 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { influence }
+	prerequisites = { "tech_influence_17" }		
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -533,10 +526,10 @@ tech_influence_19 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { influence }
+	prerequisites = { "tech_influence_18" }		
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -551,10 +544,9 @@ tech_influence_20 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { influence }
+	prerequisites = { "tech_influence_19" }		
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
