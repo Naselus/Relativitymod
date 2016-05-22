@@ -225,7 +225,7 @@ tech_mining_network_5 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { mining }
-	prerequisites = { "tech_mineral_network_4"}	
+	prerequisites = { "tech_mining_network_4"}	
 	weight = @tier2weight1
 
 	modifier = {

@@ -259,7 +259,7 @@ tech_banking_5 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { banking }
-	prerequisites = { "tech_banking_4"}
+	prerequisites = { "tech_banking4"}
 	weight = @tier2weight1
 	
 	

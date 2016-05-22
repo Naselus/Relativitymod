@@ -362,7 +362,7 @@ tech_thrusters_12 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { thrusters }
-	prerequisites = { "tech_thrusters_11}	
+	prerequisites = { "tech_thrusters_11"}	
 	weight = @tier2weight1
 	
 	
