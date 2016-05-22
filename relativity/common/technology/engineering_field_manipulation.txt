@@ -318,7 +318,7 @@ tech_shield_recharge_aura_1 = {
 	category = { field_manipulation }
 	ai_update_type = military	
 	is_rare = yes
-	prerequisites = { "tech_shields_3" }
+	prerequisites = { "tech_shields_5" }
 	weight = @tier2weight4
 	
 	weight_modifier = {
@@ -368,7 +368,7 @@ tech_planetary_shield_generator = {
 	category = { field_manipulation }
 	ai_update_type = military	
 	is_rare = yes
-	prerequisites = { "tech_shields_3" }
+	prerequisites = { "tech_shields_4" }
 	weight = @tier2weight4
 	
 	weight_modifier = {
@@ -383,10 +383,9 @@ tech_field_manipulation_9 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { field_manipulation }
+	prerequisites = { "tech_shield_recharge_aura_1"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -401,10 +400,9 @@ tech_field_manipulation_10 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { field_manipulation }
+	prerequisites = { "tech_field_manipulation_9"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -419,10 +417,9 @@ tech_field_manipulation_11 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { field_manipulation }
+	prerequisites = { "tech_field_manipulation_10"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -437,10 +434,9 @@ tech_field_manipulation_12 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { field_manipulation }
+	prerequisites = { "tech_field_manipulation_11"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -455,10 +451,9 @@ tech_field_manipulation_13 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { field_manipulation }
+	prerequisites = { "tech_field_manipulation_12"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -473,10 +468,9 @@ tech_field_manipulation_14 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { field_manipulation }
+	prerequisites = { "tech_field_manipulation_13"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -491,10 +485,9 @@ tech_field_manipulation_15 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { field_manipulation }
+	prerequisites = { "tech_field_manipulation_14"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -509,10 +502,9 @@ tech_field_manipulation_16 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { field_manipulation }
+	prerequisites = { "tech_field_manipulation_15"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -527,10 +519,9 @@ tech_field_manipulation_17 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { field_manipulation }
+	prerequisites = { "tech_field_manipulation_16"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -545,10 +536,9 @@ tech_field_manipulation_18 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { field_manipulation }
+	prerequisites = { "tech_field_manipulation_17"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -563,10 +553,9 @@ tech_field_manipulation_19 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { field_manipulation }
+	prerequisites = { "tech_field_manipulation_18"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -581,10 +570,9 @@ tech_field_manipulation_20 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { field_manipulation }
+	prerequisites = { "tech_field_manipulation_19"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {

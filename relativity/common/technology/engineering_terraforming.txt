@@ -816,10 +816,9 @@ tech_terraforming_12 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { terraforming }
+	prerequisites = { "tech_atmospheric_manipulation"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -834,10 +833,9 @@ tech_terraforming_13 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { terraforming }
+	prerequisites = { "tech_terraforming_12"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -852,10 +850,9 @@ tech_terraforming_14 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { terraforming }
+	prerequisites = { "tech_terraforming_13"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -870,10 +867,9 @@ tech_terraforming_15 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { terraforming }
+	prerequisites = { "tech_terraforming_14"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -888,10 +884,9 @@ tech_terraforming_16 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { terraforming }
+	prerequisites = { "tech_terraforming_15"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -906,10 +901,9 @@ tech_terraforming_17 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { terraforming }
+	prerequisites = { "tech_terraforming_16"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -924,10 +918,9 @@ tech_terraforming_18= {
 	cost = @tier2cost1
 	tier = 2
 	category = { terraforming }
+	prerequisites = { "tech_terraforming_17"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -942,10 +935,9 @@ tech_terraforming_19 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { terraforming }
+	prerequisites = { "tech_terraforming_18"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -960,10 +952,9 @@ tech_terraforming_20 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { terraforming }
+	prerequisites = { "tech_terraforming_19"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
