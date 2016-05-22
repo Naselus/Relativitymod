@@ -397,10 +397,9 @@ tech_psionics_6 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { psionics }
+	prerequisites = { "tech_precognition_interface" }
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -415,11 +414,9 @@ tech_psionics_7 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { psionics }
+	prerequisites = { "tech_psionics_6" }
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
-	
+
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -433,11 +430,9 @@ tech_psionics_8 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { psionics }
+	prerequisites = { "tech_psionics_7" }
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
-	
+
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -451,11 +446,9 @@ tech_psionics_9 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { psionics }
+	prerequisites = { "tech_psionics_8" }
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
-	
+
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -469,11 +462,9 @@ tech_psionics_10 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { psionics }
+	prerequisites = { "tech_psionics_9" }
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
-	
+
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -487,11 +478,10 @@ tech_psionics_11 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { psionics }
+	prerequisites = { "tech_psionics_10" }
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
-	
+
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -505,11 +495,10 @@ tech_psionics_12 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { psionics }
+	prerequisites = { "tech_psionics_11" }
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
-	
+
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -523,11 +512,9 @@ tech_psionics_13 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { psionics }
+	prerequisites = { "tech_psionics_12" }
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
-	
+
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -541,11 +528,10 @@ tech_psionics_14 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { psionics }
+	prerequisites = { "tech_psionics_13" }
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
-	
+
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -559,11 +545,10 @@ tech_psionics_15 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { psionics }
+	prerequisites = { "tech_psionics_14" }
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
-	
+
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -577,11 +562,10 @@ tech_psionics_16 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { psionics }
+	prerequisites = { "tech_psionics_15" }
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
-	
+
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -595,11 +579,9 @@ tech_psionics_17 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { psionics }
+	prerequisites = { "tech_psionics_16" }
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
-	
+
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -613,11 +595,10 @@ tech_psionics_18 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { psionics }
+	prerequisites = { "tech_psionics_17" }
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
-	
+
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -631,10 +612,8 @@ tech_psionics_19 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { psionics }
+	prerequisites = { "tech_psionics_18" }
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -649,10 +628,9 @@ tech_psionics_20 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { psionics }
+	prerequisites = { "tech_psionics_19" }
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
