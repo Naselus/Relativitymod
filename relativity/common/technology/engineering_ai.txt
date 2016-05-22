@@ -867,3 +867,57 @@ tech_synchronized_defences_3 = {
 		}
 	}	
 }
+
+tech_ai_18 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { ai }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_ai_19 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { ai }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_ai_20 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { ai }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}

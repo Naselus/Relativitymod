@@ -530,3 +530,147 @@ tech_aura_quantum_destabilizer = {
 		}
 	}
 }
+
+tech_xenow_13 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { xeno_weaponry }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_xenow_14 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { xeno_weaponry }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_xenow_15 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { xeno_weaponry }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_xenow_16 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { xeno_weaponry }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_xenow_17 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { xeno_weaponry }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_xenow_18 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { xeno_weaponry }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_xenow_19 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { xeno_weaponry }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_xenow_20 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { xeno_weaponry }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}

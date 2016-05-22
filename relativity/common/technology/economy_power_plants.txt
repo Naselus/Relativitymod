@@ -249,3 +249,273 @@ tech_power_plant_5 = {
 		}
 	}
 }
+
+tech_power_plant_6 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { power_plants }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_power_plant_7 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { power_plants }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_power_plant_8 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { power_plants }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_power_plant_9 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { power_plants }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_power_plant_10 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { power_plants }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_power_plant_11 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { power_plants }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_power_plant_12 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { power_plants }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_power_plant_13 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { power_plants }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_power_plant_14 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { power_plants }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_power_plant_15 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { power_plants }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_power_plant_16 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { power_plants }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_power_plant_17 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { power_plants }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_power_plant_18 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { power_plants }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_power_plant_19 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { power_plants }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_power_plant_20 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { power_plants }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}

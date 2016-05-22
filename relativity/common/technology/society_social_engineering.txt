@@ -468,3 +468,273 @@ tech_purity_campaigns = {
 		}
 	}
 }
+
+tech_social_engineering_6 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { social_engineering }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_social_engineering_7 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { social_engineering }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_social_engineering_8 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { social_engineering }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_social_engineering_9 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { social_engineering }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_social_engineering_10 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { social_engineering }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_social_engineering_11 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { social_engineering }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_social_engineering_12 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { social_engineering }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_social_engineering_13 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { social_engineering }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_social_engineering_14 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { social_engineering }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_social_engineering_15 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { social_engineering }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_social_engineering_16 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { social_engineering }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_social_engineering_17 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { social_engineering }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_social_engineering_18 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { social_engineering }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_social_engineering_19 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { social_engineering }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_social_engineering_20 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { social_engineering }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}

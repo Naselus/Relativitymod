@@ -249,3 +249,309 @@ tech_engineering_lab_3 = {
 		}
 	}
 }
+
+tech_engineering_lab_4 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { engineering_labs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_engineering_lab_5 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { engineering_labs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_engineering_lab_6= {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { engineering_labs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_engineering_lab_7 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { engineering_labs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_engineering_lab_8 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { engineering_labs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_engineering_lab_9 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { engineering_labs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_engineering_lab_10 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { engineering_labs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_engineering_lab_11 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { engineering_labs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_engineering_lab_12 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { engineering_labs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_engineering_lab_13 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { engineering_labs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_engineering_lab_14 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { engineering_labs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_engineering_lab_15 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { engineering_labs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_engineering_lab_16 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { engineering_labs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_engineering_lab_17 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { engineering_labs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_engineering_lab_18 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { engineering_labs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_engineering_lab_19 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { engineering_labs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_engineering_lab_20 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { engineering_labs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}

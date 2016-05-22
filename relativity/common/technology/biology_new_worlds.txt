@@ -995,3 +995,93 @@ tech_frontier_traditions = {
 		}
 	}
 }
+
+tech_colonization_16 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { new_worlds }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_colonization_17 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { new_worlds }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_colonization_18 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { new_worlds }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_colonization_19 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { new_worlds }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_colonization_20 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { new_worlds }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}

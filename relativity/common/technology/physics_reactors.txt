@@ -253,3 +253,273 @@ tech_zero_point_power = {
 		}
 	}
 }
+
+tech_reactors_6 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { reactors }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_reactors_7 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { reactors }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_reactors_8 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { reactors }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_reactors_9 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { reactors }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_reactors_10 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { reactors }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_reactors_11 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { reactors }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_reactors_12 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { reactors }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_reactors_13 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { reactors }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_reactors_14 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { reactors }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_reactors_15 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { reactors }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_reactors_16 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { reactors }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_reactors_17 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { reactors }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_reactors_18 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { reactors }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_reactors_19 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { reactors }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_reactors_20 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { reactors }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
