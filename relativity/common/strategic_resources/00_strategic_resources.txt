@@ -19,7 +19,6 @@ minerals = {
 	tradable = yes
 	AI_category = minerals
 	max = 5000
-	num_ai_wanted = 1000
 }
 
 food = {
@@ -197,30 +196,21 @@ sr_dark_matter = {
 sr_steel = {
 	AI_category = minerals
 	prerequisites = { "tech_basic_industry" }
-	accumulative = yes
 	tradable = yes
-	max = 1000
-	num_ai_wanted = 5
 	is_rare = yes
 }
 
 sr_steel2 = {
 	AI_category = minerals
 	prerequisites = { "tech_mining_network_3" }
-	accumulative = yes
 	tradable = yes
-	max = 1000
-	num_ai_wanted = 5
 	is_rare = yes
 }
 
 sr_steel3 = {
 	AI_category = minerals
 	prerequisites = { "tech_mining_network_6" }
-	accumulative = yes
 	tradable = yes
-	max = 1000
-	num_ai_wanted = 5
 	is_rare = yes
 }
 
@@ -229,8 +219,6 @@ sr_steel3 = {
 sr_plasma = {
 	AI_category = minerals
 	tradable = yes
-	max = 1000
-	num_ai_wanted = 5
 	is_rare = yes
 }
 
@@ -238,15 +226,12 @@ sr_plasma2 = {
 	AI_category = minerals
 	tradable = yes
 	max = 1000
-	num_ai_wanted = 5
 	is_rare = yes
 }
 
 sr_plasma3 = {
 	AI_category = minerals
 	tradable = yes
-	max = 1000
-	num_ai_wanted = 5
 	is_rare = yes
 }
 
@@ -255,15 +240,11 @@ sr_plasma3 = {
 sr_nutrients = {
 	AI_category = minerals
 	tradable = yes
-	max = 1000
-	num_ai_wanted = 5
 	is_rare = yes
 }
 
 sr_luxurynutrients = {
 	AI_category = minerals
 	tradable = yes
-	max = 1000
-	num_ai_wanted = 1
 	is_rare = yes
 }

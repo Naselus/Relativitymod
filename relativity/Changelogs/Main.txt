@@ -82,4 +82,17 @@ Version 102.0.1
 * Leaders now gain traits from leveling multiple times
 * First pass of the stations rework
 * Threat tweaked a bit so the AI is less psycotic
+
+
+103.0.4
+
+* Fixed localizations
+* removed requirement for 5 techs from previous tier
+* Reduced ship power exponent to 0.55
+* Evasion bonuses heavily reduced.
+* Character chance of getting a new trait on level increased to 99%
+* Steel etc no longer accumulative
+* AI more keen on forntier outposts
+* AI no longer saves influence
+* AI spends a lot more inf on edicts
 * 

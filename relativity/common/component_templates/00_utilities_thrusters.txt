@@ -15,7 +15,7 @@ utility_component_template = {
 	cost = 5
 	
 	modifier = {
-		ship_evasion_add = 10
+		ship_evasion_add = 3
 	}
 		
 	prerequisites = { "tech_thrusters_1" }
@@ -35,7 +35,7 @@ utility_component_template = {
 	cost = 10
 	modifier = {
 		ship_speed_mult = 0.1
-		ship_evasion_add = 20
+		ship_evasion_add = 6
 	}
 
 	prerequisites = { "tech_thrusters_2" }
@@ -55,7 +55,7 @@ utility_component_template = {
 	cost = 15
 	modifier = {
 		ship_speed_mult = 0.2
-		ship_evasion_add = 30
+		ship_evasion_add = 9
 	}
 
 	prerequisites = { "tech_thrusters_3" }
@@ -75,7 +75,7 @@ utility_component_template = {
 	cost = 20
 	modifier = {
 		ship_speed_mult = 0.3
-		ship_evasion_add = 40
+		ship_evasion_add = 12
 	}
 
 	prerequisites = { "tech_thrusters_4" }
