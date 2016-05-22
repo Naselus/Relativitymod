@@ -162,10 +162,9 @@ tech_xeno_tech_3 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { xeno_tech }
+	prerequisites = { "tech_crystal_armor_2"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -180,10 +179,9 @@ tech_xeno_tech_4 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { xeno_tech }
+	prerequisites = { "tech_xeno_tech_3"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -198,10 +196,9 @@ tech_xeno_tech_5 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { xeno_tech }
+	prerequisites = { "tech_xeno_tech_4"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -216,10 +213,9 @@ tech_xeno_tech_6 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { xeno_tech }
+	prerequisites = { "tech_xeno_tech_5"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -234,10 +230,9 @@ tech_xeno_tech_7 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { xeno_tech }
+	prerequisites = { "tech_xeno_tech_6"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -252,10 +247,9 @@ tech_xeno_tech_8 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { xeno_tech }
+	prerequisites = { "tech_xeno_tech_7"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -270,10 +264,9 @@ tech_xeno_tech_9 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { xeno_tech }
+	prerequisites = { "tech_xeno_tech_8"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -288,10 +281,9 @@ tech_xeno_tech_10 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { xeno_tech }
+	prerequisites = { "tech_xeno_tech_9"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -306,10 +298,9 @@ tech_xeno_tech_11 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { xeno_tech }
+	prerequisites = { "tech_xeno_tech_10"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -324,10 +315,9 @@ tech_xeno_tech_12 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { xeno_tech }
+	prerequisites = { "tech_xeno_tech_11"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -342,10 +332,9 @@ tech_xeno_tech_13 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { xeno_tech }
+	prerequisites = { "tech_xeno_tech_12"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -360,10 +349,9 @@ tech_xeno_tech_14 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { xeno_tech }
+	prerequisites = { "tech_xeno_tech_13"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -378,10 +366,9 @@ tech_xeno_tech_15 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { xeno_tech }
+	prerequisites = { "tech_xeno_tech_14"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -396,10 +383,9 @@ tech_xeno_tech_16 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { xeno_tech }
+	prerequisites = { "tech_xeno_tech_15"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -414,10 +400,9 @@ tech_xeno_tech_17 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { xeno_tech }
+	prerequisites = { "tech_xeno_tech_16"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -432,10 +417,9 @@ tech_xeno_tech_18 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { xeno_tech }
+	prerequisites = { "tech_xeno_tech_17"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -450,10 +434,9 @@ tech_xeno_tech_19 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { xeno_tech }
+	prerequisites = { "tech_xeno_tech_18"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {

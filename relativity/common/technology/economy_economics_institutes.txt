@@ -105,8 +105,6 @@ tech_economics_institutes_1 = {
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
-	
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -120,10 +118,9 @@ tech_economics_institutes_2 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { economics_institutes }
+	prerequisites = { "tech_economics_institutes_1"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -138,10 +135,9 @@ tech_economics_institutes_3 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { economics_institutes }
+	prerequisites = { "tech_economics_institutes_2"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -156,10 +152,9 @@ tech_economics_institutes_4 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { economics_institutes }
+	prerequisites = { "tech_economics_institutes_3"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -174,10 +169,9 @@ tech_economics_institutes_5 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { economics_institutes }
+	prerequisites = { "tech_economics_institutes_4"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -192,10 +186,9 @@ tech_economics_institutes_6 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { economics_institutes }
+	prerequisites = { "tech_economics_institutes_5"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -210,10 +203,9 @@ tech_economics_institutes_7 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { economics_institutes }
+	prerequisites = { "tech_economics_institutes_6"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -228,10 +220,9 @@ tech_economics_institutes_8 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { economics_institutes }
+	prerequisites = { "tech_economics_institutes_7"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -246,10 +237,9 @@ tech_economics_institutes_9 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { economics_institutes }
+	prerequisites = { "tech_economics_institutes_8"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -264,10 +254,9 @@ tech_economics_institutes_10 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { economics_institutes }
+	prerequisites = { "tech_economics_institutes_9"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -282,10 +271,9 @@ tech_economics_institutes_11 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { economics_institutes }
+	prerequisites = { "tech_economics_institutes_10"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -300,10 +288,9 @@ tech_economics_institutes_12 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { economics_institutes }
+	prerequisites = { "tech_economics_institutes_11"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -318,10 +305,9 @@ tech_economics_institutes_13 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { economics_institutes }
+	prerequisites = { "tech_economics_institutes_12"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -336,10 +322,9 @@ tech_economics_institutes_14 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { economics_institutes }
+	prerequisites = { "tech_economics_institutes_13"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -354,10 +339,9 @@ tech_economics_institutes_15 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { economics_institutes }
+	prerequisites = { "tech_economics_institutes_14"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -372,10 +356,9 @@ tech_economics_institutes_16 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { economics_institutes }
+	prerequisites = { "tech_economics_institutes_15"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -390,10 +373,9 @@ tech_economics_institutes_17 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { economics_institutes }
+	prerequisites = { "tech_economics_institutes_16"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -408,10 +390,9 @@ tech_economics_institutes_18 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { economics_institutes }
+	prerequisites = { "tech_economics_institutes_17"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -426,10 +407,9 @@ tech_economics_institutes_19 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { economics_institutes }
+	prerequisites = { "tech_economics_institutes_18"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -444,10 +424,9 @@ tech_economics_institutes_20 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { economics_institutes }
+	prerequisites = { "tech_economics_institutes_19"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {

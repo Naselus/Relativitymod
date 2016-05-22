@@ -105,8 +105,6 @@ tech_financial_regulation_1 = {
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
-	
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -120,10 +118,9 @@ tech_financial_regulation_2 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { financial_regulation }
+	prerequisites = { "tech_financial_regulation_1"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -138,10 +135,9 @@ tech_financial_regulation_3 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { financial_regulation }
+	prerequisites = { "tech_financial_regulation_2"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -156,10 +152,9 @@ tech_financial_regulation_4 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { financial_regulation }
+	prerequisites = { "tech_financial_regulation_3"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -174,10 +169,9 @@ tech_financial_regulation_5 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { financial_regulation }
+	prerequisites = { "tech_financial_regulation_4"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -192,10 +186,9 @@ tech_financial_regulation_6 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { financial_regulation }
+	prerequisites = { "tech_financial_regulation_5"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -210,10 +203,9 @@ tech_financial_regulation_7 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { financial_regulation }
+	prerequisites = { "tech_financial_regulation_6"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -228,10 +220,9 @@ tech_financial_regulation_8 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { financial_regulation }
+	prerequisites = { "tech_financial_regulation_7"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -246,10 +237,9 @@ tech_financial_regulation_9 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { financial_regulation }
+	prerequisites = { "tech_financial_regulation_8"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -264,10 +254,9 @@ tech_financial_regulation_10 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { financial_regulation }
+	prerequisites = { "tech_financial_regulation_9"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -282,10 +271,9 @@ tech_financial_regulation_11 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { financial_regulation }
+	prerequisites = { "tech_financial_regulation_10"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -300,10 +288,9 @@ tech_financial_regulation_12 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { financial_regulation }
+	prerequisites = { "tech_financial_regulation_11"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -318,10 +305,9 @@ tech_financial_regulation_13 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { financial_regulation }
+	prerequisites = { "tech_financial_regulation_12"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -336,10 +322,9 @@ tech_financial_regulation_14 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { financial_regulation }
+	prerequisites = { "tech_financial_regulation_13"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -354,10 +339,9 @@ tech_financial_regulation_15 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { financial_regulation }
+	prerequisites = { "tech_financial_regulation_14"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -372,10 +356,9 @@ tech_financial_regulation_16 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { financial_regulation }
+	prerequisites = { "tech_financial_regulation_15"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -390,10 +373,9 @@ tech_financial_regulation_17 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { financial_regulation }
+	prerequisites = { "tech_financial_regulation_16"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -408,10 +390,9 @@ tech_financial_regulation_18 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { financial_regulation }
+	prerequisites = { "tech_financial_regulation_17"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -426,10 +407,9 @@ tech_financial_regulation_19 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { financial_regulation }
+	prerequisites = { "tech_financial_regulation_18"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -444,10 +424,9 @@ tech_financial_regulation_20 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { financial_regulation }
+	prerequisites = { "tech_financial_regulation_19"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
