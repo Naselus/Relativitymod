@@ -197,7 +197,7 @@ NDefines = {
 		BALLISTIC_PROJECTILE_MISSED_LIFETIME = 2.0, -- missed ballistic projectiles will live for (at least) this long before being removed
 		PROJECTILE_ENTITY_STOP_STATE = "stop", -- state that gets played on missile-, projectile- and on_hit entities when its time to stop
 
-		SHIELD_EFFECT_TIME_SCALE = 1.5, -- how fast the shield effects are animated
+		SHIELD_EFFECT_TIME_SCALE = 0.5, -- how fast the shield effects are animated
 		SHIELD_EFFECT_LOOP_INTERVAL = 0.5, -- when to loop animation. value is in percent
 		SHIELD_DISTANCE_FROM_SHIP = { 2.0, 0.0, 5.0 }, -- how far "out" from the ships shields will extend. left-right, upd-down, front-back
 		SHIELD_DISTANCE_FROM_SHIP_MULT = { 1.15, 1.15, 1.15 }, -- how far "out" from the ships shields will extend. based on ship's size. left-right, upd-down, front-back
@@ -729,7 +729,7 @@ NDefines = {
 		MILITARY_POWER_HEALTH_WEIGHT		= 0.5,
 		MILITARY_POWER_DAMAGE_WEIGHT		= 0.5,
 		MILITARY_POWER_SPACEPORT_MULT 		= 1,
-		MILITARY_POWER_SCALE				= 0.25,
+		MILITARY_POWER_SCALE				= 1,
 		MILITARY_POWER_EXPONENT				= 0.55,	-- math: power = ( ( effective_health * damage_per_day ) ^ exponent ) * scale
 		MILITARY_POWER_ESTIMATED_ARMOR_PENETRATION	= 0.3,	-- use as an estimated armor penetration in formula damage_reduction *= 1 - armor_penetration.
 	},
