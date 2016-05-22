@@ -421,3 +421,201 @@ tech_collective_self = {
 		}
 	}
 }
+
+tech_statecraft_10 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { statecraft }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_statecraft_11 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { statecraft }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_statecraft_12 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { statecraft }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_statecraft_13 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { statecraft }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_statecraft_14 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { statecraft }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_statecraft_15 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { statecraft }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_statecraft_16 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { statecraft }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_statecraft_17 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { statecraft }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_statecraft_18 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { statecraft }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_statecraft_19 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { statecraft }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_statecraft_20 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { statecraft }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}

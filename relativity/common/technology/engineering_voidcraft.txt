@@ -497,3 +497,255 @@ tech_space_defense_station_improvement = {
 		}
 	}
 }
+
+tech_void_7 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { voidcraft }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_void_8 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { voidcraft }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_void_9 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { voidcraft }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_void_10 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { voidcraft }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_void_11 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { voidcraft }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_void_12 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { voidcraft }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_void_13 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { voidcraft }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_void_14 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { voidcraft }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_void_15 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { voidcraft }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_void_16 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { voidcraft }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_void_17 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { voidcraft }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_void_18 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { voidcraft }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_void_19 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { voidcraft }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_void_20 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { voidcraft }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}

@@ -254,3 +254,291 @@ tech_galactic_markets = {
 		}
 	}
 }
+
+tech_banking_5 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { banking }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_banking_6 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { banking }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_banking_7 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { banking }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_banking_8 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { banking }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_banking_9 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { banking }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_banking_10 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { banking }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_banking_11 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { banking }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_banking_12 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { banking }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_banking_13 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { banking }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_banking_14 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { banking }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_banking_15 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { banking }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_banking_16 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { banking }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_banking_17 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { banking }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_banking_18 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { banking }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_banking_19 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { banking }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_banking_20 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { banking }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}

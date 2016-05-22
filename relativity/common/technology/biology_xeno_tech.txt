@@ -156,3 +156,310 @@ tech_crystal_armor_2 = {
 		}
 	}
 }
+
+tech_xeno_tech_3 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { xeno_tech }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_xeno_tech_4 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { xeno_tech }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_xeno_tech_5 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { xeno_tech }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_xeno_tech_6 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { xeno_tech }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_xeno_tech_7 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { xeno_tech }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_xeno_tech_8 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { xeno_tech }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_xeno_tech_9 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { xeno_tech }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_xeno_tech_10 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { xeno_tech }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_xeno_tech_11 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { xeno_tech }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_xeno_tech_12 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { xeno_tech }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_xeno_tech_13 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { xeno_tech }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_xeno_tech_14 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { xeno_tech }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_xeno_tech_15 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { xeno_tech }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_xeno_tech_16 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { xeno_tech }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_xeno_tech_17 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { xeno_tech }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_xeno_tech_18 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { xeno_tech }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_xeno_tech_19 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { xeno_tech }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+

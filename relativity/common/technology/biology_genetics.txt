@@ -706,3 +706,183 @@ tech_capacity_boosters = {
 		}
 	}
 }
+
+tech_genetics_11 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { genetics }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_genetics_12 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { genetics }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_genetics_13 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { genetics }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_genetics_14 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { genetics }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_genetics_15 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { genetics }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_genetics_16 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { genetics }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_genetics_17 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { genetics }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_genetics_18 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { genetics }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_genetics_19 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { genetics }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_genetics_20 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { genetics }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}

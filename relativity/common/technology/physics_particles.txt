@@ -1204,3 +1204,57 @@ tech_energy_torpedoes_2 = {
 		}
 	}
 }
+
+tech_lasers_18 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { particles }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_lasers_19 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { particles }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_lasers_20 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { particles }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}

@@ -239,3 +239,327 @@ tech_manifest_destiny = {
 		}
 	}
 }
+
+tech_influence_3 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { influence }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_influence_4 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { influence }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_influence_5 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { influence }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_influence_6 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { influence }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_influence_7 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { influence }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_influence_8 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { influence }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_influence_9 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { influence }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_influence_10 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { influence }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_influence_11 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { influence }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_influence_12 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { influence }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_influence_13 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { influence }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_influence_14 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { influence }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_influence_15 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { influence }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_influence_16 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { influence }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_influence_17 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { influence }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_influence_18 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { influence }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_influence_19 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { influence }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_influence_20 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { influence }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}

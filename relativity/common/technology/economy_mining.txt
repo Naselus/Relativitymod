@@ -219,3 +219,291 @@ tech_mining_network_4 = {
 		}
 	}
 }
+
+tech_mining_network_5 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { mining }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_mining_6 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { mining }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_mining_7 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { mining }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_mining_8 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { mining }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_mining_9 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { mining }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_mining_10 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { mining }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_mining_11 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { mining }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_mining_12 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { mining }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_mining_13 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { mining }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_mining_14 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { mining }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_mining_15 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { mining }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_mining_16 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { mining }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_mining_17 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { mining }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_mining_18 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { mining }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_mining_19 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { mining }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_mining_20 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { mining }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}

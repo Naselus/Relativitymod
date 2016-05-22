@@ -849,3 +849,147 @@ tech_flak_batteries_2 = {
 		}
 	}
 }
+
+tech_ballistics_13 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { ballistics }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_ballistics_14 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { ballistics }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_ballistics_15 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { ballistics }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_ballistics_16 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { ballistics }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_ballistics_17 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { ballistics }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_ballistics_18 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { ballistics }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_ballistics_19 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { ballistics }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_ballistics_20 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { ballistics }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}

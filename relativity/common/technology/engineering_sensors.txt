@@ -290,3 +290,291 @@ tech_orbital_sensor_array = {
 		}
 	}
 }
+
+tech_sensors_6 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { sensors }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_sensors_7 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { sensors }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_sensors_8 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { sensors }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_sensors_9 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { sensors }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_sensors_10 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { sensors }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_sensors_11 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { sensors }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_sensors_12 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { sensors }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_sensors_13 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { sensors }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_sensors_14 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { sensors }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_sensors_15= {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { sensors }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_sensors_16 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { sensors }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_sensors_17 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { sensors }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_sensors_18 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { sensors }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_sensors_19 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { sensors }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_sensors_20 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { sensors }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_sensors_21 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { sensors }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}

@@ -356,3 +356,273 @@ tech_nutrient_replication = {
 		}
 	}
 }
+
+tech_farming_6 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { farming }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_farming_7 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { farming }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_farming_8 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { farming }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_farming_9 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { farming }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_farming_10 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { farming }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_farming_11 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { farming }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_farming_12 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { farming }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_farming_13 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { farming }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_farming_14 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { farming }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_farming_15 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { farming }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_farming_16 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { farming }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_farming_17 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { farming }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_farming_18 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { farming }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_farming_19 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { farming }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_farming_20 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { farming }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
