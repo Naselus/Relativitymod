@@ -427,10 +427,11 @@ tech_statecraft_10 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { statecraft }
+	prerequisites = { "tech_collective_self" }
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -445,10 +446,11 @@ tech_statecraft_11 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { statecraft }
+	prerequisites = { "tech_statecraft_10" }
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -463,10 +465,11 @@ tech_statecraft_12 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { statecraft }
+	prerequisites = { "tech_statecraft_11" }
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -481,10 +484,11 @@ tech_statecraft_13 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { statecraft }
+	prerequisites = { "tech_statecraft_12" }
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -499,10 +503,11 @@ tech_statecraft_14 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { statecraft }
+	prerequisites = { "tech_statecraft_13" }
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -517,10 +522,11 @@ tech_statecraft_15 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { statecraft }
+	prerequisites = { "tech_statecraft_14" }
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -535,10 +541,11 @@ tech_statecraft_16 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { statecraft }
+	prerequisites = { "tech_statecraft_15" }
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -553,10 +560,11 @@ tech_statecraft_17 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { statecraft }
+	prerequisites = { "tech_statecraft_16" }
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -571,10 +579,11 @@ tech_statecraft_18 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { statecraft }
+	prerequisites = { "tech_statecraft_17" }
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -589,10 +598,11 @@ tech_statecraft_19 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { statecraft }
+	prerequisites = { "tech_statecraft_18" }
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -607,10 +617,11 @@ tech_statecraft_20 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { statecraft }
+	prerequisites = { "tech_statecraft_19" }
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {

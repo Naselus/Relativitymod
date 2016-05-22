@@ -105,7 +105,7 @@ tech_edicts_1 = {
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -120,10 +120,11 @@ tech_edicts_2 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { edicts }
+	prerequisites = { "tech_edicts_1" }		
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -138,10 +139,11 @@ tech_edicts_3 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { edicts }
+	prerequisites = { "tech_edicts_2" }			
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -156,10 +158,11 @@ tech_edicts_4 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { edicts }
+	prerequisites = { "tech_edicts_3" }			
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -174,10 +177,11 @@ tech_edicts_5 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { edicts }
+	prerequisites = { "tech_edicts_4" }			
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -192,10 +196,11 @@ tech_edicts_6 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { edicts }
+	prerequisites = { "tech_edicts_5" }			
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -210,10 +215,11 @@ tech_edicts_7 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { edicts }
+	prerequisites = { "tech_edicts_6" }			
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -228,10 +234,11 @@ tech_edicts_8 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { edicts }
+	prerequisites = { "tech_edicts_7" }			
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -246,10 +253,11 @@ tech_edicts_9 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { edicts }
+	prerequisites = { "tech_edicts_8" }			
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -264,10 +272,11 @@ tech_edicts_10 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { edicts }
+	prerequisites = { "tech_edicts_9" }			
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -282,10 +291,11 @@ tech_edicts_11 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { edicts }
+	prerequisites = { "tech_edicts_10" }			
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -300,10 +310,11 @@ tech_edicts_12 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { edicts }
+	prerequisites = { "tech_edicts_11" }			
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -318,10 +329,11 @@ tech_edicts_13 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { edicts }
+	prerequisites = { "tech_edicts_12" }		
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -336,10 +348,11 @@ tech_edicts_14 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { edicts }
+	prerequisites = { "tech_edicts_13" }			
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -354,10 +367,11 @@ tech_edicts_15 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { edicts }
+	prerequisites = { "tech_edicts_14" }			
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -372,10 +386,11 @@ tech_edicts_16 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { edicts }
+	prerequisites = { "tech_edicts_15" }			
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -390,10 +405,11 @@ tech_edicts_17 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { edicts }
+	prerequisites = { "tech_edicts_16" }			
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -408,10 +424,11 @@ tech_edicts_18 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { edicts }
+	prerequisites = { "tech_edicts_17" }			
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -426,10 +443,11 @@ tech_edicts_19 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { edicts }
+	prerequisites = { "tech_edicts_18" }			
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -444,10 +462,11 @@ tech_edicts_20 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { edicts }
+	prerequisites = { "tech_edicts_19" }			
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
