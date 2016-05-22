@@ -1210,10 +1210,9 @@ tech_lasers_18 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { particles }
+	prerequisites = { "tech_energy_torpedoes_2"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -1228,10 +1227,9 @@ tech_lasers_19 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { particles }
+	prerequisites = { "tech_lasers_18"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -1245,11 +1243,9 @@ tech_lasers_20 = {
 	area = physics
 	cost = @tier2cost1
 	tier = 2
-	category = { particles }
+	prerequisites = { "tech_ftl_19"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {

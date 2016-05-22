@@ -873,10 +873,9 @@ tech_ai_18 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { ai }
+	prerequisites = { "tech_ai_17"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -891,10 +890,9 @@ tech_ai_19 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { ai }
+	prerequisites = { "tech_ai_18"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -909,10 +907,9 @@ tech_ai_20 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { ai }
+	prerequisites = { "tech_ai_19"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {

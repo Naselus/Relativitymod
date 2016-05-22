@@ -262,7 +262,7 @@ tech_global_research_initiative = {
 	tier = 2
 	cost = @tier2cost1
 	category = { physics_labs }
-	prerequisites = { "tech_physics_lab_1" "tech_colonial_centralization" }
+	prerequisites = { "tech_physics_lab_3" "tech_colonial_centralization" }
 	weight = @tier2weight1
 	is_rare = yes
 	
@@ -324,10 +324,9 @@ tech_physics_lab_5 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { physics_labs }
+	prerequisites = { "tech_global_research_initiative"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -342,10 +341,9 @@ tech_physics_lab_6 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { physics_labs }
+	prerequisites = { "tech_physics_lab_5"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -360,10 +358,9 @@ tech_physics_lab_7 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { physics_labs }
+	prerequisites = { "tech_physics_lab_6"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -378,10 +375,9 @@ tech_physics_lab_8 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { physics_labs }
+	prerequisites = { "tech_physics_lab_7"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -396,10 +392,9 @@ tech_physics_lab_9 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { physics_labs }
+	prerequisites = { "tech_physics_lab_8"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -414,10 +409,9 @@ tech_physics_lab_10 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { physics_labs }
+	prerequisites = { "tech_physics_lab_9"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -432,10 +426,9 @@ tech_physics_lab_11 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { physics_labs }
+	prerequisites = { "tech_physics_lab_10"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -450,10 +443,9 @@ tech_physics_lab_12 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { physics_labs }
+	prerequisites = { "tech_physics_lab_11"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -468,10 +460,9 @@ tech_physics_lab_13 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { physics_labs }
+	prerequisites = { "tech_physics_lab_12"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -486,10 +477,9 @@ tech_physics_lab_14 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { physics_labs }
+	prerequisites = { "tech_physics_lab_13"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -504,10 +494,9 @@ tech_physics_lab_15 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { physics_labs }
+	prerequisites = { "tech_physics_lab_14"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -522,10 +511,9 @@ tech_physics_lab_16 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { physics_labs }
+	prerequisites = { "tech_physics_lab_15"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -540,10 +528,9 @@ tech_physics_lab_17 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { physics_labs }
+	prerequisites = { "tech_physics_lab_16"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -558,10 +545,9 @@ tech_physics_lab_18 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { physics_labs }
+	prerequisites = { "tech_physics_lab_17"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -576,10 +562,9 @@ tech_physics_lab_19 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { physics_labs }
+	prerequisites = { "tech_physics_lab_18"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -594,10 +579,9 @@ tech_physics_lab_20 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { physics_labs }
+	prerequisites = { "tech_physics_lab_19"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {

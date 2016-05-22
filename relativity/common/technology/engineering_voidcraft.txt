@@ -498,105 +498,14 @@ tech_space_defense_station_improvement = {
 	}
 }
 
-tech_void_7 = {
-	area = engineering
-	cost = @tier2cost1
-	tier = 2
-	category = { voidcraft }
-	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
-	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
-}
-
-tech_void_8 = {
-	area = engineering
-	cost = @tier2cost1
-	tier = 2
-	category = { voidcraft }
-	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
-	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
-}
-
-tech_void_9 = {
-	area = engineering
-	cost = @tier2cost1
-	tier = 2
-	category = { voidcraft }
-	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
-	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
-}
-
-tech_void_10 = {
-	area = engineering
-	cost = @tier2cost1
-	tier = 2
-	category = { voidcraft }
-	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
-	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
-}
-
-tech_void_11 = {
-	area = engineering
-	cost = @tier2cost1
-	tier = 2
-	category = { voidcraft }
-	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
-	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
-}
-
 tech_void_12 = {
 	area = engineering
 	cost = @tier2cost1
 	tier = 2
 	category = { voidcraft }
+	prerequisites = { "tech_space_defense_station_improvement"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -611,10 +520,9 @@ tech_void_13 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { voidcraft }
+	prerequisites = { "tech_void_12"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -629,10 +537,9 @@ tech_void_14 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { voidcraft }
+	prerequisites = { "tech_void_13"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -647,10 +554,9 @@ tech_void_15 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { voidcraft }
+	prerequisites = { "tech_void_14"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -665,10 +571,9 @@ tech_void_16 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { voidcraft }
+	prerequisites = { "tech_void_15"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -683,10 +588,9 @@ tech_void_17 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { voidcraft }
+	prerequisites = { "tech_void_16"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -701,10 +605,9 @@ tech_void_18 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { voidcraft }
+	prerequisites = { "tech_void_17"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -719,10 +622,9 @@ tech_void_19 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { voidcraft }
+	prerequisites = { "tech_void_18"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -737,10 +639,9 @@ tech_void_20 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { voidcraft }
+	prerequisites = { "tech_void_19"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {

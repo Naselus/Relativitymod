@@ -255,10 +255,9 @@ tech_engineering_lab_4 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { engineering_labs }
+	prerequisites = { "tech_engineering_lab_3"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -273,10 +272,9 @@ tech_engineering_lab_5 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { engineering_labs }
+	prerequisites = { "tech_engineering_lab_4"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -291,10 +289,9 @@ tech_engineering_lab_6= {
 	cost = @tier2cost1
 	tier = 2
 	category = { engineering_labs }
+	prerequisites = { "tech_engineering_lab_5"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -309,10 +306,9 @@ tech_engineering_lab_7 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { engineering_labs }
+	prerequisites = { "tech_engineering_lab_6"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -327,10 +323,9 @@ tech_engineering_lab_8 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { engineering_labs }
+	prerequisites = { "tech_engineering_lab_7"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -345,10 +340,9 @@ tech_engineering_lab_9 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { engineering_labs }
+	prerequisites = { "tech_engineering_lab_8"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -363,10 +357,9 @@ tech_engineering_lab_10 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { engineering_labs }
+	prerequisites = { "tech_engineering_lab_9"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -381,10 +374,9 @@ tech_engineering_lab_11 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { engineering_labs }
+	prerequisites = { "tech_engineering_lab_10"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -399,10 +391,9 @@ tech_engineering_lab_12 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { engineering_labs }
+	prerequisites = { "tech_engineering_lab_11"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -417,10 +408,9 @@ tech_engineering_lab_13 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { engineering_labs }
+	prerequisites = { "tech_engineering_lab_12"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -435,10 +425,9 @@ tech_engineering_lab_14 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { engineering_labs }
+	prerequisites = { "tech_engineering_lab_13"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -453,10 +442,9 @@ tech_engineering_lab_15 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { engineering_labs }
+	prerequisites = { "tech_engineering_lab_14"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -471,10 +459,9 @@ tech_engineering_lab_16 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { engineering_labs }
+	prerequisites = { "tech_engineering_lab_15"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -489,10 +476,9 @@ tech_engineering_lab_17 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { engineering_labs }
+	prerequisites = { "tech_engineering_lab_16"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -507,10 +493,9 @@ tech_engineering_lab_18 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { engineering_labs }
+	prerequisites = { "tech_engineering_lab_17"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -525,10 +510,9 @@ tech_engineering_lab_19 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { engineering_labs }
+	prerequisites = { "tech_engineering_lab_18"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -543,10 +527,9 @@ tech_engineering_lab_20 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { engineering_labs }
+	prerequisites = { "tech_engineering_lab_19"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
