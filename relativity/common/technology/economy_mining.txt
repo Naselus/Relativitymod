@@ -227,7 +227,10 @@ tech_mining_network_5 = {
 	category = { mining }
 	prerequisites = { "tech_mineral_network_4"}	
 	weight = @tier2weight1
-	
+
+	modifier = {
+		max_minerals = 1000
+	}	
 	
 	ai_weight = {
 		modifier = {
@@ -244,7 +247,10 @@ tech_mining_6 = {
 	category = { mining }
 	prerequisites = { "tech_mining_network_5"}	
 	weight = @tier2weight1
-	
+
+	modifier = {
+		max_minerals = 1000
+	}	
 	
 	ai_weight = {
 		modifier = {
@@ -261,7 +267,10 @@ tech_mining_7 = {
 	category = { mining }
 	prerequisites = { "tech_mining_6"}	
 	weight = @tier2weight1
-	
+
+	modifier = {
+		max_minerals = 1000
+	}	
 	
 	ai_weight = {
 		modifier = {
@@ -278,7 +287,9 @@ tech_mining_8 = {
 	category = { mining }
 	prerequisites = { "tech_mining_7"}	
 	weight = @tier2weight1
-	
+	modifier = {
+		max_minerals = 1000
+	}	
 	
 	ai_weight = {
 		modifier = {
@@ -295,7 +306,9 @@ tech_mining_9 = {
 	category = { mining }
 	prerequisites = { "tech_mining_8"}	
 	weight = @tier2weight1
-	
+	modifier = {
+		max_minerals = 1000
+	}	
 	
 	ai_weight = {
 		modifier = {
@@ -312,7 +325,9 @@ tech_mining_10 = {
 	category = { mining }
 	prerequisites = { "tech_mining_9"}	
 	weight = @tier2weight1
-	
+		modifier = {
+		max_minerals = 1000
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -329,7 +344,9 @@ tech_mining_11 = {
 	category = { mining }
 	prerequisites = { "tech_mining_10"}	
 	weight = @tier2weight1
-	
+	modifier = {
+		max_minerals = 1000
+	}	
 	
 	ai_weight = {
 		modifier = {
@@ -346,7 +363,9 @@ tech_mining_12 = {
 	category = { mining }
 	prerequisites = { "tech_mining_11"}	
 	weight = @tier2weight1
-	
+	modifier = {
+		max_minerals = 1000
+	}	
 	
 	ai_weight = {
 		modifier = {
@@ -363,7 +382,9 @@ tech_mining_13 = {
 	category = { mining }
 	prerequisites = { "tech_mining_12"}	
 	weight = @tier2weight1
-	
+	modifier = {
+		max_minerals = 1000
+	}	
 	
 	ai_weight = {
 		modifier = {
@@ -380,7 +401,9 @@ tech_mining_14 = {
 	category = { mining }
 	prerequisites = { "tech_mining_13"}	
 	weight = @tier2weight1
-	
+	modifier = {
+		max_minerals = 1000
+	}	
 	
 	ai_weight = {
 		modifier = {
@@ -397,7 +420,9 @@ tech_mining_15 = {
 	category = { mining }
 	prerequisites = { "tech_mining_14"}	
 	weight = @tier2weight1
-	
+	modifier = {
+		max_minerals = 1000
+	}	
 	
 	ai_weight = {
 		modifier = {
@@ -414,7 +439,9 @@ tech_mining_16 = {
 	category = { mining }
 	prerequisites = { "tech_mining_15"}	
 	weight = @tier2weight1
-	
+	modifier = {
+		max_minerals = 1000
+	}	
 	
 	ai_weight = {
 		modifier = {
@@ -431,7 +458,9 @@ tech_mining_17 = {
 	category = { mining }
 	prerequisites = { "tech_mining_16"}	
 	weight = @tier2weight1
-	
+	modifier = {
+		max_minerals = 1000
+	}	
 	
 	ai_weight = {
 		modifier = {
@@ -448,7 +477,9 @@ tech_mining_18 = {
 	category = { mining }
 	prerequisites = { "tech_mining_17"}	
 	weight = @tier2weight1
-	
+	modifier = {
+		max_minerals = 1000
+	}	
 	
 	ai_weight = {
 		modifier = {
@@ -465,7 +496,9 @@ tech_mining_19 = {
 	category = { mining }
 	prerequisites = { "tech_mining_18"}	
 	weight = @tier2weight1
-	
+	modifier = {
+		max_minerals = 1000
+	}	
 	
 	ai_weight = {
 		modifier = {
@@ -482,7 +515,9 @@ tech_mining_20 = {
 	category = { mining }
 	prerequisites = { "tech_mining_19"}	
 	weight = @tier2weight1
-	
+		modifier = {
+		max_minerals = 1000
+	}
 	
 	ai_weight = {
 		modifier = {

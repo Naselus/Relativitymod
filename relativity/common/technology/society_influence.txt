@@ -111,7 +111,7 @@ tech_galactic_ambitions = {
 	weight = @tier1weight4
 	
 	modifier = {
-		country_border_mult = 0.2
+		country_border_mult = 0.05
 	}
 	
 	prereqfor_desc = {
@@ -184,8 +184,7 @@ tech_manifest_destiny = {
 	weight = @tier2weight3
 		
 	modifier = {
-		# reduced influence-cost in war-negotiation
-		country_border_mult = 0.2
+		country_border_mult = 0.05
 	}
 	
 	prereqfor_desc = {
@@ -247,7 +246,10 @@ tech_influence_3 = {
 	category = { influence }
 	prerequisites = { "tech_manifest_destiny" }
 	weight = @tier2weight1
-	
+
+	modifier = {
+		country_border_mult = 0.05
+	}	
 
 	ai_weight = {
 		modifier = {
@@ -265,6 +267,9 @@ tech_influence_4 = {
 	prerequisites = { "tech_influence_3" }
 	weight = @tier2weight1
 	
+	modifier = {
+		country_border_mult = 0.05
+	}	
 	
 	ai_weight = {
 		modifier = {
@@ -282,7 +287,9 @@ tech_influence_5 = {
 	prerequisites = { "tech_influence_4" }
 	weight = @tier2weight1
 	
-	
+	modifier = {
+		country_border_mult = 0.05
+	}	
 	
 	ai_weight = {
 		modifier = {
@@ -301,7 +308,9 @@ tech_influence_6 = {
 	weight = @tier2weight1
 	
 	
-
+	modifier = {
+		country_border_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -319,7 +328,9 @@ tech_influence_7 = {
 	prerequisites = { "tech_influence_6" }	
 	weight = @tier2weight1
 	
-	
+	modifier = {
+		country_border_mult = 0.05
+	}	
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -336,7 +347,9 @@ tech_influence_8 = {
 	prerequisites = { "tech_influence_7" }		
 	weight = @tier2weight1
 	
-
+	modifier = {
+		country_border_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -353,7 +366,9 @@ tech_influence_9 = {
 	category = { influence }
 	prerequisites = { "tech_influence_8" }		
 	weight = @tier2weight1
-	
+	modifier = {
+		country_border_mult = 0.05
+	}	
 
 	ai_weight = {
 		modifier = {
@@ -370,7 +385,9 @@ tech_influence_10 = {
 	category = { influence }
 	prerequisites = { "tech_influence_9" }	
 	weight = @tier2weight1
-	
+		modifier = {
+		country_border_mult = 0.05
+	}
 
 	
 	ai_weight = {
@@ -388,7 +405,9 @@ tech_influence_11 = {
 	category = { influence }
 	prerequisites = { "tech_influence_10" }	
 	weight = @tier2weight1
-	
+	modifier = {
+		country_border_mult = 0.05
+	}	
 
 	ai_weight = {
 		modifier = {
@@ -405,7 +424,9 @@ tech_influence_12 = {
 	category = { influence }
 	prerequisites = { "tech_influence_11" }	
 	weight = @tier2weight1
-	
+	modifier = {
+		country_border_mult = 0.05
+	}	
 
 	ai_weight = {
 		modifier = {
@@ -422,7 +443,9 @@ tech_influence_13 = {
 	category = { influence }
 	prerequisites = { "tech_influence_12" }	
 	weight = @tier2weight1
-	
+	modifier = {
+		country_border_mult = 0.05
+	}	
 		
 	ai_weight = {
 		modifier = {
@@ -439,7 +462,9 @@ tech_influence_14 = {
 	category = { influence }
 	prerequisites = { "tech_influence_13" }		
 	weight = @tier2weight1
-	
+	modifier = {
+		country_border_mult = 0.05
+	}	
 
 	ai_weight = {
 		modifier = {
@@ -457,7 +482,9 @@ tech_influence_15 = {
 	prerequisites = { "tech_influence_14" }			
 	weight = @tier2weight1
 	
-
+	modifier = {
+		country_border_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -475,7 +502,9 @@ tech_influence_16 = {
 	prerequisites = { "tech_influence_15" }		
 	weight = @tier2weight1
 	
-
+	modifier = {
+		country_border_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -493,7 +522,9 @@ tech_influence_17 = {
 	prerequisites = { "tech_influence_16" }		
 	weight = @tier2weight1
 	
-
+	modifier = {
+		country_border_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -511,7 +542,9 @@ tech_influence_18 = {
 	prerequisites = { "tech_influence_17" }		
 	weight = @tier2weight1
 	
-
+	modifier = {
+		country_border_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -529,7 +562,9 @@ tech_influence_19 = {
 	prerequisites = { "tech_influence_18" }		
 	weight = @tier2weight1
 	
-
+	modifier = {
+		country_border_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -547,6 +582,9 @@ tech_influence_20 = {
 	prerequisites = { "tech_influence_19" }		
 	weight = @tier2weight1
 	
+	modifier = {
+		country_border_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {

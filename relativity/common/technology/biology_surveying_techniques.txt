@@ -170,8 +170,9 @@ tech_surveying_techniques_3 = {
 	category = { surveying_techniques }
 	prerequisites = { "tech_improved_databank_uplinks" }
 	weight = @tier2weight1
-	
-	
+	modifier = {
+		science_ship_survey_speed = 0.05	
+	}
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -187,7 +188,9 @@ tech_surveying_techniques_4 = {
 	category = { surveying_techniques }
 	prerequisites = { "tech_surveying_techniques_3" }
 	weight = @tier2weight1
-	
+	modifier = {
+		science_ship_survey_speed = 0.05	
+	}	
 	
 	ai_weight = {
 		modifier = {
@@ -204,7 +207,9 @@ tech_surveying_techniques_5 = {
 	category = { surveying_techniques }
 	prerequisites = { "tech_surveying_techniques_4" }
 	weight = @tier2weight1
-
+	modifier = {
+		science_ship_survey_speed = 0.05	
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -221,7 +226,9 @@ tech_surveying_techniques_6 = {
 	category = { surveying_techniques }
 	prerequisites = { "tech_surveying_techniques_5" }
 	weight = @tier2weight1
-	
+		modifier = {
+		science_ship_survey_speed = 0.05	
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -238,7 +245,9 @@ tech_surveying_techniques_7 = {
 	category = { surveying_techniques }
 	prerequisites = { "tech_surveying_techniques_6" }
 	weight = @tier2weight1
-	
+	modifier = {
+		science_ship_survey_speed = 0.05	
+	}	
 
 	ai_weight = {
 		modifier = {
@@ -255,7 +264,9 @@ tech_surveying_techniques_8 = {
 	category = { surveying_techniques }
 	prerequisites = { "tech_surveying_techniques_7" }
 	weight = @tier2weight1
-
+	modifier = {
+		science_ship_survey_speed = 0.05	
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -272,7 +283,9 @@ tech_surveying_techniques_9 = {
 	category = { surveying_techniques }
 	prerequisites = { "tech_surveying_techniques_8" }
 	weight = @tier2weight1
-
+	modifier = {
+		science_ship_survey_speed = 0.05	
+	}
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -288,7 +301,9 @@ tech_surveying_techniques_10 = {
 	category = { surveying_techniques }
 	prerequisites = { "tech_surveying_techniques_9" }
 	weight = @tier2weight1
-
+	modifier = {
+		science_ship_survey_speed = 0.05	
+	}
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -304,7 +319,9 @@ tech_surveying_techniques_11 = {
 	category = { surveying_techniques }
 	prerequisites = { "tech_surveying_techniques_10" }
 	weight = @tier2weight1
-	
+	modifier = {
+		science_ship_survey_speed = 0.05	
+	}	
 
 	
 	ai_weight = {
@@ -322,7 +339,9 @@ tech_surveying_techniques_12 = {
 	category = { surveying_techniques }
 	prerequisites = { "tech_surveying_techniques_11" }
 	weight = @tier2weight1
-	
+	modifier = {
+		science_ship_survey_speed = 0.05	
+	}	
 	
 	ai_weight = {
 		modifier = {
@@ -339,7 +358,9 @@ tech_surveying_techniques_13 = {
 	category = { surveying_techniques }
 	prerequisites = { "tech_surveying_techniques_12" }
 	weight = @tier2weight1
-
+	modifier = {
+		science_ship_survey_speed = 0.05	
+	}
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -355,7 +376,9 @@ tech_surveying_techniques_14 = {
 	category = { surveying_techniques }
 	prerequisites = { "tech_surveying_techniques_13" }	
 	weight = @tier2weight1
-	
+	modifier = {
+		science_ship_survey_speed = 0.05	
+	}	
 
 	ai_weight = {
 		modifier = {
@@ -372,7 +395,9 @@ tech_surveying_techniques_15 = {
 	prerequisites = { "tech_surveying_techniques_14" }	
 	category = { surveying_techniques }
 	weight = @tier2weight1
-	
+	modifier = {
+		science_ship_survey_speed = 0.05	
+	}	
 
 	
 	ai_weight = {
@@ -390,7 +415,9 @@ tech_surveying_techniques_16 = {
 	category = { surveying_techniques }
 	prerequisites = { "tech_surveying_techniques_15" }
 	weight = @tier2weight1
-	
+	modifier = {
+		science_ship_survey_speed = 0.05	
+	}	
 
 	
 	ai_weight = {
@@ -408,7 +435,9 @@ tech_surveying_techniques_17 = {
 	category = { surveying_techniques }
 	prerequisites = { "tech_surveying_techniques_16" }	
 	weight = @tier2weight1
-	
+	modifier = {
+		science_ship_survey_speed = 0.05	
+	}	
 
 	
 	ai_weight = {
@@ -426,7 +455,9 @@ tech_surveying_techniques_18 = {
 	category = { surveying_techniques }
 	prerequisites = { "tech_surveying_techniques_17" }	
 	weight = @tier2weight1
-	
+	modifier = {
+		science_ship_survey_speed = 0.05	
+	}	
 
 	ai_weight = {
 		modifier = {
@@ -443,7 +474,9 @@ tech_surveying_techniques_19 = {
 	category = { surveying_techniques }
 	prerequisites = { "tech_surveying_techniques_18" }
 	weight = @tier2weight1
-	
+	modifier = {
+		science_ship_survey_speed = 0.05	
+	}	
 
 	ai_weight = {
 		modifier = {
@@ -460,7 +493,9 @@ tech_surveying_techniques_20 = {
 	category = { surveying_techniques }
 	prerequisites = { "tech_surveying_techniques_19" }	
 	weight = @tier2weight1
-	
+	modifier = {
+		science_ship_survey_speed = 0.05	
+	}	
 	
 	ai_weight = {
 		modifier = {
