@@ -1003,19 +1003,7 @@ building_mineral_processing_plant_1T1 = {
 		minerals = 150
 	}
 	
-	allow = {
-		custom_tooltip = {
-			text = "requires_building_capital_1"
-			planet = {
-				OR = {
-					has_building = "building_capital_1"
-					has_building = "building_capital_2"
-					has_building = "building_capital_3"
-				}
-			}
-		}
-	}
-	
+
 	produced_resources = {
 		minerals = 2
 		sr_plasma = 0.01
@@ -1028,7 +1016,7 @@ building_mineral_processing_plant_1T1 = {
 	}
 	
 	required_resources = {
-		sr_steel = 3
+		sr_steel = 2
 		sr_plasma = 1
 	}
 	
@@ -1052,9 +1040,10 @@ building_mineral_processing_plant_2T1 = {
 	
 	allow = {
 		custom_tooltip = {
-			text = "requires_building_capital_2"
+			text = "requires_building_capital_1"
 			planet = {
 				OR = {
+					has_building = "building_capital_1"
 					has_building = "building_capital_2"
 					has_building = "building_capital_3"
 				}
@@ -1074,7 +1063,7 @@ building_mineral_processing_plant_2T1 = {
 	}
 	
 	required_resources = {
-		sr_steel = 5
+		sr_steel = 4
 		sr_plasma = 1
 	}
 	upgrades = {
@@ -1118,7 +1107,7 @@ building_mineral_processing_plant_3T1 = {
 	}
 	
 	required_resources = {
-		sr_steel = 7
+		sr_steel = 6
 		sr_plasma = 1
 	}
 	
@@ -1164,7 +1153,7 @@ building_mineral_processing_plant_4T1 = {
 	}
 	
 	required_resources = {
-		sr_steel = 9
+		sr_steel = 8
 		sr_plasma = 1
 	}
 
@@ -1210,7 +1199,7 @@ building_mineral_processing_plant_5T1 = {
 	}
 	
 	required_resources = {
-		sr_steel = 11
+		sr_steel = 10
 		sr_plasma = 1
 	}
 	
@@ -3722,6 +3711,7 @@ building_bank = {
 	}
 	
 	required_resources = {
+	sr_plasma = 1
 	}
 	
 	upgrades = {

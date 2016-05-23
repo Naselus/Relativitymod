@@ -91,7 +91,7 @@ solar_panel_network = {
 	}	
 	
 	produced_resources = {
-		energy = 3
+		sr_plasma = 1
 	}
 	
 	ai_weight = { 
@@ -177,7 +177,7 @@ hydroponic_farms = {
 	}
 	
 	required_resources = {
-		energy = 1
+		sr_nutrients = 1
 	}
 	
 	planet_modifier = {

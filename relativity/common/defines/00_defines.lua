@@ -739,7 +739,7 @@ NDefines = {
 		-- If the ship is closer than max range this value determines how fast it will "back off" in order to get to max range.
 		-- 0.0 means that the ship will not back off, and orbit with whatever radius it already has
 		-- 1.0 means that the ship will prioritize orbit velocity the same as "back-off"-velocity. i.e a 45º angle
-		COMBAT_BACK_OFF_RATE					= 0.25,
+		COMBAT_BACK_OFF_RATE					= 0.75,
 		
 		FORMATION_POS_AHEAD_OF_PARENT			= 0.75,
 
