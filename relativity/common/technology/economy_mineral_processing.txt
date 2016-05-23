@@ -521,10 +521,9 @@ tech_mineral_processing_8 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { mineral_processing }
+	prerequisites = { "tech_mineral_processing_7"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -538,11 +537,9 @@ tech_mineral_processing_9 = {
 	area = society
 	cost = @tier2cost1
 	tier = 2
-	category = { mineral_processing }
+	prerequisites = { "tech_mineral_processing_8"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -557,10 +554,9 @@ tech_mineral_processing_10 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { mineral_processing }
+	prerequisites = { "tech_mineral_processing_9"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -575,10 +571,9 @@ tech_mineral_processing_11 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { mineral_processing }
+	prerequisites = { "tech_mineral_processing_10"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -593,10 +588,9 @@ tech_mineral_processing_12 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { mineral_processing }
+	prerequisites = { "tech_mineral_processing_11"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -611,10 +605,9 @@ tech_mineral_processing_13 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { mineral_processing }
+	prerequisites = { "tech_mineral_processing_12"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -629,10 +622,9 @@ tech_mineral_processing_14 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { mineral_processing }
+	prerequisites = { "tech_mineral_processing_13"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -647,10 +639,9 @@ tech_mineral_processing_15 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { mineral_processing }
+	prerequisites = { "tech_mineral_processing_14"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {

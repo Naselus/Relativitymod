@@ -259,7 +259,7 @@ tech_banking_5 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { banking }
-	prerequisites = { "tech_banking4"}
+	prerequisites = { "tech_banking_4"}
 	weight = @tier2weight1
 	
 	
@@ -278,7 +278,7 @@ tech_banking_6 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { banking }
-	prerequisites = { "tech_banking5"}	
+	prerequisites = { "tech_banking_5"}	
 	weight = @tier2weight1
 	
 
@@ -296,7 +296,7 @@ tech_banking_7 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { banking }
-	prerequisites = { "tech_banking6"}	
+	prerequisites = { "tech_banking_6"}	
 	weight = @tier2weight1
 	
 	
@@ -314,7 +314,7 @@ tech_banking_8 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { banking }
-	prerequisites = { "tech_banking7"}
+	prerequisites = { "tech_banking_7"}
 	weight = @tier2weight1
 	
 
@@ -332,7 +332,7 @@ tech_banking_9 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { banking }
-	prerequisites = { "tech_banking8"}	
+	prerequisites = { "tech_banking_8"}	
 	weight = @tier2weight1
 	
 	
@@ -350,7 +350,7 @@ tech_banking_10 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { banking }
-	prerequisites = { "tech_banking9"}
+	prerequisites = { "tech_banking_9"}
 	weight = @tier2weight1
 
 	
@@ -367,7 +367,7 @@ tech_banking_11 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { banking }
-	prerequisites = { "tech_banking10"}	
+	prerequisites = { "tech_banking_10"}	
 	weight = @tier2weight1
 
 	
@@ -384,7 +384,7 @@ tech_banking_12 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { banking }
-	prerequisites = { "tech_banking11"}	
+	prerequisites = { "tech_banking_11"}	
 	weight = @tier2weight1
 
 	
@@ -401,7 +401,7 @@ tech_banking_13 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { banking }
-	prerequisites = { "tech_banking12"}	
+	prerequisites = { "tech_banking_12"}	
 	weight = @tier2weight1
 
 	
@@ -418,7 +418,7 @@ tech_banking_14 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { banking }
-	prerequisites = { "tech_banking13"}	
+	prerequisites = { "tech_banking_13"}	
 	weight = @tier2weight1
 
 	
@@ -435,7 +435,7 @@ tech_banking_15 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { banking }
-	prerequisites = { "tech_banking14"}
+	prerequisites = { "tech_banking_14"}
 	weight = @tier2weight1
 	
 	
@@ -452,7 +452,7 @@ tech_banking_16 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { banking }
-	prerequisites = { "tech_banking15"}	
+	prerequisites = { "tech_banking_15"}	
 	weight = @tier2weight1
 	
 		
@@ -469,7 +469,7 @@ tech_banking_17 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { banking }
-	prerequisites = { "tech_banking16"}	
+	prerequisites = { "tech_banking_16"}	
 	weight = @tier2weight1
 
 	
@@ -486,7 +486,7 @@ tech_banking_18 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { banking }
-	prerequisites = { "tech_banking17"}	
+	prerequisites = { "tech_banking_17"}	
 	weight = @tier2weight1
 	
 	
@@ -503,7 +503,7 @@ tech_banking_19 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { banking }
-	prerequisites = { "tech_banking18"}	
+	prerequisites = { "tech_banking_18"}	
 	weight = @tier2weight1
 
 	
@@ -520,7 +520,7 @@ tech_banking_20 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { banking }
-	prerequisites = { "tech_banking19"}	
+	prerequisites = { "tech_banking_19"}	
 	weight = @tier2weight1
 
 	
