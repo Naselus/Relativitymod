@@ -86,7 +86,7 @@ spaceport_economics = {
 	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_industry.dds"
 }
 
-economics_institutes = {
+medicine = {
 	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_industry.dds"
 }
 
