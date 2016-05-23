@@ -23,33 +23,33 @@
 }
 
 2 = { # Tier 2
-	previously_unlocked = 0
+	previously_unlocked = 5
 }
 
 3 = { # Tier 3
-	previously_unlocked = 0
+	previously_unlocked = 5
 }
 
 4 = { # Tier 4
-	previously_unlocked = 0
+	previously_unlocked = 5
 }
 
 5 = { # Tier 5
-	previously_unlocked = 0
+	previously_unlocked = 5
 }
 
 6 = { # Tier 6
-	previously_unlocked = 0
+	previously_unlocked = 5
 }
 
 7 = { # Tier 7
-	previously_unlocked = 0
+	previously_unlocked = 5
 }
 
 8 = { # Tier 8
-	previously_unlocked = 0
+	previously_unlocked = 5
 }
 
 9 = { # Tier 9
-	previously_unlocked = 0
+	previously_unlocked = 5
 }
