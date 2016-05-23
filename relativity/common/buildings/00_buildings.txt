@@ -58,12 +58,12 @@
 @feupkeep = 4
 @feproduction = 12
 
-@power1 = 2
-@power2 = 4
-@power3 = 6
-@power4 = 8
-@power5 = 10
-@power6 = 12
+@power1 = 1
+@power2 = 2
+@power3 = 3
+@power4 = 4
+@power5 = 5
+@power6 = 6
 
 @production1 = 2
 @production2 = 4
@@ -90,7 +90,7 @@ building_basic_power_plant = {
 	}
 	
 	produced_resources = {
-		sr_plasma = 2
+		sr_plasma = 1
 	}
 	
 	upgrades = {
@@ -1708,7 +1708,6 @@ building_colony_shelter = {
 	level = 0
 	
 	produced_resources = {
-		minerals = 2
 		food = 5
 	}
 
@@ -1750,7 +1749,7 @@ building_capital_1 = {
 	
 	produced_resources = {
 		food = 10
-		minerals = 5
+		minerals = 1
 		influence = 0.25
 	}
 	
@@ -1802,7 +1801,7 @@ building_capital_2 = {
 	
 	produced_resources = {
 		food = 15
-		minerals = 8
+		minerals = 2
 		influence = 0.5
 	}
 	
@@ -1853,7 +1852,7 @@ building_capital_3 = {
 	
 	produced_resources = {
 		food = 30
-		minerals = 12
+		minerals = 3
 		influence = 1
 	}
 	
