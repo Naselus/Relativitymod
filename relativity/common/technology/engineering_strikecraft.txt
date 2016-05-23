@@ -196,3 +196,309 @@ tech_strike_craft_3 = {
 		
 	## unlock strike craft 3
 }
+
+tech_strike_craft_4 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { strikecraft }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_strike_craft_5 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { strikecraft }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_strike_craft_6 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { strikecraft }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_strike_craft_7 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { strikecraft }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_strike_craft_8 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { strikecraft }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_strike_craft_9 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { strikecraft }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_strike_craft_10 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { strikecraft }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_strike_craft_11 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { strikecraft }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_strike_craft_12 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { strikecraft }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_strike_craft_13 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { strikecraft }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_strike_craft_14 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { strikecraft }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_strike_craft_15 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { strikecraft }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_strike_craft_16 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { strikecraft }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_strike_craft_17 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { strikecraft }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_strike_craft_18 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { strikecraft }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_strike_craft_19 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { strikecraft }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_strike_craft_20 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { strikecraft }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}

@@ -119,3 +119,345 @@ tech_assault_armies = {
 	prerequisites = { "tech_defense_army" }
 	start_tech = yes
 }
+
+tech_drop_pod = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { ground_combat }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_army_4 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { ground_combat }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_army_5 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { ground_combat }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_army_6 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { ground_combat }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_army_7 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { ground_combat }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_army_8 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { ground_combat }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_army_9 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { ground_combat }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_army_10 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { ground_combat }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_army_10 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { ground_combat }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_army_11 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { ground_combat }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_army_12 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { ground_combat }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_army_13 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { ground_combat }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_army_14 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { ground_combat }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_army_15 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { ground_combat }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_army_16 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { ground_combat }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_army_17 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { ground_combat }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_army_18 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { ground_combat }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_army_19 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { ground_combat }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_army_20 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { ground_combat }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}

@@ -377,3 +377,219 @@ tech_planetary_shield_generator = {
 	
 	# unlocks building: planetary shield generator
 }
+
+tech_field_manipulation_9 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { field_manipulation }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_field_manipulation_10 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { field_manipulation }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_field_manipulation_11 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { field_manipulation }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_field_manipulation_12 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { field_manipulation }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_field_manipulation_13 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { field_manipulation }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_field_manipulation_14 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { field_manipulation }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_field_manipulation_15 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { field_manipulation }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_field_manipulation_16 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { field_manipulation }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_field_manipulation_17 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { field_manipulation }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_field_manipulation_18 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { field_manipulation }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_field_manipulation_19 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { field_manipulation }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_field_manipulation_20 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { field_manipulation }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}

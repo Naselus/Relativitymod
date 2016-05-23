@@ -318,3 +318,291 @@ tech_global_research_initiative = {
 		}
 	}
 }
+
+tech_physics_lab_5 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { physics_labs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_physics_lab_6 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { physics_labs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_physics_lab_7 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { physics_labs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_physics_lab_8 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { physics_labs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_physics_lab_9 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { physics_labs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_physics_lab_10 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { physics_labs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_physics_lab_11 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { physics_labs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_physics_lab_12 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { physics_labs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_physics_lab_13 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { physics_labs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_physics_lab_14 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { physics_labs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_physics_lab_15 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { physics_labs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_physics_lab_16 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { physics_labs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_physics_lab_17 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { physics_labs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_physics_lab_18 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { physics_labs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_physics_lab_19 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { physics_labs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_physics_lab_20 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { physics_labs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}

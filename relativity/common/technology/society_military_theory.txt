@@ -901,3 +901,147 @@ tech_virtual_combat_arena = {
 		}	
 	}
 }
+
+tech_military_theory_13 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { military_theory }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_military_theory_14 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { military_theory }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_military_theory_15 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { military_theory }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_military_theory_16 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { military_theory }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_military_theory_17 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { military_theory }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_military_theory_18 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { military_theory }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_military_theory_19 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { military_theory }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_military_theory_20 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { military_theory }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}

@@ -246,3 +246,309 @@ tech_biolab_3 = {
 		}
 	}
 }
+
+tech_biolab_4 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { bio_labs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_biolab_5 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { bio_labs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_biolab_6 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { bio_labs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_biolab_7 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { bio_labs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_biolab_8 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { bio_labs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_biolab_9 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { bio_labs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_biolab_10 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { bio_labs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_biolab_11 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { bio_labs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_biolab_12 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { bio_labs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_biolab_13 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { bio_labs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_biolab_14 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { bio_labs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_biolab_15 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { bio_labs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_biolab_16 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { bio_labs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_biolab_17 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { bio_labs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_biolab_18 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { bio_labs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_biolab_19 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { bio_labs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_biolab_20 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { bio_labs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}

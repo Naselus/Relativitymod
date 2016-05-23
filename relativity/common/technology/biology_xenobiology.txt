@@ -114,3 +114,345 @@ tech_xenobiology_1 = {
 		}
 	}
 }
+
+tech_xenobiology_2 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { xenobiology }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_xenobiology_3 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { xenobiology }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_xenobiology_4 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { xenobiology }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_xenobiology_5 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { xenobiology }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_xenobiology_6 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { xenobiology }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_xenobiology_7 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { xenobiology }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_xenobiology_8 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { xenobiology }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_xenobiology_9 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { xenobiology }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_xenobiology_10 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { xenobiology }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_xenobiology_11 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { xenobiology }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_xenobiology_12 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { xenobiology }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_xenobiology_13 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { xenobiology }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_xenobiology_14 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { xenobiology }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_xenobiology_15 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { xenobiology }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_xenobiology_16 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { xenobiology }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_xenobiology_17 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { xenobiology }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_xenobiology_18 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { xenobiology }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_xenobiology_19 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { xenobiology }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_xenobiology_20 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { xenobiology }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}

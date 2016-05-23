@@ -515,3 +515,147 @@ tech_industry_boost_5 = {
 		}
 	}
 }
+
+tech_mineral_processing_8 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { mineral_processing }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_mineral_processing_9 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { mineral_processing }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_mineral_processing_10 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { mineral_processing }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_mineral_processing_11 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { mineral_processing }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_mineral_processing_12 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { mineral_processing }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_mineral_processing_13 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { mineral_processing }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_mineral_processing_14 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { mineral_processing }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_mineral_processing_15 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { mineral_processing }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}

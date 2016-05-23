@@ -260,3 +260,273 @@ tech_ship_armor_5 = {
 		}
 	}
 }
+
+tech_ship_armor_6 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { armor }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_ship_armor_7 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { armor }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_ship_armor_8 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { armor }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_ship_armor_9 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { armor }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_ship_armor_10 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { armor }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_ship_armor_11 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { armor }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_ship_armor_12 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { armor }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_ship_armor_13 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { armor }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_ship_armor_14 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { armor }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_ship_armor_15 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { armor }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_ship_armor_16 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { armor }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_ship_armor_17 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { armor }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_ship_armor_18 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { armor }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_ship_armor_19 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { armor }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_ship_armor_20 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { armor }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}

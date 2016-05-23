@@ -114,3 +114,345 @@ tech_financial_regulation_1 = {
 		}
 	}
 }
+
+tech_financial_regulation_2 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { financial_regulation }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_financial_regulation_3 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { financial_regulation }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_financial_regulation_4 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { financial_regulation }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_financial_regulation_5 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { financial_regulation }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_financial_regulation_6 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { financial_regulation }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_financial_regulation_7 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { financial_regulation }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_financial_regulation_8 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { financial_regulation }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_financial_regulation_9 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { financial_regulation }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_financial_regulation_10 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { financial_regulation }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_financial_regulation_11 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { financial_regulation }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_financial_regulation_12 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { financial_regulation }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_financial_regulation_13 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { financial_regulation }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_financial_regulation_14 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { financial_regulation }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_financial_regulation_15 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { financial_regulation }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_financial_regulation_16 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { financial_regulation }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_financial_regulation_17 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { financial_regulation }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_financial_regulation_18 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { financial_regulation }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_financial_regulation_19 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { financial_regulation }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_financial_regulation_20 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { financial_regulation }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}

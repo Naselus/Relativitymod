@@ -148,3 +148,345 @@ tech_space_construction = {
 	
 	## unlock construction ship, mining station, research station
 }
+
+tech_orbital_stations_2 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { orbital_stations }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_orbital_stations_3 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { orbital_stations }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_orbital_stations_4 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { orbital_stations }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_orbital_stations_5 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { orbital_stations }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_orbital_stations_6 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { orbital_stations }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_orbital_stations_7 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { orbital_stations }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_orbital_stations_8 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { orbital_stations }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_orbital_stations_9 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { orbital_stations }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_orbital_stations_10 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { orbital_stations }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_orbital_stations_11 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { orbital_stations }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_orbital_stations_12 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { orbital_stations }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_orbital_stations_13 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { orbital_stations }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_orbital_stations_14 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { orbital_stations }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_orbital_stations_15 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { orbital_stations }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_orbital_stations_16 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { orbital_stations }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_orbital_stations_17 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { orbital_stations }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_orbital_stations_18 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { orbital_stations }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_orbital_stations_19 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { orbital_stations }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_orbital_stations_20 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { orbital_stations }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}

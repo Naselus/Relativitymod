@@ -75,7 +75,7 @@
 	}
 	
 	leader_trait_expertise_orbital_stations = {
-		has_trait = leader_trait_orbital_stations 
+		has_trait = leader_trait_expertise_orbital_stations 
 	}
 	
 	leader_trait_expertise_power_hubs = {

@@ -114,3 +114,345 @@ tech_sector_management_1 = {
 		}
 	}
 }
+
+tech_sector_management_2 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { sector_management }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_sector_management_3 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { sector_management }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_sector_management_4 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { sector_management }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_sector_management_5 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { sector_management }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_sector_management_6 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { sector_management }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_sector_management_7 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { sector_management }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_sector_management_8 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { sector_management }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_sector_management_9 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { sector_management }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_sector_management_10 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { sector_management }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_sector_management_11 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { sector_management }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_sector_management_12 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { sector_management }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_sector_management_13 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { sector_management }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_sector_management_14 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { sector_management }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_sector_management_15 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { sector_management }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_sector_management_16 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { sector_management }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_sector_management_17 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { sector_management }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_sector_management_18 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { sector_management }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_sector_management_19 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { sector_management }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_sector_management_20 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { sector_management }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}

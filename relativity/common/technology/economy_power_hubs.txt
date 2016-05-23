@@ -169,3 +169,327 @@ tech_power_hub_2 = {
 		}
 	}
 }
+
+tech_power_hub_3 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { power_hubs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_power_hub_4 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { power_hubs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_power_hub_5 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { power_hubs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_power_hub_6 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { power_hubs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_power_hub_7 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { power_hubs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_power_hub_8 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { power_hubs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_power_hub_9 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { power_hubs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_power_hub_10 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { power_hubs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_power_hub_11 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { power_hubs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_power_hub_12 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { power_hubs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_power_hub_13 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { power_hubs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_power_hub_14 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { power_hubs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_power_hub_15 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { power_hubs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_power_hub_16 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { power_hubs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_power_hub_17 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { power_hubs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_power_hub_18 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { power_hubs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_power_hub_19 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { power_hubs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_power_hub_20 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { power_hubs }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}

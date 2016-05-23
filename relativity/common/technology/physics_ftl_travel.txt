@@ -487,3 +487,147 @@ tech_jump_drive_1 = {
 		}
 	}
 }
+
+tech_ftl_13 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { ftl_travel }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_ftl_14 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { ftl_travel }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_ftl_15 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { ftl_travel }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_ftl_16 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { ftl_travel }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_ftl_17 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { ftl_travel }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_ftl_18 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { ftl_travel }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_ftl_19 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { ftl_travel }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_ftl_20 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { ftl_travel }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}

@@ -272,3 +272,309 @@ tech_xeno_integration = {
 		}
 	}
 }
+
+
+tech_xenology_4 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { xenology }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_xenology_5 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { xenology }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_xenology_6 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { xenology }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_xenology_7 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { xenology }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+tech_xenology_8 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { xenology }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_xenology_9 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { xenology }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_xenology_10 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { xenology }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_xenology_11 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { xenology }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_xenology_12 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { xenology }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_xenology_13 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { xenology }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_xenology_14 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { xenology }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_xenology_15 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { xenology }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_xenology_16 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { xenology }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_xenology_17 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { xenology }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_xenology_18 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { xenology }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_xenology_19 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { xenology }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_xenology_20 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { xenology }
+	weight = @tier2weight1
+	
+	
+	feature_flags = { assist_research }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
