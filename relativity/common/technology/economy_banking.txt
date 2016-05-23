@@ -106,7 +106,6 @@ tech_banking2 = {
 	area = society
 	tier = 1
 	category = { banking }	
-	prerequisites = { "tech_colonial_centralization" }
 	weight = @tier2weight1
 		
 	# unlock T2 bank	
@@ -137,7 +136,7 @@ tech_banking3 = {
 	area = society
 	tier = 1
 	category = { banking }	
-	prerequisites = { "tech_banking2" "tech_colonial_centralization" }
+	prerequisites = { "tech_banking2" }
 	weight = @tier2weight1
 		
 	# unlock T2 bank	
@@ -168,7 +167,7 @@ tech_banking4 = {
 	area = society
 	tier = 1
 	category = { banking }	
-	prerequisites = { "tech_banking3" "tech_colonial_centralization" }
+	prerequisites = { "tech_banking3"}
 	weight = @tier2weight1
 		
 	# unlock T2 bank	
@@ -198,7 +197,7 @@ tech_galactic_markets = {
 	area = society
 	tier = 2
 	category = { statecraft }
-	prerequisites = { "tech_galactic_administration" }
+	prerequisites = { "tech_banking3"}
 	weight = @tier2weight3
 	is_rare = yes
 	
@@ -260,10 +259,11 @@ tech_banking_5 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { banking }
+	prerequisites = { "tech_banking4"}
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -278,10 +278,10 @@ tech_banking_6 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { banking }
+	prerequisites = { "tech_banking5"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -296,10 +296,10 @@ tech_banking_7 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { banking }
+	prerequisites = { "tech_banking6"}	
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -314,10 +314,10 @@ tech_banking_8 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { banking }
+	prerequisites = { "tech_banking7"}
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -332,11 +332,11 @@ tech_banking_9 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { banking }
+	prerequisites = { "tech_banking8"}	
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
-	
+
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -350,10 +350,9 @@ tech_banking_10 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { banking }
+	prerequisites = { "tech_banking9"}
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -368,10 +367,9 @@ tech_banking_11 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { banking }
+	prerequisites = { "tech_banking10"}	
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -386,10 +384,9 @@ tech_banking_12 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { banking }
+	prerequisites = { "tech_banking11"}	
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -404,10 +401,9 @@ tech_banking_13 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { banking }
+	prerequisites = { "tech_banking12"}	
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -422,10 +418,9 @@ tech_banking_14 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { banking }
+	prerequisites = { "tech_banking13"}	
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -440,10 +435,9 @@ tech_banking_15 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { banking }
+	prerequisites = { "tech_banking14"}
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -458,11 +452,10 @@ tech_banking_16 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { banking }
+	prerequisites = { "tech_banking15"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
-	
+		
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -476,10 +469,9 @@ tech_banking_17 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { banking }
+	prerequisites = { "tech_banking16"}	
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -494,10 +486,9 @@ tech_banking_18 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { banking }
+	prerequisites = { "tech_banking17"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -512,10 +503,9 @@ tech_banking_19 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { banking }
+	prerequisites = { "tech_banking18"}	
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -530,10 +520,9 @@ tech_banking_20 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { banking }
+	prerequisites = { "tech_banking19"}	
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {

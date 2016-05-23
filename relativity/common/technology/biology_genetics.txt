@@ -712,10 +712,9 @@ tech_genetics_11 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { genetics }
+	prerequisites = { "tech_selected_lineages" }
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -730,10 +729,9 @@ tech_genetics_12 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { genetics }
+	prerequisites = { "tech_genetics_11" }
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -748,11 +746,9 @@ tech_genetics_13 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { genetics }
+	prerequisites = { "tech_genetics_12" }
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
-	
+
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -766,10 +762,10 @@ tech_genetics_14 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { genetics }
+	prerequisites = { "tech_genetics_13" }
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -784,10 +780,11 @@ tech_genetics_15 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { genetics }
+	prerequisites = { "tech_genetics_14" }	
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -802,10 +799,10 @@ tech_genetics_16 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { genetics }
+	prerequisites = { "tech_genetics_15" }
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -820,10 +817,10 @@ tech_genetics_17 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { genetics }
+	prerequisites = { "tech_genetics_16" }	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -838,10 +835,10 @@ tech_genetics_18 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { genetics }
+	prerequisites = { "tech_genetics_17" }	
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -856,10 +853,9 @@ tech_genetics_19 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { genetics }
+	prerequisites = { "tech_genetics_18" }	
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -874,10 +870,9 @@ tech_genetics_20 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { genetics }
+	prerequisites = { "tech_genetics_19" }	
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {

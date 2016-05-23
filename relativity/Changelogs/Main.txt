@@ -96,3 +96,12 @@ Version 102.0.1
 * AI no longer saves influence
 * AI spends a lot more inf on edicts
 * Rebalanced weapons a lot
+
+
+103.0.5
+
+* Mineral processor can now be built with a shelter.
+* T2 mineral processor can now be built with a T1 colony hub
+* orbital hhydroponics now produce nutrients again
+* orbital solar panels now produce electricity again
+* banks now need electricity to operate.

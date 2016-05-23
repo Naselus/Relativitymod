@@ -741,10 +741,9 @@ tech_rocketry_11 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { rocketry }
+	prerequisites = { "tech_torpedoes_3" }
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -759,10 +758,9 @@ tech_rocketry_12 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { rocketry }
+	prerequisites = { "tech_rocketry_11" }
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -777,10 +775,9 @@ tech_rocketry_13 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { rocketry }
+	prerequisites = { "tech_rocketry_12" }
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -795,10 +792,10 @@ tech_rocketry_14 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { rocketry }
+	prerequisites = { "tech_rocketry_13" }
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -813,11 +810,10 @@ tech_rocketry_15 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { rocketry }
+	prerequisites = { "tech_rocketry_14" }
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
-	
+
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -831,11 +827,9 @@ tech_rocketry_16 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { rocketry }
+	prerequisites = { "tech_rocketry_15" }
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
-	
+
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -849,10 +843,9 @@ tech_rocketry_17 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { rocketry }
+	prerequisites = { "tech_rocketry_16" }
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -867,10 +860,9 @@ tech_rocketry_18 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { rocketry }
+	prerequisites = { "tech_rocketry_17" }	
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -885,11 +877,10 @@ tech_rocketry_19 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { rocketry }
+	prerequisites = { "tech_rocketry_18" }	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
-	
+
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -903,10 +894,10 @@ tech_rocketry_20 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { rocketry }
+	prerequisites = { "tech_rocketry_19" }	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {

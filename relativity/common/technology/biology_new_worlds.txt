@@ -1001,10 +1001,8 @@ tech_colonization_16 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { new_worlds }
+	prerequisites = { "tech_arid_colonization" }
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -1019,10 +1017,10 @@ tech_colonization_17 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { new_worlds }
+	prerequisites = { "tech_colonization_16" }
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -1037,10 +1035,9 @@ tech_colonization_18 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { new_worlds }
+	prerequisites = { "tech_colonization_17" }
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -1055,10 +1052,9 @@ tech_colonization_19 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { new_worlds }
+	prerequisites = { "tech_colonization_18" }
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -1073,11 +1069,10 @@ tech_colonization_20 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { new_worlds }
+	prerequisites = { "tech_colonization_19" }	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
-	
+
 	ai_weight = {
 		modifier = {
 			factor = 0

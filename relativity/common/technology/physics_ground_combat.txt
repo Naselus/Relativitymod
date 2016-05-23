@@ -125,10 +125,11 @@ tech_drop_pod = {
 	cost = @tier2cost1
 	tier = 2
 	category = { ground_combat }
+	prerequisites = { "tech_assault_armies" }
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -143,10 +144,11 @@ tech_army_4 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { ground_combat }
+	prerequisites = { "tech_assault_armies" }
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -161,10 +163,11 @@ tech_army_5 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { ground_combat }
+	prerequisites = { "tech_army_4" }
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -179,10 +182,11 @@ tech_army_6 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { ground_combat }
+	prerequisites = { "tech_army_5" }
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -197,10 +201,11 @@ tech_army_7 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { ground_combat }
+	prerequisites = { "tech_army_6" }
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -215,10 +220,11 @@ tech_army_8 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { ground_combat }
+	prerequisites = { "tech_army_7" }
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -233,10 +239,11 @@ tech_army_9 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { ground_combat }
+	prerequisites = { "tech_army_8" }
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -251,10 +258,11 @@ tech_army_10 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { ground_combat }
+	prerequisites = { "tech_army_9" }
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -264,33 +272,17 @@ tech_army_10 = {
 	}
 }
 
-tech_army_10 = {
-	area = physics
-	cost = @tier2cost1
-	tier = 2
-	category = { ground_combat }
-	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
-	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
-}
 
 tech_army_11 = {
 	area = physics
 	cost = @tier2cost1
 	tier = 2
 	category = { ground_combat }
+	prerequisites = { "tech_army_10" }
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -305,10 +297,11 @@ tech_army_12 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { ground_combat }
+	prerequisites = { "tech_army_11" }
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -323,10 +316,11 @@ tech_army_13 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { ground_combat }
+	prerequisites = { "tech_army_12" }
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -341,10 +335,11 @@ tech_army_14 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { ground_combat }
+	prerequisites = { "tech_army_13" }
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -359,10 +354,11 @@ tech_army_15 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { ground_combat }
+	prerequisites = { "tech_army_14" }
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -377,10 +373,11 @@ tech_army_16 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { ground_combat }
+	prerequisites = { "tech_army_15" }
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -395,10 +392,11 @@ tech_army_17 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { ground_combat }
+	prerequisites = { "tech_army_16" }
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -413,10 +411,11 @@ tech_army_18 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { ground_combat }
+	prerequisites = { "tech_army_17" }
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -431,10 +430,11 @@ tech_army_19 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { ground_combat }
+	prerequisites = { "tech_army_18" }
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -449,10 +449,11 @@ tech_army_20 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { ground_combat }
+	prerequisites = { "tech_army_19" }
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {

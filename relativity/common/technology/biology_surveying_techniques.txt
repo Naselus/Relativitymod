@@ -168,10 +168,9 @@ tech_surveying_techniques_3 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { surveying_techniques }
+	prerequisites = { "tech_improved_databank_uplinks" }
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -186,10 +185,9 @@ tech_surveying_techniques_4 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { surveying_techniques }
+	prerequisites = { "tech_surveying_techniques_3" }
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -204,10 +202,9 @@ tech_surveying_techniques_5 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { surveying_techniques }
+	prerequisites = { "tech_surveying_techniques_4" }
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -222,10 +219,9 @@ tech_surveying_techniques_6 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { surveying_techniques }
+	prerequisites = { "tech_surveying_techniques_5" }
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -240,11 +236,10 @@ tech_surveying_techniques_7 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { surveying_techniques }
+	prerequisites = { "tech_surveying_techniques_6" }
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
-	
+
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -258,10 +253,9 @@ tech_surveying_techniques_8 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { surveying_techniques }
+	prerequisites = { "tech_surveying_techniques_7" }
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -276,11 +270,9 @@ tech_surveying_techniques_9 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { surveying_techniques }
+	prerequisites = { "tech_surveying_techniques_8" }
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
-	
+
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -294,11 +286,9 @@ tech_surveying_techniques_10 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { surveying_techniques }
+	prerequisites = { "tech_surveying_techniques_9" }
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
-	
+
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -312,10 +302,10 @@ tech_surveying_techniques_11 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { surveying_techniques }
+	prerequisites = { "tech_surveying_techniques_10" }
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -330,10 +320,9 @@ tech_surveying_techniques_12 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { surveying_techniques }
+	prerequisites = { "tech_surveying_techniques_11" }
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -348,11 +337,9 @@ tech_surveying_techniques_13 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { surveying_techniques }
+	prerequisites = { "tech_surveying_techniques_12" }
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
-	
+
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -366,11 +353,10 @@ tech_surveying_techniques_14 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { surveying_techniques }
+	prerequisites = { "tech_surveying_techniques_13" }	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
-	
+
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -383,11 +369,11 @@ tech_surveying_techniques_15 = {
 	area = physics
 	cost = @tier2cost1
 	tier = 2
+	prerequisites = { "tech_surveying_techniques_14" }	
 	category = { surveying_techniques }
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -402,10 +388,10 @@ tech_surveying_techniques_16 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { surveying_techniques }
+	prerequisites = { "tech_surveying_techniques_15" }
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -420,10 +406,10 @@ tech_surveying_techniques_17 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { surveying_techniques }
+	prerequisites = { "tech_surveying_techniques_16" }	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -438,11 +424,10 @@ tech_surveying_techniques_18 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { surveying_techniques }
+	prerequisites = { "tech_surveying_techniques_17" }	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
-	
+
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -456,11 +441,10 @@ tech_surveying_techniques_19 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { surveying_techniques }
+	prerequisites = { "tech_surveying_techniques_18" }
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
-	
+
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -474,10 +458,9 @@ tech_surveying_techniques_20 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { surveying_techniques }
+	prerequisites = { "tech_surveying_techniques_19" }	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {

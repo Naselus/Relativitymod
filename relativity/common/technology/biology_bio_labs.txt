@@ -252,10 +252,9 @@ tech_biolab_4 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { bio_labs }
+	prerequisites = { "tech_biolab_3"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -270,10 +269,10 @@ tech_biolab_5 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { bio_labs }
+	prerequisites = { "tech_biolab_4"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -288,10 +287,10 @@ tech_biolab_6 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { bio_labs }
+	prerequisites = { "tech_biolab_5"}		
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -306,10 +305,9 @@ tech_biolab_7 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { bio_labs }
+	prerequisites = { "tech_biolab_6"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -324,11 +322,10 @@ tech_biolab_8 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { bio_labs }
+	prerequisites = { "tech_biolab_7"}		
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
-	
+
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -342,11 +339,10 @@ tech_biolab_9 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { bio_labs }
+	prerequisites = { "tech_biolab_8"}		
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
-	
+
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -360,11 +356,9 @@ tech_biolab_10 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { bio_labs }
+	prerequisites = { "tech_biolab_9"}	
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
-	
+
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -378,10 +372,9 @@ tech_biolab_11 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { bio_labs }
+	prerequisites = { "tech_biolab_10"}	
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -396,10 +389,9 @@ tech_biolab_12 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { bio_labs }
+	prerequisites = { "tech_biolab_11"}	
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -414,10 +406,10 @@ tech_biolab_13 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { bio_labs }
+	prerequisites = { "tech_biolab_12"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -432,11 +424,10 @@ tech_biolab_14 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { bio_labs }
+	prerequisites = { "tech_biolab_13"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
-	
+
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -450,10 +441,9 @@ tech_biolab_15 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { bio_labs }
+	prerequisites = { "tech_biolab_14"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -468,10 +458,9 @@ tech_biolab_16 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { bio_labs }
+	prerequisites = { "tech_biolab_15"}	
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -486,10 +475,10 @@ tech_biolab_17 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { bio_labs }
+	prerequisites = { "tech_biolab_16"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -504,10 +493,10 @@ tech_biolab_18 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { bio_labs }
+	prerequisites = { "tech_biolab_17"}		
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -522,10 +511,9 @@ tech_biolab_19 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { bio_labs }
+	prerequisites = { "tech_biolab_18"}		
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -540,10 +528,10 @@ tech_biolab_20 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { bio_labs }
+	prerequisites = { "tech_biolab_19"}		
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
