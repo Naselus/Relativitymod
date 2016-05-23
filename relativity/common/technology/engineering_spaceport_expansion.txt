@@ -444,7 +444,7 @@ tech_spaceport_7 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { spaceport_expansion }
-	prerequisites = { "spaceport_6"}	
+	prerequisites = { "tech_spaceport_6"}	
 	weight = @tier2weight1
 	
 	
@@ -461,7 +461,7 @@ tech_spaceport_8 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { spaceport_expansion }
-	prerequisites = { "spaceport_7"}	
+	prerequisites = { "tech_spaceport_7"}	
 	weight = @tier2weight1
 	
 	
@@ -478,7 +478,7 @@ tech_spaceport_9 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { spaceport_expansion }
-	prerequisites = { "spaceport_8"}	
+	prerequisites = { "tech_spaceport_8"}	
 	weight = @tier2weight1
 	
 	
@@ -495,7 +495,7 @@ tech_spaceport_10 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { spaceport_expansion }
-	prerequisites = { "spaceport_9"}	
+	prerequisites = { "tech_spaceport_9"}	
 	weight = @tier2weight1
 	
 	
@@ -512,7 +512,7 @@ tech_spaceport_11 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { spaceport_expansion }
-	prerequisites = { "spaceport_10"}	
+	prerequisites = { "tech_spaceport_10"}	
 	weight = @tier2weight1
 	
 	
@@ -529,7 +529,7 @@ tech_spaceport_12 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { spaceport_expansion }
-	prerequisites = { "spaceport_11"}	
+	prerequisites = { "tech_spaceport_11"}	
 	weight = @tier2weight1
 	
 	
@@ -546,7 +546,7 @@ tech_spaceport_13 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { spaceport_expansion }
-	prerequisites = { "spaceport_12"}	
+	prerequisites = { "tech_spaceport_12"}	
 	weight = @tier2weight1
 	
 	
@@ -563,7 +563,7 @@ tech_spaceport_14 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { spaceport_expansion }
-	prerequisites = { "spaceport_13"}	
+	prerequisites = { "tech_spaceport_13"}	
 	weight = @tier2weight1
 	
 	
@@ -580,7 +580,7 @@ tech_spaceport_15 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { spaceport_expansion }
-	prerequisites = { "spaceport_14"}	
+	prerequisites = { "tech_spaceport_14"}	
 	weight = @tier2weight1
 	
 	
@@ -597,7 +597,7 @@ tech_spaceport_16 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { spaceport_expansion }
-	prerequisites = { "spaceport_15"}	
+	prerequisites = { "tech_spaceport_15"}	
 	weight = @tier2weight1
 	
 	
@@ -614,7 +614,7 @@ tech_spaceport_17 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { spaceport_expansion }
-	prerequisites = { "spaceport_16"}	
+	prerequisites = { "tech_spaceport_16"}	
 	weight = @tier2weight1
 	
 	
@@ -631,7 +631,7 @@ tech_spaceport_18 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { spaceport_expansion }
-	prerequisites = { "spaceport_17"}	
+	prerequisites = { "tech_spaceport_17"}	
 	weight = @tier2weight1
 	
 	
@@ -648,7 +648,7 @@ tech_spaceport_19 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { spaceport_expansion }
-	prerequisites = { "spaceport_18"}	
+	prerequisites = { "tech_spaceport_18"}	
 	weight = @tier2weight1
 	
 	
@@ -665,7 +665,7 @@ tech_spaceport_20 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { spaceport_expansion }
-	prerequisites = { "spaceport_19"}	
+	prerequisites = { "tech_spaceport_19"}	
 	weight = @tier2weight1
 	
 	
