@@ -106,3 +106,5 @@ Version 102.0.1
 * orbital solar panels now produce electricity again
 * banks now need electricity to operate.
 * Second pass of the Tech rework. All categories now have 20 entries. All categories added.
+* Drastically cut mineral output.
+* Torpedo accuracy reduced to 60% (from erroniously 100%)
