@@ -103,7 +103,9 @@ tech_societal_research_1 = {
 	tier = 2
 	category = { societal_research }
 	weight = @tier2weight1
-	
+		modifier = {
+		country_society_tech_research_speed = 0.05	
+		}
 
 	ai_weight = {
 		modifier = {
@@ -121,7 +123,9 @@ tech_societal_research_2 = {
 	prerequisites = { "tech_societal_research_1" }			
 	weight = @tier2weight1
 	
-	
+		modifier = {
+		country_society_tech_research_speed = 0.05	
+		}	
 	
 	
 	ai_weight = {
@@ -140,7 +144,9 @@ tech_societal_research_3 = {
 	prerequisites = { "tech_societal_research_2" }		
 	weight = @tier2weight1
 	
-	
+		modifier = {
+		country_society_tech_research_speed = 0.05	
+		}	
 	
 	
 	ai_weight = {
@@ -159,7 +165,9 @@ tech_societal_research_4 = {
 	prerequisites = { "tech_societal_research_3" }		
 	weight = @tier2weight1
 	
-	
+		modifier = {
+		country_society_tech_research_speed = 0.05	
+		}	
 	
 	
 	ai_weight = {
@@ -178,7 +186,9 @@ tech_societal_research_5 = {
 	prerequisites = { "tech_societal_research_4" }		
 	weight = @tier2weight1
 	
-	
+			modifier = {
+		country_society_tech_research_speed = 0.05	
+		}
 	
 	
 	ai_weight = {
@@ -197,7 +207,9 @@ tech_societal_research_6 = {
 	prerequisites = { "tech_societal_research_5" }		
 	weight = @tier2weight1
 	
-	
+		modifier = {
+		country_society_tech_research_speed = 0.05	
+		}	
 	
 	
 	ai_weight = {
@@ -216,7 +228,9 @@ tech_societal_research_7 = {
 	prerequisites = { "tech_societal_research_6" }		
 	weight = @tier2weight1
 	
-	
+		modifier = {
+		country_society_tech_research_speed = 0.05	
+		}
 	
 	
 	ai_weight = {
@@ -235,7 +249,9 @@ tech_societal_research_8 = {
 	prerequisites = { "tech_societal_research_7" }		
 	weight = @tier2weight1
 	
-	
+		modifier = {
+		country_society_tech_research_speed = 0.05	
+		}	
 	
 	
 	ai_weight = {
@@ -254,7 +270,9 @@ tech_societal_research_9 = {
 	prerequisites = { "tech_societal_research_8" }		
 	weight = @tier2weight1
 	
-	
+		modifier = {
+		country_society_tech_research_speed = 0.05	
+		}	
 	
 	
 	ai_weight = {
@@ -273,7 +291,9 @@ tech_societal_research_10 = {
 	prerequisites = { "tech_societal_research_9" }		
 	weight = @tier2weight1
 	
-	
+		modifier = {
+		country_society_tech_research_speed = 0.05	
+		}	
 	
 	
 	ai_weight = {
@@ -292,7 +312,9 @@ tech_societal_research_11 = {
 	prerequisites = { "tech_societal_research_10" }		
 	weight = @tier2weight1
 	
-	
+		modifier = {
+		country_society_tech_research_speed = 0.05	
+		}	
 	
 	
 	ai_weight = {
@@ -311,7 +333,9 @@ tech_societal_research_12 = {
 	prerequisites = { "tech_societal_research_11" }		
 	weight = @tier2weight1
 	
-	
+		modifier = {
+		country_society_tech_research_speed = 0.05	
+		}	
 	
 	
 	ai_weight = {
@@ -330,7 +354,9 @@ tech_societal_research_13 = {
 	prerequisites = { "tech_societal_research_12" }		
 	weight = @tier2weight1
 	
-	
+		modifier = {
+		country_society_tech_research_speed = 0.05	
+		}	
 	
 	
 	ai_weight = {
@@ -349,7 +375,9 @@ tech_societal_research_14 = {
 	prerequisites = { "tech_societal_research_13" }		
 	weight = @tier2weight1
 	
-	
+		modifier = {
+		country_society_tech_research_speed = 0.05	
+		}	
 	
 	
 	ai_weight = {
@@ -368,7 +396,9 @@ tech_societal_research_15 = {
 	prerequisites = { "tech_societal_research_14" }		
 	weight = @tier2weight1
 	
-	
+			modifier = {
+		country_society_tech_research_speed = 0.05	
+		}
 	
 	
 	ai_weight = {
@@ -386,7 +416,9 @@ tech_societal_research_16 = {
 	category = { societal_research }
 	prerequisites = { "tech_societal_research_15" }		
 	weight = @tier2weight1
-	
+		modifier = {
+		country_society_tech_research_speed = 0.05	
+		}	
 	
 	
 	
@@ -406,7 +438,9 @@ tech_societal_research_17 = {
 	prerequisites = { "tech_societal_research_16" }		
 	weight = @tier2weight1
 	
-	
+		modifier = {
+		country_society_tech_research_speed = 0.05	
+		}	
 	
 	
 	ai_weight = {
@@ -425,7 +459,9 @@ tech_societal_research_18 = {
 	prerequisites = { "tech_societal_research_17" }		
 	weight = @tier2weight1
 	
-	
+		modifier = {
+		country_society_tech_research_speed = 0.05	
+		}	
 	
 	
 	ai_weight = {
@@ -444,7 +480,9 @@ tech_societal_research_19 = {
 	prerequisites = { "tech_societal_research_18" }		
 	weight = @tier2weight1
 	
-	
+		modifier = {
+		country_society_tech_research_speed = 0.05	
+		}	
 	
 	
 	ai_weight = {
@@ -463,7 +501,9 @@ tech_societal_research_20 = {
 	prerequisites = { "tech_societal_research_19" }		
 	weight = @tier2weight1
 	
-	
+		modifier = {
+		country_society_tech_research_speed = 0.05	
+		}	
 	
 	
 	ai_weight = {
