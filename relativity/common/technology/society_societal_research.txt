@@ -104,9 +104,7 @@ tech_societal_research_1 = {
 	category = { societal_research }
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
-	
+
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -120,10 +118,11 @@ tech_societal_research_2 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { societal_research }
+	prerequisites = { "tech_societal_research_1" }			
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -138,10 +137,11 @@ tech_societal_research_3 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { societal_research }
+	prerequisites = { "tech_societal_research_2" }		
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -156,10 +156,11 @@ tech_societal_research_4 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { societal_research }
+	prerequisites = { "tech_societal_research_3" }		
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -174,10 +175,11 @@ tech_societal_research_5 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { societal_research }
+	prerequisites = { "tech_societal_research_4" }		
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -192,10 +194,11 @@ tech_societal_research_6 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { societal_research }
+	prerequisites = { "tech_societal_research_5" }		
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -210,10 +213,11 @@ tech_societal_research_7 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { societal_research }
+	prerequisites = { "tech_societal_research_6" }		
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -228,10 +232,11 @@ tech_societal_research_8 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { societal_research }
+	prerequisites = { "tech_societal_research_7" }		
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -246,10 +251,11 @@ tech_societal_research_9 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { societal_research }
+	prerequisites = { "tech_societal_research_8" }		
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -264,10 +270,11 @@ tech_societal_research_10 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { societal_research }
+	prerequisites = { "tech_societal_research_9" }		
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -282,10 +289,11 @@ tech_societal_research_11 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { societal_research }
+	prerequisites = { "tech_societal_research_10" }		
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -300,10 +308,11 @@ tech_societal_research_12 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { societal_research }
+	prerequisites = { "tech_societal_research_11" }		
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -318,10 +327,11 @@ tech_societal_research_13 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { societal_research }
+	prerequisites = { "tech_societal_research_12" }		
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -336,10 +346,11 @@ tech_societal_research_14 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { societal_research }
+	prerequisites = { "tech_societal_research_13" }		
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -354,10 +365,11 @@ tech_societal_research_15 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { societal_research }
+	prerequisites = { "tech_societal_research_14" }		
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -372,10 +384,11 @@ tech_societal_research_16 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { societal_research }
+	prerequisites = { "tech_societal_research_15" }		
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -390,10 +403,11 @@ tech_societal_research_17 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { societal_research }
+	prerequisites = { "tech_societal_research_16" }		
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -408,10 +422,11 @@ tech_societal_research_18 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { societal_research }
+	prerequisites = { "tech_societal_research_17" }		
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -426,10 +441,11 @@ tech_societal_research_19 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { societal_research }
+	prerequisites = { "tech_societal_research_18" }		
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -444,10 +460,11 @@ tech_societal_research_20 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { societal_research }
+	prerequisites = { "tech_societal_research_19" }		
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {

@@ -474,11 +474,10 @@ tech_social_engineering_6 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { social_engineering }
+	prerequisites = { "tech_purity_campaigns" }	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
-	
+
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -492,10 +491,11 @@ tech_social_engineering_7 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { social_engineering }
+	prerequisites = { "tech_social_engineering_6" }		
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -510,10 +510,11 @@ tech_social_engineering_8 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { social_engineering }
+	prerequisites = { "tech_social_engineering_7" }			
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -528,10 +529,11 @@ tech_social_engineering_9 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { social_engineering }
+	prerequisites = { "tech_social_engineering_8" }		
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -546,10 +548,11 @@ tech_social_engineering_10 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { social_engineering }
+	prerequisites = { "tech_social_engineering_9" }		
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -564,10 +567,11 @@ tech_social_engineering_11 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { social_engineering }
+	prerequisites = { "tech_social_engineering_10" }		
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -582,10 +586,11 @@ tech_social_engineering_12 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { social_engineering }
+	prerequisites = { "tech_social_engineering_11" }		
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -600,10 +605,11 @@ tech_social_engineering_13 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { social_engineering }
+	prerequisites = { "tech_social_engineering_12" }		
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -618,10 +624,11 @@ tech_social_engineering_14 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { social_engineering }
+	prerequisites = { "tech_social_engineering_13" }		
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -636,10 +643,11 @@ tech_social_engineering_15 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { social_engineering }
+	prerequisites = { "tech_social_engineering_14" }		
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -654,10 +662,11 @@ tech_social_engineering_16 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { social_engineering }
+	prerequisites = { "tech_social_engineering_15" }		
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -672,10 +681,11 @@ tech_social_engineering_17 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { social_engineering }
+	prerequisites = { "tech_social_engineering_16" }		
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -690,10 +700,11 @@ tech_social_engineering_18 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { social_engineering }
+	prerequisites = { "tech_social_engineering_17" }		
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -708,10 +719,11 @@ tech_social_engineering_19 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { social_engineering }
+	prerequisites = { "tech_social_engineering_18" }		
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {
@@ -726,10 +738,11 @@ tech_social_engineering_20 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { social_engineering }
+	prerequisites = { "tech_social_engineering_19" }		
 	weight = @tier2weight1
 	
 	
-	feature_flags = { assist_research }
+	
 	
 	ai_weight = {
 		modifier = {

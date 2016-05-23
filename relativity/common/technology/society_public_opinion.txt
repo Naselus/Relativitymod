@@ -204,10 +204,9 @@ tech_public_opinion_3 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { public_opinion }
+	prerequisites = { "tech_hyper_entertainment_forum" }
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -222,11 +221,10 @@ tech_public_opinion_4 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { public_opinion }
+	prerequisites = { "tech_public_opinion_3" }
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
-	
+
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -240,10 +238,8 @@ tech_public_opinion_5 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { public_opinion }
+	prerequisites = { "tech_public_opinion_4" }
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -258,10 +254,9 @@ tech_public_opinion_6 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { public_opinion }
+	prerequisites = { "tech_public_opinion_5" }	
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -276,10 +271,9 @@ tech_public_opinion_7 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { public_opinion }
+	prerequisites = { "tech_public_opinion_6" }	
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -294,11 +288,10 @@ tech_public_opinion_8 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { public_opinion }
+	prerequisites = { "tech_public_opinion_7" }	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
-	
+
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -312,10 +305,9 @@ tech_public_opinion_9 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { public_opinion }
+	prerequisites = { "tech_public_opinion_8" }
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -330,10 +322,9 @@ tech_public_opinion_10 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { public_opinion }
+	prerequisites = { "tech_public_opinion_9" }	
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -348,10 +339,9 @@ tech_public_opinion_11 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { public_opinion }
+	prerequisites = { "tech_public_opinion_10" }	
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -366,10 +356,10 @@ tech_public_opinion_12 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { public_opinion }
+	prerequisites = { "tech_public_opinion_11" }	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -384,10 +374,9 @@ tech_public_opinion_13 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { public_opinion }
+	prerequisites = { "tech_public_opinion_12" }	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -402,10 +391,9 @@ tech_public_opinion_14 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { public_opinion }
+	prerequisites = { "tech_public_opinion_13" }	
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -420,10 +408,9 @@ tech_public_opinion_15 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { public_opinion }
+	prerequisites = { "tech_public_opinion_14" }		
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -438,10 +425,9 @@ tech_public_opinion_16 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { public_opinion }
+	prerequisites = { "tech_public_opinion_15" }		
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -456,10 +442,9 @@ tech_public_opinion_17 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { public_opinion }
+	prerequisites = { "tech_public_opinion_16" }	
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
@@ -474,10 +459,9 @@ tech_public_opinion_18 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { public_opinion }
+	prerequisites = { "tech_public_opinion_17" }		
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -492,10 +476,8 @@ tech_public_opinion_19 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { public_opinion }
+	prerequisites = { "tech_public_opinion_18" }	
 	weight = @tier2weight1
-	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -510,10 +492,10 @@ tech_public_opinion_20 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { public_opinion }
+	prerequisites = { "tech_public_opinion_19" }		
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
+
 	
 	ai_weight = {
 		modifier = {
