@@ -105,3 +105,4 @@ Version 102.0.1
 * orbital hhydroponics now produce nutrients again
 * orbital solar panels now produce electricity again
 * banks now need electricity to operate.
+* Second pass of the Tech rework. All categories now have 20 entries. All categories added.

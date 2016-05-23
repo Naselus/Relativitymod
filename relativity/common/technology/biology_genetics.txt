@@ -591,8 +591,7 @@ tech_selected_lineages = {
 	
 	# Modifiers from this tech is added through a policy-option
 	modifier = {
-		# leader_skill_levels = 1
-		# leader_age = 30
+		 leader_age = 10
 	}
 	
 	weight_modifier = {
@@ -714,7 +713,10 @@ tech_genetics_11 = {
 	category = { genetics }
 	prerequisites = { "tech_selected_lineages" }
 	weight = @tier2weight1
-	
+
+	modifier = {
+		trait_points = 1
+	}	
 	
 	ai_weight = {
 		modifier = {
@@ -731,7 +733,9 @@ tech_genetics_12 = {
 	category = { genetics }
 	prerequisites = { "tech_genetics_11" }
 	weight = @tier2weight1
-
+	modifier = {
+		 leader_age = 10
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -748,7 +752,9 @@ tech_genetics_13 = {
 	category = { genetics }
 	prerequisites = { "tech_genetics_12" }
 	weight = @tier2weight1
-
+	modifier = {
+		 leader_age = 10
+	}
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -765,7 +771,9 @@ tech_genetics_14 = {
 	prerequisites = { "tech_genetics_13" }
 	weight = @tier2weight1
 	
-	
+	modifier = {
+		trait_points = 1
+	}	
 	
 	ai_weight = {
 		modifier = {
@@ -783,7 +791,9 @@ tech_genetics_15 = {
 	prerequisites = { "tech_genetics_14" }	
 	weight = @tier2weight1
 	
-	
+	modifier = {
+		 leader_age = 10
+	}	
 
 	
 	ai_weight = {
@@ -802,7 +812,9 @@ tech_genetics_16 = {
 	prerequisites = { "tech_genetics_15" }
 	weight = @tier2weight1
 	
-	
+		modifier = {
+		 leader_age = 10
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -820,7 +832,9 @@ tech_genetics_17 = {
 	prerequisites = { "tech_genetics_16" }	
 	weight = @tier2weight1
 	
-
+	modifier = {
+		trait_points = 1
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -837,7 +851,9 @@ tech_genetics_18 = {
 	category = { genetics }
 	prerequisites = { "tech_genetics_17" }	
 	weight = @tier2weight1
-	
+	modifier = {
+		 leader_age = 10
+	}	
 	
 	
 	ai_weight = {
@@ -855,7 +871,9 @@ tech_genetics_19 = {
 	category = { genetics }
 	prerequisites = { "tech_genetics_18" }	
 	weight = @tier2weight1
-
+	modifier = {
+		 leader_age = 10
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -873,6 +891,9 @@ tech_genetics_20 = {
 	prerequisites = { "tech_genetics_19" }	
 	weight = @tier2weight1
 
+		modifier = {
+		trait_points = 1
+	}
 	
 	ai_weight = {
 		modifier = {
