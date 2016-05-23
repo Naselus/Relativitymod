@@ -536,10 +536,9 @@ tech_xenow_13 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { xeno_weaponry }
+	prerequisites = { "tech_extradimensional_weapon_1"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -554,10 +553,9 @@ tech_xenow_14 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { xeno_weaponry }
+	prerequisites = { "tech_xenow_13"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -572,10 +570,9 @@ tech_xenow_15 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { xeno_weaponry }
+	prerequisites = { "tech_xenow_14"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -590,10 +587,9 @@ tech_xenow_16 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { xeno_weaponry }
+	prerequisites = { "tech_xenow_15"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -608,10 +604,9 @@ tech_xenow_17 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { xeno_weaponry }
+	prerequisites = { "tech_xenow_16"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -626,10 +621,9 @@ tech_xenow_18 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { xeno_weaponry }
+	prerequisites = { "tech_xenow_17"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -644,10 +638,9 @@ tech_xenow_19 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { xeno_weaponry }
+	prerequisites = { "tech_xenow_18"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -662,10 +655,9 @@ tech_xenow_20 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { xeno_weaponry }
+	prerequisites = { "tech_xenow_19"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {

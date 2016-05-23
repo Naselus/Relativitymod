@@ -259,10 +259,9 @@ tech_reactors_6 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { reactors }
+	prerequisites = { "tech_zero_point_power"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -277,10 +276,9 @@ tech_reactors_7 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { reactors }
+	prerequisites = { "tech_reactors_6"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -295,10 +293,9 @@ tech_reactors_8 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { reactors }
+	prerequisites = { "tech_reactors_7"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -313,10 +310,9 @@ tech_reactors_9 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { reactors }
+	prerequisites = { "tech_reactors_8"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -331,10 +327,9 @@ tech_reactors_10 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { reactors }
+	prerequisites = { "tech_reactors_9"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -349,10 +344,9 @@ tech_reactors_11 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { reactors }
+	prerequisites = { "tech_reactors_10"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -367,10 +361,9 @@ tech_reactors_12 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { reactors }
+	prerequisites = { "tech_reactors_11"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -385,10 +378,9 @@ tech_reactors_13 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { reactors }
+	prerequisites = { "tech_reactors_12"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -403,10 +395,9 @@ tech_reactors_14 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { reactors }
+	prerequisites = { "tech_reactors_13"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -421,10 +412,9 @@ tech_reactors_15 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { reactors }
+	prerequisites = { "tech_reactors_14"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -439,10 +429,9 @@ tech_reactors_16 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { reactors }
+	prerequisites = { "tech_reactors_15"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -457,10 +446,9 @@ tech_reactors_17 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { reactors }
+	prerequisites = { "tech_reactors_16"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -475,10 +463,9 @@ tech_reactors_18 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { reactors }
+	prerequisites = { "tech_reactors_17"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -493,10 +480,9 @@ tech_reactors_19 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { reactors }
+	prerequisites = { "tech_reactors_18"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -511,10 +497,9 @@ tech_reactors_20 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { reactors }
+	prerequisites = { "tech_reactors_19"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {

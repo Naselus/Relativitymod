@@ -367,3 +367,225 @@ tech_solar_panel_network_4 = {
 		factor = 10
 	}
 }
+
+tech_spaceport_economics_8 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { spaceport_economics }
+	prerequisites = { "tech_solar_panel_network_4"}	
+	weight = @tier2weight1
+	
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_spaceport_economics_9 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { spaceport_economics }
+	prerequisites = { "tech_spaceport_economics_8"}	
+	weight = @tier2weight1
+	
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_spaceport_economics_10 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { spaceport_economics }
+	prerequisites = { "tech_spaceport_economics_9"}	
+	weight = @tier2weight1
+	
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_spaceport_economics_11 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { spaceport_economics }
+	prerequisites = { "tech_spaceport_economics_10"}	
+	weight = @tier2weight1
+	
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_spaceport_economics_12 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { spaceport_economics }
+	prerequisites = { "tech_spaceport_economics_11"}	
+	weight = @tier2weight1
+	
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_spaceport_economics_13 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { spaceport_economics }
+	prerequisites = { "tech_spaceport_economics_12"}	
+	weight = @tier2weight1
+	
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_spaceport_economics_14 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { spaceport_economics }
+	prerequisites = { "tech_spaceport_economics_13"}	
+	weight = @tier2weight1
+	
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_spaceport_economics_15 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { spaceport_economics }
+	prerequisites = { "tech_spaceport_economics_14"}	
+	weight = @tier2weight1
+	
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_spaceport_economics_16 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { spaceport_economics }
+	prerequisites = { "tech_spaceport_economics_15"}	
+	weight = @tier2weight1
+	
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_spaceport_economics_17 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { spaceport_economics }
+	prerequisites = { "tech_spaceport_economics_16"}	
+	weight = @tier2weight1
+	
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_spaceport_economics_18 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { spaceport_economics }
+	prerequisites = { "tech_spaceport_economics_17"}	
+	weight = @tier2weight1
+	
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_spaceport_economics_19 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { spaceport_economics }
+	prerequisites = { "tech_spaceport_economics_18"}	
+	weight = @tier2weight1
+	
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_spaceport_economics_20 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { spaceport_economics }
+	prerequisites = { "tech_spaceport_economics_19"}	
+	weight = @tier2weight1
+	
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+

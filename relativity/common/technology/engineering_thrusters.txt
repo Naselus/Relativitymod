@@ -243,10 +243,9 @@ tech_thrusters_5 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { thrusters }
+	prerequisites = { "tech_thrusters_4"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -261,10 +260,9 @@ tech_thrusters_6 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { thrusters }
+	prerequisites = { "tech_thrusters_5"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -279,10 +277,9 @@ tech_thrusters_7 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { thrusters }
+	prerequisites = { "tech_thrusters_6"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -297,10 +294,9 @@ tech_thrusters_8 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { thrusters }
+	prerequisites = { "tech_thrusters_7"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -315,10 +311,9 @@ tech_thrusters_9 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { thrusters }
+	prerequisites = { "tech_thrusters_8"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -333,10 +328,9 @@ tech_thrusters_10 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { thrusters }
+	prerequisites = { "tech_thrusters_9"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -351,10 +345,9 @@ tech_thrusters_11 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { thrusters }
+	prerequisites = { "tech_thrusters_10"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -369,10 +362,9 @@ tech_thrusters_12 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { thrusters }
+	prerequisites = { "tech_thrusters_11}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -387,10 +379,9 @@ tech_thrusters_13 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { thrusters }
+	prerequisites = { "tech_thrusters_12"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -405,10 +396,9 @@ tech_thrusters_14 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { thrusters }
+	prerequisites = { "tech_thrusters_13"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -423,10 +413,9 @@ tech_thrusters_15 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { thrusters }
+	prerequisites = { "tech_thrusters_14"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -441,10 +430,9 @@ tech_thrusters_16 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { thrusters }
+	prerequisites = { "tech_thrusters_15"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -459,10 +447,9 @@ tech_thrusters_17 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { thrusters }
+	prerequisites = { "tech_thrusters_16"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -477,10 +464,9 @@ tech_thrusters_18 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { thrusters }
+	prerequisites = { "tech_thrusters_17"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -495,10 +481,9 @@ tech_thrusters_19 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { thrusters }
+	prerequisites = { "tech_thrusters_18"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -513,10 +498,9 @@ tech_thrusters_20 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { thrusters }
+	prerequisites = { "tech_thrusters_19"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {

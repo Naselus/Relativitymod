@@ -493,10 +493,9 @@ tech_ftl_13 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { ftl_travel }
+	prerequisites = { "tech_jump_drive_1"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -511,10 +510,9 @@ tech_ftl_14 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { ftl_travel }
+	prerequisites = { "tech_ftl_13"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -529,10 +527,9 @@ tech_ftl_15 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { ftl_travel }
+	prerequisites = { "tech_ftl_14"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -547,10 +544,9 @@ tech_ftl_16 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { ftl_travel }
+	prerequisites = { "tech_ftl_15"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -565,10 +561,9 @@ tech_ftl_17 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { ftl_travel }
+	prerequisites = { "tech_ftl_16"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -583,10 +578,9 @@ tech_ftl_18 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { ftl_travel }
+	prerequisites = { "tech_ftl_17"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -601,10 +595,9 @@ tech_ftl_19 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { ftl_travel }
+	prerequisites = { "tech_ftl_18"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -619,10 +612,9 @@ tech_ftl_20 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { ftl_travel }
+	prerequisites = { "tech_ftl_19"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {

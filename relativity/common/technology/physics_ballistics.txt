@@ -855,10 +855,9 @@ tech_ballistics_13 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { ballistics }
+	prerequisites = { "tech_flak_batteries_2"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -873,10 +872,9 @@ tech_ballistics_14 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { ballistics }
+	prerequisites = { "tech_ballistics_13"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -891,10 +889,9 @@ tech_ballistics_15 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { ballistics }
+	prerequisites = { "tech_ballistics_14"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -909,10 +906,9 @@ tech_ballistics_16 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { ballistics }
+	prerequisites = { "tech_ballistics_15"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -927,10 +923,9 @@ tech_ballistics_17 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { ballistics }
+	prerequisites = { "tech_ballistics_16"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -945,10 +940,9 @@ tech_ballistics_18 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { ballistics }
+	prerequisites = { "tech_ballistics_17"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -963,10 +957,9 @@ tech_ballistics_19 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { ballistics }
+	prerequisites = { "tech_ballistics_18"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -981,10 +974,9 @@ tech_ballistics_20 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { ballistics }
+	prerequisites = { "tech_ballistics_19"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {

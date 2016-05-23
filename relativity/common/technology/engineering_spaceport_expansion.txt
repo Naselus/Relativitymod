@@ -444,10 +444,9 @@ tech_spaceport_7 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { spaceport_expansion }
+	prerequisites = { "spaceport_6"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -462,10 +461,9 @@ tech_spaceport_8 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { spaceport_expansion }
+	prerequisites = { "spaceport_7"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -480,10 +478,9 @@ tech_spaceport_9 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { spaceport_expansion }
+	prerequisites = { "spaceport_8"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -498,10 +495,9 @@ tech_spaceport_10 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { spaceport_expansion }
+	prerequisites = { "spaceport_9"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -516,10 +512,9 @@ tech_spaceport_11 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { spaceport_expansion }
+	prerequisites = { "spaceport_10"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -534,10 +529,9 @@ tech_spaceport_12 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { spaceport_expansion }
+	prerequisites = { "spaceport_11"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -552,10 +546,9 @@ tech_spaceport_13 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { spaceport_expansion }
+	prerequisites = { "spaceport_12"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -570,10 +563,9 @@ tech_spaceport_14 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { spaceport_expansion }
+	prerequisites = { "spaceport_13"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -588,10 +580,9 @@ tech_spaceport_15 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { spaceport_expansion }
+	prerequisites = { "spaceport_14"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -606,10 +597,9 @@ tech_spaceport_16 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { spaceport_expansion }
+	prerequisites = { "spaceport_15"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -624,10 +614,9 @@ tech_spaceport_17 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { spaceport_expansion }
+	prerequisites = { "spaceport_16"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -642,10 +631,9 @@ tech_spaceport_18 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { spaceport_expansion }
+	prerequisites = { "spaceport_17"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -660,10 +648,9 @@ tech_spaceport_19 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { spaceport_expansion }
+	prerequisites = { "spaceport_18"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -678,10 +665,9 @@ tech_spaceport_20 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { spaceport_expansion }
+	prerequisites = { "spaceport_19"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {

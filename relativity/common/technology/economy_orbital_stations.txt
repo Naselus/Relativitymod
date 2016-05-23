@@ -154,10 +154,9 @@ tech_orbital_stations_2 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { orbital_stations }
+	prerequisites = { "tech_space_construction"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -172,10 +171,9 @@ tech_orbital_stations_3 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { orbital_stations }
+	prerequisites = { "tech_orbital_stations_2"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -190,10 +188,9 @@ tech_orbital_stations_4 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { orbital_stations }
+	prerequisites = { "tech_orbital_stations_3"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -208,10 +205,9 @@ tech_orbital_stations_5 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { orbital_stations }
+	prerequisites = { "tech_orbital_stations_4"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -226,10 +222,9 @@ tech_orbital_stations_6 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { orbital_stations }
+	prerequisites = { "tech_orbital_stations_5"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -244,10 +239,9 @@ tech_orbital_stations_7 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { orbital_stations }
+	prerequisites = { "tech_orbital_stations_6"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -262,10 +256,9 @@ tech_orbital_stations_8 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { orbital_stations }
+	prerequisites = { "tech_orbital_stations_7"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -280,10 +273,9 @@ tech_orbital_stations_9 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { orbital_stations }
+	prerequisites = { "tech_orbital_stations_8"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -298,10 +290,9 @@ tech_orbital_stations_10 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { orbital_stations }
+	prerequisites = { "tech_orbital_stations_9"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -316,10 +307,9 @@ tech_orbital_stations_11 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { orbital_stations }
+	prerequisites = { "tech_orbital_stations_10"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -334,10 +324,9 @@ tech_orbital_stations_12 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { orbital_stations }
+	prerequisites = { "tech_orbital_stations_11"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -352,10 +341,9 @@ tech_orbital_stations_13 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { orbital_stations }
+	prerequisites = { "tech_orbital_stations_12"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -370,10 +358,9 @@ tech_orbital_stations_14 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { orbital_stations }
+	prerequisites = { "tech_orbital_stations_13"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -388,10 +375,9 @@ tech_orbital_stations_15 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { orbital_stations }
+	prerequisites = { "tech_orbital_stations_14"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -406,10 +392,9 @@ tech_orbital_stations_16 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { orbital_stations }
+	prerequisites = { "tech_orbital_stations_15"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -424,10 +409,9 @@ tech_orbital_stations_17 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { orbital_stations }
+	prerequisites = { "tech_orbital_stations_16"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -442,10 +426,9 @@ tech_orbital_stations_18 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { orbital_stations }
+	prerequisites = { "tech_orbital_stations_17"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -460,10 +443,9 @@ tech_orbital_stations_19 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { orbital_stations }
+	prerequisites = { "tech_orbital_stations_18"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -478,10 +460,9 @@ tech_orbital_stations_20 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { orbital_stations }
+	prerequisites = { "tech_orbital_stations_19"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {

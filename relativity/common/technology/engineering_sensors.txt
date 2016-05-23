@@ -232,7 +232,7 @@ tech_orbital_sensor_array = {
 	tier = 1
 	category = { voidcraft }
 	is_rare = yes	
-	prerequisites = { "tech_sensors_2" }
+	prerequisites = { "tech_sensors_4" }
 	weight = @tier1weight2
 	
 	# unlocks observatory orbital module
@@ -296,10 +296,9 @@ tech_sensors_6 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { sensors }
+	prerequisites = { "tech_orbital_sensor_array"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -314,10 +313,9 @@ tech_sensors_7 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { sensors }
+	prerequisites = { "tech_sensors_6"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -332,10 +330,9 @@ tech_sensors_8 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { sensors }
+	prerequisites = { "tech_sensors_7"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -350,10 +347,9 @@ tech_sensors_9 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { sensors }
+	prerequisites = { "tech_sensors_8"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -368,10 +364,9 @@ tech_sensors_10 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { sensors }
+	prerequisites = { "tech_sensors_9"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -386,10 +381,9 @@ tech_sensors_11 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { sensors }
+	prerequisites = { "tech_sensors_10"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -404,10 +398,9 @@ tech_sensors_12 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { sensors }
+	prerequisites = { "tech_sensors_11"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -422,10 +415,9 @@ tech_sensors_13 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { sensors }
+	prerequisites = { "tech_sensors_12"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -440,10 +432,9 @@ tech_sensors_14 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { sensors }
+	prerequisites = { "tech_sensors_13"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -458,10 +449,9 @@ tech_sensors_15= {
 	cost = @tier2cost1
 	tier = 2
 	category = { sensors }
+	prerequisites = { "tech_sensors_14"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -476,10 +466,9 @@ tech_sensors_16 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { sensors }
+	prerequisites = { "tech_sensors_15"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -494,10 +483,9 @@ tech_sensors_17 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { sensors }
+	prerequisites = { "tech_sensors_16"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -512,10 +500,9 @@ tech_sensors_18 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { sensors }
+	prerequisites = { "tech_sensors_17"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -530,10 +517,9 @@ tech_sensors_19 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { sensors }
+	prerequisites = { "tech_sensors_18"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -548,10 +534,9 @@ tech_sensors_20 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { sensors }
+	prerequisites = { "tech_sensors_19"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -566,10 +551,9 @@ tech_sensors_21 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { sensors }
+	prerequisites = { "tech_sensors_20"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {

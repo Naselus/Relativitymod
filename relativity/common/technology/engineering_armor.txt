@@ -266,10 +266,9 @@ tech_ship_armor_6 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { armor }
+	prerequisites = { "tech_armor_5"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -284,10 +283,9 @@ tech_ship_armor_7 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { armor }
+	prerequisites = { "tech_armor_6"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -302,10 +300,9 @@ tech_ship_armor_8 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { armor }
+	prerequisites = { "tech_armor_7"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -320,10 +317,9 @@ tech_ship_armor_9 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { armor }
+	prerequisites = { "tech_armor_8"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -338,10 +334,9 @@ tech_ship_armor_10 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { armor }
+	prerequisites = { "tech_armor_9"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -356,10 +351,9 @@ tech_ship_armor_11 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { armor }
+	prerequisites = { "tech_armor_10"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -374,10 +368,9 @@ tech_ship_armor_12 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { armor }
+	prerequisites = { "tech_armor_11"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -392,10 +385,9 @@ tech_ship_armor_13 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { armor }
+	prerequisites = { "tech_armor_12"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -410,10 +402,9 @@ tech_ship_armor_14 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { armor }
+	prerequisites = { "tech_armor_13"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -428,10 +419,9 @@ tech_ship_armor_15 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { armor }
+	prerequisites = { "tech_armor_14"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -446,10 +436,9 @@ tech_ship_armor_16 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { armor }
+	prerequisites = { "tech_armor_15"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -464,10 +453,9 @@ tech_ship_armor_17 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { armor }
+	prerequisites = { "tech_armor_16"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -482,10 +470,9 @@ tech_ship_armor_18 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { armor }
+	prerequisites = { "tech_armor_17"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -500,10 +487,9 @@ tech_ship_armor_19 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { armor }
+	prerequisites = { "tech_armor_18"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
@@ -518,10 +504,9 @@ tech_ship_armor_20 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { armor }
+	prerequisites = { "tech_armor_19"}	
 	weight = @tier2weight1
 	
-	
-	feature_flags = { assist_research }
 	
 	ai_weight = {
 		modifier = {
