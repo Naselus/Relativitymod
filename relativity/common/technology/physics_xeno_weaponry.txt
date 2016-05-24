@@ -537,7 +537,7 @@ tech_xenow_13 = {
 	tier = 2
 	category = { xeno_weaponry }
 	prerequisites = { "tech_extradimensional_weapon_1"}	
-	weight = @tier2weight1
+	weight = 0
 	
 	
 	ai_weight = {

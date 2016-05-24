@@ -386,6 +386,9 @@ tech_field_manipulation_9 = {
 	prerequisites = { "tech_shield_recharge_aura_1"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_shield_hp_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -403,6 +406,9 @@ tech_field_manipulation_10 = {
 	prerequisites = { "tech_field_manipulation_9"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_shield_hp_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -420,6 +426,9 @@ tech_field_manipulation_11 = {
 	prerequisites = { "tech_field_manipulation_10"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_shield_hp_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -437,6 +446,9 @@ tech_field_manipulation_12 = {
 	prerequisites = { "tech_field_manipulation_11"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_shield_hp_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -454,6 +466,9 @@ tech_field_manipulation_13 = {
 	prerequisites = { "tech_field_manipulation_12"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_shield_hp_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -471,6 +486,9 @@ tech_field_manipulation_14 = {
 	prerequisites = { "tech_field_manipulation_13"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_shield_hp_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -488,6 +506,9 @@ tech_field_manipulation_15 = {
 	prerequisites = { "tech_field_manipulation_14"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_shield_hp_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -505,6 +526,9 @@ tech_field_manipulation_16 = {
 	prerequisites = { "tech_field_manipulation_15"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_shield_hp_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -522,6 +546,9 @@ tech_field_manipulation_17 = {
 	prerequisites = { "tech_field_manipulation_16"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_shield_hp_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -539,6 +566,9 @@ tech_field_manipulation_18 = {
 	prerequisites = { "tech_field_manipulation_17"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_shield_hp_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -556,6 +586,9 @@ tech_field_manipulation_19 = {
 	prerequisites = { "tech_field_manipulation_18"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_shield_hp_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -573,6 +606,9 @@ tech_field_manipulation_20 = {
 	prerequisites = { "tech_field_manipulation_19"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_shield_hp_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {

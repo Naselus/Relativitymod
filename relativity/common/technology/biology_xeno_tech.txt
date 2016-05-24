@@ -163,7 +163,7 @@ tech_xeno_tech_3 = {
 	tier = 2
 	category = { xeno_tech }
 	prerequisites = { "tech_crystal_armor_2"}	
-	weight = @tier2weight1
+	weight = 0
 	
 	
 	ai_weight = {

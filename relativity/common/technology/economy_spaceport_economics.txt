@@ -374,7 +374,7 @@ tech_spaceport_economics_8 = {
 	tier = 2
 	category = { spaceport_economics }
 	prerequisites = { "tech_solar_panel_network_4"}	
-	weight = @tier2weight1
+	weight = 0
 	
 	
 	ai_weight = {

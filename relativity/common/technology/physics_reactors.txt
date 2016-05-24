@@ -260,7 +260,7 @@ tech_reactors_6 = {
 	tier = 2
 	category = { reactors }
 	prerequisites = { "tech_zero_point_power"}	
-	weight = @tier2weight1
+	weight = 0
 	
 	
 	ai_weight = {

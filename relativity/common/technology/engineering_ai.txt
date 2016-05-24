@@ -890,7 +890,7 @@ tech_ai_19 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { ai }
-	prerequisites = { "tech_ai_18"}	
+	prerequisites = { "tech_combat_computers_3"}	
 	weight = @tier2weight1
 	
 	
@@ -907,7 +907,7 @@ tech_ai_20 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { ai }
-	prerequisites = { "tech_ai_19"}	
+	prerequisites = { "tech_pd_tracking_3"}	
 	weight = @tier2weight1
 	
 	

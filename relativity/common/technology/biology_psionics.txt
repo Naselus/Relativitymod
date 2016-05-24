@@ -398,7 +398,7 @@ tech_psionics_6 = {
 	tier = 2
 	category = { psionics }
 	prerequisites = { "tech_precognition_interface" }
-	weight = @tier2weight1
+	weight = 0
 	
 	
 	ai_weight = {

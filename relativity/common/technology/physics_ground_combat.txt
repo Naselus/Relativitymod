@@ -128,7 +128,10 @@ tech_drop_pod = {
 	prerequisites = { "tech_assault_armies" }
 	weight = @tier2weight1
 	
-	
+	modifier = {
+		army_health = 0.05
+		army_damage_mult = 0.05
+	}
 	
 	
 	ai_weight = {
@@ -147,7 +150,10 @@ tech_army_4 = {
 	prerequisites = { "tech_assault_armies" }
 	weight = @tier2weight1
 	
-	
+	modifier = {
+		army_upkeep_mult = -0.05
+		army_morale = 0.05
+	}
 	
 	
 	ai_weight = {
@@ -166,7 +172,10 @@ tech_army_5 = {
 	prerequisites = { "tech_army_4" }
 	weight = @tier2weight1
 	
-	
+	modifier = {
+		army_health = 0.05
+		army_damage_mult = 0.05
+	}
 	
 	
 	ai_weight = {
@@ -185,7 +194,10 @@ tech_army_6 = {
 	prerequisites = { "tech_army_5" }
 	weight = @tier2weight1
 	
-	
+	modifier = {
+		army_upkeep_mult = -0.05
+		army_morale = 0.05
+	}
 	
 	
 	ai_weight = {
@@ -204,7 +216,10 @@ tech_army_7 = {
 	prerequisites = { "tech_army_6" }
 	weight = @tier2weight1
 	
-	
+	modifier = {
+		army_health = 0.05
+		army_damage_mult = 0.05
+	}
 	
 	
 	ai_weight = {
@@ -223,7 +238,10 @@ tech_army_8 = {
 	prerequisites = { "tech_army_7" }
 	weight = @tier2weight1
 	
-	
+	modifier = {
+		army_upkeep_mult = -0.05
+		army_morale = 0.05
+	}
 	
 	
 	ai_weight = {
@@ -242,7 +260,10 @@ tech_army_9 = {
 	prerequisites = { "tech_army_8" }
 	weight = @tier2weight1
 	
-	
+	modifier = {
+		army_health = 0.05
+		army_damage_mult = 0.05
+	}
 	
 	
 	ai_weight = {
@@ -261,7 +282,10 @@ tech_army_10 = {
 	prerequisites = { "tech_army_9" }
 	weight = @tier2weight1
 	
-	
+	modifier = {
+		army_upkeep_mult = -0.05
+		army_morale = 0.05
+	}
 	
 	
 	ai_weight = {
@@ -281,7 +305,10 @@ tech_army_11 = {
 	prerequisites = { "tech_army_10" }
 	weight = @tier2weight1
 	
-	
+	modifier = {
+		army_health = 0.05
+		army_damage_mult = 0.05
+	}
 	
 	
 	ai_weight = {
@@ -300,7 +327,10 @@ tech_army_12 = {
 	prerequisites = { "tech_army_11" }
 	weight = @tier2weight1
 	
-	
+	modifier = {
+		army_upkeep_mult = -0.05
+		army_morale = 0.05
+	}
 	
 	
 	ai_weight = {
@@ -319,7 +349,10 @@ tech_army_13 = {
 	prerequisites = { "tech_army_12" }
 	weight = @tier2weight1
 	
-	
+	modifier = {
+		army_health = 0.05
+		army_damage_mult = 0.05
+	}
 	
 	
 	ai_weight = {
@@ -338,7 +371,10 @@ tech_army_14 = {
 	prerequisites = { "tech_army_13" }
 	weight = @tier2weight1
 	
-	
+	modifier = {
+		army_upkeep_mult = -0.05
+		army_morale = 0.05
+	}
 	
 	
 	ai_weight = {
@@ -357,7 +393,10 @@ tech_army_15 = {
 	prerequisites = { "tech_army_14" }
 	weight = @tier2weight1
 	
-	
+	modifier = {
+		army_health = 0.05
+		army_damage_mult = 0.05
+	}
 	
 	
 	ai_weight = {
@@ -376,7 +415,10 @@ tech_army_16 = {
 	prerequisites = { "tech_army_15" }
 	weight = @tier2weight1
 	
-	
+	modifier = {
+		army_upkeep_mult = -0.05
+		army_morale = 0.05
+	}
 	
 	
 	ai_weight = {
@@ -395,7 +437,10 @@ tech_army_17 = {
 	prerequisites = { "tech_army_16" }
 	weight = @tier2weight1
 	
-	
+	modifier = {
+		army_health = 0.05
+		army_damage_mult = 0.05
+	}
 	
 	
 	ai_weight = {
@@ -414,7 +459,10 @@ tech_army_18 = {
 	prerequisites = { "tech_army_17" }
 	weight = @tier2weight1
 	
-	
+	modifier = {
+		army_upkeep_mult = -0.05
+		army_morale = 0.05
+	}
 	
 	
 	ai_weight = {
@@ -433,7 +481,10 @@ tech_army_19 = {
 	prerequisites = { "tech_army_18" }
 	weight = @tier2weight1
 	
-	
+	modifier = {
+		army_health = 0.05
+		army_damage_mult = 0.05
+	}
 	
 	
 	ai_weight = {
@@ -452,7 +503,10 @@ tech_army_20 = {
 	prerequisites = { "tech_army_19" }
 	weight = @tier2weight1
 	
-	
+	modifier = {
+		army_upkeep_mult = -0.05
+		army_morale = 0.05
+	}
 	
 	
 	ai_weight = {
