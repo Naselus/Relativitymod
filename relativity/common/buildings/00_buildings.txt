@@ -2773,7 +2773,6 @@ building_basic_science_lab_3 = {
 
 dm_power_plant_1 = {
 	base_buildtime = @b4time
-	is_listed = no
 	icon = "building_power_plant_1"
 	
 	cost = {
@@ -2802,6 +2801,10 @@ dm_power_plant_1 = {
 		sr_plasma = 1
 	}	
 	
+	upgrades = {
+       dm_power_plant_2
+   }
+   
 	prerequisites = {
 			"tech_power_plant_3"
 	}
@@ -2836,8 +2839,12 @@ dm_power_plant_2 = {
 	required_resources = {
 		sr_dark_matter = 1
 		sr_plasma = 1
-	}	
+	}
 	
+	upgrades = {
+       dm_power_plant_3
+   }
+   
 	prerequisites = {
 			"tech_power_plant_4"
 	}
