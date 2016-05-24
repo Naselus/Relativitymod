@@ -102,7 +102,7 @@ tech_sector_management_1 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { sector_management }
-	weight = @tier2weight1
+	weight = 0
 	
 	
 	ai_weight = {

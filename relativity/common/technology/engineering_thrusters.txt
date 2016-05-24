@@ -246,6 +246,9 @@ tech_thrusters_5 = {
 	prerequisites = { "tech_thrusters_4"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_speed_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -263,6 +266,9 @@ tech_thrusters_6 = {
 	prerequisites = { "tech_thrusters_5"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_speed_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -280,6 +286,9 @@ tech_thrusters_7 = {
 	prerequisites = { "tech_thrusters_6"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_speed_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -297,6 +306,9 @@ tech_thrusters_8 = {
 	prerequisites = { "tech_thrusters_7"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_speed_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -314,6 +326,9 @@ tech_thrusters_9 = {
 	prerequisites = { "tech_thrusters_8"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_speed_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -331,6 +346,9 @@ tech_thrusters_10 = {
 	prerequisites = { "tech_thrusters_9"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_speed_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -348,6 +366,9 @@ tech_thrusters_11 = {
 	prerequisites = { "tech_thrusters_10"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_speed_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -365,6 +386,9 @@ tech_thrusters_12 = {
 	prerequisites = { "tech_thrusters_11"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_speed_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -382,6 +406,9 @@ tech_thrusters_13 = {
 	prerequisites = { "tech_thrusters_12"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_speed_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -399,6 +426,9 @@ tech_thrusters_14 = {
 	prerequisites = { "tech_thrusters_13"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_speed_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -416,6 +446,9 @@ tech_thrusters_15 = {
 	prerequisites = { "tech_thrusters_14"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_speed_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -433,6 +466,9 @@ tech_thrusters_16 = {
 	prerequisites = { "tech_thrusters_15"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_speed_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -450,6 +486,9 @@ tech_thrusters_17 = {
 	prerequisites = { "tech_thrusters_16"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_speed_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -467,6 +506,9 @@ tech_thrusters_18 = {
 	prerequisites = { "tech_thrusters_17"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_speed_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -484,6 +526,9 @@ tech_thrusters_19 = {
 	prerequisites = { "tech_thrusters_18"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_speed_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -501,6 +546,9 @@ tech_thrusters_20 = {
 	prerequisites = { "tech_thrusters_19"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_speed_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {

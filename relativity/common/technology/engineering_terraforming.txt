@@ -819,6 +819,9 @@ tech_terraforming_12 = {
 	prerequisites = { "tech_atmospheric_manipulation"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		pop_environment_tolerance = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -836,6 +839,9 @@ tech_terraforming_13 = {
 	prerequisites = { "tech_terraforming_12"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		pop_environment_tolerance = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -853,6 +859,9 @@ tech_terraforming_14 = {
 	prerequisites = { "tech_terraforming_13"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		pop_environment_tolerance = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -870,6 +879,9 @@ tech_terraforming_15 = {
 	prerequisites = { "tech_terraforming_14"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		pop_environment_tolerance = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -887,6 +899,9 @@ tech_terraforming_16 = {
 	prerequisites = { "tech_terraforming_15"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		pop_environment_tolerance = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -904,6 +919,9 @@ tech_terraforming_17 = {
 	prerequisites = { "tech_terraforming_16"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		pop_environment_tolerance = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -921,6 +939,9 @@ tech_terraforming_18= {
 	prerequisites = { "tech_terraforming_17"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		pop_environment_tolerance = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -938,6 +959,9 @@ tech_terraforming_19 = {
 	prerequisites = { "tech_terraforming_18"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		pop_environment_tolerance = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -955,6 +979,9 @@ tech_terraforming_20 = {
 	prerequisites = { "tech_terraforming_19"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		pop_environment_tolerance = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
