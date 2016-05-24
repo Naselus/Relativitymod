@@ -813,40 +813,96 @@ tech_atmospheric_manipulation = {
 
 tech_terraforming_12 = {
 	area = engineering
-	cost = @tier2cost1
-	tier = 2
-	category = { terraforming }
-	prerequisites = { "tech_atmospheric_manipulation"}	
-	weight = @tier2weight1
+	cost = @tier4cost1
+	tier = 4
+	category = { new_worlds }
+	prerequisites = { "tech_arid_colonization" "tech_atmospheric_manipulation" }
+	weight = @tier4weight1
 	
-	modifier = {
-		pop_environment_tolerance = 0.05
+	#Barren to Desert
+	
+	weight_modifier = {
+		
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				ideal_planet_class = pc_tundra
+				ideal_planet_class = pc_desert
+			}
+		}
+		
 	}
 	
 	ai_weight = {
+		factor = 3
 		modifier = {
-			factor = 0
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+		modifier = {
+			factor = 3
+			OR = {
+				ideal_planet_class = pc_tundra
+				ideal_planet_class = pc_desert
+			}
 		}
 	}
 }
 
 tech_terraforming_13 = {
 	area = engineering
-	cost = @tier2cost1
-	tier = 2
-	category = { terraforming }
-	prerequisites = { "tech_terraforming_12"}	
-	weight = @tier2weight1
+	cost = @tier4cost1
+	tier = 4
+	category = { new_worlds }
+	prerequisites = { "tech_tundra_colonization" "tech_atmospheric_manipulation"}
+	weight = @tier4weight1
 	
-	modifier = {
-		pop_environment_tolerance = 0.05
+	#Barren Cold to Tundra
+	
+	weight_modifier = {
+		
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+		modifier = {
+			factor = 3
+			OR = {
+				ideal_planet_class = pc_tundra
+				ideal_planet_class = pc_desert
+			}
+		}
+		
 	}
 	
 	ai_weight = {
+		factor = 3
 		modifier = {
-			factor = 0
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				ideal_planet_class = pc_tundra
+				ideal_planet_class = pc_desert
+			}
 		}
 	}
 }
@@ -856,77 +912,189 @@ tech_terraforming_14 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { terraforming }
-	prerequisites = { "tech_terraforming_13"}	
+	prerequisites = { "tech_terraforming_12" }
 	weight = @tier2weight1
 	
-	modifier = {
-		pop_environment_tolerance = 0.05
+	#Toxic to Barren
+	
+	weight_modifier = {
+		
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				ideal_planet_class = pc_tundra
+				ideal_planet_class = pc_desert
+			}
+		}
+		
 	}
 	
 	ai_weight = {
+		factor = 3
 		modifier = {
-			factor = 0
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				ideal_planet_class = pc_tundra
+				ideal_planet_class = pc_desert
+			}
 		}
 	}
 }
 
 tech_terraforming_15 = {
 	area = engineering
-	cost = @tier2cost1
+	cost = @tier4cost3
 	tier = 2
 	category = { terraforming }
-	prerequisites = { "tech_terraforming_14"}	
-	weight = @tier2weight1
+	prerequisites = { "tech_terraforming_13" }
+	weight = @tier4weight3
 	
-	modifier = {
-		pop_environment_tolerance = 0.05
+	#Nuked to Barren_Cold
+	
+	weight_modifier = {
+		
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				ideal_planet_class = pc_tundra
+				ideal_planet_class = pc_desert
+			}
+		}
+		
 	}
 	
 	ai_weight = {
+		factor = 3
 		modifier = {
-			factor = 0
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				ideal_planet_class = pc_tundra
+				ideal_planet_class = pc_desert
+			}
 		}
 	}
 }
 
 tech_terraforming_16 = {
 	area = engineering
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier5cost1
+	tier = 5
 	category = { terraforming }
-	prerequisites = { "tech_terraforming_15"}	
-	weight = @tier2weight1
+	prerequisites = { "tech_terraforming_14" }	
+	weight = @tier5weight1
 	
-	modifier = {
-		pop_environment_tolerance = 0.05
+	#Molten to Barren
+
+	weight_modifier = {
+		
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				ideal_planet_class = pc_tundra
+				ideal_planet_class = pc_desert
+			}
+		}
+		
 	}
 	
 	ai_weight = {
+		factor = 3
 		modifier = {
-			factor = 0
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				ideal_planet_class = pc_tundra
+				ideal_planet_class = pc_desert
+			}
 		}
 	}
 }
 
 tech_terraforming_17 = {
 	area = engineering
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier5cost1
+	tier = 5
 	category = { terraforming }
-	prerequisites = { "tech_terraforming_16"}	
-	weight = @tier2weight1
+	prerequisites = { "tech_terraforming_15" }	
+	weight = @tier5weight1
 	
-	modifier = {
-		pop_environment_tolerance = 0.05
+	#Frozen to Barren_Cold
+
+	weight_modifier = {
+		
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				ideal_planet_class = pc_tundra
+				ideal_planet_class = pc_desert
+			}
+		}
+		
 	}
 	
 	ai_weight = {
+		factor = 3
 		modifier = {
-			factor = 0
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				ideal_planet_class = pc_tundra
+				ideal_planet_class = pc_desert
+			}
 		}
 	}
 }
@@ -937,7 +1105,7 @@ tech_terraforming_18= {
 	tier = 2
 	category = { terraforming }
 	prerequisites = { "tech_terraforming_17"}	
-	weight = @tier2weight1
+	weight = 0
 	
 	modifier = {
 		pop_environment_tolerance = 0.05
@@ -990,3 +1158,4 @@ tech_terraforming_20 = {
 		}
 	}
 }
+

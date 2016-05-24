@@ -176,7 +176,7 @@ tech_power_hub_3 = {
 	tier = 2
 	category = { power_hubs }
 	prerequisites = { "tech_power_hub_2"}	
-	weight = @tier2weight1
+	weight = 0
 	
 	
 	ai_weight = {

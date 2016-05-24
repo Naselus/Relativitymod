@@ -874,7 +874,7 @@ tech_ai_18 = {
 	tier = 2
 	category = { ai }
 	prerequisites = { "tech_synchronized_defences_3"}	
-	weight = @tier2weight1
+	weight = 0
 	
 	
 	ai_weight = {
