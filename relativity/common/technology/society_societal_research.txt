@@ -415,7 +415,7 @@ tech_societal_research_16 = {
 	tier = 2
 	category = { societal_research }
 	prerequisites = { "tech_societal_research_15" }		
-	weight = @tier2weight1
+	weight = 0
 		modifier = {
 		country_society_tech_research_speed = 0.05	
 		}	

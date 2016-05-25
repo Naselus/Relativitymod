@@ -166,15 +166,15 @@ tech_engineering_lab_2 = {
 	weight_modifier = {
 		modifier = {
 			factor = 2
-			years_passed > 25
+			years_passed > 10
 		}
 		modifier = {
 			factor = 2
-			years_passed > 30
+			years_passed > 20
 		}		
 		modifier = {
 			factor = 2
-			years_passed > 35
+			years_passed > 30
 		}		
 		modifier = {
 			factor = 2
@@ -227,7 +227,7 @@ tech_engineering_lab_3 = {
 		}		
 		modifier = {
 			factor = 2
-			years_passed > 40
+			years_passed > 45
 		}
 		modifier = {
 			factor = 1.25
@@ -250,41 +250,105 @@ tech_engineering_lab_3 = {
 	}
 }
 
+#Engineering Lab 4
 tech_engineering_lab_4 = {
+	cost = @tier4cost2
 	area = engineering
-	cost = @tier2cost1
-	tier = 2
-	category = { engineering_labs }
-	prerequisites = { "tech_engineering_lab_3"}	
-	weight = @tier2weight1
+	tier = 4
+	category = { engineering_labs }	
+	prerequisites = { "tech_engineering_lab_3" "tech_galactic_administration" }
+	weight = @tier4weight2
+		
+	## unlock engineering lab lvl 4
 	
+	weight_modifier = {
+		modifier = {
+			factor = 2
+			years_passed > 35
+		}
+		modifier = {
+			factor = 2
+			years_passed > 50
+		}		
+		modifier = {
+			factor = 2
+			years_passed > 65
+		}		
+		modifier = {
+			factor = 2
+			years_passed > 80
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_ai"
+			}			
+		}
+	}
 	
 	ai_weight = {
+		weight = 10
 		modifier = {
-			factor = 0
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_ai"
+			}
 		}
 	}
 }
 
+#Engineering Lab 5
 tech_engineering_lab_5 = {
+	cost = @tier5cost2
 	area = engineering
-	cost = @tier2cost1
-	tier = 2
-	category = { engineering_labs }
-	prerequisites = { "tech_engineering_lab_4"}	
-	weight = @tier2weight1
+	tier = 5
+	category = { engineering_labs }	
+	prerequisites = { "tech_engineering_lab_4" "tech_galactic_administration" }
+	weight = @tier5weight2
+		
+	## unlock engineering lab lvl 5
 	
+	weight_modifier = {
+		modifier = {
+			factor = 2
+			years_passed > 45
+		}
+		modifier = {
+			factor = 2
+			years_passed > 60
+		}		
+		modifier = {
+			factor = 2
+			years_passed > 75
+		}		
+		modifier = {
+			factor = 2
+			years_passed > 90
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_ai"
+			}			
+		}
+	}
 	
 	ai_weight = {
+		weight = 10
 		modifier = {
-			factor = 0
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_ai"
+			}
 		}
 	}
 }
 
-tech_engineering_lab_6= {
+tech_engineering_lab_6 = {
 	area = engineering
 	cost = @tier2cost1
 	tier = 2
@@ -292,6 +356,9 @@ tech_engineering_lab_6= {
 	prerequisites = { "tech_engineering_lab_5"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		country_engineering_tech_research_speed = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -309,6 +376,9 @@ tech_engineering_lab_7 = {
 	prerequisites = { "tech_engineering_lab_6"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		country_engineering_tech_research_speed = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -326,6 +396,9 @@ tech_engineering_lab_8 = {
 	prerequisites = { "tech_engineering_lab_7"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		country_engineering_tech_research_speed = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -343,6 +416,9 @@ tech_engineering_lab_9 = {
 	prerequisites = { "tech_engineering_lab_8"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		country_engineering_tech_research_speed = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -360,6 +436,9 @@ tech_engineering_lab_10 = {
 	prerequisites = { "tech_engineering_lab_9"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		country_engineering_tech_research_speed = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -377,6 +456,9 @@ tech_engineering_lab_11 = {
 	prerequisites = { "tech_engineering_lab_10"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		country_engineering_tech_research_speed = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -394,6 +476,9 @@ tech_engineering_lab_12 = {
 	prerequisites = { "tech_engineering_lab_11"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		country_engineering_tech_research_speed = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -411,6 +496,9 @@ tech_engineering_lab_13 = {
 	prerequisites = { "tech_engineering_lab_12"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		country_engineering_tech_research_speed = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -428,6 +516,9 @@ tech_engineering_lab_14 = {
 	prerequisites = { "tech_engineering_lab_13"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		country_engineering_tech_research_speed = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -445,6 +536,9 @@ tech_engineering_lab_15 = {
 	prerequisites = { "tech_engineering_lab_14"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		country_engineering_tech_research_speed = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -462,6 +556,9 @@ tech_engineering_lab_16 = {
 	prerequisites = { "tech_engineering_lab_15"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		country_engineering_tech_research_speed = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -479,6 +576,9 @@ tech_engineering_lab_17 = {
 	prerequisites = { "tech_engineering_lab_16"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		country_engineering_tech_research_speed = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -496,6 +596,9 @@ tech_engineering_lab_18 = {
 	prerequisites = { "tech_engineering_lab_17"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		country_engineering_tech_research_speed = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -513,6 +616,9 @@ tech_engineering_lab_19 = {
 	prerequisites = { "tech_engineering_lab_18"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		country_engineering_tech_research_speed = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -530,6 +636,9 @@ tech_engineering_lab_20 = {
 	prerequisites = { "tech_engineering_lab_19"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		country_engineering_tech_research_speed = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {

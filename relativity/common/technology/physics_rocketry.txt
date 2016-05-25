@@ -744,6 +744,10 @@ tech_rocketry_11 = {
 	prerequisites = { "tech_torpedoes_3" }
 	weight = @tier2weight1
 
+	modifier = {
+		weapon_type_explosive_weapon_damage_mult = 0.05
+		weapon_type_explosive_weapon_fire_rate_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -761,6 +765,10 @@ tech_rocketry_12 = {
 	prerequisites = { "tech_rocketry_11" }
 	weight = @tier2weight1
 
+	modifier = {
+		weapon_type_explosive_weapon_damage_mult = 0.05
+		weapon_type_explosive_weapon_fire_rate_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -778,6 +786,10 @@ tech_rocketry_13 = {
 	prerequisites = { "tech_rocketry_12" }
 	weight = @tier2weight1
 	
+	modifier = {
+		weapon_type_explosive_weapon_damage_mult = 0.05
+		weapon_type_explosive_weapon_fire_rate_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -795,7 +807,10 @@ tech_rocketry_14 = {
 	prerequisites = { "tech_rocketry_13" }
 	weight = @tier2weight1
 	
-
+	modifier = {
+		weapon_type_explosive_weapon_damage_mult = 0.05
+		weapon_type_explosive_weapon_fire_rate_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -813,6 +828,10 @@ tech_rocketry_15 = {
 	prerequisites = { "tech_rocketry_14" }
 	weight = @tier2weight1
 	
+	modifier = {
+		weapon_type_explosive_weapon_damage_mult = 0.05
+		weapon_type_explosive_weapon_fire_rate_mult = 0.05
+	}
 
 	ai_weight = {
 		modifier = {
@@ -830,6 +849,11 @@ tech_rocketry_16 = {
 	prerequisites = { "tech_rocketry_15" }
 	weight = @tier2weight1
 
+	modifier = {
+		weapon_type_explosive_weapon_damage_mult = 0.05
+		weapon_type_explosive_weapon_fire_rate_mult = 0.05
+	}
+	
 	ai_weight = {
 		modifier = {
 			factor = 0
@@ -846,6 +870,10 @@ tech_rocketry_17 = {
 	prerequisites = { "tech_rocketry_16" }
 	weight = @tier2weight1
 
+	modifier = {
+		weapon_type_explosive_weapon_damage_mult = 0.05
+		weapon_type_explosive_weapon_fire_rate_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -863,6 +891,10 @@ tech_rocketry_18 = {
 	prerequisites = { "tech_rocketry_17" }	
 	weight = @tier2weight1
 
+	modifier = {
+		weapon_type_explosive_weapon_damage_mult = 0.05
+		weapon_type_explosive_weapon_fire_rate_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -880,6 +912,10 @@ tech_rocketry_19 = {
 	prerequisites = { "tech_rocketry_18" }	
 	weight = @tier2weight1
 	
+	modifier = {
+		weapon_type_explosive_weapon_damage_mult = 0.05
+		weapon_type_explosive_weapon_fire_rate_mult = 0.05
+	}
 
 	ai_weight = {
 		modifier = {
@@ -897,7 +933,10 @@ tech_rocketry_20 = {
 	prerequisites = { "tech_rocketry_19" }	
 	weight = @tier2weight1
 	
-
+	modifier = {
+		weapon_type_explosive_weapon_damage_mult = 0.05
+		weapon_type_explosive_weapon_fire_rate_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {

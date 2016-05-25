@@ -426,7 +426,7 @@ tech_power_plant_16 = {
 	tier = 2
 	category = { power_plants }
 	prerequisites = { "tech_power_plant_15"}	
-	weight = @tier2weight1
+	weight = 0
 	
 	
 	ai_weight = {

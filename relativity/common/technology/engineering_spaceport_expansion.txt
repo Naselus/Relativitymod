@@ -445,7 +445,7 @@ tech_spaceport_7 = {
 	tier = 2
 	category = { spaceport_expansion }
 	prerequisites = { "tech_spaceport_6"}	
-	weight = @tier2weight1
+	weight = 0
 	
 	
 	ai_weight = {

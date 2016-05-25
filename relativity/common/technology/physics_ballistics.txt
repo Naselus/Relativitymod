@@ -858,6 +858,10 @@ tech_ballistics_13 = {
 	prerequisites = { "tech_flak_batteries_2"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		weapon_type_kinetic_weapon_damage_mult = 0.05
+		weapon_type_kinetic_weapon_fire_rate_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -875,6 +879,10 @@ tech_ballistics_14 = {
 	prerequisites = { "tech_ballistics_13"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		weapon_type_kinetic_weapon_damage_mult = 0.05
+		weapon_type_kinetic_weapon_fire_rate_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -892,6 +900,10 @@ tech_ballistics_15 = {
 	prerequisites = { "tech_ballistics_14"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		weapon_type_kinetic_weapon_damage_mult = 0.05
+		weapon_type_kinetic_weapon_fire_rate_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -909,6 +921,10 @@ tech_ballistics_16 = {
 	prerequisites = { "tech_ballistics_15"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		weapon_type_kinetic_weapon_damage_mult = 0.05
+		weapon_type_kinetic_weapon_fire_rate_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -926,6 +942,10 @@ tech_ballistics_17 = {
 	prerequisites = { "tech_ballistics_16"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		weapon_type_kinetic_weapon_damage_mult = 0.05
+		weapon_type_kinetic_weapon_fire_rate_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -943,6 +963,10 @@ tech_ballistics_18 = {
 	prerequisites = { "tech_ballistics_17"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		weapon_type_kinetic_weapon_damage_mult = 0.05
+		weapon_type_kinetic_weapon_fire_rate_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -960,6 +984,10 @@ tech_ballistics_19 = {
 	prerequisites = { "tech_ballistics_18"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		weapon_type_kinetic_weapon_damage_mult = 0.05
+		weapon_type_kinetic_weapon_fire_rate_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -977,6 +1005,10 @@ tech_ballistics_20 = {
 	prerequisites = { "tech_ballistics_19"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		weapon_type_kinetic_weapon_damage_mult = 0.05
+		weapon_type_kinetic_weapon_fire_rate_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
