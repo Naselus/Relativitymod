@@ -363,7 +363,7 @@ tech_farming_6 = {
 	tier = 2
 	category = { farming }
 	prerequisites = { "tech_nutrient_replication"}	
-	weight = @tier2weight1
+	weight = 0
 	
 	
 	ai_weight = {

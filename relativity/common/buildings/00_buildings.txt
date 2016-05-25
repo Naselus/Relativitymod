@@ -77,6 +77,7 @@
 @science3 = 3
 @science4 = 4
 @science5 = 6
+@science6 = 8
 
 #
 #	ENERGY
@@ -290,7 +291,7 @@ betharian_power_plant_1 = {
 	}
 	
 	prerequisites = {
-		"tech_mine_betharian"
+		"tech_mine_betharian" "tech_power_plant_6"
 	}
 	
 	allow = {
@@ -345,7 +346,7 @@ betharian_power_plant_2 = {
 	}
 
 	prerequisites = {
-			"tech_power_plant_2"
+			"tech_power_plant_7"
 	}
 }
 
@@ -385,7 +386,7 @@ betharian_power_plant_3 = {
 	}
 
 	prerequisites = {
-			"tech_power_plant_3"
+			"tech_power_plant_8"
 	}
 }
 
@@ -421,7 +422,42 @@ betharian_power_plant_4 = {
 	}	
 	
 	prerequisites = {
-			"tech_power_plant_4"
+			"tech_power_plant_9"
+	}
+}
+
+betharian_power_plant_5 = {
+	base_buildtime = @b5time
+	is_listed = no
+	icon = "building_power_plant_1"
+	
+	cost = {
+		minerals = @b5cost
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_3"
+			planet = {
+				OR = {
+					has_building = "building_capital_3"
+				}
+			}
+		}
+	}
+	
+	produced_resources = {
+		sr_plasma2 = @power5
+		sr_plasma = 0.01
+	}
+	
+	required_resources = {
+		sr_betharian = 1
+		sr_plasma = 1
+	}	
+	
+	prerequisites = {
+			"tech_power_plant_10"
 	}
 }
 
@@ -1376,10 +1412,39 @@ building_engineering_facility_4 = {
 	}
 	
 	prerequisites = {
-		"tech_engineering_lab_3"
+		"tech_engineering_lab_4"
 	}	
 }
 
+building_engineering_facility_5 = {
+	base_buildtime = @b6time
+	is_listed = no
+	
+	cost = {
+		minerals = @b6cost
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_3"
+			planet = {
+				has_building = "building_capital_3"
+			}
+		}
+	}
+	
+	produced_resources = {
+		engineering_research = @science6
+	}
+	
+	required_resources = {
+		sr_plasma3 = @b6upkeep
+	}
+	
+	prerequisites = {
+		"tech_engineering_lab_5"
+	}	
+}
 #
 #	PHYSICS
 #
@@ -1521,11 +1586,44 @@ building_physics_lab_4 = {
 		sr_plasma3 = @b5upkeep
 	}
 	
+	upgrades = {
+		building_physics_lab_5
+	}
+	
 	prerequisites = {
-		"tech_physics_lab_3"
+		"tech_physics_lab_5"
 	}	
 }
 
+building_physics_lab_5 = {
+	base_buildtime = @b6time
+	is_listed = no
+	
+	cost = {
+		minerals = @b6cost
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_3"
+			planet = {
+				has_building = "building_capital_3"
+			}
+		}
+	}
+	
+	produced_resources = {
+		physics_research = @science6
+	}
+	
+	required_resources = {
+		sr_plasma3 = @b6upkeep
+	}
+	
+	prerequisites = {
+		"tech_physics_lab_6"
+	}	
+}
 #
 #	SOCIETY
 #
@@ -1667,12 +1765,44 @@ building_biolab_4 = {
 		sr_plasma3 = @b5upkeep
 	}
 	
+	upgrades = {
+		building_biolab_5
+	}
+	
 	prerequisites = {
-		"tech_biolab_3"
+		"tech_biolab_4"
 	}	
 }
 
-
+building_biolab_5 = {
+	base_buildtime = @b6time
+	is_listed = no
+	
+	cost = {
+		minerals = @b6cost
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_3"
+			planet = {
+				has_building = "building_capital_3"
+			}
+		}
+	}
+	
+	produced_resources = {
+		society_research = @science6
+	}
+	
+	required_resources = {
+		sr_plasma3 = @b6upkeep
+	}
+	
+	prerequisites = {
+		"tech_biolab_5"
+	}	
+}
 #
 # OTHER
 #
@@ -2806,7 +2936,7 @@ dm_power_plant_1 = {
    }
    
 	prerequisites = {
-			"tech_power_plant_3"
+			"tech_power_plant_11"
 	}
 }
 
@@ -2846,17 +2976,17 @@ dm_power_plant_2 = {
    }
    
 	prerequisites = {
-			"tech_power_plant_4"
+			"tech_power_plant_12"
 	}
 }
 
 dm_power_plant_3 = {
-	base_buildtime = @b6time
+	base_buildtime = @b5time
 	is_listed = no
 	icon = "building_power_plant_1"
 	
 	cost = {
-		minerals = @b6cost
+		minerals = @b5cost
 	}
 	
 	allow = {
@@ -2881,8 +3011,87 @@ dm_power_plant_3 = {
 		sr_plasma = 1
 	}	
 	
+	upgrades = {
+       dm_power_plant_4
+   }
+   
 	prerequisites = {
-			"tech_power_plant_5"
+			"tech_power_plant_13"
+	}
+}
+
+dm_power_plant_4 = {
+	base_buildtime = @b6time
+	is_listed = no
+	icon = "building_power_plant_1"
+	
+	cost = {
+		minerals = @b6cost
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_3"
+			planet = {
+				OR = {
+					has_building = "building_capital_3"
+				}
+			}
+		}
+	}
+	
+	produced_resources = {
+		sr_plasma3 = @power4
+		sr_plasma = 0.01
+	}
+	
+	required_resources = {
+		sr_dark_matter = 1
+		sr_plasma = 1
+	}	
+	
+	upgrades = {
+       dm_power_plant_5
+   }
+	
+	prerequisites = {
+			"tech_power_plant_14"
+	}
+}
+
+dm_power_plant_5 = {
+	base_buildtime = @b6time
+	is_listed = no
+	icon = "building_power_plant_1"
+	
+	cost = {
+		minerals = @b6cost
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_3"
+			planet = {
+				OR = {
+
+					has_building = "building_capital_3"
+				}
+			}
+		}
+	}
+	
+	produced_resources = {
+		sr_plasma3 = @power5
+		sr_plasma = 0.01
+	}
+	
+	required_resources = {
+		sr_dark_matter = 1
+		sr_plasma = 1
+	}	
+	
+	prerequisites = {
+			"tech_power_plant_15"
 	}
 }
 
@@ -2903,11 +3112,11 @@ building_mining2_network_1 = {
 	}	
 	
 	upgrades = {
-		building_mining_network_2
+		building_mining2_network_2
 	}	
 	
 	prerequisites = {
-		"tech_basic_industry"
+		"tech_mining_6"
 	}
 	
 	allow = {
@@ -2955,11 +3164,11 @@ building_mining2_network_2 = {
 	}
 	
 	upgrades = {
-		building_mining_network_3
+		building_mining2_network_3
 	}	
 	
 	prerequisites = {
-		"tech_mining_network_2"
+		"tech_mining_7"
 	}	
 }
 
@@ -2993,11 +3202,11 @@ building_mining2_network_3 = {
 	}
 	
 	upgrades = {
-		building_mining_network_4
+		building_mining2_network_4
 	}	
 	
 	prerequisites = {
-		"tech_mining_network_3"
+		"tech_mining_8"
 	}	
 }
 
@@ -3031,11 +3240,11 @@ building_mining2_network_4 = {
 	}
 	
 	upgrades = {
-		building_mining_network_5
+		building_mining2_network_5
 	}	
 	
 	prerequisites = {
-		"tech_mining_network_4"
+		"tech_mining_9"
 	}	
 }
 
@@ -3066,7 +3275,7 @@ building_mining2_network_5 = {
 	}
 	
 	prerequisites = {
-		"tech_mining_network_4"
+		"tech_mining_10"
 	}	
 }
 
@@ -3087,7 +3296,7 @@ building_mining3_network_1 = {
 	}	
 	
 	upgrades = {
-		building_mining_network_2
+		building_mining3_network_2
 	}	
 	
 	prerequisites = {
@@ -3139,7 +3348,7 @@ building_mining3_network_2 = {
 	}
 	
 	upgrades = {
-		building_mining_network_3
+		building_mining3_network_3
 	}	
 	
 	prerequisites = {
@@ -3177,7 +3386,7 @@ building_mining3_network_3 = {
 	}
 	
 	upgrades = {
-		building_mining_network_4
+		building_mining3_network_4
 	}	
 	
 	prerequisites = {
@@ -3215,11 +3424,11 @@ building_mining3_network_4 = {
 	}
 	
 	upgrades = {
-		building_mining_network_5
+		building_mining3_network_5
 	}	
 	
 	prerequisites = {
-		"tech_mining_network_4"
+		"tech_mining_14"
 	}	
 }
 
@@ -3250,7 +3459,7 @@ building_mining3_network_5 = {
 	}
 	
 	prerequisites = {
-		"tech_mining_network_4"
+		"tech_mining_15"
 	}	
 }
 
@@ -3295,7 +3504,7 @@ building_mineral_processing_plant_1T2 = {
 	}
 	
 	prerequisites = {
-		"tech_mineral_processing_2"
+		"tech_mineral_processing_6"
 	}
 	
 }
@@ -3340,7 +3549,7 @@ building_mineral_processing_plant_2T2 = {
 		building_mineral_processing_plant_3T2
 	}	
 	prerequisites = {
-		"tech_mineral_processing_3"
+		"tech_mineral_processing_7"
 	}
 }
 
@@ -3386,7 +3595,7 @@ building_mineral_processing_plant_3T2 = {
 	}
 	
 	prerequisites = {
-		"tech_mineral_processing_4"
+		"tech_mineral_processing_8"
 	}
 }
 
@@ -3432,7 +3641,7 @@ building_mineral_processing_plant_4T2 = {
 	}
 	
 	prerequisites = {
-		"tech_mineral_processing_5"
+		"tech_mineral_processing_9"
 	}
 }
 
@@ -3474,7 +3683,7 @@ building_mineral_processing_plant_5T2 = {
 	}
 	
 	prerequisites = {
-		"tech_mineral_processing_6"
+		"tech_mineral_processing_10"
 	}
 }
 
@@ -3519,7 +3728,7 @@ building_mineral_processing_plant_1T3 = {
 	}
 	
 	prerequisites = {
-		"tech_mineral_processing_3"
+		"tech_mineral_processing_11"
 	}
 	
 }
@@ -3564,7 +3773,7 @@ building_mineral_processing_plant_2T3 = {
 		building_mineral_processing_plant_3T3
 	}	
 	prerequisites = {
-		"tech_mineral_processing_4"
+		"tech_mineral_processing_12"
 	}
 }
 
@@ -3610,7 +3819,7 @@ building_mineral_processing_plant_3T3 = {
 	}
 	
 	prerequisites = {
-		"tech_mineral_processing_5"
+		"tech_mineral_processing_13"
 	}
 }
 
@@ -3656,7 +3865,7 @@ building_mineral_processing_plant_4T3 = {
 	}
 	
 	prerequisites = {
-		"tech_mineral_processing_6"
+		"tech_mineral_processing_14"
 	}
 }
 
@@ -3698,9 +3907,13 @@ building_mineral_processing_plant_5T3 = {
 		}
 	
 	prerequisites = {
-		"tech_mineral_processing_7"
+		"tech_mineral_processing_15"
 	}
 }
+
+#############
+####Banks
+#############
 
 building_bank = {
 	base_buildtime = @b1time
@@ -3721,7 +3934,7 @@ building_bank = {
 	}
 	
 	upgrades = {
-		building_bank2
+		building_bank_2
 		}
 	
 	allow = {
@@ -3738,7 +3951,7 @@ building_bank = {
 	}
 }
 
-building_bank2 = {
+building_bank_2 = {
 	base_buildtime = @b2time
 	
 	cost = {
@@ -3753,11 +3966,11 @@ building_bank2 = {
 	}
 	
 	upgrades = {
-		building_bank3
+		building_bank_3
 	}
 	
 	prerequisites = {
-		"tech_banking2"
+		"tech_banking_5"
 	}
 	
 	required_resources = {
@@ -3778,7 +3991,7 @@ building_bank2 = {
 	}
 }
 
-building_bank3 = {
+building_bank_3 = {
 	base_buildtime = @b3time
 	
 	cost = {
@@ -3793,7 +4006,7 @@ building_bank3 = {
 	}
 	
 	upgrades = {
-		building_bank4
+		building_bank_4
 	}
 
 	required_resources = {
@@ -3801,7 +4014,7 @@ building_bank3 = {
 	}
 	
 	prerequisites = {
-		"tech_banking3"
+		"tech_banking_10"
 	}
 	
 	allow = {
@@ -3817,7 +4030,7 @@ building_bank3 = {
 	}
 }
 
-building_bank4 = {
+building_bank_4 = {
 	base_buildtime = @b4time
 	
 	cost = {
@@ -3833,7 +4046,45 @@ building_bank4 = {
 	
 
 	prerequisites = {
-		"tech_banking4"
+		"tech_banking_15"
+	}
+
+	required_resources = {
+		sr_plasma3 = 1
+	}	
+	
+	upgrades = {
+		building_bank_5
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_3"
+			planet = {
+
+					has_building = "building_capital_3"
+			}
+		}
+	}
+}
+
+building_bank_5 = {
+	base_buildtime = @b5time
+	
+	cost = {
+		minerals = @b5cost
+	}
+	
+	produced_resources = {
+		energy = 80
+		sr_plasma = 0.01
+		sr_nutrients = 0.01
+		sr_steel = 0.01
+	}
+	
+
+	prerequisites = {
+		"tech_banking_20"
 	}
 
 	required_resources = {
@@ -3849,4 +4100,176 @@ building_bank4 = {
 			}
 		}
 	}
+}
+###############
+######Hospitals
+###############
+building_basic_hospital = {
+	base_buildtime = @b1time
+	planet_unique = yes
+	
+	cost = {
+		minerals = @b1cost
+	}
+	
+	planet_modifier = {
+		pop_growth_req_mult = -0.03
+		pop_happiness = 0.01
+	}
+	
+	upgrades = {
+		building_hospital_2
+	}
+	prerequisites = {
+		"tech_medicine_1"
+	}
+	allow = {
+		custom_tooltip = {
+			text = "requires_shelter"
+			planet = {
+				OR = {
+					has_building = "building_colony_shelter"
+					has_building = "building_capital_1"
+					has_building = "building_capital_2"
+					has_building = "building_capital_3"
+				}
+			}
+		}
+	}
+ 
+}
+
+building_hospital_2 = {
+	base_buildtime = @b2time
+	planet_unique = yes	
+	
+	cost = {
+		minerals = @b2cost
+	}
+	
+	planet_modifier = {
+		pop_growth_req_mult = -0.06
+		pop_happiness = 0.02
+	}
+	
+	upgrades = {
+		building_hospital_3
+	}
+	prerequisites = {
+		"tech_medicine_5"
+	}
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_1"
+			planet = {
+				OR = {
+					has_building = "building_capital_1"
+					has_building = "building_capital_2"
+					has_building = "building_capital_3"
+				}
+			}
+		}
+	}
+ 
+}
+
+building_hospital_3 = {
+	base_buildtime = @b3time
+	planet_unique = yes	
+	
+	cost = {
+		minerals = @b3cost
+	}
+	
+	planet_modifier = {
+		pop_growth_req_mult = -0.09
+		pop_happiness = 0.03
+	}
+	
+	upgrades = {
+		building_hospital_4
+	}
+	
+	prerequisites = {
+		"tech_medicine_10"
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_2"
+			planet = {
+				OR = {
+					has_building = "building_capital_2"
+					has_building = "building_capital_3"
+				}
+			}
+		}
+	}
+ 
+}
+
+building_hospital_4 = {
+	base_buildtime = @b4time
+	planet_unique = yes	
+	
+	cost = {
+		minerals = @b4cost
+	}
+	
+	planet_modifier = {
+		pop_growth_req_mult = -0.12
+		pop_happiness = 0.04
+	}
+	
+	upgrades = {
+		building_hospital_5
+	}
+	
+	prerequisites = {
+		"tech_medicine_15"
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_3"
+			planet = {
+				OR = {
+
+					has_building = "building_capital_3"
+				}
+			}
+		}
+	}
+ 
+}
+
+building_hospital_5 = {
+	base_buildtime = @b5time
+	planet_unique = yes
+	
+	cost = {
+		minerals = @b5cost
+	}
+	
+	planet_modifier = {
+		pop_growth_req_mult = -0.15
+		pop_happiness = 0.05
+	}
+	
+	prerequisites = {
+		"tech_medicine_20"
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_3"
+			planet = {
+				OR = {
+
+					has_building = "building_capital_3"
+				}
+			}
+		}
+	}
+ 
 }

@@ -101,14 +101,16 @@
 # Banking
 # ##################
 
-tech_banking2 = {
+tech_banking_2 = {
 	cost = @tier2cost1
 	area = society
 	tier = 1
 	category = { banking }	
 	weight = @tier2weight1
 		
-	# unlock T2 bank	
+	modifier = {
+		tile_resource_energy_mult = 0.05
+	}
 	
 	weight_modifier = {
 		modifier = {
@@ -131,15 +133,17 @@ tech_banking2 = {
 	}
 }
 
-tech_banking3 = {
+tech_banking_3 = {
 	cost = @tier2cost1
 	area = society
-	tier = 1
+	tier = 2
 	category = { banking }	
-	prerequisites = { "tech_banking2" }
+	prerequisites = { "tech_banking_2" }
 	weight = @tier2weight1
 		
-	# unlock T2 bank	
+	modifier = {
+		tile_resource_energy_mult = 0.05
+	}
 	
 	weight_modifier = {
 		modifier = {
@@ -162,15 +166,17 @@ tech_banking3 = {
 	}
 }
 
-tech_banking4 = {
-	cost = @tier2cost1
+tech_banking_4 = {
+	cost = @tier3cost1
 	area = society
-	tier = 1
+	tier = 3
 	category = { banking }	
-	prerequisites = { "tech_banking3"}
-	weight = @tier2weight1
+	prerequisites = { "tech_banking_3"}
+	weight = @tier3weight1
 		
-	# unlock T2 bank	
+	modifier = {
+		tile_resource_energy_mult = 0.05
+	}
 	
 	weight_modifier = {
 		modifier = {
@@ -197,7 +203,7 @@ tech_galactic_markets = {
 	area = society
 	tier = 2
 	category = { statecraft }
-	prerequisites = { "tech_banking3"}
+	prerequisites = { "tech_banking_3"}
 	weight = @tier2weight3
 	is_rare = yes
 	
@@ -259,10 +265,10 @@ tech_banking_5 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { banking }
-	prerequisites = { "tech_banking4"}
+	prerequisites = { "tech_banking_4"}
 	weight = @tier2weight1
 	
-	
+	#Bank 2	
 
 	
 	ai_weight = {
@@ -281,7 +287,9 @@ tech_banking_6 = {
 	prerequisites = { "tech_banking_5"}	
 	weight = @tier2weight1
 	
-
+	modifier = {
+		tile_resource_energy_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -299,7 +307,9 @@ tech_banking_7 = {
 	prerequisites = { "tech_banking_6"}	
 	weight = @tier2weight1
 	
-	
+	modifier = {
+		tile_resource_energy_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -317,7 +327,9 @@ tech_banking_8 = {
 	prerequisites = { "tech_banking_7"}
 	weight = @tier2weight1
 	
-
+	modifier = {
+		tile_resource_energy_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -335,7 +347,9 @@ tech_banking_9 = {
 	prerequisites = { "tech_banking_8"}	
 	weight = @tier2weight1
 	
-	
+	modifier = {
+		tile_resource_energy_mult = 0.05
+	}
 
 	ai_weight = {
 		modifier = {
@@ -353,6 +367,7 @@ tech_banking_10 = {
 	prerequisites = { "tech_banking_9"}
 	weight = @tier2weight1
 
+	#Bank 3
 	
 	ai_weight = {
 		modifier = {
@@ -370,6 +385,9 @@ tech_banking_11 = {
 	prerequisites = { "tech_banking_10"}	
 	weight = @tier2weight1
 
+	modifier = {
+		tile_resource_energy_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -387,6 +405,9 @@ tech_banking_12 = {
 	prerequisites = { "tech_banking_11"}	
 	weight = @tier2weight1
 
+	modifier = {
+		tile_resource_energy_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -404,6 +425,9 @@ tech_banking_13 = {
 	prerequisites = { "tech_banking_12"}	
 	weight = @tier2weight1
 
+	modifier = {
+		tile_resource_energy_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -421,6 +445,9 @@ tech_banking_14 = {
 	prerequisites = { "tech_banking_13"}	
 	weight = @tier2weight1
 
+	modifier = {
+		tile_resource_energy_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -438,6 +465,7 @@ tech_banking_15 = {
 	prerequisites = { "tech_banking_14"}
 	weight = @tier2weight1
 	
+	#Bank 4
 	
 	ai_weight = {
 		modifier = {
@@ -455,6 +483,9 @@ tech_banking_16 = {
 	prerequisites = { "tech_banking_15"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		tile_resource_energy_mult = 0.05
+	}
 		
 	ai_weight = {
 		modifier = {
@@ -472,6 +503,9 @@ tech_banking_17 = {
 	prerequisites = { "tech_banking_16"}	
 	weight = @tier2weight1
 
+	modifier = {
+		tile_resource_energy_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -489,6 +523,9 @@ tech_banking_18 = {
 	prerequisites = { "tech_banking_17"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		tile_resource_energy_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -506,6 +543,9 @@ tech_banking_19 = {
 	prerequisites = { "tech_banking_18"}	
 	weight = @tier2weight1
 
+	modifier = {
+		tile_resource_energy_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -517,12 +557,13 @@ tech_banking_19 = {
 
 tech_banking_20 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier4cost1
+	tier = 4
 	category = { banking }
 	prerequisites = { "tech_banking_19"}	
-	weight = @tier2weight1
+	weight = @tier4weight1
 
+	#Bank 5
 	
 	ai_weight = {
 		modifier = {

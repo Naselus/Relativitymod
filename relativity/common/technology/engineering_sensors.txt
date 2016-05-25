@@ -299,6 +299,9 @@ tech_sensors_6 = {
 	prerequisites = { "tech_orbital_sensor_array"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_sensor_range_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -316,6 +319,9 @@ tech_sensors_7 = {
 	prerequisites = { "tech_sensors_6"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_sensor_range_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -333,6 +339,9 @@ tech_sensors_8 = {
 	prerequisites = { "tech_sensors_7"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_sensor_range_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -350,6 +359,9 @@ tech_sensors_9 = {
 	prerequisites = { "tech_sensors_8"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_sensor_range_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -367,6 +379,9 @@ tech_sensors_10 = {
 	prerequisites = { "tech_sensors_9"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_sensor_range_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -384,6 +399,9 @@ tech_sensors_11 = {
 	prerequisites = { "tech_sensors_10"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_sensor_range_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -401,6 +419,9 @@ tech_sensors_12 = {
 	prerequisites = { "tech_sensors_11"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_sensor_range_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -418,6 +439,9 @@ tech_sensors_13 = {
 	prerequisites = { "tech_sensors_12"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_sensor_range_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -435,6 +459,9 @@ tech_sensors_14 = {
 	prerequisites = { "tech_sensors_13"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_sensor_range_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -452,6 +479,9 @@ tech_sensors_15= {
 	prerequisites = { "tech_sensors_14"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_sensor_range_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -469,6 +499,9 @@ tech_sensors_16 = {
 	prerequisites = { "tech_sensors_15"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_sensor_range_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -486,6 +519,9 @@ tech_sensors_17 = {
 	prerequisites = { "tech_sensors_16"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_sensor_range_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -503,6 +539,9 @@ tech_sensors_18 = {
 	prerequisites = { "tech_sensors_17"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_sensor_range_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -520,6 +559,9 @@ tech_sensors_19 = {
 	prerequisites = { "tech_sensors_18"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_sensor_range_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -537,6 +579,9 @@ tech_sensors_20 = {
 	prerequisites = { "tech_sensors_19"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_sensor_range_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {

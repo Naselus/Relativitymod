@@ -203,7 +203,7 @@ tech_strike_craft_4 = {
 	tier = 2
 	category = { strikecraft }
 	prerequisites = { "tech_strike_craft_3"}	
-	weight = @tier2weight1
+	weight = 0
 	
 	
 	ai_weight = {

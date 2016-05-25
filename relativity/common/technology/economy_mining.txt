@@ -239,7 +239,7 @@ tech_mining_network_5 = {
 		}
 	}
 }
-
+#Steel 2 Start
 tech_mining_6 = {
 	area = society
 	cost = @tier2cost1
@@ -337,6 +337,7 @@ tech_mining_10 = {
 	}
 }
 
+#Steel 3 Start
 tech_mining_11 = {
 	area = society
 	cost = @tier2cost1

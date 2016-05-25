@@ -276,7 +276,7 @@ tech_mineral_processing_5 = {
 	}
 }
 
-#Advanced Mineral Processing 6
+#Tier 2 Mineral Processing Start
 tech_mineral_processing_6 = {
 	cost = @tier2cost1
 	area = society
@@ -342,6 +342,142 @@ tech_mineral_processing_7 = {
 				area = society
 				has_trait = "leader_trait_expertise_mineral_processing"
 			}
+		}
+	}
+}
+
+tech_mineral_processing_8 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { mineral_processing }
+	prerequisites = { "tech_mineral_processing_7"}	
+	weight = @tier2weight1
+	
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_mineral_processing_9 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	prerequisites = { "tech_mineral_processing_8"}	
+	weight = @tier2weight1
+	
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_mineral_processing_10 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { mineral_processing }
+	prerequisites = { "tech_mineral_processing_9"}	
+	weight = @tier2weight1
+	
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+#Tier 3 Mineral_Processing
+tech_mineral_processing_11 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { mineral_processing }
+	prerequisites = { "tech_mineral_processing_10"}	
+	weight = @tier2weight1
+	
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_mineral_processing_12 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { mineral_processing }
+	prerequisites = { "tech_mineral_processing_11"}	
+	weight = @tier2weight1
+	
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_mineral_processing_13 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { mineral_processing }
+	prerequisites = { "tech_mineral_processing_12"}	
+	weight = @tier2weight1
+	
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_mineral_processing_14 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { mineral_processing }
+	prerequisites = { "tech_mineral_processing_13"}	
+	weight = @tier2weight1
+	
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_mineral_processing_15 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { mineral_processing }
+	prerequisites = { "tech_mineral_processing_14"}	
+	weight = @tier2weight1
+	
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
 		}
 	}
 }
@@ -512,141 +648,6 @@ tech_industry_boost_5 = {
 				area = society
 				has_trait = "leader_trait_expertise_mineral_processing"
 			}
-		}
-	}
-}
-
-tech_mineral_processing_8 = {
-	area = society
-	cost = @tier2cost1
-	tier = 2
-	category = { mineral_processing }
-	prerequisites = { "tech_mineral_processing_7"}	
-	weight = @tier2weight1
-	
-	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
-}
-
-tech_mineral_processing_9 = {
-	area = society
-	cost = @tier2cost1
-	tier = 2
-	prerequisites = { "tech_mineral_processing_8"}	
-	weight = @tier2weight1
-	
-	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
-}
-
-tech_mineral_processing_10 = {
-	area = society
-	cost = @tier2cost1
-	tier = 2
-	category = { mineral_processing }
-	prerequisites = { "tech_mineral_processing_9"}	
-	weight = @tier2weight1
-	
-	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
-}
-
-tech_mineral_processing_11 = {
-	area = society
-	cost = @tier2cost1
-	tier = 2
-	category = { mineral_processing }
-	prerequisites = { "tech_mineral_processing_10"}	
-	weight = @tier2weight1
-	
-	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
-}
-
-tech_mineral_processing_12 = {
-	area = society
-	cost = @tier2cost1
-	tier = 2
-	category = { mineral_processing }
-	prerequisites = { "tech_mineral_processing_11"}	
-	weight = @tier2weight1
-	
-	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
-}
-
-tech_mineral_processing_13 = {
-	area = society
-	cost = @tier2cost1
-	tier = 2
-	category = { mineral_processing }
-	prerequisites = { "tech_mineral_processing_12"}	
-	weight = @tier2weight1
-	
-	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
-}
-
-tech_mineral_processing_14 = {
-	area = society
-	cost = @tier2cost1
-	tier = 2
-	category = { mineral_processing }
-	prerequisites = { "tech_mineral_processing_13"}	
-	weight = @tier2weight1
-	
-	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
-}
-
-tech_mineral_processing_15 = {
-	area = society
-	cost = @tier2cost1
-	tier = 2
-	category = { mineral_processing }
-	prerequisites = { "tech_mineral_processing_14"}	
-	weight = @tier2weight1
-	
-	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
 		}
 	}
 }

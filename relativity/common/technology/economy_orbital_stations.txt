@@ -155,7 +155,7 @@ tech_orbital_stations_2 = {
 	tier = 2
 	category = { orbital_stations }
 	prerequisites = { "tech_space_construction"}	
-	weight = @tier2weight1
+	weight = 0
 	
 	
 	ai_weight = {

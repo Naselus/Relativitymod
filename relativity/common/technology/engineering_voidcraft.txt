@@ -506,6 +506,9 @@ tech_void_12 = {
 	prerequisites = { "tech_space_defense_station_improvement"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_hitpoints_mult = 0.05 
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -523,6 +526,9 @@ tech_void_13 = {
 	prerequisites = { "tech_void_12"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_hitpoints_mult = 0.05 
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -540,6 +546,9 @@ tech_void_14 = {
 	prerequisites = { "tech_void_13"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_hitpoints_mult = 0.05 
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -557,6 +566,9 @@ tech_void_15 = {
 	prerequisites = { "tech_void_14"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_hitpoints_mult = 0.05 
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -574,6 +586,9 @@ tech_void_16 = {
 	prerequisites = { "tech_void_15"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_hitpoints_mult = 0.05 
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -591,6 +606,9 @@ tech_void_17 = {
 	prerequisites = { "tech_void_16"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_hitpoints_mult = 0.05 
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -608,6 +626,9 @@ tech_void_18 = {
 	prerequisites = { "tech_void_17"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_hitpoints_mult = 0.05 
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -625,6 +646,9 @@ tech_void_19 = {
 	prerequisites = { "tech_void_18"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_hitpoints_mult = 0.05 
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -642,6 +666,9 @@ tech_void_20 = {
 	prerequisites = { "tech_void_19"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_hitpoints_mult = 0.05 
+	}
 	
 	ai_weight = {
 		modifier = {

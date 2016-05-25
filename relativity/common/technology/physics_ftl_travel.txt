@@ -493,9 +493,12 @@ tech_ftl_13 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { ftl_travel }
-	prerequisites = { "tech_jump_drive_1"}	
+	prerequisites = { "tech_warp_drive_3"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_ftl_warp_range_mult = 0.10
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -513,6 +516,9 @@ tech_ftl_14 = {
 	prerequisites = { "tech_ftl_13"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_ftl_warp_range_mult = 0.10
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -530,6 +536,9 @@ tech_ftl_15 = {
 	prerequisites = { "tech_ftl_14"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_ftl_warp_range_mult = 0.10
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -544,9 +553,12 @@ tech_ftl_16 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { ftl_travel }
-	prerequisites = { "tech_ftl_15"}	
+	prerequisites = { "tech_hyper_drive_3"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_interstellar_speed_mult = 0.10
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -564,6 +576,9 @@ tech_ftl_17 = {
 	prerequisites = { "tech_ftl_16"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_interstellar_speed_mult = 0.10
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -581,6 +596,9 @@ tech_ftl_18 = {
 	prerequisites = { "tech_ftl_17"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_interstellar_speed_mult = 0.10
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -595,9 +613,13 @@ tech_ftl_19 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { ftl_travel }
-	prerequisites = { "tech_ftl_18"}	
+	prerequisites = { "tech_wormhole_generation_3"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_ftl_wormhole_speed_mult = 0.05
+		ship_ftl_wormhole_range_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {
@@ -615,6 +637,10 @@ tech_ftl_20 = {
 	prerequisites = { "tech_ftl_19"}	
 	weight = @tier2weight1
 	
+	modifier = {
+		ship_ftl_wormhole_speed_mult = 0.05
+		ship_ftl_wormhole_range_mult = 0.05
+	}
 	
 	ai_weight = {
 		modifier = {

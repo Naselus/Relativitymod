@@ -102,7 +102,7 @@ tech_edicts_1 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { edicts }
-	weight = @tier2weight1
+	weight = 0
 	
 	
 	

@@ -102,7 +102,7 @@ tech_xenobiology_1 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { xenobiology }
-	weight = @tier2weight1
+	weight = 0
 	
 	
 	ai_weight = {

@@ -998,85 +998,146 @@ tech_frontier_traditions = {
 
 tech_colonization_16 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier4cost1
+	tier = 4
 	category = { new_worlds }
-	prerequisites = { "tech_arid_colonization" }
-	weight = @tier2weight1
+	prerequisites = { "tech_atmospheric_manipulation"}
+	weight = @tier4weight1
+	
+	#Barren to Desert
+	
+	modifier = {
+		pop_environment_tolerance = 0.05
+	}
 	
 	ai_weight = {
+		factor = 3
 		modifier = {
-			factor = 0
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
 		}
 	}
 }
 
 tech_colonization_17 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier4cost1
+	tier = 4
 	category = { new_worlds }
 	prerequisites = { "tech_colonization_16" }
-	weight = @tier2weight1
+	weight = @tier4weight1
 	
-	
+	modifier = {
+		pop_environment_tolerance = 0.05
+	}
 	
 	ai_weight = {
+		factor = 3
 		modifier = {
-			factor = 0
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
 		}
 	}
 }
 
 tech_colonization_18 = {
 	area = society
-	cost = @tier2cost1
+	cost = @tier4cost1
 	tier = 2
 	category = { new_worlds }
 	prerequisites = { "tech_colonization_17" }
-	weight = @tier2weight1
+	weight = @tier4weight1
 	
+	modifier = {
+		pop_environment_tolerance = 0.05
+	}
 	
 	ai_weight = {
+		factor = 3
 		modifier = {
-			factor = 0
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
 		}
 	}
 }
 
 tech_colonization_19 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier4cost3
+	tier = 4
 	category = { new_worlds }
 	prerequisites = { "tech_colonization_18" }
-	weight = @tier2weight1
+	weight = @tier4weight3
 	
+	modifier = {
+		pop_environment_tolerance = 0.05
+	}
 	
 	ai_weight = {
+		factor = 3
 		modifier = {
-			factor = 0
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
 		}
 	}
 }
 
 tech_colonization_20 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier5cost1
+	tier = 5
 	category = { new_worlds }
 	prerequisites = { "tech_colonization_19" }	
-	weight = @tier2weight1
+	weight = @tier5weight1
 	
+	modifier = {
+		pop_environment_tolerance = 0.05
+	}
 
 	ai_weight = {
+		factor = 3
 		modifier = {
-			factor = 0
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+	}
+}
+
+tech_colonization_21 = {
+	area = society
+	cost = @tier5cost3
+	tier = 5
+	category = { new_worlds }
+	prerequisites = { "tech_colonization_19" }	
+	weight = 0
+	
+	modifier = {
+		pop_environment_tolerance = 0.05
+	}
+
+	ai_weight = {
+		factor = 3
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
 		}
 	}
 }
