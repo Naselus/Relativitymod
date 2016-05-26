@@ -1004,7 +1004,6 @@ tech_colonization_16 = {
 	prerequisites = { "tech_atmospheric_manipulation"}
 	weight = @tier4weight1
 	
-	#Barren to Desert
 	
 	modifier = {
 		pop_environment_tolerance = 0.05
@@ -1024,11 +1023,11 @@ tech_colonization_16 = {
 
 tech_colonization_17 = {
 	area = society
-	cost = @tier4cost1
+	cost = @tier4cost3
 	tier = 4
 	category = { new_worlds }
 	prerequisites = { "tech_colonization_16" }
-	weight = @tier4weight1
+	weight = @tier4weight3
 	
 	modifier = {
 		pop_environment_tolerance = 0.05
@@ -1048,11 +1047,11 @@ tech_colonization_17 = {
 
 tech_colonization_18 = {
 	area = society
-	cost = @tier4cost1
-	tier = 2
+	cost = @tier5cost1
+	tier = 5
 	category = { new_worlds }
 	prerequisites = { "tech_colonization_17" }
-	weight = @tier4weight1
+	weight = @tier5weight1
 	
 	modifier = {
 		pop_environment_tolerance = 0.05
@@ -1072,11 +1071,11 @@ tech_colonization_18 = {
 
 tech_colonization_19 = {
 	area = society
-	cost = @tier4cost3
-	tier = 4
+	cost = @tier5cost1
+	tier = 5
 	category = { new_worlds }
 	prerequisites = { "tech_colonization_18" }
-	weight = @tier4weight3
+	weight = @tier5weight3
 	
 	modifier = {
 		pop_environment_tolerance = 0.05
