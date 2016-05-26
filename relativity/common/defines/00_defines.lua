@@ -596,7 +596,7 @@ NDefines = {
 		NUM_TECH_ALTERNATIVES					= 5,
 		TECH_WEIGHT_BASE						= 10,
 		TECH_WEIGHT_POTENTIAL_ADD				= 0,
-		TECH_RESEARCH_NO_LEADER_PENALTY			= -0.25,
+		TECH_RESEARCH_NO_LEADER_PENALTY			= 0,
 		TECH_COST_MULT_NUM_COLONIES				= 0.0, -- Each Planet adds +X% tech cost
 		TECH_COST_FREE_POPS						= 10, -- First X pops do not add any tech cost
 		TECH_COST_MULT_NUM_POPS					= 0.03, -- Each non-free Pop adds +X% tech cost
@@ -637,7 +637,7 @@ NDefines = {
 		POP_MIGRATION_NOT_ALLOWED_POLICY_FLAG	= "migration_not_allowed", -- Policy flag for pop migration not allowed (used by migration access)
 		POP_MIGRATION_ALLOWED_PRIMARY_ONLY_POLICY_FLAG	= "migration_allowed_primary_only", -- Policy flag for pop migration not allowed (used by migration access)
 	
-		RESEARCH_AGREEMENT_COST_MULT			= -0.25,	-- Technology cost reduced with 25% for trade research agreement deal
+		RESEARCH_AGREEMENT_COST_MULT			= -0.05,	-- Technology cost reduced with 25% for trade research agreement deal
 		
 		INTEGRATE_SUBJECT_MIN_DAYS 				= 3600, -- Amount of days the subject has been a subject before we can integrate it
 		SUBJECTS_INTEGRATION_CAP				= 1, -- Amount of integrations you're allowed to have at the same time
@@ -1011,12 +1011,12 @@ NDefines = {
 		PLANET_BUDGET_FACTOR = 0.10,			-- When AI has few planets, it will decrease building/mil station budget by this and put it into colonies/stations instead
 		MAX_PLANETS_FOR_BUDGET_FACTOR = 2,		-- At this amount of planets, budget is normalized
 
-		MINERAL_MILITARY_STATION_BUDGET_FRACTION = 0.05, -- AI will spend this fraction of their stored minerals on military stations
+		MINERAL_MILITARY_STATION_BUDGET_FRACTION = 0.15, -- AI will spend this fraction of their stored minerals on military stations
 		MINERAL_NAVY_BUDGET_FRACTION = 0.10, 	-- AI will spend this fraction of their stored minerals on ships
 		MINERAL_STATION_BUDGET_FRACTION = 0.20, -- AI will spend this fraction of their stored minerals on stations (used for spaceport instead when it needs a new spaceport)
 		MINERAL_BUILDING_BUDGET_FRACTION = 0.20,-- AI will spend this fraction of their stored minerals on buildings (used for spaceport instead when it needs a new spaceport)
 		MINERAL_SPACEPORT_BUDGET_FRACTION = 0.05, -- AI will spend this fraction of their stored minerals on spaceport modules
-		MINERAL_COLONY_BUDGET_FRACTION = 0.20,
+		MINERAL_COLONY_BUDGET_FRACTION = 0.10,
 		MINERAL_ARMY_BUDGET_FRACTION = 0.05,	-- AI will spend this fraction on armies
 		MINERAL_TILE_BLOCKER_BUDGET_FRACTION = 0.05,	-- AI will spend this fraction on tile blockers
 		MINERAL_ROBOT_BUDGET_FRACTION = 0.05,	-- AI will spend this fraction of their stored minerals on robots (transfered to buildings if they don't use robots)
@@ -1154,8 +1154,8 @@ NDefines = {
 
 		AI_COMMUNICATIONS_RANDOM_VALUE = 60,		-- AI communications days will vary with +- these many days
 		
-		OUTPOST_STATION_RESOURCES_BUILD = 7,			-- AI should build outpost station if system has more than this many resources
-		OUTPOST_STATION_RESOURCES_NEIGHBORS_BUILD = 20, -- AI should build oupost station if neighboring systems have these many resources
+		OUTPOST_STATION_RESOURCES_BUILD = 4,			-- AI should build outpost station if system has more than this many resources
+		OUTPOST_STATION_RESOURCES_NEIGHBORS_BUILD = 15, -- AI should build oupost station if neighboring systems have these many resources
 		OUTPOST_STATION_DISTANCE_MIN = 20,			-- AI consideres station in neighboring system if square distance is less than this value
 		OUTPOST_STATION_DISTANCE_MAX = 30,			-- AI consideres station in neighboring system if square distance is higher than this value from a colony
 		OUTPOST_STATION_RANGE = 20,					-- AI consider outpost station to be able to extrude border about this far
