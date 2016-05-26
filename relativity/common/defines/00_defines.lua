@@ -343,6 +343,8 @@ NDefines = {
 	},
 
 	NGameplay = {
+		ALLOW_EMPIRE_DESIGN_CHEATS = false,
+		VICTORY_CONDITION_DOMINATION = 0.75,
 		PRE_COMMUNICATIONS_EMPIRE_FLAG = "special/unknown.dds",
 		FLEET_MIN_TI_CLEAR_RADIUS = 10,			-- min radius for clearing terra incognita, will use the highest of this and sensor range
 		TI_TEXTURE_SIZE = 256,					-- size of the internal terra incognita texture, high resolutions can cause stuttering and will increase memory demand and save file size.
@@ -403,8 +405,10 @@ NDefines = {
 		LEADER_SKILL_MIN		= 1,
 		LEADER_EXP_MIN			= 1,
 		LEADER_EXP_MAX			= 400,
-		LEADER_AGE_MIN			= 18,				-- Min age of generated leaders
-		LEADER_AGE_MAX			= 25,				-- Max age of generated leaders
+		LEADER_AGE_HEIR_MIN		= 18,				-- Min age of generated heirs in dynastic governments
+		LEADER_AGE_HEIR_MAX		= 18,				-- Max age of generated heirs in dynastic governments
+		LEADER_AGE_MIN			= 35,				-- Min age of generated leaders
+		LEADER_AGE_MAX			= 40,				-- Max age of generated leaders
 		LEADER_SKILL_LEVEL_START	= 1,			-- Skill Level Leaders start with. XP needed { 200 475 825 1250 }
 		LEADER_EXPERIENCE_REQUIREMENT_BASE_VALUE					= 125, -- Base value when calculating required experience for next skill level
 		LEADER_EXPERIENCE_REQUIREMENT_SCALE_VALUE					= 75, -- Scale factor when calculating required experience for next skill level
@@ -430,6 +434,7 @@ NDefines = {
 		LEADER_GOVERNOR_BUILDING_OR_TILE_CLEAR_EXPERIENCE			= 0.5, -- Scale-value for each completed building-construction or tile-clear, multiplied with the resources spent
 		LEADER_GOVERNOR_EDICT_GAIN_EXPERIENCE						= 0.05, -- Scale-value for the exp-gain given each month an Edict is active on the planet, multiplied with the resources spent
 		LEADER_GOVERNOR_POP_IS_BORN_EXPERIENCE						= 8, -- Exp-gain for each Pop born
+		LEADER_GOVERNOR_SECTOR_MONTHLY_EXPERIENCE					= 3.5,	-- Monthy exp from governing sector.
 
 		LEADER_AGE_DEATH_CHANCE_AGE	= 72,			-- Before this age the chance wont increase
 		LEADER_AGE_DEATH_CHANCE_INC = 0.01,			-- Increase with these % for each year above CHANCE_AGE
@@ -457,6 +462,8 @@ NDefines = {
 		WAR_SCORE_PLANET_BUILDING			= 1.0,		-- Relative warscore value of a planet for every building
 		WAR_SCORE_OCCUPATION_MUL			= 1.5,		-- 150% warscore gained from completely occupying the opponents
 
+		WAR_SCORE_PLANET_MIN 				= 5.0,		-- Warscore from 1 planet will never be less than this
+		WAR_SCORE_WARGOAL_MULT				= 2.0,		-- Wargoal planets are worth this much more
 		REBELS_JOIN_DISTANCE_SQRT			= 100.0,	-- Distance threshold if rebels are to join an already existing rebel.
 		REBELS_POWER_THRESHOLD 				= 0.5, 		-- A Threshold that controls when rebels think they have a chance, Higher = more unwilling
 		
@@ -876,11 +883,23 @@ NDefines = {
 	},
 
 	NAI = {
+		WAS_HUMAN_MONTHS = 120,							-- Amount of months that the AI will refrain from making large changes to the empire if it's taking over from a player
+	
+		DEFICIT_SPENDING_START_WAR = 0.25,				-- If at war and energy is at this fraction of max storage, deficit spend energy
+		DEFICIT_SPENDING_START_PEACE = 0.75,			-- If at peace and energy is at this fraction of max storage, deficit spend energy
+		DEFICIT_SPENDING_STOP_WAR = 0.1,				-- If at war and energy is at this fraction of max storage, stop deficit spending
+		DEFICIT_SPENDING_STOP_PEACE = 0.5,				-- If at peace and energy is at this fraction of max storage, stop deficit spending
+		DEFICIT_SPENDING_MONTHLY_PEACE = 0.003,				-- This percentage of max storage should be deficit spent each month when at peace
+		DEFICIT_SPENDING_MONTHLY_WAR = 0.005,				-- This percentage of max storage should be deficit spent each month when at war
+	
 		BROKEN_TRADE_DEAL_FACTOR = 0.1,				-- How much does each broken trade deal affect future trade willingness ( * value of deal and years )
 		BROKEN_TRADE_DEAL_MAX = 50,	
 		BROKEN_TRADE_DEAL_DECAY = -0.05,			-- Per month
 	
+		THREAT_PLANET_MULT = 5,						-- Base threat multiplier for planet
+		THREAT_POP_MULT = 0.33,						-- Base threat multiplier for pop
 		DIPLOVASSALIZE_THREAT = 1.5,					-- Threat generated from diplovassalization (scales with size of vassalized empire)
+		
 		HIGH_THREAT_THRESHOLD = 50,					-- Must have at least this much threat to become fearful		
 		SHARED_THREAT_MULT = 0.5,					-- How much does having a shared threat boost opinion?
 		SHARED_THREAT_MAX = 200,					
@@ -893,6 +912,12 @@ NDefines = {
 		THREAT_NEGATIVE_OPINION_FACTOR = 0.05,
 		THREAT_OPINION_MAX = 1.25,
 		THREAT_OPINION_MIN = 0.75,
+		
+		COLONIZE_NON_ADJACENT = 0,				-- If enabled, AI will colonize far away systems (will result in border gore)
+		COLONIZE_NON_ADJACENT_DIV = 3,			-- If colony is far away, divide priority to colonize it by this
+	
+		AI_AGGRESSIVENESS_LOW_MULT = 0.5,		
+		AI_AGGRESSIVENESS_HIGH_MULT = 2.0,		
 	
 		AI_AGGRESSIVENESS_BASE = 25,			-- Base chance AI will declare a war (multiplied by personality aggressiveness score)
 		AI_AGGRESSIVENESS_PROPAGATOR_BOXED_IN_MULT = 10,	-- When a warlike 'propagator' personality is boxed in, aggression is multiplied by this value

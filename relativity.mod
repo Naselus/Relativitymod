@@ -6,5 +6,5 @@ tags={
 	"Economy"
 	"Gameplay"
 }
-supported_version="1.0.3"
+supported_version="1.1.0"
 replace_path = "common/technology"`

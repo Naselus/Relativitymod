@@ -5804,7 +5804,7 @@
  alert_powerful_factions_instruction:0 "Click to open pop factions view"
  alert_powerful_factions_entry:0 "$INDEX$: $NAME$ ( $SUPPORT|%$ )"
  alert_research_missing_scientist_title:0 "Ongoing research lacks scientist"
- alert_research_missing_scientist_instant:0 ""
+ alert_research_missing_scientist_instant:0 "a"
  alert_research_missing_scientist_entry:0 "$TECHAREA|H$ has no scientist present."
  
  ####################################
