@@ -292,12 +292,12 @@ tech_battleship_yard_2 = {
 
 #Defense Platform
 tech_space_defense_station_1 = {
-	cost = @tier1cost1
+	cost = @tier1cost2
 	area = engineering
 	tier = 1
 	category = { voidcraft }	
 	prerequisites = { "tech_space_construction" }
-	weight = @tier1weight1
+	weight = @tier1weight2
 	
 	weight_modifier = {
 		modifier = {
@@ -347,12 +347,12 @@ tech_space_defense_station_1 = {
 
 #Defense Station
 tech_space_defense_station_2 = {
-	cost = @tier2cost1
+	cost = @tier2cost3
 	area = engineering
 	tier = 2
 	category = { voidcraft }	
 	prerequisites = { "tech_space_defense_station_1" }
-	weight = @tier2weight1
+	weight = @tier2weight3
 	
 	weight_modifier = {
 		modifier = {
@@ -402,12 +402,12 @@ tech_space_defense_station_2 = {
 
 #Fortress
 tech_space_defense_station_3 = {
-	cost = @tier3cost1
+	cost = @tier3cost3
 	area = engineering
 	tier = 3
 	category = { voidcraft }	
 	prerequisites = { "tech_space_defense_station_2" }
-	weight = @tier3weight1
+	weight = @tier3weight3
 	
 	weight_modifier = {
 		modifier = {
@@ -500,11 +500,11 @@ tech_space_defense_station_improvement = {
 
 tech_void_12 = {
 	area = engineering
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier3cost4
+	tier = 3
 	category = { voidcraft }
 	prerequisites = { "tech_space_defense_station_improvement"}	
-	weight = @tier2weight1
+	weight = @tier3weight4
 	
 	modifier = {
 		ship_hitpoints_mult = 0.05 
@@ -520,11 +520,11 @@ tech_void_12 = {
 
 tech_void_13 = {
 	area = engineering
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier4cost1
+	tier = 4
 	category = { voidcraft }
 	prerequisites = { "tech_void_12"}	
-	weight = @tier2weight1
+	weight = @tier4weight1
 	
 	modifier = {
 		ship_hitpoints_mult = 0.05 
@@ -540,11 +540,11 @@ tech_void_13 = {
 
 tech_void_14 = {
 	area = engineering
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier4cost2
+	tier = 4
 	category = { voidcraft }
 	prerequisites = { "tech_void_13"}	
-	weight = @tier2weight1
+	weight = @tier4weight2
 	
 	modifier = {
 		ship_hitpoints_mult = 0.05 
@@ -560,11 +560,11 @@ tech_void_14 = {
 
 tech_void_15 = {
 	area = engineering
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier4cost3
+	tier = 4
 	category = { voidcraft }
 	prerequisites = { "tech_void_14"}	
-	weight = @tier2weight1
+	weight = @tier4weight3
 	
 	modifier = {
 		ship_hitpoints_mult = 0.05 
@@ -580,11 +580,11 @@ tech_void_15 = {
 
 tech_void_16 = {
 	area = engineering
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier4cost4
+	tier = 4
 	category = { voidcraft }
 	prerequisites = { "tech_void_15"}	
-	weight = @tier2weight1
+	weight = @tier4weight4
 	
 	modifier = {
 		ship_hitpoints_mult = 0.05 
@@ -600,11 +600,11 @@ tech_void_16 = {
 
 tech_void_17 = {
 	area = engineering
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier5cost1
+	tier = 5
 	category = { voidcraft }
 	prerequisites = { "tech_void_16"}	
-	weight = @tier2weight1
+	weight = @tier5weight1
 	
 	modifier = {
 		ship_hitpoints_mult = 0.05 
@@ -620,11 +620,11 @@ tech_void_17 = {
 
 tech_void_18 = {
 	area = engineering
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier5cost2
+	tier = 5
 	category = { voidcraft }
 	prerequisites = { "tech_void_17"}	
-	weight = @tier2weight1
+	weight = @tier5weight2
 	
 	modifier = {
 		ship_hitpoints_mult = 0.05 
@@ -640,11 +640,11 @@ tech_void_18 = {
 
 tech_void_19 = {
 	area = engineering
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier5cost3
+	tier = 5
 	category = { voidcraft }
 	prerequisites = { "tech_void_18"}	
-	weight = @tier2weight1
+	weight = @tier5weight3
 	
 	modifier = {
 		ship_hitpoints_mult = 0.05 
@@ -660,11 +660,11 @@ tech_void_19 = {
 
 tech_void_20 = {
 	area = engineering
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier5cost4
+	tier = 5
 	category = { voidcraft }
 	prerequisites = { "tech_void_19"}	
-	weight = @tier2weight1
+	weight = @tier5weight4
 	
 	modifier = {
 		ship_hitpoints_mult = 0.05 

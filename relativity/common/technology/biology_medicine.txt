@@ -116,7 +116,7 @@ tech_medicine_1 = {
 
 tech_medicine_2 = {
 	area = society
-	cost = @tier2cost1
+	cost = @tier2cost2
 	tier = 2
 	category = { medicine }
 	prerequisites = { "tech_medicine_1"}	
@@ -136,7 +136,7 @@ tech_medicine_2 = {
 
 tech_medicine_3 = {
 	area = society
-	cost = @tier2cost1
+	cost = @tier2cost3
 	tier = 2
 	category = { medicine }
 	prerequisites = { "tech_medicine_2"}	
@@ -156,7 +156,7 @@ tech_medicine_3 = {
 
 tech_medicine_4 = {
 	area = society
-	cost = @tier2cost1
+	cost = @tier2cost4
 	tier = 2
 	category = { medicine }
 	prerequisites = { "tech_medicine_3"}	
@@ -176,11 +176,11 @@ tech_medicine_4 = {
 
 tech_medicine_5 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier3cost1
+	tier = 3
 	category = { medicine }
 	prerequisites = { "tech_medicine_4"}	
-	weight = @tier2weight1
+	weight = @tier3weight1
 	
 	#Hospital 2
 	
@@ -194,8 +194,8 @@ tech_medicine_5 = {
 
 tech_medicine_6 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier3cost1
+	tier = 3
 	category = { medicine }
 	prerequisites = { "tech_medicine_5"}	
 	weight = @tier2weight1
@@ -214,11 +214,11 @@ tech_medicine_6 = {
 
 tech_medicine_7 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier3cost1
+	tier = 3
 	category = { medicine }
 	prerequisites = { "tech_medicine_6"}	
-	weight = @tier2weight1
+	weight = @tier3weight1
 	
 	modifier = {
 			pop_growth_req_mult = -0.05
@@ -234,11 +234,11 @@ tech_medicine_7 = {
 
 tech_medicine_8 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier3cost1
+	tier = 3
 	category = { medicine }
 	prerequisites = { "tech_medicine_7"}	
-	weight = @tier2weight1
+	weight = @tier3weight1
 	
 	modifier = {
 			pop_growth_req_mult = -0.05
@@ -254,11 +254,11 @@ tech_medicine_8 = {
 
 tech_medicine_9 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier3cost1
+	tier = 3
 	category = { medicine }
 	prerequisites = { "tech_medicine_8"}	
-	weight = @tier2weight1
+	weight = @tier3weight2
 	
 	modifier = {
 			pop_growth_req_mult = -0.05
@@ -274,11 +274,11 @@ tech_medicine_9 = {
 
 tech_medicine_10 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier3cost3
+	tier = 3
 	category = { medicine }
 	prerequisites = { "tech_medicine_9"}	
-	weight = @tier2weight1
+	weight = @tier3weight3
 	
 	#Hospital 3
 	
@@ -292,11 +292,11 @@ tech_medicine_10 = {
 
 tech_medicine_11 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier3cost3
+	tier = 3
 	category = { medicine }
 	prerequisites = { "tech_medicine_10"}	
-	weight = @tier2weight1
+	weight = @tier3weight3
 	
 	modifier = {
 			pop_growth_req_mult = -0.05
@@ -312,11 +312,11 @@ tech_medicine_11 = {
 
 tech_medicine_12 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier3cost4
+	tier = 3
 	category = { medicine }
 	prerequisites = { "tech_medicine_11"}	
-	weight = @tier2weight1
+	weight = @tier3weight4
 	
 	modifier = {
 			pop_growth_req_mult = -0.05
@@ -332,11 +332,11 @@ tech_medicine_12 = {
 
 tech_medicine_13 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier4cost1
+	tier = 4
 	category = { medicine }
 	prerequisites = { "tech_medicine_12"}	
-	weight = @tier2weight1
+	weight = @tier4weight1
 	
 	modifier = {
 			pop_growth_req_mult = -0.05
@@ -352,11 +352,11 @@ tech_medicine_13 = {
 
 tech_medicine_14 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier2cost2
+	tier = 4
 	category = { medicine }
 	prerequisites = { "tech_medicine_13"}	
-	weight = @tier2weight1
+	weight = @tier4weight2
 	
 	modifier = {
 			pop_growth_req_mult = -0.05
@@ -372,11 +372,11 @@ tech_medicine_14 = {
 
 tech_medicine_15 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier4cost3
+	tier = 4
 	category = { medicine }
 	prerequisites = { "tech_medicine_14"}	
-	weight = @tier2weight1
+	weight = @tier4weight3
 	
 	#Hospital 4
 	
@@ -390,11 +390,11 @@ tech_medicine_15 = {
 
 tech_medicine_16 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier4cost4
+	tier = 4
 	category = { medicine }
 	prerequisites = { "tech_medicine_15"}	
-	weight = @tier2weight1
+	weight = @tier4weight4
 	
 	modifier = {
 			pop_growth_req_mult = -0.05
@@ -410,11 +410,11 @@ tech_medicine_16 = {
 
 tech_medicine_17 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier5cost1
+	tier = 5
 	category = { medicine }
 	prerequisites = { "tech_medicine_16"}	
-	weight = @tier2weight1
+	weight = @tier5weight1
 	
 	modifier = {
 			pop_growth_req_mult = -0.05
@@ -430,11 +430,11 @@ tech_medicine_17 = {
 
 tech_medicine_18 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier5cost2
+	tier = 5
 	category = { medicine }
 	prerequisites = { "tech_medicine_17"}	
-	weight = @tier2weight1
+	weight = @tier5weight2
 	
 	modifier = {
 			pop_growth_req_mult = -0.05
@@ -450,11 +450,11 @@ tech_medicine_18 = {
 
 tech_medicine_19 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier5cost3
+	tier = 5
 	category = { medicine }
 	prerequisites = { "tech_medicine_18"}	
-	weight = @tier2weight1
+	weight = @tier5weight3
 	
 	modifier = {
 			pop_growth_req_mult = -0.05
@@ -470,11 +470,11 @@ tech_medicine_19 = {
 
 tech_medicine_20 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier5cost4
+	tier = 5
 	category = { medicine }
 	prerequisites = { "tech_medicine_19"}	
-	weight = @tier2weight1
+	weight = @tier5weight4
 	
 	#Hospital 5
 	
