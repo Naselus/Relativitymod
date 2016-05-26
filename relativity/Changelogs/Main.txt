@@ -111,4 +111,6 @@ Version 102.0.1
 * removed armour penetration from more or less everything aside from Plasma (and alien weapons)
 * Fixed loads of bugs.
 * Removed research penalty for not having a leader.
-* 
+* Made compatible with 1.1.0 beta
+* Science deposits are now less common
+*

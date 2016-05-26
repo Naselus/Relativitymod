@@ -152,7 +152,7 @@ ship_section_template = {
 			NOT = {
 				has_ai_personality = honorbound_warriors
 				has_ai_personality = evangelising_zealots
-				has_ai_personality = fanatical_purifiers
+#				has_ai_personality = fanatical_purifiers
 				has_ai_personality = metalhead
 				has_ai_personality = hive_mind
 			}
@@ -193,7 +193,7 @@ ship_section_template = {
 			OR = {
 				has_ai_personality = honorbound_warriors
 				has_ai_personality = evangelising_zealots
-				has_ai_personality = fanatical_purifiers
+			#	has_ai_personality = fanatical_purifiers
 				has_ai_personality = metalhead
 				has_ai_personality = hive_mind
 			}

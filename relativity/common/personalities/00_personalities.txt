@@ -352,7 +352,7 @@ ruthless_capitalists = {
 		dominator = no
 		robot_exploiter = yes
 		robot_liberator = no
-		migrator = yes
+		migrator = no
 	}
 	
 	allow = {
@@ -416,13 +416,13 @@ peaceful_traders = {
 		subjugator = no
 		liberator = yes
 		opportunist = yes
-		slaver = yes
+		slaver = no
 		uplifter = yes
 		purger = no
 		infiltrator = yes
 		dominator = no
-		robot_exploiter = yes
-		robot_liberator = no
+		robot_exploiter = no
+		robot_liberator = yes
 		migrator = no
 	}
 	
@@ -634,8 +634,8 @@ democratic_crusaders = {
 		purger = no
 		dominator = no
 		infiltrator = yes
-		robot_exploiter = no
-		robot_liberator = yes
+		robot_exploiter = yes
+		robot_liberator = no
 		migrator = yes
 	}
 
@@ -1103,6 +1103,51 @@ metalhead = {
 	
 	weight_modifier = {
 		weight = 1000
+	}
+}
+
+fanatic_befrienders = { 
+	type = federation_builder
+	
+	aggressiveness = 2.0
+	trade_willingness = 1.0
+	bravery = 1.5
+	
+	military_spending = 1.2
+	colony_spending = 1.0	
+	
+	alliance_acceptance = 100
+	federation_acceptance = 100
+	
+	threat_modifier = 0.5
+	friction_modifier = 0
+
+	behaviour = {
+		conqueror = yes
+		subjugator = yes
+		liberator = no
+		opportunist = yes
+		slaver = no
+		uplifter = yes
+		purger = no
+		dominator = no
+		infiltrator = yes
+		robot_exploiter = no
+		robot_liberator = no
+		migrator = yes
+	}
+	
+	allow = {
+		NOT = { is_country_type = fallen_empire }
+		has_ethic = "ethic_militarist"
+		has_ethic = "ethic_fanatic_xenophile"
+		has_trait = "trait_repugnant"
+		has_trait = "trait_solitary"
+		has_trait = "trait_venerable"
+	}
+	
+	weight_modifier = {
+		weight = 100			
 	}
 }
 
