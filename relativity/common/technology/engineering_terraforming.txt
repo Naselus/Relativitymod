@@ -734,11 +734,12 @@ tech_tb_deep_sinkhole = {
 #Climate Terraforming
 
 tech_terrestrial_sculpting = {
-	cost = @tier2cost1
+	cost = @tier3cost1
 	area = engineering
-	tier = 2
+	tier = 3
 	category = { terraforming }
-	weight = @tier2weight1
+	prerequisites = { "tech_colonization_3" }
+	weight = @tier3weight1
 	
 	feature_flags = {
 		build_terraform_station
@@ -772,12 +773,12 @@ tech_terrestrial_sculpting = {
 }
 
 tech_atmospheric_manipulation = {
-	cost = @tier2cost3
+	cost = @tier3cost3
 	area = engineering
-	tier = 2
+	tier = 3
 	category = { terraforming }
 	prerequisites = { "tech_terrestrial_sculpting" }
-	weight = @tier2weight3
+	weight = @tier3weight3
 	
 	# unlocks additional terraforming-options
 	
@@ -909,11 +910,11 @@ tech_terraforming_13 = {
 
 tech_terraforming_14 = {
 	area = engineering
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier4cost3
+	tier = 4
 	category = { terraforming }
 	prerequisites = { "tech_terraforming_12" }
-	weight = @tier2weight1
+	weight = @tier4weight3
 	
 	#Toxic to Barren
 	
@@ -958,7 +959,7 @@ tech_terraforming_14 = {
 tech_terraforming_15 = {
 	area = engineering
 	cost = @tier4cost3
-	tier = 2
+	tier = 4
 	category = { terraforming }
 	prerequisites = { "tech_terraforming_13" }
 	weight = @tier4weight3
@@ -1101,8 +1102,8 @@ tech_terraforming_17 = {
 
 tech_terraforming_18= {
 	area = engineering
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier5cost3
+	tier = 5
 	category = { terraforming }
 	prerequisites = { "tech_terraforming_17"}	
 	weight = 0

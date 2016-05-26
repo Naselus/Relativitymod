@@ -147,7 +147,7 @@ tech_army_4 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { ground_combat }
-	prerequisites = { "tech_assault_armies" }
+	prerequisites = { "tech_drop_pod" }
 	weight = @tier2weight1
 	
 	modifier = {
@@ -188,7 +188,7 @@ tech_army_5 = {
 
 tech_army_6 = {
 	area = physics
-	cost = @tier2cost1
+	cost = @tier2cost3
 	tier = 2
 	category = { ground_combat }
 	prerequisites = { "tech_army_5" }
@@ -210,7 +210,7 @@ tech_army_6 = {
 
 tech_army_7 = {
 	area = physics
-	cost = @tier2cost1
+	cost = @tier2cost3
 	tier = 2
 	category = { ground_combat }
 	prerequisites = { "tech_army_6" }
@@ -232,11 +232,11 @@ tech_army_7 = {
 
 tech_army_8 = {
 	area = physics
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier3cost1
+	tier = 3
 	category = { ground_combat }
 	prerequisites = { "tech_army_7" }
-	weight = @tier2weight1
+	weight = @tier3weight1
 	
 	modifier = {
 		army_upkeep_mult = -0.05
@@ -254,11 +254,11 @@ tech_army_8 = {
 
 tech_army_9 = {
 	area = physics
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier3cost3
+	tier = 3
 	category = { ground_combat }
 	prerequisites = { "tech_army_8" }
-	weight = @tier2weight1
+	weight = @tier3weight3
 	
 	modifier = {
 		army_health = 0.05
@@ -276,11 +276,11 @@ tech_army_9 = {
 
 tech_army_10 = {
 	area = physics
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier3cost3
+	tier = 3
 	category = { ground_combat }
 	prerequisites = { "tech_army_9" }
-	weight = @tier2weight1
+	weight = @tier3weight3
 	
 	modifier = {
 		army_upkeep_mult = -0.05
@@ -299,11 +299,11 @@ tech_army_10 = {
 
 tech_army_11 = {
 	area = physics
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier4cost1
+	tier = 4
 	category = { ground_combat }
 	prerequisites = { "tech_army_10" }
-	weight = @tier2weight1
+	weight = @tier4weight1
 	
 	modifier = {
 		army_health = 0.05
@@ -321,11 +321,11 @@ tech_army_11 = {
 
 tech_army_12 = {
 	area = physics
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier4cost3
+	tier = 4
 	category = { ground_combat }
 	prerequisites = { "tech_army_11" }
-	weight = @tier2weight1
+	weight = @tier4weight3
 	
 	modifier = {
 		army_upkeep_mult = -0.05
@@ -343,11 +343,11 @@ tech_army_12 = {
 
 tech_army_13 = {
 	area = physics
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier4cost3
+	tier = 4
 	category = { ground_combat }
 	prerequisites = { "tech_army_12" }
-	weight = @tier2weight1
+	weight = @tier4weight3
 	
 	modifier = {
 		army_health = 0.05
@@ -365,11 +365,11 @@ tech_army_13 = {
 
 tech_army_14 = {
 	area = physics
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier5cost1
+	tier = 5
 	category = { ground_combat }
 	prerequisites = { "tech_army_13" }
-	weight = @tier2weight1
+	weight = @tier5weight1
 	
 	modifier = {
 		army_upkeep_mult = -0.05
@@ -387,11 +387,11 @@ tech_army_14 = {
 
 tech_army_15 = {
 	area = physics
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier5cost3
+	tier = 5
 	category = { ground_combat }
 	prerequisites = { "tech_army_14" }
-	weight = @tier2weight1
+	weight = @tier5weight3
 	
 	modifier = {
 		army_health = 0.05
@@ -409,11 +409,11 @@ tech_army_15 = {
 
 tech_army_16 = {
 	area = physics
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier5cost3
+	tier = 5
 	category = { ground_combat }
 	prerequisites = { "tech_army_15" }
-	weight = @tier2weight1
+	weight = @tier5weight3
 	
 	modifier = {
 		army_upkeep_mult = -0.05
@@ -431,11 +431,11 @@ tech_army_16 = {
 
 tech_army_17 = {
 	area = physics
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier6cost1
+	tier = 6
 	category = { ground_combat }
 	prerequisites = { "tech_army_16" }
-	weight = @tier2weight1
+	weight = @tier6weight1
 	
 	modifier = {
 		army_health = 0.05
@@ -453,11 +453,11 @@ tech_army_17 = {
 
 tech_army_18 = {
 	area = physics
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier6cost1
+	tier = 6
 	category = { ground_combat }
 	prerequisites = { "tech_army_17" }
-	weight = @tier2weight1
+	weight = @tier6weight1
 	
 	modifier = {
 		army_upkeep_mult = -0.05
@@ -475,11 +475,11 @@ tech_army_18 = {
 
 tech_army_19 = {
 	area = physics
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier6cost3
+	tier = 6
 	category = { ground_combat }
 	prerequisites = { "tech_army_18" }
-	weight = @tier2weight1
+	weight = @tier6weight3
 	
 	modifier = {
 		army_health = 0.05
@@ -497,11 +497,11 @@ tech_army_19 = {
 
 tech_army_20 = {
 	area = physics
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier6cost3
+	tier = 6
 	category = { ground_combat }
 	prerequisites = { "tech_army_19" }
-	weight = @tier2weight1
+	weight = @tier6weight3
 	
 	modifier = {
 		army_upkeep_mult = -0.05

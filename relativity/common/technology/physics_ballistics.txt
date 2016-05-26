@@ -550,6 +550,7 @@ tech_autocannons_1 = {
 	tier = 2
 	category = { ballistics }	
 	ai_update_type = military
+	prerequisites = { "tech_mass_drivers_2" }
 	weight = @tier2weight1
 	
 	weight_modifier = {
@@ -852,11 +853,11 @@ tech_flak_batteries_2 = {
 
 tech_ballistics_13 = {
 	area = physics
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier4cost1
+	tier = 4
 	category = { ballistics }
-	prerequisites = { "tech_flak_batteries_2"}	
-	weight = @tier2weight1
+	prerequisites = {"tech_kinetic_artillery_2"}	
+	weight = @tier4weight1
 	
 	modifier = {
 		weapon_type_kinetic_weapon_damage_mult = 0.05
@@ -873,11 +874,11 @@ tech_ballistics_13 = {
 
 tech_ballistics_14 = {
 	area = physics
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier4cost3
+	tier = 4
 	category = { ballistics }
 	prerequisites = { "tech_ballistics_13"}	
-	weight = @tier2weight1
+	weight = @tier4weight3
 	
 	modifier = {
 		weapon_type_kinetic_weapon_damage_mult = 0.05
@@ -894,11 +895,11 @@ tech_ballistics_14 = {
 
 tech_ballistics_15 = {
 	area = physics
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier4cost3
+	tier = 4
 	category = { ballistics }
 	prerequisites = { "tech_ballistics_14"}	
-	weight = @tier2weight1
+	weight = @tier4weight3
 	
 	modifier = {
 		weapon_type_kinetic_weapon_damage_mult = 0.05
@@ -915,11 +916,11 @@ tech_ballistics_15 = {
 
 tech_ballistics_16 = {
 	area = physics
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier5cost1
+	tier = 5
 	category = { ballistics }
 	prerequisites = { "tech_ballistics_15"}	
-	weight = @tier2weight1
+	weight = @tier5weight1
 	
 	modifier = {
 		weapon_type_kinetic_weapon_damage_mult = 0.05
@@ -936,11 +937,11 @@ tech_ballistics_16 = {
 
 tech_ballistics_17 = {
 	area = physics
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier5cost1
+	tier = 5
 	category = { ballistics }
 	prerequisites = { "tech_ballistics_16"}	
-	weight = @tier2weight1
+	weight = @tier5weight1
 	
 	modifier = {
 		weapon_type_kinetic_weapon_damage_mult = 0.05
@@ -957,11 +958,11 @@ tech_ballistics_17 = {
 
 tech_ballistics_18 = {
 	area = physics
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier5cost3
+	tier = 5
 	category = { ballistics }
 	prerequisites = { "tech_ballistics_17"}	
-	weight = @tier2weight1
+	weight = @tier5weight3
 	
 	modifier = {
 		weapon_type_kinetic_weapon_damage_mult = 0.05
@@ -978,11 +979,11 @@ tech_ballistics_18 = {
 
 tech_ballistics_19 = {
 	area = physics
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier5cost3
+	tier = 5
 	category = { ballistics }
 	prerequisites = { "tech_ballistics_18"}	
-	weight = @tier2weight1
+	weight = @tier5weight3
 	
 	modifier = {
 		weapon_type_kinetic_weapon_damage_mult = 0.05
@@ -999,11 +1000,11 @@ tech_ballistics_19 = {
 
 tech_ballistics_20 = {
 	area = physics
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier6cost1
+	tier = 6
 	category = { ballistics }
 	prerequisites = { "tech_ballistics_19"}	
-	weight = @tier2weight1
+	weight = @tier6weight1
 	
 	modifier = {
 		weapon_type_kinetic_weapon_damage_mult = 0.05
