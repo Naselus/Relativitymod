@@ -859,7 +859,7 @@ d_rich_physics_deposit = {
 			}
 		}
 		modifier = {
-			weight = 3
+			weight = 1
 			planet = {
 				OR = {
 					is_planet_class = pc_a_star
@@ -1059,15 +1059,6 @@ d_rich_engineering_deposit = {
 					is_planet_class = pc_desert
 					is_planet_class = pc_tundra
 					is_planet_class = pc_arctic
-				}
-			}
-		}
-		modifier = {
-			weight = 3
-			planet = {
-				OR = {
-					is_planet_class = pc_frozen
-					is_planet_class = pc_gas_giant
 				}
 			}
 		}
@@ -1924,7 +1915,7 @@ d_steel2_deposit_big = {
 	drop_weight = {
 		weight = 0
 				modifier = {
-			weight = 20
+			weight = 25
 			planet = {
 				is_asteroid = yes
 			}

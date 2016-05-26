@@ -1488,6 +1488,14 @@ spriteTypes = {
 		texturefile = "gfx/interface/icons/combat_stats/combat_stat_damage_shields.dds"
 	}
 	spriteType = {
+		name = "GFX_combat_stat_damage_point_defence"
+		texturefile = "gfx/interface/icons/combat_stats/combat_stat_damage_point_defence.dds"
+	}
+	spriteType = {
+		name = "GFX_combat_stat_damage_strike_craft"
+		texturefile = "gfx/interface/icons/combat_stats/combat_stat_damage_strike_craft.dds"
+	}
+	spriteType = {
 		name = "GFX_combat_stat_projectiles_hit"
 		texturefile = "gfx/interface/icons/combat_stats/combat_stat_projectiles_hit.dds"
 	}
