@@ -1512,7 +1512,7 @@ building_physics_lab_2 = {
 	}
 	
 	required_resources = {
-		sr_plasma2 = @b3upkeep
+		sr_plasma = @b3upkeep
 	}
 	
 	upgrades = {
