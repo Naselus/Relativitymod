@@ -195,21 +195,20 @@ sr_dark_matter = {
 
 sr_steel = {
 	AI_category = minerals
-	prerequisites = { "tech_basic_industry" }
 	tradable = yes
 	is_rare = yes
 }
 
 sr_steel2 = {
 	AI_category = minerals
-	prerequisites = { "tech_mining_network_3" }
+	prerequisites = { "tech_mining_6" }
 	tradable = yes
 	is_rare = yes
 }
 
 sr_steel3 = {
 	AI_category = minerals
-	prerequisites = { "tech_mining_network_6" }
+	prerequisites = { "tech_mining_10" }
 	tradable = yes
 	is_rare = yes
 }
@@ -225,12 +224,13 @@ sr_plasma = {
 sr_plasma2 = {
 	AI_category = minerals
 	tradable = yes
-	max = 1000
+	prerequisites = { "tech_power_plant_6" }
 	is_rare = yes
 }
 
 sr_plasma3 = {
 	AI_category = minerals
+	prerequisites = { "tech_power_plant_10" }	
 	tradable = yes
 	is_rare = yes
 }

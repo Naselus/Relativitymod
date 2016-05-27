@@ -157,7 +157,7 @@ tech_orbital_hydroponics_3 = {
 	tier = 4
 	is_rare = yes
 	category = { spaceport_economics }	
-	prerequisites = { "tech_orbital_hydroponics" }
+	prerequisites = { "tech_orbital_hydroponics_2" }
 	weight = @tier4weight3
 	
 	# unlocks hydroponics farm module
@@ -206,7 +206,7 @@ tech_orbital_hydroponics_4 = {
 	tier = 5
 	is_rare = yes
 	category = { spaceport_economics }	
-	prerequisites = { "tech_orbital_hydroponics" }
+	prerequisites = { "tech_orbital_hydroponics_3" }
 	weight = @tier5weight3
 	
 	# unlocks hydroponics farm module
@@ -316,7 +316,7 @@ tech_solar_panel_network_3 = {
 	tier = 4
 	is_rare = no
 	category = { spaceport_economics }
-	prerequisites = { "tech_solar_panel_network" }
+	prerequisites = { "tech_solar_panel_network_2" }
 	weight = @tier4weight3
 	
 	
@@ -345,7 +345,7 @@ tech_solar_panel_network_4 = {
 	tier = 5
 	is_rare = no
 	category = { spaceport_economics }
-	prerequisites = { "tech_solar_panel_network" }
+	prerequisites = { "tech_solar_panel_network_3" }
 	weight = @tier5weight3
 	
 	

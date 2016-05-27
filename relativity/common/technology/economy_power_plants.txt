@@ -103,7 +103,7 @@
 
 tech_power_plant_1 = {
 	cost = 0
-	area = society
+	area = engineering
 	tier = 0
 	category = { power_plants }
 	start_tech = yes
@@ -114,7 +114,7 @@ tech_power_plant_1 = {
 #Power Plant II
 tech_power_plant_2 = {
 	cost = @tier1cost1
-	area = society
+	area = engineering
 	tier = 1
 	category = { power_plants }	
 	prerequisites = { "tech_power_plant_1" }
@@ -129,7 +129,7 @@ tech_power_plant_2 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = society
+				area = engineering
 				has_trait = "leader_trait_expertise_power_plants"
 			}
 		}
@@ -140,7 +140,7 @@ tech_power_plant_2 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = society
+				area = engineering
 				has_trait = "leader_trait_expertise_power_plants"
 			}
 		}
@@ -150,7 +150,7 @@ tech_power_plant_2 = {
 #Power Plant III
 tech_power_plant_3 = {
 	cost = @tier2cost1
-	area = society
+	area = engineering
 	tier = 2
 	category = { power_plants }
 	prerequisites = { "tech_power_plant_2" "tech_colonial_centralization"}
@@ -166,7 +166,7 @@ tech_power_plant_3 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = society
+				area = engineering
 				has_trait = "leader_trait_expertise_power_plants"
 			}
 		}
@@ -177,7 +177,7 @@ tech_power_plant_3 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = society
+				area = engineering
 				has_trait = "leader_trait_expertise_power_plants"
 			}
 		}
@@ -187,7 +187,7 @@ tech_power_plant_3 = {
 #Power Plant IV
 tech_power_plant_4 = {
 	cost = @tier2cost4
-	area = society
+	area = engineering
 	tier = 2
 	category = { power_plants }
 	prerequisites = { "tech_power_plant_3" "tech_galactic_administration"}
@@ -199,7 +199,7 @@ tech_power_plant_4 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = society
+				area = engineering
 				has_trait = "leader_trait_expertise_power_plants"
 			}
 		}
@@ -210,7 +210,7 @@ tech_power_plant_4 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = society
+				area = engineering
 				has_trait = "leader_trait_expertise_power_plants"
 			}
 		}
@@ -220,7 +220,7 @@ tech_power_plant_4 = {
 #Power Plant V
 tech_power_plant_5 = {
 	cost = @tier2cost4
-	area = society
+	area = engineering
 	tier = 2
 	category = { power_plants }
 	prerequisites = { "tech_power_plant_4" "tech_galactic_administration"}
@@ -232,7 +232,7 @@ tech_power_plant_5 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = society
+				area = engineering
 				has_trait = "leader_trait_expertise_power_plants"
 			}
 		}
@@ -243,7 +243,7 @@ tech_power_plant_5 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = society
+				area = engineering
 				has_trait = "leader_trait_expertise_power_plants"
 			}
 		}
@@ -251,7 +251,7 @@ tech_power_plant_5 = {
 }
 
 tech_power_plant_6 = {
-	area = society
+	area = engineering
 	cost = @tier3cost1
 	tier = 3
 	category = { power_plants }
@@ -268,7 +268,7 @@ tech_power_plant_6 = {
 }
 
 tech_power_plant_7 = {
-	area = society
+	area = engineering
 	cost = @tier3cost2
 	tier = 3
 	category = { power_plants }
@@ -285,7 +285,7 @@ tech_power_plant_7 = {
 }
 
 tech_power_plant_8 = {
-	area = society
+	area = engineering
 	cost = @tier3cost3
 	tier = 3
 	category = { power_plants }
@@ -302,7 +302,7 @@ tech_power_plant_8 = {
 }
 
 tech_power_plant_9 = {
-	area = society
+	area = engineering
 	cost = @tier3cost4
 	tier = 3
 	category = { power_plants }
@@ -319,7 +319,7 @@ tech_power_plant_9 = {
 }
 
 tech_power_plant_10 = {
-	area = society
+	area = engineering
 	cost = @tier4cost1
 	tier = 4
 	category = { power_plants }
@@ -336,7 +336,7 @@ tech_power_plant_10 = {
 }
 
 tech_power_plant_11 = {
-	area = society
+	area = engineering
 	cost = @tier4cost2
 	tier = 4
 	category = { power_plants }
@@ -353,7 +353,7 @@ tech_power_plant_11 = {
 }
 
 tech_power_plant_12 = {
-	area = society
+	area = engineering
 	cost = @tier4cost4
 	tier = 4
 	category = { power_plants }
@@ -370,7 +370,7 @@ tech_power_plant_12 = {
 }
 
 tech_power_plant_13 = {
-	area = society
+	area = engineering
 	cost = @tier5cost1
 	tier = 5
 	category = { power_plants }
@@ -387,7 +387,7 @@ tech_power_plant_13 = {
 }
 
 tech_power_plant_14 = {
-	area = society
+	area = engineering
 	cost = @tier5cost2
 	tier = 5
 	category = { power_plants }
@@ -404,7 +404,7 @@ tech_power_plant_14 = {
 }
 
 tech_power_plant_15 = {
-	area = society
+	area = engineering
 	cost = @tier5cost3
 	tier = 5
 	category = { power_plants }
@@ -421,7 +421,7 @@ tech_power_plant_15 = {
 }
 
 tech_power_plant_16 = {
-	area = society
+	area = engineering
 	cost = @tier4cost1
 	tier = 2
 	category = { power_plants }
@@ -438,7 +438,7 @@ tech_power_plant_16 = {
 }
 
 tech_power_plant_17 = {
-	area = society
+	area = engineering
 	cost = @tier2cost1
 	tier = 2
 	category = { power_plants }
@@ -455,7 +455,7 @@ tech_power_plant_17 = {
 }
 
 tech_power_plant_18 = {
-	area = society
+	area = engineering
 	cost = @tier2cost1
 	tier = 2
 	category = { power_plants }
@@ -472,7 +472,7 @@ tech_power_plant_18 = {
 }
 
 tech_power_plant_19 = {
-	area = society
+	area = engineering
 	cost = @tier2cost1
 	tier = 2
 	category = { power_plants }
@@ -489,7 +489,7 @@ tech_power_plant_19 = {
 }
 
 tech_power_plant_20 = {
-	area = society
+	area = engineering
 	cost = @tier2cost1
 	tier = 2
 	category = { power_plants }
