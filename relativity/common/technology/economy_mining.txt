@@ -222,11 +222,11 @@ tech_mining_network_4 = {
 
 tech_mining_network_5 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier3cost1
+	tier = 3
 	category = { mining }
 	prerequisites = { "tech_mining_network_4"}	
-	weight = @tier2weight1
+	weight = @tier3weight1
 
 	modifier = {
 		max_minerals = 1000
@@ -242,11 +242,11 @@ tech_mining_network_5 = {
 #Steel 2 Start
 tech_mining_6 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier3cost2
+	tier = 3
 	category = { mining }
 	prerequisites = { "tech_mining_network_5"}	
-	weight = @tier2weight1
+	weight = @tier3weight2
 
 	modifier = {
 		max_minerals = 1000
@@ -262,11 +262,11 @@ tech_mining_6 = {
 
 tech_mining_7 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier3cost2
+	tier = 3
 	category = { mining }
 	prerequisites = { "tech_mining_6"}	
-	weight = @tier2weight1
+	weight = @tier3weight2
 
 	modifier = {
 		max_minerals = 1000
@@ -282,11 +282,11 @@ tech_mining_7 = {
 
 tech_mining_8 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier3cost2
+	tier = 3
 	category = { mining }
 	prerequisites = { "tech_mining_7"}	
-	weight = @tier2weight1
+	weight = @tier3weight2
 	modifier = {
 		max_minerals = 1000
 	}	
@@ -301,11 +301,11 @@ tech_mining_8 = {
 
 tech_mining_9 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier3cost3
+	tier = 3
 	category = { mining }
 	prerequisites = { "tech_mining_8"}	
-	weight = @tier2weight1
+	weight = @tier3weight3
 	modifier = {
 		max_minerals = 1000
 	}	
@@ -320,11 +320,11 @@ tech_mining_9 = {
 
 tech_mining_10 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier3cost3
+	tier = 3
 	category = { mining }
 	prerequisites = { "tech_mining_9"}	
-	weight = @tier2weight1
+	weight = @tier3weight3
 		modifier = {
 		max_minerals = 1000
 	}
@@ -340,11 +340,11 @@ tech_mining_10 = {
 #Steel 3 Start
 tech_mining_11 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier3cost4
+	tier = 3
 	category = { mining }
 	prerequisites = { "tech_mining_10"}	
-	weight = @tier2weight1
+	weight = @tier3weight4
 	modifier = {
 		max_minerals = 1000
 	}	
@@ -359,11 +359,11 @@ tech_mining_11 = {
 
 tech_mining_12 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier3cost4
+	tier = 3
 	category = { mining }
 	prerequisites = { "tech_mining_11"}	
-	weight = @tier2weight1
+	weight = @tier3weight4
 	modifier = {
 		max_minerals = 1000
 	}	
@@ -378,11 +378,11 @@ tech_mining_12 = {
 
 tech_mining_13 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier4cost1
+	tier = 4
 	category = { mining }
 	prerequisites = { "tech_mining_12"}	
-	weight = @tier2weight1
+	weight = @tier4weight1
 	modifier = {
 		max_minerals = 1000
 	}	
@@ -397,11 +397,11 @@ tech_mining_13 = {
 
 tech_mining_14 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier4cost1
+	tier = 4
 	category = { mining }
 	prerequisites = { "tech_mining_13"}	
-	weight = @tier2weight1
+	weight = @tier4weight1
 	modifier = {
 		max_minerals = 1000
 	}	
@@ -416,11 +416,11 @@ tech_mining_14 = {
 
 tech_mining_15 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier4cost2
+	tier = 4
 	category = { mining }
 	prerequisites = { "tech_mining_14"}	
-	weight = @tier2weight1
+	weight = @tier4weight2
 	modifier = {
 		max_minerals = 1000
 	}	
@@ -435,11 +435,11 @@ tech_mining_15 = {
 
 tech_mining_16 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier4cost3
+	tier = 4
 	category = { mining }
 	prerequisites = { "tech_mining_15"}	
-	weight = @tier2weight1
+	weight = @tier4weight3
 	modifier = {
 		max_minerals = 1000
 	}	
@@ -454,11 +454,11 @@ tech_mining_16 = {
 
 tech_mining_17 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier4cost4
+	tier = 4
 	category = { mining }
 	prerequisites = { "tech_mining_16"}	
-	weight = @tier2weight1
+	weight = @tier4weight4
 	modifier = {
 		max_minerals = 1000
 	}	
@@ -473,11 +473,11 @@ tech_mining_17 = {
 
 tech_mining_18 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier5cost1
+	tier = 5
 	category = { mining }
 	prerequisites = { "tech_mining_17"}	
-	weight = @tier2weight1
+	weight = @tier5weight1
 	modifier = {
 		max_minerals = 1000
 	}	
@@ -492,11 +492,11 @@ tech_mining_18 = {
 
 tech_mining_19 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier5cost2
+	tier = 5
 	category = { mining }
 	prerequisites = { "tech_mining_18"}	
-	weight = @tier2weight1
+	weight = @tier5weight2
 	modifier = {
 		max_minerals = 1000
 	}	
@@ -511,11 +511,11 @@ tech_mining_19 = {
 
 tech_mining_20 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier5cost3
+	tier = 5
 	category = { mining }
 	prerequisites = { "tech_mining_19"}	
-	weight = @tier2weight1
+	weight = @tier5weight3
 		modifier = {
 		max_minerals = 1000
 	}

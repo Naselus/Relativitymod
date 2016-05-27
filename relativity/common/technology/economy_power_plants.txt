@@ -252,11 +252,11 @@ tech_power_plant_5 = {
 
 tech_power_plant_6 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier3cost1
+	tier = 3
 	category = { power_plants }
 	prerequisites = { "tech_power_plant_5"}	
-	weight = @tier2weight1
+	weight = @tier3weight1
 	
 	
 	ai_weight = {
@@ -269,11 +269,11 @@ tech_power_plant_6 = {
 
 tech_power_plant_7 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier3cost2
+	tier = 3
 	category = { power_plants }
 	prerequisites = { "tech_power_plant_6"}	
-	weight = @tier2weight1
+	weight = @tier3weight2
 	
 	
 	ai_weight = {
@@ -286,11 +286,11 @@ tech_power_plant_7 = {
 
 tech_power_plant_8 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier3cost3
+	tier = 3
 	category = { power_plants }
 	prerequisites = { "tech_power_plant_7"}	
-	weight = @tier2weight1
+	weight = @tier3weight3
 	
 	
 	ai_weight = {
@@ -303,11 +303,11 @@ tech_power_plant_8 = {
 
 tech_power_plant_9 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier3cost4
+	tier = 3
 	category = { power_plants }
 	prerequisites = { "tech_power_plant_8"}	
-	weight = @tier2weight1
+	weight = @tier3weight4
 	
 	
 	ai_weight = {
@@ -320,11 +320,11 @@ tech_power_plant_9 = {
 
 tech_power_plant_10 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier4cost1
+	tier = 4
 	category = { power_plants }
 	prerequisites = { "tech_power_plant_9"}	
-	weight = @tier2weight1
+	weight = @tier4weight1
 	
 	
 	ai_weight = {
@@ -337,11 +337,11 @@ tech_power_plant_10 = {
 
 tech_power_plant_11 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier4cost2
+	tier = 4
 	category = { power_plants }
 	prerequisites = { "tech_power_plant_10"}	
-	weight = @tier2weight1
+	weight = @tier4weight2
 	
 	
 	ai_weight = {
@@ -354,11 +354,11 @@ tech_power_plant_11 = {
 
 tech_power_plant_12 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier4cost4
+	tier = 4
 	category = { power_plants }
 	prerequisites = { "tech_power_plant_11"}	
-	weight = @tier2weight1
+	weight = @tier4weight4
 	
 	
 	ai_weight = {
@@ -371,11 +371,11 @@ tech_power_plant_12 = {
 
 tech_power_plant_13 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier5cost1
+	tier = 5
 	category = { power_plants }
 	prerequisites = { "tech_power_plant_12"}	
-	weight = @tier2weight1
+	weight = @tier5weight1
 	
 	
 	ai_weight = {
@@ -388,11 +388,11 @@ tech_power_plant_13 = {
 
 tech_power_plant_14 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier5cost2
+	tier = 5
 	category = { power_plants }
 	prerequisites = { "tech_power_plant_13"}	
-	weight = @tier2weight1
+	weight = @tier4weight2
 	
 	
 	ai_weight = {
@@ -405,11 +405,11 @@ tech_power_plant_14 = {
 
 tech_power_plant_15 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier5cost3
+	tier = 5
 	category = { power_plants }
 	prerequisites = { "tech_power_plant_14"}	
-	weight = @tier2weight1
+	weight = @tier5weight3
 	
 	
 	ai_weight = {
@@ -422,7 +422,7 @@ tech_power_plant_15 = {
 
 tech_power_plant_16 = {
 	area = society
-	cost = @tier2cost1
+	cost = @tier4cost1
 	tier = 2
 	category = { power_plants }
 	prerequisites = { "tech_power_plant_15"}	
