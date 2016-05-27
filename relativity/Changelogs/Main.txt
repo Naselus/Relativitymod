@@ -98,7 +98,7 @@ Version 102.0.1
 * Rebalanced weapons a lot
 
 
-103.0.5
+110.0.5
 
 * Mineral processor can now be built with a shelter.
 * T2 mineral processor can now be built with a T1 colony hub
@@ -113,4 +113,18 @@ Version 102.0.1
 * Removed research penalty for not having a leader.
 * Made compatible with 1.1.0 beta
 * Science deposits are now less common
-*
+
+110.0.6
+
+* Upped Governor Experience
+* More tech work
+* Leader ages corrected
+* Moved Mining, power plants and mineral processing to Engineering
+* Larger ships given slightly more than twice the previous level's hitpoints, to make big ships more attractive.
+* Military station range bonuses doubled.
+* Evasion now caps around 25 (for corvettes) so even low-accuracy weapons have a 50-50 hit rate.
+* Evasion penalty for bigger ships nerfed a bit
+* AI deficit spends more aggressively
+* AI likes colonizing more
+* Higher-end minerals now appear later in the tech tree (once you can use them).
+* 

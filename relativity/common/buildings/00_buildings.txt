@@ -3300,7 +3300,7 @@ building_mining3_network_1 = {
 	}	
 	
 	prerequisites = {
-		"tech_basic_industry"
+		"tech_mining_11"
 	}
 	
 	allow = {
@@ -3352,7 +3352,7 @@ building_mining3_network_2 = {
 	}	
 	
 	prerequisites = {
-		"tech_mining_network_2"
+		"tech_mining_12"
 	}	
 }
 
@@ -3390,7 +3390,7 @@ building_mining3_network_3 = {
 	}	
 	
 	prerequisites = {
-		"tech_mining_network_3"
+		"tech_mining_13"
 	}	
 }
 
