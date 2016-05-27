@@ -405,10 +405,10 @@ NDefines = {
 		LEADER_SKILL_MIN		= 1,
 		LEADER_EXP_MIN			= 1,
 		LEADER_EXP_MAX			= 400,
-		LEADER_AGE_HEIR_MIN		= 18,				-- Min age of generated heirs in dynastic governments
+		LEADER_AGE_HEIR_MIN		= 16,				-- Min age of generated heirs in dynastic governments
 		LEADER_AGE_HEIR_MAX		= 18,				-- Max age of generated heirs in dynastic governments
-		LEADER_AGE_MIN			= 35,				-- Min age of generated leaders
-		LEADER_AGE_MAX			= 40,				-- Max age of generated leaders
+		LEADER_AGE_MIN			= 20,				-- Min age of generated leaders
+		LEADER_AGE_MAX			= 25,				-- Max age of generated leaders
 		LEADER_SKILL_LEVEL_START	= 1,			-- Skill Level Leaders start with. XP needed { 200 475 825 1250 }
 		LEADER_EXPERIENCE_REQUIREMENT_BASE_VALUE					= 125, -- Base value when calculating required experience for next skill level
 		LEADER_EXPERIENCE_REQUIREMENT_SCALE_VALUE					= 75, -- Scale factor when calculating required experience for next skill level
@@ -431,10 +431,10 @@ NDefines = {
 		LEADER_SCIENTIST_ASSIST_RESEARCH							= 0.35, 	-- Experience gained from assisting research per day
 		LEADER_SCIENTIST_ASSIST_RESEARCH_MULT						= 1,	-- Assist Research modifier-mult per skill level (this value times skill level equals modifier)
 
-		LEADER_GOVERNOR_BUILDING_OR_TILE_CLEAR_EXPERIENCE			= 0.5, -- Scale-value for each completed building-construction or tile-clear, multiplied with the resources spent
+		LEADER_GOVERNOR_BUILDING_OR_TILE_CLEAR_EXPERIENCE			= 5, -- Scale-value for each completed building-construction or tile-clear, multiplied with the resources spent
 		LEADER_GOVERNOR_EDICT_GAIN_EXPERIENCE						= 0.05, -- Scale-value for the exp-gain given each month an Edict is active on the planet, multiplied with the resources spent
 		LEADER_GOVERNOR_POP_IS_BORN_EXPERIENCE						= 8, -- Exp-gain for each Pop born
-		LEADER_GOVERNOR_SECTOR_MONTHLY_EXPERIENCE					= 3.5,	-- Monthy exp from governing sector.
+		LEADER_GOVERNOR_SECTOR_MONTHLY_EXPERIENCE					= 5,	-- Monthy exp from governing sector.
 
 		LEADER_AGE_DEATH_CHANCE_AGE	= 72,			-- Before this age the chance wont increase
 		LEADER_AGE_DEATH_CHANCE_INC = 0.01,			-- Increase with these % for each year above CHANCE_AGE
@@ -777,8 +777,8 @@ NDefines = {
 		MIGRATION_SPEED						= 0.05,		-- Monthly migration speed of pops: when the pop has reached a migration progress of 1, it will be moved
 		WAS_ENSLAVED_LENGTH_DAYS			= 3650,		-- Number of days after emancipation a pop is angry for being enslaved
 		
-		GROWTH_BASE							= 25,	-- Required growth for a pop to become fully grown.
-		GROWTH_INCREASE_PER_POP 			= 1.65,	-- Increased growth cost per pop planet [+ POP_INCREASE_PER_POP*(num_pop - 1)]
+		GROWTH_BASE							= 40,	-- Required growth for a pop to become fully grown.
+		GROWTH_INCREASE_PER_POP 			= -1,	-- Increased growth cost per pop planet [+ POP_INCREASE_PER_POP*(num_pop - 1)]
 		GROWTH_INCREASE_FACTOR 				= 1.12,	-- Increased growth factor [+ (num_pop - 1)^POP_INCREASE_FACTOR]
 		FALLEN_EMPIRE_GROWTH_REQ_MULT		= 40,	-- Fallen Empire pops need this much more food for growth
 		
@@ -886,9 +886,9 @@ NDefines = {
 		WAS_HUMAN_MONTHS = 120,							-- Amount of months that the AI will refrain from making large changes to the empire if it's taking over from a player
 	
 		DEFICIT_SPENDING_START_WAR = 0.25,				-- If at war and energy is at this fraction of max storage, deficit spend energy
-		DEFICIT_SPENDING_START_PEACE = 0.75,			-- If at peace and energy is at this fraction of max storage, deficit spend energy
+		DEFICIT_SPENDING_START_PEACE = 0.5,			-- If at peace and energy is at this fraction of max storage, deficit spend energy
 		DEFICIT_SPENDING_STOP_WAR = 0.1,				-- If at war and energy is at this fraction of max storage, stop deficit spending
-		DEFICIT_SPENDING_STOP_PEACE = 0.5,				-- If at peace and energy is at this fraction of max storage, stop deficit spending
+		DEFICIT_SPENDING_STOP_PEACE = 0.2,				-- If at peace and energy is at this fraction of max storage, stop deficit spending
 		DEFICIT_SPENDING_MONTHLY_PEACE = 0.003,				-- This percentage of max storage should be deficit spent each month when at peace
 		DEFICIT_SPENDING_MONTHLY_WAR = 0.005,				-- This percentage of max storage should be deficit spent each month when at war
 	
@@ -1033,15 +1033,15 @@ NDefines = {
 		
 		SHIPSIZE_BUDGET_FACTOR = 0.05,			-- For each ship size unlocked, increase navy budget by this amount
 		NAVAL_CAPACITY_BUDGET_MAX = 100,		-- At this naval capacity, AI puts max budget into ships
-		PLANET_BUDGET_FACTOR = 0.10,			-- When AI has few planets, it will decrease building/mil station budget by this and put it into colonies/stations instead
-		MAX_PLANETS_FOR_BUDGET_FACTOR = 2,		-- At this amount of planets, budget is normalized
+		PLANET_BUDGET_FACTOR = 0.15,			-- When AI has few planets, it will decrease building/mil station budget by this and put it into colonies/stations instead
+		MAX_PLANETS_FOR_BUDGET_FACTOR = 3,		-- At this amount of planets, budget is normalized
 
 		MINERAL_MILITARY_STATION_BUDGET_FRACTION = 0.15, -- AI will spend this fraction of their stored minerals on military stations
 		MINERAL_NAVY_BUDGET_FRACTION = 0.10, 	-- AI will spend this fraction of their stored minerals on ships
-		MINERAL_STATION_BUDGET_FRACTION = 0.20, -- AI will spend this fraction of their stored minerals on stations (used for spaceport instead when it needs a new spaceport)
+		MINERAL_STATION_BUDGET_FRACTION = 0.15, -- AI will spend this fraction of their stored minerals on stations (used for spaceport instead when it needs a new spaceport)
 		MINERAL_BUILDING_BUDGET_FRACTION = 0.20,-- AI will spend this fraction of their stored minerals on buildings (used for spaceport instead when it needs a new spaceport)
 		MINERAL_SPACEPORT_BUDGET_FRACTION = 0.05, -- AI will spend this fraction of their stored minerals on spaceport modules
-		MINERAL_COLONY_BUDGET_FRACTION = 0.10,
+		MINERAL_COLONY_BUDGET_FRACTION = 0.15,
 		MINERAL_ARMY_BUDGET_FRACTION = 0.05,	-- AI will spend this fraction on armies
 		MINERAL_TILE_BLOCKER_BUDGET_FRACTION = 0.05,	-- AI will spend this fraction on tile blockers
 		MINERAL_ROBOT_BUDGET_FRACTION = 0.05,	-- AI will spend this fraction of their stored minerals on robots (transfered to buildings if they don't use robots)
@@ -1061,7 +1061,7 @@ NDefines = {
 		MIN_MINERALS_STORED_STATIONS = 100,			-- Minerals AI will store for stations when it does not need more
 		MAX_MINERALS_STORED_SPACEPORT = 500,		-- Minerals AI will store for spaceport when it needs more
 		MIN_MINERALS_STORED_SPACEPORT = 100,		-- Minerals AI will store for spaceport when it does not need more
-		MAX_MINERALS_STORED_COLONIES = 360,		-- Minerals AI will store for colonies when it needs more
+		MAX_MINERALS_STORED_COLONIES = 400,		-- Minerals AI will store for colonies when it needs more
 		MIN_MINERALS_STORED_COLONIES = 350,			-- Minerals AI will store for colonies when it does not need more		
 		MAX_MINERALS_STORED_ARMIES = 300,			-- Minerals AI will store for armies when it needs more
 		MIN_MINERALS_STORED_ARMIES = 0,			-- Minerals AI will store for armies when it does not need more		
@@ -1101,7 +1101,7 @@ NDefines = {
 		CONSTRUCTOR_SHIPS_MUL = 0.04,			-- Number of constructor ships of AI is the number of planets times this value
 		THRESHOLD_DISBAND_SHIPS = 3,			-- AI will disband ships if wanted + this value < owned
 
-		COLONIZER_SHIPS_MAX = 1,				-- Maximum number of colonizer ships of AI
+		COLONIZER_SHIPS_MAX = 2,				-- Maximum number of colonizer ships of AI
 		RESEARCH_SHIPS_MAX = 2,					-- Maximum number of research ships of AI
 		CONSTRUCTOR_SHIPS_MAX = 3,				-- Maximum number of constructor ships of AI
 

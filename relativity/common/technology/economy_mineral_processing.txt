@@ -103,7 +103,7 @@
 
 tech_mineral_processing_1 = {
 	cost = @tier1cost1
-	area = society
+	area = engineering
 	tier = 1
 	category = { mineral_processing }	
 	prerequisites = { "tech_mining_network_2" }
@@ -119,7 +119,7 @@ tech_mineral_processing_1 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = society
+				area = engineering
 				has_trait = "leader_trait_expertise_mineral_processing"
 			}			
 		}
@@ -129,7 +129,7 @@ tech_mineral_processing_1 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = society
+				area = engineering
 				has_trait = "leader_trait_expertise_mineral_processing"
 			}
 		}
@@ -139,7 +139,7 @@ tech_mineral_processing_1 = {
 #Advanced Mineral Processing 2
 tech_mineral_processing_2 = {
 	cost = @tier2cost1
-	area = society
+	area = engineering
 	tier = 2
 	category = { mineral_processing }	
 	prerequisites = { "tech_mineral_processing_1" "tech_colonial_centralization" }
@@ -154,7 +154,7 @@ tech_mineral_processing_2 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = society
+				area = engineering
 				has_trait = "leader_trait_expertise_mineral_processing"
 			}			
 		}
@@ -164,7 +164,7 @@ tech_mineral_processing_2 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = society
+				area = engineering
 				has_trait = "leader_trait_expertise_mineral_processing"
 			}
 		}
@@ -174,7 +174,7 @@ tech_mineral_processing_2 = {
 #Advanced Mineral Processing 3
 tech_mineral_processing_3 = {
 	cost = @tier2cost2
-	area = society
+	area = engineering
 	tier = 2
 	category = { mineral_processing }	
 	prerequisites = { "tech_mineral_processing_2" "tech_colonial_centralization" }
@@ -189,7 +189,7 @@ tech_mineral_processing_3 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = society
+				area = engineering
 				has_trait = "leader_trait_expertise_mineral_processing"
 			}			
 		}
@@ -199,7 +199,7 @@ tech_mineral_processing_3 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = society
+				area = engineering
 				has_trait = "leader_trait_expertise_mineral_processing"
 			}
 		}
@@ -209,7 +209,7 @@ tech_mineral_processing_3 = {
 #Advanced Mineral Processing 4
 tech_mineral_processing_4 = {
 	cost = @tier2cost3
-	area = society
+	area = engineering
 	tier = 2
 	category = { mineral_processing }	
 	prerequisites = { "tech_mineral_processing_3" "tech_colonial_centralization" }
@@ -224,7 +224,7 @@ tech_mineral_processing_4 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = society
+				area = engineering
 				has_trait = "leader_trait_expertise_mineral_processing"
 			}			
 		}
@@ -234,7 +234,7 @@ tech_mineral_processing_4 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = society
+				area = engineering
 				has_trait = "leader_trait_expertise_mineral_processing"
 			}
 		}
@@ -244,7 +244,7 @@ tech_mineral_processing_4 = {
 #Advanced Mineral Processing 5
 tech_mineral_processing_5 = {
 	cost = @tier2cost4
-	area = society
+	area = engineering
 	tier = 2
 	category = { mineral_processing }	
 	prerequisites = { "tech_mineral_processing_4" "tech_colonial_centralization" }
@@ -259,7 +259,7 @@ tech_mineral_processing_5 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = society
+				area = engineering
 				has_trait = "leader_trait_expertise_mineral_processing"
 			}			
 		}
@@ -269,7 +269,7 @@ tech_mineral_processing_5 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = society
+				area = engineering
 				has_trait = "leader_trait_expertise_mineral_processing"
 			}
 		}
@@ -279,7 +279,7 @@ tech_mineral_processing_5 = {
 #Tier 2 Mineral Processing Start
 tech_mineral_processing_6 = {
 	cost = @tier3cost1
-	area = society
+	area = engineering
 	tier = 3
 	category = { mineral_processing }	
 	prerequisites = { "tech_mineral_processing_5" "tech_colonial_centralization" }
@@ -294,7 +294,7 @@ tech_mineral_processing_6 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = society
+				area = engineering
 				has_trait = "leader_trait_expertise_mineral_processing"
 			}			
 		}
@@ -304,7 +304,7 @@ tech_mineral_processing_6 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = society
+				area = engineering
 				has_trait = "leader_trait_expertise_mineral_processing"
 			}
 		}
@@ -314,7 +314,7 @@ tech_mineral_processing_6 = {
 #Advanced Mineral Processing 7
 tech_mineral_processing_7 = {
 	cost = @tier3cost1
-	area = society
+	area = engineering
 	tier = 3
 	category = { mineral_processing }	
 	prerequisites = { "tech_mineral_processing_6" "tech_colonial_centralization" }
@@ -329,7 +329,7 @@ tech_mineral_processing_7 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = society
+				area = engineering
 				has_trait = "leader_trait_expertise_mineral_processing"
 			}			
 		}
@@ -339,7 +339,7 @@ tech_mineral_processing_7 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = society
+				area = engineering
 				has_trait = "leader_trait_expertise_mineral_processing"
 			}
 		}
@@ -347,7 +347,7 @@ tech_mineral_processing_7 = {
 }
 
 tech_mineral_processing_8 = {
-	area = society
+	area = engineering
 	cost = @tier3cost2
 	tier = 3
 	category = { mineral_processing }
@@ -364,7 +364,7 @@ tech_mineral_processing_8 = {
 }
 
 tech_mineral_processing_9 = {
-	area = society
+	area = engineering
 	cost = @tier3cost3
 	tier = 3
 	prerequisites = { "tech_mineral_processing_8"}	
@@ -380,7 +380,7 @@ tech_mineral_processing_9 = {
 }
 
 tech_mineral_processing_10 = {
-	area = society
+	area = engineering
 	cost = @tier3cost4
 	tier = 3
 	category = { mineral_processing }
@@ -398,7 +398,7 @@ tech_mineral_processing_10 = {
 
 #Tier 3 Mineral_Processing
 tech_mineral_processing_11 = {
-	area = society
+	area = engineering
 	cost = @tier4cost1
 	tier = 4
 	category = { mineral_processing }
@@ -415,7 +415,7 @@ tech_mineral_processing_11 = {
 }
 
 tech_mineral_processing_12 = {
-	area = society
+	area = engineering
 	cost = @tier4cost2
 	tier = 4
 	category = { mineral_processing }
@@ -432,7 +432,7 @@ tech_mineral_processing_12 = {
 }
 
 tech_mineral_processing_13 = {
-	area = society
+	area = engineering
 	cost = @tier4cost3
 	tier = 4
 	category = { mineral_processing }
@@ -449,7 +449,7 @@ tech_mineral_processing_13 = {
 }
 
 tech_mineral_processing_14 = {
-	area = society
+	area = engineering
 	cost = @tier4cost4
 	tier = 4
 	category = { mineral_processing }
@@ -466,7 +466,7 @@ tech_mineral_processing_14 = {
 }
 
 tech_mineral_processing_15 = {
-	area = society
+	area = engineering
 	cost = @tier5cost1
 	tier = 5
 	category = { mineral_processing }
@@ -484,7 +484,7 @@ tech_mineral_processing_15 = {
 
 tech_industry_boost_1 = {
 	cost = @tier1cost1
-	area = society
+	area = engineering
 	tier = 1
 	category = { mineral_processing }	
 	prerequisites = { "tech_mineral_processing_1" }
@@ -499,7 +499,7 @@ tech_industry_boost_1 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = society
+				area = engineering
 				has_trait = "leader_trait_expertise_mineral_processing"
 			}			
 		}
@@ -509,7 +509,7 @@ tech_industry_boost_1 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = society
+				area = engineering
 				has_trait = "leader_trait_expertise_mineral_processing"
 			}
 		}
@@ -518,7 +518,7 @@ tech_industry_boost_1 = {
 
 tech_industry_boost_2 = {
 	cost = @tier2cost3
-	area = society
+	area = engineering
 	tier = 2
 	category = { mineral_processing }	
 	prerequisites = { "tech_industry_boost_1" }
@@ -533,7 +533,7 @@ tech_industry_boost_2 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = society
+				area = engineering
 				has_trait = "leader_trait_expertise_mineral_processing"
 			}			
 		}
@@ -543,7 +543,7 @@ tech_industry_boost_2 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = society
+				area = engineering
 				has_trait = "leader_trait_expertise_mineral_processing"
 			}
 		}
@@ -552,7 +552,7 @@ tech_industry_boost_2 = {
 
 tech_industry_boost_3 = {
 	cost = @tier3cost1
-	area = society
+	area = engineering
 	tier = 3
 	category = { mineral_processing }	
 	prerequisites = { "tech_industry_boost_2" }
@@ -567,7 +567,7 @@ tech_industry_boost_3 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = society
+				area = engineering
 				has_trait = "leader_trait_expertise_mineral_processing"
 			}			
 		}
@@ -577,7 +577,7 @@ tech_industry_boost_3 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = society
+				area = engineering
 				has_trait = "leader_trait_expertise_mineral_processing"
 			}
 		}
@@ -586,7 +586,7 @@ tech_industry_boost_3 = {
 
 tech_industry_boost_4 = {
 	cost = @tier3cost3
-	area = society
+	area = engineering
 	tier = 3
 	category = { mineral_processing }	
 	prerequisites = { "tech_industry_boost_3" }
@@ -601,7 +601,7 @@ tech_industry_boost_4 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = society
+				area = engineering
 				has_trait = "leader_trait_expertise_mineral_processing"
 			}			
 		}
@@ -611,7 +611,7 @@ tech_industry_boost_4 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = society
+				area = engineering
 				has_trait = "leader_trait_expertise_mineral_processing"
 			}
 		}
@@ -620,7 +620,7 @@ tech_industry_boost_4 = {
 
 tech_industry_boost_5 = {
 	cost = @tier4cost1
-	area = society
+	area = engineering
 	tier = 4
 	category = { mineral_processing }	
 	prerequisites = { "tech_industry_boost_4" }
@@ -635,7 +635,7 @@ tech_industry_boost_5 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = society
+				area = engineering
 				has_trait = "leader_trait_expertise_mineral_processing"
 			}			
 		}
@@ -645,7 +645,7 @@ tech_industry_boost_5 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = society
+				area = engineering
 				has_trait = "leader_trait_expertise_mineral_processing"
 			}
 		}

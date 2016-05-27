@@ -103,7 +103,7 @@
 
 tech_basic_industry = {
 	cost = 0
-	area = society
+	area = engineering
 	start_tech = yes
 	category = { mining }
 	tier = 0
@@ -115,7 +115,7 @@ tech_basic_industry = {
 #Mining Network 2
 tech_mining_network_2 = {
 	cost = @tier1cost1
-	area = society
+	area = engineering
 	tier = 1
 	category = { mining }	
 	prerequisites = { "tech_basic_industry" }
@@ -131,7 +131,7 @@ tech_mining_network_2 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = society
+				area = engineering
 				has_trait = "leader_trait_expertise_mining"
 			}			
 		}
@@ -141,7 +141,7 @@ tech_mining_network_2 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = society
+				area = engineering
 				has_trait = "leader_trait_expertise_mining"
 			}
 		}
@@ -151,7 +151,7 @@ tech_mining_network_2 = {
 #Mining Network 3
 tech_mining_network_3 = {
 	cost = @tier2cost1
-	area = society
+	area = engineering
 	tier = 2
 	category = { mining }
 	prerequisites = { "tech_mining_network_2" "tech_colonial_centralization" }
@@ -167,7 +167,7 @@ tech_mining_network_3 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = society
+				area = engineering
 				has_trait = "leader_trait_expertise_mining"
 			}			
 		}
@@ -177,7 +177,7 @@ tech_mining_network_3 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = society
+				area = engineering
 				has_trait = "leader_trait_expertise_mining"
 			}
 		}
@@ -187,7 +187,7 @@ tech_mining_network_3 = {
 #Mining Network 4
 tech_mining_network_4 = {
 	cost = @tier2cost4
-	area = society
+	area = engineering
 	tier = 2
 	category = { mining }
 	prerequisites = { "tech_mining_network_3" "tech_galactic_administration" }
@@ -203,7 +203,7 @@ tech_mining_network_4 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = society
+				area = engineering
 				has_trait = "leader_trait_expertise_mining"
 			}			
 		}
@@ -213,7 +213,7 @@ tech_mining_network_4 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = society
+				area = engineering
 				has_trait = "leader_trait_expertise_mining"
 			}
 		}
@@ -221,7 +221,7 @@ tech_mining_network_4 = {
 }
 
 tech_mining_network_5 = {
-	area = society
+	area = engineering
 	cost = @tier3cost1
 	tier = 3
 	category = { mining }
@@ -241,7 +241,7 @@ tech_mining_network_5 = {
 }
 #Steel 2 Start
 tech_mining_6 = {
-	area = society
+	area = engineering
 	cost = @tier3cost2
 	tier = 3
 	category = { mining }
@@ -261,7 +261,7 @@ tech_mining_6 = {
 }
 
 tech_mining_7 = {
-	area = society
+	area = engineering
 	cost = @tier3cost2
 	tier = 3
 	category = { mining }
@@ -281,7 +281,7 @@ tech_mining_7 = {
 }
 
 tech_mining_8 = {
-	area = society
+	area = engineering
 	cost = @tier3cost2
 	tier = 3
 	category = { mining }
@@ -300,7 +300,7 @@ tech_mining_8 = {
 }
 
 tech_mining_9 = {
-	area = society
+	area = engineering
 	cost = @tier3cost3
 	tier = 3
 	category = { mining }
@@ -319,7 +319,7 @@ tech_mining_9 = {
 }
 
 tech_mining_10 = {
-	area = society
+	area = engineering
 	cost = @tier3cost3
 	tier = 3
 	category = { mining }
@@ -339,7 +339,7 @@ tech_mining_10 = {
 
 #Steel 3 Start
 tech_mining_11 = {
-	area = society
+	area = engineering
 	cost = @tier3cost4
 	tier = 3
 	category = { mining }
@@ -358,7 +358,7 @@ tech_mining_11 = {
 }
 
 tech_mining_12 = {
-	area = society
+	area = engineering
 	cost = @tier3cost4
 	tier = 3
 	category = { mining }
@@ -377,7 +377,7 @@ tech_mining_12 = {
 }
 
 tech_mining_13 = {
-	area = society
+	area = engineering
 	cost = @tier4cost1
 	tier = 4
 	category = { mining }
@@ -396,7 +396,7 @@ tech_mining_13 = {
 }
 
 tech_mining_14 = {
-	area = society
+	area = engineering
 	cost = @tier4cost1
 	tier = 4
 	category = { mining }
@@ -415,7 +415,7 @@ tech_mining_14 = {
 }
 
 tech_mining_15 = {
-	area = society
+	area = engineering
 	cost = @tier4cost2
 	tier = 4
 	category = { mining }
@@ -434,7 +434,7 @@ tech_mining_15 = {
 }
 
 tech_mining_16 = {
-	area = society
+	area = engineering
 	cost = @tier4cost3
 	tier = 4
 	category = { mining }
@@ -453,7 +453,7 @@ tech_mining_16 = {
 }
 
 tech_mining_17 = {
-	area = society
+	area = engineering
 	cost = @tier4cost4
 	tier = 4
 	category = { mining }
@@ -472,7 +472,7 @@ tech_mining_17 = {
 }
 
 tech_mining_18 = {
-	area = society
+	area = engineering
 	cost = @tier5cost1
 	tier = 5
 	category = { mining }
@@ -491,7 +491,7 @@ tech_mining_18 = {
 }
 
 tech_mining_19 = {
-	area = society
+	area = engineering
 	cost = @tier5cost2
 	tier = 5
 	category = { mining }
@@ -510,7 +510,7 @@ tech_mining_19 = {
 }
 
 tech_mining_20 = {
-	area = society
+	area = engineering
 	cost = @tier5cost3
 	tier = 5
 	category = { mining }

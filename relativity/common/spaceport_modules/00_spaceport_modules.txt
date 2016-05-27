@@ -180,9 +180,6 @@ hydroponic_farms = {
 		sr_nutrients = 1
 	}
 	
-	planet_modifier = {
-		planet_resource_food_add = 3
-	}
 }
 
 synchronized_defenses = {
