@@ -135,3 +135,5 @@ Version 102.0.1
 * GRI still unlocks from Phys_lab 3, but no longer in prereq chain
 * Added Physics_Labs_4 in Tech and tech localization files
 * Lab Buildings have correct unlocks now
+* AI aggressiveness increased a bit
+* Changed level unlocks for ships: corvette 1 destroyer 2 cruiser 3 light carrier 3 battlecruiser 4 battelship 5 carrier 5 dreadnaught 6.
