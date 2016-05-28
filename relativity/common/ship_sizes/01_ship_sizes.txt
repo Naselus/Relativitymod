@@ -1,0 +1,146 @@
+@lightcarrier_combat_speed = 0.7
+@lightcarrier_combat_rotation = 0.025
+@lightcarrier_collision_radius = 4
+
+@battlecruiser_combat_speed = 0.7
+@battlecruiser_combat_rotation = 0.025
+@battlecruiser_collision_radius = 4
+
+@carrier_combat_speed = 0.30
+@carrier_combat_rotation = 0.02
+@carrier_collision_radius = 5
+
+@dreadnought_combat_speed = 0.25
+@dreadnought_combat_rotation = 0.02
+@dreadnought_collision_radius = 5
+
+
+Light_Carrier = {
+	max_speed = 3.75
+	acceleration = 0.25
+	rotation_speed = 0.175
+	combat_max_speed = @lightcarrier_combat_speed
+	combat_rotation_speed = @lightcarrier_combat_rotation
+	collision_radius = @lightcarrier_collision_radius
+	modifier = {
+		ship_evasion_mult = -0.5
+		ship_armor_add = 12
+	}
+	max_hitpoints = 1200
+	size_multiplier = 4
+	fleet_slot_size = 4
+	section_slots = { "bow" = { locator = "part1" } "mid" = { locator = "part2" } "stern" = { locator = "part3" } }
+	num_target_locators = 4
+	is_space_station = no
+	icon_frame = 4
+	base_buildtime = 350
+	required_spaceport_level = 3
+	can_have_federation_design = yes
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+	
+	prerequisites = { "tech_spaceport_3" }
+	
+	class = shipclass_military
+	required_component_set = "ftl_components"
+	required_component_set = "combat_computers"
+	required_component_set = "thruster_components"
+	required_component_set = "ship_sensor_components"
+}
+
+Battlecruiser = {
+	max_speed = 3.75
+	acceleration = 0.25
+	rotation_speed = 0.175
+	combat_max_speed = @battlecruiser_combat_speed
+	combat_rotation_speed = @battlecruiser_combat_rotation
+	collision_radius = @battlecruiser_collision_radius
+	modifier = {
+		ship_evasion_mult = -0.5
+		ship_armor_add = 12
+	}
+	max_hitpoints = 1200
+	size_multiplier = 4
+	fleet_slot_size = 4
+	section_slots = { "bow" = { locator = "part1" } "mid" = { locator = "part2" } "stern" = { locator = "part3" } }
+	num_target_locators = 4
+	is_space_station = no
+	icon_frame = 4
+	base_buildtime = 350
+	required_spaceport_level = 4
+	can_have_federation_design = yes
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+	
+	prerequisites = { "tech_spaceport_4" }
+	
+	class = shipclass_military
+	required_component_set = "ftl_components"
+	required_component_set = "combat_computers"
+	required_component_set = "thruster_components"
+	required_component_set = "ship_sensor_components"
+}
+
+Carrier = {
+	max_speed = 3
+	acceleration = 0.2
+	rotation_speed = 0.15
+	combat_max_speed = @carrier_combat_speed
+	combat_rotation_speed = @carrier_combat_rotation
+	collision_radius = @carrier_collision_radius
+	modifier = {
+		ship_evasion_mult = -0.75
+		ship_armor_add = 40
+	}
+	max_hitpoints = 3000
+	size_multiplier = 8
+	fleet_slot_size = 8
+	section_slots = { "bow" = { locator = "part1" } "mid" = { locator = "part2" } "stern" = { locator = "part3" } }
+	num_target_locators = 4
+	is_space_station = no
+	icon_frame = 5
+	base_buildtime = 580
+	required_spaceport_level = 5
+	can_have_federation_design = yes
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+	
+	prerequisites = { "tech_carrier_1" }
+	
+	class = shipclass_military
+	required_component_set = "ftl_components"
+	required_component_set = "combat_computers"
+	required_component_set = "thruster_components"
+	required_component_set = "ship_sensor_components"
+	required_component_set = "ship_aura_components"
+}
+
+Dreadnought = {
+	max_speed = 3
+	acceleration = 0.2
+	rotation_speed = 0.15
+	combat_max_speed = @dreadnought_combat_speed
+	combat_rotation_speed = @dreadnought_combat_rotation
+	collision_radius = @dreadnought_collision_radius
+	modifier = {
+		ship_evasion_mult = -0.75
+		ship_armor_add = 80
+	}
+	max_hitpoints = 4500
+	size_multiplier = 8
+	fleet_slot_size = 10
+	section_slots = { "bow" = { locator = "part1" } "mid" = { locator = "part2" } "stern" = { locator = "part3" } }
+	num_target_locators = 4
+	is_space_station = no
+	icon_frame = 5
+	base_buildtime = 700
+	required_spaceport_level = 6
+	can_have_federation_design = yes
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+	
+	prerequisites = { "tech_dreadnought_1" }
+	
+	class = shipclass_military
+	required_component_set = "ftl_components"
+	required_component_set = "combat_computers"
+	required_component_set = "thruster_components"
+	required_component_set = "ship_sensor_components"
+	required_component_set = "ship_aura_components"
+}
