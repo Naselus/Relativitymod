@@ -919,9 +919,9 @@ NDefines = {
 		AI_AGGRESSIVENESS_LOW_MULT = 0.5,		
 		AI_AGGRESSIVENESS_HIGH_MULT = 2.0,		
 	
-		AI_AGGRESSIVENESS_BASE = 25,			-- Base chance AI will declare a war (multiplied by personality aggressiveness score)
+		AI_AGGRESSIVENESS_BASE = 35,			-- Base chance AI will declare a war (multiplied by personality aggressiveness score)
 		AI_AGGRESSIVENESS_PROPAGATOR_BOXED_IN_MULT = 10,	-- When a warlike 'propagator' personality is boxed in, aggression is multiplied by this value
-		AI_AGGRESSIVENESS_BOXED_IN_MULT = 4,	-- When an AI can no longer peacefully expand, aggression is multiplied by this value
+		AI_AGGRESSIVENESS_BOXED_IN_MULT = 5,	-- When an AI can no longer peacefully expand, aggression is multiplied by this value
 		AI_AGGRESSIVENESS_NO_COLONY_TARGET_MULT = 2, -- When an AI has no immediate colony targets and at least MAX_PLANETS_FOR_BUDGET_FACTOR planets (but is not boxed in), aggression is multiplied by this value
 	
 		MAX_RESOURCE_SCORE = 10000,				-- Maximum amount AI will value a resource at
