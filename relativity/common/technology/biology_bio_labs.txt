@@ -155,12 +155,12 @@ tech_biolab_1 = {
 
 #Bio Lab 2
 tech_biolab_2 = {
-	cost = @tier2cost1
+	cost = @tier2cost3
 	area = physics
 	tier = 2
 	category = { bio_labs }
-	prerequisites = { "tech_biolab_1" "tech_colonial_centralization"}
-	weight = @tier2weight1
+	prerequisites = { "tech_societal_research_3" "tech_colonial_centralization"}
+	weight = @tier2weight3
 	
 	weight_modifier = {
 		modifier = {
@@ -202,12 +202,12 @@ tech_biolab_2 = {
 
 #Bio Lab 3
 tech_biolab_3 = {
-	cost = @tier3cost1
+	cost = @tier4cost1
 	area = physics
-	tier = 3
+	tier = 4
 	category = { bio_labs }	
-	prerequisites = { "tech_biolab_2" "tech_galactic_administration" }
-	weight = @tier3weight1
+	prerequisites = { "tech_societal_research_7" "tech_galactic_ambitions" }
+	weight = @tier4weight1
 	
 	weight_modifier = {
 		modifier = {
@@ -249,11 +249,11 @@ tech_biolab_3 = {
 
 tech_biolab_4 = {
 	area = physics
-	cost = @tier4cost1
-	tier = 4
+	cost = @tier5cost4
+	tier = 5
 	category = { bio_labs }
-	prerequisites = { "tech_biolab_3"}	
-	weight = @tier4weight1
+	prerequisites = { "tech_societal_research_11" "tech_galactic_ambitions" }	
+	weight = @tier5weight4
 	
 	weight_modifier = {
 		modifier = {
@@ -295,11 +295,11 @@ tech_biolab_4 = {
 
 tech_biolab_5 = {
 	area = physics
-	cost = @tier5cost1
-	tier = 5
+	cost = @tier7cost2
+	tier = 7
 	category = { bio_labs }
-	prerequisites = { "tech_biolab_4"}	
-	weight = @tier5weight1
+	prerequisites = { "tech_societal_research_15" "tech_galactic_administration" }	
+	weight = @tier7weight2
 	
 	weight_modifier = {
 		modifier = {

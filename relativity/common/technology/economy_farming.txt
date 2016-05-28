@@ -112,54 +112,7 @@ tech_eco_simulation = {
 	# unlocks farms level 1
 }
 
-#Orbital Hydroponics
-tech_orbital_hydroponics = {
-	cost = @tier1cost1
-	area = society
-	tier = 1
-	category = { farming }	
-	prerequisites = { "tech_eco_simulation" }
-	weight = @tier1weight1
-	
-	# unlocks hydroponics farm module
-	
-	weight_modifier = {
-		modifier = {
-			factor = 1.5
-			has_ethic = ethic_pacifist
-		}
-		modifier = {
-			factor = 2
-			has_ethic = ethic_fanatic_pacifist
-		}
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_farming"
-			}
-		}
-	}	
-	
-	ai_weight = {
-		factor = 1.5 #farms are good
-		modifier = {
-			factor = 2
-			has_ethic = ethic_pacifist
-		}
-		modifier = {
-			factor = 4
-			has_ethic = ethic_fanatic_pacifist
-		}
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_farming"
-			}
-		}
-	}
-}
+
 
 #Hydroponics
 tech_hydroponics = {

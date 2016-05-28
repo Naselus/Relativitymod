@@ -1345,7 +1345,7 @@ building_engineering_facility_2 = {
 	}	
 	
 	prerequisites = {
-		"tech_engineering_lab_2"
+		"tech_engineering_lab_5"
 	}	
 }
 
@@ -1382,7 +1382,7 @@ building_engineering_facility_3 = {
 	}	
 	
 	prerequisites = {
-		"tech_engineering_lab_3"
+		"tech_engineering_lab_10"
 	}	
 }
 
@@ -1412,7 +1412,7 @@ building_engineering_facility_4 = {
 	}
 	
 	prerequisites = {
-		"tech_engineering_lab_4"
+		"tech_engineering_lab_15"
 	}	
 }
 
@@ -1442,7 +1442,7 @@ building_engineering_facility_5 = {
 	}
 	
 	prerequisites = {
-		"tech_engineering_lab_5"
+		"tech_engineering_lab_20"
 	}	
 }
 #
@@ -1520,7 +1520,7 @@ building_physics_lab_2 = {
 	}
 	
 	prerequisites = {
-		"tech_physics_lab_2"
+		"tech_physics_lab_5"
 	}	
 }
 
@@ -1557,7 +1557,7 @@ building_physics_lab_3 = {
 	}
 	
 	prerequisites = {
-		"tech_physics_lab_3"
+		"tech_physics_lab_10"
 	}	
 }
 
@@ -1591,7 +1591,7 @@ building_physics_lab_4 = {
 	}
 	
 	prerequisites = {
-		"tech_physics_lab_5"
+		"tech_physics_lab_15"
 	}	
 }
 
@@ -1621,7 +1621,7 @@ building_physics_lab_5 = {
 	}
 	
 	prerequisites = {
-		"tech_physics_lab_6"
+		"tech_physics_lab_20"
 	}	
 }
 #

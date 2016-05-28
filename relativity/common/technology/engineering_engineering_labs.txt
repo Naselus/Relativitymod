@@ -100,6 +100,17 @@
 # ##################
 # Engineering Labs
 # ##################
+tech_basic_science_lab_1 = {
+	cost = 0
+	area = engineering
+	tier = 0
+	category = { engineering_labs }
+	start_tech = yes
+		
+	# # unlock basic science lab lvl 1
+}
+
+
 #Engineering Lab 1
 tech_engineering_lab_1 = {
 	cost = @tier1cost1
@@ -152,14 +163,74 @@ tech_engineering_lab_1 = {
 	}
 }
 
-#Engineering Lab 2
 tech_engineering_lab_2 = {
-	cost = @tier2cost1
+	area = engineering
+	cost = @tier1cost3
+	tier = 1
+	category = { engineering_labs }
+	prerequisites = { "tech_engineering_lab_1"}	
+	weight = @tier1weight3
+	
+	modifier = {
+		country_engineering_tech_research_speed = 0.05
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_engineering_lab_3 = {
+	area = engineering
+	cost = @tier1cost4
+	tier = 1
+	category = { engineering_labs }
+	prerequisites = { "tech_engineering_lab_2"}	
+	weight = @tier1weight4
+	
+	modifier = {
+		country_engineering_tech_research_speed = 0.05
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_engineering_lab_4 = {
+	area = engineering
+	cost = @tier2cost2
+	tier = 2
+	category = { engineering_labs }
+	prerequisites = { "tech_engineering_lab_3"}	
+	weight = @tier2weight2
+	
+	modifier = {
+		country_engineering_tech_research_speed = 0.05
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+#Engineering Lab 2
+tech_engineering_lab_5 = {
+	cost = @tier2cost3
 	area = engineering
 	tier = 2
 	category = { engineering_labs }	
-	prerequisites = { "tech_engineering_lab_1" "tech_colonial_centralization" }
-	weight = @tier2weight1
+	prerequisites = { "tech_engineering_lab_4" "tech_colonial_centralization" }
+	weight = @tier2weight3
 		
 	## unlock engineering lab lvl 2
 	
@@ -201,14 +272,94 @@ tech_engineering_lab_2 = {
 	}
 }
 
-#Engineering Lab 3
-tech_engineering_lab_3 = {
-	cost = @tier3cost2
+tech_engineering_lab_6 = {
 	area = engineering
+	cost = @tier3cost1
 	tier = 3
-	category = { engineering_labs }	
-	prerequisites = { "tech_engineering_lab_2" "tech_galactic_administration" }
+	category = { engineering_labs }
+	prerequisites = { "tech_engineering_lab_5"}	
+	weight = @tier3weight1
+	
+	modifier = {
+		country_engineering_tech_research_speed = 0.05
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_engineering_lab_7 = {
+	area = engineering
+	cost = @tier3cost2
+	tier = 3
+	category = { engineering_labs }
+	prerequisites = { "tech_engineering_lab_6"}	
 	weight = @tier3weight2
+	
+	modifier = {
+		country_engineering_tech_research_speed = 0.05
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_engineering_lab_8 = {
+	area = engineering
+	cost = @tier3cost3
+	tier = 3
+	category = { engineering_labs }
+	prerequisites = { "tech_engineering_lab_7"}	
+	weight = @tier3weight3
+	
+	modifier = {
+		country_engineering_tech_research_speed = 0.05
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_engineering_lab_9 = {
+	area = engineering
+	cost = @tier3cost4
+	tier = 3
+	category = { engineering_labs }
+	prerequisites = { "tech_engineering_lab_8"}	
+	weight = @tier3weight4
+	
+	modifier = {
+		country_engineering_tech_research_speed = 0.05
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+#Engineering Lab 3
+tech_engineering_lab_10 = {
+	cost = @tier4cost1
+	area = engineering
+	tier = 4
+	category = { engineering_labs }	
+	prerequisites = { "tech_engineering_lab_9" "tech_galactic_administration" }
+	weight = @tier4weight1
 		
 	## unlock engineering lab lvl 3
 	
@@ -250,14 +401,94 @@ tech_engineering_lab_3 = {
 	}
 }
 
-#Engineering Lab 4
-tech_engineering_lab_4 = {
-	cost = @tier4cost2
+tech_engineering_lab_11 = {
 	area = engineering
+	cost = @tier4cost2
 	tier = 4
-	category = { engineering_labs }	
-	prerequisites = { "tech_engineering_lab_3" "tech_galactic_administration" }
+	category = { engineering_labs }
+	prerequisites = { "tech_engineering_lab_10"}	
 	weight = @tier4weight2
+	
+	modifier = {
+		country_engineering_tech_research_speed = 0.05
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_engineering_lab_12 = {
+	area = engineering
+	cost = @tier4cost4
+	tier = 4
+	category = { engineering_labs }
+	prerequisites = { "tech_engineering_lab_11"}	
+	weight = @tier4weight4
+	
+	modifier = {
+		country_engineering_tech_research_speed = 0.05
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_engineering_lab_13 = {
+	area = engineering
+	cost = @tier5cost2
+	tier = 5
+	category = { engineering_labs }
+	prerequisites = { "tech_engineering_lab_12"}	
+	weight = @tier5weight2
+	
+	modifier = {
+		country_engineering_tech_research_speed = 0.05
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_engineering_lab_14 = {
+	area = engineering
+	cost = @tier5cost3
+	tier = 5
+	category = { engineering_labs }
+	prerequisites = { "tech_engineering_lab_13"}	
+	weight = @tier5weight3
+	
+	modifier = {
+		country_engineering_tech_research_speed = 0.05
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+#Engineering Lab 4
+tech_engineering_lab_15 = {
+	cost = @tier5cost4
+	area = engineering
+	tier = 5
+	category = { engineering_labs }	
+	prerequisites = { "tech_engineering_lab_14" "tech_galactic_administration" }
+	weight = @tier5weight4
 		
 	## unlock engineering lab lvl 4
 	
@@ -299,14 +530,94 @@ tech_engineering_lab_4 = {
 	}
 }
 
-#Engineering Lab 5
-tech_engineering_lab_5 = {
-	cost = @tier5cost2
+tech_engineering_lab_16 = {
 	area = engineering
-	tier = 5
+	cost = @tier6cost1
+	tier = 6
+	category = { engineering_labs }
+	prerequisites = { "tech_engineering_lab_15"}	
+	weight = @tier6weight1
+	
+	modifier = {
+		country_engineering_tech_research_speed = 0.05
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_engineering_lab_17 = {
+	area = engineering
+	cost = @tier6cost2
+	tier = 6
+	category = { engineering_labs }
+	prerequisites = { "tech_engineering_lab_16"}	
+	weight = @tier6weight2
+	
+	modifier = {
+		country_engineering_tech_research_speed = 0.05
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_engineering_lab_18 = {
+	area = engineering
+	cost = @tier6cost3
+	tier = 6
+	category = { engineering_labs }
+	prerequisites = { "tech_engineering_lab_17"}	
+	weight = @tier6weight3
+	
+	modifier = {
+		country_engineering_tech_research_speed = 0.05
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_engineering_lab_19 = {
+	area = engineering
+	cost = @tier7cost1
+	tier = 7
+	category = { engineering_labs }
+	prerequisites = { "tech_engineering_lab_18"}	
+	weight = @tier7weight1
+	
+	modifier = {
+		country_engineering_tech_research_speed = 0.05
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+#Engineering Lab 5
+tech_engineering_lab_20 = {
+	cost = @tier7cost2
+	area = engineering
+	tier = 7
 	category = { engineering_labs }	
-	prerequisites = { "tech_engineering_lab_4" "tech_galactic_administration" }
-	weight = @tier5weight2
+	prerequisites = { "tech_engineering_lab_19" "tech_galactic_administration" }
+	weight = @tier7weight2
 		
 	## unlock engineering lab lvl 5
 	
@@ -344,306 +655,6 @@ tech_engineering_lab_5 = {
 				area = engineering
 				has_trait = "leader_trait_expertise_ai"
 			}
-		}
-	}
-}
-
-tech_engineering_lab_6 = {
-	area = engineering
-	cost = @tier2cost1
-	tier = 2
-	category = { engineering_labs }
-	prerequisites = { "tech_engineering_lab_5"}	
-	weight = @tier2weight1
-	
-	modifier = {
-		country_engineering_tech_research_speed = 0.05
-	}
-	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
-}
-
-tech_engineering_lab_7 = {
-	area = engineering
-	cost = @tier2cost1
-	tier = 2
-	category = { engineering_labs }
-	prerequisites = { "tech_engineering_lab_6"}	
-	weight = @tier2weight1
-	
-	modifier = {
-		country_engineering_tech_research_speed = 0.05
-	}
-	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
-}
-
-tech_engineering_lab_8 = {
-	area = engineering
-	cost = @tier2cost1
-	tier = 2
-	category = { engineering_labs }
-	prerequisites = { "tech_engineering_lab_7"}	
-	weight = @tier2weight1
-	
-	modifier = {
-		country_engineering_tech_research_speed = 0.05
-	}
-	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
-}
-
-tech_engineering_lab_9 = {
-	area = engineering
-	cost = @tier2cost1
-	tier = 2
-	category = { engineering_labs }
-	prerequisites = { "tech_engineering_lab_8"}	
-	weight = @tier2weight1
-	
-	modifier = {
-		country_engineering_tech_research_speed = 0.05
-	}
-	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
-}
-
-tech_engineering_lab_10 = {
-	area = engineering
-	cost = @tier2cost1
-	tier = 2
-	category = { engineering_labs }
-	prerequisites = { "tech_engineering_lab_9"}	
-	weight = @tier2weight1
-	
-	modifier = {
-		country_engineering_tech_research_speed = 0.05
-	}
-	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
-}
-
-tech_engineering_lab_11 = {
-	area = engineering
-	cost = @tier2cost1
-	tier = 2
-	category = { engineering_labs }
-	prerequisites = { "tech_engineering_lab_10"}	
-	weight = @tier2weight1
-	
-	modifier = {
-		country_engineering_tech_research_speed = 0.05
-	}
-	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
-}
-
-tech_engineering_lab_12 = {
-	area = engineering
-	cost = @tier2cost1
-	tier = 2
-	category = { engineering_labs }
-	prerequisites = { "tech_engineering_lab_11"}	
-	weight = @tier2weight1
-	
-	modifier = {
-		country_engineering_tech_research_speed = 0.05
-	}
-	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
-}
-
-tech_engineering_lab_13 = {
-	area = engineering
-	cost = @tier2cost1
-	tier = 2
-	category = { engineering_labs }
-	prerequisites = { "tech_engineering_lab_12"}	
-	weight = @tier2weight1
-	
-	modifier = {
-		country_engineering_tech_research_speed = 0.05
-	}
-	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
-}
-
-tech_engineering_lab_14 = {
-	area = engineering
-	cost = @tier2cost1
-	tier = 2
-	category = { engineering_labs }
-	prerequisites = { "tech_engineering_lab_13"}	
-	weight = @tier2weight1
-	
-	modifier = {
-		country_engineering_tech_research_speed = 0.05
-	}
-	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
-}
-
-tech_engineering_lab_15 = {
-	area = engineering
-	cost = @tier2cost1
-	tier = 2
-	category = { engineering_labs }
-	prerequisites = { "tech_engineering_lab_14"}	
-	weight = @tier2weight1
-	
-	modifier = {
-		country_engineering_tech_research_speed = 0.05
-	}
-	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
-}
-
-tech_engineering_lab_16 = {
-	area = engineering
-	cost = @tier2cost1
-	tier = 2
-	category = { engineering_labs }
-	prerequisites = { "tech_engineering_lab_15"}	
-	weight = @tier2weight1
-	
-	modifier = {
-		country_engineering_tech_research_speed = 0.05
-	}
-	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
-}
-
-tech_engineering_lab_17 = {
-	area = engineering
-	cost = @tier2cost1
-	tier = 2
-	category = { engineering_labs }
-	prerequisites = { "tech_engineering_lab_16"}	
-	weight = @tier2weight1
-	
-	modifier = {
-		country_engineering_tech_research_speed = 0.05
-	}
-	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
-}
-
-tech_engineering_lab_18 = {
-	area = engineering
-	cost = @tier2cost1
-	tier = 2
-	category = { engineering_labs }
-	prerequisites = { "tech_engineering_lab_17"}	
-	weight = @tier2weight1
-	
-	modifier = {
-		country_engineering_tech_research_speed = 0.05
-	}
-	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
-}
-
-tech_engineering_lab_19 = {
-	area = engineering
-	cost = @tier2cost1
-	tier = 2
-	category = { engineering_labs }
-	prerequisites = { "tech_engineering_lab_18"}	
-	weight = @tier2weight1
-	
-	modifier = {
-		country_engineering_tech_research_speed = 0.05
-	}
-	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
-}
-
-tech_engineering_lab_20 = {
-	area = engineering
-	cost = @tier2cost1
-	tier = 2
-	category = { engineering_labs }
-	prerequisites = { "tech_engineering_lab_19"}	
-	weight = @tier2weight1
-	
-	modifier = {
-		country_engineering_tech_research_speed = 0.05
-	}
-	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
 		}
 	}
 }
