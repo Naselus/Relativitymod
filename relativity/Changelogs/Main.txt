@@ -127,4 +127,11 @@ Version 102.0.1
 * AI deficit spends more aggressively
 * AI likes colonizing more
 * Higher-end minerals now appear later in the tech tree (once you can use them).
-* 
+* Incorporated CaptainX3's Carriers, Dreadnaughts and Battlecruisers.
+* Moved Orbital_hydroponics_1 from farming category to spaceport_economics
+* Raised Cost and Weight from tier1cost1 to tier1cost3
+* Spread Out Lab Techs, (1,5,10,15,20 with filler in between) 
+* Set costs and weights
+* GRI still unlocks from Phys_lab 3, but no longer in prereq chain
+* Added Physics_Labs_4 in Tech and tech localization files
+* Lab Buildings have correct unlocks now
