@@ -779,7 +779,7 @@ NDefines = {
 		
 		GROWTH_BASE							= 40,	-- Required growth for a pop to become fully grown.
 		GROWTH_INCREASE_PER_POP 			= -1,	-- Increased growth cost per pop planet [+ POP_INCREASE_PER_POP*(num_pop - 1)]
-		GROWTH_INCREASE_FACTOR 				= 1.12,	-- Increased growth factor [+ (num_pop - 1)^POP_INCREASE_FACTOR]
+		GROWTH_INCREASE_FACTOR 				= 1,	-- Increased growth factor [+ (num_pop - 1)^POP_INCREASE_FACTOR]
 		FALLEN_EMPIRE_GROWTH_REQ_MULT		= 40,	-- Fallen Empire pops need this much more food for growth
 		
 		FOOD_SUSTAINED						= 1,	-- Amount of food each pop require	
@@ -1033,7 +1033,7 @@ NDefines = {
 		
 		SHIPSIZE_BUDGET_FACTOR = 0.05,			-- For each ship size unlocked, increase navy budget by this amount
 		NAVAL_CAPACITY_BUDGET_MAX = 100,		-- At this naval capacity, AI puts max budget into ships
-		PLANET_BUDGET_FACTOR = 0.15,			-- When AI has few planets, it will decrease building/mil station budget by this and put it into colonies/stations instead
+		PLANET_BUDGET_FACTOR = 0.35,			-- When AI has few planets, it will decrease building/mil station budget by this and put it into colonies/stations instead
 		MAX_PLANETS_FOR_BUDGET_FACTOR = 3,		-- At this amount of planets, budget is normalized
 
 		MINERAL_MILITARY_STATION_BUDGET_FRACTION = 0.15, -- AI will spend this fraction of their stored minerals on military stations

@@ -148,3 +148,5 @@ Version 102.0.1
 * Changed expertise modifier in spaceport expansion from voidcraft to spaceport_expansion
 * Reworked Tech Localization to reflect new ship unlocks
 * Tweaked weapon progression so advanced weapon types unlock later
+* Sorted out maintenance for science buildings
+* AI kickstart economy settings tweaked (so it spends more on colonies until it has 3 planets)
