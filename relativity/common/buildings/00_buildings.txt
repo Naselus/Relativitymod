@@ -2869,7 +2869,7 @@ building_basic_science_lab_2 = {
 	}
 	
 	required_resources = {
-		energy = @b1upkeep
+		sr_plasma = 1
 	}
 	
 	upgrades = {
@@ -2893,7 +2893,7 @@ building_basic_science_lab_3 = {
 	}
 	
 	required_resources = {
-		energy = @b1upkeep
+		sr_plasma = 1
 	}
 	
 	upgrades = {
