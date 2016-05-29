@@ -422,7 +422,7 @@ tech_kinetic_artillery_1 = {
 	tier = 3
 	category = { ballistics }
 	ai_update_type = military	
-	prerequisites = { "tech_mass_drivers_4" }
+	prerequisites = { "tech_mass_drivers_5" }
 	weight = @tier3weight1
 	
 	weight_modifier = {
@@ -731,7 +731,7 @@ tech_flak_batteries_1 = {
 	tier = 3
 	category = { ballistics }
 	ai_update_type = military	
-	prerequisites = { "tech_autocannons_2" }
+	prerequisites = { "tech_autocannons_3" }
 	weight = @tier3weight1
 	
 	weight_modifier = {

@@ -84,3 +84,8 @@ corrupt = {
 	leader_class = { admiral }
 }
 
+####################
+#                  #
+# Scientist Traits #
+####################
+
