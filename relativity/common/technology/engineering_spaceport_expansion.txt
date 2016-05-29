@@ -166,7 +166,7 @@ tech_spaceport_2 = {
 			factor = 1.25
 			research_leader = {
 				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
+				has_trait = "leader_trait_expertise_spaceport_expansion"
 			}
 		}
 	}
@@ -177,7 +177,7 @@ tech_spaceport_2 = {
 			factor = 1.25
 			research_leader = {
 				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
+				has_trait = "leader_trait_expertise_spaceport_expansion"
 			}
 		}
 	}
@@ -232,7 +232,7 @@ tech_spaceport_3 = {
 			factor = 1.25
 			research_leader = {
 				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
+				has_trait = "leader_trait_expertise_spaceport_expansion"
 			}
 		}
 	}
@@ -243,7 +243,7 @@ tech_spaceport_3 = {
 			factor = 1.25
 			research_leader = {
 				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
+				has_trait = "leader_trait_expertise_spaceport_expansion"
 			}
 		}
 	}
@@ -290,7 +290,7 @@ tech_spaceport_4 = {
 			factor = 1.25
 			research_leader = {
 				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
+				has_trait = "leader_trait_expertise_spaceport_expansion"
 			}
 		}
 	}
@@ -301,7 +301,7 @@ tech_spaceport_4 = {
 			factor = 1.25
 			research_leader = {
 				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
+				has_trait = "leader_trait_expertise_spaceport_expansion"
 			}
 		}
 	}
@@ -356,7 +356,7 @@ tech_spaceport_5 = {
 			factor = 1.25
 			research_leader = {
 				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
+				has_trait = "leader_trait_expertise_spaceport_expansion"
 			}
 		}
 	}
@@ -367,7 +367,7 @@ tech_spaceport_5 = {
 			factor = 1.25
 			research_leader = {
 				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
+				has_trait = "leader_trait_expertise_spaceport_expansion"
 			}
 		}
 	}
@@ -422,7 +422,7 @@ tech_spaceport_6 = {
 			factor = 1.25
 			research_leader = {
 				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
+				has_trait = "leader_trait_expertise_spaceport_expansion"
 			}
 		}
 	}
@@ -433,7 +433,7 @@ tech_spaceport_6 = {
 			factor = 1.25
 			research_leader = {
 				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
+				has_trait = "leader_trait_expertise_spaceport_expansion"
 			}
 		}
 	}
@@ -441,17 +441,59 @@ tech_spaceport_6 = {
 
 tech_spaceport_7 = {
 	area = engineering
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier3cost4
+	tier = 3
 	category = { spaceport_expansion }
 	prerequisites = { "tech_spaceport_6"}	
-	weight = 0
+	weight = @tier3weight4
 	
+	#Prereq for Dreadnought Tech
+	
+	modifier = {
+		spaceport_ship_build_cost_mult = -0.03
+		planet_ship_build_speed_mult = -0.03
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0.1
+			NOT = { years_passed > 50 }
+		}	
+		modifier = {
+			factor = 10
+			any_neighbor_country = {
+				has_technology = tech_spaceport_7
+			}
+		}
+		modifier = {
+			factor = 2
+			years_passed > 70
+		}
+		modifier = {
+			factor = 3
+			years_passed > 75
+		}
+		modifier = {
+			factor = 4
+			years_passed > 80
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_spaceport_expansion"
+			}
+		}
+	}
 	
 	ai_weight = {
+		factor = 5 #higher factor due to prereq for dreadnought hull
 		modifier = {
-			factor = 0
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_spaceport_expansion"
+			}
 		}
 	}
 }
@@ -462,7 +504,7 @@ tech_spaceport_8 = {
 	tier = 2
 	category = { spaceport_expansion }
 	prerequisites = { "tech_spaceport_7"}	
-	weight = @tier2weight1
+	weight = 0
 	
 	
 	ai_weight = {
