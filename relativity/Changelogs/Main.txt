@@ -150,3 +150,4 @@ Version 102.0.1
 * Tweaked weapon progression so advanced weapon types unlock later
 * Sorted out maintenance for science buildings
 * AI kickstart economy settings tweaked (so it spends more on colonies until it has 3 planets)
+* Vassals now like you more if you're much more powerful than they are.
