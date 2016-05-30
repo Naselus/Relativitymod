@@ -471,10 +471,10 @@ terraform_link = {
 	}
 }
 
-# Barren Cold to Tundra
+# Barren Cold to Arctic
 terraform_link = {
 	from = "pc_barren_cold"
-	to = "pc_tundra"
+	to = "pc_arctic"
 	
 	duration = 5400
 	

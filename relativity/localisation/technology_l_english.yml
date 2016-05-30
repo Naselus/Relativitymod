@@ -142,10 +142,10 @@
  tech_spaceport_20_desc:0 "\n\n" 
  
  # Voidcraft
- #tech_corvette_assembly:0 "Advanced Corvette Designs"
- #tech_corvette_assembly_desc:0 "Unused" # TEMP
- #tech_destroyer_assembly:0 "Advanced Destroyer Designs"
- #tech_destroyer_assembly_desc:0 "Unused" # TEMP
+ tech_corvette_assembly_2:0 "Advanced Corvette Assembly Yards"
+ tech_corvette_assembly_2_desc:0 "Advances in pre-fabrication and further refinements to workforce efficiency have resulted in significant improvement to our corvette production." 
+ tech_destroyer_assembly_2:0 "Advanced Destroyer Assembly Yards"
+ tech_destroyer_assembly_2_desc:0 "Advances in pre-fabrication and further refinements to workforce efficiency have resulted in significant improvement to our destroyer production." 
  tech_cruiser_yard:0 "Standardized Cruiser Patterns"
  tech_cruiser_yard_desc:1 "Establishing new standards for the modeling and construction of cruisers greatly improves the efficiency of the production pipeline.\n\n"
  tech_battleship_yard:0 "Standardized Battleship Patterns"

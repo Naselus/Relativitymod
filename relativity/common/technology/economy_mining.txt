@@ -232,30 +232,56 @@ tech_mining_network_5 = {
 		max_minerals = 1000
 	}	
 	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_mining"
+			}			
+		}
+	}
+	
 	ai_weight = {
 		modifier = {
-			factor = 0
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_mining"
+			}
 		}
 	}
 }
 #Steel 2 Start
 tech_mining_6 = {
 	area = engineering
-	cost = @tier3cost2
+	cost = @tier3cost1
 	tier = 3
 	category = { mining }
 	prerequisites = { "tech_mining_network_5"}	
-	weight = @tier3weight2
+	weight = @tier3weight1
 
 	modifier = {
 		max_minerals = 1000
 	}	
 	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_mining"
+			}			
+		}
+	}
+	
 	ai_weight = {
 		modifier = {
-			factor = 0
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_mining"
+			}
 		}
 	}
 }
@@ -272,67 +298,119 @@ tech_mining_7 = {
 		max_minerals = 1000
 	}	
 	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_mining"
+			}			
+		}
+	}
+	
 	ai_weight = {
 		modifier = {
-			factor = 0
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_mining"
+			}
 		}
 	}
 }
 
 tech_mining_8 = {
 	area = engineering
-	cost = @tier3cost2
+	cost = @tier3cost3
 	tier = 3
 	category = { mining }
 	prerequisites = { "tech_mining_7"}	
-	weight = @tier3weight2
+	weight = @tier3weight3
 	modifier = {
 		max_minerals = 1000
 	}	
 	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_mining"
+			}			
+		}
+	}
+	
 	ai_weight = {
 		modifier = {
-			factor = 0
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_mining"
+			}
 		}
 	}
 }
 
 tech_mining_9 = {
 	area = engineering
-	cost = @tier3cost3
+	cost = @tier3cost4
 	tier = 3
 	category = { mining }
 	prerequisites = { "tech_mining_8"}	
-	weight = @tier3weight3
+	weight = @tier3weight4
 	modifier = {
 		max_minerals = 1000
 	}	
 	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_mining"
+			}			
+		}
+	}
+	
 	ai_weight = {
 		modifier = {
-			factor = 0
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_mining"
+			}
 		}
 	}
 }
 
 tech_mining_10 = {
 	area = engineering
-	cost = @tier3cost3
-	tier = 3
+	cost = @tier4cost1
+	tier = 4
 	category = { mining }
 	prerequisites = { "tech_mining_9"}	
-	weight = @tier3weight3
+	weight = @tier4weight1
 		modifier = {
 		max_minerals = 1000
 	}
 	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_mining"
+			}			
+		}
+	}
+	
 	ai_weight = {
 		modifier = {
-			factor = 0
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_mining"
+			}
 		}
 	}
 }
@@ -340,95 +418,160 @@ tech_mining_10 = {
 #Steel 3 Start
 tech_mining_11 = {
 	area = engineering
-	cost = @tier3cost4
-	tier = 3
+	cost = @tier4cost2
+	tier = 4
 	category = { mining }
 	prerequisites = { "tech_mining_10"}	
-	weight = @tier3weight4
+	weight = @tier4weight2
 	modifier = {
 		max_minerals = 1000
 	}	
 	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_mining"
+			}			
+		}
+	}
+	
 	ai_weight = {
 		modifier = {
-			factor = 0
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_mining"
+			}
 		}
 	}
 }
 
 tech_mining_12 = {
 	area = engineering
-	cost = @tier3cost4
-	tier = 3
+	cost = @tier4cost3
+	tier = 4
 	category = { mining }
 	prerequisites = { "tech_mining_11"}	
-	weight = @tier3weight4
+	weight = @tier4weight3
 	modifier = {
 		max_minerals = 1000
 	}	
 	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_mining"
+			}			
+		}
+	}
+	
 	ai_weight = {
 		modifier = {
-			factor = 0
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_mining"
+			}
 		}
 	}
 }
 
 tech_mining_13 = {
 	area = engineering
-	cost = @tier4cost1
+	cost = @tier4cost4
 	tier = 4
 	category = { mining }
 	prerequisites = { "tech_mining_12"}	
-	weight = @tier4weight1
+	weight = @tier4weight4
 	modifier = {
 		max_minerals = 1000
 	}	
 	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_mining"
+			}			
+		}
+	}
+	
 	ai_weight = {
 		modifier = {
-			factor = 0
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_mining"
+			}
 		}
 	}
 }
 
 tech_mining_14 = {
 	area = engineering
-	cost = @tier4cost1
-	tier = 4
+	cost = @tier5cost1
+	tier = 5
 	category = { mining }
 	prerequisites = { "tech_mining_13"}	
-	weight = @tier4weight1
+	weight = @tier5weight1
 	modifier = {
 		max_minerals = 1000
 	}	
 	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_mining"
+			}			
+		}
+	}
+	
 	ai_weight = {
 		modifier = {
-			factor = 0
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_mining"
+			}
 		}
 	}
 }
 
 tech_mining_15 = {
 	area = engineering
-	cost = @tier4cost2
-	tier = 4
+	cost = @tier5cost2
+	tier = 5
 	category = { mining }
 	prerequisites = { "tech_mining_14"}	
-	weight = @tier4weight2
+	weight = @tier5weight2
 	modifier = {
 		max_minerals = 1000
 	}	
 	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_mining"
+			}			
+		}
+	}
+	
 	ai_weight = {
 		modifier = {
-			factor = 0
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_mining"
+			}
 		}
 	}
 }
@@ -439,15 +582,28 @@ tech_mining_16 = {
 	tier = 4
 	category = { mining }
 	prerequisites = { "tech_mining_15"}	
-	weight = @tier4weight3
+	weight = 0
 	modifier = {
 		max_minerals = 1000
 	}	
 	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_mining"
+			}			
+		}
+	}
+	
 	ai_weight = {
 		modifier = {
-			factor = 0
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_mining"
+			}
 		}
 	}
 }
@@ -463,10 +619,23 @@ tech_mining_17 = {
 		max_minerals = 1000
 	}	
 	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_mining"
+			}			
+		}
+	}
+	
 	ai_weight = {
 		modifier = {
-			factor = 0
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_mining"
+			}
 		}
 	}
 }
@@ -482,10 +651,23 @@ tech_mining_18 = {
 		max_minerals = 1000
 	}	
 	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_mining"
+			}			
+		}
+	}
+	
 	ai_weight = {
 		modifier = {
-			factor = 0
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_mining"
+			}
 		}
 	}
 }
