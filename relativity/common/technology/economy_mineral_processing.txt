@@ -354,11 +354,23 @@ tech_mineral_processing_8 = {
 	prerequisites = { "tech_mineral_processing_7"}	
 	weight = @tier3weight2
 	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_mineral_processing"
+			}			
+		}
+	}
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_mineral_processing"
+			}
 		}
 	}
 }
@@ -370,11 +382,23 @@ tech_mineral_processing_9 = {
 	prerequisites = { "tech_mineral_processing_8"}	
 	weight = @tier3weight3
 	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_mineral_processing"
+			}			
+		}
+	}
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_mineral_processing"
+			}
 		}
 	}
 }
@@ -387,11 +411,23 @@ tech_mineral_processing_10 = {
 	prerequisites = { "tech_mineral_processing_9"}	
 	weight = @tier3weight4
 	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_mineral_processing"
+			}			
+		}
+	}
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_mineral_processing"
+			}
 		}
 	}
 }
@@ -405,11 +441,23 @@ tech_mineral_processing_11 = {
 	prerequisites = { "tech_mineral_processing_10"}	
 	weight = @tier4weight1
 	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_mineral_processing"
+			}			
+		}
+	}
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_mineral_processing"
+			}
 		}
 	}
 }
@@ -422,11 +470,23 @@ tech_mineral_processing_12 = {
 	prerequisites = { "tech_mineral_processing_11"}	
 	weight = @tier4weight2
 	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_mineral_processing"
+			}			
+		}
+	}
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_mineral_processing"
+			}
 		}
 	}
 }
@@ -439,11 +499,23 @@ tech_mineral_processing_13 = {
 	prerequisites = { "tech_mineral_processing_12"}	
 	weight = @tier4weight3
 	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_mineral_processing"
+			}			
+		}
+	}
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_mineral_processing"
+			}
 		}
 	}
 }
@@ -456,11 +528,23 @@ tech_mineral_processing_14 = {
 	prerequisites = { "tech_mineral_processing_13"}	
 	weight = @tier4weight4
 	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_mineral_processing"
+			}			
+		}
+	}
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_mineral_processing"
+			}
 		}
 	}
 }
@@ -473,11 +557,23 @@ tech_mineral_processing_15 = {
 	prerequisites = { "tech_mineral_processing_14"}	
 	weight = @tier5weight1
 	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_mineral_processing"
+			}			
+		}
+	}
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_mineral_processing"
+			}
 		}
 	}
 }

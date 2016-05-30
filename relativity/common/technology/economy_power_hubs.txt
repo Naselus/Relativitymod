@@ -103,7 +103,7 @@
 #Global Energy Management
 tech_power_hub_1 = {
 	cost = @tier1cost1
-	area = society
+	area = engineering
 	tier = 1
 	category = { power_hubs }	
 	prerequisites = { "tech_power_plant_1" }
@@ -118,7 +118,7 @@ tech_power_hub_1 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = society
+				area = engineering
 				has_trait = "leader_trait_expertise_power_hubs"
 			}			
 		}
@@ -128,7 +128,7 @@ tech_power_hub_1 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = society
+				area = engineering
 				has_trait = "leader_trait_expertise_power_hubs"
 			}
 		}
@@ -138,7 +138,7 @@ tech_power_hub_1 = {
 #Planetary Power Grid
 tech_power_hub_2 = {
 	cost = @tier2cost1
-	area = society
+	area = engineering
 	tier = 2
 	category = { power_hubs }	
 	prerequisites = { "tech_power_hub_1" "tech_colonial_centralization"}
@@ -153,7 +153,7 @@ tech_power_hub_2 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = society
+				area = engineering
 				has_trait = "leader_trait_expertise_power_hubs"
 			}			
 		}
@@ -163,7 +163,7 @@ tech_power_hub_2 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = society
+				area = engineering
 				has_trait = "leader_trait_expertise_power_hubs"
 			}
 		}
