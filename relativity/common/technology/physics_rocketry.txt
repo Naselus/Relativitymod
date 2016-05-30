@@ -551,6 +551,7 @@ tech_torpedoes_1 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { rocketry }
+	prerequisites = { "tech_missiles_5" }	
 	ai_update_type = military
 	weight = @tier2weight1
 	

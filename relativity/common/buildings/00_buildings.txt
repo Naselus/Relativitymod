@@ -1259,6 +1259,10 @@ building_basic_science_lab_1 = {
 		engineering_research = @science1
 	}
 	
+	required_resources = {
+		sr_plasma = 1
+	}	
+	
 	
 	upgrades = {
 		building_engineering_facility_1
@@ -1475,7 +1479,7 @@ building_physics_lab_1 = {
 	}
 	
 	required_resources = {
-		energy = @b2upkeep
+		sr_plasma = 1
 	}
 	
 	upgrades = {
@@ -1654,7 +1658,7 @@ building_biolab_1 = {
 	}
 	
 	required_resources = {
-		sr_plasma = @b2upkeep
+		sr_plasma = 1
 	}
 	
 	upgrades = {
@@ -1691,7 +1695,7 @@ building_biolab_2 = {
 	}
 	
 	required_resources = {
-		sr_plasma2 = @b3upkeep
+		sr_plasma = @b3upkeep
 	}
 	
 	upgrades = {
@@ -2865,7 +2869,7 @@ building_basic_science_lab_2 = {
 	}
 	
 	required_resources = {
-		energy = @b1upkeep
+		sr_plasma = 1
 	}
 	
 	upgrades = {
@@ -2889,7 +2893,7 @@ building_basic_science_lab_3 = {
 	}
 	
 	required_resources = {
-		energy = @b1upkeep
+		sr_plasma = 1
 	}
 	
 	upgrades = {

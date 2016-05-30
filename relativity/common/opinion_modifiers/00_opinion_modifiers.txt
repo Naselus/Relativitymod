@@ -1315,7 +1315,7 @@ opinion_threat = {
 # Subject's relative power to overlord
 opinion_relative_power = {
 	opinion = {
-		base = -2 # per 1% power
+		base = 1 # per 1% power
 	}
 	
 	min = -1000

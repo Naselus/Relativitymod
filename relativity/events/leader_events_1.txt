@@ -650,9 +650,6 @@ country_event = {
 				limit = {
 					leader_class = scientist
 				}
-				random_list = {
-					1 = { }
-					99 = {
 						random_list = {
 							5 = {
 								if = {
@@ -941,27 +938,12 @@ country_event = {
 								}
 							}
 						}
-					}
-				}
+
 			}
 			if = {
 				limit = {
 					leader_class = admiral
 				}
-				random_list = {
-					1 = { }
-					99 = {
-						modifier = {
-							factor = 1.5
-							OR = {
-								has_level = 3
-								has_level = 4
-							}
-						}
-						modifier = {
-							factor = 5
-							has_level = 5
-						}
 						random_list = {
 							5 = {
 								if = {
@@ -1119,26 +1101,10 @@ country_event = {
 							}
 						}
 					}
-				}
-			}
 			if = {
 				limit = {
 					leader_class = governor
 				}
-				random_list = {
-					1 = { }
-					99 = {
-						modifier = {
-							factor = 1.5
-							OR = {
-								has_level = 3
-								has_level = 4
-							}
-						}
-						modifier = {
-							factor = 5
-							has_level = 5
-						}
 						random_list = {
 							5 = {
 								if = {
@@ -1241,26 +1207,10 @@ country_event = {
 							}
 						}
 					}
-				}
-			}
 			if = {
 				limit = {
 					leader_class = general
 				}
-				random_list = {
-					1 = { }
-					99 = {
-						modifier = {
-							factor = 1.5
-							OR = {
-								has_level = 3
-								has_level = 4
-							}
-						}
-						modifier = {
-							factor = 5
-							has_level = 5
-						}
 						random_list = {
 							5 = {
 								if = {
@@ -1396,26 +1346,10 @@ country_event = {
 							}
 						}
 					}
-				}
-			}
 			if = {
 				limit = {
 					leader_class = ruler
 				}
-				random_list = {
-					1 = { }
-					99 = {
-						modifier = {
-							factor = 1.5
-							OR = {
-								has_level = 3
-								has_level = 4
-							}
-						}
-						modifier = {
-							factor = 5
-							has_level = 5
-						}
 						random_list = {
 							5 = {
 								if = {
@@ -1739,8 +1673,6 @@ country_event = {
 						}
 					}
 				}
-			}
-		}
 	}
 }
 

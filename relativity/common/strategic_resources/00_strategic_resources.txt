@@ -9,7 +9,7 @@ energy = {
 	accumulative = yes
 	accumulated_by_sectors = yes
 	tradable = yes
-	AI_category = food
+	AI_category = energy
 	max = 250000
 }
 

@@ -779,7 +779,7 @@ NDefines = {
 		
 		GROWTH_BASE							= 40,	-- Required growth for a pop to become fully grown.
 		GROWTH_INCREASE_PER_POP 			= -1,	-- Increased growth cost per pop planet [+ POP_INCREASE_PER_POP*(num_pop - 1)]
-		GROWTH_INCREASE_FACTOR 				= 1.12,	-- Increased growth factor [+ (num_pop - 1)^POP_INCREASE_FACTOR]
+		GROWTH_INCREASE_FACTOR 				= 1,	-- Increased growth factor [+ (num_pop - 1)^POP_INCREASE_FACTOR]
 		FALLEN_EMPIRE_GROWTH_REQ_MULT		= 40,	-- Fallen Empire pops need this much more food for growth
 		
 		FOOD_SUSTAINED						= 1,	-- Amount of food each pop require	
@@ -1023,25 +1023,25 @@ NDefines = {
 		
 		NON_MINED_RESOURCES_ENERGY_WANT_FACTOR = 1,	-- If 100% of AI's resources in space are unmined, increase desire for energy by this
 		
-		MILITARY_STATION_BUDGET_FRACTION = 0.30,	-- AI will spend this fraction of their income on military stations
+		MILITARY_STATION_BUDGET_FRACTION = 0.1,	-- AI will spend this fraction of their income on military stations
 		SAVINGS_BUDGET_FRACTION = 0.00, 		-- AI will spend this fraction of their income on savings (normally not needed as fleets in dock will result in energy surplus)
 		ARMY_BUDGET_FRACTION = 0.05,   			-- AI will spend this fraction of their income on armies
-		NAVY_BUDGET_FRACTION = 0.15, 			-- AI will spend this fraction of their income on ships
+		NAVY_BUDGET_FRACTION = 0.35, 			-- AI will spend this fraction of their income on ships
 		STATION_BUDGET_FRACTION = 0.35, 		-- AI will spend this fraction of their income on stations
 		BUILDING_BUDGET_FRACTION = 0.10, 		-- AI will spend this fraction of their income on buildings
 		ROBOT_BUDGET_FRACTION = 0.05,			-- AI will spend this fraction of their income on robots (transfered to stations if they don't use robots)
 		
 		SHIPSIZE_BUDGET_FACTOR = 0.05,			-- For each ship size unlocked, increase navy budget by this amount
 		NAVAL_CAPACITY_BUDGET_MAX = 100,		-- At this naval capacity, AI puts max budget into ships
-		PLANET_BUDGET_FACTOR = 0.15,			-- When AI has few planets, it will decrease building/mil station budget by this and put it into colonies/stations instead
-		MAX_PLANETS_FOR_BUDGET_FACTOR = 3,		-- At this amount of planets, budget is normalized
+		PLANET_BUDGET_FACTOR = 0.35,			-- When AI has few planets, it will decrease building/mil station budget by this and put it into colonies/stations instead
+		MAX_PLANETS_FOR_BUDGET_FACTOR = 4,		-- At this amount of planets, budget is normalized
 
-		MINERAL_MILITARY_STATION_BUDGET_FRACTION = 0.15, -- AI will spend this fraction of their stored minerals on military stations
-		MINERAL_NAVY_BUDGET_FRACTION = 0.10, 	-- AI will spend this fraction of their stored minerals on ships
-		MINERAL_STATION_BUDGET_FRACTION = 0.15, -- AI will spend this fraction of their stored minerals on stations (used for spaceport instead when it needs a new spaceport)
+		MINERAL_MILITARY_STATION_BUDGET_FRACTION = 0.10, -- AI will spend this fraction of their stored minerals on military stations
+		MINERAL_NAVY_BUDGET_FRACTION = 0.30, 	-- AI will spend this fraction of their stored minerals on ships
+		MINERAL_STATION_BUDGET_FRACTION = 0.10, -- AI will spend this fraction of their stored minerals on stations (used for spaceport instead when it needs a new spaceport)
 		MINERAL_BUILDING_BUDGET_FRACTION = 0.20,-- AI will spend this fraction of their stored minerals on buildings (used for spaceport instead when it needs a new spaceport)
 		MINERAL_SPACEPORT_BUDGET_FRACTION = 0.05, -- AI will spend this fraction of their stored minerals on spaceport modules
-		MINERAL_COLONY_BUDGET_FRACTION = 0.15,
+		MINERAL_COLONY_BUDGET_FRACTION = 0.1,
 		MINERAL_ARMY_BUDGET_FRACTION = 0.05,	-- AI will spend this fraction on armies
 		MINERAL_TILE_BLOCKER_BUDGET_FRACTION = 0.05,	-- AI will spend this fraction on tile blockers
 		MINERAL_ROBOT_BUDGET_FRACTION = 0.05,	-- AI will spend this fraction of their stored minerals on robots (transfered to buildings if they don't use robots)
@@ -1081,7 +1081,7 @@ NDefines = {
 		EXPECTED_TECH_BASE = 10,						-- AI expects to make this base amount in tech
 		EXPECTED_TECH_PER_POP = 1,					-- AI expects to make about their num pops x this in tech
 		EXPECTED_ENERGY_BASE = 10,					-- AI expects to make this base amount in energy
-		EXPECTED_ENERGY_PER_POP = 1,				-- AI expects to make about their num pops x this in energy
+		EXPECTED_ENERGY_PER_POP = 2,				-- AI expects to make about their num pops x this in energy
 		EXPECTED_ENERGY_SURPLUS = 3,				-- AI wants a surplus of least this amount in monthly energy production (temporary spending such as colonies does not count)
 		EXPECTED_SECTOR_ENERGY_SURPLUS = 3,			-- As above, but for sectors
 		
@@ -1096,7 +1096,7 @@ NDefines = {
 		ENERGY_ROBOT_BUDGET_FRACTION = 0.2, -- AI will spend this fraction of their energy on robots (transfered to colonies if no robots)
 		ENERGY_SAVINGS_BUDGET_FRACTION = 0.1, -- AI will spend this fraction of their energy on savings
 		
-		EXPAND_NAVY_LIMIT_FACTOR = 4,			-- If the AI Navy maintenance is this much bigger than the opponents, navy will not be expanded
+		EXPAND_NAVY_LIMIT_FACTOR = 10,			-- If the AI Navy maintenance is this much bigger than the opponents, navy will not be expanded
 
 		CONSTRUCTOR_SHIPS_MUL = 0.04,			-- Number of constructor ships of AI is the number of planets times this value
 		THRESHOLD_DISBAND_SHIPS = 3,			-- AI will disband ships if wanted + this value < owned
