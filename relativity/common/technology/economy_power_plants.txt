@@ -113,12 +113,12 @@ tech_power_plant_1 = {
 
 #Power Plant II
 tech_power_plant_2 = {
-	cost = @tier1cost1
+	cost = @tier1cost2
 	area = engineering
 	tier = 1
 	category = { power_plants }	
 	prerequisites = { "tech_power_plant_1" }
-	weight = @tier1weight1
+	weight = @tier1weight2
 		
 	## unlock power plant lvl 2	
 	modifier = {
@@ -186,12 +186,12 @@ tech_power_plant_3 = {
 
 #Power Plant IV
 tech_power_plant_4 = {
-	cost = @tier2cost4
+	cost = @tier2cost3
 	area = engineering
 	tier = 2
 	category = { power_plants }
 	prerequisites = { "tech_power_plant_3" "tech_galactic_administration"}
-	weight = @tier2weight4
+	weight = @tier2weight3
 		
 	## unlock power plant lvl 4
 	
@@ -258,11 +258,24 @@ tech_power_plant_6 = {
 	prerequisites = { "tech_power_plant_5"}	
 	weight = @tier3weight1
 	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_power_plants"
+			}
+		}
+	}
 	
 	ai_weight = {
+		factor = 3	#power plants are good
 		modifier = {
-			factor = 0
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_power_plants"
+			}
 		}
 	}
 }
@@ -275,11 +288,24 @@ tech_power_plant_7 = {
 	prerequisites = { "tech_power_plant_6"}	
 	weight = @tier3weight2
 	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_power_plants"
+			}
+		}
+	}
 	
 	ai_weight = {
+		factor = 3	#power plants are good
 		modifier = {
-			factor = 0
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_power_plants"
+			}
 		}
 	}
 }
@@ -292,11 +318,24 @@ tech_power_plant_8 = {
 	prerequisites = { "tech_power_plant_7"}	
 	weight = @tier3weight3
 	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_power_plants"
+			}
+		}
+	}
 	
 	ai_weight = {
+		factor = 3	#power plants are good
 		modifier = {
-			factor = 0
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_power_plants"
+			}
 		}
 	}
 }
@@ -309,11 +348,24 @@ tech_power_plant_9 = {
 	prerequisites = { "tech_power_plant_8"}	
 	weight = @tier3weight4
 	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_power_plants"
+			}
+		}
+	}
 	
 	ai_weight = {
+		factor = 3	#power plants are good
 		modifier = {
-			factor = 0
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_power_plants"
+			}
 		}
 	}
 }
@@ -326,11 +378,24 @@ tech_power_plant_10 = {
 	prerequisites = { "tech_power_plant_9"}	
 	weight = @tier4weight1
 	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_power_plants"
+			}
+		}
+	}
 	
 	ai_weight = {
+		factor = 3	#power plants are good
 		modifier = {
-			factor = 0
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_power_plants"
+			}
 		}
 	}
 }
@@ -343,79 +408,144 @@ tech_power_plant_11 = {
 	prerequisites = { "tech_power_plant_10"}	
 	weight = @tier4weight2
 	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_power_plants"
+			}
+		}
+	}
 	
 	ai_weight = {
+		factor = 3	#power plants are good
 		modifier = {
-			factor = 0
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_power_plants"
+			}
 		}
 	}
 }
 
 tech_power_plant_12 = {
 	area = engineering
-	cost = @tier4cost4
+	cost = @tier4cost3
 	tier = 4
 	category = { power_plants }
 	prerequisites = { "tech_power_plant_11"}	
-	weight = @tier4weight4
+	weight = @tier4weight3
 	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_power_plants"
+			}
+		}
+	}
 	
 	ai_weight = {
+		factor = 3	#power plants are good
 		modifier = {
-			factor = 0
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_power_plants"
+			}
 		}
 	}
 }
 
 tech_power_plant_13 = {
 	area = engineering
-	cost = @tier5cost1
-	tier = 5
+	cost = @tier4cost4
+	tier = 4
 	category = { power_plants }
 	prerequisites = { "tech_power_plant_12"}	
-	weight = @tier5weight1
+	weight = @tier4weight4
 	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_power_plants"
+			}
+		}
+	}
 	
 	ai_weight = {
+		factor = 3	#power plants are good
 		modifier = {
-			factor = 0
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_power_plants"
+			}
 		}
 	}
 }
 
 tech_power_plant_14 = {
 	area = engineering
-	cost = @tier5cost2
+	cost = @tier5cost1
 	tier = 5
 	category = { power_plants }
 	prerequisites = { "tech_power_plant_13"}	
-	weight = @tier4weight2
+	weight = @tier5weight1
 	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_power_plants"
+			}
+		}
+	}
 	
 	ai_weight = {
+		factor = 3	#power plants are good
 		modifier = {
-			factor = 0
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_power_plants"
+			}
 		}
 	}
 }
 
 tech_power_plant_15 = {
 	area = engineering
-	cost = @tier5cost3
+	cost = @tier5cost2
 	tier = 5
 	category = { power_plants }
 	prerequisites = { "tech_power_plant_14"}	
-	weight = @tier5weight3
+	weight = @tier5weight2
 	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_power_plants"
+			}
+		}
+	}
 	
 	ai_weight = {
+		factor = 3	#power plants are good
 		modifier = {
-			factor = 0
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_power_plants"
+			}
 		}
 	}
 }

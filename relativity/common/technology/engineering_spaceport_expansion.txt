@@ -137,6 +137,8 @@ tech_spaceport_2 = {
 	prerequisites = { "tech_space_construction" }
 	weight = @tier1weight3
 	
+	#Unlock DDs
+	
 	modifier = {
 		max_minerals = 2000
 	}
@@ -191,7 +193,7 @@ tech_spaceport_3 = {
 	prerequisites = { "tech_spaceport_2" }
 	weight = @tier2weight1
 	
-	## unlock destroyer	
+	## unlock cruiser
 	prereqfor_desc = {
 		ship = {
 			title = "TECH_UNLOCK_DESTROYER_CONSTRUCTION_TITLE"
@@ -257,6 +259,8 @@ tech_spaceport_4 = {
 	prerequisites = { "tech_spaceport_3" }
 	weight = @tier2weight2
 		
+	#Unlock BCs	
+		
 	modifier = {
 		max_minerals = 2000
 	}		
@@ -315,7 +319,7 @@ tech_spaceport_5 = {
 	prerequisites = { "tech_spaceport_4" }
 	weight = @tier2weight4	
 		
-	## unlock cruisers	
+	## unlock BBs and CV tech
 	prereqfor_desc = {
 		ship = {
 			title = "TECH_UNLOCK_CRUISER_CONSTRUCTION_TITLE"
@@ -362,7 +366,7 @@ tech_spaceport_5 = {
 	}
 	
 	ai_weight = {
-		factor = 100 #higher factor due to cruiser hull
+		factor = 100 #important tech
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -381,7 +385,7 @@ tech_spaceport_6 = {
 	prerequisites = { "tech_spaceport_5" }
 	weight = @tier3weight2
 		
-	## unlock battleships	
+	## unlock DN tech	
 	prereqfor_desc = {
 		ship = {
 			title = "TECH_UNLOCK_BATTLESHIP_CONSTRUCTION_TITLE"
@@ -428,7 +432,7 @@ tech_spaceport_6 = {
 	}
 	
 	ai_weight = {
-		factor = 100 #higher factor due to battleship hull
+		factor = 100 #higher factor due to DN tech
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -447,7 +451,7 @@ tech_spaceport_7 = {
 	prerequisites = { "tech_spaceport_6"}	
 	weight = @tier3weight4
 	
-	#Prereq for Dreadnought Tech
+	
 	
 	modifier = {
 		spaceport_ship_build_cost_mult = -0.03
@@ -487,7 +491,7 @@ tech_spaceport_7 = {
 	}
 	
 	ai_weight = {
-		factor = 5 #higher factor due to prereq for dreadnought hull
+		factor = 2
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -500,68 +504,232 @@ tech_spaceport_7 = {
 
 tech_spaceport_8 = {
 	area = engineering
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier4cost1
+	tier = 4
 	category = { spaceport_expansion }
 	prerequisites = { "tech_spaceport_7"}	
-	weight = 0
+	weight = @tier4weight1
 	
+	
+	modifier = {
+		spaceport_ship_build_cost_mult = -0.03
+		planet_ship_build_speed_mult = -0.03
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0.1
+			NOT = { years_passed > 50 }
+		}	
+		modifier = {
+			factor = 10
+			any_neighbor_country = {
+				has_technology = tech_spaceport_7
+			}
+		}
+		modifier = {
+			factor = 2
+			years_passed > 70
+		}
+		modifier = {
+			factor = 3
+			years_passed > 75
+		}
+		modifier = {
+			factor = 4
+			years_passed > 80
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_spaceport_expansion"
+			}
+		}
+	}
 	
 	ai_weight = {
+		factor = 2
 		modifier = {
-			factor = 0
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_spaceport_expansion"
+			}
 		}
 	}
 }
 
 tech_spaceport_9 = {
 	area = engineering
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier4cost2
+	tier = 4
 	category = { spaceport_expansion }
 	prerequisites = { "tech_spaceport_8"}	
-	weight = @tier2weight1
+	weight = @tier4weight2
 	
+	
+	modifier = {
+		spaceport_ship_build_cost_mult = -0.03
+		planet_ship_build_speed_mult = -0.03
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0.1
+			NOT = { years_passed > 50 }
+		}	
+		modifier = {
+			factor = 10
+			any_neighbor_country = {
+				has_technology = tech_spaceport_7
+			}
+		}
+		modifier = {
+			factor = 2
+			years_passed > 70
+		}
+		modifier = {
+			factor = 3
+			years_passed > 75
+		}
+		modifier = {
+			factor = 4
+			years_passed > 80
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_spaceport_expansion"
+			}
+		}
+	}
 	
 	ai_weight = {
+		factor = 2 
 		modifier = {
-			factor = 0
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_spaceport_expansion"
+			}
 		}
 	}
 }
 
 tech_spaceport_10 = {
 	area = engineering
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier4cost3
+	tier = 4
 	category = { spaceport_expansion }
 	prerequisites = { "tech_spaceport_9"}	
-	weight = @tier2weight1
+	weight = @tier4weight3
 	
+	
+	modifier = {
+		spaceport_ship_build_cost_mult = -0.03
+		planet_ship_build_speed_mult = -0.03
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0.1
+			NOT = { years_passed > 50 }
+		}	
+		modifier = {
+			factor = 10
+			any_neighbor_country = {
+				has_technology = tech_spaceport_7
+			}
+		}
+		modifier = {
+			factor = 2
+			years_passed > 70
+		}
+		modifier = {
+			factor = 3
+			years_passed > 75
+		}
+		modifier = {
+			factor = 4
+			years_passed > 80
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_spaceport_expansion"
+			}
+		}
+	}
 	
 	ai_weight = {
+		factor = 2 
 		modifier = {
-			factor = 0
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_spaceport_expansion"
+			}
 		}
 	}
 }
 
 tech_spaceport_11 = {
 	area = engineering
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier4cost4
+	tier = 4
 	category = { spaceport_expansion }
 	prerequisites = { "tech_spaceport_10"}	
-	weight = @tier2weight1
+	weight = @tier4weight4
 	
+	
+	modifier = {
+		spaceport_ship_build_cost_mult = -0.03
+		planet_ship_build_speed_mult = -0.03
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0.1
+			NOT = { years_passed > 50 }
+		}	
+		modifier = {
+			factor = 10
+			any_neighbor_country = {
+				has_technology = tech_spaceport_7
+			}
+		}
+		modifier = {
+			factor = 2
+			years_passed > 70
+		}
+		modifier = {
+			factor = 3
+			years_passed > 75
+		}
+		modifier = {
+			factor = 4
+			years_passed > 80
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_spaceport_expansion"
+			}
+		}
+	}
 	
 	ai_weight = {
+		factor = 2
 		modifier = {
-			factor = 0
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_spaceport_expansion"
+			}
 		}
 	}
 }
@@ -572,7 +740,7 @@ tech_spaceport_12 = {
 	tier = 2
 	category = { spaceport_expansion }
 	prerequisites = { "tech_spaceport_11"}	
-	weight = @tier2weight1
+	weight = 0
 	
 	
 	ai_weight = {

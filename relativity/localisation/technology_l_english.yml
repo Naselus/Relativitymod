@@ -108,10 +108,10 @@
  tech_spaceport_3_desc:1 "Expanded dry-docks allow for the construction of Cruiser-class military vessels."
  tech_spaceport_4:1 "Battlecruisers"
  tech_spaceport_4_desc:1 "Expanded dry-docks allow for the construction of Battlecruiser-class military vessels.""
- tech_spaceport_5:1 "Improved Spaceport"
- tech_spaceport_5_desc:1 "Enhancements to artificial gravity and life support systems allow for further expansion of orbital facilities."
- tech_spaceport_6:0 "Battleships"
- tech_spaceport_6_desc:0 "Expanded dry-docks allow for the construction of Battleship-class military vessels."
+ tech_spaceport_5:1 "Battleships and Carriers"
+ tech_spaceport_5_desc:1 "Our dry-docks are now capable of building large capital ships to lead our fleets, ushering in a new era."
+ tech_spaceport_6:0 "Dreadnoughts"
+ tech_spaceport_6_desc:0 "Expanded dry-docks allow for the construction of Dreadnought-class military vessels."
  tech_spaceport_7:0 "Advanced Spaceport"
  tech_spaceport_7_desc:0 "State-of-the-art orbital construction techniques result in spaceports the size of major planet side cities.\n\n"
  tech_spaceport_8:1 "Spaceport Infrastructure VIII"
@@ -142,10 +142,10 @@
  tech_spaceport_20_desc:0 "\n\n" 
  
  # Voidcraft
- #tech_corvette_assembly:0 "Advanced Corvette Designs"
- #tech_corvette_assembly_desc:0 "Unused" # TEMP
- #tech_destroyer_assembly:0 "Advanced Destroyer Designs"
- #tech_destroyer_assembly_desc:0 "Unused" # TEMP
+ tech_corvette_assembly_2:0 "Advanced Corvette Assembly Yards"
+ tech_corvette_assembly_2_desc:0 "Advances in pre-fabrication and further refinements to workforce efficiency have resulted in significant improvement to our corvette production." 
+ tech_destroyer_assembly_2:0 "Advanced Destroyer Assembly Yards"
+ tech_destroyer_assembly_2_desc:0 "Advances in pre-fabrication and further refinements to workforce efficiency have resulted in significant improvement to our destroyer production." 
  tech_cruiser_yard:0 "Standardized Cruiser Patterns"
  tech_cruiser_yard_desc:1 "Establishing new standards for the modeling and construction of cruisers greatly improves the efficiency of the production pipeline.\n\n"
  tech_battleship_yard:0 "Standardized Battleship Patterns"

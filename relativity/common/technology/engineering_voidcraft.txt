@@ -548,7 +548,7 @@ tech_carrier_1 = {
 	}
 	
 	ai_weight = {
-		factor = 100 #higher factor due to battleship hull
+		factor = 100 #higher factor due to CV hull
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -565,7 +565,7 @@ tech_dreadnought_1 = {
 	area = engineering
 	tier = 4
 	category = { voidcraft }	
-	prerequisites = { "tech_spaceport_7" }
+	prerequisites = { "tech_spaceport_6" }
 	weight = @tier4weight2
 		
 	## unlock dreadnought	

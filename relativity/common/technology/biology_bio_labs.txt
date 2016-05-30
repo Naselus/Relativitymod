@@ -106,7 +106,7 @@
 #Bio Lab 1
 tech_biolab_1 = {
 	cost = @tier1cost1
-	area = physics
+	area = society
 	tier = 1
 	category = { bio_labs }
 	weight = @tier1weight1
@@ -135,7 +135,7 @@ tech_biolab_1 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = physics
+				area = society
 				has_trait = "leader_trait_expertise_bio_labs"
 			}
 		}
@@ -146,9 +146,69 @@ tech_biolab_1 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = physics
+				area = society
 				has_trait = "leader_trait_expertise_bio_labs"
 			}
+		}
+	}
+}
+tech_societal_research_1 = {
+	area = society
+	cost = @tier1cost3
+	tier = 1
+	category = { bio_labs }
+	prerequisites = { tech_biolab_1}
+	weight = @tier1weight3
+		modifier = {
+		country_society_tech_research_speed = 0.05	
+		}
+
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_societal_research_2 = {
+	area = society
+	cost = @tier1cost4
+	tier = 1
+	category = { bio_labs }
+	prerequisites = { "tech_societal_research_1" }			
+	weight = @tier1weight4
+	
+		modifier = {
+		country_society_tech_research_speed = 0.05	
+		}	
+	
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_societal_research_3 = {
+	area = society
+	cost = @tier2cost2
+	tier = 2
+	category = { bio_labs }
+	prerequisites = { "tech_societal_research_2" }		
+	weight = @tier2weight2
+	
+		modifier = {
+		country_society_tech_research_speed = 0.05	
+		}	
+	
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
 		}
 	}
 }
@@ -156,7 +216,7 @@ tech_biolab_1 = {
 #Bio Lab 2
 tech_biolab_2 = {
 	cost = @tier2cost3
-	area = physics
+	area = society
 	tier = 2
 	category = { bio_labs }
 	prerequisites = { "tech_societal_research_3" "tech_colonial_centralization"}
@@ -182,7 +242,7 @@ tech_biolab_2 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = physics
+				area = society
 				has_trait = "leader_trait_expertise_bio_labs"
 			}
 		}
@@ -193,9 +253,93 @@ tech_biolab_2 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = physics
+				area = society
 				has_trait = "leader_trait_expertise_bio_labs"
 			}
+		}
+	}
+}
+
+tech_societal_research_4 = {
+	area = society
+	cost = @tier3cost1
+	tier = 3
+	category = { bio_labs }
+	prerequisites = { "tech_biolab_2" }		
+	weight = @tier3weight1
+	
+		modifier = {
+		country_society_tech_research_speed = 0.05	
+		}	
+	
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_societal_research_5 = {
+	area = society
+	cost = @tier3cost2
+	tier = 3
+	category = { bio_labs }
+	prerequisites = { "tech_societal_research_4" }		
+	weight = @tier3weight2
+	
+			modifier = {
+		country_society_tech_research_speed = 0.05	
+		}
+	
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_societal_research_6 = {
+	area = society
+	cost = @tier3cost3
+	tier = 3
+	category = { bio_labs }
+	prerequisites = { "tech_societal_research_5" }		
+	weight = @tier3weight3
+	
+		modifier = {
+		country_society_tech_research_speed = 0.05	
+		}	
+	
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_societal_research_7 = {
+	area = society
+	cost = @tier3cost4
+	tier = 3
+	category = { bio_labs }
+	prerequisites = { "tech_societal_research_6" }		
+	weight = @tier3weight4
+	
+		modifier = {
+		country_society_tech_research_speed = 0.05	
+		}
+	
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
 		}
 	}
 }
@@ -203,7 +347,7 @@ tech_biolab_2 = {
 #Bio Lab 3
 tech_biolab_3 = {
 	cost = @tier4cost1
-	area = physics
+	area = society
 	tier = 4
 	category = { bio_labs }	
 	prerequisites = { "tech_societal_research_7" "tech_galactic_ambitions" }
@@ -229,7 +373,7 @@ tech_biolab_3 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = physics
+				area = society
 				has_trait = "leader_trait_expertise_bio_labs"
 			}
 		}
@@ -240,15 +384,99 @@ tech_biolab_3 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = physics
+				area = society
 				has_trait = "leader_trait_expertise_bio_labs"
 			}
 		}
 	}
 }
 
+tech_societal_research_8 = {
+	area = society
+	cost = @tier4cost2
+	tier = 4
+	category = { bio_labs }
+	prerequisites = { "tech_societal_research_7" }		
+	weight = @tier4weight2
+	
+		modifier = {
+		country_society_tech_research_speed = 0.05	
+		}	
+	
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_societal_research_9 = {
+	area = society
+	cost = @tier4cost4
+	tier = 4
+	category = { bio_labs }
+	prerequisites = { "tech_societal_research_8" }		
+	weight = @tier4weight4
+	
+		modifier = {
+		country_society_tech_research_speed = 0.05	
+		}	
+	
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_societal_research_10 = {
+	area = society
+	cost = @tier5cost2
+	tier = 5
+	category = { bio_labs }
+	prerequisites = { "tech_societal_research_9" }		
+	weight = @tier5weight2
+	
+		modifier = {
+		country_society_tech_research_speed = 0.05	
+		}	
+	
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_societal_research_11 = {
+	area = society
+	cost = @tier5cost3
+	tier = 5
+	category = { bio_labs }
+	prerequisites = { "tech_societal_research_10" }		
+	weight = @tier5weight3
+	
+		modifier = {
+		country_society_tech_research_speed = 0.05	
+		}	
+	
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
 tech_biolab_4 = {
-	area = physics
+	area = society
 	cost = @tier5cost4
 	tier = 5
 	category = { bio_labs }
@@ -275,7 +503,7 @@ tech_biolab_4 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = physics
+				area = society
 				has_trait = "leader_trait_expertise_bio_labs"
 			}
 		}
@@ -286,15 +514,99 @@ tech_biolab_4 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = physics
+				area = society
 				has_trait = "leader_trait_expertise_bio_labs"
 			}
 		}
 	}
 }
 
+tech_societal_research_12 = {
+	area = society
+	cost = @tier6cost1
+	tier = 6
+	category = { bio_labs }
+	prerequisites = { "tech_societal_research_11" }		
+	weight = @tier6weight1
+	
+		modifier = {
+		country_society_tech_research_speed = 0.05	
+		}	
+	
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_societal_research_13 = {
+	area = society
+	cost = @tier6cost2
+	tier = 6
+	category = { bio_labs }
+	prerequisites = { "tech_societal_research_12" }		
+	weight = @tier6weight2
+	
+		modifier = {
+		country_society_tech_research_speed = 0.05	
+		}	
+	
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_societal_research_14 = {
+	area = society
+	cost = @tier6cost3
+	tier = 7
+	category = { bio_labs }
+	prerequisites = { "tech_societal_research_13" }		
+	weight = @tier7weight2
+	
+		modifier = {
+		country_society_tech_research_speed = 0.05	
+		}	
+	
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+tech_societal_research_15 = {
+	area = society
+	cost = @tier7cost1
+	tier = 7
+	category = { bio_labs }
+	prerequisites = { "tech_societal_research_14" }		
+	weight = @tier7weight1
+	
+			modifier = {
+		country_society_tech_research_speed = 0.05	
+		}
+	
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
 tech_biolab_5 = {
-	area = physics
+	area = society
 	cost = @tier7cost2
 	tier = 7
 	category = { bio_labs }
@@ -321,7 +633,7 @@ tech_biolab_5 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = physics
+				area = society
 				has_trait = "leader_trait_expertise_bio_labs"
 			}
 		}
@@ -332,7 +644,7 @@ tech_biolab_5 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = physics
+				area = society
 				has_trait = "leader_trait_expertise_bio_labs"
 			}
 		}
@@ -340,7 +652,7 @@ tech_biolab_5 = {
 }
 
 tech_biolab_6 = {
-	area = physics
+	area = society
 	cost = @tier2cost1
 	tier = 2
 	category = { bio_labs }
@@ -358,7 +670,7 @@ tech_biolab_6 = {
 }
 
 tech_biolab_7 = {
-	area = physics
+	area = society
 	cost = @tier2cost1
 	tier = 2
 	category = { bio_labs }
@@ -375,7 +687,7 @@ tech_biolab_7 = {
 }
 
 tech_biolab_8 = {
-	area = physics
+	area = society
 	cost = @tier2cost1
 	tier = 2
 	category = { bio_labs }
@@ -392,7 +704,7 @@ tech_biolab_8 = {
 }
 
 tech_biolab_9 = {
-	area = physics
+	area = society
 	cost = @tier2cost1
 	tier = 2
 	category = { bio_labs }
@@ -409,7 +721,7 @@ tech_biolab_9 = {
 }
 
 tech_biolab_10 = {
-	area = physics
+	area = society
 	cost = @tier2cost1
 	tier = 2
 	category = { bio_labs }
@@ -425,7 +737,7 @@ tech_biolab_10 = {
 }
 
 tech_biolab_11 = {
-	area = physics
+	area = society
 	cost = @tier2cost1
 	tier = 2
 	category = { bio_labs }
@@ -442,7 +754,7 @@ tech_biolab_11 = {
 }
 
 tech_biolab_12 = {
-	area = physics
+	area = society
 	cost = @tier2cost1
 	tier = 2
 	category = { bio_labs }
@@ -459,7 +771,7 @@ tech_biolab_12 = {
 }
 
 tech_biolab_13 = {
-	area = physics
+	area = society
 	cost = @tier2cost1
 	tier = 2
 	category = { bio_labs }
@@ -477,7 +789,7 @@ tech_biolab_13 = {
 }
 
 tech_biolab_14 = {
-	area = physics
+	area = society
 	cost = @tier2cost1
 	tier = 2
 	category = { bio_labs }
@@ -494,7 +806,7 @@ tech_biolab_14 = {
 }
 
 tech_biolab_15 = {
-	area = physics
+	area = society
 	cost = @tier2cost1
 	tier = 2
 	category = { bio_labs }
@@ -511,7 +823,7 @@ tech_biolab_15 = {
 }
 
 tech_biolab_16 = {
-	area = physics
+	area = society
 	cost = @tier2cost1
 	tier = 2
 	category = { bio_labs }
@@ -528,7 +840,7 @@ tech_biolab_16 = {
 }
 
 tech_biolab_17 = {
-	area = physics
+	area = society
 	cost = @tier2cost1
 	tier = 2
 	category = { bio_labs }
@@ -546,7 +858,7 @@ tech_biolab_17 = {
 }
 
 tech_biolab_18 = {
-	area = physics
+	area = society
 	cost = @tier2cost1
 	tier = 2
 	category = { bio_labs }
@@ -564,7 +876,7 @@ tech_biolab_18 = {
 }
 
 tech_biolab_19 = {
-	area = physics
+	area = society
 	cost = @tier2cost1
 	tier = 2
 	category = { bio_labs }
@@ -581,7 +893,7 @@ tech_biolab_19 = {
 }
 
 tech_biolab_20 = {
-	area = physics
+	area = society
 	cost = @tier2cost1
 	tier = 2
 	category = { bio_labs }
