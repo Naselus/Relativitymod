@@ -136,7 +136,7 @@ Version 102.0.1
 * Added Physics_Labs_4 in Tech and tech localization files
 * Lab Buildings have correct unlocks now
 * AI aggressiveness increased a bit
-* Changed level unlocks for ships: corvette 1 destroyer 2 cruiser 3 light carrier 3 battlecruiser 4 battelship 5 carrier 5 dreadnaught 6.
+* Changed level unlocks for ships: corvette 1 destroyer 2 cruiser 3 light carrier 3 battlecruiser 4 battleship 5 carrier 5 dreadnaught 6.
 
 110.0.7
 
@@ -151,3 +151,23 @@ Version 102.0.1
 * Sorted out maintenance for science buildings
 * AI kickstart economy settings tweaked (so it spends more on colonies until it has 3 planets)
 * Vassals now like you more if you're much more powerful than they are.
+* PD has had it's cooldown trebled. It's still less then missiles or torps, but you should no longer be able to tank 3-4 ships worth of missiles.
+* Space Amoeba weapons now ignore both shields and armour. Don't mess with space amoebas.
+* Barren Cold now terraforms to Arctic rather than Tundra
+* Societal Research moved into Bio Labs category
+* Localized Corvette and DD Assembly Yards 2
+* Tech Localizations reworked again for proper ship unlocks
+* DN Tech prereq is now Spaceport 6
+* Spaceport 7-11 are now filler until new ship types are created
+* Power Hubs moved from Society to Engineering
+* Added weighted modifiers and AI weight to mining, power plants, and mineral processing.
+* Reduced research costs for upper level power plants
+* Increased research costs for upper level mining buildings
+* AI should now be a bit more interested in banks
+* Dreadnaughts buffed to 10k health.
+* Battlecruiser buffed to 2800 health.
+* Armour on bigger ships buffed considerably.
+* Armour removed from Void clouds, health buffed to compensate.
+* Most hostile space monsters now remain a threat until much later.
+* Mining drones should now procreate very rapidly when they have live space stations; individual drones have had their health halved as a result.
+* Fallen Empire ships buffed. They're pretty scary now.
