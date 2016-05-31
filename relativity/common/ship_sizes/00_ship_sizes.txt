@@ -67,7 +67,7 @@ destroyer = {
 	collision_radius = @destroyer_collision_radius
 	modifier = {
 		ship_evasion_mult = -0.2
-		ship_armor_add = 6
+		ship_armor_add = 9
 	}
 	max_hitpoints = 750
 	size_multiplier = 2
@@ -99,7 +99,7 @@ cruiser = {
 	collision_radius = @cruiser_collision_radius
 	modifier = {
 		ship_evasion_mult = -0.4
-		ship_armor_add = 12
+		ship_armor_add = 20
 	}
 	max_hitpoints = 1800
 	size_multiplier = 4
@@ -131,7 +131,7 @@ battleship = {
 	collision_radius = @battleship_collision_radius
 	modifier = {
 		ship_evasion_mult = -0.6
-		ship_armor_add = 24
+		ship_armor_add = 40
 	}
 	max_hitpoints = 4000
 	size_multiplier = 8
@@ -609,7 +609,7 @@ pirate_destroyer = {
 		ship_evasion_mult = -0.25
 		ship_armor_add = 15
 	}
-	max_hitpoints = 480
+	max_hitpoints = 750
 	size_multiplier = 2
 	fleet_slot_size = 2
 	section_slots = { "mid" = { locator = "part1" } }
@@ -666,7 +666,7 @@ large_ship_fallen_empire = {
 		ship_evasion_mult = -0.75
 		ship_armor_add = 40
 	}
-	max_hitpoints = 1920
+	max_hitpoints = 6000
 	size_multiplier = 8
 	fleet_slot_size = 4
 	section_slots = { "mid" = { locator = "part1" } }
@@ -691,7 +691,7 @@ small_ship_fallen_empire = {
 		ship_evasion_mult = -0.25
 		ship_armor_add = 20
 	}
-	max_hitpoints = 480
+	max_hitpoints = 1200
 	size_multiplier = 2
 	fleet_slot_size = 2
 	section_slots = { "mid" = { locator = "part1" } }
@@ -714,7 +714,7 @@ military_station_large_fallen_empire = {
 		ship_armor_add = 50
 		ship_weapon_range_mult = 0.20
 	}
-	max_hitpoints = 4000
+	max_hitpoints = 25000
 	size_multiplier = 8
 	fleet_slot_size = 4
 	section_slots = { 
@@ -739,7 +739,7 @@ military_station_small_fallen_empire = {
 		ship_armor_add = 25
 		ship_weapon_range_mult = 0.20
 	}
-	max_hitpoints = 2000
+	max_hitpoints = 8000
 	size_multiplier = 8
 	fleet_slot_size = 4
 	section_slots = { 
@@ -772,7 +772,7 @@ large_ship_swarm = {
 		ship_armor_add = 30
 		ship_upkeep_mult = -1
 	}
-	max_hitpoints = 2000
+	max_hitpoints = 12000
 	size_multiplier = 8
 	fleet_slot_size = 4
 	section_slots = { "mid" = { locator = "part1" } }
@@ -799,7 +799,7 @@ large_ship_carrier_swarm = {
 		ship_armor_add = 20
 		ship_upkeep_mult = -1
 	}
-	max_hitpoints = 2000
+	max_hitpoints = 8000
 	size_multiplier = 8
 	fleet_slot_size = 4
 	section_slots = { "mid" = { locator = "part1" } }
@@ -826,7 +826,7 @@ small_ship_swarm = {
 		ship_armor_add = 10
 		ship_upkeep_mult = -1
 	}
-	max_hitpoints = 500
+	max_hitpoints = 750
 	size_multiplier = 2
 	fleet_slot_size = 2
 	section_slots = { "mid" = { locator = "part1" } }
@@ -849,7 +849,7 @@ military_station_large_swarm = {
 		ship_armor_add = 20
 		ship_weapon_range_mult = 0.20
 	}
-	max_hitpoints = 4000
+	max_hitpoints = 14000
 	size_multiplier = 8
 	fleet_slot_size = 4
 	section_slots = { "mid" = { locator = "part1" } }
@@ -872,7 +872,7 @@ military_station_small_swarm = {
 		ship_armor_add = 10
 		ship_weapon_range_mult = 0.20
 	}
-	max_hitpoints = 2000
+	max_hitpoints = 4000
 	size_multiplier = 8
 	fleet_slot_size = 4
 	section_slots = { "mid" = { locator = "part1" } }
@@ -899,7 +899,7 @@ queen_swarm = {
 		ship_upkeep_mult = -1
 		ship_armor_add = 25
 	}
-	max_hitpoints = 4000
+	max_hitpoints = 12000
 	size_multiplier = 8
 	fleet_slot_size = 4
 	section_slots = { "mid" = { locator = "part1" } }
@@ -1011,7 +1011,7 @@ large_ship_ai = {
 		ship_evasion_mult = -0.75
 		ship_armor_add = 30
 	}
-	max_hitpoints = 2000
+	max_hitpoints = 4000
 	size_multiplier = 8
 	fleet_slot_size = 4
 	section_slots = { "mid" = { locator = "part1" } }
@@ -1036,7 +1036,7 @@ small_ship_ai = {
 		ship_evasion_mult = -0.25
 		ship_armor_add = 15
 	}
-	max_hitpoints = 500
+	max_hitpoints = 750
 	size_multiplier = 2
 	fleet_slot_size = 2
 	section_slots = { "mid" = { locator = "part1" } }
@@ -1112,7 +1112,7 @@ core_ai = {
 		ship_armor_add = 100
 		ship_weapon_range_mult = 0.20
 	}
-	max_hitpoints = 10000
+	max_hitpoints = 20000
 	size_multiplier = 8
 	fleet_slot_size = 4
 	section_slots = { "mid" = { locator = "part1" } }
@@ -1222,7 +1222,7 @@ large_ship_ed = {
 	modifier = {
 		ship_evasion_mult = -0.75
 	}
-	max_hitpoints = 3000
+	max_hitpoints = 15000
 	size_multiplier = 8
 	fleet_slot_size = 4
 	section_slots = { "mid" = { locator = "part1" } }
@@ -1246,7 +1246,7 @@ medium_ship_ed = {
 	modifier = {
 		ship_evasion_mult = -0.5
 	}
-	max_hitpoints = 1500
+	max_hitpoints = 3000
 	size_multiplier = 4
 	fleet_slot_size = 3
 	section_slots = { "mid" = { locator = "part1" } }
@@ -1292,7 +1292,7 @@ military_station_large_ed = {
 		ship_evasion_mult = -1
 		ship_weapon_range_mult = 0.20
 	}
-	max_hitpoints = 6000
+	max_hitpoints = 16000
 	size_multiplier = 8
 	fleet_slot_size = 4
 	section_slots = { "mid" = { locator = "part1" } }
@@ -1314,7 +1314,7 @@ military_station_small_ed = {
 		ship_evasion_mult = -1
 		ship_weapon_range_mult = 0.20
 	}
-	max_hitpoints = 3000
+	max_hitpoints = 6000
 	size_multiplier = 8
 	fleet_slot_size = 4
 	section_slots = { "mid" = { locator = "part1" } }
@@ -1335,7 +1335,7 @@ dimensional_portal_ed = {
 	modifier = {
 		ship_evasion_mult = -1
 	}
-	max_hitpoints = 10000
+	max_hitpoints = 20000
 	size_multiplier = 8
 	fleet_slot_size = 4
 	section_slots = { "mid" = { locator = "part1" } }
@@ -1418,7 +1418,7 @@ crystal_ship_medium_blue = {
 		ship_evasion_add = 15
 		ship_armor_add = 5
 	}
-	max_hitpoints = 500
+	max_hitpoints = 750
 	size_multiplier = 1
 	fleet_slot_size = 1
 	section_slots = { "mid" = { locator = "light_pos" } }
@@ -1442,7 +1442,7 @@ crystal_ship_large_blue = {
 		ship_evasion_mult = -1
 		ship_armor_add = 7
 	}
-	max_hitpoints = 700
+	max_hitpoints = 1500
 	size_multiplier = 1
 	fleet_slot_size = 1
 	section_slots = { "mid" = { locator = "light_pos" } }
@@ -1491,7 +1491,7 @@ crystal_ship_medium_green = {
 		ship_evasion_add = 15
 		ship_armor_add = 6
 	}
-	max_hitpoints = 550
+	max_hitpoints = 850
 	size_multiplier = 1
 	fleet_slot_size = 1
 	section_slots = { "mid" = { locator = "light_pos" } }
@@ -1515,7 +1515,7 @@ crystal_ship_large_green = {
 		ship_evasion_mult = -1
 		ship_armor_add = 8
 	}
-	max_hitpoints = 750
+	max_hitpoints = 1800
 	size_multiplier = 1
 	fleet_slot_size = 1
 	section_slots = { "mid" = { locator = "light_pos" } }
@@ -1565,7 +1565,7 @@ crystal_ship_medium_yellow = {
 		ship_evasion_add = 15
 		ship_armor_add = 7
 	}
-	max_hitpoints = 600
+	max_hitpoints = 900
 	size_multiplier = 1
 	fleet_slot_size = 1
 	section_slots = { "mid" = { locator = "light_pos" } }
@@ -1589,7 +1589,7 @@ crystal_ship_large_yellow = {
 		ship_evasion_mult = -1
 		ship_armor_add = 9
 	}
-	max_hitpoints = 800
+	max_hitpoints = 2000
 	size_multiplier = 1
 	fleet_slot_size = 1
 	section_slots = { "mid" = { locator = "light_pos" } }
@@ -1639,7 +1639,7 @@ crystal_ship_medium_red = {
 		ship_evasion_add = 15
 		ship_armor_add = 8
 	}
-	max_hitpoints = 650
+	max_hitpoints = 1000
 	size_multiplier = 1
 	fleet_slot_size = 1
 	section_slots = { "mid" = { locator = "light_pos" } }
@@ -1663,7 +1663,7 @@ crystal_ship_large_red = {
 		ship_evasion_mult = -1
 		ship_armor_add = 10
 	}
-	max_hitpoints = 850
+	max_hitpoints = 2400
 	size_multiplier = 1
 	fleet_slot_size = 1
 	section_slots = { "mid" = { locator = "light_pos" } }
@@ -1688,7 +1688,7 @@ crystal_ship_small_blue_elite = {
 		ship_evasion_add = 20
 		ship_armor_add = 5
 	}
-	max_hitpoints = 300
+	max_hitpoints = 450
 	size_multiplier = 1
 	fleet_slot_size = 1
 	section_slots = { "mid" = { locator = "light_pos" } }
@@ -1712,7 +1712,7 @@ crystal_ship_medium_blue_elite = {
 		ship_evasion_add = 15
 		ship_armor_add = 7
 	}
-	max_hitpoints = 500
+	max_hitpoints = 900
 	size_multiplier = 1
 	fleet_slot_size = 1
 	section_slots = { "mid" = { locator = "light_pos" } }
@@ -1736,7 +1736,7 @@ crystal_ship_large_blue_elite = {
 		ship_evasion_mult = -1
 		ship_armor_add = 9
 	}
-	max_hitpoints = 700
+	max_hitpoints = 3500
 	size_multiplier = 1
 	fleet_slot_size = 1
 	section_slots = { "mid" = { locator = "light_pos" } }
@@ -1785,7 +1785,7 @@ crystal_ship_medium_green_elite = {
 		ship_evasion_add = 15
 		ship_armor_add = 8
 	}
-	max_hitpoints = 550
+	max_hitpoints = 750
 	size_multiplier = 1
 	fleet_slot_size = 1
 	section_slots = { "mid" = { locator = "light_pos" } }
@@ -1809,7 +1809,7 @@ crystal_ship_large_green_elite = {
 		ship_evasion_mult = -1
 		ship_armor_add = 9
 	}
-	max_hitpoints = 750
+	max_hitpoints = 1800
 	size_multiplier = 1
 	fleet_slot_size = 1
 	section_slots = { "mid" = { locator = "light_pos" } }
@@ -1859,7 +1859,7 @@ crystal_ship_medium_yellow_elite = {
 		ship_evasion_add = 15
 		ship_armor_add = 9
 	}
-	max_hitpoints = 600
+	max_hitpoints = 800
 	size_multiplier = 1
 	fleet_slot_size = 1
 	section_slots = { "mid" = { locator = "light_pos" } }
@@ -1883,7 +1883,7 @@ crystal_ship_large_yellow_elite = {
 		ship_evasion_mult = -1
 		ship_armor_add = 11
 	}
-	max_hitpoints = 800
+	max_hitpoints = 1500
 	size_multiplier = 1
 	fleet_slot_size = 1
 	section_slots = { "mid" = { locator = "light_pos" } }
@@ -1933,7 +1933,7 @@ crystal_ship_medium_red_elite = {
 		ship_evasion_add = 15
 		ship_armor_add = 10
 	}
-	max_hitpoints = 650
+	max_hitpoints = 750
 	size_multiplier = 1
 	fleet_slot_size = 1
 	section_slots = { "mid" = { locator = "light_pos" } }
@@ -1957,7 +1957,7 @@ crystal_ship_large_red_elite = {
 		ship_evasion_mult = -1
 		ship_armor_add = 12
 	}
-	max_hitpoints = 850
+	max_hitpoints = 1250
 	size_multiplier = 1
 	fleet_slot_size = 1
 	section_slots = { "mid" = { locator = "light_pos" } }
@@ -1981,9 +1981,8 @@ space_cloud = {
 	acceleration = 0.3
 	modifier = {
 		ship_evasion_mult = 1
-		ship_armor_add = 7
 	}
-	max_hitpoints = 1500
+	max_hitpoints = 2000
 	size_multiplier = 1
 	fleet_slot_size = 1
 	section_slots = { "mid" = { locator = "part1" } }
@@ -2008,7 +2007,7 @@ space_amoeba = {
 		ship_evasion_mult = -0.5
 		ship_armor_add = 15
 	}
-	max_hitpoints = 700
+	max_hitpoints = 1000
 	size_multiplier = 1
 	fleet_slot_size = 1
 	section_slots = { "mid" = { locator = "part1" } }
@@ -2031,9 +2030,9 @@ space_whale_1 = {
 	acceleration = 0.6
 	modifier = {
 		ship_evasion_mult = -1
-		ship_armor_add = 7
+		ship_armor_add = 25
 	}
-	max_hitpoints = 500
+	max_hitpoints = 2000
 	fleet_slot_size = 1
 	section_slots = { "mid" = { locator = "part1" } }
 	num_target_locators = 0
@@ -2056,7 +2055,7 @@ space_whale_2 = {
 		ship_evasion_mult = -1
 		ship_armor_add = 5
 	}
-	max_hitpoints = 500
+	max_hitpoints = 1000
 	fleet_slot_size = 1
 	section_slots = { "mid" = { locator = "part1" } }
 	num_target_locators = 0
@@ -2100,9 +2099,9 @@ space_whale_4 = {
 	acceleration = 0.6
 	modifier = {
 		ship_evasion_mult = -1
-		ship_armor_add = 10
+		ship_armor_add = 40
 	}
-	max_hitpoints = 2500
+	max_hitpoints = 5000
 	fleet_slot_size = 1
 	section_slots = { "mid" = { locator = "part1" } }
 	num_target_locators = 0
@@ -2119,7 +2118,7 @@ space_whale_4 = {
 asteroid = {
 	is_space_object = yes
 	ftl = hyperdrive	
-	max_speed = 0.21
+	max_speed = 0.31
 	rotation_speed = 10
 	combat_max_speed = 0.07
 	combat_rotation_speed = 0.2
@@ -2214,7 +2213,7 @@ ancient_drone = {
 	modifier = {
 		ship_armor_add = 5
 	}
-	max_hitpoints = 400
+	max_hitpoints = 200
 	size_multiplier = 1
 	fleet_slot_size = 1
 	section_slots = { "mid" = { locator = "root" } }
@@ -2621,7 +2620,7 @@ ancient_drone_station = {
 	combat_rotation_speed = 0.2
 	acceleration = 10
 	modifier = {
-		ship_evasion_mult = 100
+		ship_evasion_mult = -1
 	}
 	max_hitpoints = 6000
 	size_multiplier = 1
