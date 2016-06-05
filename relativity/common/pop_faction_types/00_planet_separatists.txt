@@ -285,7 +285,6 @@ planet_separatists = {
 
 			cost = {
 				energy = 400
-				influence = 50
 			}
 
 			effect = {
@@ -322,8 +321,7 @@ planet_separatists = {
 			description = FACTION_ACTION_BRIBE_LEADERS
 		
 			cost = {
-				energy = 200
-				influence = 200
+				energy = 800
 			}
 		
 			effect = {

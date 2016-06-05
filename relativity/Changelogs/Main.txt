@@ -185,4 +185,6 @@ Version 102.0.1
 * upper-tier building costs increased a great deal (now doubles every level) so that it's closer to the actual progression of income - this WILL change later as I get more late-game balance feedback.
 * Reworked ground combat and armies. Ground combat will be quite slow early on but will speed up as more powerful units appear, and there is a substantial tech 'gap' now - you do NOT want to be sending regular troops against Space Marines or xenomorphs now.
 * Armies now consume Population to create. De-queuing an army will restore the pop, unless it's space marines (who cannot be re-integrated). Robot, droid, clone and xenomorph armies don't conume any.
-
+* Interacting with factions no longer ocsts influence.
+* Max influence reduced to 100, mostly to encourage bug reports about stuff where flat inf costs still exist.
+* Hospitals buffed considerably.

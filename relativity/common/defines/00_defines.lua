@@ -860,7 +860,7 @@ NDefines = {
 		SCIENCE_SHIP_PRODUCTION				= 100.0, 	-- Science ship production cost
 		COLONY_SHIP_PRODUCTION				= 350.0, 	-- Colony ship production cost
 		SPONSORED_COLONY_SHIP_PRODUCTION	= 250.0, 	-- Sponsored colony ship production cost
-		FLEET_UPGRADE_TIME_COST_MULT		= 0.25,		-- Upgrade fleet cost
+		FLEET_UPGRADE_TIME_COST_MULT		= 0.8,		-- Upgrade fleet cost
 		FLEET_UPGRADE_MINERAL_COST_BASE		= 5.0,		-- mineral cost of ship upgrade is base + abs( price difference between old and new designs * FLEET_UPGRADE_MINERAL_COST_MULT )
 		FLEET_UPGRADE_MINERAL_COST_MULT		= 0.75,		
 		OBSERVATION_STATION_MAINTENANCE		= 3.0,		-- Monthly observation station maintenance
@@ -868,7 +868,7 @@ NDefines = {
 		SEVERE_DEFICIT_VALUE				= 0.8,		-- Balance/Income smaller than this value counts as severe
 		OUTPOST_STATION_MINERAL_COST		= 200,		-- Mineral cost to build outpost
 		OUTPOST_STATION_INFLUENCE_COST		= 0,		-- Influence cost to build outpost
-		OUTPOST_STATION_MAINTENANCE			= 2,		-- Monthly outpost station EC maintenance
+		OUTPOST_STATION_MAINTENANCE			= 3,		-- Monthly outpost station EC maintenance
 		OUTPOST_STATION_INFLUENCE_MAINTENANCE = 0,	-- Monthly outpost station Influence maintenance
 
 		BUILDING_REPARATION_TIME_RATE		= 0.25,		-- Amount of time required to repair ruined buildings

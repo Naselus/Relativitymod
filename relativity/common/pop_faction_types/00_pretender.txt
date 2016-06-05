@@ -126,7 +126,6 @@ pretender = {
 
 			cost = {
 				energy = 400
-				influence = 50
 			}
 
 			effect = {
@@ -163,12 +162,11 @@ pretender = {
 			description = FACTION_ACTION_BRIBE_LEADERS
 		
 			cost = {
-				energy = 200
-				influence = 200
+				energy = 800
 			}
 		
 			effect = {
-				add_support = -0.10
+				add_support = -0.20
 			}
 
 			ai_weight = {
