@@ -178,13 +178,18 @@ Version 102.0.1
 * Made empire init for early game a bit easier for the AI's sake (some extra Tritanium and power for free)
 * Tweaked where the AI builds banks
 * Added Genemodfix by Sledjer.
-* Meddled with the avbailability of certain Vast deposits on certain planet types (so Arctic is unlikely to have rich farmland)
+* Meddled with the availability of certain Vast deposits on certain planet types (so Arctic is unlikely to have rich farmland)
 * Fixed Basic Science Lab localization (at last)
 * Arrested Development Leaders now only suffer -25% xp gain rather than -100%
 * Eager leaders now get +25% xp gain rather than the now-useless recruitment cost reduction.
 * upper-tier building costs increased a great deal (now doubles every level) so that it's closer to the actual progression of income - this WILL change later as I get more late-game balance feedback.
 * Reworked ground combat and armies. Ground combat will be quite slow early on but will speed up as more powerful units appear, and there is a substantial tech 'gap' now - you do NOT want to be sending regular troops against Space Marines or xenomorphs now.
-* Armies now consume Population to create. De-queuing an army will restore the pop, unless it's space marines (who cannot be re-integrated). Robot, droid, clone and xenomorph armies don't conume any.
-* Interacting with factions no longer ocsts influence.
+* Armies now consume Population to create. De-queuing an army will restore the pop, unless it's space marines (who cannot be re-integrated). Robot, droid, clone and xenomorph armies don't consume any.
+* Interacting with factions no longer costs influence.
 * Max influence reduced to 100, mostly to encourage bug reports about stuff where flat inf costs still exist.
 * Hospitals buffed considerably.
+* Nerfed fortifications - now 100% fortified is only 50% damage reduction (rather than 90%).
+* Garrisons now spawn based on population/10 (not /2.5).
+* Weapon prices updated so that more advanced and bigger ships get much, much more expensive.
+* Substantially increased build time for bigger ships. It now takes nearly 3 years to build a battleship and over 5 for a dreadnaught.
+

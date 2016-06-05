@@ -35,17 +35,17 @@
 @cost_M2 = 20
 @cost_L2 = 40
 
-@cost_S3 = 15
-@cost_M3 = 30
-@cost_L3 = 60
+@cost_S3 = 20
+@cost_M3 = 40
+@cost_L3 = 80
 
-@cost_S4 = 20
-@cost_M4 = 40
-@cost_L4 = 80
+@cost_S4 = 40
+@cost_M4 = 80
+@cost_L4 = 160
 
-@cost_S5 = 25
-@cost_M5 = 50
-@cost_L5 = 100
+@cost_S5 = 80
+@cost_M5 = 160
+@cost_L5 = 320
 
 #############
 # UTILITIES #

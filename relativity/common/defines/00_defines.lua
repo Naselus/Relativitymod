@@ -468,10 +468,10 @@ NDefines = {
 		REBELS_POWER_THRESHOLD 				= 0.5, 		-- A Threshold that controls when rebels think they have a chance, Higher = more unwilling
 		
 		GARRISON_SIZE_BASE					= 2,		-- Planet always spawns this number of garrisons
-		GARRISON_SIZE_MULT					= 0.4,		-- Per pop over 1
+		GARRISON_SIZE_MULT					= 0.1,		-- Per pop over 1
 		PLANET_FORTIFICATION_BASE			= 1000,		-- Planet always has this much fortification health
 		PLANET_FORTIFICATION_MULT			= 100,		-- Per pop over 1
-		PLANET_FORTIFICATION_DEFENSE_BONUS	= 10,		-- At 100% fortification, divide damage to defending armies by this
+		PLANET_FORTIFICATION_DEFENSE_BONUS	= 2,		-- At 100% fortification, divide damage to defending armies by this
 		PLANET_FORTIFICATION_DEFENSE_MIN	= 0.5,		-- At 0% fortification, divide damage to defending armies by this
 		PLANET_FORTIFICATION_REPAIR 		= 0.01,		-- Each day
 		PLANET_FORTIFICATION_REPAIR_DELAY 	= 60,	-- Days since being bombarded before repairs to fortifications start
