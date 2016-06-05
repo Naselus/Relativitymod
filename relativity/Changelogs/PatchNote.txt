@@ -1,0 +1,69 @@
+Patch Note : 
+Game version : 1.1
+Mod :Novel War Goal 
+Mod version : a.3
+
+Kidnap pop :
+	- Base cost 7
+	- Scale cost 0.8 per pops
+	
+Rescue pop :
+	- Base cost 3
+	- Scale cost 0.8 per pops
+	
+Force sphere :
+	- Base = 10
+	- Scale = 0.25 per empire pop
+	- if vassal multiplied by 0.75
+	
+Humiliate :
+	- Base cost 15
+	- Scale 0.5 per pops
+	- Multiplied by 0.999 per attacking pop 
+		
+Raid Mineral :
+	- Base cost 15 => 25
+	- Removed Scaled modifier
+	
+Raid Credit :
+	- Base cost 15 => 25
+	- Removed Scaled modifier
+	
+Make Democracy
+	- Base cost 60
+	- Scaled 0.5 per empire pops
+	- (Need to be modified but no idea how to balance that.)
+	
+Enforce peace :
+	- Still WIP and not available.
+	
+Force Free thoughts:
+	- Enforce an empire to accept free speech and other liberal ideas.
+	- Modifier : Huge ethic divergence, small boost to research
+	- Base cost 25
+	- Scaled by 0.1 per empire pop
+	- Useful to break the unity inside a big empire
+	- Only for individualist
+	
+Hack Technology Stream:
+	- Copy research data of the enemy empire
+	- Modifier : Give a percentage research boost to your empire
+	- Base cost 50
+	- Cost reduced for Materialist / Fanatic Materialist
+	- Need databank uplink (Assist research technology)
+	
+Unite species :
+	- WIP
+	
+All Policy Change Wargoals : 
+	- Base cost 25
+
+Supremacy :
+	- warscore fixed to 100
+	- Needs "supremacy tech"
+	- annexes empire
+	
+Xenoplague :
+	- warscore fixed to 100
+	- Needs "xenoplague tech"
+	- wipes out all populations in target empire

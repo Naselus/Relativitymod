@@ -1,0 +1,321 @@
+## Change a planet biome to nuked. Destroy every building, Kill 5 pop + every pop non resistent to tomb world (like.. everyone :) ).
+
+nuke = {
+	execution_order = 0
+	
+	parameters = {
+		planet = {
+			type = planet
+			filter = owned
+		}
+	}
+	
+	warscore_cost = {
+		base = 30
+
+		scaled_modifier = {
+			scope = parameter:planet
+			add = 0.8
+			calc = pop_count
+		}
+	
+		modifier = {
+			factor = 2.5
+			hidden:parameter:planet = {
+				is_capital = yes
+			}
+		}
+	
+
+		# Ruler Trait - Warlike
+		modifier = {
+			factor = 0.95
+			custom_tooltip = {
+				text = "war_demand_trait_warlike"
+				exists = ruler
+				ruler = { has_trait = trait_ruler_warlike }
+			}
+		}
+
+		# Ruler Trait - Expansionist
+		modifier = {
+			factor = 0.9
+			custom_tooltip = {
+				text = "war_demand_trait_expansionist"
+				exists = ruler
+				ruler = { has_trait = trait_ruler_expansionist }
+			}
+		}
+
+		# Tech - Galactic Ambitions
+		modifier = {
+			factor = 0.95
+			custom_tooltip = {
+				text = "war_demand_tech_galactic_ambitions"
+				has_technology = tech_galactic_ambitions
+			}
+		}
+
+		# Tech - Manifest Destiny
+		modifier = {
+			factor = 0.8
+			custom_tooltip = {
+				text = "war_demand_tech_manifest_destiny"
+				has_technology = tech_manifest_destiny
+			}
+		}
+	}
+	
+	potential = {
+	
+		#custom_tooltip_fail = {
+		#	text = "war_demand_nuke_mil"
+		#	ROOT = {
+		#		has_policy_flag = orbital_bombardment_full
+		#		has_ethic = ethic_fanatic_militarist
+		#	}
+		#	
+		#}
+		custom_tooltip_fail = {
+			text = "war_demand_nuke_mil"
+			ROOT = { has_policy_flag = allow_orbital_bombardment_full } 
+		}
+		
+		custom_tooltip_fail = {
+			text = "war_demand_nuke_mil"
+			ROOT = { 
+				OR = { 
+					has_ethic = ethic_fanatic_militarist  
+					AND = {
+						OR = { 
+							has_ethic = ethic_xenophobe
+							has_ethic = ethic_fanatic_xenophobe
+						}
+						parameter:planet = {
+							any_pop = {
+								NOT = {
+									is_same_species = ROOT 
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		
+		## this should also be gated with some technology
+		
+
+		
+		custom_tooltip_fail = {
+			text = "war_demand_nuke_belongs_to_opponent"
+			parameter:planet = {
+				owner = {
+					OR = {
+						AND = {
+							exists = fromfrom
+							from = {
+								from = {
+									is_war_participant = {
+										who = prevprev
+										side = prev
+									}
+								}
+							}
+						}
+						AND = {
+							NOT = { exists = fromfrom }
+							would_join_war = {
+								attacker = root
+								defender = from
+								side = from
+							}
+						}
+						
+					}
+				}
+			}
+		}
+		custom_tooltip_fail = {
+			text = "war_demand_nuke_no_vassals"
+			subject_can_diplomacy = this
+		}
+	}
+	
+	possible = {
+		always = yes
+	}
+	
+	proposable = {
+		#hidden:parameter:planet = {    #test # why not liberate but also take some people away :)
+		#	custom_tooltip_fail = {
+		#		text = "war_demand_cede_or_liberate"
+		#		war_demand_counter = {
+		#			type = ceded_or_liberated
+		#			value < 1
+		#		}
+		#	}
+		#}	
+	}
+	
+	demandable = {						# we need full surface control
+		custom_tooltip_fail = {
+			text = "war_demand_nuke_planet_not_under_our_control"
+			parameter:planet = {
+				controller = {
+					fromfrom = {
+						is_war_participant = {
+							who = prev
+							side = from
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	effect = {
+
+		parameter:planet = {		
+			add_threat = {
+				who = ROOT ## ROOT commanded this !!
+				amount = 8 # scales to pops
+			}		
+			
+			# kill 5 pops:
+			random_pop = { fn_novelwardemand_kill_pop = yes  }
+			random_pop = { fn_novelwardemand_kill_pop = yes  }
+			random_pop = { fn_novelwardemand_kill_pop = yes  } 
+			random_pop = { fn_novelwardemand_kill_pop = yes  }
+			random_pop = { fn_novelwardemand_kill_pop = yes  }
+
+			
+			every_owned_pop = { # kill everyone else who is not resilient or has tomb world habitability
+				fn_novelwardemand_nuke_pop = yes 
+			}
+			
+			
+			every_tile = {
+				limit = { 
+					has_building = yes 
+				 }
+				remove_building = yes
+			}
+			
+			change_pc = pc_nuked	
+			
+			random_tile = {
+				limit = {
+					has_grown_pop = no
+				}
+				set_blocker = tb_radioactive_wasteland
+			}
+			random_tile = {
+				limit = {
+					has_grown_pop = no
+				}
+				set_blocker = tb_radioactive_wasteland
+			}			
+			random_tile = {
+				limit = {
+					has_grown_pop = no
+				}
+				set_blocker = tb_city_ruins
+			}		
+			random_tile = {
+				limit = {
+					has_grown_pop = no
+				}
+				set_blocker = tb_city_ruins
+			}			
+			random_tile = {
+				limit = {
+					has_grown_pop = no
+				}
+				set_blocker = tb_city_ruins
+			}
+
+			owner = {				#owner is of course pissed
+				add_opinion_modifier = {
+					who = ROOT
+					modifier = opinion_nuked_us
+				}
+			}
+			
+			every_country = {  #mimic on_actions -> people with this policy like the change 
+				limit = {
+					has_communications = ROOT 
+					NOT = { is_country = ROOT }
+					NOT = { is_country_type = fallen_empire }
+					NOT = {
+						OR = {
+							has_ethic = ethic_militarist
+							has_ethic = ethic_fanatic_militarist
+						}
+					}
+				}
+				add_opinion_modifier = { who = ROOT modifier = opinion_nuked_a_world }
+			}
+		}
+			
+	}
+
+	
+	
+	
+
+	counters = { 		#test reactivate	#why wouldn't you want to take more than 10 pops ??
+		#ceded_or_liberated = {
+		#	context = parameter:planet
+		#	value = {
+		#		base = 1
+		#	}			
+		#}
+	}
+	
+	ai_weight = {
+		base = 85
+		
+
+		modifier = {
+			factor = 0.1
+			NOT = { 
+				this = { has_ai_personality_behaviour = dominator } 
+				opinion = {
+					who = FROM
+					value > -75
+				}
+			}
+		}
+		
+		modifier = { # if the AI REALLY REALLY hates you...
+			factor = 15
+			opinion = {
+					who = FROM
+					value < -350
+			
+			}
+		}
+		
+
+
+		modifier = {
+			factor = 0
+			is_country_type = fallen_empire
+			has_policy_flag = orbital_bombardement_light
+			has_policy_flag = orbital_bombardement_limited
+		}
+		
+		
+
+
+	}
+	
+	
+	AI_invasion_target = yes  # please don't fuck this up AI
+}
+
+
+
+

@@ -1,0 +1,221 @@
+#Steal and enslave 10 pop of the target planet. Let at least 3 pop on the planet.
+#Need a "Slave port" edict to know where the slave are going
+
+kidnap_pops = {
+	execution_order = 2
+	
+	parameters = {
+		planet = {
+			type = planet
+			filter = owned
+		}
+	}
+	
+	warscore_cost = {
+		base = 7
+
+		scaled_modifier = {
+			scope = parameter:planet
+			add = 0.8
+			calc = pop_count
+		}
+	
+		modifier = {
+			factor = 1.5
+			hidden:parameter:planet = {
+				is_capital = yes
+			}
+		}
+
+		# Ruler Trait - Warlike
+		modifier = {
+			factor = 0.95
+			custom_tooltip = {
+				text = "war_demand_trait_warlike"
+				exists = ruler
+				ruler = { has_trait = trait_ruler_warlike }
+			}
+		}
+
+		# Ruler Trait - Expansionist
+		modifier = {
+			factor = 0.9
+			custom_tooltip = {
+				text = "war_demand_trait_expansionist"
+				exists = ruler
+				ruler = { has_trait = trait_ruler_expansionist }
+			}
+		}
+
+		# Tech - Galactic Ambitions
+		modifier = {
+			factor = 0.95
+			custom_tooltip = {
+				text = "war_demand_tech_galactic_ambitions"
+				has_technology = tech_galactic_ambitions
+			}
+		}
+
+		# Tech - Manifest Destiny
+		modifier = {
+			factor = 0.8
+			custom_tooltip = {
+				text = "war_demand_tech_manifest_destiny"
+				has_technology = tech_manifest_destiny
+			}
+		}
+	}
+	
+	potential = {
+	
+		#hidden:ROOT = { NOT = { has_policy_flag = slavery_not_allowed } } does not do the thing
+		
+		custom_tooltip_fail = {
+			text = "war_demand_kidnap_not_worth_it"
+			parameter:planet = {
+				num_pops > 3
+				any_pop = { 
+					is_same_species = FROM
+				}
+			}
+		}
+		
+		custom_tooltip_fail = {    ###why is this the only policy flag that seems to be working appropriately ???
+			text = "war_demand_kidnap_no_stealing"
+			ROOT = { NOT = { has_policy_flag = slavery_not_allowed } }
+		}
+				
+		custom_tooltip_fail = {
+			text = "war_demand_kidnap_belongs_to_opponent"
+			parameter:planet = {
+				owner = {
+					OR = {
+						AND = {
+							exists = fromfrom
+							from = {
+								from = {
+									is_war_participant = {
+										who = prevprev
+										side = prev
+									}
+								}
+							}
+						}
+						AND = {
+							NOT = { exists = fromfrom }
+							would_join_war = {
+								attacker = root
+								defender = from
+								side = from
+							}
+						}			
+					}
+				}
+			}
+		}
+		custom_tooltip_fail = {
+			text = "war_demand_kidnap_no_vassals"
+			subject_can_diplomacy = this
+		}
+	}
+	
+	possible = {
+		always = yes
+	}
+	
+	proposable = {
+		#hidden:parameter:planet = {    #test # why not liberate but also take some people away :)
+		#	custom_tooltip_fail = {
+		#		text = "war_demand_cede_or_liberate"
+		#		war_demand_counter = {
+		#			type = ceded_or_liberated
+		#			value < 1
+		#		}
+		#	}
+		#}	
+	}
+	
+	demandable = {						# as if they would come by themselves
+		custom_tooltip_fail = {
+			text = "war_demand_kidnap_planet_not_under_our_control"
+			parameter:planet = {
+				controller = {
+					fromfrom = {
+						is_war_participant = {
+							who = prev
+							side = from
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	effect = {
+		FROM.owner_species = { save_event_target_as = slave_species }
+		
+		parameter:planet = {		
+			add_threat = {
+				who = fromfromfrom 
+				amount = 2 # scales to pops
+			}
+			
+			# capture 10 pops
+			fn_novelwardemand_kidnap = yes 
+			fn_novelwardemand_kidnap = yes
+			fn_novelwardemand_kidnap = yes
+			fn_novelwardemand_kidnap = yes
+			fn_novelwardemand_kidnap = yes #5
+			fn_novelwardemand_kidnap = yes
+			fn_novelwardemand_kidnap = yes
+			fn_novelwardemand_kidnap = yes
+			fn_novelwardemand_kidnap = yes
+			fn_novelwardemand_kidnap = yes #10	
+		}
+	}
+
+	counters = { 		#test reactivate	#why wouldn't you want to take more than 10 pops ??
+		#ceded_or_liberated = {
+		#	context = parameter:planet
+		#	value = {
+		#		base = 1
+		#	}			
+		#}
+	}
+	
+	ai_weight = {
+		base = 100
+		
+		modifier = { 
+			factor = 0
+			NOT = { 
+				any_owned_planet = {
+					has_edict = slave_target
+				}
+			}
+		}
+
+		modifier = {
+			factor = 0.1
+			NOT = { 
+				OR = {
+					this = { has_ai_personality_behaviour = slaver } 
+					this = { has_ai_personality_behaviour = subjugator } 
+				}
+			}
+		}
+
+		modifier = {
+			factor = 0
+			is_country_type = fallen_empire
+			has_policy_flag = slavery_not_allowed
+		}
+		
+		modifier = {
+			factor = 3
+			this = { has_ai_personality = slaving_despots }
+		}
+	}
+
+	AI_invasion_target = yes  # please don't fuck this up AI
+}

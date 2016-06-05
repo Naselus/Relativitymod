@@ -142,9 +142,7 @@ d_vast_mineral_deposit = {
 				OR = {
 					is_planet_class = pc_gaia
 					is_planet_class = pc_continental
-					is_planet_class = pc_ringworld_habitable
 					is_planet_class = pc_tropical
-					is_planet_class = pc_ocean
 					is_planet_class = pc_arid
 					is_planet_class = pc_desert
 					is_planet_class = pc_tundra
@@ -340,10 +338,6 @@ d_rich_food_mineral_deposit = {
 					is_planet_class = pc_ringworld_habitable
 					is_planet_class = pc_tropical
 					is_planet_class = pc_ocean
-					is_planet_class = pc_arid
-					is_planet_class = pc_desert
-					is_planet_class = pc_tundra
-					is_planet_class = pc_arctic
 				}
 			}
 		}
@@ -398,7 +392,7 @@ d_rich_energy_deposit = {
 			}
 		}
 		modifier = {
-			weight = 4
+			weight = 5
 			planet = {
 				OR = {
 					is_planet_class = pc_gaia
@@ -408,8 +402,6 @@ d_rich_energy_deposit = {
 					is_planet_class = pc_ocean
 					is_planet_class = pc_arid
 					is_planet_class = pc_desert
-					is_planet_class = pc_tundra
-					is_planet_class = pc_arctic
 				}
 			}
 		}
@@ -510,21 +502,6 @@ d_farmland_deposit = {
 			}
 		}
 		modifier = {
-			weight = 12
-			planet = {
-				OR = {
-					is_planet_class = pc_continental
-					is_planet_class = pc_ringworld_habitable
-					is_planet_class = pc_tropical
-					is_planet_class = pc_ocean
-					is_planet_class = pc_arid
-					is_planet_class = pc_desert
-					is_planet_class = pc_tundra
-					is_planet_class = pc_arctic
-				}
-			}
-		}
-		modifier = {
 			weight = 20
 			planet = {
 				is_planet_class = pc_gaia
@@ -540,7 +517,7 @@ d_rich_farmland_deposit = {
 	drop_weight = {
 		weight = 0
 		modifier = {
-			weight = 8
+			weight = 4
 			planet = {
 				OR = {
 					is_planet_class = pc_continental
@@ -577,15 +554,11 @@ d_vast_farmland_deposit = {
 					is_planet_class = pc_ringworld_habitable
 					is_planet_class = pc_tropical
 					is_planet_class = pc_ocean
-					is_planet_class = pc_arid
-					is_planet_class = pc_desert
-					is_planet_class = pc_tundra
-					is_planet_class = pc_arctic
 				}
 			}
 		}
 		modifier = {
-			weight = 2
+			weight = 4
 			planet = {
 				is_planet_class = pc_gaia
 			}

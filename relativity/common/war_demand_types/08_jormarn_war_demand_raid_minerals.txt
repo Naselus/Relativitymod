@@ -1,0 +1,172 @@
+raid_minerals = {
+	execution_order = 10
+	
+	parameters = {
+		country = {
+			type = country
+		}
+	}
+	
+	warscore_cost = {
+		base = 15
+
+	#	scaled_modifier = {
+	#		scope = parameter:country
+	#		add = 0.5
+	#		calc = pop_count
+	#	}		
+		
+		# Ruler Trait - Warlike
+		modifier = {
+			factor = 0.95
+			custom_tooltip = {
+				text = "war_demand_trait_warlike"
+				exists = ruler
+				ruler = { has_trait = trait_ruler_warlike }
+			}
+		}
+
+		# Ruler Trait - Expansionist
+		modifier = {
+			factor = 0.9
+			custom_tooltip = {
+				text = "war_demand_trait_expansionist"
+				exists = ruler
+				ruler = { has_trait = trait_ruler_expansionist }
+			}
+		}
+
+		# Tech - Galactic Ambitions
+		modifier = {
+			factor = 0.95
+			custom_tooltip = {
+				text = "war_demand_tech_galactic_ambitions"
+				has_technology = tech_galactic_ambitions
+			}
+		}
+
+		# Tech - Manifest Destiny
+		modifier = {
+			factor = 0.8
+			custom_tooltip = {
+				text = "war_demand_tech_manifest_destiny"
+				has_technology = tech_manifest_destiny
+			}
+		}
+		
+		
+	}
+
+	potential = {
+		custom_tooltip_fail = {
+			text = "war_demand_force_sphere_not_opponent" #this is generic, no reloc ness
+			parameter:country = {
+				OR = {
+					AND = {
+						exists = fromfrom
+						from = {
+							from = {
+								is_war_participant = {
+									who = prevprev
+									side = prev
+								}
+							}
+						}
+					}
+					AND = {
+						NOT = { exists = fromfrom }
+						would_join_war = {
+							attacker = root
+							defender = from
+							side = from
+						}
+					}
+					
+				}
+			}
+		}
+		
+		
+		custom_tooltip_fail = {
+			text = "war_raid_minerals_wrong_type"
+			parameter:country = {
+				is_country_type = default 
+			}
+		}
+
+	}
+	
+	possible = {			
+		hidden:parameter:country = {
+
+			custom_tooltip_fail = {
+				text = "war_demand_raid_minerals_no_planets"
+				war_demand_counter = {
+					type = num_owned_planets
+					value > 0
+				}
+			}
+		}
+	}
+	
+	proposable = {
+		always = yes
+	}
+	
+	effect = {
+		add_threat = {
+			who = fromfromfrom
+			amount = 1 # scales to pops
+		}		
+
+		#What Stellaris Modding make us do. The nightmare. Not sure if you think that's better than your way but would be easier for future implementation I guess
+		#Switched to a scripted_effect that steal a max of 1000 mineral and then repeat 5 times. If any fail, the following will fail as well.
+		#Plus the smaller amount are in else statement, making it not trigger if the 1000 is succesful (or any higher)
+		
+		#thanks :) 
+		parameter:country = {
+			fn_wardemand_steal_mineral = yes
+			fn_wardemand_steal_mineral = yes
+			fn_wardemand_steal_mineral = yes
+			fn_wardemand_steal_mineral = yes
+			fn_wardemand_steal_mineral = yes #5	
+			
+			
+			
+		}
+		
+		
+	}
+	
+	#counters = { #none
+	#	always = yes
+	#}
+	
+	ai_weight = {
+		base = 45
+		
+		modifier = {
+			factor = 2
+			this = { has_ai_personality = ruthless_capitalists } 
+		}
+		
+		
+		modifier = {
+			factor = 0
+			this = { has_ai_personality = peaceful_traders }
+		}		
+		modifier = {
+			factor = 0
+			this = { has_ai_personality = honorbound_warriors }
+		}	
+		modifier = {
+			factor = 2
+			this = { has_ai_personality_behaviour =  opportunist }
+		}	
+	}
+	
+	## end of file
+	
+}
+ 
+

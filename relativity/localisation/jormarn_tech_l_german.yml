@@ -1,0 +1,13 @@
+﻿l_german:
+ ####################################
+
+ SEPARATOR:0 "---"
+ 
+ ####################################
+ tech_xenoplague:0 "Die Xeno-Plage"
+ tech_xenoplague_desc:1 "Durch unsere Fortschritte in Morphogenesis und Genmanipulation haben wir Pandora's Box geöffnet. Die atmosphärische Verbreitung dieser neuartigen neuro-infektiösen Erregern wäre für alle höheren Lebensformen definitiv tödlich, ausgenommen unserer eigenen Spezies. Diese Technologie schaltet das Kriegsziel 'Xeno-Plage' frei. \n\n"
+ tech_military_supremacy:0 "Militärische Übermacht"   
+ tech_military_supremacy_desc:1 "Unsere überlegene Kultur und Administration hat eine Gesellschaft von legendären Kriegern und Herrschern hervorgebracht. Mit unserer verbesserten Infrastruktur, galaktischen Propaganda und unangezweifelten Einheit sind wir sind der Lage Kriege von galaktischen Außmaße zu führen und ganze Reiche mit einigen Salven unserer grandiosen Kriegsschiffe zu annektieren. Diese Technologie schaltet das Kriegsziel 'Übermacht' frei. \n\n "
+ 
+ 
+ 

@@ -1,0 +1,53 @@
+#Rescue one pop from the attacker  
+# this = pop that will be displaced
+# fromfromfrom is target country where they are supposed to be transferred to
+#
+# Delete  pop on  planet and add to any planet designated 
+#
+#
+#
+#
+fn_novelwardemand_rescue{  
+	if = { 
+		limit = {
+			OR = {
+				is_same_species = fromfromfrom
+				is_subspecies = fromfromfrom
+			}
+			fromfromfrom = {		# only take people if there is a nice room prepared
+				any_owned_planet = {
+						free_pop_tiles > 0
+				}
+			}
+		}
+		
+		species = { save_event_target_as = saved_species }
+	
+		
+		fromfromfrom = {
+			random_owned_planet = {
+				limit = { 
+					free_pop_tiles > 0
+				}
+				create_pop = {
+					species = event_target:saved_species    
+				}
+			}
+		}
+			
+		last_created_pop = {
+			
+			add_modifier = { 
+				modifier = pop_rescued
+				days = 1800  # 5 years a slave 
+				clear_on_owner_change = yes
+			}
+			
+			fn_novelwardemand_setethic = yes # set ethics
+				
+		}
+			
+		kill_pop = yes
+		
+	}
+}

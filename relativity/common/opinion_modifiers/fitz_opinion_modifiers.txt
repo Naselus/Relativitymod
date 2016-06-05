@@ -1,0 +1,14 @@
+#enemy forced free thoughts on them
+opinion_fitz_free_thoughts_country = {
+	opinion = {
+		base = -100
+	}
+	
+	accumulative = yes
+	
+	min = -500
+	
+	decay = {
+		base = 2
+	}
+}

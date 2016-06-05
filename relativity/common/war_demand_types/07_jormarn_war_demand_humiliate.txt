@@ -1,0 +1,211 @@
+humiliate_jormarn = {
+	execution_order = 0
+	
+	parameters = {
+		country = {
+			type = country
+		}
+	}
+	
+	warscore_cost = {
+		base = 45
+
+		scaled_modifier = {
+			scope = parameter:country
+			add = 0.5
+			calc = pop_count
+		}
+
+		#Fitz: Not sure how this works but it seems to give more or less realistic hummiliate score
+		# I suppose it divise by 0.001 for each pop in the empire ASKING for humiliation.
+		# It's to make possible for big empire to humiliate another big empire.
+		# Could be fun to make it harder to humiliate empire that are too small ?
+		# Also a max at 70 could be cool if we find how to do it..
+
+		# Or maybe make it that if you manage to force a bigger empire to surrender, you can pay influence point to humiliate them? :)
+		# Will look if it's possible.
+
+		
+		#jormarn: 0.001 fills my error log with division-by-zero errors - maybe this has something to do with the operating system ?? 
+		# turned it off for now
+		
+		
+		#scaled_modifier = {
+		#	scope = fromfromfrom
+		#	div = 0.001 
+		#	calc = pop_count
+		#}
+		
+		# Ruler Trait - Warlike
+		modifier = {
+			factor = 0.95
+			custom_tooltip = {
+				text = "war_demand_trait_warlike"
+				exists = ruler
+				ruler = { has_trait = trait_ruler_warlike }
+			}
+		}
+
+		# Ruler Trait - Expansionist
+		modifier = {
+			factor = 0.9
+			custom_tooltip = {
+				text = "war_demand_trait_expansionist"
+				exists = ruler
+				ruler = { has_trait = trait_ruler_expansionist }
+			}
+		}
+
+		# Tech - Galactic Ambitions
+		modifier = {
+			factor = 0.95
+			custom_tooltip = {
+				text = "war_demand_tech_galactic_ambitions"
+				has_technology = tech_galactic_ambitions
+			}
+		}
+
+		# Tech - Manifest Destiny
+		modifier = {
+			factor = 0.8
+			custom_tooltip = {
+				text = "war_demand_tech_manifest_destiny"
+				has_technology = tech_manifest_destiny
+			}
+		}
+		
+		
+	}
+
+	potential = {
+		custom_tooltip_fail = {
+			text = "war_demand_force_sphere_not_opponent" #this is generic, no reloc ness
+			parameter:country = {
+				OR = {
+					AND = {
+						exists = fromfrom
+						from = {
+							from = {
+								is_war_participant = {
+									who = prevprev
+									side = prev
+								}
+							}
+						}
+					}
+					AND = {
+						NOT = { exists = fromfrom }
+						would_join_war = {
+							attacker = root
+							defender = from
+							side = from
+						}
+					}
+					
+				}
+			}
+		}
+		
+		
+		custom_tooltip_fail = {
+			text = "war_humiliate_jormarn_wrong_type"
+			parameter:country = {
+				is_country_type = default 
+			}
+		}
+		custom_tooltip_fail = {
+			text = "war_demand_cede_planet_no_vassals" #generic text
+			NOT = { exists = overlord }
+		}
+	}
+	
+	possible = {			
+		hidden:parameter:country = {
+			custom_tooltip_fail = {
+				text = "war_demand_humiliate_jormarn_liberated" 
+				war_demand_counter = {
+					type = liberated_or_vassalized
+					value < 1
+				}
+			}
+			custom_tooltip_fail = {
+				text = "war_demand_humiliate_jormarn_no_planets"
+				war_demand_counter = {
+					type = num_owned_planets
+					value > 0
+				}
+			}
+		}
+	}
+	
+	proposable = {
+		always = yes
+	}
+	
+	effect = {
+		add_threat = {
+			who = fromfromfrom
+			amount = 0.1 # scales to pops
+		}		
+		parameter:country = {		
+			add_modifier = { modifier = humiliated days = 7200 }	
+				
+		}
+		
+		fromfromfrom = {
+			add_influence = 250
+		}
+		
+		parameter:country = {
+			add_influence = -250
+			
+			add_opinion_modifier = { #they hate being humiliated ...
+				who = fromfromfrom
+				modifier = opinion_humiliated_country
+			}
+		}
+		
+		
+	}
+	
+	counters = {
+		liberated_or_vassalized = {
+			context = parameter:country
+			value = { base = 1 }
+		}
+	}
+	
+	ai_weight = {
+		base = 80
+		
+		modifier = {
+			factor = 0
+			this = { is_domineering_to = parameter:country } 
+		}
+		
+		
+		modifier = {
+			factor = 0
+			this =  { is_patronizing_to = parameter:country }
+		}		
+		
+		modifier = {
+			factor = 2
+			this = { has_ai_personality = democratic_crusaders }
+		}	
+		modifier = {
+			factor = 0
+			this = { has_ai_personality = fanatic_purifiers }
+		}	
+		modifier = {
+			factor = 0
+			is_country_type = fallen_empire
+		}
+		
+	}
+	
+	## end of file
+	
+}
+ 
+

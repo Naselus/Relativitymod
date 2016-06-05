@@ -1,0 +1,279 @@
+### Ruin every buildings on a planet.
+
+raze = {
+	execution_order = 5
+	
+	parameters = {
+		planet = {
+			type = planet
+			filter = owned
+		}
+	}
+	
+	warscore_cost = {
+		base = 3
+
+		scaled_modifier = {
+			scope = parameter:planet
+			add = 0.8
+			calc = pop_count
+		}
+	
+		modifier = {
+			factor = 1.5
+			hidden:parameter:planet = {
+				is_capital = yes
+			}
+		}
+	
+
+		# Ruler Trait - Warlike
+		modifier = {
+			factor = 0.95
+			custom_tooltip = {
+				text = "war_demand_trait_warlike"
+				exists = ruler
+				ruler = { has_trait = trait_ruler_warlike }
+			}
+		}
+
+		# Ruler Trait - Expansionist
+		modifier = {
+			factor = 0.9
+			custom_tooltip = {
+				text = "war_demand_trait_expansionist"
+				exists = ruler
+				ruler = { has_trait = trait_ruler_expansionist }
+			}
+		}
+
+		# Tech - Galactic Ambitions
+		modifier = {
+			factor = 0.95
+			custom_tooltip = {
+				text = "war_demand_tech_galactic_ambitions"
+				has_technology = tech_galactic_ambitions
+			}
+		}
+
+		# Tech - Manifest Destiny
+		modifier = {
+			factor = 0.8
+			custom_tooltip = {
+				text = "war_demand_tech_manifest_destiny"
+				has_technology = tech_manifest_destiny
+			}
+		}
+	}
+	
+	potential = {
+	
+		
+		#custom_tooltip_fail = {
+		#	text = "war_demand_raze_fullbombs"
+		#	ROOT = {
+		#		AND = { has_policy_flag = orbital_bombardment_full
+		#			NOT = {
+		#				OR = {
+		#					has_ethic = ethic_pacifist
+		#					has_ethic = ethic_fanatic_pacifist
+		#				}
+		#			}
+		#		}
+		#	}
+		#	
+		#}
+		
+		custom_tooltip_fail = {
+			text = "war_demand_raze_fullbombs"
+			ROOT = { has_policy_flag = allow_orbital_bombardment_limited }
+		}
+
+		custom_tooltip_fail = {
+			text = "war_demand_raze_fullbombs"
+			ROOT = { 
+				NOT =  { has_ethic = ethic_pacifist }
+				NOT =  { has_ethic = ethic_fanatic_pacifist }
+			}
+		}
+		
+		
+		custom_tooltip_fail = {
+			text = "war_demand_raze_belongs_to_opponent"
+			parameter:planet = {
+				owner = {
+					OR = {
+						AND = {
+							exists = fromfrom
+							from = {
+								from = {
+									is_war_participant = {
+										who = prevprev
+										side = prev
+									}
+								}
+							}
+						}
+						AND = {
+							NOT = { exists = fromfrom }
+							would_join_war = {
+								attacker = root
+								defender = from
+								side = from
+							}
+						}
+						
+					}
+				}
+			}
+		}
+		custom_tooltip_fail = {
+			text = "war_demand_raze_no_vassals"
+			subject_can_diplomacy = this
+		}
+	}
+	
+	possible = {
+		always = yes
+	}
+	
+	proposable = {
+		#hidden:parameter:planet = {    #test # why not liberate but also take some people away :)
+		#	custom_tooltip_fail = {
+		#		text = "war_demand_cede_or_liberate"
+		#		war_demand_counter = {
+		#			type = ceded_or_liberated
+		#			value < 1
+		#		}
+		#	}
+		#}	
+	}
+	
+	demandable = {						# needs to have boots on the ground to raze
+		custom_tooltip_fail = {
+			text = "war_demand_raze_planet_not_under_our_control"
+			parameter:planet = {
+				controller = {
+					fromfrom = {
+						is_war_participant = {
+							who = prev
+							side = from
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	effect = {
+
+		parameter:planet = {		
+			add_threat = {
+				who = ROOT # root commanded this !!
+				amount = 1 # scales to pops
+			}		
+			every_tile = {
+				limit = { 
+					has_building = yes 
+					is_ruined = no
+				 }
+				set_ruined = yes
+			}
+			
+			if = { 			#collateral damage :|
+				limit = { num_pops > 5}
+				random_pop = { kill_pop = yes}
+			}
+			if = {
+				limit = { num_pops > 15}
+				random_pop = { kill_pop = yes}
+			}
+		}
+			
+		every_country = {  #mimic action.23 opinion event
+			limit = {
+				has_communications = ROOT
+				NOT = { is_country = ROOT }
+				NOT = { has_policy_flag = orbital_bombardment_full }
+				NOT = {
+					OR = {
+						has_ethic = "ethic_militarist"
+						has_ethic = "ethic_fanatic_militarist"
+					}
+				}
+			}
+			add_opinion_modifier = { who = ROOT modifier = opinion_nuker }
+		}
+		
+		ROOT = {
+			every_owned_pop = {
+				if = {
+					limit = { pop_has_ethic = ethic_pacifist }
+					add_modifier = {
+						modifier = "pop_full_bombardment_neg"
+						days = 3600
+						clear_on_owner_change = yes
+						multiplier = 5.0
+					}
+				}
+				if = {
+					limit = { pop_has_ethic = ethic_fanatic_pacifist }
+					add_modifier = {
+						modifier = "pop_full_bombardment_neg"
+						days = 3600
+						clear_on_owner_change = yes
+						multiplier = 10.0
+					}			
+				}
+			}
+		}
+			
+			
+			
+	
+	}
+
+	
+	
+	
+
+	counters = { 		#test reactivate	#why wouldn't you want to take more than 10 pops ??
+		#ceded_or_liberated = {
+		#	context = parameter:planet
+		#	value = {
+		#		base = 1
+		#	}			
+		#}
+	}
+	
+	ai_weight = {
+		base = 75
+		
+
+		modifier = {
+			factor = 0.1
+			NOT = { 
+				OR = {
+					this = { has_ai_personality_behaviour = dominator } 
+					this = { has_ai_personality_behaviour = subjugator } 
+				}
+			}
+		}
+
+
+		modifier = {
+			factor = 0
+			is_country_type = fallen_empire
+			has_policy_flag = orbital_bombardement_light
+		}
+
+
+	}
+	
+	
+	AI_invasion_target = yes  # please don't fuck this up AI
+}
+
+
+
+
