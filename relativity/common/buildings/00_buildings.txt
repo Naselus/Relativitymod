@@ -31,27 +31,27 @@
 @b1upkeep = 1
 
 @b2time = 240
-@b2cost = 90
+@b2cost = 120
 @b2effect = 3
 @b2upkeep = 1.5
 
 @b3time = 300
-@b3cost = 120
+@b3cost = 240
 @b3effect = 4
 @b3upkeep = 2
 
 @b4time = 360
-@b4cost = 150
+@b4cost = 480
 @b4effect = 5
 @b4upkeep = 2.5
 
 @b5time = 420
-@b5cost = 180
+@b5cost = 960
 @b5effect = 8
 @b5upkeep = 3
 
 @b6time = 480
-@b6cost = 210
+@b6cost = 1920
 @b6effect = 12
 @b6upkeep = 4
 
@@ -1036,7 +1036,7 @@ building_mineral_processing_plant_1T1 = {
 	base_buildtime = @b2time
 	
 	cost = {
-		minerals = 150
+		minerals = @b1cost
 	}
 	
 
@@ -1070,7 +1070,7 @@ building_mineral_processing_plant_2T1 = {
 	is_listed = no
 	
 	cost = {
-		minerals = 250
+		minerals = @b2cost
 		#influence = 25
 	}
 	
@@ -1115,7 +1115,7 @@ building_mineral_processing_plant_3T1 = {
 	is_listed = no
 	
 	cost = {
-		minerals = 250
+		minerals = @b3cost
 
 	}
 	
@@ -1161,7 +1161,7 @@ building_mineral_processing_plant_4T1 = {
 	is_listed = no
 	
 	cost = {
-		minerals = 250
+		minerals = @b4cost
 		#influence = 25
 	}
 	
@@ -1207,7 +1207,7 @@ building_mineral_processing_plant_5T1 = {
 	is_listed = no
 	
 	cost = {
-		minerals = 250
+		minerals = @b5cost
 		#influence = 25
 	}
 	

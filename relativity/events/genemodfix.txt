@@ -1,0 +1,26 @@
+namespace = genemodfix
+
+country_event = {
+	id = genemodfix.1
+	hide_window = yes
+	
+	trigger = {
+		exists = capital_scope
+		capital_scope = {
+			NOT = {
+				any_pop = {
+					is_same_species = ROOT
+				}
+			}
+			any_pop = {
+				is_subspecies = ROOT
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+		change_dominant_species = last_created_species
+	}
+}

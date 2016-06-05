@@ -88,7 +88,7 @@ leader_trait_eager = {
 	modification = no
 	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_eager.dds"
 	self_modifier = {
-		leader_influence_cost = -0.33
+		species_leader_exp_gain = 0.25
 	}
 	leader_class = { admiral scientist general governor }
 	leader_trait = yes
@@ -99,7 +99,7 @@ leader_trait_arrested_development = {
 	modification = no
 	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_arrested_development.dds"
 	self_modifier = {
-		species_leader_exp_gain = -1
+		species_leader_exp_gain = -0.25
 	}
 	leader_class = { admiral scientist general governor }
 	leader_trait = yes

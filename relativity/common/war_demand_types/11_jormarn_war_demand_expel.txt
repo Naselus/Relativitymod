@@ -1,0 +1,290 @@
+#
+#
+#
+#
+expel = {
+	execution_order = 1   #after rescue / kidnap 
+	
+	parameters = {
+		planet = {
+			type = planet
+			filter = owned
+		}
+	}
+	
+	warscore_cost = {
+		base = 20
+
+		scaled_modifier = {
+			scope = parameter:planet
+			add = 0.8
+			calc = pop_count
+		}
+		
+		modifier = {
+			factor = 2
+			hidden:parameter:planet = {
+				is_capital = yes
+			}
+		}
+
+
+		# Ruler Trait - Warlike
+		modifier = {
+			factor = 0.95
+			custom_tooltip = {
+				text = "war_demand_trait_warlike"
+				exists = ruler
+				ruler = { has_trait = trait_ruler_warlike }
+			}
+		}
+
+
+		# Tech - Galactic Ambitions
+		modifier = {
+			factor = 0.95
+			custom_tooltip = {
+				text = "war_demand_tech_galactic_ambitions"
+				has_technology = tech_galactic_ambitions
+			}
+		}
+
+		# Tech - Manifest Destiny
+		modifier = {
+			factor = 0.8
+			custom_tooltip = {
+				text = "war_demand_tech_manifest_destiny"
+				has_technology = tech_manifest_destiny
+			}
+		}
+	}
+	
+	potential = {
+	
+		##wargoal does not care if anyone on the planet belongs to ROOT (and can be effectively displaced)
+		##wargoal does not care if they have a place to flee to, but will still give genocide penalties accordingly 
+		# this is the "evil" version, "force resettle" will be the nicer option
+		
+		
+		
+		
+		custom_tooltip_fail = {
+			text = "war_demand_expel_no_purge"
+			ROOT = { NOT = { has_policy_flag = purge_not_allowed } }
+		}
+ 		
+		custom_tooltip_fail = {
+			text = "war_demand_kidnap_belongs_to_opponent" #generic text
+			parameter:planet = {
+				owner = {
+					OR = {
+						AND = {
+							exists = fromfrom
+							from = {
+								from = {
+									is_war_participant = {
+										who = prevprev
+										side = prev
+									}
+								}
+							}
+						}
+						AND = {
+							NOT = { exists = fromfrom }
+							would_join_war = {
+								attacker = root
+								defender = from
+								side = from
+							}
+						}
+						
+					}
+				}
+			}
+		}
+		custom_tooltip_fail = {
+			text = "war_demand_kidnap_no_vassals" #generic text
+			subject_can_diplomacy = this
+		}
+	}
+	
+	possible = {
+		always = yes
+	}
+	
+	proposable = {
+		hidden:parameter:planet = {    #cant cede and wipe planet, there would be no colony on it
+			custom_tooltip_fail = {
+				text = "war_demand_cede_or_liberate" #should be ok
+				war_demand_counter = {
+					type = ceded_or_liberated
+					value < 1
+				}
+			}
+		}	
+	}
+	
+	demandable = {						# only possible if planet is actually taken
+		custom_tooltip_fail = {
+			text = "war_demand_expel_not_under_our_control"
+			parameter:planet = {
+				controller = {
+					fromfrom = {
+						is_war_participant = {
+							who = prev
+							side = from
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	effect = {
+		#parameter:planet = {
+		#	owner = {
+		#		owner_species = { save_event_target_as = expelled_species } #for now escape pods are only provided for the ruling species o_O ###espace pods now for everyone !!
+		#	}
+		#}
+		#ROOT.owner_species = { save_event_target_as = saved_species }
+		
+		parameter:planet = {		
+			add_threat = {
+				who = ROOT #don't fuck your allies with this, root !
+				amount = 3.5 # scales to pops
+			}		
+			
+			every_owned_pop = {  #groundbreaking discoveries o_O, this is actually also a planet scope
+				if = {
+					limit = { 
+						parameter:planet.owner = { 
+							any_owned_planet = { 
+								NOT = { is_planet = parameter:planet } 
+								free_pop_tiles > 0
+							}
+						}
+						
+					}
+					
+					species = { save_event_target_as = expelled_species } # even better :>
+					
+					parameter:planet.owner = { 
+						random_owned_planet = {
+							limit = {
+								free_pop_tiles > 0
+								NOT = { is_planet = parameter:planet }  
+							}
+							create_pop = {
+								species = event_target:expelled_species
+							}
+						}
+					}
+					
+					last_created_pop = {
+						
+						add_modifier = { #
+							modifier = pop_expelled
+								days = 720  # 2 years, just for RP, should not be the reason for enemy failcascade
+								clear_on_owner_change = yes
+						}
+						
+						fn_novelwardemand_setethic = yes
+					}
+				
+					else = {   #mimic action.21 (people are pissed about genocide...)
+						every_country = {
+							limit = {
+								has_communications = ROOT
+								NOT = { is_country = ROOT }
+								NOT = { is_same_species = expelled_species }
+							}
+							add_opinion_modifier = { who = ROOT modifier = opinion_genocidal }
+						}
+						every_country = {
+							limit = {
+								has_communications = ROOT
+								NOT = { is_country = ROOT }
+								is_same_species = expelled_species
+								}
+							add_opinion_modifier = { who = ROOT modifier = opinion_genocidal_our_species }
+						}
+					}
+						
+				}		
+						
+				kill_pop = yes
+					
+				
+			}
+			
+			
+		}
+	}
+#derp
+	
+	
+	
+
+	counters = { 		#can't cede or liberate empty planet
+		ceded_or_liberated = {
+			context = parameter:planet
+			value = {
+				base = 1
+			}			
+		}
+	}
+	
+	ai_weight = {
+		base = 10
+		
+		modifier = {
+			factor = 12
+			this = { has_ai_personality = fanatic_purifiers } 
+		}
+		
+		modifier = {
+			factor = 2.5
+			this = { has_ai_personality_behaviour = opportunist} 
+		}
+		modifier = {
+			factor = 10
+			this = { has_ai_personality = xenophobic_isolationists} 
+			parameter:planet = {
+				owner = {
+					is_neighbor_of = root
+				}
+				#solar_system = { #meh
+				#	any_neighbor_system = { space_owner = root } #no any in effects ...
+				#}
+			}
+			
+		}
+		#modifier = {
+		#	factor = 1.5
+		#	parameter:planet = {
+		#		solar_system = {
+		#			any_neighbor_system = { space_owner = root } #same ?!?
+		#		}
+		#	}
+		#	
+		#}
+
+		modifier = { 
+			factor = 0
+			is_country_type = fallen_empire
+		}
+		modifier = {
+			factor = 0
+			NOT = { this = { has_ai_personality_behaviour = purger } }
+		}
+
+
+	}
+	
+	
+	AI_invasion_target = yes    #test_ai_pls_invade :> 
+}
+
+
+
+

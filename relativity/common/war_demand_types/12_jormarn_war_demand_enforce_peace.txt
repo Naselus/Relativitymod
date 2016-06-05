@@ -1,0 +1,472 @@
+# enforce_peace = {
+	# execution_order = 0
+	
+	# parameters = {
+		# country = {
+			# type = country
+		# }
+	# }
+	
+	# warscore_cost = {
+		# base = 100
+
+		# ## no discounts !!!
+		# # this is a purely interventionist war
+		
+	# }
+
+	# potential = {
+		# custom_tooltip_fail = {
+			# text = "war_demand_force_sphere_not_opponent" #this is generic, no reloc ness
+			# parameter:country = {
+				# OR = {
+					# AND = {
+						# exists = fromfrom
+						# from = {
+							# from = {
+								# is_war_participant = {
+									# who = prevprev
+									# side = prev
+								# }
+							# }
+						# }
+					# }
+					# AND = {
+						# NOT = { exists = fromfrom }
+						# would_join_war = {
+							# attacker = root
+							# defender = from
+							# side = from
+						# }
+					# }
+					
+				# }
+			# }
+		# }
+		
+		# custom_tooltip_fail = {  #they have to be at war
+			# text = "war_demand_enforce_peace_no_war"
+			# parameter:country = {
+				# is_at_war = yes
+				# is_war_leader = yes
+			# }
+		# }
+		
+		# custom_tooltip_fail = {
+			# text = "war_enforce_peace_wrong_type"
+			# parameter:country = {
+				# is_country_type = default 
+			# }
+		# }
+		# custom_tooltip_fail = {
+			# text = "war_demand_cede_planet_no_vassals" #generic text
+			# NOT = { exists = overlord }
+		# }
+	# }
+	
+	# possible = {
+		# custom_tooltip_fail = { #they have to be winning their war
+			# text = "war_enforce_peace_win_war"
+			# parameter:country = {  
+				# is_war_leader = yes
+				# off_war_score_sum > 15
+				# #any_war = {
+				# #	any_attacker = { is_country = PREV }
+				# #	attacker_war_score > 0  #this has issues for some (semantical ??) reasons
+				# #}
+			# }
+		# }
+
+	
+		# hidden:parameter:country = {
+			# custom_tooltip_fail = {
+				# text = "war_demand_humiliate_jormarn_liberated" 
+				# war_demand_counter = {
+					# type = liberated_or_vassalized
+					# value < 1
+				# }
+			# }
+			# custom_tooltip_fail = {
+				# text = "war_demand_humiliate_jormarn_no_planets"
+				# war_demand_counter = {
+					# type = num_owned_planets
+					# value > 0
+				# }
+			# }
+		# }
+	# }
+	
+	# proposable = {
+		# always = yes
+		# # actually I would like this to be only enforceable if they are still winning, but that might lead to infinite wars, that cannot be ended anymore
+		# # and realistically: they will probably drop in warscore after someone else enters, this can be intended behaviour
+	# }
+	
+	# effect = {
+		# add_threat = {
+			# who = ROOT
+			# amount = 0.5 # scales to pops
+		# }		
+
+		
+		# ROOT = {
+			# add_influence = 250
+		# }
+		# if = {
+			# limit = {
+				# parameter:country = {
+					# is_at_war = yes
+				# }
+			# }
+			
+			# parameter:country = {
+				# random_war_defender = {
+					# limit = { 
+						# any_war_attacker = {
+							# is_country = parameter:country
+						# }
+					# }
+					# save_event_target_as = intervention_country
+				# }
+			# }
+			
+			
+			# parameter:country = {
+				# declare_white_peace_with =  event_target:intervention_country
+			# }
+					# #add_opinion_modifier = {  # a silent guardian, a watchful knight
+					# #	who = ROOT
+					# #	modifier = opinion_interved_for_us 
+					# #}
+				
+						
+			# # parameter:country = {
+				# # every_war_defender = {
+					# # limit = { 
+						# # any_war_attacker = {
+							# # is_country = parameter:country
+						# # }
+					# # }
+					# # declare_white_peace_with =  PREV
+					# # parameter:country = {
+						# # declare_white_peace_with =  PREV
+					# # }
+					# # add_opinion_modifier = {  # a silent guardian, a watchful knight
+						# # who = ROOT
+						# # modifier = opinion_interved_for_us 
+					# # }
+				# # }
+			# # }
+		
+		
+		 
+			# parameter:country = {
+				# add_opinion_modifier = { #they hate being stopped from doing evil
+					# who = ROOT
+					# modifier = opinion_intervened_against_us
+				# }
+			# }
+		# }
+		
+		
+	# }
+	
+	# counters = {
+		# liberated_or_vassalized = {
+			# context = parameter:country
+			# value = { base = 1 }
+		# }
+	# }
+	
+	# ai_weight = {
+		# base = 60
+		
+		# modifier = {
+			# factor = 0
+			# this = { is_domineering_to = parameter:country } 
+		# }
+		# modifier = {
+			# factor = 2
+			# this = { has_ai_personality = federation_builders }
+		# }	
+		
+		# modifier = {
+			# factor = 2
+			# this =  { is_patronizing_to = parameter:country }
+		# }		
+		
+		# modifier = {
+			# factor = 2
+			# this = { has_ai_personality = democratic_crusaders }
+		# }	
+		# modifier = {
+			# factor = 0
+			# this = { has_ai_personality = fanatical_purifiers }
+		# }	
+		# modifier = {
+			# factor = 0
+			# is_country_type = fallen_empire
+		# }
+		
+	# }
+	
+	# ## end of file
+	
+# }
+ 
+
+##########
+
+#Fitz try (Most of the same but I copy it anyway)
+
+
+
+# forced_peace = {
+# 	execution_order = 0
+	
+# 	parameters = {
+# 		country = {
+# 			type = country
+# 		}
+
+# 		saved_country = {
+# 			type = country
+# 		}
+# 	}
+	
+# 	warscore_cost = {
+# 		base = 100
+
+# 		## no discounts !!!
+# 		# this is a purely interventionist war
+		
+# 	}
+
+# 	potential = {
+# 		custom_tooltip_fail = {
+# 			text = "war_demand_force_sphere_not_opponent" #this is generic, no reloc ness
+# 			parameter:country = {
+# 				is_country = from
+# 			}
+
+
+# 		}
+		
+# 		custom_tooltip_fail = {  #they have to be at war
+# 			text = "war_demand_enforce_peace_no_war"
+# 			parameter:country = {
+# 				is_at_war = yes
+# 				is_war_leader = yes
+# 			}
+# 			parameter:saved_country = {
+# 				is_at_war_with = from
+# 				is_war_leader = yes
+# 			}
+# 		}
+		
+# 		custom_tooltip_fail = {
+# 			text = "war_enforce_peace_wrong_type"
+# 			parameter:country = {
+# 				is_country_type = default 
+# 			}
+# 		}
+# 		custom_tooltip_fail = {
+# 			text = "war_demand_cede_planet_no_vassals" #generic text
+# 			NOT = { exists = overlord }
+# 		}
+# 	}
+	
+# 	possible = {
+# 		custom_tooltip_fail = { #they have to be winning their war
+# 			text = "war_enforce_peace_win_war"
+# 			parameter:country = { 
+# 				OR = {
+# 					is_war_leader = yes
+# 					off_war_score_sum > 15
+
+# 					fromfrom = exists				
+# 				}
+# 				#any_war = {
+# 				#	any_attacker = { is_country = PREV }
+# 				#	attacker_war_score > 0  #this has issues for some (semantical ??) reasons
+# 				#}
+# 			}
+# 		}
+
+	
+# 		hidden:parameter:country = {
+# 			custom_tooltip_fail = {
+# 				text = "war_demand_humiliate_jormarn_liberated" 
+# 				war_demand_counter = {
+# 					type = liberated_or_vassalized
+# 					value < 1
+# 				}
+# 			}
+# 			custom_tooltip_fail = {
+# 				text = "war_demand_humiliate_jormarn_no_planets"
+# 				war_demand_counter = {
+# 					type = num_owned_planets
+# 					value > 0
+# 				}
+# 			}
+# 		}
+# 	}
+	
+# 	proposable = {
+# 		always = yes
+# 		# actually I would like this to be only enforceable if they are still winning, but that might lead to infinite wars, that cannot be ended anymore
+# 		# and realistically: they will probably drop in warscore after someone else enters, this can be intended behaviour
+# 	}
+	
+# 	effect = {
+# 		add_threat = {
+# 			who = ROOT
+# 			amount = 0.5 # scales to pops
+# 		}		
+
+		
+# 		ROOT = {
+# 			add_influence = 250
+# 		}
+# 		if = {
+# 			limit = {
+# 				parameter:saved_country = {
+# 					AND = {
+# 						is_at_war_with = from
+
+# 						any_war = {
+#  							defender_war_score < 100
+ 							
+# 						}
+# 					}
+# 				}
+# 			}
+
+# 			parameter:saved_country = {
+# #				any_war = {
+# #					defender_war_score = 100 
+# #				}
+				
+# 				declare_white_peace_with = parameter:country
+# 			}
+
+# 					#add_opinion_modifier = {  # a silent guardian, a watchful knight
+# 					#	who = ROOT
+# 					#	modifier = opinion_interved_for_us 
+# 					#}
+				
+						
+# 			# parameter:country = {
+# 				# every_war_defender = {
+# 					# limit = { 
+# 						# any_war_attacker = {
+# 							# is_country = parameter:country
+# 						# }
+# 					# }
+# 					# declare_white_peace_with =  PREV
+# 					# parameter:country = {
+# 						# declare_white_peace_with =  PREV
+# 					# }
+# 					# add_opinion_modifier = {  # a silent guardian, a watchful knight
+# 						# who = ROOT
+# 						# modifier = opinion_interved_for_us 
+# 					# }
+# 				# }
+# 			# }
+		
+		
+		 
+# 			parameter:country = {
+# 				add_opinion_modifier = { #they hate being stopped from doing evil
+# 					who = ROOT
+# 					modifier = opinion_intervened_against_us
+# 				}
+# 			}
+# 		}
+		
+		
+# 	}
+	
+# 	counters = {
+# 		liberated_or_vassalized = {
+# 			context = parameter:country
+# 			value = { base = 1 }
+# 		}
+# 	}
+	
+# 	ai_weight = {
+# 		base = 60
+		
+# 		modifier = {
+# 			factor = 0
+# 			this = { is_domineering_to = parameter:country } 
+# 		}
+# 		modifier = {
+# 			factor = 2
+# 			this = { has_ai_personality = federation_builders }
+# 		}	
+		
+# 		modifier = {
+# 			factor = 2
+# 			this =  { is_patronizing_to = parameter:country }
+# 		}		
+		
+# 		modifier = {
+# 			factor = 2
+# 			this = { has_ai_personality = democratic_crusaders }
+# 		}	
+# 		modifier = {
+# 			factor = 0
+# 			this = { has_ai_personality = fanatical_purifiers }
+# 		}	
+# 		modifier = {
+# 			factor = 0
+# 			is_country_type = fallen_empire
+# 		}
+		
+# 	}
+	
+# 	## end of file
+	
+# }
+
+# bullshit_demand = { #test to give a big warscore demand to the defender to make it win the war. Like expected, does not work. 
+# 	execution_order = 0
+# 	parameters = {
+# 		country = {
+# 			type = country
+# 		}
+# 	}
+
+# 	warscore_cost = {
+# 		base = 200
+# 	}
+
+# 	potential = {
+# 	}
+	
+# 	possible = {
+# 	}
+	
+# 	proposable = {
+# 		always = yes
+# 		# actually I would like this to be only enforceable if they are still winning, but that might lead to infinite wars, that cannot be ended anymore
+# 		# and realistically: they will probably drop in warscore after someone else enters, this can be intended behaviour
+# 	}
+	
+# 	effect = {
+# 	}
+	
+# 	counters = {
+# 		value = {
+# 			base = 1
+# 		}			
+# 	}
+	
+# 	ai_weight = {
+# 	}
+	
+# 	## end of file
+	
+# }
+

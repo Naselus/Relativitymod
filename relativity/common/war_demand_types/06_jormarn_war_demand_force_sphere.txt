@@ -1,0 +1,276 @@
+## Force a country to give be in your sphere of influence (Mostly give civ/mil access)
+
+force_sphere = {
+	execution_order = 4
+	
+	parameters = {
+		country = {
+			type = country
+		}
+	}
+	
+	warscore_cost = {
+		base = 10
+
+		scaled_modifier = {
+			scope = parameter:country
+			add = 0.25
+			calc = pop_count
+		}		
+		
+		modifier = {
+			factor = 0.75
+			parameter:country = {
+				exists = overlord
+			}
+		}
+		# Ruler Trait - Warlike
+		modifier = {
+			factor = 0.95
+			custom_tooltip = {
+				text = "war_demand_trait_warlike"
+				exists = ruler
+				ruler = { has_trait = trait_ruler_warlike }
+			}
+		}
+
+		# Ruler Trait - Expansionist
+		modifier = {
+			factor = 0.9
+			custom_tooltip = {
+				text = "war_demand_trait_expansionist"
+				exists = ruler
+				ruler = { has_trait = trait_ruler_expansionist }
+			}
+		}
+
+		# Tech - Galactic Ambitions
+		modifier = {
+			factor = 0.95
+			custom_tooltip = {
+				text = "war_demand_tech_galactic_ambitions"
+				has_technology = tech_galactic_ambitions
+			}
+		}
+
+		# Tech - Manifest Destiny
+		modifier = {
+			factor = 0.8
+			custom_tooltip = {
+				text = "war_demand_tech_manifest_destiny"
+				has_technology = tech_manifest_destiny
+			}
+		}
+		
+		
+	}
+
+	potential = {
+		custom_tooltip_fail = {
+			text = "war_demand_force_sphere_not_opponent"
+			parameter:country = {
+				OR = {
+					AND = {
+						exists = fromfrom
+						from = {
+							from = {
+								is_war_participant = {
+									who = prevprev
+									side = prev
+								}
+							}
+						}
+					}
+					AND = {
+						NOT = { exists = fromfrom }
+						would_join_war = {
+							attacker = root
+							defender = from
+							side = from
+						}
+					}
+					
+				}
+			}
+		}
+		# custom_tooltip_fail = {   #hope blocking this does not break anything
+			# text = "war_demand_force_sphere_no_overlords"
+			# parameter:country = {
+				# OR = {
+					# AND = {
+						# exists = fromfrom
+						# from = {
+							# from = {
+								# count_war_participants = {
+									# side = root
+									# limit = {
+										# parameter:country = {
+											# OR = {
+												# can_be_subject = {
+													# overlord = prev
+													# subject_type = influence_sphere
+												# }
+												# AND = {
+													# is_proposing_war_demands = no
+													# can_be_subject = {
+														# overlord = prev
+														# subject_type = influence_sphere
+													# }
+												# }
+											# }
+										# }
+									# }
+									# count > 0
+								# }
+							# }
+						# }
+					# }
+					# AND = {
+						# NOT = { exists = fromfrom }
+						# count_potential_war_participants = {
+							# attacker = root
+							# defender = from
+							# side = from
+
+							# limit = {
+								# parameter:country = {
+									# can_be_subject = {
+										# overlord = root
+										# subject_type = vassal
+									# }
+								# }
+							# }
+
+							# count > 0
+						# }
+					# }
+				# }
+			# }
+		# }
+		custom_tooltip_fail = {
+			text = "war_demand_force_sphere_missing_tech_all"
+			any_country = {
+				has_technology = tech_galactic_ambitions #disable for debug
+				OR = {
+					AND = {
+						exists = fromfrom
+						fromfrom = {
+							is_war_participant = {
+								who = prev
+								side = root
+							}
+						}
+					}
+					AND = {
+						NOT = { exists = fromfrom }
+						would_join_war = {
+							attacker = root
+							defender = from
+							side = root
+						}
+					}
+				}
+			}
+		}
+		custom_tooltip_fail = {
+			text = "war_demand_force_sphere_wrong_type"
+			parameter:country = {
+				is_country_type = default 
+			}
+		}
+		custom_tooltip_fail = {
+			text = "war_demand_cede_planet_no_vassals"
+			NOT = { exists = overlord }
+		}
+	}
+	
+	possible = {			
+		hidden:parameter:country = {
+			custom_tooltip_fail = {
+				text = "war_demand_force_sphere_liberated"
+				war_demand_counter = {
+					type = liberated_or_vassalized
+					value < 1
+				}
+			}
+			custom_tooltip_fail = {
+				text = "war_demand_force_sphere_no_planets"
+				war_demand_counter = {
+					type = num_owned_planets
+					value > 0
+				}
+			}
+		}
+		hidden:fromfromfrom = {
+			custom_tooltip_fail = {
+				text = "war_demand_force_sphere_no_vassals_of_vassals"
+				NOT = { exists = overlord }
+			}
+			custom_tooltip_fail = {
+				text = "war_demand_force_sphere_missing_tech"
+				has_technology = tech_xeno_supremacy
+			}
+		}
+	}
+	
+	proposable = {
+		parameter:country = {
+			can_be_subject = {
+				overlord = fromfromfrom
+				subject_type = influence_sphere
+			}
+		}
+	}
+	
+	effect = {
+		add_threat = {
+			who = fromfromfrom
+			amount = 0.5 # scales to pops
+		}		
+		parameter:country = {		
+			set_subject_of = {
+				who = fromfromfrom
+				subject_type = influence_sphere
+			}
+		}
+		#FROM = { country_event = { id = jormarn_sphere.1 days = 3600} }#end of influence obligation #no events in war_demand:effect :( :( 
+		#ROOT = { country_event = { id = jormarn_sphere.1 days = 3600} }#end of influence obligation
+		#FROMFROM = { country_event = { id = jormarn_sphere.1 days = 3600} }#end of influence obligation
+		parameter:country = {	
+			set_timed_country_flag = { flag = forced_sphere_time days = 3600 } #flags work
+			set_country_flag = forced_sphere 
+		}
+	}
+	
+	counters = {
+		liberated_or_vassalized = {
+			context = parameter:country
+			value = { base = 1 }
+		}
+	}
+	
+	ai_weight = {
+		base = 50
+		
+		modifier = {
+			factor = 2
+			this =  { is_neighbor_of = parameter:country }
+		}
+		modifier = {
+			factor = 0
+			this = { is_domineering_to = parameter:country } 
+		}
+		
+		
+		modifier = {
+			factor = 1.5
+			this =  { is_patronizing_to = parameter:country }
+		}		
+		
+	}
+	
+	## end of file
+	
+}
+ 
+

@@ -171,3 +171,18 @@ Version 102.0.1
 * Most hostile space monsters now remain a threat until much later.
 * Mining drones should now procreate very rapidly when they have live space stations; individual drones have had their health halved as a result.
 * Fallen Empire ships buffed. They're pretty scary now.
+
+110.0.8
+
+* Added the Novel Wargoals mod by Jormarn.
+* Made empire init for early game a bit easier for the AI's sake (some extra Tritanium and power for free)
+* Tweaked where the AI builds banks
+* Added Genemodfix by Sledjer.
+* Meddled with the avbailability of certain Vast deposits on certain planet types (so Arctic is unlikely to have rich farmland)
+* Fixed Basic Science Lab localization (at last)
+* Arrested Development Leaders now only suffer -25% xp gain rather than -100%
+* Eager leaders now get +25% xp gain rather than the now-useless recruitment cost reduction.
+* upper-tier building costs increased a great deal (now doubles every level) so that it's closer to the actual progression of income - this WILL change later as I get more late-game balance feedback.
+* Reworked ground combat and armies. Ground combat will be quite slow early on but will speed up as more powerful units appear, and there is a substantial tech 'gap' now - you do NOT want to be sending regular troops against Space Marines or xenomorphs now.
+* Armies now consume Population to create. De-queuing an army will restore the pop, unless it's space marines (who cannot be re-integrated). Robot, droid, clone and xenomorph armies don't conume any.
+
