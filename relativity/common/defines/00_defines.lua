@@ -828,7 +828,7 @@ NDefines = {
 		BASE_DAMAGE_MAX					= 3.0,				-- Base max damage
 
 		BASE_MORALE						= 200.0,			-- Base morale
-		MORALE_DAMAGE_MULT				= 1.0,				-- Morale Damage Multiplier, how much of damage is also dealt to morale.
+		MORALE_DAMAGE_MULT				= 0,				-- Morale Damage Multiplier, how much of damage is also dealt to morale.
 		MONTHLY_MORALE_REGENERATION		= 0.4,				-- How much morale this unit regenerates each month, percentage of max value.
 
 		EXP_EXPERIENCED					= 100,				-- Amount of exp to reach experienced rank

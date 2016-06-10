@@ -193,3 +193,7 @@ Version 102.0.1
 * Weapon prices updated so that more advanced and bigger ships get much, much more expensive.
 * Substantially increased build time for bigger ships. It now takes nearly 3 years to build a battleship and over 5 for a dreadnaught.
 
+110.0.9
+
+* Added new building icons by Brokensky.
+
