@@ -166,7 +166,7 @@ pretender = {
 			}
 		
 			effect = {
-				add_support = -0.20
+				add_support = -0.25
 			}
 
 			ai_weight = {

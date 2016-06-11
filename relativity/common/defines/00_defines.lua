@@ -778,7 +778,7 @@ NDefines = {
 		WAS_ENSLAVED_LENGTH_DAYS			= 3650,		-- Number of days after emancipation a pop is angry for being enslaved
 		
 		GROWTH_BASE							= 40,	-- Required growth for a pop to become fully grown.
-		GROWTH_INCREASE_PER_POP 			= 0,	-- Increased growth cost per pop planet [+ POP_INCREASE_PER_POP*(num_pop - 1)]
+		GROWTH_INCREASE_PER_POP 			= -2,	-- Increased growth cost per pop planet [+ POP_INCREASE_PER_POP*(num_pop - 1)]
 		GROWTH_INCREASE_FACTOR 				= 1,	-- Increased growth factor [+ (num_pop - 1)^POP_INCREASE_FACTOR]
 		FALLEN_EMPIRE_GROWTH_REQ_MULT		= 40,	-- Fallen Empire pops need this much more food for growth
 		

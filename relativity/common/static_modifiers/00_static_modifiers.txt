@@ -774,7 +774,6 @@ distance_from_capital = {
 }
 
 managed_by_sector = {
-	pop_ethic_shift = 0.1
 }
 
 migrating_forests = {
@@ -1012,12 +1011,6 @@ holy_planet = {
 }
 
 disconnected_from_sector = {
-	tile_resource_energy_mult = -0.25
-	tile_resource_minerals_mult = -0.25
-	tile_resource_physics_research_mult = -0.25
-	tile_resource_society_research_mult = -0.25
-	tile_resource_engineering_research_mult = -0.25
-	
 	icon = "gfx/interface/icons/planet_modifiers/pm_planet_from_space.dds"
 	icon_frame = 3
 }

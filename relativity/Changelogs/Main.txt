@@ -202,7 +202,7 @@ Version 102.0.1
 * Xenomorph and Gene warrior armies need 10 years to build
 * Titanic Life army count now reduces by 1 every 5 years (to a min of 0); this should mean that even if they get wiped out you can build a new one every 5 years afterwards
 * Building and upgrading Space Ports is now slower
-* Planets can now have 50 armies per planet (you'r elimited in other ways).
+* Planets can now have 50 armies per planet (you're limited in other ways).
 * Now 50 year cooldown on government changes
 * Government changes no longer cost inf
 * You now get 20 free pops before tech costs begin to increase (up from 10)
@@ -220,3 +220,10 @@ Version 102.0.1
 * Destroyer evasion buffed.
 * Dreadnaught evasion nerfed.
 * Buffed Health as a portion of military power.
+* Emergency election costs removed.
+* Larger populations now breed more rapidly than smaller ones.
+* Belonging to a sector no longer impacts Ethics Divergence (distance from capital still does)
+* Removed more inf costs from Edicts
+* Hangars now produce 8 fighters/bombers each (up from 4).
+* Added T2 mineral processor icons by myself - if anyone wants to replace these with something better, do feel free.
+

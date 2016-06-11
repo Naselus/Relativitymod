@@ -325,7 +325,7 @@ planet_separatists = {
 			}
 		
 			effect = {
-				add_support = -0.10
+				add_support = -0.25
 			}
 
 			ai_weight = {

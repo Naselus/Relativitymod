@@ -9,7 +9,7 @@ strike_craft_component_template = {
 	power = -20
 	cost = 20
 	
-	count = 4
+	count = 8
 	regeneration_per_day = 0.034
 	launch_time = 5.0
 	
@@ -48,7 +48,7 @@ strike_craft_component_template = {
 	power = -30
 	cost = 30
 	
-	count = 4
+	count = 8
 	regeneration_per_day = 0.034
 	launch_time = 5.0
 	
@@ -88,7 +88,7 @@ strike_craft_component_template = {
 	power = -40
 	cost = 40
 	
-	count = 4
+	count = 8
 	regeneration_per_day = 0.034
 	launch_time = 5.0
 	
@@ -128,7 +128,7 @@ strike_craft_component_template = {
 	power = -50
 	cost = 50
 	
-	count = 4
+	count = 8
 	regeneration_per_day = 0.034
 	launch_time = 5.0
 	
@@ -165,7 +165,7 @@ strike_craft_component_template = {
 	power = -30
 	cost = 30
 		
-	count = 4
+	count = 8
 	regeneration_per_day = 0.034
 	launch_time = 5.0
 	
@@ -205,7 +205,7 @@ strike_craft_component_template = {
 	power = -40
 	cost = 40
 		
-	count = 4
+	count = 8
 	regeneration_per_day = 0.034
 	launch_time = 5.0
 	
@@ -245,7 +245,7 @@ strike_craft_component_template = {
 	power = -50
 	cost = 50
 		
-	count = 4
+	count = 8
 	regeneration_per_day = 0.034
 	launch_time = 5.0
 	

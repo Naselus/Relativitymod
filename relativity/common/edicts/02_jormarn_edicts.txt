@@ -14,12 +14,12 @@
 #  length, number of days the trigger is active.
 
 # Sets the edict-cost for all edicts with this variable
-@standardEdictCost = 150
+@standardEdictCost = 00
 
 
 planet_edict = {
 	name = "slave_target"
-	influence_cost = 25
+	influence_cost = 0
 
 	modifier = {
 		planet_migration_all_pull	= -0.1
