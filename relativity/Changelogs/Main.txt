@@ -196,4 +196,27 @@ Version 102.0.1
 110.0.9
 
 * Added new building icons by Brokensky.
-
+* Betharian Powerplant no longer eroneously appears on Betharian Mining tech.
+* Removed automatic morale damage from health damage (all armies now have their own morale damage output)
+* Clone armies now have identical stats to Assault armies, don't consume a pop and need 5 years to build.
+* Xenomorph and Gene warrior armies need 10 years to build
+* Titanic Life army count now reduces by 1 every 5 years (to a min of 0); this should mean that even if they get wiped out you can build a new one every 5 years afterwards
+* Building and upgrading Space Ports is now slower
+* Planets can now have 50 armies per planet (you'r elimited in other ways).
+* Now 50 year cooldown on government changes
+* Government changes no longer cost inf
+* You now get 20 free pops before tech costs begin to increase (up from 10)
+* Slight nerf to cost increase per POP
+* Now takes 25 years before you can begin integrating a subject
+* Subject integration slowed 50%
+* Can now attempt integration of upto 5 subjects at once (because you're likey to need to with the above restrictions)
+* A bunch of AI work to try and encourage it to build Frontier Outposts more
+* Armies now gain experience faster
+* Small PD range has been nerfed. Ranges now go 4, 6 8. This makes PD3 more attractive (since it's better for protecting other ships)
+* Kinetics now have lower energy costs
+* autocannons buffed a bit
+* Bigger guns now have longer range, lower accuracy and some armour penetration. You'll need big guns to beat enemy big ships because of their disgustingly high health and armouir values. Smaller ships cannot become 'immune' to guns, but can evade better
+* Torpedo damage hugely buffed - they're now very good for using against big ships.
+* Destroyer evasion buffed.
+* Dreadnaught evasion nerfed.
+* Buffed Health as a portion of military power.

@@ -66,7 +66,7 @@ destroyer = {
 	combat_rotation_speed = @destroyer_combat_rotation
 	collision_radius = @destroyer_collision_radius
 	modifier = {
-		ship_evasion_mult = -0.2
+		ship_evasion_mult = -0.1
 		ship_armor_add = 9
 	}
 	max_hitpoints = 750
@@ -98,7 +98,7 @@ cruiser = {
 	combat_rotation_speed = @cruiser_combat_rotation
 	collision_radius = @cruiser_collision_radius
 	modifier = {
-		ship_evasion_mult = -0.4
+		ship_evasion_mult = -0.3
 		ship_armor_add = 20
 	}
 	max_hitpoints = 1800
@@ -130,7 +130,7 @@ battleship = {
 	combat_rotation_speed = @battleship_combat_rotation
 	collision_radius = @battleship_collision_radius
 	modifier = {
-		ship_evasion_mult = -0.6
+		ship_evasion_mult = -0.8
 		ship_armor_add = 40
 	}
 	max_hitpoints = 4000

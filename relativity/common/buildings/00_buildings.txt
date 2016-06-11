@@ -291,7 +291,7 @@ betharian_power_plant_1 = {
 	}
 	
 	prerequisites = {
-		"tech_mine_betharian" "tech_power_plant_6"
+		"tech_power_plant_6"
 	}
 	
 	allow = {

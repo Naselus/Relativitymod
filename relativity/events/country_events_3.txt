@@ -1,0 +1,23 @@
+namespace = country
+
+country_event = {
+	id = country.2000
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	trigger ={
+			check_variable = {
+						which = "titanic_life_soldier_count" 
+						value > 0
+					}
+	}
+	
+
+	immediate = {
+			change_variable = {
+				which = "titanic_life_soldier_count" 
+				value = -1
+			}
+	}
+}

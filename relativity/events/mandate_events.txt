@@ -188,20 +188,14 @@ country_event = {
 						from = {
 							is_ship_size = outpost_station
 							orbit = {
-								OR = {
 									has_resource = {
-										type = energy
-										amount > 0
-									}
-									has_resource = {
-										type = minerals
+										type = sr_steel
 										amount > 0
 									}
 								}
 							}
 						}
 					}
-				}
 				has_event_chain = mandate_miner_chain
 			}
 			add_event_chain_counter = { 
@@ -314,14 +308,10 @@ ship_event = {
 					from = { #Check if you built an orbital station and if it doesn't qualify to mine the right resources
 						has_mining_station = no
 						NOT = {
-							has_resource = {
-								type = energy
-								amount > 0
-							}
-							has_resource = {
-								type = minerals
-								amount > 0
-							}
+									has_resource = {
+										type = sr_steel
+										amount > 0
+									}
 						}
 					}
 				}
