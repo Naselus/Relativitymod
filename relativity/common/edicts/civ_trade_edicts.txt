@@ -14,7 +14,7 @@
 #  length, number of days the trigger is active.
 
 # Sets the edict-cost for all edicts with this variable
-@standardEdictCost = 150
+@standardEdictCost = 0
 
 
 
@@ -44,7 +44,7 @@ planet_edict = {
 
 planet_edict = {
 	name = "mineral_focus"
-	influence_cost = 50
+	influence_cost = 0
 	modifier = {
 		}
 	potential = {
@@ -72,7 +72,7 @@ planet_edict = {
 }
 planet_edict = {
 	name = "energy_focus"
-	influence_cost = 50
+	influence_cost = 0
 	modifier = {
 		}
 	potential = {
@@ -98,7 +98,7 @@ planet_edict = {
 }
 planet_edict = {
 	name = "food_focus"
-	influence_cost = 50
+	influence_cost = 0
 	modifier = {
 		}
 	potential = {

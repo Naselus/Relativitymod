@@ -259,3 +259,8 @@ Version 102.0.1
 * Tile Blocker tech progress now staggered a lot more.
 * All influence rewards in events switched to credits
 * Removed influence cost to supress nationalists.
+
+
+110.0.92
+
+* Removed influence costs from Civilian Trade edicts
