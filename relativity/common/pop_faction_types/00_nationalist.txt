@@ -394,7 +394,6 @@ nationalist = {
 
 			cost = {
 				energy = 400
-				influence = 50
 			}
 
 			effect = {
@@ -432,7 +431,6 @@ nationalist = {
 		
 			cost = {
 				energy = 200
-				influence = 200
 			}
 		
 			effect = {

@@ -2449,7 +2449,7 @@ ship_event = {
 			#	max = @tier1materialmax
 			#}
 			add_monthly_resource_mult = {
-				resource = influence
+				resource = energy
 				value = @tier4influencereward
 				min = @tier4influencemin
 				max = @tier4influencemax

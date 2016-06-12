@@ -1841,7 +1841,7 @@ country_event = {
 			max = @tier1materialmax
 		}
 		add_monthly_resource_mult = {
-			resource = influence
+			resource = energy
 			value = @tier1influencereward
 			min = @tier1influencemin
 			max = @tier1influencemax

@@ -184,7 +184,7 @@ country_event = {
 			}
 		}
 		add_monthly_resource_mult = {
-			resource = influence
+			resource = energy
 			value = @tier1influencereward
 			min = @tier1influencemin
 			max = @tier1influencemax
@@ -195,7 +195,7 @@ country_event = {
 		name = country.999.a.pac
 		trigger = { has_ethic = ethic_fanatic_pacifist }
 		add_monthly_resource_mult = {
-			resource = influence
+			resource = energy
 			value = @tier1influencereward
 			min = @tier1influencemin
 			max = @tier1influencemax
@@ -233,7 +233,7 @@ country_event = {
 		name = country.999.a.phile
 		trigger = { has_ethic = ethic_fanatic_xenophile }
 		add_monthly_resource_mult = {
-			resource = influence
+			resource = energy
 			value = @tier1influencereward
 			min = @tier1influencemin
 			max = @tier1influencemax
@@ -2992,7 +2992,7 @@ country_event = {
 	option = {
 		name = "country.1157.b"
 		add_monthly_resource_mult = {
-			resource = influence
+			resource = energy
 			value = @tier2influencereward
 			min = @tier2influencemin
 			max = @tier2influencemax

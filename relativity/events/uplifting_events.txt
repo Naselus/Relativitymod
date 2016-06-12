@@ -2236,7 +2236,7 @@ planet_event = {
 				max = @tier2researchmax
 			}
 			add_monthly_resource_mult = {
-				resource = influence
+				resource = energy
 				value = @tier2influencereward
 				min = @tier2influencemin
 				max = @tier2influencemax
@@ -2297,7 +2297,7 @@ planet_event = {
 		}
 		owner = {
 			add_monthly_resource_mult = {
-				resource = influence
+				resource = energy
 				value = @tier1influencereward
 				min = @tier1influencemin
 				max = @tier1influencemax

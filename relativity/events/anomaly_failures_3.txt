@@ -588,7 +588,7 @@ country_event = {
 	option = {
 		name = UNFORTUNATE
 		add_monthly_resource_mult = {
-			resource = influence
+			resource = energy
 			value = @tier2influencereward
 			min = @tier2influencemin
 			max = @tier2influencemax
@@ -743,7 +743,7 @@ country_event = {
 			has_technology = tech_biolab_3
 		}
 		add_monthly_resource_mult = {
-			resource = influence
+			resource = energy
 			value = @tier1influencereward
 			min = @tier1influencemin
 			max = @tier1influencemax
