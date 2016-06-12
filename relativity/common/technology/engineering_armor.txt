@@ -267,7 +267,7 @@ tech_ship_armor_6 = {
 	tier = 2
 	category = { armor }
 	prerequisites = { "tech_ship_armor_5"}	
-	weight = @tier2weight1
+	weight = 0
 	
 	modifier = {
 		ship_armor_mult = 0.05

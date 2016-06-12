@@ -280,7 +280,7 @@ tech_xenology_4 = {
 	tier = 2
 	category = { xenology }
 	prerequisites = { "tech_xeno_integration" }
-	weight = @tier2weight1
+	weight = 0
 	
 	
 	

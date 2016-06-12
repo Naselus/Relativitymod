@@ -174,7 +174,7 @@ tech_colonial_centralization = {
 	area = society
 	tier = 1
 	category = { statecraft }
-	prerequisites = { "tech_planetary_unification" }
+	prerequisites = { "tech_planetary_unification" "tech_adaptive_bureaucracy"}
 	weight = @tier1weight4
 	
 	# unlocks Planetary Capital
@@ -306,7 +306,7 @@ tech_living_state = {
 	area = society
 	tier = 2
 	category = { statecraft }
-	prerequisites = { "tech_colonial_centralization" }
+	prerequisites = { "tech_colonial_centralization" "tech_adaptive_bureaucracy"}
 	weight = @tier2weight2
 	
 	modifier = {
@@ -364,7 +364,7 @@ tech_collective_self = {
 	area = society
 	tier = 3
 	category = { statecraft }
-	prerequisites = { "tech_living_state" }
+	prerequisites = { "tech_living_state" "tech_galactic_administration" }
 	weight = @tier3weight2
 	
 	modifier = {

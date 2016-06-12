@@ -283,6 +283,7 @@ tech_artificial_moral_codes = {
 	tier = 2
 	category = { social_engineering }
 	weight = @tier2weight3
+	prerequisites = { "tech_galactic_administration" }
 	
 	modifier = {
 		pop_resettlement_cost_mult = -0.1
@@ -473,7 +474,7 @@ tech_social_engineering_6 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { social_engineering }
-	prerequisites = { "tech_purity_campaigns" }	
+	prerequisites = { "tech_galactic_administration" }
 	weight = @tier2weight1
 		modifier = {	
 		pop_ethic_shift = -0.03	

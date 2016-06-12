@@ -104,7 +104,8 @@
 # Spaceport
 tech_spaceport_1 = {
 	cost = 0
-	area = engineering	start_tech = yes
+	area = engineering
+	start_tech = yes
 	category = { spaceport_expansion }
 	tier = 0
 	
@@ -138,12 +139,6 @@ tech_spaceport_2 = {
 	weight = @tier1weight3
 	
 	#Unlock DDs
-	
-	modifier = {
-		max_minerals = 2000
-	}
-	
-	feature_flags = { spaceport_level_2 }
 	
 	weight_modifier = {
 		modifier = {
@@ -194,18 +189,8 @@ tech_spaceport_3 = {
 	weight = @tier2weight1
 	
 	## unlock cruiser
-	prereqfor_desc = {
-		ship = {
-			title = "TECH_UNLOCK_DESTROYER_CONSTRUCTION_TITLE"
-			desc = "TECH_UNLOCK_DESTROYER_CONSTRUCTION_DESC"
-		}
-	}
-	
-	modifier = {
-		max_minerals = 2000
-	}
-	
-	feature_flags = { spaceport_level_3 }
+	feature_flags = { spaceport_level_2 }	
+
 	
 	weight_modifier = {
 		modifier = {
@@ -261,11 +246,7 @@ tech_spaceport_4 = {
 		
 	#Unlock BCs	
 		
-	modifier = {
-		max_minerals = 2000
-	}		
-		
-	feature_flags = { spaceport_level_4 }
+
 	
 	weight_modifier = {
 		modifier = {
@@ -320,18 +301,8 @@ tech_spaceport_5 = {
 	weight = @tier2weight4	
 		
 	## unlock BBs and CV tech
-	prereqfor_desc = {
-		ship = {
-			title = "TECH_UNLOCK_CRUISER_CONSTRUCTION_TITLE"
-			desc = "TECH_UNLOCK_CRUISER_CONSTRUCTION_DESC"
-		}
-	}
-	
-	modifier = {
-		max_minerals = 2000
-	}	
-	
-	feature_flags = { spaceport_level_5 }
+
+	feature_flags = { spaceport_level_3 }
 	
 	weight_modifier = {
 		modifier = {
@@ -386,18 +357,8 @@ tech_spaceport_6 = {
 	weight = @tier3weight2
 		
 	## unlock DN tech	
-	prereqfor_desc = {
-		ship = {
-			title = "TECH_UNLOCK_BATTLESHIP_CONSTRUCTION_TITLE"
-			desc = "TECH_UNLOCK_BATTLESHIP_CONSTRUCTION_DESC"
-		}
-	}
 	
-	modifier = {
-		max_minerals = 2000
-	}
-	
-	feature_flags = { spaceport_level_6 }
+
 	
 	weight_modifier = {
 		modifier = {
@@ -451,12 +412,8 @@ tech_spaceport_7 = {
 	prerequisites = { "tech_spaceport_6"}	
 	weight = @tier3weight4
 	
+	feature_flags = { spaceport_level_4 }	
 	
-	
-	modifier = {
-		spaceport_ship_build_cost_mult = -0.03
-		planet_ship_build_speed_mult = -0.03
-	}
 	
 	weight_modifier = {
 		modifier = {
@@ -511,11 +468,6 @@ tech_spaceport_8 = {
 	weight = @tier4weight1
 	
 	
-	modifier = {
-		spaceport_ship_build_cost_mult = -0.03
-		planet_ship_build_speed_mult = -0.03
-	}
-	
 	weight_modifier = {
 		modifier = {
 			factor = 0.1
@@ -568,11 +520,8 @@ tech_spaceport_9 = {
 	prerequisites = { "tech_spaceport_8"}	
 	weight = @tier4weight2
 	
-	
-	modifier = {
-		spaceport_ship_build_cost_mult = -0.03
-		planet_ship_build_speed_mult = -0.03
-	}
+	feature_flags = { spaceport_level_5 }	
+
 	
 	weight_modifier = {
 		modifier = {
@@ -627,10 +576,6 @@ tech_spaceport_10 = {
 	weight = @tier4weight3
 	
 	
-	modifier = {
-		spaceport_ship_build_cost_mult = -0.03
-		planet_ship_build_speed_mult = -0.03
-	}
 	
 	weight_modifier = {
 		modifier = {
@@ -684,11 +629,8 @@ tech_spaceport_11 = {
 	prerequisites = { "tech_spaceport_10"}	
 	weight = @tier4weight4
 	
-	
-	modifier = {
-		spaceport_ship_build_cost_mult = -0.03
-		planet_ship_build_speed_mult = -0.03
-	}
+	feature_flags = { spaceport_level_6 }	
+
 	
 	weight_modifier = {
 		modifier = {
@@ -740,149 +682,57 @@ tech_spaceport_12 = {
 	tier = 2
 	category = { spaceport_expansion }
 	prerequisites = { "tech_spaceport_11"}	
+	weight = 1
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0.1
+			NOT = { years_passed > 50 }
+		}	
+		modifier = {
+			factor = 10
+			any_neighbor_country = {
+				has_technology = tech_spaceport_7
+			}
+		}
+		modifier = {
+			factor = 2
+			years_passed > 70
+		}
+		modifier = {
+			factor = 3
+			years_passed > 75
+		}
+		modifier = {
+			factor = 4
+			years_passed > 80
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_spaceport_expansion"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 2
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_spaceport_expansion"
+			}
+		}
+	}
+}
+
+tech_solar_panel_network = { #unused; spawns an error if absent
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { spaceport_expansion }
+	prerequisites = { "tech_spaceport_11"}	
 	weight = 0
-	
-	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
-}
-
-tech_spaceport_13 = {
-	area = engineering
-	cost = @tier2cost1
-	tier = 2
-	category = { spaceport_expansion }
-	prerequisites = { "tech_spaceport_12"}	
-	weight = @tier2weight1
-	
-	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
-}
-
-tech_spaceport_14 = {
-	area = engineering
-	cost = @tier2cost1
-	tier = 2
-	category = { spaceport_expansion }
-	prerequisites = { "tech_spaceport_13"}	
-	weight = @tier2weight1
-	
-	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
-}
-
-tech_spaceport_15 = {
-	area = engineering
-	cost = @tier2cost1
-	tier = 2
-	category = { spaceport_expansion }
-	prerequisites = { "tech_spaceport_14"}	
-	weight = @tier2weight1
-	
-	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
-}
-
-tech_spaceport_16 = {
-	area = engineering
-	cost = @tier2cost1
-	tier = 2
-	category = { spaceport_expansion }
-	prerequisites = { "tech_spaceport_15"}	
-	weight = @tier2weight1
-	
-	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
-}
-
-tech_spaceport_17 = {
-	area = engineering
-	cost = @tier2cost1
-	tier = 2
-	category = { spaceport_expansion }
-	prerequisites = { "tech_spaceport_16"}	
-	weight = @tier2weight1
-	
-	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
-}
-
-tech_spaceport_18 = {
-	area = engineering
-	cost = @tier2cost1
-	tier = 2
-	category = { spaceport_expansion }
-	prerequisites = { "tech_spaceport_17"}	
-	weight = @tier2weight1
-	
-	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
-}
-
-tech_spaceport_19 = {
-	area = engineering
-	cost = @tier2cost1
-	tier = 2
-	category = { spaceport_expansion }
-	prerequisites = { "tech_spaceport_18"}	
-	weight = @tier2weight1
-	
-	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
-}
-
-tech_spaceport_20 = {
-	area = engineering
-	cost = @tier2cost1
-	tier = 2
-	category = { spaceport_expansion }
-	prerequisites = { "tech_spaceport_19"}	
-	weight = @tier2weight1
-	
-	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
 }

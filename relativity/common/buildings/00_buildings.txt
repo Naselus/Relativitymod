@@ -502,7 +502,7 @@ building_power_hub_1 = {
 building_power_hub_2 = {
 	base_buildtime = @b3time
 	is_listed = no
-	planet_unique = yes
+
 	
 	cost = {
 		minerals = 250
@@ -953,7 +953,7 @@ building_mining_network_3 = {
 	}
 	
 	required_resources = {
-		sr_plasma2 = 1
+		sr_plasma = 1
 	}
 	
 	upgrades = {
@@ -990,7 +990,7 @@ building_mining_network_4 = {
 	}
 	
 	required_resources = {
-		sr_plasma3 = 1
+		sr_plasma = 1
 	}
 	
 	upgrades = {
@@ -1024,7 +1024,7 @@ building_mining_network_5 = {
 	}
 	
 	required_resources = {
-		sr_plasma3 = 1
+		sr_plasma = 1
 	}
 	
 	prerequisites = {
@@ -1048,7 +1048,7 @@ building_mineral_processing_plant_1T1 = {
 	}
 	
 	planet_modifier  = {
-		tile_resource_minerals_mult = 0.10
+		tile_resource_minerals_mult = 0.05
 	}
 	
 	required_resources = {
@@ -1095,7 +1095,7 @@ building_mineral_processing_plant_2T1 = {
 	}
 	
 	planet_modifier  = {
-		tile_resource_minerals_mult = 0.15
+		tile_resource_minerals_mult = 0.05
 	}
 	
 	required_resources = {
@@ -1139,7 +1139,7 @@ building_mineral_processing_plant_3T1 = {
 	}
 	
 	planet_modifier  = {
-		tile_resource_minerals_mult = 0.15
+		tile_resource_minerals_mult = 0.05
 	}
 	
 	required_resources = {
@@ -1185,7 +1185,7 @@ building_mineral_processing_plant_4T1 = {
 	}
 	
 	planet_modifier  = {
-		tile_resource_minerals_mult = 0.15
+		tile_resource_minerals_mult = 0.05
 	}
 	
 	required_resources = {
@@ -1231,7 +1231,7 @@ building_mineral_processing_plant_5T1 = {
 	}
 	
 	planet_modifier  = {
-		tile_resource_minerals_mult = 0.15
+		tile_resource_minerals_mult = 0.05
 	}
 	
 	required_resources = {
@@ -3112,7 +3112,7 @@ building_mining2_network_1 = {
 	}
 
 	required_resources = {
-		sr_plasma = 1
+		sr_plasma2 = 1
 	}	
 	
 	upgrades = {
@@ -3240,7 +3240,7 @@ building_mining2_network_4 = {
 	}
 	
 	required_resources = {
-		sr_plasma3 = 1
+		sr_plasma2 = 1
 	}
 	
 	upgrades = {
@@ -3275,7 +3275,7 @@ building_mining2_network_5 = {
 	}
 	
 	required_resources = {
-		sr_plasma3 = 1
+		sr_plasma2 = 1
 	}
 	
 	prerequisites = {
@@ -3296,7 +3296,7 @@ building_mining3_network_1 = {
 	}
 
 	required_resources = {
-		sr_plasma = 1
+		sr_plasma3 = 1
 	}	
 	
 	upgrades = {
@@ -3348,7 +3348,7 @@ building_mining3_network_2 = {
 	}
 	
 	required_resources = {
-		sr_plasma2 = 1
+		sr_plasma3 = 1
 	}
 	
 	upgrades = {
@@ -3386,7 +3386,7 @@ building_mining3_network_3 = {
 	}
 	
 	required_resources = {
-		sr_plasma2 = 1
+		sr_plasma3 = 1
 	}
 	
 	upgrades = {
@@ -3495,7 +3495,7 @@ building_mineral_processing_plant_1T2 = {
 	}
 	
 	planet_modifier  = {
-		tile_resource_minerals_mult = 0.10
+		tile_resource_minerals_mult = 0.05
 	}
 	
 	required_resources = {
@@ -3542,7 +3542,7 @@ building_mineral_processing_plant_2T2 = {
 	}
 	
 	planet_modifier  = {
-		tile_resource_minerals_mult = 0.15
+		tile_resource_minerals_mult = 0.05
 	}
 	
 	required_resources = {
@@ -3586,7 +3586,7 @@ building_mineral_processing_plant_3T2 = {
 	}
 	
 	planet_modifier  = {
-		tile_resource_minerals_mult = 0.15
+		tile_resource_minerals_mult = 0.05
 	}
 	
 	required_resources = {
@@ -3632,7 +3632,7 @@ building_mineral_processing_plant_4T2 = {
 	}
 	
 	planet_modifier  = {
-		tile_resource_minerals_mult = 0.15
+		tile_resource_minerals_mult = 0.05
 	}
 	
 	required_resources = {
@@ -3678,7 +3678,7 @@ building_mineral_processing_plant_5T2 = {
 	}
 	
 	planet_modifier  = {
-		tile_resource_minerals_mult = 0.15
+		tile_resource_minerals_mult = 0.05
 	}
 	
 	required_resources = {
@@ -3719,7 +3719,7 @@ building_mineral_processing_plant_1T3 = {
 	}
 	
 	planet_modifier  = {
-		tile_resource_minerals_mult = 0.10
+		tile_resource_minerals_mult = 0.05
 	}
 	
 	required_resources = {
@@ -3766,7 +3766,7 @@ building_mineral_processing_plant_2T3 = {
 	}
 	
 	planet_modifier  = {
-		tile_resource_minerals_mult = 0.15
+		tile_resource_minerals_mult = 0.05
 	}
 	
 	required_resources = {
@@ -3810,7 +3810,7 @@ building_mineral_processing_plant_3T3 = {
 	}
 	
 	planet_modifier  = {
-		tile_resource_minerals_mult = 0.15
+		tile_resource_minerals_mult = 0.05
 	}
 	
 	required_resources = {
@@ -3856,7 +3856,7 @@ building_mineral_processing_plant_4T3 = {
 	}
 	
 	planet_modifier  = {
-		tile_resource_minerals_mult = 0.15
+		tile_resource_minerals_mult = 0.05
 	}
 	
 	required_resources = {
@@ -3902,7 +3902,7 @@ building_mineral_processing_plant_5T3 = {
 	}
 	
 	planet_modifier  = {
-		tile_resource_minerals_mult = 0.15
+		tile_resource_minerals_mult = 0.05
 	}
 	
 	required_resources = {
@@ -4014,7 +4014,7 @@ building_bank_3 = {
 	}
 
 	required_resources = {
-		sr_plasma2 = 1
+		sr_plasma = 1
 	}
 	
 	prerequisites = {
@@ -4054,7 +4054,7 @@ building_bank_4 = {
 	}
 
 	required_resources = {
-		sr_plasma3 = 1
+		sr_plasma = 1
 	}	
 	
 	upgrades = {
@@ -4092,7 +4092,7 @@ building_bank_5 = {
 	}
 
 	required_resources = {
-		sr_plasma3 = 1
+		sr_plasma = 1
 	}	
 	
 	allow = {
@@ -4118,7 +4118,7 @@ building_basic_hospital = {
 	
 	planet_modifier = {
 		pop_growth_req_mult = -0.05
-		pop_happiness = 0.01
+		pop_happiness = 0.03
 	}
 	
 	upgrades = {
@@ -4153,7 +4153,7 @@ building_hospital_2 = {
 	
 	planet_modifier = {
 		pop_growth_req_mult = -0.1
-		pop_happiness = 0.02
+		pop_happiness = 0.06
 	}
 	
 	upgrades = {
@@ -4187,7 +4187,7 @@ building_hospital_3 = {
 	
 	planet_modifier = {
 		pop_growth_req_mult = -0.15
-		pop_happiness = 0.03
+		pop_happiness = 0.09
 	}
 	
 	upgrades = {
@@ -4222,7 +4222,7 @@ building_hospital_4 = {
 	
 	planet_modifier = {
 		pop_growth_req_mult = -0.20
-		pop_happiness = 0.04
+		pop_happiness = 0.12
 	}
 	
 	upgrades = {
@@ -4257,7 +4257,7 @@ building_hospital_5 = {
 	
 	planet_modifier = {
 		pop_growth_req_mult = -0.25
-		pop_happiness = 0.05
+		pop_happiness = 0.15
 	}
 	
 	prerequisites = {

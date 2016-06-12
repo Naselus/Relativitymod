@@ -1,0 +1,147 @@
+﻿l_english:
+
+ #############################
+ # Civilian Trade Events
+ #############################
+
+
+ civtrade.1.name:0 "Civilian Trade"
+ civtrade.1.desc:0 "After the successful establishment of the first [Root.Owner.GetSpeciesName] colony an intrepid and some would say foolhardy group of entrepreneurs on [Root.Capital.GetName] have set out on their first trade run to the outer colonies. \n\nThis is a monumental day for [Root.Owner.GetName] and will forever set the tone for future civilian endeavors in the depths of space."
+ # Options 
+ civtrade.1.a:0 "May their faith ever guide them on their journey."
+ civtrade.1.b:0 "Your permits seem to be in order. On your way." 
+ civtrade.1.c:0 "Independent action begets independent thought, be weary of your hubris." 
+ civtrade.1.d:0 "Advancement through ones own hands is a worthwhile endeavor."  
+ civtrade.1.e:0 "Your attempts at independent enterprise will not be tolerated."  
+ civtrade.1.f:0 "Keep your fees paid and taxes on time and there will be no problem."  
+ civtrade.1.g:0 "Freedom of movement and freedom of trade are hallmarks of our society."
+ civtrade.1.h:0 "Your permits seem to be in order. On your way."
+
+ civ.1.name:0 "The Greatest Show on any Earth!"
+ civ.1.desc:0 "After scouring the furthest reaches of known space, and some unknown, the great Kemplerer has recently unveiled his magnificent circus ship the Rosette! \n\nFilled to the brim with sights unseen and mysteries unsolved the many passageways of Rosette offer something for all ages, all species. \n\nWhenever Kemplerer and his Rosette are in system make sure to come aboard for the Galaxies Greatest Gala!"
+ # Options 
+ civ.1.a:0 "Let the show begin!"
+ 
+ #############################
+ # Civilian Trade effects
+ #############################
+  
+  
+ expanded_trade_network:0 "Expanded Trade Network"
+ expanded_trade_network_desc:0 "With increase compacity and infastructure this planet can get the most out of its traders."
+ trade_network:0 "Trade Network"
+ trade_network_desc:0 "Intergalactic traders have recently made a stop at this planet providing a small boost to its economy."
+ trade_network_minerals:0 "Trade Network"
+ trade_network_minerals_desc:0 "Intergalactic traders have recently made a stop at this planet providing a small boost to its economy."
+ trade_network_energy:0 "Trade Network"
+ trade_network_energy_desc:0 "Intergalactic traders have recently made a stop at this planet providing a small boost to its economy."  
+ trade_network_food:0 "Trade Network"
+ trade_network_food_desc:0 "Intergalactic traders have recently made a stop at this planet providing a small boost to its economy."
+ 
+ reduced_trade_network:0 "Reduced Trade Network"
+ reduced_trade_network_desc:0 "With increase compacity and infastructure this planet can get the most out of its traders. This effect has been reduced due to recent trade sanctions."
+ reduced_trade_network_minerals:0 "Reduced Trade Network"
+ reduced_trade_network_minerals_desc:0 "Intergalactic traders have recently made a stop at this planet providing a small boost to its economy. This effect has been reduced due to recent trade sanctions."
+ reduced_trade_network_energy:0 "Reduced Trade Network"
+ reduced_trade_network_energy_desc:0 "Intergalactic traders have recently made a stop at this planet providing a small boost to its economy. This effect has been reduced due to recent trade sanctions."  
+ reduced_trade_network_food:0 "Reduced Trade Network"
+ reduced_trade_network_food_desc:0 "Intergalactic traders have recently made a stop at this planet providing a small boost to its economy. This effect has been reduced due to recent trade sanctions."
+ 
+ circus_in_town:0 "Circus ship in system"
+ circus_in_town_desc: "Come one come all! The great Kemplerer Circus is in system. Come aboard and see what mesmerizing, fantastic, otherworldly and on occasion terrifying creatures and attractions wander the Rosette!"
+ 
+ #############################
+ # Civilian Trade personality
+ #############################
+ 
+ personality_civilian_traders:0 "Civilian Traders"
+ personality_civilian_traders_desc:0 "Civilian Traders making their rounds across your empire always looking to trade."
+ 
+ ####################################
+ # Edicts
+ #################################### 
+
+ # Planet Edicts
+ 
+ edict_trade_hub:0 "Trade Hub"
+ edict_trade_hub_desc:0 "Providing a suitable amount of amenities and space this planet attracts a larger amount of traders then most planets as well as being able to take advantage of their presence."
+ 
+ edict_mineral_focus:0 "Mineral Focus"
+ edict_mineral_focus_desc:0 "Instruct administrators to purchase minerals from the traders."
+ 
+ edict_energy_focus:0 "Energy Credits Focus"
+ edict_energy_focus_desc:0 "Instruct administrators to trade for energy credits."
+ 
+ edict_food_focus:0 "Food Focus"
+ edict_food_focus_desc:0 "Instruct administrators to purchase food from the traders."
+ 
+ # Country Edicts
+ 
+ edict_trade_subsidies:0 "Trade Subsidies"
+ edict_trade_subsidies_desc:0 "Feeling the need to give your traders a helping hand to get started you help them get started. Traders will be constructed more frequently."
+ 
+ ####################################
+ # Policies
+ #################################### 
+ 
+ policy_civilian_trade:0 "Civilian Trade"
+ policy_civilian_trade_desc:0 "Depending on how tightly you hold the reigns of trade the more or less traders your empire will produce."
+ 
+ unrestricted_trade:0 "Unrestricted"
+ unrestricted_trade_name: "Unrestricted Trade" 
+ unrestricted_trade_desc:0 "Prefering to take a hands off approach you let the markets decide their bounds."
+
+ restricted_trade:0 "Restricted"
+ restricted_trade_name:0 "Restricted Trade"
+ restricted_trade_desc:0 "Too much freedom of movement and freedom of trade is bad for the empire. No new traders are allowed and current operating traders will slowly be decomissioned. "
+
+ ####################################
+ # Hull Sizes
+ ####################################  
+ 
+ civilian_trade_freighter:0 "Civilian Freighter"
+ civilian_trade_freighter_plural:0 "Civilian Freighters"
+ civilian_trade_tanker:0 "Civilian Tanker"
+ civilian_trade_tanker_plural:0 "Civilian Tankers"
+ 
+ ####################################
+ # Technologies
+ ####################################  
+ 
+ tech_trade_facilities_one:0 "Trade Facilities I"
+ tech_trade_facilities_one_desc:0 "Putting some extra resources into publically available facilities and administrative costs we can increase the ammount of traders our civilians can send out."
+ tech_trade_facilities_two:0 "Trade Facilities II"
+ tech_trade_facilities_two_desc:0 "Putting some extra resources into publically available facilities and administrative costs we can increase the ammount of traders our civilians can send out."
+ tech_trade_facilities_three:0 "Trade Facilities III"
+ tech_trade_facilities_three_desc:0 "Putting some extra resources into publically available facilities and administrative costs we can increase the ammount of traders our civilians can send out."
+ 
+ TECH_UNLOCK_TRADE_FACILITIES_ONE_TITLE:0 "§HUnlocks Max Traders:§! 10 Traders"
+ TECH_UNLOCK_TRADE_FACILITIES_ONE_DESC:0 "§HMore Traders§!\nAllows us to increase the number of trade ships available to our civilians."
+ TECH_UNLOCK_TRADE_FACILITIES_TWO_TITLE:0 "§HUnlocks Max Traders:§! 20 Traders"
+ TECH_UNLOCK_TRADE_FACILITIES_TWO_DESC:0 "§HMore Traders§!\nAllows us to increase the number of trade ships available to our civilians."
+ TECH_UNLOCK_TRADE_FACILITIES_THREE_TITLE:0 "§HUnlocks Max Traders:§! 30 Traders"
+ TECH_UNLOCK_TRADE_FACILITIES_THREE_DESC:0 "§HMore Traders§!\nAllows us to increase the number of trade ships available to our civilians."
+ 
+ TECH_UNLOCK_TRADE_HUB_TITLE:0 "§HUnlocks Planetary Edict:§! Trade Hub"
+ TECH_UNLOCK_TRADE_HUB_DESC:0 "§HTrade Hub§!\nProviding a suitable amount of amenities and space this planet attracts a larger amount of traders then most planets as well as being able to take advantage of their presence."
+ 
+ ####################################
+ # Subjects
+ #################################### 
+ 
+ SUBJECT_traders:0 "Civilian Traders"
+ SUBJECT_DESC_traders:0 "Members of your population who have taken to the stars to trade."
+ 
+ ####################################
+ # War Demands
+ ####################################  
+  
+  
+ war_demand_trade_sanctions_header:1 "§HTrade Sanctions§!"
+ war_demand_trade_sanctions_subtext:0 "[parameter:country.GetName]"
+ war_demand_trade_sanctions_tooltip_header:0 "$war_demand_trade_sanctions_header$"
+ war_demand_trade_sanctions_tooltip_content:1 "[parameter:country.GetName] will have sanctions put on their trade network, restricting trade for 10 years and dampening its effects for 20."
+ war_demand_trade_sanctions_tooltip_proper_header:0 "$war_demand_trade_sanctions_header$"
+ war_demand_trade_sanctions_tooltip_proper_content:1 "$war_demand_trade_sanctions_tooltip_content$"
+ 
+ 

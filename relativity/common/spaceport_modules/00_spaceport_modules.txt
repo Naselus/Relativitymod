@@ -83,7 +83,7 @@ solar_panel_network = {
 	icon = "GFX_solar_panel_network"
 	section = "ASSEMBLYYARD_SPACEPORT_SECTION"
 	construction_days = 180
-	prerequisites = { "tech_solar_panel_network" }
+	prerequisites = { "tech_spaceport_2" }
 	spaceport_level = 1
 	
 	cost = {
@@ -169,14 +169,14 @@ hydroponic_farms = {
 	icon = "GFX_spaceport_module_hydroponic_farms"
 	section = "SCIENCE_SPACEPORT_SECTION"
 	construction_days = 180
-	prerequisites = { "tech_orbital_hydroponics" }
+	prerequisites = { "tech_spaceport_2" }
 	spaceport_level = 1
 	
 	cost = {
 		minerals = 100
 	}
 	
-	required_resources = {
+	produced_resources = {
 		sr_nutrients = 1
 	}
 	
@@ -399,8 +399,8 @@ destroyer_assembly_yards = {
 	icon = "GFX_spaceport_module_destroyer_assembly_yard"
 	section = "ASSEMBLYYARD_SPACEPORT_SECTION"
 	construction_days = 360
-	prerequisites = { "tech_spaceport_4" }
-	spaceport_level = 3
+	prerequisites = { "tech_spaceport_4" "tech_void_1" }
+	spaceport_level = 2
 	
 	cost = {
 		minerals = 300
@@ -419,7 +419,6 @@ destroyer_assembly_yards = {
 		modifier = {
 			weight = 0
 			OR = {
-				has_technology = tech_spaceport_4
 				has_technology = tech_spaceport_5
 				has_technology = tech_spaceport_6
 			}
@@ -479,6 +478,27 @@ pioneering_terminal = {
 	planet_modifier = {
 			pop_migration_time = -0.25
 	}
+}
+
+cruiser_assembly_yards = {
+	icon = "GFX_spaceport_module_cruiser_assembly_yard"
+	section = "ASSEMBLYYARD_SPACEPORT_SECTION"
+	construction_days = 360
+	prerequisites = { "tech_spaceport_6" "tech_void_2" }
+	spaceport_level = 3
+	
+	cost = {
+		minerals = 400
+	}
+	
+	required_resources = {
+		energy = 3
+	}
+	
+	modifier = {
+		shipsize_cruiser_construction_speed_mult = 0.25
+		shipsize_cruiser_build_cost_mult = -0.10
+	}	
 }
 
 #################
@@ -560,16 +580,12 @@ dark_matter_factory = {
 	}	
 }
 
-#################
-#### LEVEL 5 ####
-#################
-
-cruiser_assembly_yards = {
+bcruiser_assembly_yards = {
 	icon = "GFX_spaceport_module_cruiser_assembly_yard"
 	section = "ASSEMBLYYARD_SPACEPORT_SECTION"
 	construction_days = 360
-	prerequisites = { "tech_cruiser_yard" }
-	spaceport_level = 5
+	prerequisites = { "tech_spaceport_8" "tech_void_3" }
+	spaceport_level = 4
 	
 	cost = {
 		minerals = 400
@@ -584,6 +600,14 @@ cruiser_assembly_yards = {
 		shipsize_cruiser_build_cost_mult = -0.10
 	}	
 }
+
+
+
+#################
+#### LEVEL 5 ####
+#################
+
+
 
 neutronium_forge = {
 	icon = "GFX_spaceport_module_neutronium_forge"
@@ -656,15 +680,36 @@ orbital_mind_control_laser = {
 	}	
 }
 
-#################
-#### LEVEL 6 ####
-#################
-
 battleship_assembly_yards = {
 	icon = "GFX_spaceport_module_battleship_assembly_yard"
 	section = "ASSEMBLYYARD_SPACEPORT_SECTION"
 	construction_days = 180
-	prerequisites = { "tech_battleship_yard" }
+	prerequisites = { "tech_spaceport_10" "tech_void_4" }
+	spaceport_level = 6
+	
+	cost = {
+		minerals = 500
+	}	
+	
+	required_resources = {
+		energy = 4
+	}
+	
+	modifier = {
+		shipsize_battleship_construction_speed_mult = 0.25
+		shipsize_battleship_build_cost_mult = -0.10
+	}
+}
+
+#################
+#### LEVEL 6 ####
+#################
+
+dreadnaught_assembly_yards = {
+	icon = "GFX_spaceport_module_battleship_assembly_yard"
+	section = "ASSEMBLYYARD_SPACEPORT_SECTION"
+	construction_days = 180
+	prerequisites = { "tech_spaceport_12" "tech_void_5" }
 	spaceport_level = 6
 	
 	cost = {

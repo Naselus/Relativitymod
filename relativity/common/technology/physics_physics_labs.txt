@@ -161,7 +161,7 @@ tech_physics_lab_2 = {
 	weight = @tier1weight3
 	
 	modifier = {
-		country_physics_tech_research_speed = 0.05
+		country_physics_tech_research_speed = 0.03
 	}
 	
 	ai_weight = {
@@ -181,7 +181,7 @@ tech_physics_lab_3 = {
 	weight = @tier1weight4
 	
 	modifier = {
-		country_physics_tech_research_speed = 0.05
+		country_physics_tech_research_speed = 0.03
 	}
 	
 	ai_weight = {
@@ -262,7 +262,9 @@ tech_physics_lab_4 = {
 	prerequisites = { "tech_physics_lab_3"}	
 	weight = @tier2weight2
 	
-	
+	modifier = {
+		country_physics_tech_research_speed = 0.03
+	}	
 	
 	ai_weight = {
 		modifier = {
@@ -329,7 +331,7 @@ tech_physics_lab_6 = {
 	weight = @tier3weight1
 	
 	modifier = {
-		country_physics_tech_research_speed = 0.05
+		country_physics_tech_research_speed = 0.03
 	}
 	
 	ai_weight = {
@@ -349,7 +351,7 @@ tech_physics_lab_7 = {
 	weight = @tier3weight2
 	
 	modifier = {
-		country_physics_tech_research_speed = 0.05
+		country_physics_tech_research_speed = 0.03
 	}
 	
 	ai_weight = {
@@ -369,7 +371,7 @@ tech_physics_lab_8 = {
 	weight = @tier3weight3
 	
 	modifier = {
-		country_physics_tech_research_speed = 0.05
+		country_physics_tech_research_speed = 0.03
 	}
 	
 	ai_weight = {
@@ -389,7 +391,7 @@ tech_physics_lab_9 = {
 	weight = @tier3weight4
 	
 	modifier = {
-		country_physics_tech_research_speed = 0.05
+		country_physics_tech_research_speed = 0.03
 	}
 	
 	ai_weight = {
@@ -457,7 +459,7 @@ tech_physics_lab_11 = {
 	weight = @tier4weight2
 	
 	modifier = {
-		country_physics_tech_research_speed = 0.05
+		country_physics_tech_research_speed = 0.03
 	}
 	
 	ai_weight = {
@@ -477,7 +479,7 @@ tech_physics_lab_12 = {
 	weight = @tier4weight4
 	
 	modifier = {
-		country_physics_tech_research_speed = 0.05
+		country_physics_tech_research_speed = 0.03
 	}
 	
 	ai_weight = {
@@ -497,7 +499,7 @@ tech_physics_lab_13 = {
 	weight = @tier5weight2
 	
 	modifier = {
-		country_physics_tech_research_speed = 0.05
+		country_physics_tech_research_speed = 0.03
 	}
 	
 	ai_weight = {
@@ -517,7 +519,7 @@ tech_physics_lab_14 = {
 	weight = @tier5weight3
 	
 	modifier = {
-		country_physics_tech_research_speed = 0.05
+		country_physics_tech_research_speed = 0.03
 	}
 	
 	ai_weight = {
@@ -585,7 +587,7 @@ tech_physics_lab_16 = {
 	weight = @tier6weight1
 	
 	modifier = {
-		country_physics_tech_research_speed = 0.05
+		country_physics_tech_research_speed = 0.03
 	}
 	
 	ai_weight = {
@@ -605,7 +607,7 @@ tech_physics_lab_17 = {
 	weight = @tier6weight2
 	
 	modifier = {
-		country_physics_tech_research_speed = 0.05
+		country_physics_tech_research_speed = 0.03
 	}
 	
 	ai_weight = {
@@ -625,7 +627,7 @@ tech_physics_lab_18 = {
 	weight = @tier6weight3
 	
 	modifier = {
-		country_physics_tech_research_speed = 0.05
+		country_physics_tech_research_speed = 0.03
 	}
 	
 	ai_weight = {
@@ -645,7 +647,7 @@ tech_physics_lab_19 = {
 	weight = @tier7weight1
 	
 	modifier = {
-		country_physics_tech_research_speed = 0.05
+		country_physics_tech_research_speed = 0.03
 	}
 	
 	ai_weight = {

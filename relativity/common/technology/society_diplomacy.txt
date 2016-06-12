@@ -112,13 +112,13 @@ tech_xeno_outreach = {
 
 #Xeno Relations
 tech_xeno_relations = {
-	cost = 0
+	cost = @tier1cost1
 	area = society
 	category = { diplomacy }
-	tier = 0
-	start_tech = yes
+	tier = 1
+	prerequisites = { "tech_planetary_unification"}
+	weight = @tier2weight1
 
-	# unlocks alliances
 	prereqfor_desc = {
 		diplo_action = {
 			title = "TECH_UNLOCK_DIPLOMATIC_ACTION_CREATE_ALLIANCE_TITLE"
@@ -132,8 +132,9 @@ tech_xeno_supremacy = {
 	cost = 0
 	area = society
 	category = { diplomacy }
-	tier = 0
-	start_tech = yes
+	tier = 2
+	prerequisites = { "tech_xeno_relations"  "tech_colonial_centralization"}
+	weight = @tier2weight1
 
 	# unlocks vassals
 	prereqfor_desc = {
@@ -149,6 +150,7 @@ tech_xeno_diplomacy = {
 	area = society
 	category = { diplomacy }
 	tier = 2	
+	prerequisites = { "tech_xeno_supremacy" "tech_galactic_administration"}
 	weight = @tier2weight1
 	
 	# unlocks federations

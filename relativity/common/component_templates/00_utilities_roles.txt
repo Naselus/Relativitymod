@@ -41,7 +41,7 @@ utility_component_template = {
 	}
 	
 	class_restriction = { shipclass_military }
-	prerequisites = { "tech_combat_computers_1" }
+	prerequisites = { "tech_administrative_ai" }
 	component_set = "combat_computers"
 }
 
@@ -66,7 +66,7 @@ utility_component_template = {
 	}
 
 	class_restriction = { shipclass_military }
-	prerequisites = { "tech_combat_computers_1" }
+	prerequisites = { "tech_administrative_ai" }
 	component_set = "combat_computers"
 }
 
@@ -91,7 +91,7 @@ utility_component_template = {
 	}
 	
 	class_restriction = { shipclass_military }
-	prerequisites = { "tech_combat_computers_2" }
+	prerequisites = { "tech_self_aware_logic" }
 	component_set = "combat_computers"
 }
 
@@ -116,7 +116,7 @@ utility_component_template = {
 	}
 
 	class_restriction = { shipclass_military }
-	prerequisites = { "tech_combat_computers_2" }
+	prerequisites = { "tech_self_aware_logic" }
 	component_set = "combat_computers"
 }
 
@@ -151,7 +151,7 @@ utility_component_template = {
 	}
 	
 	class_restriction = { shipclass_military }
-	prerequisites = { "tech_combat_computers_3" }
+	prerequisites = { "tech_sentient_ai" }
 	component_set = "combat_computers"
 }
 

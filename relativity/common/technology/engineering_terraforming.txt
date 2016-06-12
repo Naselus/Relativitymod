@@ -106,7 +106,7 @@ tech_tb_mountain_range = {
 	area = engineering
 	tier = 1
 	category = { terraforming }
-	prerequisites = { "tech_colonization_1" }
+	prerequisites = { "tech_colonization_2" }
 	weight = @tier1weight2
 	
 	weight_groups = {
@@ -176,7 +176,7 @@ tech_tb_volcano = {
 	area = engineering
 	tier = 1
 	category = { terraforming }
-	prerequisites = { "tech_colonization_1" }
+	prerequisites = { "tech_colonization_3" }
 	weight = @tier1weight2
 	
 	weight_groups = {
@@ -386,7 +386,7 @@ tech_tb_quicksand_basin = {
 	area = engineering
 	tier = 1
 	category = { terraforming }
-	prerequisites = { "tech_colonization_1" }
+	prerequisites = { "tech_colonization_2" }
 	weight = @tier1weight2
 	
 	weight_groups = {
@@ -456,7 +456,7 @@ tech_tb_noxious_swamp = {
 	area = engineering
 	tier = 1
 	category = { terraforming }
-	prerequisites = { "tech_colonization_1" }
+	prerequisites = { "tech_colonization_2" }
 	weight = @tier1weight2
 	
 	weight_groups = {
@@ -526,7 +526,7 @@ tech_tb_massive_glacier = {
 	area = engineering
 	tier = 1
 	category = { terraforming }
-	prerequisites = { "tech_colonization_1" }
+	prerequisites = { "tech_colonization_3" }
 	weight = @tier1weight2
 	
 	weight_groups = {
@@ -666,7 +666,7 @@ tech_tb_deep_sinkhole = {
 	area = engineering
 	tier = 1
 	category = { terraforming }
-	prerequisites = { "tech_colonization_1" }
+	prerequisites = { "tech_colonization_3" }
 	weight = @tier1weight2
 	
 	weight_groups = {
@@ -738,7 +738,7 @@ tech_terrestrial_sculpting = {
 	area = engineering
 	tier = 3
 	category = { terraforming }
-	prerequisites = { "tech_colonization_3" }
+	prerequisites = { "tech_tb_deep_sinkhole" "tech_tb_massive_glacier" "tech_tb_volcano"}
 	weight = @tier3weight1
 	
 	feature_flags = {

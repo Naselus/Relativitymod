@@ -204,7 +204,7 @@ tech_public_opinion_3 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { public_opinion }
-	prerequisites = { "tech_hyper_entertainment_forum" }
+	prerequisites = { "tech_planetary_unification" }
 	weight = @tier2weight1
 	
 	modifier = {

@@ -107,7 +107,7 @@ tech_galactic_ambitions = {
 	area = society
 	category = { influence }
 	tier = 1	
-	prerequisites = { "tech_xeno_outreach" }
+	prerequisites = { "tech_planetary_unification" }
 	weight = @tier1weight4
 	
 	modifier = {
@@ -180,7 +180,7 @@ tech_manifest_destiny = {
 	category = { influence }
 	tier = 2
 	is_rare = yes	
-	prerequisites = { "tech_galactic_ambitions" }
+	prerequisites = { "tech_galactic_ambitions" "tech_colonial_centralization" }
 	weight = @tier2weight3
 		
 	modifier = {
@@ -244,7 +244,7 @@ tech_influence_3 = {
 	cost = @tier3cost1
 	tier = 3
 	category = { influence }
-	prerequisites = { "tech_manifest_destiny" }
+	prerequisites = { "tech_manifest_destiny" "tech_galactic_administration"}
 	weight = @tier3weight1
 
 	modifier = {
@@ -264,7 +264,7 @@ tech_influence_4 = {
 	cost = @tier3cost1
 	tier = 3
 	category = { influence }
-	prerequisites = { "tech_influence_3" }
+	prerequisites = { "tech_influence_3" "tech_galactic_administration"}
 	weight = @tier3weight1
 	
 	modifier = {
@@ -273,7 +273,7 @@ tech_influence_4 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -293,7 +293,7 @@ tech_influence_5 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -314,7 +314,7 @@ tech_influence_6 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -333,7 +333,7 @@ tech_influence_7 = {
 	}	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -353,7 +353,7 @@ tech_influence_8 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -372,7 +372,7 @@ tech_influence_9 = {
 
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -392,7 +392,7 @@ tech_influence_10 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -411,7 +411,7 @@ tech_influence_11 = {
 
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -430,7 +430,7 @@ tech_influence_12 = {
 
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -449,7 +449,7 @@ tech_influence_13 = {
 		
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -468,7 +468,7 @@ tech_influence_14 = {
 
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -488,7 +488,7 @@ tech_influence_15 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -508,7 +508,7 @@ tech_influence_16 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -528,7 +528,7 @@ tech_influence_17 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -548,7 +548,7 @@ tech_influence_18 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}

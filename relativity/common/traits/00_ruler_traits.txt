@@ -106,7 +106,7 @@ trait_ruler_fortifier = {
 	}
 	leader_trait = yes
 	leader_class = { ruler }
-	prerequisites = { tech_space_defense_station_1 }
+	prerequisites = { tech_void_2  }
 }
 
 trait_ruler_logistic_understanding = {

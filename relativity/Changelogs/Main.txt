@@ -227,3 +227,34 @@ Version 102.0.1
 * Hangars now produce 8 fighters/bombers each (up from 4).
 * Added T2 mineral processor icons by myself - if anyone wants to replace these with something better, do feel free.
 
+
+110.0.91
+
+* Fixed Army morale
+* T2 credit hub no longer planet unique
+* Hospital happiness boost buffed.
+* T1 mines now all use T1 energy
+* T2 mines now all use T2 energy
+* T3 mines now all use T3 energy
+* Banks now all use T1 energy
+* increased AI's interest in minerals science and energy
+* Removed a bunch of surplus techs that are no longer in use
+* Slightly reduced food-for-growth reductions on techs (was allowing for <0% growth)
+* Slightly reduced tech time reduction from techs.
+* Psionics now requires at least some grounding in genetics
+* Removed industry boost tech line (was just causing overcrowding)
+* No more free mineral storage from techs. Learn to build silos.
+* Orbital hydroponics now produce nutrients rather than consuming it
+* Consolidated loads of techs.
+* Ships now unlock separately from starports (need the starport tech to unlock the correct ship size tech)
+* Advanced pd and defenses will now require better AIs. Best PD now locked to sentient AIs.
+* moved power plants to physics (from the decidedly overcrowded engineering)
+* Moved SR discovery techs to Physics
+* Binned the repeatables. They will return consolidated.
+* AI will now colonize non-adjacents, but with a hefty penalty to their desirability.
+* Incorporated some icons from Stellaris Tycoon, with thanks to REDDQ
+* Incorporated the outstanding Civilian Trade mod by Kyojin
+* Deleted several unused tech branches
+* Consolidated even more, and branched several.
+* Tile Blocker tech progress now staggered a lot more.
+* 

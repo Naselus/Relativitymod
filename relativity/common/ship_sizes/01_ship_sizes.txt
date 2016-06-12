@@ -38,7 +38,7 @@ Light_Carrier = {
 	can_have_federation_design = yes
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
 	
-	prerequisites = { "tech_spaceport_3" }
+	prerequisites = { "tech_void_3" }
 	
 	class = shipclass_military
 	required_component_set = "ftl_components"
@@ -70,7 +70,7 @@ Battlecruiser = {
 	can_have_federation_design = yes
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
 	
-	prerequisites = { "tech_spaceport_4" }
+	prerequisites = { "tech_void_3" }
 	
 	class = shipclass_military
 	required_component_set = "ftl_components"
@@ -102,7 +102,7 @@ Carrier = {
 	can_have_federation_design = yes
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
 	
-	prerequisites = { "tech_carrier_1" }
+	prerequisites = { "tech_void_4" }
 	
 	class = shipclass_military
 	required_component_set = "ftl_components"
@@ -135,7 +135,7 @@ Dreadnought = {
 	can_have_federation_design = yes
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
 	
-	prerequisites = { "tech_dreadnought_1" }
+	prerequisites = { "tech_void_5" }
 	
 	class = shipclass_military
 	required_component_set = "ftl_components"

@@ -448,7 +448,7 @@ NDefines = {
 
 		BORDER_BASE_RADIUS				= 12,		-- The base radius of the border
 		BORDER_NEW_COLONY_START			= 0.25,		-- Newly started colony's borders is modified by this, goes up to 1x with progress
-		BORDER_POPULATION_MODIFIER		= 0.15,		-- The border population modifier
+		BORDER_POPULATION_MODIFIER		= 0.25,		-- The border population modifier
 		
 		PLANETARY_BUILDING_ADD_FACTOR 	= 20,		-- Used in the calculation of the planetary building progress
 		ORBITAL_BUILDING_DIV_FACTOR		= 6,		-- Used in the calculation of the orbital building progress
@@ -828,7 +828,7 @@ NDefines = {
 		BASE_DAMAGE_MAX					= 3.0,				-- Base max damage
 
 		BASE_MORALE						= 200.0,			-- Base morale
-		MORALE_DAMAGE_MULT				= 0,				-- Morale Damage Multiplier, how much of damage is also dealt to morale.
+		MORALE_DAMAGE_MULT				= 0.5,				-- Morale Damage Multiplier, how much of damage is also dealt to morale.
 		MONTHLY_MORALE_REGENERATION		= 0.1,				-- How much morale this unit regenerates each month, percentage of max value.
 
 		EXP_EXPERIENCED					= 100,				-- Amount of exp to reach experienced rank
@@ -913,8 +913,8 @@ NDefines = {
 		THREAT_OPINION_MAX = 1.25,
 		THREAT_OPINION_MIN = 0.75,
 		
-		COLONIZE_NON_ADJACENT = 0,				-- If enabled, AI will colonize far away systems (will result in border gore)
-		COLONIZE_NON_ADJACENT_DIV = 3,			-- If colony is far away, divide priority to colonize it by this
+		COLONIZE_NON_ADJACENT = 1,				-- If enabled, AI will colonize far away systems (will result in border gore)
+		COLONIZE_NON_ADJACENT_DIV = 10,			-- If colony is far away, divide priority to colonize it by this
 	
 		AI_AGGRESSIVENESS_LOW_MULT = 0.5,		
 		AI_AGGRESSIVENESS_HIGH_MULT = 2.0,		
@@ -1039,9 +1039,9 @@ NDefines = {
 		MINERAL_MILITARY_STATION_BUDGET_FRACTION = 0.05, -- AI will spend this fraction of their stored minerals on military stations
 		MINERAL_NAVY_BUDGET_FRACTION = 0.30, 	-- AI will spend this fraction of their stored minerals on ships
 		MINERAL_STATION_BUDGET_FRACTION = 0.15, -- AI will spend this fraction of their stored minerals on stations (used for spaceport instead when it needs a new spaceport)
-		MINERAL_BUILDING_BUDGET_FRACTION = 0.20,-- AI will spend this fraction of their stored minerals on buildings (used for spaceport instead when it needs a new spaceport)
+		MINERAL_BUILDING_BUDGET_FRACTION = 0.15,-- AI will spend this fraction of their stored minerals on buildings (used for spaceport instead when it needs a new spaceport)
 		MINERAL_SPACEPORT_BUDGET_FRACTION = 0.1, -- AI will spend this fraction of their stored minerals on spaceport modules
-		MINERAL_COLONY_BUDGET_FRACTION = 0.1,
+		MINERAL_COLONY_BUDGET_FRACTION = 0.15,
 		MINERAL_ARMY_BUDGET_FRACTION = 0.04,	-- AI will spend this fraction on armies
 		MINERAL_TILE_BLOCKER_BUDGET_FRACTION = 0.03,	-- AI will spend this fraction on tile blockers
 		MINERAL_ROBOT_BUDGET_FRACTION = 0.03,	-- AI will spend this fraction of their stored minerals on robots (transfered to buildings if they don't use robots)
@@ -1061,7 +1061,7 @@ NDefines = {
 		MIN_MINERALS_STORED_STATIONS = 100,			-- Minerals AI will store for stations when it does not need more
 		MAX_MINERALS_STORED_SPACEPORT = 500,		-- Minerals AI will store for spaceport when it needs more
 		MIN_MINERALS_STORED_SPACEPORT = 100,		-- Minerals AI will store for spaceport when it does not need more
-		MAX_MINERALS_STORED_COLONIES = 400,		-- Minerals AI will store for colonies when it needs more
+		MAX_MINERALS_STORED_COLONIES = 500,		-- Minerals AI will store for colonies when it needs more
 		MIN_MINERALS_STORED_COLONIES = 350,			-- Minerals AI will store for colonies when it does not need more		
 		MAX_MINERALS_STORED_ARMIES = 300,			-- Minerals AI will store for armies when it needs more
 		MIN_MINERALS_STORED_ARMIES = 0,			-- Minerals AI will store for armies when it does not need more		
@@ -1077,9 +1077,9 @@ NDefines = {
 		MAX_MINERALS_SPENT_ON_NAVY = 0.50,			-- Spend no more than this fraction of mineral income on navy maintenance
 
 		EXPECTED_MINERALS_BASE = 10,				-- AI expects to make this base amount in minerals
-		EXPECTED_MINERALS_PER_POP = 0.75,				-- AI expects to make about their num pops x this in minerals
+		EXPECTED_MINERALS_PER_POP = 2,				-- AI expects to make about their num pops x this in minerals
 		EXPECTED_TECH_BASE = 10,						-- AI expects to make this base amount in tech
-		EXPECTED_TECH_PER_POP = 1,					-- AI expects to make about their num pops x this in tech
+		EXPECTED_TECH_PER_POP = 2,					-- AI expects to make about their num pops x this in tech
 		EXPECTED_ENERGY_BASE = 10,					-- AI expects to make this base amount in energy
 		EXPECTED_ENERGY_PER_POP = 2,				-- AI expects to make about their num pops x this in energy
 		EXPECTED_ENERGY_SURPLUS = 3,				-- AI wants a surplus of least this amount in monthly energy production (temporary spending such as colonies does not count)

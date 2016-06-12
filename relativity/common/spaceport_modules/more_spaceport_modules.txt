@@ -2,7 +2,7 @@ solar_panel_network2 = {
 	icon = "GFX_solar_panel_network"
 	section = "ASSEMBLYYARD_SPACEPORT_SECTION"
 	construction_days = 180
-	prerequisites = { "tech_solar_panel_network_2" }
+	prerequisites = { "tech_spaceport_4" }
 	spaceport_level = 3
 	
 	cost = {
@@ -24,7 +24,7 @@ solar_panel_network3 = {
 	icon = "GFX_solar_panel_network"
 	section = "ASSEMBLYYARD_SPACEPORT_SECTION"
 	construction_days = 270
-	prerequisites = { "tech_solar_panel_network_3" }
+	prerequisites = { "tech_spaceport_6" }
 	spaceport_level = 5
 	
 	cost = {
@@ -46,7 +46,7 @@ solar_panel_network4 = {
 	icon = "GFX_solar_panel_network"
 	section = "ASSEMBLYYARD_SPACEPORT_SECTION"
 	construction_days = 360
-	prerequisites = { "tech_solar_panel_network_4" }
+	prerequisites = { "tech_spaceport_8" }
 	spaceport_level = 6
 	
 	cost = {
@@ -72,7 +72,7 @@ hydroponic_farms2 = {
 	icon = "GFX_spaceport_module_hydroponic_farms"
 	section = "SCIENCE_SPACEPORT_SECTION"
 	construction_days = 180
-	prerequisites = { "tech_orbital_hydroponics_2" }
+	prerequisites = { "tech_spaceport_4" }
 	spaceport_level = 3
 	
 	cost = {
@@ -94,7 +94,7 @@ hydroponic_farms3 = {
 	icon = "GFX_spaceport_module_hydroponic_farms"
 	section = "SCIENCE_SPACEPORT_SECTION"
 	construction_days = 270
-	prerequisites = { "tech_orbital_hydroponics_3" }
+	prerequisites = { "tech_spaceport_6" }
 	spaceport_level = 5
 	
 	cost = {
@@ -116,7 +116,7 @@ hydroponic_farms4 = {
 	icon = "GFX_spaceport_module_hydroponic_farms"
 	section = "SCIENCE_SPACEPORT_SECTION"
 	construction_days = 360
-	prerequisites = { "tech_orbital_hydroponics_4" }
+	prerequisites = { "tech_spaceport_8" }
 	spaceport_level = 6
 	
 	cost = {
@@ -203,7 +203,7 @@ cruiser_assembly_yards2 = {
 	icon = "GFX_spaceport_module_cruiser_assembly_yard"
 	section = "ASSEMBLYYARD_SPACEPORT_SECTION"
 	construction_days = 360
-	prerequisites = { "tech_cruiser_yard_2" }
+	prerequisites = { "tech_spaceport_7" }
 	spaceport_level = 6
 	
 	cost = {
@@ -224,7 +224,7 @@ battleship_assembly_yards_2 = {
 	icon = "GFX_spaceport_module_battleship_assembly_yard"
 	section = "ASSEMBLYYARD_SPACEPORT_SECTION"
 	construction_days = 540
-	prerequisites = { "tech_battleship_yard_2" }
+	prerequisites = { "tech_spaceport_9" }
 	spaceport_level = 6
 	
 	cost = {
@@ -335,7 +335,7 @@ ship_assembly_yards_2 = {
 	icon = "GFX_spaceport_module_cruiser_assembly_yard"
 	section = "ASSEMBLYYARD_SPACEPORT_SECTION"
 	construction_days = 360
-	prerequisites = { "tech_cruiser_yard" }
+	prerequisites = { "tech_spaceport_6" }
 	spaceport_level = 5
 	
 	cost = {
@@ -359,7 +359,7 @@ ship_assembly_yards_3 = {
 	icon = "GFX_spaceport_module_battleship_assembly_yard"
 	section = "ASSEMBLYYARD_SPACEPORT_SECTION"
 	construction_days = 540
-	prerequisites = { "tech_battleship_yard" }
+	prerequisites = { "tech_spaceport_8" }
 	spaceport_level = 6
 	
 	cost = {
@@ -385,7 +385,7 @@ ship_assembly_yards_4 = {
 	icon = "GFX_spaceport_module_battleship_assembly_yard"
 	section = "ASSEMBLYYARD_SPACEPORT_SECTION"
 	construction_days = 720
-	prerequisites = { "tech_battleship_yard_2" }
+	prerequisites = { "tech_spaceport_10" }
 	spaceport_level = 6
 	
 	cost = {
