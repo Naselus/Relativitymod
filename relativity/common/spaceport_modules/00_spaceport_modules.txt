@@ -435,7 +435,6 @@ navigator_guild = {
 	
 	cost = {
 		minerals = 200
-		influence = 25
 	}
 	
 	required_resources = {
@@ -463,7 +462,6 @@ pioneering_terminal = {
 	
 	cost = {
 		minerals = 300
-		influence = 25
 	}
 	
 	required_resources = {
@@ -514,7 +512,6 @@ fleet_academy = {
 	
 	cost = {
 		minerals = 300
-		influence = 50
 	}
 	
 	required_resources = {
@@ -580,26 +577,6 @@ dark_matter_factory = {
 	}	
 }
 
-bcruiser_assembly_yards = {
-	icon = "GFX_spaceport_module_cruiser_assembly_yard"
-	section = "ASSEMBLYYARD_SPACEPORT_SECTION"
-	construction_days = 360
-	prerequisites = { "tech_spaceport_8" "tech_void_3" }
-	spaceport_level = 4
-	
-	cost = {
-		minerals = 400
-	}
-	
-	required_resources = {
-		energy = 3
-	}
-	
-	modifier = {
-		shipsize_cruiser_construction_speed_mult = 0.25
-		shipsize_cruiser_build_cost_mult = -0.10
-	}	
-}
 
 
 
@@ -668,7 +645,6 @@ orbital_mind_control_laser = {
 	
 	cost = {
 		minerals = 400
-		influence = 10
 	}
 	
 	required_resources = {
@@ -705,26 +681,6 @@ battleship_assembly_yards = {
 #### LEVEL 6 ####
 #################
 
-dreadnaught_assembly_yards = {
-	icon = "GFX_spaceport_module_battleship_assembly_yard"
-	section = "ASSEMBLYYARD_SPACEPORT_SECTION"
-	construction_days = 180
-	prerequisites = { "tech_spaceport_12" "tech_void_5" }
-	spaceport_level = 6
-	
-	cost = {
-		minerals = 500
-	}	
-	
-	required_resources = {
-		energy = 4
-	}
-	
-	modifier = {
-		shipsize_battleship_construction_speed_mult = 0.25
-		shipsize_battleship_build_cost_mult = -0.10
-	}
-}
 
 living_metal_armory = {
 	icon = "GFX_spaceport_module_living_metal_armory"

@@ -28,6 +28,9 @@ assault_army = {
 				best_tile_for_pop = {
 				create_pop = {
 				species = owner_main_species
+				ethos = owner
+				
+				
 				}
 			}
 	}
@@ -62,6 +65,7 @@ defense_army = {
 					best_tile_for_pop = {
 				create_pop = {
 				species = owner_main_species
+				ethos = owner
 				}
 			}
 	}
@@ -126,6 +130,7 @@ slave_army = {
 				best_tile_for_pop = {
 				create_pop = {
 				species = owner_main_species
+				ethos = owner
 				}
 			}
 	}
@@ -137,7 +142,7 @@ clone_army = {
 	morale_damage = 1
 	health = 2
 	morale = 5
-	time = 1800
+	time = 720
 	maintenance = 0.33
 	icon_frame = 7
 	
@@ -159,7 +164,7 @@ robotic_army = {
 	morale_damage = 1
 	morale = 100	
 	health = 4
-	time = 900
+	time = 360
 	maintenance = 1
 	icon_frame = 4
 	has_species = no
@@ -179,7 +184,7 @@ android_army = {
 	morale_damage = 3
 	morale = 10
 	health = 5
-	time = 900
+	time = 360
 	maintenance = 1.00
 	icon_frame = 4
 	has_species = no
@@ -219,6 +224,7 @@ psionic_army = {
 				best_tile_for_pop = {
 				create_pop = {
 				species = owner_main_species
+				ethos = owner
 				}
 			}
 	}
@@ -232,7 +238,7 @@ xenomorph_army = {
 	morale_damage = 3
 	health = 3
 	morale = 10
-	time = 3650
+	time = 1800
 	maintenance = 3
 	icon_frame = 8
 	
@@ -250,7 +256,7 @@ gene_warrior_army = {
 	health = 10
 	morale_damage = 10
 	morale = 10
-	time = 3650
+	time = 1800
 	maintenance = 6
 	icon_frame = 6
 	

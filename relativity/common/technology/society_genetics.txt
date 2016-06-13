@@ -300,7 +300,7 @@ tech_gene_seed_purification = {
 	category = { genetics }
 	tier = 3
 	is_rare = yes
-	prerequisites = { "tech_cloning" }
+	prerequisites = { "tech_gene_banks" }
 	weight = @tier3weight2
 	
 	# unlocks gene-warrior armies
@@ -390,7 +390,7 @@ tech_morphogenetic_field_mastery = {
 	category = { genetics }
 	tier = 2
 	is_rare = yes
-	prerequisites = { "tech_epigenetic_triggers" }
+	prerequisites = { "tech_gene_banks" }
 	weight = @tier2weight3
 	
 	# unlocks xeno-armies

@@ -264,3 +264,10 @@ Version 102.0.1
 110.0.92
 
 * Removed influence costs from Civilian Trade edicts
+* Reduced cost of voidcraft techs
+* Adjusted Genetics progression.
+* Clone and Robot armies are now a bit quicker to build (still much slower than conscript forces)
+* Removed drednaught and Bcruiser assembly yards (since the modifiers for them don't exist)
+* Rescaled Ship unlock tech costs to be more appropriate for the time period when they're researched
+* Removed influence from fleet academy.
+* POPs that have been released from the army now have ethics (they're the same as the owner for now)

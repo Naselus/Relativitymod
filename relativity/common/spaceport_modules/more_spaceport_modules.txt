@@ -229,7 +229,6 @@ battleship_assembly_yards_2 = {
 	
 	cost = {
 		minerals = 2000
-		influence = 100
 	}	
 	
 	required_resources = {
@@ -351,7 +350,7 @@ ship_assembly_yards_2 = {
 		shipsize_corvette_build_cost_mult = -0.10
 		shipsize_destroyer_construction_speed_mult = 0.15
 		shipsize_destroyer_build_cost_mult = -0.5
-		shipsize_cruiser_construction_speed_mult = 0.10
+		shipsize_cruiser_construction_speed_mult = 0.10	
 	}
 }
 
