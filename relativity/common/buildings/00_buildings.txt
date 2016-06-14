@@ -1819,7 +1819,7 @@ building_colony_shelter = {
 	}
 	
 	planet_modifier = {
-		pop_ethic_shift = 0.20
+		pop_ethic_shift = 0.05
 	}
 	
 	potential = {
@@ -1981,7 +1981,6 @@ building_capital_3 = {
 
 	planet_unique = yes
 	capital = yes
-	empire_unique = yes
 	level = 3
 	
 	produced_resources = {

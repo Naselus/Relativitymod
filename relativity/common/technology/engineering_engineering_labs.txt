@@ -177,7 +177,7 @@ tech_engineering_lab_2 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -197,7 +197,7 @@ tech_engineering_lab_3 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -217,7 +217,7 @@ tech_engineering_lab_4 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -286,7 +286,7 @@ tech_engineering_lab_6 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -306,7 +306,7 @@ tech_engineering_lab_7 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -326,7 +326,7 @@ tech_engineering_lab_8 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -346,7 +346,7 @@ tech_engineering_lab_9 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -415,7 +415,7 @@ tech_engineering_lab_11 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -435,7 +435,7 @@ tech_engineering_lab_12 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -455,7 +455,7 @@ tech_engineering_lab_13 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -475,7 +475,7 @@ tech_engineering_lab_14 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -544,7 +544,7 @@ tech_engineering_lab_16 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -564,7 +564,7 @@ tech_engineering_lab_17 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -584,7 +584,7 @@ tech_engineering_lab_18 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -604,7 +604,7 @@ tech_engineering_lab_19 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}

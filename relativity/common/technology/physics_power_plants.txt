@@ -555,7 +555,7 @@ tech_power_plant_16 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -572,7 +572,7 @@ tech_power_plant_17 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -589,7 +589,7 @@ tech_power_plant_18 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -606,7 +606,7 @@ tech_power_plant_19 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -623,7 +623,7 @@ tech_power_plant_20 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}

@@ -129,7 +129,7 @@ tech_xeno_relations = {
 
 #Xeno Supremacy
 tech_xeno_supremacy = {
-	cost = 0
+	cost = @tier1cost2
 	area = society
 	category = { diplomacy }
 	tier = 2
@@ -236,12 +236,7 @@ tech_diplomacy_5 = {
 		max_embassies = 1
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_diplomacy_6 = {
@@ -256,12 +251,7 @@ tech_diplomacy_6 = {
 		max_rivalries = 1
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_diplomacy_7 = {
@@ -276,12 +266,7 @@ tech_diplomacy_7 = {
 		max_embassies = 1
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_diplomacy_8 = {
@@ -296,12 +281,7 @@ tech_diplomacy_8 = {
 		max_rivalries = 1
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_diplomacy_9 = {
@@ -316,12 +296,7 @@ tech_diplomacy_9 = {
 		max_embassies = 1
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_diplomacy_10 = {
@@ -336,12 +311,7 @@ tech_diplomacy_10 = {
 		alliance_influence_cost = -1
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_diplomacy_11 = {
@@ -356,12 +326,7 @@ tech_diplomacy_11 = {
 		max_rivalries = 1
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_diplomacy_12 = {
@@ -376,12 +341,7 @@ tech_diplomacy_12 = {
 		max_embassies = 1
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_diplomacy_13 = {
@@ -396,12 +356,7 @@ tech_diplomacy_13 = {
 		max_rivalries = 1
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_diplomacy_14 = {
@@ -416,12 +371,7 @@ tech_diplomacy_14 = {
 		max_embassies = 1
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_diplomacy_15 = {
@@ -436,12 +386,7 @@ tech_diplomacy_15 = {
 		max_rivalries = 1
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_diplomacy_16 = {
@@ -456,12 +401,7 @@ tech_diplomacy_16 = {
 		max_embassies = 1
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_diplomacy_17 = {
@@ -476,12 +416,7 @@ tech_diplomacy_17 = {
 		max_rivalries = 1
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_diplomacy_18 = {
@@ -496,12 +431,7 @@ tech_diplomacy_18 = {
 		max_embassies = 1
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_diplomacy_19 = {
@@ -516,12 +446,7 @@ tech_diplomacy_19 = {
 		max_rivalries = 1
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_diplomacy_20 = {
@@ -536,10 +461,5 @@ tech_diplomacy_20 = {
 		max_embassies = 1
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }

@@ -454,10 +454,7 @@ fallen_1_1 = {
 					slot = 3
 					module = "synchronized_defenses"
 				}
-				set_spaceport_module = {
-					slot = 4
-					module = "solar_panel_network"
-				}				
+		
 			}					
 			create_fleet = { }
 			last_created_fleet = {
@@ -1376,10 +1373,6 @@ fallen_1_1 = {
 					slot = 3
 					module = "synchronized_defenses"
 				}
-				set_spaceport_module = {
-					slot = 4
-					module = "solar_panel_network"
-				}					
 			}		
 			create_army = {
 				name = random
@@ -1897,11 +1890,7 @@ fallen_1_1 = {
 				set_spaceport_module = {
 					slot = 3
 					module = "synchronized_defenses"
-				}
-				set_spaceport_module = {
-					slot = 4
-					module = "solar_panel_network"
-				}					
+				}				
 			}					
 		}
 	}
@@ -2355,11 +2344,7 @@ fallen_1_1 = {
 				set_spaceport_module = {
 					slot = 3
 					module = "synchronized_defenses"
-				}
-				set_spaceport_module = {
-					slot = 4
-					module = "solar_panel_network"
-				}					
+				}				
 			}		
 		}
 	}
@@ -2942,10 +2927,6 @@ fallen_1_3 = {
 					slot = 3
 					module = "synchronized_defenses"
 				}
-				set_spaceport_module = {
-					slot = 4
-					module = "solar_panel_network"
-				}					
 			}			
 			create_army = {
 				name = random
@@ -3755,10 +3736,6 @@ fallen_2 = {
 					slot = 3
 					module = "synchronized_defenses"
 				}
-				set_spaceport_module = {
-					slot = 4
-					module = "solar_panel_network"
-				}					
 			}									
 			create_fleet = { }
 			last_created_fleet = {
@@ -4889,11 +4866,7 @@ fallen_3 = {
 					set_spaceport_module = {
 						slot = 3
 						module = "synchronized_defenses"
-					}
-					set_spaceport_module = {
-						slot = 4
-						module = "solar_panel_network"
-					}				
+					}	
 				}	
 				create_fleet = { }
 				last_created_fleet = {
@@ -6055,11 +6028,7 @@ fallen_col_1 = {
 				set_spaceport_module = {
 					slot = 3
 					module = "synchronized_defenses"
-				}
-				set_spaceport_module = {
-					slot = 4
-					module = "solar_panel_network"
-				}				
+				}	
 			}							
 		}
 		
@@ -6365,11 +6334,7 @@ fallen_col_2 = {
 				set_spaceport_module = {
 					slot = 3
 					module = "synchronized_defenses"
-				}
-				set_spaceport_module = {
-					slot = 4
-					module = "solar_panel_network"
-				}				
+				}			
 			}				
 		}
 		

@@ -773,12 +773,7 @@ tech_genetics_12 = {
 		 leader_age = 10
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_genetics_13 = {
@@ -791,12 +786,7 @@ tech_genetics_13 = {
 	modifier = {
 		 leader_age = 10
 	}
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_genetics_14 = {
@@ -811,12 +801,7 @@ tech_genetics_14 = {
 		trait_points = 1
 	}	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_genetics_15 = {
@@ -832,12 +817,7 @@ tech_genetics_15 = {
 	}	
 
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_genetics_16 = {
@@ -852,12 +832,7 @@ tech_genetics_16 = {
 		 leader_age = 10
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_genetics_17 = {
@@ -872,12 +847,7 @@ tech_genetics_17 = {
 		trait_points = 1
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_genetics_18 = {
@@ -892,12 +862,7 @@ tech_genetics_18 = {
 	}	
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_genetics_19 = {
@@ -911,12 +876,7 @@ tech_genetics_19 = {
 		 leader_age = 10
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_genetics_20 = {
@@ -931,10 +891,5 @@ tech_genetics_20 = {
 		trait_points = 1
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }

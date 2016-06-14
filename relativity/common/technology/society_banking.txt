@@ -231,7 +231,7 @@ tech_banking_5 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -251,7 +251,7 @@ tech_banking_6 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -271,7 +271,7 @@ tech_banking_7 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -291,7 +291,7 @@ tech_banking_8 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -311,7 +311,7 @@ tech_banking_9 = {
 
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -329,7 +329,7 @@ tech_banking_10 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -349,7 +349,7 @@ tech_banking_11 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -369,7 +369,7 @@ tech_banking_12 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -389,7 +389,7 @@ tech_banking_13 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -409,7 +409,7 @@ tech_banking_14 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -427,7 +427,7 @@ tech_banking_15 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -447,7 +447,7 @@ tech_banking_16 = {
 		
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -467,7 +467,7 @@ tech_banking_17 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -487,7 +487,7 @@ tech_banking_18 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -507,7 +507,7 @@ tech_banking_19 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -525,7 +525,7 @@ tech_banking_20 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}

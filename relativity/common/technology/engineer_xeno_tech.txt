@@ -166,12 +166,7 @@ tech_xeno_tech_3 = {
 	weight = 0
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_xeno_tech_4 = {
@@ -183,12 +178,7 @@ tech_xeno_tech_4 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_xeno_tech_5 = {
@@ -200,12 +190,7 @@ tech_xeno_tech_5 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_xeno_tech_6 = {
@@ -217,12 +202,7 @@ tech_xeno_tech_6 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_xeno_tech_7 = {
@@ -234,12 +214,7 @@ tech_xeno_tech_7 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_xeno_tech_8 = {
@@ -251,12 +226,7 @@ tech_xeno_tech_8 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_xeno_tech_9 = {
@@ -268,12 +238,7 @@ tech_xeno_tech_9 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_xeno_tech_10 = {
@@ -285,12 +250,7 @@ tech_xeno_tech_10 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_xeno_tech_11 = {
@@ -302,12 +262,7 @@ tech_xeno_tech_11 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_xeno_tech_12 = {
@@ -319,12 +274,7 @@ tech_xeno_tech_12 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_xeno_tech_13 = {
@@ -336,12 +286,7 @@ tech_xeno_tech_13 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_xeno_tech_14 = {
@@ -353,12 +298,7 @@ tech_xeno_tech_14 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_xeno_tech_15 = {
@@ -370,12 +310,7 @@ tech_xeno_tech_15 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_xeno_tech_16 = {
@@ -387,12 +322,7 @@ tech_xeno_tech_16 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_xeno_tech_17 = {
@@ -404,12 +334,7 @@ tech_xeno_tech_17 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_xeno_tech_18 = {
@@ -421,12 +346,7 @@ tech_xeno_tech_18 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_xeno_tech_19 = {
@@ -438,11 +358,6 @@ tech_xeno_tech_19 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 

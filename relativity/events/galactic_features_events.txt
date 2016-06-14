@@ -2276,21 +2276,24 @@ event = {
 }
 
 # Mining drones spawn rapidly 
-ship_event = {
+country_event = {
 	id = galactic_features.363
 	hide_window = yes
 
 	trigger = {
-		is_ship_size = mining_station
-		owner = {
-			is_country_type = drone
+		is_country_type = drone
+		any_owned_ship = {
+			is_ship_size = mining_station
 		}
 	}
 	mean_time_to_happen = {
 		months = 12
 	}
 	immediate = {
-		solar_system = {
+	
+		random_owned_ship = {
+			limit = { is_ship_size = mining_station }
+			save_event_target_as = drone_home
 			create_fleet = { name = "Ancient Mining Drones" }
 			last_created_fleet = {
 				set_fleet_stance = aggressive
@@ -2324,7 +2327,3 @@ ship_event = {
 		}
 	}
 }
-
-
-
-

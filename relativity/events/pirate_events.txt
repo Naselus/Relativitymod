@@ -130,6 +130,7 @@ country_event = {
 	
 	immediate = {
 		set_country_flag = birth_of_piracy
+		set_global_flag = apirateslifeforme
 		capital_scope = { save_event_target_as = capital }
 		capital_scope = {
 			solar_system = { save_event_target_as = capital_system }
@@ -1129,7 +1130,6 @@ country_event = {
 	id = pirate.5
 	hide_window = yes
 	is_triggered_only = yes
-
 	trigger = {
 		is_country_type = default
 		OR = {
@@ -1139,12 +1139,117 @@ country_event = {
 			}
 		}
 	}
-
+	
 	immediate = {	
 		random_list = {
-			30 = { country_event = { id = pirate.1 days = 50 random = 25 } }
-			30 = { country_event = { id = pirate.1 days = 150 random = 50 } }
+			30 = { country_event = { id = pirate.1 days = 50 random = 45 } }
+			30 = { country_event = { id = pirate.1 days = 500 random = 450 } }
 			40 = {  }
+		}
+	}
+}
+
+
+
+event = {
+	id = pirate.6
+	hide_window = yes
+
+	trigger = {
+			has_global_flag = apirateslifeforme
+	}
+	
+		
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	immediate = {
+		random_country = {
+		capital_scope = { save_event_target_as = capital }
+		capital_scope = {
+			solar_system = { save_event_target_as = capital_system }
+		}
+		save_event_target_as = pirate_target
+			random_system = {
+				limit = {
+					distance = {
+						source = event_target:capital
+						max_distance = 600
+						min_distance = 5
+					}
+					any_planet = { is_asteroid = yes }
+					NOT = { has_star_flag = hostile_system }
+					has_owner = no
+
+				}
+				random_system_planet = {
+					limit = { is_asteroid = yes }
+					save_event_target_as = pirate_home
+					create_country = {
+						name = "Pirates"
+						type = pirate
+						species = random
+						name_list = "PRT1"
+						flag = {
+							icon = {
+								category = "pirate"
+								file = "flag_pirate_7.dds"
+							}
+							background = {
+								category = "backgrounds"
+								file = "00_solid.dds"
+							}
+							colors ={
+								"red"
+								"red"
+								"null"
+								"null"
+							}
+						}
+					}
+					last_created_country = {
+						set_name = random
+						save_event_target_as = pirate_band
+						create_fleet = { name = "Pirate Station" }
+						Random_list = {
+						33 = {
+							last_created_fleet = {
+								set_owner = PREV
+								create_ship = {
+									name = random
+									design = "Pirate Nest"
+									graphical_culture = "pirate_01"
+								}
+								set_location = PREVPREV
+							}
+						}
+						33 = {
+							last_created_fleet = {
+								set_owner = PREV
+								create_ship = {
+									name = random
+									design = "Pirate Lair"
+									graphical_culture = "pirate_01"
+								}
+								set_location = PREVPREV
+							}
+						}
+						33 = {
+							last_created_fleet = {
+								set_owner = PREV
+								create_ship = {
+									name = random
+									design = "Pirate Den"
+									graphical_culture = "pirate_01"
+								}
+								set_location = PREVPREV
+							}
+						}
+						}
+					}
+				}
+			}
 		}
 	}
 }

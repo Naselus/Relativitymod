@@ -319,12 +319,7 @@ tech_farming_6 = {
 	weight = 0
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_farming_7 = {
@@ -336,12 +331,7 @@ tech_farming_7 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_farming_8 = {
@@ -353,12 +343,7 @@ tech_farming_8 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_farming_9 = {
@@ -370,12 +355,7 @@ tech_farming_9 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_farming_10 = {
@@ -386,12 +366,7 @@ tech_farming_10 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_farming_11 = {
@@ -403,12 +378,7 @@ tech_farming_11 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_farming_12 = {
@@ -420,12 +390,7 @@ tech_farming_12 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_farming_13 = {
@@ -437,12 +402,7 @@ tech_farming_13 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_farming_14 = {
@@ -454,12 +414,7 @@ tech_farming_14 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_farming_15 = {
@@ -471,12 +426,7 @@ tech_farming_15 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_farming_16 = {
@@ -488,12 +438,7 @@ tech_farming_16 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_farming_17 = {
@@ -505,12 +450,7 @@ tech_farming_17 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_farming_18 = {
@@ -522,12 +462,7 @@ tech_farming_18 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_farming_19 = {
@@ -539,12 +474,7 @@ tech_farming_19 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_farming_20 = {
@@ -556,10 +486,5 @@ tech_farming_20 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }

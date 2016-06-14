@@ -370,8 +370,8 @@ country_event = {
 				}
 				set_building = "building_hydroponics_farm_1"	
 				add_resource = {
-					resource = food
-					amount = 1
+					resource = sr_nutrients
+					amount = 3
 					replace = yes
 				}					
 			}				
@@ -382,13 +382,15 @@ country_event = {
 					NOT = { has_building = "building_hydroponics_farm_1" }
 					NOT = { has_building = "building_mining_network_1" }
 					NOT = { has_building = "building_power_plant_1" }
+					NOT = { has_building = "building_bank" }
 				}
 				set_building = "building_mining_network_1"	
 				add_resource = {
-					resource = minerals
-					amount = 1
+					resource = sr_steel
+					amount = 3
 					replace = yes
-				}				
+				}	
+		
 			}
 			random_tile = {
 				limit = { 
@@ -397,13 +399,15 @@ country_event = {
 					NOT = { has_building = "building_hydroponics_farm_1" }
 					NOT = { has_building = "building_mining_network_1" }
 					NOT = { has_building = "building_power_plant_1" }
+					NOT = { has_building = "building_bank" }
 				}
 				set_building = "building_power_plant_1"	
 				add_resource = {
-					resource = energy
-					amount = 2
+					resource = sr_plasma
+					amount = 3
 					replace = yes
-				}				
+				}	
+	
 			}
 			random_tile = {
 				limit = { 
@@ -412,13 +416,22 @@ country_event = {
 					NOT = { has_building = "building_hydroponics_farm_1" }
 					NOT = { has_building = "building_mining_network_1" }
 					NOT = { has_building = "building_power_plant_1" }
+					NOT = { has_building = "building_bank" }
 				}
-				set_building = "building_power_plant_1"	
-				add_resource = {
-					resource = energy
-					amount = 1
-					replace = yes
-				}				
+				set_building = "building_mineral_processing_plant_1T1"	
+
+			}		
+			random_tile = {
+				limit = { 
+					has_grown_pop = yes 
+					NOT = { has_building = "building_capital_2" }
+					NOT = { has_building = "building_hydroponics_farm_1" }
+					NOT = { has_building = "building_mining_network_1" }
+					NOT = { has_building = "building_power_plant_1" }
+					NOT = { has_building = "building_bank" }
+				}
+				set_building = "building_bank"	
+
 			}				
 			every_planet_army = {
 				remove_army = yes

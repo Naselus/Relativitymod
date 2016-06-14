@@ -165,7 +165,7 @@ tech_societal_research_1 = {
 
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -186,7 +186,7 @@ tech_societal_research_2 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -207,7 +207,7 @@ tech_societal_research_3 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -275,7 +275,7 @@ tech_societal_research_4 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -296,7 +296,7 @@ tech_societal_research_5 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -317,7 +317,7 @@ tech_societal_research_6 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -338,7 +338,7 @@ tech_societal_research_7 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -406,7 +406,7 @@ tech_societal_research_8 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -427,7 +427,7 @@ tech_societal_research_9 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -448,7 +448,7 @@ tech_societal_research_10 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -469,7 +469,7 @@ tech_societal_research_11 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -536,7 +536,7 @@ tech_societal_research_12 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -557,7 +557,7 @@ tech_societal_research_13 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -578,7 +578,7 @@ tech_societal_research_14 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -599,7 +599,7 @@ tech_societal_research_15 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}

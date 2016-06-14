@@ -4837,7 +4837,7 @@
  building_capital_1_desc:0 "Basic governmental center to handle various administrative tasks."
  building_capital_2:0 "Planetary Capital"
  building_capital_2_desc:0 "Seat of the local ruling elite."
- building_capital_3:0 "Empire Capital-Complex"
+ building_capital_3:0 "Sector Capital-Complex"
  building_capital_3_desc:1 "A towering configuration of administrative bureaus and networked infrastructure, allowing the construction and operation of highly demanding facilities."
  building_ancient_factory:1 "Autonomous Fabricators"
  building_ancient_factory_desc:1 "§LThis ancient complex was built with technology long since lost to the ages.§!"

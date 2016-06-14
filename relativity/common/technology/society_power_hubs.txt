@@ -173,12 +173,7 @@ tech_power_hub_3 = {
 	weight = 0
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_power_hub_4 = {
@@ -190,12 +185,7 @@ tech_power_hub_4 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_power_hub_5 = {
@@ -207,12 +197,7 @@ tech_power_hub_5 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_power_hub_6 = {
@@ -224,12 +209,7 @@ tech_power_hub_6 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_power_hub_7 = {
@@ -241,12 +221,7 @@ tech_power_hub_7 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_power_hub_8 = {
@@ -258,12 +233,7 @@ tech_power_hub_8 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_power_hub_9 = {
@@ -275,12 +245,7 @@ tech_power_hub_9 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_power_hub_10 = {
@@ -292,12 +257,7 @@ tech_power_hub_10 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_power_hub_11 = {
@@ -309,12 +269,7 @@ tech_power_hub_11 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_power_hub_12 = {
@@ -326,12 +281,7 @@ tech_power_hub_12 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_power_hub_13 = {
@@ -343,12 +293,7 @@ tech_power_hub_13 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_power_hub_14 = {
@@ -360,12 +305,7 @@ tech_power_hub_14 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_power_hub_15 = {
@@ -377,12 +317,7 @@ tech_power_hub_15 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_power_hub_16 = {
@@ -394,12 +329,7 @@ tech_power_hub_16 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_power_hub_17 = {
@@ -411,12 +341,7 @@ tech_power_hub_17 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_power_hub_18 = {
@@ -428,12 +353,7 @@ tech_power_hub_18 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_power_hub_19 = {
@@ -445,12 +365,7 @@ tech_power_hub_19 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_power_hub_20 = {
@@ -462,10 +377,5 @@ tech_power_hub_20 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }

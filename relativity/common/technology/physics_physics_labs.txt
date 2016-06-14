@@ -166,7 +166,7 @@ tech_physics_lab_2 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -186,7 +186,7 @@ tech_physics_lab_3 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -203,7 +203,7 @@ tech_global_research_initiative = {
 	
 	weight_modifier = {
 		modifier = {
-			factor = 0.75
+			factor = 1.75
 			NOT = {
 				research_leader = {
 					area = physics
@@ -212,7 +212,7 @@ tech_global_research_initiative = {
 			}
 		}
 		modifier = {
-			factor = 0
+			factor = 1
 			NOT = {
 				OR = {
 					has_ethic = ethic_materialist
@@ -268,7 +268,7 @@ tech_physics_lab_4 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -336,7 +336,7 @@ tech_physics_lab_6 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -356,7 +356,7 @@ tech_physics_lab_7 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -376,7 +376,7 @@ tech_physics_lab_8 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -396,7 +396,7 @@ tech_physics_lab_9 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -464,7 +464,7 @@ tech_physics_lab_11 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -484,7 +484,7 @@ tech_physics_lab_12 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -504,7 +504,7 @@ tech_physics_lab_13 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -524,7 +524,7 @@ tech_physics_lab_14 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -592,7 +592,7 @@ tech_physics_lab_16 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -612,7 +612,7 @@ tech_physics_lab_17 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -632,7 +632,7 @@ tech_physics_lab_18 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -652,7 +652,7 @@ tech_physics_lab_19 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}

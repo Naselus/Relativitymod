@@ -106,12 +106,7 @@ tech_medicine_1 = {
 	
 	#Hospital 1
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_medicine_2 = {
@@ -126,12 +121,7 @@ tech_medicine_2 = {
 			pop_growth_req_mult = -0.025
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_medicine_3 = {
@@ -146,12 +136,7 @@ tech_medicine_3 = {
 			pop_growth_req_mult = -0.025
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_medicine_4 = {
@@ -166,12 +151,7 @@ tech_medicine_4 = {
 			pop_growth_req_mult = -0.025
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_medicine_5 = {
@@ -184,12 +164,7 @@ tech_medicine_5 = {
 	
 	#Hospital 2
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_medicine_6 = {
@@ -204,12 +179,7 @@ tech_medicine_6 = {
 			pop_growth_req_mult = -0.025
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_medicine_7 = {
@@ -224,12 +194,7 @@ tech_medicine_7 = {
 			pop_growth_req_mult = -0.025
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_medicine_8 = {
@@ -244,12 +209,7 @@ tech_medicine_8 = {
 			pop_growth_req_mult = -0.025
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_medicine_9 = {
@@ -264,12 +224,7 @@ tech_medicine_9 = {
 			pop_growth_req_mult = -0.025
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_medicine_10 = {
@@ -282,12 +237,7 @@ tech_medicine_10 = {
 	
 	#Hospital 3
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_medicine_11 = {
@@ -302,12 +252,7 @@ tech_medicine_11 = {
 			pop_growth_req_mult = -0.025
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_medicine_12 = {
@@ -322,12 +267,7 @@ tech_medicine_12 = {
 			pop_growth_req_mult = -0.025
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_medicine_13 = {
@@ -342,12 +282,7 @@ tech_medicine_13 = {
 			pop_growth_req_mult = -0.025
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_medicine_14 = {
@@ -362,12 +297,7 @@ tech_medicine_14 = {
 			pop_growth_req_mult = -0.025
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_medicine_15 = {
@@ -380,12 +310,7 @@ tech_medicine_15 = {
 	
 	#Hospital 4
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_medicine_16 = {
@@ -400,12 +325,7 @@ tech_medicine_16 = {
 			pop_growth_req_mult = -0.025
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_medicine_17 = {
@@ -420,12 +340,7 @@ tech_medicine_17 = {
 			pop_growth_req_mult = -0.025
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_medicine_18 = {
@@ -440,12 +355,7 @@ tech_medicine_18 = {
 			pop_growth_req_mult = -0.025
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_medicine_19 = {
@@ -460,12 +370,7 @@ tech_medicine_19 = {
 			pop_growth_req_mult = -0.025
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_medicine_20 = {
@@ -478,10 +383,5 @@ tech_medicine_20 = {
 	
 	#Hospital 5
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }

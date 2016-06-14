@@ -947,12 +947,7 @@ tech_military_supremacy = {
 		}
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_military_theory_14 = {
@@ -968,12 +963,7 @@ tech_military_theory_14 = {
 		ship_upkeep_mult = -0.02
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_military_theory_15 = {
@@ -989,12 +979,7 @@ tech_military_theory_15 = {
 		ship_upkeep_mult = -0.02
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_military_theory_16 = {
@@ -1010,12 +995,7 @@ tech_military_theory_16 = {
 		ship_upkeep_mult = -0.02
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_military_theory_17 = {
@@ -1031,12 +1011,7 @@ tech_military_theory_17 = {
 		ship_upkeep_mult = -0.02
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_military_theory_18 = {
@@ -1052,12 +1027,7 @@ tech_military_theory_18 = {
 		ship_upkeep_mult = -0.02
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_military_theory_19 = {
@@ -1073,12 +1043,7 @@ tech_military_theory_19 = {
 		ship_upkeep_mult = -0.02
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_military_theory_20 = {
@@ -1094,10 +1059,5 @@ tech_military_theory_20 = {
 		ship_upkeep_mult = -0.02
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }

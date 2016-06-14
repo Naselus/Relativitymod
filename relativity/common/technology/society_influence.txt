@@ -251,12 +251,7 @@ tech_influence_3 = {
 		country_border_mult = 0.05
 	}	
 
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_influence_4 = {
@@ -566,12 +561,7 @@ tech_influence_19 = {
 		country_border_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_influence_20 = {
@@ -586,10 +576,5 @@ tech_influence_20 = {
 		country_border_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }

@@ -390,12 +390,7 @@ tech_field_manipulation_9 = {
 		ship_shield_hp_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_field_manipulation_10 = {
@@ -410,12 +405,7 @@ tech_field_manipulation_10 = {
 		ship_shield_hp_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_field_manipulation_11 = {
@@ -430,12 +420,7 @@ tech_field_manipulation_11 = {
 		ship_shield_hp_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_field_manipulation_12 = {
@@ -450,12 +435,7 @@ tech_field_manipulation_12 = {
 		ship_shield_hp_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_field_manipulation_13 = {
@@ -470,12 +450,7 @@ tech_field_manipulation_13 = {
 		ship_shield_hp_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_field_manipulation_14 = {
@@ -490,12 +465,7 @@ tech_field_manipulation_14 = {
 		ship_shield_hp_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_field_manipulation_15 = {
@@ -510,12 +480,7 @@ tech_field_manipulation_15 = {
 		ship_shield_hp_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_field_manipulation_16 = {
@@ -530,12 +495,7 @@ tech_field_manipulation_16 = {
 		ship_shield_hp_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_field_manipulation_17 = {
@@ -550,12 +510,7 @@ tech_field_manipulation_17 = {
 		ship_shield_hp_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_field_manipulation_18 = {
@@ -570,12 +525,7 @@ tech_field_manipulation_18 = {
 		ship_shield_hp_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_field_manipulation_19 = {
@@ -590,12 +540,7 @@ tech_field_manipulation_19 = {
 		ship_shield_hp_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_field_manipulation_20 = {
@@ -610,10 +555,5 @@ tech_field_manipulation_20 = {
 		ship_shield_hp_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }

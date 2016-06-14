@@ -1112,12 +1112,7 @@ tech_terraforming_18= {
 		pop_environment_tolerance = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_terraforming_19 = {
@@ -1132,12 +1127,7 @@ tech_terraforming_19 = {
 		pop_environment_tolerance = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_terraforming_20 = {
@@ -1152,11 +1142,6 @@ tech_terraforming_20 = {
 		pop_environment_tolerance = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 

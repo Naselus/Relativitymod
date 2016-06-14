@@ -250,12 +250,7 @@ tech_thrusters_5 = {
 		ship_speed_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_thrusters_6 = {
@@ -270,12 +265,7 @@ tech_thrusters_6 = {
 		ship_speed_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_thrusters_7 = {
@@ -290,12 +280,7 @@ tech_thrusters_7 = {
 		ship_speed_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_thrusters_8 = {
@@ -310,12 +295,7 @@ tech_thrusters_8 = {
 		ship_speed_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_thrusters_9 = {
@@ -330,12 +310,7 @@ tech_thrusters_9 = {
 		ship_speed_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_thrusters_10 = {
@@ -350,12 +325,7 @@ tech_thrusters_10 = {
 		ship_speed_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_thrusters_11 = {
@@ -370,12 +340,7 @@ tech_thrusters_11 = {
 		ship_speed_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_thrusters_12 = {
@@ -390,12 +355,7 @@ tech_thrusters_12 = {
 		ship_speed_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_thrusters_13 = {
@@ -410,12 +370,7 @@ tech_thrusters_13 = {
 		ship_speed_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_thrusters_14 = {
@@ -430,12 +385,7 @@ tech_thrusters_14 = {
 		ship_speed_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_thrusters_15 = {
@@ -450,12 +400,7 @@ tech_thrusters_15 = {
 		ship_speed_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_thrusters_16 = {
@@ -470,12 +415,7 @@ tech_thrusters_16 = {
 		ship_speed_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_thrusters_17 = {
@@ -490,12 +430,7 @@ tech_thrusters_17 = {
 		ship_speed_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_thrusters_18 = {
@@ -510,12 +445,7 @@ tech_thrusters_18 = {
 		ship_speed_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_thrusters_19 = {
@@ -530,12 +460,7 @@ tech_thrusters_19 = {
 		ship_speed_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_thrusters_20 = {
@@ -550,10 +475,5 @@ tech_thrusters_20 = {
 		ship_speed_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }

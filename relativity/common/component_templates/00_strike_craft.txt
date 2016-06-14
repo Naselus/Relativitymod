@@ -18,8 +18,8 @@ strike_craft_component_template = {
 	range = 20
 	accuracy = 1.0
 	
-	health = 7
-	armor = 0
+	health = 30
+	armor = 2
 	shield = 0
 	
 	speed = 2
@@ -52,13 +52,13 @@ strike_craft_component_template = {
 	regeneration_per_day = 0.034
 	launch_time = 5.0
 	
-	damage = { min = 5 max = 11 }
+	damage = { min = 8 max = 15 }
 	cooldown = 2
 	range = 16
 	accuracy = 1.0
 	
-	health = 8
-	armor = 0
+	health = 50
+	armor = 3
 	shield = 0
 	
 	speed = 2
@@ -92,18 +92,18 @@ strike_craft_component_template = {
 	regeneration_per_day = 0.034
 	launch_time = 5.0
 	
-	damage = { min = 7 max = 12 }
+	damage = { min = 12 max = 22 }
 	cooldown = 2
-	range = 18
+	range = 25
 	accuracy = 1.0
 	
-	health = 10
-	armor = 0
+	health = 75
+	armor = 4
 	shield = 0
 	
-	speed = 2.1
+	speed = 3
 	rotation_speed = 0.1
-	acceleration = 0.5
+	acceleration = 0.75
 	
 	shield_damage = 1.0
 	shield_penetration = 0
@@ -132,18 +132,18 @@ strike_craft_component_template = {
 	regeneration_per_day = 0.034
 	launch_time = 5.0
 	
-	damage = { min = 8 max = 14 }
+	damage = { min = 18 max = 33 }
 	cooldown = 2
-	range = 20
+	range = 35
 	accuracy = 1.0
 	
-	health = 12
-	armor = 0
+	health = 100
+	armor = 5
 	shield = 0
 	
-	speed = 2.2
+	speed = 4
 	rotation_speed = 0.1
-	acceleration = 0.5
+	acceleration = 0.75
 	
 	shield_damage = 1.0
 	shield_penetration = 0
@@ -174,8 +174,8 @@ strike_craft_component_template = {
 	range = 18
 	accuracy = 1.0
 	
-	health = 9
-	armor = 0
+	health = 40
+	armor = 3
 	shield = 0
 	
 	speed = 1.5
@@ -209,16 +209,16 @@ strike_craft_component_template = {
 	regeneration_per_day = 0.034
 	launch_time = 5.0
 	
-	damage = { min = 19 max = 30 }
+	damage = { min = 30 max = 56 }
 	cooldown = 5
 	range = 20
 	accuracy = 1.0
 	
-	health = 11
-	armor = 0
+	health = 60
+	armor = 3
 	shield = 0
 	
-	speed = 1.5
+	speed = 2
 	rotation_speed = 0.1
 	acceleration = 0.5
 	
@@ -249,16 +249,16 @@ strike_craft_component_template = {
 	regeneration_per_day = 0.034
 	launch_time = 5.0
 	
-	damage = { min = 20 max = 35 }
+	damage = { min = 60 max = 112 }
 	cooldown = 5
-	range = 22
+	range = 35
 	accuracy = 1.0
 	
-	health = 13
-	armor = 0
+	health = 80
+	armor = 3
 	shield = 0
 	
-	speed = 1.5
+	speed = 3
 	rotation_speed = 0.1
 	acceleration = 0.5
 	

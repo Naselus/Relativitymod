@@ -864,12 +864,7 @@ tech_ballistics_13 = {
 		weapon_type_kinetic_weapon_fire_rate_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_ballistics_14 = {
@@ -885,12 +880,7 @@ tech_ballistics_14 = {
 		weapon_type_kinetic_weapon_fire_rate_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_ballistics_15 = {
@@ -906,12 +896,7 @@ tech_ballistics_15 = {
 		weapon_type_kinetic_weapon_fire_rate_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_ballistics_16 = {
@@ -927,12 +912,7 @@ tech_ballistics_16 = {
 		weapon_type_kinetic_weapon_fire_rate_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_ballistics_17 = {
@@ -948,12 +928,7 @@ tech_ballistics_17 = {
 		weapon_type_kinetic_weapon_fire_rate_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_ballistics_18 = {
@@ -969,12 +944,7 @@ tech_ballistics_18 = {
 		weapon_type_kinetic_weapon_fire_rate_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_ballistics_19 = {
@@ -990,12 +960,7 @@ tech_ballistics_19 = {
 		weapon_type_kinetic_weapon_fire_rate_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_ballistics_20 = {
@@ -1011,10 +976,5 @@ tech_ballistics_20 = {
 		weapon_type_kinetic_weapon_fire_rate_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }

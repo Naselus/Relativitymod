@@ -17,7 +17,7 @@ assault_army = {
 	}
 
 	allow = {
-		num_pops > 1    
+		num_pops > 2   
 	}
 	
 	on_queued = {
@@ -54,7 +54,7 @@ defense_army = {
 	}
 
 	allow = {
-		num_pops > 1    
+		num_pops > 2   
 	}
 	
 	on_queued = {
@@ -119,7 +119,7 @@ slave_army = {
 
 	allow = {
 		has_building = "building_slave_processing"
-		num_pops > 1    
+		num_pops > 2   
 	}
 
 	on_queued = {
@@ -147,7 +147,7 @@ clone_army = {
 	icon_frame = 7
 	
 	cost = {
-		minerals = 30
+		minerals = 60
 	}
 	
 	prerequisites = { "tech_cloning" }
@@ -180,17 +180,17 @@ robotic_army = {
 # Synthetic Armies
 android_army = {
 	robotic = yes
-	damage = 3.00
+	damage = 5.00
 	morale_damage = 3
 	morale = 10
-	health = 5
+	health = 8
 	time = 360
 	maintenance = 1.00
 	icon_frame = 4
 	has_species = no
 	
 	cost = {
-		minerals = 150
+		minerals = 300
 		energy = 100
 	}
 	
@@ -213,7 +213,7 @@ psionic_army = {
 	}
 	
 	allow = {
-		num_pops > 1    
+		num_pops > 2   
 	}
 	
 	on_queued = {
@@ -266,7 +266,7 @@ gene_warrior_army = {
 	}
 	
 	allow = {
-		num_pops > 1    
+		num_pops > 2   
 	}
 	
 	on_queued = {

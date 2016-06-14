@@ -402,12 +402,7 @@ tech_psionics_6 = {
 	weight = 0
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_psionics_7 = {
@@ -418,12 +413,7 @@ tech_psionics_7 = {
 	prerequisites = { "tech_psionics_6" }
 	weight = @tier2weight1
 
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_psionics_8 = {
@@ -434,12 +424,7 @@ tech_psionics_8 = {
 	prerequisites = { "tech_psionics_7" }
 	weight = @tier2weight1
 
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_psionics_9 = {
@@ -450,12 +435,7 @@ tech_psionics_9 = {
 	prerequisites = { "tech_psionics_8" }
 	weight = @tier2weight1
 
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_psionics_10 = {
@@ -466,12 +446,7 @@ tech_psionics_10 = {
 	prerequisites = { "tech_psionics_9" }
 	weight = @tier2weight1
 
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_psionics_11 = {
@@ -483,12 +458,7 @@ tech_psionics_11 = {
 	weight = @tier2weight1
 	
 
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_psionics_12 = {
@@ -500,12 +470,7 @@ tech_psionics_12 = {
 	weight = @tier2weight1
 	
 
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_psionics_13 = {
@@ -516,12 +481,7 @@ tech_psionics_13 = {
 	prerequisites = { "tech_psionics_12" }
 	weight = @tier2weight1
 
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_psionics_14 = {
@@ -533,12 +493,7 @@ tech_psionics_14 = {
 	weight = @tier2weight1
 	
 
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_psionics_15 = {
@@ -550,12 +505,7 @@ tech_psionics_15 = {
 	weight = @tier2weight1
 	
 
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_psionics_16 = {
@@ -567,12 +517,7 @@ tech_psionics_16 = {
 	weight = @tier2weight1
 	
 
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_psionics_17 = {
@@ -583,12 +528,7 @@ tech_psionics_17 = {
 	prerequisites = { "tech_psionics_16" }
 	weight = @tier2weight1
 
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_psionics_18 = {
@@ -600,12 +540,7 @@ tech_psionics_18 = {
 	weight = @tier2weight1
 	
 
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_psionics_19 = {
@@ -616,12 +551,7 @@ tech_psionics_19 = {
 	prerequisites = { "tech_psionics_18" }
 	weight = @tier2weight1
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_psionics_20 = {
@@ -633,10 +563,5 @@ tech_psionics_20 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }

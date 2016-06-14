@@ -2,6 +2,7 @@
 on_yearly_pulse = {
 	events = {
 		pirate.4
+		galactic_features.363
 	}
 }
 

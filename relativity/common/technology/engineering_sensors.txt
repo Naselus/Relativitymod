@@ -303,12 +303,7 @@ tech_sensors_6 = {
 		ship_sensor_range_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_sensors_7 = {
@@ -323,12 +318,7 @@ tech_sensors_7 = {
 		ship_sensor_range_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_sensors_8 = {
@@ -343,12 +333,7 @@ tech_sensors_8 = {
 		ship_sensor_range_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_sensors_9 = {
@@ -363,12 +348,7 @@ tech_sensors_9 = {
 		ship_sensor_range_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_sensors_10 = {
@@ -383,12 +363,7 @@ tech_sensors_10 = {
 		ship_sensor_range_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_sensors_11 = {
@@ -403,12 +378,7 @@ tech_sensors_11 = {
 		ship_sensor_range_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_sensors_12 = {
@@ -423,12 +393,7 @@ tech_sensors_12 = {
 		ship_sensor_range_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_sensors_13 = {
@@ -443,12 +408,7 @@ tech_sensors_13 = {
 		ship_sensor_range_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_sensors_14 = {
@@ -463,12 +423,7 @@ tech_sensors_14 = {
 		ship_sensor_range_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_sensors_15= {
@@ -483,12 +438,7 @@ tech_sensors_15= {
 		ship_sensor_range_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_sensors_16 = {
@@ -503,12 +453,7 @@ tech_sensors_16 = {
 		ship_sensor_range_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_sensors_17 = {
@@ -523,12 +468,7 @@ tech_sensors_17 = {
 		ship_sensor_range_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_sensors_18 = {
@@ -543,12 +483,7 @@ tech_sensors_18 = {
 		ship_sensor_range_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_sensors_19 = {
@@ -563,12 +498,7 @@ tech_sensors_19 = {
 		ship_sensor_range_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_sensors_20 = {
@@ -583,12 +513,7 @@ tech_sensors_20 = {
 		ship_sensor_range_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_sensors_21 = {
@@ -600,10 +525,5 @@ tech_sensors_21 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }

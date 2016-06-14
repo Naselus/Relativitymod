@@ -480,12 +480,7 @@ tech_social_engineering_6 = {
 		pop_ethic_shift = -0.03	
 		}
 
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_social_engineering_7 = {
@@ -501,12 +496,7 @@ tech_social_engineering_7 = {
 		}	
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_social_engineering_8 = {
@@ -522,12 +512,7 @@ tech_social_engineering_8 = {
 		}	
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_social_engineering_9 = {
@@ -543,12 +528,7 @@ tech_social_engineering_9 = {
 		}
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_social_engineering_10 = {
@@ -564,12 +544,7 @@ tech_social_engineering_10 = {
 		}	
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_social_engineering_11 = {
@@ -585,12 +560,7 @@ tech_social_engineering_11 = {
 		}	
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_social_engineering_12 = {
@@ -606,12 +576,7 @@ tech_social_engineering_12 = {
 		}	
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_social_engineering_13 = {
@@ -627,12 +592,7 @@ tech_social_engineering_13 = {
 		}	
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_social_engineering_14 = {
@@ -648,12 +608,7 @@ tech_social_engineering_14 = {
 		pop_ethic_shift = -0.03	
 		}	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_social_engineering_15 = {
@@ -669,12 +624,7 @@ tech_social_engineering_15 = {
 		}	
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_social_engineering_16 = {
@@ -690,12 +640,7 @@ tech_social_engineering_16 = {
 		}	
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_social_engineering_17 = {
@@ -711,12 +656,7 @@ tech_social_engineering_17 = {
 		}	
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_social_engineering_18 = {
@@ -732,12 +672,7 @@ tech_social_engineering_18 = {
 		}	
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_social_engineering_19 = {
@@ -753,12 +688,7 @@ tech_social_engineering_19 = {
 		}	
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_social_engineering_20 = {
@@ -774,10 +704,5 @@ tech_social_engineering_20 = {
 		}	
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
