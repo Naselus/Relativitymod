@@ -102,11 +102,6 @@ ethic_fanatic_xenophobe = {
 		pop_alien_slavery_tolerance = 1.0
 	}
 	
-	country_modifier = {		
-		rivalry_influence_gain = 0.5
-		max_rivalries = 2
-	}
-	
 	random_weight = {
 		value = 75
 	}
@@ -124,11 +119,6 @@ ethic_xenophobe = {
 		pop_alien_slavery_tolerance = 0.5
 	}
 	
-	country_modifier = {
-		rivalry_influence_gain = 0.25
-		max_rivalries = 1
-	}
-	
 	random_weight = {
 		value = 75
 	}
@@ -142,12 +132,6 @@ ethic_fanatic_xenophile = {
 	pop_modifier = {
 		pop_xenophobia = -1
 		pop_other_species_happiness = 0.1
-	}
-	
-	country_modifier = {
-		alliance_influence_cost = -1
-		max_embassies = 2
-		planet_migration_xeno_pull = 0.1
 	}
 	
 	random_weight = {
@@ -164,12 +148,6 @@ ethic_xenophile = {
 	pop_modifier = {
 		pop_xenophobia = -0.5
 		pop_other_species_happiness = 0.05
-	}
-	
-	country_modifier = {
-		alliance_influence_cost = -0.5
-		max_embassies = 1
-		planet_migration_xeno_pull = 0.05
 	}
 	
 	random_weight = {
@@ -189,12 +167,6 @@ ethic_fanatic_militarist = {
 		pop_war_happiness = 0.50
 	}
 	
-	country_modifier = {
-		army_damage_mult = 0.1
-		army_upkeep_mult = -0.1
-		navy_size_mult = 0.1
-	}
-	
 	random_weight = {
 		value = 100
 	}
@@ -212,12 +184,7 @@ ethic_militarist = {
 		pop_war_happiness = 0.25
 	}
 	
-	country_modifier = {
-		army_damage_mult = 0.05
-		army_upkeep_mult = -0.05
-		navy_size_mult = 0.05
-	}
-	
+
 	random_weight = {
 		value = 100
 	}
@@ -234,10 +201,6 @@ ethic_fanatic_pacifist = {
 	pop_modifier = {
 		pop_growth_req_mult = -0.1
 		pop_war_happiness = -0.50
-	}
-	
-	country_modifier = {
-		building_time_mult = -0.25
 	}
 	
 	random_weight = {
@@ -258,10 +221,6 @@ ethic_pacifist = {
 		pop_war_happiness = -0.25
 	}
 	
-	country_modifier = {
-		building_time_mult = -0.1
-	}
-	
 	random_weight = {
 		value = 50
 	}
@@ -278,10 +237,7 @@ ethic_fanatic_spiritualist = {
 	pop_modifier = {
 		pop_happiness = 0.25
 	}
-	country_modifier = {
-		army_morale = 1
-	}
-	
+
 	random_weight = {
 		value = 100
 	}
@@ -297,9 +253,6 @@ ethic_spiritualist = {
 	
 	pop_modifier = {
 		pop_happiness = 0.1
-	}
-	country_modifier = {
-		army_morale = 0.5
 	}
 	
 	random_weight = {

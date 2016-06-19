@@ -310,3 +310,6 @@ Version 102.0.1
 110.0.95
 
 * Fixed science deposits still showing up in orbital slots.
+* Leaders now spawn with only Ethics traits.
+* All non-POP modifiers removed from Ethics.
+
