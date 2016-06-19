@@ -639,7 +639,8 @@ on_ship_built = {
 		tutorial.8
 		tutorial.21
 		tutorial.25
-	}
+		shipcost.1
+		}
 }
 
 # A ship design has been finished

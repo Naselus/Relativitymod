@@ -1,0 +1,20 @@
+namespace = shipcost
+
+ship_event = {
+	id = shipcost.1
+	hide_window = yes
+	is_triggered_only = yes
+	
+	
+	trigger = {
+		is_ship_class = shipclass_colonizer
+	}
+	
+	immediate = {
+		FROM = { 
+			random_pop = {
+				kill_pop = yes
+			}
+		}
+	}
+}

@@ -705,7 +705,7 @@ country_event = {
 									}
 									find_random_system = {
 										trigger = {
-											id = "pirate.1.trigger.11
+											id = "pirate.1.trigger.11"
 											any_planet = {
 												is_planet = event_target:pirate_home
 											}

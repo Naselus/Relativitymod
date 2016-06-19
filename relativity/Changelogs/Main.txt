@@ -312,4 +312,8 @@ Version 102.0.1
 * Fixed science deposits still showing up in orbital slots.
 * Leaders now spawn with only Ethics traits.
 * All non-POP modifiers removed from Ethics.
+* Fixed an error in the pirate event
+* Added the leader gfx fix from TVS by Velorian
+* Colony ships now consume a POP (currently picked at random, thoguh if I ever get round to looking at Jor's approach I may use that instead)
+
 
