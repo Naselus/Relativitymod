@@ -22,6 +22,7 @@ stellar_fox = {
 	}
 	leader_trait = yes
 	leader_class = { admiral }
+	initial = no
 }
 
 prudent = {
@@ -34,6 +35,7 @@ prudent = {
 	}
 	leader_trait = yes
 	leader_class = { admiral }
+	initial = no
 }
 
 drillmaster = {
@@ -46,6 +48,7 @@ drillmaster = {
 	}
 	leader_trait = yes
 	leader_class = { admiral }
+	initial = no
 }
 
 mechanic = {
@@ -58,6 +61,7 @@ mechanic = {
 	}
 	leader_trait = yes
 	leader_class = { admiral }
+	initial = no
 }
 
 headstrong = {
@@ -70,6 +74,7 @@ headstrong = {
 	}
 	leader_trait = yes
 	leader_class = { admiral }
+	initial = no
 }
 
 corrupt = {
@@ -82,6 +87,7 @@ corrupt = {
 	}
 	leader_trait = yes
 	leader_class = { admiral }
+	initial = no
 }
 
 ####################

@@ -290,3 +290,23 @@ Version 102.0.1
 * Now need a minimum of 2 POPs before you can recruit armies.
 * Pirate event now randomized a bit more so it's timing is less predictable.
 * Pirate stations will now spawn periodically in unowned systems.
+
+110.0.94
+
+* Small and Medium Plasma weapons now have reduced shield damage
+* Fixed Tachyon Lance armour pene.
+* Addded level 4 and 5 capital complexes
+* Higher-level science building techs now gated on being able to produce the appropriate power plants (so you can't accidentally upgrade your labs to buildings you cannot actually operate)
+* Smaller science deposits now don't fill orbital slots (1 or 2 science).
+* Social science NEVER fills and orbital slots (no people to observe)
+* Adjacency bonuses from plant capitals now multipliers.
+* High-end PD damage buffed.
+* Lances and other supertech weapons are now fixed axis weaponry
+* Missiles are now on turrets
+* Ethos opposite dislike standardized to -0.1 for fanatics and no penalty for normals.
+* Reworked ethics
+* Pirates no longer spawn multiple stations, and will randomly pick from your various known weapon types.
+
+110.0.95
+
+* Fixed science deposits still showing up in orbital slots.

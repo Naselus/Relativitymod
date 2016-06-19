@@ -19,7 +19,7 @@ ship_behavior = {
 		armor_focus_value				= 5			#score += enemy armor * shield penetration value * <armor_focus_value>
 		already_incoming_damage_penalty = 200		#score -= ( fleet total estimated damage to enemy / enemy max HP ) * <already_incoming_damage_penalty>.
 		distance_to_fleet_penalty		= 20		#score -= distance between enemy and fleet * <distance_to_fleet_penalty>
-		size_difference_penalty			= 100			#score -= Abs( ship size - enemy ship size ) * <size_difference_penalty>. "Pick a fight with someone your own size!"
+		size_difference_penalty			= 1000			#score -= Abs( ship size - enemy ship size ) * <size_difference_penalty>. "Pick a fight with someone your own size!"
 		civilian_target_penalty			= 100000	#if( target is civilian ) score -= <civilian_target_penalty>
 	}
 }
@@ -27,7 +27,7 @@ ship_behavior = {
 ship_behavior = {
 	name = "bombers_behavior"
 	preferred_attack_range = max
-	formation_distance = 3
+	formation_distance = 5
 	return_to_formation_distance = 50
 	
 	attack_move_pattern = charge

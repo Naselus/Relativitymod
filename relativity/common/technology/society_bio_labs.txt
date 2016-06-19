@@ -219,7 +219,7 @@ tech_biolab_2 = {
 	area = society
 	tier = 2
 	category = { bio_labs }
-	prerequisites = { "tech_societal_research_3" "tech_colonial_centralization"}
+	prerequisites = { "tech_societal_research_3" "tech_power_plant_6"}
 	weight = @tier2weight3
 	
 	weight_modifier = {
@@ -480,7 +480,7 @@ tech_biolab_4 = {
 	cost = @tier5cost4
 	tier = 5
 	category = { bio_labs }
-	prerequisites = { "tech_societal_research_11" }	
+	prerequisites = { "tech_societal_research_11" "tech_power_plant_11" }	
 	weight = @tier5weight4
 	
 	weight_modifier = {

@@ -23,6 +23,7 @@ leader_trait_trickster = {
 	leader_trait = yes
 	leader_class = { admiral }
 	opposites = { "leader_trait_unyielding" }
+	initial = no
 }
 
 leader_trait_fleet_logistician = {
@@ -34,6 +35,7 @@ leader_trait_fleet_logistician = {
 	}
 	leader_trait = yes
 	leader_class = { admiral }
+	initial = no
 }
 
 leader_trait_engineer = {
@@ -44,6 +46,7 @@ leader_trait_engineer = {
 		ship_auto_repair_add = 0.01 # Regenerates 1% ship-health per month
 	}
 	leader_trait = yes
+	initial = no
 	leader_class = { admiral }
 	prerequisites = { tech_doctrine_fleet_size_3 }
 }
@@ -56,6 +59,7 @@ leader_trait_aggressive = {
 		ship_fire_rate_mult = 0.05
 	}
 	leader_trait = yes
+	initial = no
 	leader_class = { admiral }
 	opposites = { "leader_trait_cautious" }
 }
@@ -68,6 +72,7 @@ leader_trait_cautious = {
 		ship_evasion_mult = 0.05
 	}
 	leader_trait = yes
+	initial = no
 	leader_class = { admiral }
 	opposites = { "leader_trait_aggressive" }
 }
@@ -81,6 +86,7 @@ leader_trait_scout = {
 	}
 	leader_trait = yes
 	leader_class = { admiral }
+	initial = no
 }
 
 leader_trait_unyielding = {
@@ -92,6 +98,7 @@ leader_trait_unyielding = {
 	}
 	can_retreat = no
 	leader_trait = yes
+	initial = no
 	leader_class = { admiral }
 	opposites = { "leader_trait_nervous" "leader_trait_trickster" }
 }
@@ -106,6 +113,7 @@ leader_trait_gale_speed = {
 		ship_combat_speed_mult = 0.05
 	}
 	leader_trait = yes
+	initial = no
 	leader_class = { admiral }
 	opposites = { "leader_trait_lethargic" }
 }

@@ -1341,7 +1341,7 @@ building_engineering_facility_2 = {
 	}
 	
 	required_resources = {
-		sr_plasma = @b3upkeep
+		sr_plasma2 = @b3upkeep
 	}
 	
 	upgrades = {
@@ -1516,7 +1516,7 @@ building_physics_lab_2 = {
 	}
 	
 	required_resources = {
-		sr_plasma = @b3upkeep
+		sr_plasma2 = @b3upkeep
 	}
 	
 	upgrades = {
@@ -1695,7 +1695,7 @@ building_biolab_2 = {
 	}
 	
 	required_resources = {
-		sr_plasma = @b3upkeep
+		sr_plasma2 = @b3upkeep
 	}
 	
 	upgrades = {
@@ -1888,8 +1888,8 @@ building_capital_1 = {
 	}
 	
 	adjacency_bonus = {
-		resource_minerals_add = 1
-		resource_energy_add = 1
+		tile_resource_minerals_mult = 0.25
+		tile_resource_energy_mult = 0.25
 	}
 
 	required_resources = {
@@ -1940,8 +1940,8 @@ building_capital_2 = {
 	}
 	
 	adjacency_bonus = {
-		resource_minerals_add = 2
-		resource_energy_add = 2
+		tile_resource_minerals_mult = 0.5
+		tile_resource_energy_mult = 0.5
 	}
 	required_resources = {
 		sr_nutrients = 4
@@ -1994,8 +1994,8 @@ building_capital_3 = {
 	}
 	
 	adjacency_bonus = {
-		resource_minerals_add = 3
-		resource_energy_add = 3
+		tile_resource_minerals_mult = 0.75
+		tile_resource_energy_mult = 0.75
 	}
 	
 	prerequisites = {
@@ -4275,4 +4275,100 @@ building_hospital_5 = {
 		}
 	}
  
+}
+
+building_capital_4 = {
+	base_buildtime = 1080
+	is_listed = no
+	
+	cost = {
+		minerals = 2000
+		#influence = 200
+	}
+	
+	allow = {
+		always = no
+		custom_tooltip = {
+			text = "Requires 15 POPs"
+			planet = {
+				count_pops = {
+					count > 14
+					limit = {
+						is_colony_pop = yes
+					}
+				}
+			}
+		}
+	}
+
+	planet_unique = yes
+	capital = yes
+	level = 4
+	
+	produced_resources = {
+		food = 50
+		minerals = 4
+		influence = 1.25
+	}
+	
+	required_resources = {
+		sr_nutrients = 16
+	}
+	
+	adjacency_bonus = {
+		tile_resource_minerals_mult = 1
+		tile_resource_energy_mult = 1
+	}
+	
+	prerequisites = {
+	"tech_statecraft_10"
+	}	
+}
+
+building_capital_5 = {
+	base_buildtime = 1080
+	is_listed = no
+	
+	cost = {
+		minerals = 4000
+		#influence = 200
+	}
+	
+	allow = {
+		always = no
+		custom_tooltip = {
+			text = "Requires 20 POPs"
+			planet = {
+				count_pops = {
+					count > 21
+					limit = {
+						is_colony_pop = yes
+					}
+				}
+			}
+		}
+	}
+
+	planet_unique = yes
+	capital = yes
+	level = 5
+	
+	produced_resources = {
+		food = 100
+		minerals = 5
+		influence = 1.5
+	}
+	
+	required_resources = {
+		sr_nutrients = 32
+	}
+	
+	adjacency_bonus = {
+		tile_resource_minerals_mult = 1.5
+		tile_resource_energy_mult = 1.5
+	}
+	
+	prerequisites = {
+		"tech_statecraft_11"
+	}	
 }

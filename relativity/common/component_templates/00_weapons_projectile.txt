@@ -428,7 +428,7 @@ weapon_component_template = {
 	total_fire_time = 45
 	range = 15
 	accuracy = 1
-	
+	static_rotation = yes	
 	icon = "GFX_ship_part_kinetic_artillery_1"
 	icon_frame = 1
 	power = -9
@@ -451,7 +451,7 @@ weapon_component_template = {
 	total_fire_time = 45
 	range = 15
 	accuracy = 1
-	
+	static_rotation = yes	
 	icon = "GFX_ship_part_kinetic_artillery_2"
 	icon_frame = 1
 	power = -18

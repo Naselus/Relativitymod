@@ -279,7 +279,7 @@ tech_physics_lab_5 = {
 	area = physics
 	tier = 2
 	category = { physics_labs }
-	prerequisites = { "tech_physics_lab_4" "tech_colonial_centralization"}
+	prerequisites = { "tech_physics_lab_4" "tech_power_plant_6"}
 	weight = @tier2weight3
 		
 	#unlock physics lab lvl 2
@@ -535,7 +535,7 @@ tech_physics_lab_15 = {
 	cost = @tier5cost4
 	tier = 5
 	category = { physics_labs }
-	prerequisites = { "tech_physics_lab_14" "tech_galactic_ambitions" }	
+	prerequisites = { "tech_physics_lab_14" "tech_galactic_ambitions" "tech_power_plant_11"}	
 	weight = @tier5weight4
 		
 	# # unlock physics lab lvl 4

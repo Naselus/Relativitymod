@@ -107,3 +107,23 @@
  building_hospital_4_desc:0 "Expanding the infrastructure for maintaining a larger health system allows for more resources to be efficiently used for higher-level treatments and cures for serious ailments such as cancer and autoimmune diseases"
  building_hospital_5:0 "Global Health Systems"
  building_hospital_5_desc:0 "Consolidating the many regional health systems under a planetary administration allows for the entirety of a planet's health resources to be efficiently utilized without detrimental price wars or compromising standards of care"
+ 
+ 
+ #ethics traits
+ 
+ leader_fcollectivist:0 "Collectivist Fanatic"
+ leader_collectivist:0 "Collectivist"
+ leader_findividualist:0 "Individualist Fanatic"
+ leader_individualist:0 "Individualist"
+ leader_fmilitarist:0 "Militarist Fanatic"
+ leader_militarist:0 "Militarist"
+ leader_pacifist:0 "Pacifist"
+ leader_fpacifist:0 "Pacifist Fanatic"
+ leader_fmaterialist:0 "Materialist Fanatic"
+ leader_materialist:0 "Materialist"
+ leader_spiritualist:0 "Spiritualist"
+ leader_fspiritualist:0 "Spiritualist Fanatic"
+ leader_fxenophobe:0 "Xenophobic Fanatic"
+ leader_xenophobe:0 "Xenophobe"
+ leader_xenophile:0 "Xenophile"
+ leader_fxenophile:0 "Xenophile Fanatic"

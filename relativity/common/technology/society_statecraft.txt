@@ -424,34 +424,72 @@ tech_collective_self = {
 
 tech_statecraft_10 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier4cost3
+	tier = 4
 	category = { statecraft }
-	prerequisites = { "tech_collective_self" }
-	weight = @tier2weight1
+	prerequisites = { "tech_living_state" "tech_galactic_administration" }
+	weight = @tier4weight1
 	
 	modifier = {
 		country_leader_cap = 1
 	}	
 	
+	weight_modifier = {
+		factor = 4
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
 	
-	ai_weight = { factor = 1 }
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
 }
 
 tech_statecraft_11 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier5cost3
+	tier = 5
 	category = { statecraft }
 	prerequisites = { "tech_statecraft_10" }
-	weight = @tier2weight1
+	weight = @tier5weight4
 	
 	modifier = {
 		country_leader_cap = 1
-	}		
+	}	
 	
+	weight_modifier = {
+		factor = 4
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
 	
-	ai_weight = { factor = 1 }
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
 }
 
 tech_statecraft_12 = {

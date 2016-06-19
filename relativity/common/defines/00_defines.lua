@@ -653,8 +653,8 @@ NDefines = {
 		SUBJECT_INTEGRATION_COST_PER_POP 		= 10, -- Integration cost per pop 
 		SUBJECT_INTEGRATION_COST_PER_PLANET		= 50, -- Integration cost per planet
 		XENOPHOBIA_SAME_SPECIES_CLASS_MULT  	= 0.5, -- Same Species Class: All Xenophobia and Xenophilia happiness and opinion effects are multiplied by this
-		XENOPHOBIA_SUBSPECIES_MULT  			= 0.25, -- Subspecies: All Xenophobia and Xenophilia happiness and opinion effects are multiplied by this
-		XENOPHOBIA_ROBOT_MULT  					= 0.25, -- Robots and Synthetics: All Xenophobia and Xenophilia happiness and opinion effects are multiplied by this
+		XENOPHOBIA_SUBSPECIES_MULT  			= 0.1, -- Subspecies: All Xenophobia and Xenophilia happiness and opinion effects are multiplied by this
+		XENOPHOBIA_ROBOT_MULT  					= 0.05, -- Robots and Synthetics: All Xenophobia and Xenophilia happiness and opinion effects are multiplied by this
 		XENOPHOBIA_CLIENT_PATRON_MULT  			= 0.25, -- Uplifed vs Uplifter: All Xenophobia and Xenophilia happiness and opinion effects are multiplied by this
 		XENOPHOBIA_ALIEN_OVERLORDS_MULT  		= 2, 	-- Unhappiness effect Multiplier for Xenophobe Pops within Alien empires
 		
@@ -683,7 +683,7 @@ NDefines = {
 		MAX_ETHIC_POINTS 					= 3,
 		MAX_TRAIT_POINTS 					= 2,
 		MAX_TRAITS 							= 4,		-- Max racial traits (1 is always used for homeworld type trait)
-		MAX_TRAIT_POINTS_LEADER				= 2,		-- How many trait points a leader can have
+		MAX_TRAIT_POINTS_LEADER				= 3,		-- How many trait points a leader can have
 		MAX_TRAIT_POINTS_RULER				= 3,
 		TRAIT_MODIFICATION_COST_MULT 		= 30, 		-- The cost of the species modification special project is trait cost * this
 		UPLIFT_COST_BASE					= 250.0,
@@ -693,7 +693,7 @@ NDefines = {
 
 	NShip = {
 		DESIGNER_WEAPON_PREF_MUL			= 1.33,			-- How much does weapon preference tags in the ship designer affect the weight it assigns a weapon?
-		DESIGNER_WEAPON_STACKING_DIV		= 0.20,			-- The higher this is, the more the ship designer will try to vary which weapon types are used on its sections
+		DESIGNER_WEAPON_STACKING_DIV		= 0.10,			-- The higher this is, the more the ship designer will try to vary which weapon types are used on its sections
 		
 		ENERGY_MAINTENANCE_MUL				= 0.01,		-- Ship Maintenance Multiplier, Percentage of the cost of the ship
 		MINERAL_MAINTENANCE_MUL				= 0.0,		-- Ship Maintenance Multiplier, Percentage of the cost of the ship
