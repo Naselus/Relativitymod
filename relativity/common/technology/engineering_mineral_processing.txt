@@ -106,7 +106,6 @@ tech_mineral_processing_1 = {
 	area = engineering
 	tier = 1
 	category = { mineral_processing }	
-	prerequisites = { "tech_mining_network_2" }
 	weight = @tier1weight1
 		
 	# unlock mineral processing plant 1
@@ -141,7 +140,7 @@ tech_mineral_processing_2 = {
 	area = engineering
 	tier = 2
 	category = { mineral_processing }	
-	prerequisites = { "tech_mineral_processing_1" "tech_colonial_centralization" }
+	prerequisites = { "tech_mineral_processing_1" }
 	weight = @tier2weight1
 		
 	# unlock mineral processing plant 2	
@@ -273,7 +272,7 @@ tech_mineral_processing_6 = {
 	area = engineering
 	tier = 3
 	category = { mineral_processing }	
-	prerequisites = { "tech_mineral_processing_5" "tech_colonial_centralization" }
+	prerequisites = { "tech_mineral_processing_5" "tech_mining_6" }
 	weight = @tier3weight1
 		
 	# unlock T1 mineral processing plant 3	
@@ -425,7 +424,7 @@ tech_mineral_processing_11 = {
 	cost = @tier4cost1
 	tier = 4
 	category = { mineral_processing }
-	prerequisites = { "tech_mineral_processing_10"}	
+	prerequisites = { "tech_mineral_processing_10" "tech_mining_10"}	
 	weight = @tier4weight1
 	
 	weight_modifier = {

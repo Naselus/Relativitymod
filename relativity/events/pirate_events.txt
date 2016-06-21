@@ -826,10 +826,6 @@ country_event = {
 	
 	trigger = {
 		is_country_type = pirate
-		OR = {
-			num_fleets < 2
-			num_ships < 3
-		}
 		any_owned_ship = {
 			is_ship_size = pirate_station
 		}

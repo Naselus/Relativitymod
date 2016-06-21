@@ -27,7 +27,7 @@ tm_semi_static_we_defensive = {
 	
 	war_economy_modifier = {
 		spaceport_ship_build_cost_mult = -0.15
-		planet_ship_build_speed_mult = -0.15
+		spaceport_ship_build_speed_mult = -0.15
 		planet_army_build_speed_mult = -0.15
 		planet_army_build_cost_mult = -0.15
 	}
@@ -60,7 +60,7 @@ tm_semi_static_we_offensive = {
 	war_economy_modifier = {
 		spaceport_ship_build_cost_mult = 0.15
 		planet_army_build_cost_mult = 0.15
-		planet_ship_build_speed_mult = -0.15
+		spaceport_ship_build_speed_mult = -0.15
 		planet_army_build_speed_mult = -0.15
 	}
 }
@@ -92,7 +92,7 @@ tm_versatile_we_defensive = {
 	war_economy_modifier = {
 		spaceport_ship_build_cost_mult = -0.3
 		planet_army_build_cost_mult = -0.3
-		planet_ship_build_speed_mult = 0.15
+		spaceport_ship_build_speed_mult = 0.15
 		planet_army_build_speed_mult = 0.15
 	}
 }
@@ -124,7 +124,7 @@ tm_versatile_we_offensive = {
 	war_economy_modifier = {
 		spaceport_ship_build_cost_mult = 0.3
 		planet_army_build_cost_mult = 0.3
-		planet_ship_build_speed_mult = -0.15
+		spaceport_ship_build_speed_mult = -0.15
 		planet_army_build_speed_mult = -0.15
 	}
 }
@@ -155,7 +155,7 @@ tm_dynamic_we_defensive = {
 	war_economy_modifier = {
 		spaceport_ship_build_cost_mult = -0.45
 		planet_army_build_cost_mult = -0.45
-		planet_ship_build_speed_mult = 0.2
+		spaceport_ship_build_speed_mult = 0.2
 		planet_army_build_speed_mult = 0.2
 	}
 }
@@ -185,7 +185,7 @@ tm_dynamic_we_offensive = {
 	
 	war_economy_modifier = {
 		spaceport_ship_build_cost_mult = 0.45
-		planet_ship_build_speed_mult = 0.2
+		spaceport_ship_build_speed_mult = 0.2
 		planet_army_build_cost_mult = 0.45
 		planet_army_build_speed_mult = 0.2
 	}

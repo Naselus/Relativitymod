@@ -433,7 +433,7 @@ planet_edict = {
 	length = 3600
 	modifier = {
 		spaceport_module_cost_mult = -0.25
-		planet_ship_build_speed_mult = 0.33
+		spaceport_ship_build_speed_mult = 0.33
 		planet_army_build_speed_mult = 0.33
 	}
 	

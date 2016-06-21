@@ -22,9 +22,9 @@ military_republic = {
 	}
 	
 	modifier = {
-		army_upkeep_mult = -0.1
-		ship_upkeep_mult = -0.1
-		pop_war_happiness = 0.05
+		pop_ethic_shift = 0.1
+		navy_size_mult = 0.1
+		influence_gain_add = 0.5
 	}
 	
 	uses_mandates = yes
@@ -54,9 +54,9 @@ martial_demarchy = {
 	}
 	
 	modifier = {
-		army_upkeep_mult = -0.2
-		ship_upkeep_mult = -0.2
-		pop_war_happiness = 0.10
+		pop_ethic_shift = 0.2
+		navy_size_mult = 0.2
+		influence_gain_add = 1
 	}
 	
 	uses_mandates = yes
@@ -86,8 +86,8 @@ military_junta = {
 	}
 	
 	modifier = {
-		spaceport_ship_build_cost_mult = -0.1
-		country_ship_upgrade_cost_mult = -0.25
+		country_leader_cap = 1
+		navy_size_mult = 0.1
 	}
 	
 	election_term_years = 40
@@ -143,8 +143,8 @@ ordered_stratocracy = {
 	}
 	
 	modifier = {		
-		spaceport_ship_build_cost_mult = -0.2
-		country_ship_upgrade_cost_mult = -0.5
+		country_leader_cap = 2
+		navy_size_mult = 0.2
 	}
 	
 	election_term_years = 40
@@ -201,8 +201,9 @@ military_dictatorship = {
 	}
 	
 	modifier = {
-		navy_size_mult = 0.2
-		ship_upkeep_mult = -0.05
+		pop_ethic_shift = -0.1
+		navy_size_mult = 0.1
+		influence_gain_add = -0.5
 	}
 	
 	election_type = oligarchic
@@ -253,8 +254,9 @@ martial_empire = {
 	}
 	
 	modifier = {
-		navy_size_mult = 0.4
-		ship_upkeep_mult = -0.1
+		pop_ethic_shift = -0.2
+		navy_size_mult = 0.2
+		influence_gain_add = -1
 	}
 	
 	election_type = oligarchic
@@ -309,8 +311,9 @@ theocratic_republic = {
 	}
 	
 	modifier = {
-		pop_ethic_shift = -0.1
-		country_core_sector_planet_cap = 1
+		pop_ethic_shift = 0.1
+		pop_happiness = 0.1
+		influence_gain_add = 0.5		
 	}
 	
 	uses_mandates = yes
@@ -340,8 +343,9 @@ transcendent_republic = {
 	}
 	
 	modifier = {
-		pop_ethic_shift = -0.2
-		country_core_sector_planet_cap = 2
+		pop_ethic_shift = 0.2
+		pop_happiness = 0.2
+		influence_gain_add = 1
 	}
 	
 	uses_mandates = yes
@@ -371,8 +375,9 @@ theocratic_oligarchy = {
 	}
 	
 	modifier = {
-		pop_ethic_shift = -0.1
-		leader_influence_cost = -0.15
+		country_leader_cap = 1
+		pop_happiness = 0.1
+
 	}
 	
 	election_term_years = 40
@@ -425,8 +430,8 @@ transcendent_oligarchy = {
 	}
 	
 	modifier = {
-		pop_ethic_shift = -0.2
-		leader_influence_cost = -0.30
+		country_leader_cap = 2
+		pop_happiness = 0.2
 	}
 	
 	election_term_years = 40
@@ -483,8 +488,9 @@ divine_mandate = {
 	}
 	
 	modifier = {
-		pop_slavery_tolerance = 0.5
-		country_resettlement_cost_mult = -0.15
+		pop_ethic_shift = -0.1
+		pop_happiness = 0.1
+		influence_gain_add = -0.5
 	}
 	
 	ruler_title = RT_ARCHPROPHET
@@ -515,8 +521,9 @@ transcendent_empire = {
 	}
 	
 	modifier = {
-		pop_slavery_tolerance = 1.0
-		country_resettlement_cost_mult = -0.30
+		pop_ethic_shift = -0.2
+		pop_happiness = 0.2
+		influence_gain_add = -1
 	}
 	
 	ruler_title = RT_GOD_EMPEROR
@@ -546,7 +553,9 @@ direct_democracy = {
 	}
 	
 	modifier = {
-		country_core_sector_planet_cap = 2
+		pop_ethic_shift = 0.1
+		all_technology_research_speed = 0.05
+		influence_gain_add = 0.5
 	}
 	
 	uses_mandates = yes
@@ -576,7 +585,9 @@ subconscious_consensus = {
 	}
 	
 	modifier = {
-		country_core_sector_planet_cap = 4
+		pop_ethic_shift = 0.2
+		all_technology_research_speed = 0.1
+		influence_gain_add = 1
 	}
 	
 	uses_mandates = yes
@@ -605,8 +616,8 @@ science_directorate = {
 	}
 	
 	modifier = {
-		num_tech_alternatives_add = 1
 		country_leader_cap = 1
+		all_technology_research_speed = 0.05
 	}
 	
 	election_term_years = 40
@@ -659,8 +670,8 @@ illuminated_technocracy = {
 	}
 	
 	modifier = {
-		num_tech_alternatives_add = 2
 		country_leader_cap = 2
+		all_technology_research_speed = 0.1
 	}
 	
 	election_term_years = 40
@@ -717,8 +728,9 @@ despotic_hegemony = {
 	}
 	
 	modifier = {
+		pop_ethic_shift = -0.1
 		all_technology_research_speed = 0.05
-		science_ship_survey_speed = 0.10
+		influence_gain_add = -0.5
 	}
 	
 	ruler_title = RT_OVERLORD
@@ -747,8 +759,9 @@ ai_overlordship = {
 	}
 	
 	modifier = {
-		all_technology_research_speed = 0.10
-		science_ship_survey_speed = 0.20
+		pop_ethic_shift = -0.2
+		all_technology_research_speed = 0.1
+		influence_gain_add = -1
 	}
 	
 	ruler_title = RT_HIGH_TECHNICIAN
@@ -777,7 +790,9 @@ moral_democracy = {
 	}
 	
 	modifier = {
-		pop_happiness = 0.1
+		pop_ethic_shift = 0.1
+		tile_resource_energy_mult = 0.05
+		influence_gain_add = 0.5
 	}
 	
 	uses_mandates = yes
@@ -807,7 +822,9 @@ irenic_democracy = {
 	}
 	
 	modifier = {
-		pop_happiness = 0.2
+		pop_ethic_shift = 0.2
+		tile_resource_energy_mult = 0.1
+		influence_gain_add = 1
 	}
 	
 	uses_mandates = yes
@@ -836,9 +853,8 @@ peaceful_bureaucracy = {
 	}
 	
 	modifier = {
-		country_leader_pool_size = 1
+		tile_resource_energy_mult = 0.05
 		country_leader_cap = 1
-		leader_influence_cost = -0.15
 	}
 	
 	election_term_years = 40
@@ -891,9 +907,8 @@ irenic_protectorate = {
 	}
 	
 	modifier = {
-		country_leader_pool_size = 2
+		tile_resource_energy_mult = 0.1
 		country_leader_cap = 2
-		leader_influence_cost = -0.30
 	}
 	
 	election_term_years = 40
@@ -949,9 +964,9 @@ enlightened_monarchy = {
 	}
 	
 	modifier = {
-		edict_influence_cost = -0.25
-		edict_length_mult = 0.25
-		country_core_sector_planet_cap = 1
+		pop_ethic_shift = -0.1
+		tile_resource_energy_mult = 0.05
+		influence_gain_add = -0.5
 	}
 	
 	ruler_title = RT_KING
@@ -982,9 +997,9 @@ irenic_monarchy = {
 	}
 	
 	modifier = {
-		edict_influence_cost = -0.5
-		edict_length_mult = 0.5
-		country_core_sector_planet_cap = 2
+		pop_ethic_shift = -0.2
+		tile_resource_energy_mult = 0.1
+		influence_gain_add = -1
 	}
 	
 	ruler_title = RT_HIGH_KING
@@ -1011,9 +1026,10 @@ indirect_democracy = {
 	}
 	
 	modifier = {
-		leader_skill_levels = 1
-		leader_influence_cost = -0.10
+		pop_ethic_shift = 0.1
+		influence_gain_add = 0.5
 	}
+
 	
 	uses_mandates = yes
 	election_term_years = 5
@@ -1038,8 +1054,8 @@ democratic_utopia = {
 	}
 	
 	modifier = {
-		leader_skill_levels = 2
-		leader_influence_cost = -0.10
+		pop_ethic_shift = 0.2
+		influence_gain_add = 1
 	}
 	
 	uses_mandates = yes
@@ -1064,8 +1080,7 @@ plutocratic_oligarchy = {
 	}
 	
 	modifier = {
-		tile_resource_energy_mult = 0.05
-		tile_resource_minerals_mult = 0.05
+		country_leader_cap = 1
 	}
 	
 	election_term_years = 40
@@ -1114,8 +1129,7 @@ mega_corporation = {
 	}
 	
 	modifier = {
-		tile_resource_energy_mult = 0.1
-		tile_resource_minerals_mult = 0.1
+		country_leader_cap = 2
 	}
 	
 	election_term_years = 40
@@ -1175,9 +1189,8 @@ despotic_empire = {
 	default_pop_factions = { loyalist }
 	
 	modifier = {
-		planet_building_cost_mult = -0.15
-		slave_production_output = 0.10
-		slave_food_output = 0.10
+		pop_ethic_shift = -0.1
+		influence_gain_add = -0.5
 	}
 	upgrade = star_empire
 }
@@ -1200,9 +1213,8 @@ star_empire = {
 	}
 	
 	modifier = {
-		planet_building_cost_mult = -0.3
-		slave_production_output = 0.20
-		slave_food_output = 0.20
+		pop_ethic_shift = -0.2
+		influence_gain_add = -1
 	}
 	
 	ruler_title = RT_EMPEROR
@@ -1255,6 +1267,8 @@ pirate_codex = {
 	}
 	
 	modifier = {
+		army_upkeep_mult = -1
+		ship_upkeep_mult = -1
 	}
 	
 	pickable_at_start = no
@@ -1270,6 +1284,8 @@ stagnated_ascendancy = {
 	}
 	
 	modifier = {
+		army_upkeep_mult = -1
+		ship_upkeep_mult = -1
 	}	
 	
 	pickable_at_start = no

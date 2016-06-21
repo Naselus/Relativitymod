@@ -76,8 +76,8 @@ special_init_02 = {
 						portrait = random
 						homeworld = THIS
 						traits = {
-							trait = random_trait
-							trait = random_trait
+							trait = random_traits
+							trait = random_traits
 						}
 					}
 					create_country = {
@@ -378,8 +378,8 @@ special_init_02 = {
 						portrait = random
 						homeworld = THIS
 						traits = {
-							trait = random_trait
-							trait = random_trait
+							trait = random_traits
+							trait = random_traits
 						}
 					}
 					create_country = {
@@ -2433,8 +2433,8 @@ sanctuary_system = {
 				portrait = random
 				traits = {
 					#ideal_planet_class = "pc_continental"
-					trait = random_trait
-					trait = random_trait
+					trait = random_traits
+					trait = random_traits
 				}
 				homeworld = this
 			}
@@ -2787,8 +2787,8 @@ sanctuary_system = {
 				portrait = random
 				traits = {
 					#ideal_planet_class = "pc_desert"
-					trait = random_trait
-					trait = random_trait
+					trait = random_traits
+					trait = random_traits
 				}
 				homeworld = this
 			}
@@ -3141,8 +3141,8 @@ sanctuary_system = {
 				portrait = random
 				traits = {
 					#ideal_planet_class = "pc_ocean"
-					trait = random_trait
-					trait = random_trait
+					trait = random_traits
+					trait = random_traits
 				}
 				homeworld = this
 			}
@@ -3487,8 +3487,8 @@ sanctuary_system = {
 				portrait = random
 				traits = {
 					#ideal_planet_class = "pc_tundra"
-					trait = random_trait
-					trait = random_trait
+					trait = random_traits
+					trait = random_traits
 				}
 				homeworld = this
 			}

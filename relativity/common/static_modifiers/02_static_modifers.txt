@@ -217,6 +217,9 @@ immigrants_protection = {
 fear_as_control_militarist_p2 = {
 	leader_influence_cost = 0.20
 }
+alien_genome_research = {
+	army_damage_mult = 0.05
+}
 
 ##########################################################################
 # Ship Modifiers
@@ -234,6 +237,12 @@ ship_master_cruiser = {
 streamlined_ship_design = {
 	ship_evasion_mult = 0.1
 	ship_upkeep_mult = -0.05
+}
+ship_excess_power = {
+	ship_evasion_mult = 0.1
+	ship_speed_mult = 0.2
+	ship_combat_speed_mult = 0.1
+	ship_weapon_damage = 0.2
 }
 
 ##########################################################################
@@ -266,4 +275,7 @@ pop_pleased = {
 alien_infection = {
 	pop_happiness = -0.2
 	pop_environment_tolerance = -0.2
+}
+alien_music = {
+	pop_happiness = 0.20
 }

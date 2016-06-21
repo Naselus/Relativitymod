@@ -1,6 +1,4 @@
-
 # All leaders will have a common trait-point value set in defines, which they use to grab traits
-
 # leader_trait = yes - this tags the trait as a leader-trait and not a species-trait
 # initial = no - if set to no, this trait can not be granted to leaders when they are generated
 # leader_class = { admiral scientist }  -- OR  - if not set, it can be given to all leader-types except Rulers
@@ -9,89 +7,1094 @@
 # prerequisites = { tech_psionic_theory } - AND - leader-trait can only be given if the technology specified has been researched by the Empire
 
 #####################
+# Generic Traits    #
+#####################
+
+leader_trait_ambitious = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	self_modifier = {
+		species_leader_exp_gain = 0.06
+	}
+	leader_trait = yes
+	leader_class = { admiral scientist general governor }
+}
+leader_trait_eager = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	self_modifier = {
+		species_leader_exp_gain = 0.03
+	}
+	leader_trait = yes
+	leader_class = { admiral scientist general governor }
+}
+leader_trait_avg_ambition = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	self_modifier = {
+		species_leader_exp_gain = 0.02
+	}
+	leader_trait = yes
+	leader_class = { admiral scientist general governor }
+}
+leader_trait_content = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	self_modifier = {
+		species_leader_exp_gain = -0.03
+	}
+	leader_trait = yes
+	leader_class = { admiral scientist general governor }
+}
+leader_trait_brilliant = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	self_modifier = {
+		species_leader_exp_gain = 0.22
+	}
+	leader_trait = yes
+	leader_class = { admiral scientist general governor }
+}
+leader_trait_smart = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	self_modifier = {
+		species_leader_exp_gain = 0.11
+	}
+	leader_trait = yes
+	leader_class = { admiral scientist general governor }
+}
+leader_trait_avg_intellect = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	self_modifier = {
+		species_leader_exp_gain = 0.06
+	}
+	leader_trait = yes
+	leader_class = { admiral scientist general governor }
+}
+leader_trait_dumb = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	self_modifier = {
+		species_leader_exp_gain = -0.11
+	}
+	leader_trait = yes
+	leader_class = { admiral scientist general governor }
+}
+
+#####################
 # Admiral Traits    #
 #####################
 
-stellar_fox = {
+leader_trait_zealous = {
 	cost = 1
 	modification = no
 	initial = no
 	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
 	modifier = {
-		ship_evasion_mult = 0.01
+		ship_combat_speed_mult = 0.08
+		ship_speed_mult = 0.08
 	}
 	leader_trait = yes
 	leader_class = { admiral }
-	initial = no
 }
-
-prudent = {
+leader_trait_dedicated = {
 	cost = 1
 	modification = no
 	initial = no
 	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
 	modifier = {
-		ship_emergency_ftl_mult = -0.05
+		ship_combat_speed_mult = 0.04
+		ship_speed_mult = 0.04
 	}
 	leader_trait = yes
 	leader_class = { admiral }
-	initial = no
 }
-
-drillmaster = {
+leader_trait_avg_zeal = {
 	cost = 1
 	modification = no
 	initial = no
 	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
 	modifier = {
-		ship_fire_rate_mult = 0.03
+		ship_combat_speed_mult = 0.02
+		ship_speed_mult = 0.02
 	}
 	leader_trait = yes
 	leader_class = { admiral }
-	initial = no
 }
-
-mechanic = {
+leader_trait_lazy = {
 	cost = 1
 	modification = no
 	initial = no
 	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
 	modifier = {
-		ship_hitpoints_mult = 0.03
+		ship_combat_speed_mult = -0.04
+		ship_speed_mult = -0.04
 	}
 	leader_trait = yes
 	leader_class = { admiral }
-	initial = no
 }
-
-headstrong = {
+leader_trait_starchaser = {
 	cost = 1
 	modification = no
 	initial = no
 	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
 	modifier = {
-		ship_evasion_mult = -0.01
+		ship_combat_speed_mult = 0.28
+		ship_speed_mult = 0.28
 	}
 	leader_trait = yes
 	leader_class = { admiral }
-	initial = no
 }
-
-corrupt = {
+leader_trait_wanderer = {
 	cost = 1
 	modification = no
 	initial = no
 	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
 	modifier = {
-		ship_upkeep_mult = 0.02
+		ship_combat_speed_mult = 0.14
+		ship_speed_mult = 0.14
 	}
 	leader_trait = yes
 	leader_class = { admiral }
+}
+leader_trait_avg_voyager = {
+	cost = 1
+	modification = no
 	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		ship_combat_speed_mult = 0.07
+		ship_speed_mult = 0.07
+	}
+	leader_trait = yes
+	leader_class = { admiral }
+}
+leader_trait_spacesick = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		ship_combat_speed_mult = -0.14
+		ship_speed_mult = -0.14
+	}
+	leader_trait = yes
+	leader_class = { admiral }
+}
+leader_trait_tactics_master = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		ship_fire_rate_mult = 0.12
+	}
+	leader_trait = yes
+	leader_class = { admiral }
+}
+leader_trait_tactician = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		ship_fire_rate_mult = 0.06
+	}
+	leader_trait = yes
+	leader_class = { admiral }
+}
+leader_trait_avg_tactics = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		ship_fire_rate_mult = 0.03	
+	}
+	leader_trait = yes
+	leader_class = { admiral }
+}
+leader_trait_confused = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		ship_fire_rate_mult = -0.06	
+	}
+	leader_trait = yes
+	leader_class = { admiral }
+}
+leader_trait_wrathful = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		ship_fire_rate_mult = 0.34
+	}
+	leader_trait = yes
+	leader_class = { admiral }
+}
+leader_trait_aggressive = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		ship_fire_rate_mult = 0.17
+	}
+	leader_trait = yes
+	leader_class = { admiral }
+}
+leader_trait_avg_belligerence = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		ship_fire_rate_mult = 0.09
+	}
+	leader_trait = yes
+	leader_class = { admiral }
+}
+leader_trait_disheartened = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		ship_fire_rate_mult = -0.17	
+	}
+	leader_trait = yes
+	leader_class = { admiral }
+}
+leader_trait_logistics_wizard = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		ship_upkeep_mult = -0.16
+	}
+	leader_trait = yes
+	leader_class = { admiral }
+}
+leader_trait_organized = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		ship_upkeep_mult = -0.08
+	}
+	leader_trait = yes
+	leader_class = { admiral }
+}
+leader_trait_avg_logistics = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		ship_upkeep_mult = -0.04
+	}
+	leader_trait = yes
+	leader_class = { admiral }
+}
+leader_trait_substance_abuser = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		ship_upkeep_mult = 0.08
+	}
+	leader_trait = yes
+	leader_class = { admiral }
+}
+leader_trait_vigorous = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		ship_upkeep_mult = -0.42
+	}
+	leader_trait = yes
+	leader_class = { admiral }
+}
+leader_trait_healthy = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		ship_upkeep_mult = -0.21
+	}
+	leader_trait = yes
+	leader_class = { admiral }
+}
+leader_trait_avg_health = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		ship_upkeep_mult = -0.11
+	}
+	leader_trait = yes
+	leader_class = { admiral }
+}
+leader_trait_crippled = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		ship_upkeep_mult = 0.21
+	}
+	leader_trait = yes
+	leader_class = { admiral }
+}
+leader_trait_legendary_commander = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		ship_weapon_range_mult = 0.25
+		ship_fire_rate_mult = 0.25
+	}
+	leader_trait = yes
+	leader_class = { admiral }
+}
+leader_trait_legendary_navigator = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		ship_combat_speed_mult = 0.25
+		ship_speed_mult = 0.25
+		ship_evasion_mult = 0.25
+	}
+	leader_trait = yes
+	leader_class = { admiral }
+}
+leader_trait_legendary_engineer = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		ship_upkeep_mult = -0.25
+		ship_hitpoints_mult = 0.25
+	}
+	leader_trait = yes
+	leader_class = { admiral }
+}
+leader_trait_senile_admiral = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		ship_weapon_range_mult = -0.25
+		ship_fire_rate_mult = -0.25
+		ship_combat_speed_mult = -0.25
+		ship_speed_mult = -0.25
+		ship_evasion_mult = -0.25
+		ship_upkeep_mult = 0.25
+		ship_hitpoints_mult = -0.25
+	}
+	leader_trait = yes
+	leader_class = { admiral }
 }
 
-####################
-#                  #
-# Scientist Traits #
-####################
 
+######################
+# Governor Traits    #
+######################
+
+leader_trait_diligent = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		pop_growth_req_mult = -0.08
+	}
+	leader_trait = yes
+	leader_class = { governor }
+}
+leader_trait_disciplined = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		pop_growth_req_mult = -0.04
+	}
+	leader_trait = yes
+	leader_class = { governor }
+}
+leader_trait_avg_discipline = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		pop_growth_req_mult = -0.02
+	}
+	leader_trait = yes
+	leader_class = { governor }
+}
+leader_trait_undisciplined = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		pop_growth_req_mult = 0.04
+	}
+	leader_trait = yes
+	leader_class = { governor }
+}
+leader_trait_green_thumb = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		pop_growth_req_mult = -0.28
+	}
+	leader_trait = yes
+	leader_class = { governor }
+}
+leader_trait_agrarian = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		pop_growth_req_mult = -0.14
+	}
+	leader_trait = yes
+	leader_class = { governor }
+}
+leader_trait_avg_agriculture = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		pop_growth_req_mult = -0.07
+	}
+	leader_trait = yes
+	leader_class = { governor }
+}
+leader_trait_oppressive = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		pop_growth_req_mult = 0.14
+	}
+	leader_trait = yes
+	leader_class = { governor }
+}
+leader_trait_inspiring = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		pop_happiness = 0.06
+	}
+	leader_trait = yes
+	leader_class = { governor }
+}
+leader_trait_charming = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		pop_happiness = 0.03
+	}
+	leader_trait = yes
+	leader_class = { governor }
+}
+leader_trait_avg_inspiration = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		pop_happiness = 0.02
+	}
+	leader_trait = yes
+	leader_class = { governor }
+}
+leader_trait_ugly = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		pop_happiness = -0.03
+	}
+	leader_trait = yes
+	leader_class = { governor }
+}
+leader_trait_proud = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		pop_happiness = 0.34
+	}
+	leader_trait = yes
+	leader_class = { governor }
+}
+leader_trait_well_respected = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		pop_happiness = 0.17
+	}
+	leader_trait = yes
+	leader_class = { governor }
+}
+leader_trait_avg_reputation = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		pop_happiness = 0.09
+	}
+	leader_trait = yes
+	leader_class = { governor }
+}
+leader_trait_despised = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		pop_happiness = -0.17
+	}
+	leader_trait = yes
+	leader_class = { governor }
+}
+leader_trait_paragon_of_virtue = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		pop_ethic_shift = -0.16
+	}
+	leader_trait = yes
+	leader_class = { governor }
+}
+leader_trait_morally_pure = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		pop_ethic_shift = -0.08
+	}
+	leader_trait = yes
+	leader_class = { governor }
+}
+leader_trait_avg_morals = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		pop_ethic_shift = -0.04
+	}
+	leader_trait = yes
+	leader_class = { governor }
+}
+leader_trait_degenerate = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		pop_ethic_shift = 0.08
+	}
+	leader_trait = yes
+	leader_class = { governor }
+}
+leader_trait_incorruptible = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		pop_ethic_shift = -0.42
+	}
+	leader_trait = yes
+	leader_class = { governor }
+}
+leader_trait_honest = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		pop_ethic_shift = -0.21
+	}
+	leader_trait = yes
+	leader_class = { governor }
+}
+leader_trait_avg_ethics = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		pop_ethic_shift = -0.11
+	}
+	leader_trait = yes
+	leader_class = { governor }
+}
+leader_trait_corrupted = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		pop_ethic_shift = 0.21
+	}
+	leader_trait = yes
+	leader_class = { governor }
+}
+leader_trait_legendary_scholar = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		tile_resource_physics_research_mult = 0.25
+		tile_resource_society_research_mult = 0.25
+		tile_resource_engineering_research_mult = 0.25
+	}
+	leader_trait = yes
+	leader_class = { governor }
+}
+leader_trait_legendary_investor = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		tile_resource_energy_mult = 0.25
+	}
+	leader_trait = yes
+	leader_class = { governor }
+}
+leader_trait_legendary_industrialist = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		tile_resource_minerals_mult = 0.25
+	}
+	leader_trait = yes
+	leader_class = { governor }
+}
+leader_trait_senile_governor = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		tile_resource_physics_research_mult = -0.25
+		tile_resource_society_research_mult = -0.25
+		tile_resource_engineering_research_mult = -0.25
+		tile_resource_energy_mult = -0.25
+		tile_resource_minerals_mult = -0.25
+	}
+	leader_trait = yes
+	leader_class = { governor }
+}
+
+
+#####################
+# General Traits    #
+#####################
+
+leader_trait_bloodthirsty = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		army_damage_mult = 0.08
+	}
+	leader_trait = yes
+	leader_class = { general }
+}
+leader_trait_fierce = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		army_damage_mult = 0.04
+	}
+	leader_trait = yes
+	leader_class = { general }
+}
+leader_trait_avg_ferocity = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		army_damage_mult = 0.02
+	}
+	leader_trait = yes
+	leader_class = { general }
+}
+leader_trait_timid = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		army_damage_mult = -0.04
+	}
+	leader_trait = yes
+	leader_class = { general }
+}
+leader_trait_innovative = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		army_damage_mult = 0.28
+	}
+	leader_trait = yes
+	leader_class = { general }
+}
+leader_trait_tinkerer = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		army_damage_mult = 0.14
+	}
+	leader_trait = yes
+	leader_class = { general }
+}
+leader_trait_avg_innovation = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		army_damage_mult = 0.07
+	}
+	leader_trait = yes
+	leader_class = { general }
+}
+leader_trait_stubborn = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		army_damage_mult = -0.14
+	}
+	leader_trait = yes
+	leader_class = { general }
+}
+leader_trait_fearless = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		army_morale = 0.12
+	}
+	leader_trait = yes
+	leader_class = { general }
+}
+leader_trait_brave = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		army_morale = 0.06
+	}
+	leader_trait = yes
+	leader_class = { general }
+}
+leader_trait_avg_courage = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		army_morale = 0.03
+	}
+	leader_trait = yes
+	leader_class = { general }
+}
+leader_trait_cowardly = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		army_morale = -0.06
+	}
+	leader_trait = yes
+	leader_class = { general }
+}
+leader_trait_honorable = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		army_morale = 0.34
+	}
+	leader_trait = yes
+	leader_class = { general }
+}
+leader_trait_kind = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		army_morale = 0.17
+	}
+	leader_trait = yes
+	leader_class = { general }
+}
+leader_trait_avg_honor = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		army_morale = 0.09
+	}
+	leader_trait = yes
+	leader_class = { general }
+}
+leader_trait_nasty = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		army_morale = -0.17
+	}
+	leader_trait = yes
+	leader_class = { general }
+}
+leader_trait_unyielding = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		army_health = 0.16
+	}
+	leader_trait = yes
+	leader_class = { general }
+}
+leader_trait_steadfast = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		army_health = 0.08
+	}
+	leader_trait = yes
+	leader_class = { general }
+}
+leader_trait_avg_toughness = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		army_health = 0.04
+	}
+	leader_trait = yes
+	leader_class = { general }
+}
+leader_trait_weak = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		army_health = -0.08
+	}
+	leader_trait = yes
+	leader_class = { general }
+}
+leader_trait_champion = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		army_health = 0.42
+	}
+	leader_trait = yes
+	leader_class = { general }
+}
+leader_trait_veteran = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		army_health = 0.21
+	}
+	leader_trait = yes
+	leader_class = { general }
+}
+leader_trait_avg_readiness = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		army_health = 0.11
+	}
+	leader_trait = yes
+	leader_class = { general }
+}
+leader_trait_decadent = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		army_health = -0.21
+	}
+	leader_trait = yes
+	leader_class = { general }
+}
+leader_trait_legendary_butcher = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		army_damage_mult = 0.25
+	}
+	leader_trait = yes
+	leader_class = { general }
+}
+leader_trait_legendary_invader = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		army_attack_morale_mult = 0.25
+		army_attack_damage_mult = 0.25
+		army_health = 0.25	
+	}
+	leader_trait = yes
+	leader_class = { general }
+}
+leader_trait_legendary_protector = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		army_defense_morale_mult = 0.25
+		army_defense_damage_mult = 0.25
+		army_upkeep_mult = -0.25
+	}
+	leader_trait = yes
+	leader_class = { general }
+}
+leader_trait_senile_general = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		army_damage_mult = -0.25
+		army_attack_morale_mult = -0.25
+		army_attack_damage_mult = -0.25
+		army_health = -0.25
+		army_defense_morale_mult = -0.25
+		army_defense_damage_mult = -0.25
+		army_upkeep_mult = 0.25
+
+	}
+	leader_trait = yes
+	leader_class = { general }
+}
+
+leader_trait_senile_science = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		all_technology_research_speed = -0.5
+	}
+	leader_trait = yes
+	leader_class = { scientist }
+}
+
+leader_trait_science_master = {
+	cost = 1
+	modification = no
+	initial = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_trickster.dds"
+	modifier = {
+		all_technology_research_speed = 0.5
+	}
+	leader_trait = yes
+	leader_class = { scientist }
+}

@@ -1149,19 +1149,19 @@ voting_rights = {
 			}
 			modifier = {
 				factor = 0
-				has_ai_personality_type = hegemon
+				has_ai_personality_behaviour = hegemon
 			}
 			modifier = {
 				factor = 0
-				has_ai_personality_type = isolationist
+				has_ai_personality_behaviour = isolationist
 			}			
 			modifier = {
 				factor = 2
-				has_ai_personality_type = federation_builder
+				has_ai_personality_behaviour = federation_builder
 			}
 			modifier = {
 				factor = 2
-				has_ai_personality_type = explorer
+				has_ai_personality_behaviour = explorer
 			}	
 		}
 		
@@ -1328,19 +1328,19 @@ leadership = {
 			}
 			modifier = {
 				factor = 0
-				has_ai_personality_type = hegemon
+				has_ai_personality_behaviour = hegemon
 			}
 			modifier = {
 				factor = 0
-				has_ai_personality_type = isolationist
+				has_ai_personality_behaviour = isolationist
 			}			
 			modifier = {
 				factor = 2
-				has_ai_personality_type = federation_builder
+				has_ai_personality_behaviour = federation_builder
 			}
 			modifier = {
 				factor = 2
-				has_ai_personality_type = explorer
+				has_ai_personality_behaviour = explorer
 			}				
 		}
 		

@@ -62,8 +62,9 @@
 #}
 
 default = {
+	has_difficulty_bonuses = yes
+	counts_for_victory = yes
 	playable = yes
-	leave_ftl_trails = no
 	shuffle_pop_ethos = yes
 	diplomatic_wars = yes
 	relations = yes
@@ -98,84 +99,107 @@ default = {
 				max = 1
 			}
 			
-			corvette = {
+			battleship = {
 				fraction = {
-					weight = 0
+
 					modifier = {
-						weight = 100
-						NOT = {
-							has_technology = tech_spaceport_3
-						}
-					}
-					modifier = {
-						weight = 50
-						has_technology = tech_spaceport_3
-						NOT = {
-							has_technology = tech_spaceport_5
-						}
-					}	
-					modifier = {
-						weight = 30
-						has_technology = tech_spaceport_5
-						NOT = {
-							has_technology = tech_spaceport_6
-						}
-					}
-					modifier = {
-						weight = 25
+
+
+
+
+
+
+
+
+
+
+
+
+						add = 25
 						has_technology = tech_spaceport_6
-					}						
-				}
-			}
-			
-			destroyer = {
-				fraction = {
-					weight = 0
-					modifier = {
-						weight = 50
-						has_technology = tech_spaceport_3
-						NOT = {
-							has_technology = tech_spaceport_5
-						}
-					}	
-					modifier = {
-						weight = 40
-						has_technology = tech_spaceport_5
-						NOT = {
-							has_technology = tech_spaceport_6
-						}
-					}
-					modifier = {
-						weight = 25
-						has_technology = tech_spaceport_6
-					}
+					}					
 				}
 			}
 			
 			cruiser = {
 				fraction = {
-					weight = 0
 					modifier = {
-						weight = 30
+
+						add = 35
 						has_technology = tech_spaceport_5
-						NOT = {
-							has_technology = tech_spaceport_6
-						}
+
+
+
 					}
 					modifier = {
-						weight = 25
+
+						add = -10
+						has_technology = tech_spaceport_6
+
+					}
+				}
+			}
+			
+			destroyer = {
+				fraction = {
+
+					modifier = {
+
+						add = 50
+						has_technology = tech_spaceport_3
+
+
+
+					}	
+					modifier = {
+
+						add = -15
+						has_technology = tech_spaceport_5
+
+
+
+					}
+					modifier = {
+
+						add = -10
 						has_technology = tech_spaceport_6
 					}
 				}
 			}
 			
-			battleship = {
+
+			corvette = {
 				fraction = {
-					weight = 0
+
+					base = 100
 					modifier = {
-						weight = 25
+
+
+
+
+
+
+						add = -25
+						has_technology = tech_spaceport_3
+					}	
+					modifier = {
+
+
+						add = -45
+						has_technology = tech_spaceport_5
+					}
+
+
+
+
+
+
+					modifier = {
+
+						add = -5
 						has_technology = tech_spaceport_6
-					}					
+
+					}						
 				}
 			}
 		}
@@ -565,6 +589,7 @@ neutral_faction = {
 
 nomad = {
 
+	show_in_contacts_list = yes
 	ai = {
 		enabled = no
 	}
@@ -574,6 +599,7 @@ nomad = {
 		generate_borders = no
 		needs_colony = no
 	}
+	custom_diplomacy = yes
 	modules = {
 		basic_technology_module = {}
 		standard_event_module = {}
@@ -596,27 +622,33 @@ pirate = {
 		needs_colony = no
 	}
 	modules = {
-		exclusive_diplomacy_module = {} # Nothing is allowed, but we need this for relationships.
+		exclusive_diplomacy_module = {
+			contact_rule = always
+		} # Nothing is allowed, but we need this for relationships.
 		all_technology_module = {}
 		standard_event_module = {}
 	}
 }
 
 fallen_empire = {
-	leave_ftl_trails = no
+
+	has_difficulty_bonuses = yes
+	counts_for_victory = yes
 	sub_title = "COUNTRY_FALLEN_EMPIRE"
 	sub_title_desc = "COUNTRY_FALLEN_EMPIRE_DESC"
 	
 	relations = yes
 	fallen_empire = yes
 	diplomatic_wars = yes
-		
+	default_closed_borders = yes
+	closed_borders_message_key = "NO_ACCESS_TO_COUNTRY_SYSTEMS_FALLEN_EMPIRE"
 	ai = {
 		enabled = yes
 		declare_war = yes
 		colonizer = no
 		internal_policies = no
 		construction = yes
+		limited_construction = yes
 		tech = no
 		modules = {
 			military_minister_module
@@ -738,6 +770,7 @@ ambient = {
 #################
 
 swarm = {
+	counts_for_victory = yes
 	can_own_empty_planets = yes
 	needs_survey = no
 	can_planets_be_attacked = no
@@ -786,6 +819,7 @@ swarm = {
 }
 
 extradimensional = {
+	counts_for_victory = yes
 	needs_survey = no
 	can_planets_be_attacked = no
 	has_capital = no
@@ -833,6 +867,7 @@ extradimensional = {
 }
 
 extradimensional_2 = {
+	counts_for_victory = yes
 	needs_survey = no
 	can_planets_be_attacked = no
 	has_capital = no
@@ -880,6 +915,7 @@ extradimensional_2 = {
 }
 
 extradimensional_3 = {
+	counts_for_victory = yes
 	needs_survey = no
 	can_planets_be_attacked = no
 	has_capital = no
@@ -927,8 +963,8 @@ extradimensional_3 = {
 }
 
 ai_empire = {
+	counts_for_victory = yes
 	playable = no
-	leave_ftl_trails = no
 	enforces_borders = no
 	home_system = ai_revolt_creators
 	

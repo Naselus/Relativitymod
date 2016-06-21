@@ -39,7 +39,6 @@
 
 
 civilian_traders = { 
-	type = capitalist
 
 	aggressiveness = 0.5
 	trade_willingness = 2.0

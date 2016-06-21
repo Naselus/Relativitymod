@@ -421,6 +421,10 @@ betharian_power_plant_4 = {
 		sr_plasma = 1
 	}	
 	
+	upgrades = {
+		betharian_power_plant_5
+	}
+	
 	prerequisites = {
 			"tech_power_plant_9"
 	}
@@ -1843,6 +1847,7 @@ building_colony_shelter = {
 	
 	produced_resources = {
 		food = 5
+		influence = -0.25
 	}
 
 	required_resources = {
@@ -1884,7 +1889,6 @@ building_capital_1 = {
 	produced_resources = {
 		food = 10
 		minerals = 1
-		influence = 0.25
 	}
 	
 	adjacency_bonus = {
@@ -1936,7 +1940,7 @@ building_capital_2 = {
 	produced_resources = {
 		food = 15
 		minerals = 2
-		influence = 0.5
+		influence = 0.25
 	}
 	
 	adjacency_bonus = {
@@ -1986,7 +1990,7 @@ building_capital_3 = {
 	produced_resources = {
 		food = 30
 		minerals = 3
-		influence = 1
+		influence = 0.5
 	}
 	
 	required_resources = {
@@ -4308,7 +4312,7 @@ building_capital_4 = {
 	produced_resources = {
 		food = 50
 		minerals = 4
-		influence = 1.25
+		influence = 1
 	}
 	
 	required_resources = {
@@ -4356,7 +4360,7 @@ building_capital_5 = {
 	produced_resources = {
 		food = 100
 		minerals = 5
-		influence = 1.5
+		influence = 2
 	}
 	
 	required_resources = {

@@ -72,7 +72,7 @@ trade_sanctions = {
 		
 		modifier = {
 			factor = 0
-				has_ai_personality_type = capitalist
+				has_ai_personality_behaviour = capitalist
 				NOT = {
 					has_ai_personality = peaceful_traders
 				}
@@ -80,7 +80,7 @@ trade_sanctions = {
 		
 		modifier = {
 			factor = 0
-				has_ai_personality_type = purifier		
+				has_ai_personality_behaviour = purifier		
 		}
 		
 		modifier = {

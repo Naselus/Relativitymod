@@ -1,14 +1,3 @@
-##### Types:
-# honorbound -> Cares about honor and martial prowess above all else
-# capitalist -> Cares about trade and material profit above all else
-# hegemon -> Cares about the superiority of their own empire above all else
-# ideologue -> Cares about combating opposing ethoses above all else
-# isolationist -> Cares about maintaining their isolation from other empires above all else
-# federation_builder -> Cares about bringing different species together in a federation above all else
-# propagator -> Cares about the propagation of its species above all else
-# purifier -> Cares about purifying the galaxy of other species above all else
-# explorer -> Cares about exploring the galaxy and making scientific/spiritual discoveries above all else
-
 ##### Behaviours:
 # conqueror -> Will they conquer planets from other empires?
 # subjugator -> Will they vassalise other empires?
@@ -22,6 +11,9 @@
 # robot_exploiter -> Will they use robots for menial labor?
 # robot_liberator -> Will they give rights to robots?
 # migrator -> Will they want to migrate to other empires?
+# propagator -> Will they only get aggressive once boxed in?
+# ideologue -> Will they be extra-aggressive against other ethoses?
+# multispecies -> Will they give rights to aliens?
 
 ##### Modifiers:
 # aggressiveness -> Chance of declaring wars
@@ -37,8 +29,6 @@
 # NOTE: Weight is additive!
 
 honorbound_warriors = { 
-	type = honorbound
-
 	aggressiveness = 1.75
 	trade_willingness = 0.7
 	bravery = 1.5
@@ -65,6 +55,9 @@ honorbound_warriors = {
 		robot_exploiter = no
 		robot_liberator = no
 		migrator = no
+		propagator = no
+		ideologue = no
+		multispecies = no
 	}
 	
 	allow = {
@@ -82,8 +75,6 @@ honorbound_warriors = {
 }
 
 evangelising_zealots = { 
-	type = ideologue
-
 	aggressiveness = 1.25
 	trade_willingness = 0.75
 	bravery = 1.0
@@ -110,6 +101,9 @@ evangelising_zealots = {
 		robot_exploiter = no
 		robot_liberator = no
 		migrator = no
+		propagator = no
+		ideologue = yes	
+		multispecies = no
 	}
 	
 	allow = {
@@ -158,8 +152,6 @@ evangelising_zealots = {
 }
 
 erudite_explorers = { 
-	type = explorer
-
 	aggressiveness = 0.75
 	trade_willingness = 0.9
 	bravery = 0.75
@@ -186,13 +178,18 @@ erudite_explorers = {
 		robot_exploiter = no
 		robot_liberator = yes
 		migrator = no
+		propagator = no
+		ideologue = no	
+		multispecies = yes
 	}
 	
 	allow = {
 		NOT = { is_country_type = fallen_empire }
 		NOT = {
 			has_ethic = "ethic_xenophobe"
-			has_ethic = "ethic_fanatic_xenophobe"			
+			has_ethic = "ethic_fanatic_xenophobe"		
+			has_ethic = "ethic_pacifist"
+			has_ethic = "ethic_fanatic_pacifist"				
 		}
 		OR = {
 			has_ethic = "ethic_individualist"
@@ -243,8 +240,6 @@ erudite_explorers = {
 }
 
 spiritual_seekers = { 
-	type = explorer
-
 	aggressiveness = 0.25
 	trade_willingness = 0.9
 	bravery = 0.75
@@ -271,6 +266,9 @@ spiritual_seekers = {
 		robot_exploiter = no
 		robot_liberator = no
 		migrator = yes
+		propagator = no
+		ideologue = no
+		multispecies = yes
 	}
 	
 	allow = {
@@ -325,8 +323,6 @@ spiritual_seekers = {
 }
 
 ruthless_capitalists = { 
-	type = capitalist
-
 	aggressiveness = 1.0
 	trade_willingness = 1.0
 	bravery = 0.5
@@ -353,6 +349,9 @@ ruthless_capitalists = {
 		robot_exploiter = yes
 		robot_liberator = no
 		migrator = no
+		propagator = no
+		ideologue = no	
+		multispecies = yes
 	}
 	
 	allow = {
@@ -396,8 +395,6 @@ ruthless_capitalists = {
 }
 
 peaceful_traders = { 
-	type = capitalist
-
 	aggressiveness = 0.5
 	trade_willingness = 1.0
 	bravery = 0.5
@@ -424,6 +421,9 @@ peaceful_traders = {
 		robot_exploiter = no
 		robot_liberator = yes
 		migrator = no
+		propagator = no
+		ideologue = no
+		multispecies = yes
 	}
 	
 	allow = {
@@ -464,8 +464,6 @@ peaceful_traders = {
 }
 
 hegemonic_imperialists = {
-	type = hegemon
-	
 	aggressiveness = 1.5
 	trade_willingness = 0.8
 	bravery = 1.0
@@ -492,6 +490,9 @@ hegemonic_imperialists = {
 		robot_exploiter = yes
 		robot_liberator = no
 		migrator = no
+		propagator = no
+		ideologue = no	
+		multispecies = no
 	}
 
 	
@@ -517,8 +518,6 @@ hegemonic_imperialists = {
 }
 
 slaving_despots = {
-	type = capitalist
-	
 	aggressiveness = 1.5
 	trade_willingness = 0.8
 	bravery = 0.5
@@ -545,11 +544,18 @@ slaving_despots = {
 		robot_exploiter = yes
 		robot_liberator = no
 		migrator = no
+		propagator = no
+		ideologue = no
+		multispecies = no
 	}
 
 	
 	allow = {
 		NOT = { is_country_type = fallen_empire }	
+		OR = {
+			has_ethic = "ethic_collectivist"
+			has_ethic = "ethic_fanatic_collectivist"
+		}
 		NOT = {
 			has_ethic = "ethic_pacifist"
 			has_ethic = "ethic_fanatic_pacifist"				
@@ -563,8 +569,6 @@ slaving_despots = {
 }
 
 decadent_hierarchy = {
-	type = isolationist
-	
 	aggressiveness = 0.5
 	trade_willingness = 0.9
 	bravery = 0.5
@@ -581,7 +585,7 @@ decadent_hierarchy = {
 	behaviour = {
 		conqueror = no
 		subjugator = yes
-		liberator = no
+		liberator = yes
 		opportunist = yes
 		slaver = yes
 		uplifter = no
@@ -591,11 +595,18 @@ decadent_hierarchy = {
 		robot_exploiter = yes
 		robot_liberator = no
 		migrator = no
+		propagator = no
+		ideologue = no
+		multispecies = no
 	}
 
 	
 	allow = {
-		NOT = { is_country_type = fallen_empire }	
+		NOT = { is_country_type = fallen_empire }
+		OR = {
+			has_ethic = "ethic_collectivist"
+			has_ethic = "ethic_fanatic_collectivist"
+		}		
 		OR = {
 			has_ethic = "ethic_pacifist"
 			has_ethic = "ethic_fanatic_pacifist"				
@@ -609,8 +620,6 @@ decadent_hierarchy = {
 }
 
 democratic_crusaders = {
-	type = ideologue
-	
 	aggressiveness = 1.0
 	trade_willingness = 0.9
 	bravery = 1.25
@@ -637,6 +646,9 @@ democratic_crusaders = {
 		robot_exploiter = yes
 		robot_liberator = no
 		migrator = yes
+		propagator = no
+		ideologue = yes	
+		multispecies = yes
 	}
 
 	
@@ -659,8 +671,6 @@ democratic_crusaders = {
 }
 
 harmonious_hierarchy = {
-	type = isolationist
-
 	aggressiveness = 0.5
 	trade_willingness = 0.9
 	bravery = 0.75
@@ -677,9 +687,9 @@ harmonious_hierarchy = {
 	behaviour = {
 		conqueror = no
 		subjugator = yes
-		liberator = no
+		liberator = yes
 		opportunist = no
-		slaver = yes
+		slaver = no
 		uplifter = no
 		purger = no
 		dominator = no
@@ -687,6 +697,9 @@ harmonious_hierarchy = {
 		robot_exploiter = yes
 		robot_liberator = no
 		migrator = no
+		propagator = no
+		ideologue = no	
+		multispecies = no
 	}
 	
 	allow = {
@@ -719,9 +732,7 @@ harmonious_hierarchy = {
 }
 
 federation_builders = {
-	type = federation_builder
-
-	aggressiveness = 0.75 # will only attack to liberate
+	aggressiveness = 0.75
 	trade_willingness = 0.95	
 	bravery = 1.25
 	
@@ -747,6 +758,9 @@ federation_builders = {
 		robot_exploiter = no
 		robot_liberator = yes
 		migrator = yes
+		propagator = no
+		ideologue = no	
+		multispecies = yes
 	}
 	
 	allow = {
@@ -759,6 +773,7 @@ federation_builders = {
 		}
 		OR = {
 			has_ethic = "ethic_fanatic_xenophile"
+			has_ethic = "ethic_fanatic_individualist"
 			AND = {
 				OR = {
 					has_ethic = "ethic_pacifist"
@@ -834,8 +849,6 @@ federation_builders = {
 }
 
 xenophobic_isolationists = {
-	type = isolationist
-
 	aggressiveness = 0.5
 	trade_willingness = 0.5
 	bravery = 0.75
@@ -852,7 +865,7 @@ xenophobic_isolationists = {
 	behaviour = {
 		conqueror = no
 		subjugator = no
-		liberator = no
+		liberator = yes
 		opportunist = yes
 		slaver = no
 		uplifter = no
@@ -862,6 +875,9 @@ xenophobic_isolationists = {
 		robot_exploiter = yes
 		robot_liberator = no
 		migrator = no
+		propagator = no
+		ideologue = no
+		multispecies = no
 	}
 	
 	allow = {
@@ -920,8 +936,6 @@ xenophobic_isolationists = {
 }
 
 fanatic_purifiers = { 
-	type = purifier
-	
 	aggressiveness = 2.0
 	trade_willingness = 0.0
 	bravery = 1.0
@@ -948,6 +962,9 @@ fanatic_purifiers = {
 		robot_exploiter = yes
 		robot_liberator = no
 		migrator = no
+		propagator = no
+		ideologue = no
+		multispecies = no #lol
 	}
 	
 	allow = {
@@ -965,8 +982,6 @@ fanatic_purifiers = {
 }
 
 hive_mind = { 
-	type = propagator
-	
 	aggressiveness = 2.0	# only attack if they can't expand peacefully
 	trade_willingness = 0.7	
 	bravery = 1.0
@@ -993,6 +1008,9 @@ hive_mind = {
 		robot_exploiter = no
 		robot_liberator = no
 		migrator = no
+		propagator = yes
+		ideologue = no	
+		multispecies = no
 	}
 	
 	allow = {
@@ -1011,8 +1029,6 @@ hive_mind = {
 }
 
 migrating_flock = { 
-	type = propagator
-	
 	aggressiveness = 0.25
 	trade_willingness = 1.1	
 	bravery = 0.5
@@ -1039,6 +1055,9 @@ migrating_flock = {
 		robot_exploiter = yes
 		robot_liberator = no
 		migrator = yes
+		propagator = no
+		ideologue = no
+		multispecies = yes
 	}
 	
 	allow = {
@@ -1063,8 +1082,6 @@ migrating_flock = {
 }
 
 metalhead = { 
-	type = hegemon
-	
 	aggressiveness = 10.0
 	trade_willingness = 0.0
 	bravery = 10.0
@@ -1091,6 +1108,9 @@ metalhead = {
 		robot_exploiter = no
 		robot_liberator = yes
 		migrator = no
+		propagator = no
+		ideologue = no	
+		multispecies = no
 	}
 	
 	allow = {
@@ -1107,8 +1127,6 @@ metalhead = {
 }
 
 fanatic_befrienders = { 
-	type = federation_builder
-	
 	aggressiveness = 2.0
 	trade_willingness = 1.0
 	bravery = 1.5
@@ -1135,6 +1153,9 @@ fanatic_befrienders = {
 		robot_exploiter = no
 		robot_liberator = no
 		migrator = yes
+		propagator = no
+		ideologue = no	
+		multispecies = yes
 	}
 	
 	allow = {

@@ -13,18 +13,6 @@ leader_fcollectivist = {
 		society
 		survey
 	}	
-
-	random_weight = {
-		weight = 1
-		modifier = {
-		weight = 0
-		not = { 
-			any_owned_pop = {
-				has_ethic = ethic_fanatic_collectivist
-				}
-			}
-		}		
-	}
 }
 
 leader_collectivist = {
@@ -41,18 +29,6 @@ leader_collectivist = {
 		physics
 		society
 		survey
-	}
-	
-	random_weight = {
-		weight = 1
-		modifier = {
-		weight = 0
-		not = { 
-			any_owned_pop = {
-				has_ethic = ethic_collectivist
-				}
-			}
-		}
 	}
 }
 
@@ -71,18 +47,6 @@ leader_findividualist = {
 		society
 		survey
 	}	
-	
-	random_weight = {
-		weight = 1
-		modifier = {
-		weight = 0
-		not = { 
-			any_owned_pop = {
-				has_ethic = ethic_fanatic_individualist
-				}
-			}
-		}
-	}
 }
 
 leader_individualist = {
@@ -99,18 +63,6 @@ leader_individualist = {
 		physics
 		society
 		survey
-	}
-	
-	random_weight = {
-		weight = 1
-		modifier = {
-		weight = 0
-		not = { 
-			any_owned_pop = {
-				has_ethic = ethic_individualist
-				}
-			}
-		}
 	}
 }
 
@@ -129,18 +81,6 @@ leader_fmilitarist = {
 		society
 		survey
 	}
-	
-	random_weight = {
-		weight = 1
-		modifier = {
-		weight = 0
-		not = { 
-			any_owned_pop = {
-				has_ethic = ethic_fanatic_militarist
-				}
-			}
-		}
-	}
 }
 
 leader_militarist = {
@@ -157,18 +97,6 @@ leader_militarist = {
 		physics
 		society
 		survey
-	}
-	
-	random_weight = {
-		weight = 1
-		modifier = {
-		weight = 0
-		not = { 
-			any_owned_pop = {
-				has_ethic = ethic_militarist
-				}
-			}
-		}
 	}
 }
 
@@ -187,18 +115,6 @@ leader_pacifist = {
 		society
 		survey
 	}
-	
-	random_weight = {
-		weight = 1
-		modifier = {
-		weight = 0
-		not = { 
-			any_owned_pop = {
-				has_ethic = ethic_pacifist
-				}
-			}
-		}
-	}
 }
 
 leader_fpacifist = {
@@ -215,18 +131,6 @@ leader_fpacifist = {
 		physics
 		society
 		survey
-	}
-	
-	random_weight = {
-		weight = 1
-		modifier = {
-		weight = 0
-		not = { 
-			any_owned_pop = {
-				has_ethic = ethic_fanatic_pacifist
-				}
-			}
-		}
 	}
 }
 
@@ -245,18 +149,6 @@ leader_fmaterialist = {
 		society
 		survey
 	}
-	
-	random_weight = {
-		weight = 1
-		modifier = {
-		weight = 0
-		not = { 
-			any_owned_pop = {
-				has_ethic = ethic_fanatic_materialist
-				}
-			}
-		}
-	}
 }
 
 leader_materialist = {
@@ -273,18 +165,6 @@ leader_materialist = {
 		physics
 		society
 		survey
-	}
-	
-	random_weight = {
-		weight = 1
-		modifier = {
-		weight = 0
-		not = { 
-			any_owned_pop = {
-				has_ethic = ethic_materialist
-				}
-			}
-		}
 	}
 }
 
@@ -303,18 +183,6 @@ leader_spiritualist = {
 		society
 		survey
 	}	
-	
-	random_weight = {
-		weight = 1
-		modifier = {
-		weight = 0
-		not = { 
-			any_owned_pop = {
-				has_ethic = ethic_spiritualist
-				}
-			}
-		}
-	}
 }
 
 leader_fspiritualist = {
@@ -331,18 +199,6 @@ leader_fspiritualist = {
 		physics
 		society
 		survey
-	}
-	
-	random_weight = {
-		weight = 1
-		modifier = {
-		weight = 0
-		not = { 
-			any_owned_pop = {
-				has_ethic = ethic_fanatic_spiritualist
-				}
-			}
-		}
 	}
 }
 
@@ -361,18 +217,6 @@ leader_fxenophobe = {
 		society
 		survey
 	}
-	
-	random_weight = {
-		weight = 1
-		modifier = {
-		weight = 0
-		not = { 
-			any_owned_pop = {
-				has_ethic = ethic_fanatic_xenophobe
-				}
-			}
-		}
-	}
 }
 
 leader_xenophobe = {
@@ -389,18 +233,6 @@ leader_xenophobe = {
 		physics
 		society
 		survey
-	}
-	
-	random_weight = {
-		weight = 1
-		modifier = {
-		weight = 0
-		not = { 
-			any_owned_pop = {
-				has_ethic = ethic_xenophobe
-				}
-			}
-		}
 	}
 }
 
@@ -419,18 +251,6 @@ leader_xenophile = {
 		society
 		survey
 	}
-	
-	random_weight = {
-		weight = 1
-		modifier = {
-		weight = 0
-		not = { 
-			any_owned_pop = {
-				has_ethic = ethic_xenophile
-				}
-			}
-		}
-	}
 }
 
 leader_fxenophile = {
@@ -447,17 +267,5 @@ leader_fxenophile = {
 		physics
 		society
 		survey
-	}
-	
-	random_weight = {
-		weight = 1
-		modifier = {
-		weight = 0
-		not = { 
-			any_owned_pop = {
-				has_ethic = ethic_fanatic_xenophile
-				}
-			}
-		}
 	}
 }

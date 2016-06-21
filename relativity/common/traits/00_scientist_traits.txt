@@ -176,18 +176,27 @@ leader_trait_archaeologist = {
 	}
 }
 
-leader_trait_paranoid = {
+leader_trait_expertise_psionics = {
 	cost = 1
 	modification = no
-	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_paranoid.dds"
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_psionics.dds"
 	modifier = {
-		all_technology_research_speed = -0.05
-		ship_anomaly_research_speed_mult = -0.10
+		#category_psionics_research_speed_mult = @categorybonus
 	}
 	leader_trait = yes
 	leader_class = { scientist }
+	prerequisites = { tech_psionic_theory }
 	initial = no
-	# increased chance to discover rare techs (weighted in tech-script)
+	# higher chance to generate techs in category psionics (done in tech-script)
+	
+	ai_categories = {
+		society
+		physics
+	}
+	
+	ai_weight = {
+		weight = 100
+	}
 }
 
 leader_trait_maniacal = {
@@ -320,7 +329,6 @@ leader_trait_expertise_voidcraft = {
 	
 	ai_categories = {
 		engineering
-		physics
 	}
 	
 	ai_weight = {
@@ -410,28 +418,7 @@ leader_trait_expertise_ai = {
 	}
 }
 
-leader_trait_expertise_psionics = {
-	cost = 1
-	modification = no
-	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_psionics.dds"
-	modifier = {
-		#category_psionics_research_speed_mult = @categorybonus
-	}
-	leader_trait = yes
-	leader_class = { scientist }
-	prerequisites = { tech_psionic_theory }
-	initial = no
-	# higher chance to generate techs in category psionics (done in tech-script)
-	
-	ai_categories = {
-		society
-		physics
-	}
-	
-	ai_weight = {
-		weight = 100
-	}
-}
+
 
 leader_trait_expertise_new_worlds = {
 	cost = 1
@@ -1309,4 +1296,72 @@ leader_trait_expertise_weaponry = {
 	ai_weight = {
 		weight = 100
 	}
+}
+
+
+#bad traits
+
+leader_trait_paranoid = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_paranoid.dds"
+	modifier = {
+		ship_anomaly_research_speed_mult = -0.10
+	}
+	leader_trait = yes
+	leader_class = { scientist }
+	initial = no
+	# increased chance to discover rare techs (weighted in tech-script)
+}
+
+leader_trait_closeminded = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_paranoid.dds"
+	modifier = {
+		all_technology_research_speed = -0.03
+	}
+	leader_trait = yes
+	leader_class = { scientist }
+	initial = no
+	# increased chance to discover rare techs (weighted in tech-script)
+}
+
+leader_trait_antisocial = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_paranoid.dds"
+	modifier = {
+		country_society_tech_research_speed = -0.03
+	}
+	leader_trait = yes
+	leader_class = { scientist }
+	initial = no
+	# increased chance to discover rare techs (weighted in tech-script)
+}
+
+leader_trait_antiengineering = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_paranoid.dds"
+	modifier = {
+		country_engineering_tech_research_speed = -0.03
+	}
+	leader_trait = yes
+	leader_class = { scientist }
+	initial = no
+	# increased chance to discover rare techs (weighted in tech-script)
+}
+
+leader_trait_antiphysics = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_paranoid.dds"
+	modifier = {
+		country_physics_tech_research_speed = -0.03
+	}
+	leader_trait = yes
+	leader_class = { scientist }
+	initial = no
+	# increased chance to discover rare techs (weighted in tech-script)
 }

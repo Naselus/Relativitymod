@@ -316,4 +316,29 @@ Version 102.0.1
 * Added the leader gfx fix from TVS by Velorian
 * Colony ships now consume a POP (currently picked at random, thoguh if I ever get round to looking at Jor's approach I may use that instead)
 
+120.0.96
 
+* Space stations no longer designable (may go back to being designed later once I've had time to check out the possibilities)
+* Pirates now always known to everyone
+* Mineral cost of colony ships reduced (to 250 - might reduce it further since they now cost POPs).
+* Pop base happiness reduced to 50%
+* AI now thinks nutrients are a food type so it should staff nutrient buildings more regularly.
+* Governments reworked:
+	* Dictatoriships of all kinda not get reduced ethics drift, reduced influence.
+	* Oligarchies of all types now get +1 leader.
+	* Democracies of all types now get extra ethics shift, bonus influence.
+	* Military governments get bonus navy cap.
+	* Theocracies get bonus happiness.
+	* Materialist govss now get bonus science.
+	* Pacifist govs get bonus energy output.
+* Pirate respawn event no longer pays attention to the existing number of pirates.
+* Mineral procesing line of techs no longer depends on mining network tech.
+* Colony Shelter now consumes influence
+* Fixed broken uplift traits screen
+* Levelling trait revamp completed:
+	* Every different class is now eligible for 4 different traits every level, so no more endless repeats
+	* Each level, there are 3 good traits and 1 bad trait.
+	* The chance of a leader getting the bad trait starts small but increases per level.
+* UPDATED TO ASIMOV
+	
+	

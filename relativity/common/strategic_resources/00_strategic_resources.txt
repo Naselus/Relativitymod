@@ -238,13 +238,13 @@ sr_plasma3 = {
 #food resources
 
 sr_nutrients = {
-	AI_category = energy
+	AI_category = food
 	tradable = yes
 	is_rare = yes
 }
 
 sr_luxurynutrients = {
-	AI_category = energy
+	AI_category = food
 	tradable = yes
 	is_rare = yes
 }

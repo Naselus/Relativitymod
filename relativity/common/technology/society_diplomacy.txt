@@ -203,10 +203,6 @@ tech_xeno_diplomacy = {
 	ai_weight = {
 		factor = 3
 		modifier = {
-			factor = 10
-			has_ai_personality_type = federation_builder
-		}	
-		modifier = {
 			factor = 2
 			has_ethic = ethic_xenophile
 		}
@@ -308,7 +304,7 @@ tech_diplomacy_10 = {
 	weight = @tier2weight1
 	
 	modifier = {
-		alliance_influence_cost = -1
+		max_rivalries = 1
 	}
 	
 	ai_weight = { factor = 1 }
