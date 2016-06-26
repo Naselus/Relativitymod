@@ -7,6 +7,7 @@ time = {
 
 energy = {
 	accumulative = yes
+	collect_if_wrong_building = no
 	accumulated_by_sectors = yes
 	tradable = yes
 	AI_category = energy
@@ -15,6 +16,7 @@ energy = {
 
 minerals = {
 	accumulative = yes
+	collect_if_wrong_building = no
 	accumulated_by_sectors = yes
 	tradable = yes
 	AI_category = minerals
@@ -24,21 +26,25 @@ minerals = {
 food = {
 	is_planet_local = yes
 	accumulative = yes
+	collect_if_wrong_building = no
 	AI_category = food
 }
 
 physics_research = {
 	accumulative = yes
+	collect_if_wrong_building = no
 	AI_category = physics
 }
 
 society_research = {
 	accumulative = yes
+	collect_if_wrong_building = no
 	AI_category = society
 }
 
 engineering_research = {
 	accumulative = yes
+	collect_if_wrong_building = no
 	AI_category = engineering
 }
 
@@ -195,12 +201,14 @@ sr_dark_matter = {
 
 sr_steel = {
 	AI_category = minerals
+	collect_if_wrong_building = no
 	tradable = yes
 	is_rare = yes
 }
 
 sr_steel2 = {
 	AI_category = minerals
+	collect_if_wrong_building = no
 	prerequisites = { "tech_mining_6" }
 	tradable = yes
 	is_rare = yes
@@ -208,6 +216,7 @@ sr_steel2 = {
 
 sr_steel3 = {
 	AI_category = minerals
+	collect_if_wrong_building = no
 	prerequisites = { "tech_mining_10" }
 	tradable = yes
 	is_rare = yes
@@ -217,12 +226,14 @@ sr_steel3 = {
 
 sr_plasma = {
 	AI_category = minerals
+	collect_if_wrong_building = no
 	tradable = yes
 	is_rare = yes
 }
 
 sr_plasma2 = {
 	AI_category = minerals
+	collect_if_wrong_building = no
 	tradable = yes
 	prerequisites = { "tech_power_plant_6" }
 	is_rare = yes
@@ -230,6 +241,7 @@ sr_plasma2 = {
 
 sr_plasma3 = {
 	AI_category = minerals
+	collect_if_wrong_building = no
 	prerequisites = { "tech_power_plant_10" }	
 	tradable = yes
 	is_rare = yes
@@ -238,13 +250,16 @@ sr_plasma3 = {
 #food resources
 
 sr_nutrients = {
-	AI_category = food
+	AI_category = minerals
+	collect_if_wrong_building = no
 	tradable = yes
 	is_rare = yes
+	num_ai_wanted = 10
 }
 
 sr_luxurynutrients = {
 	AI_category = food
+	collect_if_wrong_building = no
 	tradable = yes
 	is_rare = yes
 }

@@ -324,7 +324,7 @@ Version 102.0.1
 * Pop base happiness reduced to 50%
 * AI now thinks nutrients are a food type so it should staff nutrient buildings more regularly.
 * Governments reworked:
-	* Dictatoriships of all kinda not get reduced ethics drift, reduced influence.
+	* Dictatoriships of all kinda now get reduced ethics drift, reduced influence.
 	* Oligarchies of all types now get +1 leader.
 	* Democracies of all types now get extra ethics shift, bonus influence.
 	* Military governments get bonus navy cap.
@@ -340,5 +340,9 @@ Version 102.0.1
 	* Each level, there are 3 good traits and 1 bad trait.
 	* The chance of a leader getting the bad trait starts small but increases per level.
 * UPDATED TO ASIMOV
-	
-	
+* Reduced AI's base mineral and energy expectations (were too high, causing them to destaff nutrients)
+* Removed colonization influence costs
+* Pirates now always known to be pirates (in case you bump into other people's).	
+* event-spawned Leaders now have ethical traits
+* Fixed a bunch of errors in buildings.txt
+* Removed some flat inf costs

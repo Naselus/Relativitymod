@@ -904,10 +904,10 @@ NDefines = {
 		
 		RESETTLEMENT_COST_RESOURCES			= { "minerals" }, -- Resources for manual resettlement
 		RESETTLEMENT_COST_AMOUNTS			= { 50 }, -- Resource costs for manual resettlement
-		EXPANSION_COST_BASE 				= 30.0,		-- the influence base cost of colonzation and frontier outposts by this value.
+		EXPANSION_COST_BASE 				= 0.0,		-- the influence base cost of colonzation and frontier outposts by this value.
 		EXPANSION_COST_DISTANCE_FREE 		= 30.0,		-- a certain amount of distance that is reduced from actual distance, in effect making a "free" distance
-		EXPANSION_COST_DISTANCE_COST		= 2.0,		-- each 1 range equals X of this define as an influence cost to colonize or build a frontier outpost
-		EXPANSION_COST_DISTANCE_SCALE 		= 1.10,		-- scaled cost for exponentially increased costs depending on range
+		EXPANSION_COST_DISTANCE_COST		= 0,		-- each 1 range equals X of this define as an influence cost to colonize or build a frontier outpost
+		EXPANSION_COST_DISTANCE_SCALE 		= 0,		-- scaled cost for exponentially increased costs depending on range
 	},
 
 	NEngine = {
@@ -1154,11 +1154,11 @@ NDefines = {
 		MAX_MINERALS_STORED_SECTOR_POST_BUILDINGS = 1000,		-- Minerals AI will store for buildings
 		MAX_MINERALS_SPENT_ON_NAVY = 0.50,			-- Spend no more than this fraction of mineral income on navy maintenance
 
-		EXPECTED_MINERALS_BASE = 10,				-- AI expects to make this base amount in minerals
+		EXPECTED_MINERALS_BASE = 5,				-- AI expects to make this base amount in minerals
 		EXPECTED_MINERALS_PER_POP = 2,				-- AI expects to make about their num pops x this in minerals
-		EXPECTED_TECH_BASE = 10,						-- AI expects to make this base amount in tech
+		EXPECTED_TECH_BASE = 5,						-- AI expects to make this base amount in tech
 		EXPECTED_TECH_PER_POP = 2,					-- AI expects to make about their num pops x this in tech
-		EXPECTED_ENERGY_BASE = 10,					-- AI expects to make this base amount in energy
+		EXPECTED_ENERGY_BASE = 5,					-- AI expects to make this base amount in energy
 		EXPECTED_ENERGY_PER_POP = 1.5,				-- AI expects to make about their num pops x this in energy
 		EXPECTED_ENERGY_SURPLUS = 3,				-- AI wants a surplus of least this amount in monthly energy production (temporary spending such as colonies does not count)
 		EXPECTED_SECTOR_ENERGY_SURPLUS = 3,			-- As above, but for sectors

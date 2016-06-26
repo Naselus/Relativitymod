@@ -41,8 +41,7 @@ country_event = {
 					name = random
 					skill = 201
 					traits = {
-						trait = leader_trait_gale_speed
-						trait = leader_trait_aggressive
+						trait = random_traits
 					}
 				}
 				last_created_leader = { save_event_target_as = officer }
@@ -54,8 +53,7 @@ country_event = {
 					name = random
 					skill = 301
 					traits = {
-						trait = leader_trait_aggressive
-						trait = leader_trait_engineer
+						trait = random_traits
 					}
 				}
 				last_created_leader = { save_event_target_as = officer }
@@ -67,8 +65,7 @@ country_event = {
 					name = random
 					skill = 401
 					traits = {
-						trait = leader_trait_fleet_logistician
-						trait = leader_trait_cautious
+						trait = random_traits
 					}
 				}
 				last_created_leader = { save_event_target_as = officer }
@@ -80,8 +77,7 @@ country_event = {
 					name = random
 					skill = 250
 					traits = {
-						trait = leader_trait_scout
-						trait = leader_trait_trickster
+						trait = random_traits
 					}
 				}
 				last_created_leader = { save_event_target_as = officer }
@@ -807,10 +803,10 @@ country_event = {
 							25 = {
 								if = {
 									limit = {
-										NOT = { has_trait = leader_trait_substance_abuser }
+										NOT = { has_trait = leader_trait_wastrel }
 									}
-									add_trait = leader_trait_substance_abuser
-									set_leader_flag = gained_leader_trait_substance_abuser
+									add_trait = leader_trait_wastrel
+									set_leader_flag = gained_leader_trait_wastrel
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.22} }
 								}
@@ -1141,10 +1137,10 @@ country_event = {
 							31 = {
 								if = {
 									limit = {
-										NOT = { has_trait = leader_trait_eager }
+										NOT = { has_trait = leader_trait_driven }
 									}
-									add_trait = leader_trait_eager
-									set_leader_flag = gained_leader_trait_eager
+									add_trait = leader_trait_driven
+									set_leader_flag = gained_leader_trait_driven
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.23} }
 								}
@@ -1592,7 +1588,7 @@ country_event = {
 									add_trait = leader_trait_content
 									set_leader_flag = gained_leader_trait_content
 									set_leader_flag = has_gained_level_trait
-									owner = { country_event = { id = leader.23} }
+									owner = { country_event = { id = leader.21} }
 								}
 							}
 							31 = {
@@ -1603,18 +1599,18 @@ country_event = {
 									add_trait = leader_trait_ambitious
 									set_leader_flag = gained_leader_trait_ambitious
 									set_leader_flag = has_gained_level_trait
-									owner = { country_event = { id = leader.23} }
+									owner = { country_event = { id = leader.21} }
 								}
 							}
 							31 = {
 								if = {
 									limit = {
-										NOT = { has_trait = leader_trait_eager }
+										NOT = { has_trait = leader_trait_driven }
 									}
-									add_trait = leader_trait_eager
-									set_leader_flag = gained_leader_trait_eager
+									add_trait = leader_trait_driven
+									set_leader_flag = gained_leader_trait_driven
 									set_leader_flag = has_gained_level_trait
-									owner = { country_event = { id = leader.23} }
+									owner = { country_event = { id = leader.21} }
 								}
 							}
 							31 = {
@@ -1625,14 +1621,14 @@ country_event = {
 									add_trait = leader_trait_avg_ambition
 									set_leader_flag = gained_leader_trait_avg_ambition
 									set_leader_flag = has_gained_level_trait
-									owner = { country_event = { id = leader.23} }
+									owner = { country_event = { id = leader.21} }
 								}
 							}
 						}
 			}
 			if = {
 				limit = {
-					leader_class = governor
+					leader_class = scientist
 					has_level = 2
 				}
 						random_list = {
@@ -1644,7 +1640,7 @@ country_event = {
 									add_trait = leader_trait_paranoid
 									set_leader_flag = gained_leader_trait_paranoid
 									set_leader_flag = has_gained_level_trait
-									owner = { country_event = { id = leader.23} }
+									owner = { country_event = { id = leader.21} }
 								}
 							}
 							29 = {
@@ -1655,7 +1651,7 @@ country_event = {
 									add_trait = leader_trait_expertise_banking
 									set_leader_flag = gained_leader_trait_expertise_banking
 									set_leader_flag = has_gained_level_trait
-									owner = { country_event = { id = leader.23} }
+									owner = { country_event = { id = leader.21} }
 								}
 							}
 							29 = {
@@ -1666,7 +1662,7 @@ country_event = {
 									add_trait = leader_trait_expertise_weaponry
 									set_leader_flag = gained_leader_trait_expertise_weaponry
 									set_leader_flag = has_gained_level_trait
-									owner = { country_event = { id = leader.23} }
+									owner = { country_event = { id = leader.21} }
 								}
 							}
 							29 = {
@@ -1677,7 +1673,7 @@ country_event = {
 									add_trait = leader_trait_expertise_voidcraft
 									set_leader_flag = gained_leader_trait_expertise_voidcraft
 									set_leader_flag = has_gained_level_trait
-									owner = { country_event = { id = leader.23} }
+									owner = { country_event = { id = leader.21} }
 								}
 							}
 						}
@@ -1696,7 +1692,7 @@ country_event = {
 									add_trait = leader_trait_closeminded
 									set_leader_flag = gained_leader_trait_closeminded
 									set_leader_flag = has_gained_level_trait
-									owner = { country_event = { id = leader.23} }
+									owner = { country_event = { id = leader.21} }
 								}
 							}
 							27 = {
@@ -1707,7 +1703,7 @@ country_event = {
 									add_trait = leader_trait_expertise_ai
 									set_leader_flag = gained_leader_trait_expertise_ai
 									set_leader_flag = has_gained_level_trait
-									owner = { country_event = { id = leader.23} }
+									owner = { country_event = { id = leader.21} }
 								}
 							}
 							27 = {
@@ -1718,7 +1714,7 @@ country_event = {
 									add_trait = leader_trait_expertise_biology
 									set_leader_flag = gained_leader_trait_expertise_biology
 									set_leader_flag = has_gained_level_trait
-									owner = { country_event = { id = leader.23} }
+									owner = { country_event = { id = leader.21} }
 								}
 							}
 							27 = {
@@ -1729,7 +1725,7 @@ country_event = {
 									add_trait = leader_trait_expertise_rocketry
 									set_leader_flag = gained_leader_trait_expertise_rocketry
 									set_leader_flag = has_gained_level_trait
-									owner = { country_event = { id = leader.23} }
+									owner = { country_event = { id = leader.21} }
 								}
 							}
 						}
@@ -1748,7 +1744,7 @@ country_event = {
 									add_trait = leader_trait_stubborn
 									set_leader_flag = gained_leader_trait_stubborn
 									set_leader_flag = has_gained_level_trait
-									owner = { country_event = { id = leader.23} }
+									owner = { country_event = { id = leader.21} }
 								}
 							}
 							25 = {
@@ -1759,7 +1755,7 @@ country_event = {
 									add_trait = leader_trait_adaptable
 									set_leader_flag = gained_leader_trait_adaptable
 									set_leader_flag = has_gained_level_trait
-									owner = { country_event = { id = leader.23} }
+									owner = { country_event = { id = leader.21} }
 								}
 							}
 							25 = {
@@ -1770,7 +1766,7 @@ country_event = {
 									add_trait = leader_trait_spark_of_genius
 									set_leader_flag = gained_leader_trait_spark_of_genius
 									set_leader_flag = has_gained_level_trait
-									owner = { country_event = { id = leader.23} }
+									owner = { country_event = { id = leader.21} }
 								}
 							}
 							25 = {
@@ -1781,7 +1777,7 @@ country_event = {
 									add_trait = leader_trait_roamer
 									set_leader_flag = gained_leader_trait_roamer
 									set_leader_flag = has_gained_level_trait
-									owner = { country_event = { id = leader.23} }
+									owner = { country_event = { id = leader.21} }
 								}
 							}
 						}
@@ -1800,7 +1796,7 @@ country_event = {
 									add_trait = leader_trait_dumb
 									set_leader_flag = gained_leader_trait_dumb
 									set_leader_flag = has_gained_level_trait
-									owner = { country_event = { id = leader.23} }
+									owner = { country_event = { id = leader.21} }
 								}
 							}
 							23 = {
@@ -1811,7 +1807,7 @@ country_event = {
 									add_trait = leader_trait_brilliant
 									set_leader_flag = gained_leader_trait_brilliant
 									set_leader_flag = has_gained_level_trait
-									owner = { country_event = { id = leader.23} }
+									owner = { country_event = { id = leader.21} }
 								}
 							}
 							23 = {
@@ -1822,7 +1818,7 @@ country_event = {
 									add_trait = leader_trait_smart
 									set_leader_flag = gained_leader_trait_smart
 									set_leader_flag = has_gained_level_trait
-									owner = { country_event = { id = leader.23} }
+									owner = { country_event = { id = leader.21} }
 								}
 							}
 							23 = {
@@ -1833,7 +1829,7 @@ country_event = {
 									add_trait = leader_trait_avg_intellect
 									set_leader_flag = gained_leader_trait_avg_intellect
 									set_leader_flag = has_gained_level_trait
-									owner = { country_event = { id = leader.23} }
+									owner = { country_event = { id = leader.21} }
 								}
 							}
 						}
@@ -1852,7 +1848,7 @@ country_event = {
 									add_trait = leader_trait_antisocial
 									set_leader_flag = gained_leader_trait_antisocial
 									set_leader_flag = has_gained_level_trait
-									owner = { country_event = { id = leader.23} }
+									owner = { country_event = { id = leader.21} }
 								}
 							}
 							21 = {
@@ -1863,7 +1859,7 @@ country_event = {
 									add_trait = leader_trait_archaeologist
 									set_leader_flag = gained_leader_trait_archaeologist
 									set_leader_flag = has_gained_level_trait
-									owner = { country_event = { id = leader.23} }
+									owner = { country_event = { id = leader.21} }
 								}
 							}
 							21 = {
@@ -1874,7 +1870,7 @@ country_event = {
 									add_trait = leader_trait_expertise_bio_labs
 									set_leader_flag = gained_leader_trait_expertise_bio_labs
 									set_leader_flag = has_gained_level_trait
-									owner = { country_event = { id = leader.23} }
+									owner = { country_event = { id = leader.21} }
 								}
 							}
 							21 = {
@@ -1885,7 +1881,7 @@ country_event = {
 									add_trait = leader_trait_expertise_armor
 									set_leader_flag = gained_leader_trait_expertise_armor
 									set_leader_flag = has_gained_level_trait
-									owner = { country_event = { id = leader.23} }
+									owner = { country_event = { id = leader.21} }
 								}
 							}
 						}
@@ -1904,7 +1900,7 @@ country_event = {
 									add_trait = leader_trait_antiphysics
 									set_leader_flag = gained_leader_trait_antiphysics
 									set_leader_flag = has_gained_level_trait
-									owner = { country_event = { id = leader.23} }
+									owner = { country_event = { id = leader.21} }
 								}
 							}
 							19 = {
@@ -1915,7 +1911,7 @@ country_event = {
 									add_trait = leader_trait_expertise_ftl_travel
 									set_leader_flag = gained_leader_trait_expertise_ftl_travel
 									set_leader_flag = has_gained_level_trait
-									owner = { country_event = { id = leader.23} }
+									owner = { country_event = { id = leader.21} }
 								}
 							}
 							19 = {
@@ -1926,7 +1922,7 @@ country_event = {
 									add_trait = leader_trait_expertise_mineral_processing
 									set_leader_flag = gained_leader_trait_expertise_mineral_processing
 									set_leader_flag = has_gained_level_trait
-									owner = { country_event = { id = leader.23} }
+									owner = { country_event = { id = leader.21} }
 								}
 							}
 							19 = {
@@ -1937,7 +1933,7 @@ country_event = {
 									add_trait = leader_trait_expertise_genetics
 									set_leader_flag = gained_leader_trait_expertise_genetics
 									set_leader_flag = has_gained_level_trait
-									owner = { country_event = { id = leader.23} }
+									owner = { country_event = { id = leader.21} }
 								}
 							}
 						}
@@ -1951,12 +1947,12 @@ country_event = {
 							49 = {
 								if = {
 									limit = {
-										NOT = { has_trait = leader_trait_substance_abuser }
+										NOT = { has_trait = leader_trait_wastrel }
 									}
-									add_trait = leader_trait_substance_abuser
-									set_leader_flag = gained_leader_trait_substance_abuser
+									add_trait = leader_trait_wastrel
+									set_leader_flag = gained_leader_trait_wastrel
 									set_leader_flag = has_gained_level_trait
-									owner = { country_event = { id = leader.23} }
+									owner = { country_event = { id = leader.21} }
 								}
 							}
 							17 = {
@@ -1967,7 +1963,7 @@ country_event = {
 									add_trait = leader_trait_resilient
 									set_leader_flag = gained_leader_trait_resilient
 									set_leader_flag = has_gained_level_trait
-									owner = { country_event = { id = leader.23} }
+									owner = { country_event = { id = leader.21} }
 								}
 							}
 							17 = {
@@ -1978,7 +1974,7 @@ country_event = {
 									add_trait = leader_trait_expertise_statecraft
 									set_leader_flag = gained_leader_trait_expertise_statecraft
 									set_leader_flag = has_gained_level_trait
-									owner = { country_event = { id = leader.23} }
+									owner = { country_event = { id = leader.21} }
 								}
 							}
 							17 = {
@@ -1989,7 +1985,7 @@ country_event = {
 									add_trait = leader_trait_expertise_psionics
 									set_leader_flag = gained_leader_trait_expertise_psionics
 									set_leader_flag = has_gained_level_trait
-									owner = { country_event = { id = leader.23} }
+									owner = { country_event = { id = leader.21} }
 								}
 							}
 						}
@@ -2008,7 +2004,7 @@ country_event = {
 									add_trait = leader_trait_senile_science
 									set_leader_flag = gained_leader_trait_senile_science
 									set_leader_flag = has_gained_level_trait
-									owner = { country_event = { id = leader.23} }
+									owner = { country_event = { id = leader.21} }
 								}
 							}
 							15 = {
@@ -2019,7 +2015,7 @@ country_event = {
 									add_trait = leader_trait_science_master
 									set_leader_flag = gained_leader_trait_science_master
 									set_leader_flag = has_gained_level_trait
-									owner = { country_event = { id = leader.23} }
+									owner = { country_event = { id = leader.21} }
 								}
 							}
 							15 = {
@@ -2030,7 +2026,7 @@ country_event = {
 									add_trait = leader_trait_custom_AI_assistant
 									set_leader_flag = gained_leader_trait_custom_AI_assistant
 									set_leader_flag = has_gained_level_trait
-									owner = { country_event = { id = leader.23} }
+									owner = { country_event = { id = leader.21} }
 								}
 							}
 							15 = {
@@ -2041,7 +2037,7 @@ country_event = {
 									add_trait = leader_trait_sentient_AI_assistant
 									set_leader_flag = gained_leader_trait_sentient_AI_assistant
 									set_leader_flag = has_gained_level_trait
-									owner = { country_event = { id = leader.23} }
+									owner = { country_event = { id = leader.21} }
 								}
 							}
 						}
@@ -2077,10 +2073,10 @@ country_event = {
 							31 = {
 								if = {
 									limit = {
-										NOT = { has_trait = leader_trait_eager }
+										NOT = { has_trait = leader_trait_driven }
 									}
-									add_trait = leader_trait_eager
-									set_leader_flag = gained_leader_trait_eager
+									add_trait = leader_trait_driven
+									set_leader_flag = gained_leader_trait_driven
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.24} }
 								}
@@ -2518,6 +2514,142 @@ country_event = {
 	}
 }
 
+#scientist gains trait
+country_event = {
+	id = leader.21
+	title = leader.2.name
+	desc = {
+		trigger = {
+			hidden:fromfrom = {
+				switch = {
+					trigger = has_leader_flag
+					#best traits
+					gained_leader_trait_ambitious = { text = leader.21.desc.ambitious }
+					gained_leader_trait_content = { text = leader.21.desc.content }
+					gained_leader_trait_driven = { text = leader.21.desc.driven }
+					gained_leader_trait_avg_ambition = { text = leader.21.desc.avg_ambition }
+					gained_leader_trait_brilliant = { text = leader.21.desc.brilliant }
+					gained_leader_trait_paranoid = { text = leader.21.desc.paranoid }
+					gained_leader_trait_expertise_banking = { text = leader.21.desc.expertise_banking }
+					gained_leader_trait_expertise_weaponry = { text = leader.21.desc.expertise_weaponry }
+					#good traits
+					gained_leader_trait_expertise_voidcraft = { text = leader.21.desc.expertise_voidcraft }
+					gained_leader_trait_closeminded = { text = leader.21.desc.closeminded }
+					gained_leader_trait_expertise_ai = { text = leader.21.desc.expertise_ai }
+					gained_leader_trait_expertise_biology = { text = leader.21.desc.expertise_biology }
+					gained_leader_trait_expertise_rocketry = { text = leader.21.desc.expertise_rocketry }
+					gained_leader_trait_stubborn = { text = leader.21.desc.stubborn }
+					gained_leader_trait_adaptable = { text = leader.21.desc.adaptable }
+					gained_leader_trait_spark_of_genius = { text = leader.21.desc.spark_of_genius }
+					#avg traits
+					gained_leader_trait_roamer = { text = leader.21.desc.roamer }
+					gained_leader_trait_expertise_psionics = { text = leader.21.desc.expertise_psionics }
+					gained_leader_trait_expertise_statecraft = { text = leader.21.desc.expertise_statecraft }
+					gained_leader_trait_resilient = { text = leader.21.desc.resilient }
+					gained_leader_trait_avg_intellect = { text = leader.21.desc.avg_intellect }
+					gained_leader_trait_expertise_genetics = { text = leader.21.desc.expertise_genetics }
+					gained_leader_trait_expertise_mineral_processing = { text = leader.21.desc.expertise_mineral_processing }
+					gained_leader_trait_expertise_ftl_travel = { text = leader.21.desc.expertise_ftl_travel }
+					#bad traits
+					gained_leader_trait_content = { text = leader.21.desc.content }
+					gained_leader_trait_lazy = { text = leader.21.desc.lazy }
+					gained_leader_trait_confused = { text = leader.21.desc.confused }
+					gained_leader_trait_wastrel = { text = leader.21.desc.substance_abuser }
+					gained_leader_trait_dumb = { text = leader.21.desc.dumb }
+					gained_leader_trait_spacesick = { text = leader.21.desc.spacesick }
+					gained_leader_trait_senile_science = { text = leader.21.desc.senile_science }
+					#legendary traits
+					gained_leader_trait_science_master = { text = leader.21.desc.science_master }
+					gained_leader_trait_custom_AI_assistant = { text = leader.21.desc.custom_AI_assistant }
+					gained_leader_trait_sentient_AI_assistant = { text = leader.21.desc.sentient_AI_assistant }
+					default = { text = "ERROR" }
+				}
+			}
+		}
+	}
+	location = event_target:current_location
+	picture = GFX_evt_archaeological_dig
+	is_triggered_only = yes
+
+	immediate = {
+		fromfrom = {
+			if = {
+				limit = {
+					exists = planet
+				}
+				planet = {
+					save_event_target_as = current_location
+				}
+			}
+			if = {
+				limit = {
+					exists = fleet
+				}
+				fleet = {
+					random_owned_ship = {
+						save_event_target_as = current_location
+					}
+				}
+			}
+		}
+	}
+	#admirals
+	option = {
+		name = leader.21.a.positive
+		trigger = {
+			fromfrom = {
+				OR = {
+					has_leader_flag = gained_leader_trait_science_master
+					has_leader_flag = gained_leader_trait_custom_AI_assistant
+					has_leader_flag = gained_leader_trait_sentient_AI_assistant
+					has_leader_flag = gained_leader_trait_roamer
+					has_leader_flag = gained_leader_trait_expertise_psionics
+					has_leader_flag = gained_leader_trait_expertise_statecraft
+					has_leader_flag = gained_leader_trait_resilient
+					has_leader_flag = gained_leader_trait_avg_intellect
+					has_leader_flag = gained_leader_trait_expertise_genetics
+					has_leader_flag = gained_leader_trait_expertise_mineral_processing
+					has_leader_flag = gained_leader_trait_expertise_ftl_travel 
+					has_leader_flag = gained_leader_trait_expertise_voidcraft
+					has_leader_flag = gained_leader_trait_closeminded 
+					has_leader_flag = gained_leader_trait_expertise_ai
+					has_leader_flag = gained_leader_trait_expertise_biology
+					has_leader_flag = gained_leader_trait_expertise_rocketry
+					has_leader_flag = gained_leader_trait_stubborn
+					has_leader_flag = gained_leader_trait_adaptable
+					has_leader_flag = gained_leader_trait_spark_of_genius
+					has_leader_flag = gained_leader_trait_ambitious
+					
+					has_leader_flag = gained_leader_trait_driven
+					has_leader_flag = gained_leader_trait_avg_ambition
+					has_leader_flag = gained_leader_trait_brilliant
+					has_leader_flag = gained_leader_trait_paranoid
+					has_leader_flag = gained_leader_trait_expertise_banking
+					has_leader_flag = gained_leader_trait_expertise_weaponry
+				}
+			}
+		}
+	}
+	#bad traits
+	option = {
+		name = leader.21.a.negative
+		trigger = {
+			fromfrom = {
+				OR = {
+					has_leader_flag = gained_leader_trait_content
+					has_leader_flag = gained_leader_trait_lazy
+					has_leader_flag = gained_leader_trait_confused 
+					has_leader_flag = gained_leader_trait_wastrel
+					has_leader_flag = gained_leader_trait_dumb
+					has_leader_flag = gained_leader_trait_spacesick
+					has_leader_flag = gained_leader_trait_disheartened
+					has_leader_flag = gained_leader_trait_crippled 
+				}
+			}
+		}
+	}
+}
+
 #Admiral gains new trait
 country_event = {
 	id = leader.22
@@ -2537,7 +2669,7 @@ country_event = {
 					gained_leader_trait_wrathful = { text = leader.22.desc.wrathful }
 					gained_leader_trait_vigorous = { text = leader.22.desc.vigorous }
 					#good traits
-					gained_leader_trait_eager = { text = leader.22.desc.eager }
+					gained_leader_trait_driven = { text = leader.22.desc.eager }
 					gained_leader_trait_dedicated = { text = leader.22.desc.dedicated }
 					gained_leader_trait_tactician = { text = leader.22.desc.tactician }
 					gained_leader_trait_organized = { text = leader.22.desc.organized }
@@ -2558,7 +2690,7 @@ country_event = {
 					gained_leader_trait_content = { text = leader.22.desc.content }
 					gained_leader_trait_lazy = { text = leader.22.desc.lazy }
 					gained_leader_trait_confused = { text = leader.22.desc.confused }
-					gained_leader_trait_substance_abuser = { text = leader.22.desc.substance_abuser }
+					gained_leader_trait_wastrel = { text = leader.22.desc.substance_abuser }
 					gained_leader_trait_dumb = { text = leader.22.desc.dumb }
 					gained_leader_trait_spacesick = { text = leader.22.desc.spacesick }
 					gained_leader_trait_disheartened = { text = leader.22.desc.disheartened }
@@ -2615,7 +2747,7 @@ country_event = {
 					has_leader_flag = gained_leader_trait_wrathful
 					has_leader_flag = gained_leader_trait_vigorous
 					#good traits
-					has_leader_flag = gained_leader_trait_eager
+					has_leader_flag = gained_leader_trait_driven
 					has_leader_flag = gained_leader_trait_dedicated
 					has_leader_flag = gained_leader_trait_tactician
 					has_leader_flag = gained_leader_trait_organized
@@ -2649,7 +2781,7 @@ country_event = {
 					has_leader_flag = gained_leader_trait_content
 					has_leader_flag = gained_leader_trait_lazy
 					has_leader_flag = gained_leader_trait_confused
-					has_leader_flag = gained_leader_trait_substance_abuser
+					has_leader_flag = gained_leader_trait_wastrel
 					has_leader_flag = gained_leader_trait_dumb
 					has_leader_flag = gained_leader_trait_spacesick
 					has_leader_flag = gained_leader_trait_disheartened
@@ -2681,7 +2813,7 @@ country_event = {
 					gained_leader_trait_proud = { text = leader.23.desc.proud }
 					gained_leader_trait_incorruptible = { text = leader.23.desc.incorruptible }
 					#good traits
-					gained_leader_trait_eager = { text = leader.23.desc.eager }
+					gained_leader_trait_driven = { text = leader.23.desc.driven }
 					gained_leader_trait_disciplined = { text = leader.23.desc.disciplined }
 					gained_leader_trait_charming = { text = leader.23.desc.charming }
 					gained_leader_trait_morally_pure = { text = leader.23.desc.morally_pure }
@@ -2744,7 +2876,7 @@ country_event = {
 					has_leader_flag = gained_leader_trait_proud
 					has_leader_flag = gained_leader_trait_incorruptible
 					#good traits
-					has_leader_flag = gained_leader_trait_eager
+					has_leader_flag = gained_leader_trait_driven
 					has_leader_flag = gained_leader_trait_disciplined
 					has_leader_flag = gained_leader_trait_charming
 					has_leader_flag = gained_leader_trait_morally_pure
@@ -2802,13 +2934,13 @@ country_event = {
 					gained_leader_trait_ambitious = { text = leader.24.desc.ambitious }
 					gained_leader_trait_bloodthirsty = { text = leader.24.desc.bloodthirsty }
 					gained_leader_trait_inspiring = { text = leader.24.desc.fearless }
-					gained_leader_trait_unyielding = { text = leader.24.desc.unyielding }
+					gained_leader_trait_defiant = { text = leader.24.desc.defiant }
 					gained_leader_trait_brilliant = { text = leader.24.desc.brilliant }
 					gained_leader_trait_innovative = { text = leader.24.desc.innovative }
 					gained_leader_trait_honorable = { text = leader.24.desc.honorable }
 					gained_leader_trait_champion = { text = leader.24.desc.champion }
 					#good traits
-					gained_leader_trait_eager = { text = leader.24.desc.eager }
+					gained_leader_trait_driven = { text = leader.24.desc.driven }
 					gained_leader_trait_fierce = { text = leader.24.desc.fierce }
 					gained_leader_trait_brave = { text = leader.24.desc.brave }
 					gained_leader_trait_steadfast = { text = leader.24.desc.steadfast }
@@ -2881,12 +3013,13 @@ country_event = {
 					has_leader_flag = gained_leader_trait_bloodthirsty
 					has_leader_flag = gained_leader_trait_fearless
 					has_leader_flag = gained_leader_trait_unyielding
+					has_leader_flag = gained_leader_trait_defiant
 					has_leader_flag = gained_leader_trait_brilliant
 					has_leader_flag = gained_leader_trait_innovative
 					has_leader_flag = gained_leader_trait_honorable
 					has_leader_flag = gained_leader_trait_champion
 					#good traits
-					has_leader_flag = gained_leader_trait_eager
+					has_leader_flag = gained_leader_trait_driven
 					has_leader_flag = gained_leader_trait_fierce
 					has_leader_flag = gained_leader_trait_brave
 					has_leader_flag = gained_leader_trait_steadfast
@@ -2944,7 +3077,7 @@ country_event = {
 					gained_leader_trait_adaptable = { text = leader.25.desc.adaptable }
 					gained_leader_trait_resilient = { text = leader.25.desc.resilient }
 					gained_leader_trait_stubborn = { text = leader.25.desc.stubborn }
-					gained_leader_trait_substance_abuser = { text = leader.25.desc.substance_abuser }
+					gained_leader_trait_wastrel = { text = leader.25.desc.substance_abuser }
 					gained_leader_trait_arrested_development = { text = leader.25.desc.arrested_development }
 					gained_trait_ruler_corvette_focus = { text = leader.25.desc.corvette_focus }
 					gained_trait_ruler_destroyer_focus = { text = leader.25.desc.destroyer_focus }
@@ -2995,7 +3128,7 @@ country_event = {
 				NOT = {
 					has_leader_flag = gained_leader_trait_nervous
 					has_leader_flag = gained_leader_trait_stubborn
-					has_leader_flag = leader_trait_substance_abuser
+					has_leader_flag = leader_trait_wastrel
 					has_leader_flag = leader_trait_arrested_development
 				}
 			}
@@ -3008,7 +3141,7 @@ country_event = {
 				OR = {
 					has_leader_flag = gained_leader_trait_nervous
 					has_leader_flag = gained_leader_trait_stubborn
-					has_leader_flag = leader_trait_substance_abuser
+					has_leader_flag = leader_trait_wastrel
 					has_leader_flag = leader_trait_arrested_development
 				}
 			}

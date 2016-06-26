@@ -15,6 +15,7 @@
 # upgrades, buildings list, buildings this building can upgrade into.
 # is_listed, boolean, toggles if this building is shown in the non-upgrade buildable list.
 # planet_unique, toggles if one can build multiple of this type on a single planet.
+# ai_weight, weight for AI, default is set to one, weight set to 0 means that AI will never build it
 
 #
 # BALANCE
@@ -1992,7 +1993,9 @@ building_capital_3 = {
 		minerals = 3
 		influence = 0.5
 	}
-	
+	upgrades = {
+		building_capital_4
+	}		
 	required_resources = {
 		sr_nutrients = 8
 	}
@@ -3960,7 +3963,7 @@ building_bank = {
 
 building_bank_2 = {
 	base_buildtime = @b2time
-	
+	is_listed = no	
 	cost = {
 		minerals = @b2cost
 	}
@@ -4000,7 +4003,7 @@ building_bank_2 = {
 
 building_bank_3 = {
 	base_buildtime = @b3time
-	
+	is_listed = no	
 	cost = {
 		minerals = @b3cost
 	}
@@ -4039,7 +4042,7 @@ building_bank_3 = {
 
 building_bank_4 = {
 	base_buildtime = @b4time
-	
+	is_listed = no	
 	cost = {
 		minerals = @b4cost
 	}
@@ -4077,7 +4080,7 @@ building_bank_4 = {
 
 building_bank_5 = {
 	base_buildtime = @b5time
-	
+	is_listed = no	
 	cost = {
 		minerals = @b5cost
 	}
@@ -4149,7 +4152,7 @@ building_basic_hospital = {
 building_hospital_2 = {
 	base_buildtime = @b2time
 	planet_unique = yes	
-	
+	is_listed = no	
 	cost = {
 		minerals = @b2cost
 	}
@@ -4183,7 +4186,7 @@ building_hospital_2 = {
 building_hospital_3 = {
 	base_buildtime = @b3time
 	planet_unique = yes	
-	
+	is_listed = no	
 	cost = {
 		minerals = @b3cost
 	}
@@ -4218,7 +4221,7 @@ building_hospital_3 = {
 building_hospital_4 = {
 	base_buildtime = @b4time
 	planet_unique = yes	
-	
+	is_listed = no	
 	cost = {
 		minerals = @b4cost
 	}
@@ -4253,7 +4256,7 @@ building_hospital_4 = {
 building_hospital_5 = {
 	base_buildtime = @b5time
 	planet_unique = yes
-	
+	is_listed = no	
 	cost = {
 		minerals = @b5cost
 	}
@@ -4318,7 +4321,9 @@ building_capital_4 = {
 	required_resources = {
 		sr_nutrients = 16
 	}
-	
+	upgrades = {
+		building_capital_5
+	}	
 	adjacency_bonus = {
 		tile_resource_minerals_mult = 1
 		tile_resource_energy_mult = 1
@@ -4344,7 +4349,7 @@ building_capital_5 = {
 			text = "Requires 20 POPs"
 			planet = {
 				count_pops = {
-					count > 21
+					count > 19
 					limit = {
 						is_colony_pop = yes
 					}

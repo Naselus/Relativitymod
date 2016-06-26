@@ -21,7 +21,7 @@ leader_trait_ambitious = {
 	leader_trait = yes
 	leader_class = { admiral scientist general governor }
 }
-leader_trait_eager = {
+leader_trait_driven = {
 	cost = 1
 	modification = no
 	initial = no
@@ -254,7 +254,7 @@ leader_trait_wrathful = {
 	leader_trait = yes
 	leader_class = { admiral }
 }
-leader_trait_aggressive = {
+leader_trait_belligerent = {
 	cost = 1
 	modification = no
 	initial = no
@@ -320,7 +320,7 @@ leader_trait_avg_logistics = {
 	leader_trait = yes
 	leader_class = { admiral }
 }
-leader_trait_substance_abuser = {
+leader_trait_wastrel = {
 	cost = 1
 	modification = no
 	initial = no
@@ -931,7 +931,7 @@ leader_trait_nasty = {
 	leader_trait = yes
 	leader_class = { general }
 }
-leader_trait_unyielding = {
+leader_trait_defiant = {
 	cost = 1
 	modification = no
 	initial = no
