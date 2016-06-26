@@ -641,6 +641,66 @@ spriteTypes = {
 		texturefile = "gfx/interface/icons/message/message_conditional_effect_lost.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_message_form_defensive_pact"
+		texturefile = "gfx/interface/icons/message/message_form_defensive_pact.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_message_break_defensive_pact"
+		texturefile = "gfx/interface/icons/message/message_break_defensive_pact.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_message_form_non_aggression_pact"
+		texturefile = "gfx/interface/icons/message/message_form_non_aggression_pact.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_message_break_non_aggression_pact"
+		texturefile = "gfx/interface/icons/message/message_break_non_aggression_pact.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_message_guarantee_independence"
+		texturefile = "gfx/interface/icons/message/message_guarantee_independence.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_message_break_guarantee"
+		texturefile = "gfx/interface/icons/message/message_break_guarantee.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_message_support_independence"
+		texturefile = "gfx/interface/icons/message/message_support_independence.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_message_open_borders"
+		texturefile = "gfx/interface/icons/message/message_open_borders.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_message_close_borders"
+		texturefile = "gfx/interface/icons/message/message_close_borders.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_message_kick_from_alliance"
+		texturefile = "gfx/interface/icons/message/message_kick_from_alliance.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_message_form_migration_pact"
+		texturefile = "gfx/interface/icons/message/message_form_migration_pact.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_message_break_migration_pact"
+		texturefile = "gfx/interface/icons/message/message_break_migration_pact.dds"
+	}
+	
 #	spriteType = {
 #		name = "GFX_"
 #		texturefile = "gfx/interface/icons/message/message_diplomatic_alliance.dds"

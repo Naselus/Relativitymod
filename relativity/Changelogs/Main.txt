@@ -346,3 +346,8 @@ Version 102.0.1
 * event-spawned Leaders now have ethical traits
 * Fixed a bunch of errors in buildings.txt
 * Removed some flat inf costs
+
+
+120.0.97
+
+* Fixed diplo message icons
