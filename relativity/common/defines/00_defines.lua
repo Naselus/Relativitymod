@@ -495,11 +495,11 @@ NDefines = {
 
 		ETHOS_MAX_POINTS					= 3,	-- Number of points which you can spend on ethos.
 
-		ETHOS_CONFLICTING					= -10, 	-- Conflicting ethos results in this opinion value
-		ETHOS_RIVAL							= -5,	-- Rival ethos results in this opinion value
-		ETHOS_DIFFERENT						= -1,	-- Ethic is two steps from ours.
-		ETHOS_RELATED						= 5, 	-- Related ethos results in this opinion value
-		ETHOS_UNIFORM						= 10,	-- Uniform ethos results in this opinion value
+--		ETHOS_CONFLICTING					= -10, 	-- Conflicting ethos results in this opinion value
+--		ETHOS_RIVAL							= -5,	-- Rival ethos results in this opinion value
+--		ETHOS_DIFFERENT						= -1,	-- Ethic is two steps from ours.
+--		ETHOS_RELATED						= 5, 	-- Related ethos results in this opinion value
+--		ETHOS_UNIFORM						= 10,	-- Uniform ethos results in this opinion value
 
 		POP_ETHOS_NEW_POP_DIVERGENCE_MULT	= 10,	-- Determines effect of ethics divergence on how likely new pops are to take empire ethics from existing pops
 		POP_ETHOS_SAME_SPECIES_MULT			= 5,	-- How much more likely are new pops to take their ethics from same-species pops
@@ -765,6 +765,7 @@ NDefines = {
 		MILITARY_POWER_SCALE				= 1,
 		MILITARY_POWER_EXPONENT				= 0.55,	-- math: power = ( ( effective_health * damage_per_day ) ^ exponent ) * scale
 		MILITARY_POWER_ESTIMATED_ARMOR_PENETRATION	= 0.3,	-- use as an estimated armor penetration in formula damage_reduction *= 1 - armor_penetration.
+		MILITARY_POWER_SPACEPORT_ADD 		= 100,
 		EXCESS_POWER_BONUS_THRESHOLD_MAX	= 1.0, 	-- 0.5 means 0-50% excess power linearly scales ship_excess_power modifier between 0-1.
 		EXCESS_POWER_BONUS_THRESHOLD_MIN	= 0.05, -- min value for excess power to be used.
 	},
