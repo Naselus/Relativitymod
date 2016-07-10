@@ -15,6 +15,10 @@ loyalist = {
 	election_header = "GFX_faction_header_yellow"
 	lose_support_on_pop_leave = no
 	
+	is_potential = {
+		always = no
+	}	
+	
 	attraction = {
 		base = 0
 	}

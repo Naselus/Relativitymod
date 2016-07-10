@@ -47,7 +47,25 @@ collectivist_faction = {
 	can_create = {
 		always = yes
 	}
-
+	
+	flag = {
+		icon = {
+			category = "special"
+			file = "ethic_collectivist.dds"
+		}
+		background= {
+			category = "backgrounds"
+			file = "new_dawn.dds"
+		}
+		colors={
+			"dark_teal"
+			"teal"
+			"null"
+			"null"
+		}
+	}
+	
+	
 	on_create = {
 		set_name = random
 		set_support = 1.0
@@ -132,12 +150,12 @@ collectivist_faction = {
 		}
 	}
 	
-	demand = {
-	}
+#	demand = {
+#	}
 	
 	# Executed with a pop scope, country is stored in root
 	attraction = {
-		base = 100
+		base = 0
 
 		scaled_modifier = {
 			scope = this
@@ -154,9 +172,9 @@ collectivist_faction = {
 		}
 	}
 	
-	actions = {
-	}
+#	actions = {
+#	}
 	
-	support_effects = {
-	}
+#	support_effects = {
+#	}
 }

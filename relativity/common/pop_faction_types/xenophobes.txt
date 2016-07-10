@@ -48,6 +48,24 @@ xenophobe_faction = {
 			base = 20
 		}
 	}
+
+	flag = {
+		icon = {
+			category = "special"
+			file = "ethic_xenophobe.dds"
+		}
+		background= {
+			category = "backgrounds"
+			file = "new_dawn.dds"
+		}
+		colors={
+			"dark_teal"
+			"teal"
+			"null"
+			"null"
+		}
+	}
+
 	
 	on_create = {
 		set_name = random
@@ -133,12 +151,12 @@ xenophobe_faction = {
 		}
 	}
 	
-	demand = {
-	}
+	# demand = {
+	# }
 	
 	# Executed with a pop scope, country is stored in root
 	attraction = {
-		base = 100
+		base = 0
 
 		scaled_modifier = {
 			scope = this

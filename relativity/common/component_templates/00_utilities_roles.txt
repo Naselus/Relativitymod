@@ -25,11 +25,16 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_computer_aggressive_basic"
 	icon_frame = 1
-	power = 0
-	cost = 1
+	power = -5
+	cost = 5
 	ship_behavior = "aggressive"
+	
 	modifier = {
-		ship_accuracy_add = 5
+		ship_evasion_add = 5
+		ship_combat_speed_mult = 0.10
+	}
+	ship_modifier = {
+		ship_weapon_damage = 0.05
 	}
 	
 	ai_weight = {
@@ -50,11 +55,14 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_computer_defensive_basic"
 	icon_frame = 1
-	power = 0
-	cost = 3
+	power = -5
+	cost = 5
 	ship_behavior = "defensive"
-	modifier = {
-		ship_evasion_add = 5
+	
+	ship_modifier = {
+		ship_accuracy_add = 3
+		ship_fire_rate_mult = 0.05
+		ship_weapon_range_mult = 0.10
 	}
 	
 	ai_weight = {
@@ -75,11 +83,16 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_computer_aggressive_advanced"
 	icon_frame = 1
-	power = 0
-	cost = 1
+	power = -10
+	cost = 10
 	ship_behavior = "aggressive"
+	
 	modifier = {
-		ship_accuracy_add = 10
+		ship_evasion_add = 10
+		ship_combat_speed_mult = 0.20
+	}
+	ship_modifier = {
+		ship_weapon_damage = 0.10
 	}
 	
 	ai_weight = {
@@ -100,11 +113,14 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_computer_defensive_advanced"
 	icon_frame = 1
-	power = 0
-	cost = 3
+	power = -10
+	cost = 10
 	ship_behavior = "defensive"
-	modifier = {
-		ship_evasion_add = 10
+	
+	ship_modifier = {
+		ship_accuracy_add = 6
+		ship_fire_rate_mult = 0.10
+		ship_weapon_range_mult = 0.20
 	}
 	
 	ai_weight = {
@@ -125,11 +141,18 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_computer_sentient"
 	icon_frame = 1
-	power = 0
-	cost = 0
+	power = -20
+	cost = 20
 	ship_behavior = "default"
+	
+	ship_modifier = {
+		ship_accuracy_add = 6
+		ship_fire_rate_mult = 0.10
+		ship_weapon_damage = 0.10
+	}
 	modifier = {
-		ship_accuracy_add = 15
+		ship_evasion_add = 8
+		ship_combat_speed_mult = 0.10
 	}
 	
 	ai_weight = {
@@ -160,11 +183,19 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_computer_pregoc"
 	icon_frame = 1
-	power = 0
-	cost = 0
+	power = -20
+	cost = 20
 	ship_behavior = "default"
+	
 	modifier = {
-		ship_evasion_add = 15
+		ship_evasion_add = 10
+		ship_combat_speed_mult = 0.15
+	}	
+	ship_modifier = {
+		ship_accuracy_add = 4
+		ship_fire_rate_mult = 0.08
+		ship_weapon_damage = 0.08
+		ship_weapon_range_mult = 0.15
 	}
 	
 	ai_weight = {

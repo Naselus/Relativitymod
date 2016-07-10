@@ -348,11 +348,11 @@ Version 102.0.1
 * Removed some flat inf costs
 
 
-120.0.97
+121.0.97
 
 * Fixed diplo message icons
 * Added 8 new factions, based on ethics.
-* Slaves changed. Slaves now have a huge ethics shuft penalty (driving them toward the Empire's ethics) in excahgne for happiness and science penalties.
+* Slaves changed. Slaves now have a huge ethics shift penalty (driving them toward the Empire's ethics) in exchagne for happiness and science penalties.
 * Xenophobia and Xenophilia both heavily nerfed.
 * removed some obsolete war demands (raze, limit war economy, nuke)
 * Removed a lot more unusued files (delete the old version before installing)

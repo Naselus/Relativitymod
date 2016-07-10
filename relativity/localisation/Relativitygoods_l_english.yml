@@ -1,4 +1,5 @@
 ﻿l_english:
+ minerals:1 "Production"	
  sr_steel:0 "Tritantium"
  sr_steel2:0 "Adamantium"
  sr_steel3:0 "Hephaisteium"
@@ -146,3 +147,21 @@
  leader_xenophile_desc:0 "The leader firmly believes in Xenophilia"
  leader_fxenophile:0 "Xenophile Fanatic"
  leader_fxenophile_desc:0 "This character is consumed with a fanatical belief in Xenophilia"  
+ 
+ #factions
+ pft_pacifist_faction:0 "Pacifists"
+ pft_pacifist_faction_desc:0 "The Pacifists are firmly opposed to war under all circumstances, and believe that a negotiated settlement is always possible."
+ pft_xenophobe_faction:0 "Xenophobes"
+ pft_xenophobe_faction_desc:0 "The Xenophobe faction fear alien integration and see interaction with other races as the root of all problems."
+ pft_xenophobe_faction:0 "The Xenophiles"
+ pft_xenophile_faction_desc:0 "The Xenophile faction believe species should live together and learn from one another in harmony to determine the best solution to all problems."
+ pft_spiritualist_faction:0 "The Spiritualists"
+ pft_spiritualist_faction_desc:0 "The Spiritualists believe that not everything is just crude matter, and that a higher purpose motivates our society."
+ pft_militarist_faction:0 "The Militarists"
+ pft_militarist_faction_desc:0 "The Militarist faction believe a strong state with a powerful army are required to ensure the security of our people."
+ pft_materialist_faction:0 "The Materialists"
+ pft_materialist_faction_desc:0 "The Materialists believe that everything is contingent upon physical processes, and that economic prosperity is the key to happiness."
+ pft_individualist_faction:0 "The Individualists"
+ pft_individualist_faction_desc:0 "The Individualists believe that self-interested individuals acting in non-violent competition will ultimately provide the best solution for everyone."
+ pft_collectivist_faction:0 "The Collectivists"
+ pft_collectivist_faction_desc:0 "The Collectivists believe that everyone should work together for the good of all, and that a highly-organized society can overcome any challenge."
