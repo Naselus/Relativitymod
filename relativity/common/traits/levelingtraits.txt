@@ -832,7 +832,7 @@ leader_trait_avg_innovation = {
 	leader_trait = yes
 	leader_class = { general }
 }
-leader_trait_stubborn = {
+leader_trait_unimaginative = {
 	cost = 1
 	modification = no
 	initial = no
@@ -1074,6 +1074,10 @@ leader_trait_senile_general = {
 	leader_trait = yes
 	leader_class = { general }
 }
+
+#####################
+# Scientist Traits    #
+#####################
 
 leader_trait_senile_science = {
 	cost = 1

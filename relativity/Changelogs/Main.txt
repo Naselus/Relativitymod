@@ -356,3 +356,10 @@ Version 102.0.1
 * Xenophobia and Xenophilia both heavily nerfed.
 * removed some obsolete war demands (raze, limit war economy, nuke)
 * Removed a lot more unusued files (delete the old version before installing)
+
+
+121.0.98
+
+* Starting leader now has his ethics set to the ones you picked at game start, rather than overwriting yours.
+* Fixed the flags on the levelling events.
+

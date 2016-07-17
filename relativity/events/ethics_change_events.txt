@@ -8,531 +8,545 @@ country_event = {
 	
 	immediate = {
 		if = {
-			limit = { 
-				ruler = {
-					has_trait = leader_fcollectivist
+			limit = { has_country_flag = startingleaderset }
+				if = {
+					limit = { 
+						ruler = {
+							has_trait = leader_fcollectivist
+							}
 					}
-			}
-			country_add_ethic = ethic_fanatic_collectivist	
-		}
-		if = {
-			limit = { 
-				ruler = {
-					NOT = {has_trait = leader_fcollectivist}
+					country_add_ethic = ethic_fanatic_collectivist	
+				}
+				if = {
+					limit = { 
+						ruler = {
+							NOT = {has_trait = leader_fcollectivist}
+							}
 					}
-			}
-			country_remove_ethic = ethic_fanatic_collectivist	
-		}
-		if = {
-			limit = { 
-				ruler = {
-					has_trait = leader_collectivist
+					country_remove_ethic = ethic_fanatic_collectivist	
+				}
+				if = {
+					limit = { 
+						ruler = {
+							has_trait = leader_collectivist
+							}
 					}
-			}
-			country_add_ethic = ethic_collectivist	
-		}
-		if = {
-			limit = { 
-				ruler = {
-					NOT = {has_trait = leader_collectivist}
+					country_add_ethic = ethic_collectivist	
+				}
+				if = {
+					limit = { 
+						ruler = {
+							NOT = {has_trait = leader_collectivist}
+							}
 					}
-			}
-			country_remove_ethic = ethic_collectivist	
-		}
-		if = {
-			limit = { 
-				ruler = {
-					has_trait = leader_findividualist
+					country_remove_ethic = ethic_collectivist	
+				}
+				if = {
+					limit = { 
+						ruler = {
+							has_trait = leader_findividualist
+							}
 					}
-			}
-			country_add_ethic = ethic_fanatic_individualist	
-		}
-		if = {
-			limit = { 
-				ruler = {
-					NOT = {has_trait = leader_findividualist}
+					country_add_ethic = ethic_fanatic_individualist	
+				}
+				if = {
+					limit = { 
+						ruler = {
+							NOT = {has_trait = leader_findividualist}
+							}
 					}
-			}
-			country_remove_ethic = ethic_fanatic_individualist	
-		}
-		if = {
-			limit = { 
-				ruler = {
-					has_trait = leader_individualist
+					country_remove_ethic = ethic_fanatic_individualist	
+				}
+				if = {
+					limit = { 
+						ruler = {
+							has_trait = leader_individualist
+							}
 					}
-			}
-			country_add_ethic = ethic_individualist	
-		}
-		if = {
-			limit = { 
-				ruler = {
-					NOT = {has_trait = leader_individualist}
+					country_add_ethic = ethic_individualist	
+				}
+				if = {
+					limit = { 
+						ruler = {
+							NOT = {has_trait = leader_individualist}
+							}
 					}
-			}
-			country_remove_ethic = ethic_individualist	
-		}
-		if = {
-			limit = { 
-				ruler = {
-					has_trait = leader_fxenophobe
+					country_remove_ethic = ethic_individualist	
+				}
+				if = {
+					limit = { 
+						ruler = {
+							has_trait = leader_fxenophobe
+							}
 					}
-			}
-			country_add_ethic = ethic_fanatic_xenophobe	
-		}
-		if = {
-			limit = { 
-				ruler = {
-					NOT = {has_trait = leader_fxenophobe}
+					country_add_ethic = ethic_fanatic_xenophobe	
+				}
+				if = {
+					limit = { 
+						ruler = {
+							NOT = {has_trait = leader_fxenophobe}
+							}
 					}
-			}
-			country_remove_ethic = ethic_fanatic_xenophobe	
-		}
-		if = {
-			limit = { 
-				ruler = {
-					has_trait = leader_xenophobe
+					country_remove_ethic = ethic_fanatic_xenophobe	
+				}
+				if = {
+					limit = { 
+						ruler = {
+							has_trait = leader_xenophobe
+							}
 					}
-			}
-			country_add_ethic = ethic_xenophobe	
-		}
-		if = {
-			limit = { 
-				ruler = {
-					NOT = {has_trait = leader_xenophobe}
+					country_add_ethic = ethic_xenophobe	
+				}
+				if = {
+					limit = { 
+						ruler = {
+							NOT = {has_trait = leader_xenophobe}
+							}
 					}
-			}
-			country_remove_ethic = ethic_xenophobe	
-		}
-		if = {
-			limit = { 
-				ruler = {
-					has_trait = leader_fxenophile
+					country_remove_ethic = ethic_xenophobe	
+				}
+				if = {
+					limit = { 
+						ruler = {
+							has_trait = leader_fxenophile
+							}
 					}
-			}
-			country_add_ethic = ethic_fanatic_xenophile	
-		}
-		if = {
-			limit = { 
-				ruler = {
-					NOT = {has_trait = leader_fxenophile}
+					country_add_ethic = ethic_fanatic_xenophile	
+				}
+				if = {
+					limit = { 
+						ruler = {
+							NOT = {has_trait = leader_fxenophile}
+							}
 					}
-			}
-			country_remove_ethic = ethic_fanatic_xenophile	
-		}
-		if = {
-			limit = { 
-				ruler = {
-					has_trait = leader_xenophile
+					country_remove_ethic = ethic_fanatic_xenophile	
+				}
+				if = {
+					limit = { 
+						ruler = {
+							has_trait = leader_xenophile
+							}
 					}
-			}
-			country_add_ethic = ethic_xenophile	
-		}
-		if = {
-			limit = { 
-				ruler = {
-					NOT = {has_trait = leader_xenophile}
+					country_add_ethic = ethic_xenophile	
+				}
+				if = {
+					limit = { 
+						ruler = {
+							NOT = {has_trait = leader_xenophile}
+							}
 					}
-			}
-			country_remove_ethic = ethic_xenophile	
-		}
-		if = {
-			limit = { 
-				ruler = {
-					has_trait = leader_fmilitarist
+					country_remove_ethic = ethic_xenophile	
+				}
+				if = {
+					limit = { 
+						ruler = {
+							has_trait = leader_fmilitarist
+							}
 					}
-			}
-			country_add_ethic = ethic_fanatic_militarist	
-		}
-		if = {
-			limit = { 
-				ruler = {
-					NOT = {has_trait = leader_fmilitarist}
+					country_add_ethic = ethic_fanatic_militarist	
+				}
+				if = {
+					limit = { 
+						ruler = {
+							NOT = {has_trait = leader_fmilitarist}
+							}
 					}
-			}
-			country_remove_ethic = ethic_fanatic_militarist	
-		}
-		if = {
-			limit = { 
-				ruler = {
-					has_trait = leader_militarist
+					country_remove_ethic = ethic_fanatic_militarist	
+				}
+				if = {
+					limit = { 
+						ruler = {
+							has_trait = leader_militarist
+							}
 					}
-			}
-			country_add_ethic = ethic_militarist	
-		}
-		if = {
-			limit = { 
-				ruler = {
-					NOT = {has_trait = leader_militarist}
+					country_add_ethic = ethic_militarist	
+				}
+				if = {
+					limit = { 
+						ruler = {
+							NOT = {has_trait = leader_militarist}
+							}
 					}
-			}
-			country_remove_ethic = ethic_militarist	
-		}
-		if = {
-			limit = { 
-				ruler = {
-					has_trait = leader_fpacifist
+					country_remove_ethic = ethic_militarist	
+				}
+				if = {
+					limit = { 
+						ruler = {
+							has_trait = leader_fpacifist
+							}
 					}
-			}
-			country_add_ethic = ethic_fanatic_pacifist	
-		}
-		if = {
-			limit = { 
-				ruler = {
-					NOT = {has_trait = leader_fpacifist}
+					country_add_ethic = ethic_fanatic_pacifist	
+				}
+				if = {
+					limit = { 
+						ruler = {
+							NOT = {has_trait = leader_fpacifist}
+							}
 					}
-			}
-			country_remove_ethic = ethic_fanatic_pacifist	
-		}
-		if = {
-			limit = { 
-				ruler = {
-					has_trait = leader_pacifist
+					country_remove_ethic = ethic_fanatic_pacifist	
+				}
+				if = {
+					limit = { 
+						ruler = {
+							has_trait = leader_pacifist
+							}
 					}
-			}
-			country_add_ethic = ethic_pacifist	
-		}
-		if = {
-			limit = { 
-				ruler = {
-					NOT = {has_trait = leader_pacifist}
+					country_add_ethic = ethic_pacifist	
+				}
+				if = {
+					limit = { 
+						ruler = {
+							NOT = {has_trait = leader_pacifist}
+							}
 					}
-			}
-			country_remove_ethic = ethic_pacifist	
-		}
-		if = {
-			limit = { 
-				ruler = {
-					has_trait = leader_fspiritualist
+					country_remove_ethic = ethic_pacifist	
+				}
+				if = {
+					limit = { 
+						ruler = {
+							has_trait = leader_fspiritualist
+							}
 					}
-			}
-			country_add_ethic = ethic_fanatic_spiritualist	
-		}
-		if = {
-			limit = { 
-				ruler = {
-					NOT = {has_trait = leader_fspiritualist}
+					country_add_ethic = ethic_fanatic_spiritualist	
+				}
+				if = {
+					limit = { 
+						ruler = {
+							NOT = {has_trait = leader_fspiritualist}
+							}
 					}
-			}
-			country_remove_ethic = ethic_fanatic_spiritualist	
-		}
-		if = {
-			limit = { 
-				ruler = {
-					has_trait = leader_spiritualist
+					country_remove_ethic = ethic_fanatic_spiritualist	
+				}
+				if = {
+					limit = { 
+						ruler = {
+							has_trait = leader_spiritualist
+							}
 					}
-			}
-			country_add_ethic = ethic_spiritualist	
-		}
-		if = {
-			limit = { 
-				ruler = {
-					NOT = {has_trait = leader_spiritualist}
+					country_add_ethic = ethic_spiritualist	
+				}
+				if = {
+					limit = { 
+						ruler = {
+							NOT = {has_trait = leader_spiritualist}
+							}
 					}
-			}
-			country_remove_ethic = ethic_spiritualist	
-		}
-		if = {
-			limit = { 
-				ruler = {
-					has_trait = leader_materialist
+					country_remove_ethic = ethic_spiritualist	
+				}
+				if = {
+					limit = { 
+						ruler = {
+							has_trait = leader_materialist
+							}
 					}
-			}
-			country_add_ethic = ethic_materialist	
-		}
-		if = {
-			limit = { 
-				ruler = {
-					NOT = {has_trait = leader_materialist}
+					country_add_ethic = ethic_materialist	
+				}
+				if = {
+					limit = { 
+						ruler = {
+							NOT = {has_trait = leader_materialist}
+							}
 					}
-			}
-			country_remove_ethic = ethic_materialist	
-		}
-		if = {
-			limit = { 
-				ruler = {
-					has_trait = leader_fmaterialist
+					country_remove_ethic = ethic_materialist	
+				}
+				if = {
+					limit = { 
+						ruler = {
+							has_trait = leader_fmaterialist
+							}
 					}
-			}
-			country_add_ethic = ethic_fanatic_materialist	
-		}
-		if = {
-			limit = { 
-				ruler = {
-					NOT = {has_trait = leader_fmaterialist}
+					country_add_ethic = ethic_fanatic_materialist	
+				}
+				if = {
+					limit = { 
+						ruler = {
+							NOT = {has_trait = leader_fmaterialist}
+							}
 					}
+					country_remove_ethic = ethic_fanatic_materialist	
+				}
+		}		
+		If = {
+			limit = { 
+				NOT = { has_country_flag = startingleaderset }
 			}
-			country_remove_ethic = ethic_fanatic_materialist	
+			set_country_flag = startingleaderset	
+
+					
 		}
 	}
 }
 
-# country_event = { # we set the starting leader ethics here
-	# id = ethicschanger.2
-	# hide_window = yes
+
+
+country_event = {
+	id = ethicschanger.2
+	hide_window = yes
+
+	is_triggered_only = yes 
 	
-	# is_triggered_only = yes 
-	
-	# immediate = {
-		# any_owned_leader = {
-			# leader = {
-			# kill_leader
-		# }
-		# # if = {
-			# # limit = { 
-				# # owner = {
-					# # has_ethic = ethic_fanatic_collectivist
-					# # }
-			# # }
-			# # add_trait = leader_fcollectivist	
-		# # }
-		# # if = {
-			# # limit = { 
-				# # owner = {
-					# # not = {has_ethic = ethic_fanatic_collectivist}
-					# # }
-			# # }
-			# # remove_trait = leader_fcollectivist	
-		# # }
-		# # if = {
-			# # limit = { 
-				# # owner = {
-					# # has_ethic = ethic_collectivist
-					# # }
-			# # }
-			# # add_trait = leader_collectivist	
-		# # }
-		# # if = {
-			# # limit = { 
-				# # owner = {
-					# # not = { has_ethic = ethic_collectivist }
-					# # }
-			# # }
-			# # remove_trait = leader_collectivist	
-		# # }
-		# # if = {
-			# # limit = { 
-				# # owner = {
-					# # has_ethic = ethic_fanatic_individualist
-					# # }
-			# # }
-			# # add_trait = leader_findividualist	
-		# # }
-		# # if = {
-			# # limit = { 
-				# # owner = {
-					# # not = { has_ethic = ethic_fanatic_individualist}
-					# # }
-			# # }
-			# # remove_trait = leader_findividualist	
-		# # }
-		# # if = {
-			# # limit = { 
-				# # owner = {
-					# # has_ethic = ethic_individualist
-					# # }
-			# # }
-			# # add_trait = leader_individualist	
-		# # }
-		# # if = {
-			# # limit = { 
-				# # owner = {
-					# # not = { has_ethic = ethic_individualist }
-					# # }
-			# # }
-			# # remove_trait = leader_individualist	
-		# # }
-		# # if = {
-			# # limit = { 
-				# # owner = {
-					# # has_ethic = ethic_fanatic_xenophobe
-					# # }
-			# # }
-			# # add_trait = leader_fxenophobe	
-		# # }
-		# # if = {
-			# # limit = { 
-				# # owner = {
-					# # not = {has_ethic = ethic_fanatic_xenophobe}
-					# # }
-			# # }
-			# # remove_trait = leader_fxenophobe	
-		# # }
-		# # if = {
-			# # limit = { 
-				# # owner = {
-					# # has_ethic = ethic_xenophobe
-					# # }
-			# # }
-			# # add_trait = leader_xenophobe	
-		# # }
-		# # if = {
-			# # limit = { 
-				# # owner = {
-					# # not = { has_ethic = ethic_xenophobe}
-					# # }
-			# # }
-			# # remove_trait = leader_xenophobe	
-		# # }
-		# # if = {
-			# # limit = { 
-				# # owner = {
-					# # has_ethic = ethic_fanatic_xenophile
-					# # }
-			# # }
-			# # add_trait = leader_fxenophile	
-		# # }
-		# # if = {
-			# # limit = { 
-				# # owner = {
-					# # not = {has_ethic = ethic_fanatic_xenophile}					}
-			# # }
-			# # remove_trait = leader_fxenophile	
-		# # }
-		# # if = {
-			# # limit = { 
-				# # owner = {
-					# # has_ethic = ethic_xenophile
-					# # }
-			# # }
-			# # add_trait = leader_xenophile	
-		# # }
-		# # if = {
-			# # limit = { 
-				# # owner = {
-					# # not = {has_ethic = ethic_xenophile }
-					# # }
-			# # }
-			# # remove_trait = leader_xenophile	
-		# # }
-		# # if = {
-			# # limit = { 
-				# # owner = {
-					# # has_ethic = ethic_fanatic_militarist
-					# # }
-			# # }
-			# # add_trait = leader_fmilitarist	
-		# # }
-		# # if = {
-			# # limit = { 
-				# # owner = {
-					# # not = {has_ethic = ethic_fanatic_militarist}
-					# # }
-			# # }
-			# # remove_trait = leader_fmilitarist	
-		# # }
-		# # if = {
-			# # limit = { 
-				# # owner = {
-					# # has_ethic = ethic_militarist
-					# # }
-			# # }
-			# # add_trait = leader_militarist	
-		# # }
-		# # if = {
-			# # limit = { 
-				# # owner = {
-					# # not = {has_ethic = ethic_militarist}
-					# # }
-			# # }
-			# # remove_trait = leader_militarist	
-		# # }
-		# # if = {
-			# # limit = { 
-				# # owner = {
-					# # has_ethic = ethic_fanatic_pacifist
-					# # }
-			# # }
-			# # add_trait = leader_fpacifist	
-		# # }
-		# # if = {
-			# # limit = { 
-				# # owner = {
-					# # not = {has_ethic = ethic_fanatic_pacifist}
-					# # }
-			# # }
-			# # remove_trait = leader_fpacifist	
-		# # }
-		# # if = {
-			# # limit = { 
-				# # owner = {
-					# # has_ethic = ethic_pacifist
-					# # }
-			# # }
-			# # add_trait = leader_pacifist	
-		# # }
-		# # if = {
-			# # limit = { 
-				# # owner = {
-					# # not = {has_ethic = ethic_pacifist}
-					# # }
-			# # }
-			# # remove_trait = leader_pacifist	
-		# # }
-		# # if = {
-			# # limit = { 
-				# # owner = {
-					# # has_ethic = ethic_fanatic_spiritualist
-					# # }
-			# # }
-			# # add_trait = leader_fspiritualist	
-		# # }
-		# # if = {
-			# # limit = { 
-				# # owner = {
-					# # not = {has_ethic = ethic_fanatic_spiritualist}
-					# # }
-			# # }
-			# # remove_trait = leader_fspiritualist	
-		# # }
-		# # if = {
-			# # limit = { 
-				# # owner = {
-					# # has_ethic = ethic_spiritualist
-					# # }
-			# # }
-			# # add_trait = leader_spiritualist	
-		# # }
-		# # if = {
-			# # limit = { 
-				# # owner = {
-					# # not = {has_ethic = ethic_spiritualist}
-					# # }
-			# # }
-			# # remove_trait = leader_spiritualist	
-		# # }
-		# # if = {
-			# # limit = { 
-				# # owner = {
-					# # has_ethic = ethic_materialist
-					# # }
-			# # }
-			# # add_trait = leader_materialist	
-		# # }
-		# # if = {
-			# # limit = { 
-				# # owner = {
-				# # not = {has_ethic = ethic_materialist}
-					# # }
-			# # }
-			# # remove_trait = leader_materialist	
-		# # }
-		# # if = {
-			# # limit = { 
-				# # owner = {
-					# # has_ethic = ethic_fanatic_materialist
-					# # }
-			# # }
-			# # add_trait = leader_fmaterialist	
-		# # }
-		# # if = {
-		
-			# limit = { 
-				# owner = {
-				# not = {has_ethic = ethic_fanatic_materialist}
-					# }
-			# }
-			# remove_trait = leader_fmaterialist	
-		# }
-		# }
-		# }
-# }
+	immediate = {
+		random_owned_leader = {
+			
+					limit = {
+						leader_class = ruler
+					}
+					if = {
+						limit = { 
+							owner = {
+								has_ethic = ethic_fanatic_collectivist
+								}
+						}
+						add_trait = leader_fcollectivist	
+					}
+					if = {
+						limit = { 
+							owner = {
+								not = {has_ethic = ethic_fanatic_collectivist}
+								}
+						}
+						remove_trait = leader_fcollectivist	
+					}
+					if = {
+						limit = { 
+							owner = {
+								has_ethic = ethic_collectivist
+								}
+						}
+						add_trait = leader_collectivist	
+					}
+					if = {
+						limit = { 
+							owner = {
+								not = { has_ethic = ethic_collectivist }
+								}
+						}
+						remove_trait = leader_collectivist	
+					}
+					if = {
+						limit = { 
+							owner = {
+								has_ethic = ethic_fanatic_individualist
+								}
+						}
+						add_trait = leader_findividualist	
+					}
+					if = {
+						limit = { 
+							owner = {
+								not = { has_ethic = ethic_fanatic_individualist}
+								}
+						}
+						remove_trait = leader_findividualist	
+					}
+					if = {
+						limit = { 
+							owner = {
+								has_ethic = ethic_individualist
+								}
+						}
+						add_trait = leader_individualist	
+					}
+					if = {
+						limit = { 
+							owner = {
+								not = { has_ethic = ethic_individualist }
+								}
+						}
+						remove_trait = leader_individualist	
+					}
+					if = {
+						limit = { 
+							owner = {
+								has_ethic = ethic_fanatic_xenophobe
+								}
+						}
+						add_trait = leader_fxenophobe	
+					}
+					if = {
+						limit = { 
+							owner = {
+								not = {has_ethic = ethic_fanatic_xenophobe}
+								}
+						}
+						remove_trait = leader_fxenophobe	
+					}
+					if = {
+						limit = { 
+							owner = {
+								has_ethic = ethic_xenophobe
+								}
+						}
+						add_trait = leader_xenophobe	
+					}
+					if = {
+						limit = { 
+							owner = {
+								not = { has_ethic = ethic_xenophobe}
+								}
+						}
+						remove_trait = leader_xenophobe	
+					}
+					if = {
+						limit = { 
+							owner = {
+								has_ethic = ethic_fanatic_xenophile
+								}
+						}
+						add_trait = leader_fxenophile	
+					}
+					if = {
+						limit = { 
+							owner = {
+								not = {has_ethic = ethic_fanatic_xenophile}					}
+						}
+						remove_trait = leader_fxenophile	
+					}
+					if = {
+						limit = { 
+							owner = {
+								has_ethic = ethic_xenophile
+								}
+						}
+						add_trait = leader_xenophile	
+					}
+					if = {
+						limit = { 
+							owner = {
+								not = {has_ethic = ethic_xenophile }
+								}
+						}
+						remove_trait = leader_xenophile	
+					}
+					if = {
+						limit = { 
+							owner = {
+								has_ethic = ethic_fanatic_militarist
+								}
+						}
+						add_trait = leader_fmilitarist	
+					}
+					if = {
+						limit = { 
+							owner = {
+								not = {has_ethic = ethic_fanatic_militarist}
+								}
+						}
+						remove_trait = leader_fmilitarist	
+					}
+					if = {
+						limit = { 
+							owner = {
+								has_ethic = ethic_militarist
+								}
+						}
+						add_trait = leader_militarist	
+					}
+					if = {
+						limit = { 
+							owner = {
+								not = {has_ethic = ethic_militarist}
+								}
+						}
+						remove_trait = leader_militarist	
+					}
+					if = {
+						limit = { 
+							owner = {
+								has_ethic = ethic_fanatic_pacifist
+								}
+						}
+						add_trait = leader_fpacifist	
+					}
+					if = {
+						limit = { 
+							owner = {
+								not = {has_ethic = ethic_fanatic_pacifist}
+								}
+						}
+						remove_trait = leader_fpacifist	
+					}
+					if = {
+						limit = { 
+							owner = {
+								has_ethic = ethic_pacifist
+								}
+						}
+						add_trait = leader_pacifist	
+					}
+					if = {
+						limit = { 
+							owner = {
+								not = {has_ethic = ethic_pacifist}
+								}
+						}
+						remove_trait = leader_pacifist	
+					}
+					if = {
+						limit = { 
+							owner = {
+								has_ethic = ethic_fanatic_spiritualist
+								}
+						}
+						add_trait = leader_fspiritualist	
+					}
+					if = {
+						limit = { 
+							owner = {
+								not = {has_ethic = ethic_fanatic_spiritualist}
+								}
+						}
+						remove_trait = leader_fspiritualist	
+					}
+					if = {
+						limit = { 
+							owner = {
+								has_ethic = ethic_spiritualist
+								}
+						}
+						add_trait = leader_spiritualist	
+					}
+					if = {
+						limit = { 
+							owner = {
+								not = {has_ethic = ethic_spiritualist}
+								}
+						}
+						remove_trait = leader_spiritualist	
+					}
+					if = {
+						limit = { 
+							owner = {
+								has_ethic = ethic_materialist
+								}
+						}
+						add_trait = leader_materialist	
+					}
+					if = {
+						limit = { 
+							owner = {
+							not = {has_ethic = ethic_materialist}
+								}
+						}
+						remove_trait = leader_materialist	
+					}
+					if = {
+						limit = { 
+							owner = {
+								 has_ethic = ethic_fanatic_materialist
+							 }
+						 }
+						 add_trait = leader_fmaterialist	
+					 }
+					if = {
+					
+						limit = { 
+							owner = {
+							not = {has_ethic = ethic_fanatic_materialist}
+								}
+						}
+						remove_trait = leader_fmaterialist	
+					}
+			}
+	}	
+}

@@ -630,6 +630,7 @@ ship_event = {
 		}
 	}
 }
+
 #Gatekeeper fired from on_action on_leader_level_up
 country_event = {
 	id = leader.20
@@ -641,7 +642,7 @@ country_event = {
 			if = {
 				limit = {
 					leader_class = admiral
-					has_level = 1
+					has_level = 2
 				}
 						random_list = {
 							7 = {
@@ -693,7 +694,7 @@ country_event = {
 			if = {
 				limit = {
 					leader_class = admiral
-					has_level = 2
+					has_level = 3
 				}
 						random_list = {
 							13 = {
@@ -705,6 +706,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_lazy
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.22} }
+									remove_leader_flag = gained_leader_trait_ambitious
+									remove_leader_flag = gained_leader_trait_driven
+									remove_leader_flag = gained_leader_trait_avg_ambition
+									remove_leader_flag = gained_leader_trait_content
 								}
 							}
 							29 = {
@@ -716,6 +721,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_zealous
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.22} }
+									remove_leader_flag = gained_leader_trait_ambitious
+									remove_leader_flag = gained_leader_trait_driven
+									remove_leader_flag = gained_leader_trait_avg_ambition
+									remove_leader_flag = gained_leader_trait_content
 								}
 							}
 							29 = {
@@ -727,6 +736,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_dedicated
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.22} }
+									remove_leader_flag = gained_leader_trait_ambitious
+									remove_leader_flag = gained_leader_trait_driven
+									remove_leader_flag = gained_leader_trait_avg_ambition
+									remove_leader_flag = gained_leader_trait_content
 								}
 							}
 							29 = {
@@ -738,6 +751,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_avg_zeal
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.22} }
+									remove_leader_flag = gained_leader_trait_ambitious
+									remove_leader_flag = gained_leader_trait_driven
+									remove_leader_flag = gained_leader_trait_avg_ambition
+									remove_leader_flag = gained_leader_trait_content
 								}
 							}
 						}
@@ -745,7 +762,7 @@ country_event = {
 			if = {
 				limit = {
 					leader_class = admiral
-					has_level = 3
+					has_level = 4
 				}
 						random_list = {
 							19 = {
@@ -757,6 +774,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_confused
 									set_leader_flag = has_gained_level_confused
 									owner = { country_event = { id = leader.22} }
+									remove_leader_flag = gained_leader_trait_zealous
+									remove_leader_flag = gained_leader_trait_dedicated
+									remove_leader_flag = gained_leader_trait_avg_zeal
+									remove_leader_flag = gained_leader_trait_lazy
 								}
 							}
 							27 = {
@@ -768,6 +789,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_tactics_master
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.22} }
+									remove_leader_flag = gained_leader_trait_zealous
+									remove_leader_flag = gained_leader_trait_dedicated
+									remove_leader_flag = gained_leader_trait_avg_zeal
+									remove_leader_flag = gained_leader_trait_lazy
 								}
 							}
 							27 = {
@@ -779,6 +804,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_tactician
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.22} }
+									remove_leader_flag = gained_leader_trait_zealous
+									remove_leader_flag = gained_leader_trait_dedicated
+									remove_leader_flag = gained_leader_trait_avg_zeal
+									remove_leader_flag = gained_leader_trait_lazy
 								}
 							}
 							27 = {
@@ -790,6 +819,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_avg_tactics
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.22} }
+									remove_leader_flag = gained_leader_trait_zealous
+									remove_leader_flag = gained_leader_trait_dedicated
+									remove_leader_flag = gained_leader_trait_avg_zeal
+									remove_leader_flag = gained_leader_trait_lazy
 								}
 							}
 						}
@@ -797,7 +830,7 @@ country_event = {
 			if = {
 				limit = {
 					leader_class = admiral
-					has_level = 4
+					has_level = 5
 				}
 						random_list = {
 							25 = {
@@ -809,6 +842,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_wastrel
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.22} }
+									remove_leader_flag = gained_leader_trait_tactics_master
+									remove_leader_flag = gained_leader_trait_tactician
+									remove_leader_flag = gained_leader_trait_avg_tactics
+									remove_leader_flag = gained_leader_trait_confused
 								}
 							}
 							25 = {
@@ -820,6 +857,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_logistics_wizard
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.22} }
+									remove_leader_flag = gained_leader_trait_tactics_master
+									remove_leader_flag = gained_leader_trait_tactician
+									remove_leader_flag = gained_leader_trait_avg_tactics
+									remove_leader_flag = gained_leader_trait_confused
 								}
 							}
 							25 = {
@@ -831,6 +872,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_organized
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.22} }
+									remove_leader_flag = gained_leader_trait_tactics_master
+									remove_leader_flag = gained_leader_trait_tactician
+									remove_leader_flag = gained_leader_trait_avg_tactics
+									remove_leader_flag = gained_leader_trait_confused
 								}
 							}
 							25 = {
@@ -842,6 +887,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_avg_logistics
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.22} }
+									remove_leader_flag = gained_leader_trait_tactics_master
+									remove_leader_flag = gained_leader_trait_tactician
+									remove_leader_flag = gained_leader_trait_avg_tactics
+									remove_leader_flag = gained_leader_trait_confused
 								}
 							}
 						}
@@ -849,7 +898,7 @@ country_event = {
 			if = {
 				limit = {
 					leader_class = admiral
-					has_level = 5
+					has_level = 6
 				}
 						random_list = {
 							31 = {
@@ -861,6 +910,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_dumb
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.22} }
+									remove_leader_flag = gained_leader_trait_logistics_wizard
+									remove_leader_flag = gained_leader_trait_organized
+									remove_leader_flag = gained_leader_trait_avg_logistics
+									remove_leader_flag = gained_leader_trait_wastrel
 								}
 							}
 							23 = {
@@ -872,6 +925,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_brilliant
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.22} }
+									remove_leader_flag = gained_leader_trait_logistics_wizard
+									remove_leader_flag = gained_leader_trait_organized
+									remove_leader_flag = gained_leader_trait_avg_logistics
+									remove_leader_flag = gained_leader_trait_wastrel
 								}
 							}
 							23 = {
@@ -883,6 +940,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_smart
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.22} }
+									remove_leader_flag = gained_leader_trait_logistics_wizard
+									remove_leader_flag = gained_leader_trait_organized
+									remove_leader_flag = gained_leader_trait_avg_logistics
+									remove_leader_flag = gained_leader_trait_wastrel
 								}
 							}
 							23 = {
@@ -894,6 +955,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_avg_intellect
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.22} }
+									remove_leader_flag = gained_leader_trait_logistics_wizard
+									remove_leader_flag = gained_leader_trait_organized
+									remove_leader_flag = gained_leader_trait_avg_logistics
+									remove_leader_flag = gained_leader_trait_wastrel
 								}
 							}
 						}
@@ -901,7 +966,7 @@ country_event = {
 			if = {
 				limit = {
 					leader_class = admiral
-					has_level = 6
+					has_level = 7
 				}
 						random_list = {
 							37 = {
@@ -913,6 +978,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_spacesick
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.22} }
+									remove_leader_flag = gained_leader_trait_brilliant
+									remove_leader_flag = gained_leader_trait_smart
+									remove_leader_flag = gained_leader_trait_avg_intellect
+									remove_leader_flag = gained_leader_trait_dumb
 								}
 							}
 							21 = {
@@ -924,6 +993,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_starchaser
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.22} }
+									remove_leader_flag = gained_leader_trait_brilliant
+									remove_leader_flag = gained_leader_trait_smart
+									remove_leader_flag = gained_leader_trait_avg_intellect
+									remove_leader_flag = gained_leader_trait_dumb
 								}
 							}
 							21 = {
@@ -935,6 +1008,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_wanderer
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.22} }
+									remove_leader_flag = gained_leader_trait_brilliant
+									remove_leader_flag = gained_leader_trait_smart
+									remove_leader_flag = gained_leader_trait_avg_intellect
+									remove_leader_flag = gained_leader_trait_dumb
 								}
 							}
 							21 = {
@@ -946,6 +1023,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_avg_voyager
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.22} }
+									remove_leader_flag = gained_leader_trait_brilliant
+									remove_leader_flag = gained_leader_trait_smart
+									remove_leader_flag = gained_leader_trait_avg_intellect
+									remove_leader_flag = gained_leader_trait_dumb
 								}
 							}
 						}
@@ -953,7 +1034,7 @@ country_event = {
 			if = {
 				limit = {
 					leader_class = admiral
-					has_level = 7
+					has_level = 8
 				}
 						random_list = {
 							43 = {
@@ -965,6 +1046,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_disheartened
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.22} }
+									remove_leader_flag = gained_leader_trait_starchaser
+									remove_leader_flag = gained_leader_trait_wanderer
+									remove_leader_flag = gained_leader_trait_avg_voyager
+									remove_leader_flag = gained_leader_trait_spacesick
 								}
 							}
 							19 = {
@@ -976,6 +1061,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_wrathful
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.22} }
+									remove_leader_flag = gained_leader_trait_starchaser
+									remove_leader_flag = gained_leader_trait_wanderer
+									remove_leader_flag = gained_leader_trait_avg_voyager
+									remove_leader_flag = gained_leader_trait_spacesick
 								}
 							}
 							19 = {
@@ -987,6 +1076,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_aggressive
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.22} }
+									remove_leader_flag = gained_leader_trait_starchaser
+									remove_leader_flag = gained_leader_trait_wanderer
+									remove_leader_flag = gained_leader_trait_avg_voyager
+									remove_leader_flag = gained_leader_trait_spacesick
 								}
 							}
 							19 = {
@@ -998,6 +1091,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_avg_belligerence
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.22} }
+									remove_leader_flag = gained_leader_trait_starchaser
+									remove_leader_flag = gained_leader_trait_wanderer
+									remove_leader_flag = gained_leader_trait_avg_voyager
+									remove_leader_flag = gained_leader_trait_spacesick
 								}
 							}
 						}
@@ -1005,7 +1102,7 @@ country_event = {
 			if = {
 				limit = {
 					leader_class = admiral
-					has_level = 8
+					has_level = 9
 				}
 						random_list = {
 							49 = {
@@ -1017,6 +1114,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_crippled
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.22} }
+									remove_leader_flag = gained_leader_trait_wrathful
+									remove_leader_flag = gained_leader_trait_aggressive
+									remove_leader_flag = gained_leader_trait_avg_belligerence
+									remove_leader_flag = gained_leader_trait_disheartened
 								}
 							}
 							17 = {
@@ -1028,6 +1129,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_vigorous
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.22} }
+									remove_leader_flag = gained_leader_trait_wrathful
+									remove_leader_flag = gained_leader_trait_aggressive
+									remove_leader_flag = gained_leader_trait_avg_belligerence
+									remove_leader_flag = gained_leader_trait_disheartened
 								}
 							}
 							17 = {
@@ -1039,6 +1144,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_healthy
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.22} }
+									remove_leader_flag = gained_leader_trait_wrathful
+									remove_leader_flag = gained_leader_trait_aggressive
+									remove_leader_flag = gained_leader_trait_avg_belligerence
+									remove_leader_flag = gained_leader_trait_disheartened
 								}
 							}
 							17 = {
@@ -1050,6 +1159,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_avg_health
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.22} }
+									remove_leader_flag = gained_leader_trait_wrathful
+									remove_leader_flag = gained_leader_trait_aggressive
+									remove_leader_flag = gained_leader_trait_avg_belligerence
+									remove_leader_flag = gained_leader_trait_disheartened
 								}
 							}
 						}
@@ -1057,7 +1170,7 @@ country_event = {
 			if = {
 				limit = {
 					leader_class = admiral
-					has_level = 9
+					has_level = 10
 				}
 						random_list = {
 							55 = {
@@ -1069,6 +1182,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_senile_admiral
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.22} }
+									remove_leader_flag = gained_leader_trait_vigorous
+									remove_leader_flag = gained_leader_trait_healthy
+									remove_leader_flag = gained_leader_trait_avg_health
+									remove_leader_flag = gained_leader_trait_crippled
 								}
 							}
 							15 = {
@@ -1080,6 +1197,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_legendary_commander
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.22} }
+									remove_leader_flag = gained_leader_trait_vigorous
+									remove_leader_flag = gained_leader_trait_healthy
+									remove_leader_flag = gained_leader_trait_avg_health
+									remove_leader_flag = gained_leader_trait_crippled
 								}
 							}
 							15 = {
@@ -1091,6 +1212,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_legendary_navigator
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.22} }
+									remove_leader_flag = gained_leader_trait_vigorous
+									remove_leader_flag = gained_leader_trait_healthy
+									remove_leader_flag = gained_leader_trait_avg_health
+									remove_leader_flag = gained_leader_trait_crippled
 								}
 							}
 							15 = {
@@ -1102,6 +1227,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_legendary_engineer
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.22} }
+									remove_leader_flag = gained_leader_trait_vigorous
+									remove_leader_flag = gained_leader_trait_healthy
+									remove_leader_flag = gained_leader_trait_avg_health
+									remove_leader_flag = gained_leader_trait_crippled
 								}
 							}
 						}
@@ -1109,7 +1238,7 @@ country_event = {
 			if = {
 				limit = {
 					leader_class = governor
-					has_level = 1
+					has_level = 2
 				}
 						random_list = {
 							7 = {
@@ -1161,7 +1290,7 @@ country_event = {
 			if = {
 				limit = {
 					leader_class = governor
-					has_level = 2
+					has_level = 3
 				}
 						random_list = {
 							13 = {
@@ -1173,6 +1302,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_undisciplined
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.23} }
+									remove_leader_flag = gained_leader_trait_ambitious
+									remove_leader_flag = gained_leader_trait_driven
+									remove_leader_flag = gained_leader_trait_avg_ambition
+									remove_leader_flag = gained_leader_trait_content
 								}
 							}
 							29 = {
@@ -1184,6 +1317,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_diligent
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.23} }
+									remove_leader_flag = gained_leader_trait_ambitious
+									remove_leader_flag = gained_leader_trait_driven
+									remove_leader_flag = gained_leader_trait_avg_ambition
+									remove_leader_flag = gained_leader_trait_content
 								}
 							}
 							29 = {
@@ -1195,6 +1332,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_disciplined
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.23} }
+									remove_leader_flag = gained_leader_trait_ambitious
+									remove_leader_flag = gained_leader_trait_driven
+									remove_leader_flag = gained_leader_trait_avg_ambition
+									remove_leader_flag = gained_leader_trait_content
 								}
 							}
 							29 = {
@@ -1206,6 +1347,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_avg_discipline
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.23} }
+									remove_leader_flag = gained_leader_trait_ambitious
+									remove_leader_flag = gained_leader_trait_driven
+									remove_leader_flag = gained_leader_trait_avg_ambition
+									remove_leader_flag = gained_leader_trait_content
 								}
 							}
 						}
@@ -1213,7 +1358,7 @@ country_event = {
 			if = {
 				limit = {
 					leader_class = governor
-					has_level = 3
+					has_level = 4
 				}
 						random_list = {
 							19 = {
@@ -1225,6 +1370,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_ugly
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.23} }
+									remove_leader_flag = gained_leader_trait_diligent
+									remove_leader_flag = gained_leader_trait_disciplined
+									remove_leader_flag = gained_leader_trait_avg_discipline
+									remove_leader_flag = gained_leader_trait_undisciplined
 								}
 							}
 							27 = {
@@ -1236,6 +1385,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_inspiring
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.23} }
+									remove_leader_flag = gained_leader_trait_diligent
+									remove_leader_flag = gained_leader_trait_disciplined
+									remove_leader_flag = gained_leader_trait_avg_discipline
+									remove_leader_flag = gained_leader_trait_undisciplined
 								}
 							}
 							27 = {
@@ -1247,6 +1400,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_charming
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.23} }
+									remove_leader_flag = gained_leader_trait_diligent
+									remove_leader_flag = gained_leader_trait_disciplined
+									remove_leader_flag = gained_leader_trait_avg_discipline
+									remove_leader_flag = gained_leader_trait_undisciplined
 								}
 							}
 							27 = {
@@ -1258,6 +1415,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_avg_inspiration
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.23} }
+									remove_leader_flag = gained_leader_trait_diligent
+									remove_leader_flag = gained_leader_trait_disciplined
+									remove_leader_flag = gained_leader_trait_avg_discipline
+									remove_leader_flag = gained_leader_trait_undisciplined
 								}
 							}
 						}
@@ -1265,7 +1426,7 @@ country_event = {
 			if = {
 				limit = {
 					leader_class = governor
-					has_level = 4
+					has_level = 5
 				}
 						random_list = {
 							25 = {
@@ -1277,6 +1438,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_degenerate
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.23} }
+									remove_leader_flag = gained_leader_trait_inspiring
+									remove_leader_flag = gained_leader_trait_charming
+									remove_leader_flag = gained_leader_trait_avg_inspiration
+									remove_leader_flag = gained_leader_trait_ugly
 								}
 							}
 							25 = {
@@ -1288,6 +1453,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_paragon_of_virtue
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.23} }
+									remove_leader_flag = gained_leader_trait_inspiring
+									remove_leader_flag = gained_leader_trait_charming
+									remove_leader_flag = gained_leader_trait_avg_inspiration
+									remove_leader_flag = gained_leader_trait_ugly
 								}
 							}
 							25 = {
@@ -1299,6 +1468,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_morally_pure
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.23} }
+									remove_leader_flag = gained_leader_trait_inspiring
+									remove_leader_flag = gained_leader_trait_charming
+									remove_leader_flag = gained_leader_trait_avg_inspiration
+									remove_leader_flag = gained_leader_trait_ugly
 								}
 							}
 							25 = {
@@ -1310,6 +1483,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_avg_morals
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.23} }
+									remove_leader_flag = gained_leader_trait_inspiring
+									remove_leader_flag = gained_leader_trait_charming
+									remove_leader_flag = gained_leader_trait_avg_inspiration
+									remove_leader_flag = gained_leader_trait_ugly
 								}
 							}
 						}
@@ -1317,7 +1494,7 @@ country_event = {
 			if = {
 				limit = {
 					leader_class = governor
-					has_level = 5
+					has_level = 6
 				}
 						random_list = {
 							31 = {
@@ -1329,6 +1506,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_dumb
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.23} }
+									remove_leader_flag = gained_leader_trait_paragon_of_virtue
+									remove_leader_flag = gained_leader_trait_morally_pure
+									remove_leader_flag = gained_leader_trait_avg_morals
+									remove_leader_flag = gained_leader_trait_degenerate
 								}
 							}
 							23 = {
@@ -1340,6 +1521,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_brilliant
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.23} }
+									remove_leader_flag = gained_leader_trait_paragon_of_virtue
+									remove_leader_flag = gained_leader_trait_morally_pure
+									remove_leader_flag = gained_leader_trait_avg_morals
+									remove_leader_flag = gained_leader_trait_degenerate
 								}
 							}
 							23 = {
@@ -1351,6 +1536,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_smart
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.23} }
+									remove_leader_flag = gained_leader_trait_paragon_of_virtue
+									remove_leader_flag = gained_leader_trait_morally_pure
+									remove_leader_flag = gained_leader_trait_avg_morals
+									remove_leader_flag = gained_leader_trait_degenerate
 								}
 							}
 							23 = {
@@ -1362,6 +1551,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_avg_intellect
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.23} }
+									remove_leader_flag = gained_leader_trait_paragon_of_virtue
+									remove_leader_flag = gained_leader_trait_morally_pure
+									remove_leader_flag = gained_leader_trait_avg_morals
+									remove_leader_flag = gained_leader_trait_degenerate
 								}
 							}
 						}
@@ -1369,7 +1562,7 @@ country_event = {
 			if = {
 				limit = {
 					leader_class = governor
-					has_level = 6
+					has_level = 7
 				}
 						random_list = {
 							37 = {
@@ -1381,6 +1574,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_oppressive
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.23} }
+									remove_leader_flag = gained_leader_trait_brilliant
+									remove_leader_flag = gained_leader_trait_smart
+									remove_leader_flag = gained_leader_trait_avg_intellect
+									remove_leader_flag = gained_leader_trait_dumb
 								}
 							}
 							21 = {
@@ -1392,6 +1589,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_green_thumb
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.23} }
+									remove_leader_flag = gained_leader_trait_brilliant
+									remove_leader_flag = gained_leader_trait_smart
+									remove_leader_flag = gained_leader_trait_avg_intellect
+									remove_leader_flag = gained_leader_trait_dumb
 								}
 							}
 							21 = {
@@ -1403,6 +1604,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_agrarian
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.23} }
+									remove_leader_flag = gained_leader_trait_brilliant
+									remove_leader_flag = gained_leader_trait_smart
+									remove_leader_flag = gained_leader_trait_avg_intellect
+									remove_leader_flag = gained_leader_trait_dumb
 								}
 							}
 							21 = {
@@ -1414,6 +1619,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_avg_agriculture
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.23} }
+									remove_leader_flag = gained_leader_trait_brilliant
+									remove_leader_flag = gained_leader_trait_smart
+									remove_leader_flag = gained_leader_trait_avg_intellect
+									remove_leader_flag = gained_leader_trait_dumb
 								}
 							}
 						}
@@ -1421,7 +1630,7 @@ country_event = {
 			if = {
 				limit = {
 					leader_class = governor
-					has_level = 7
+					has_level = 8
 				}
 						random_list = {
 							43 = {
@@ -1433,6 +1642,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_despised
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.23} }
+									remove_leader_flag = gained_leader_trait_green_thumb
+									remove_leader_flag = gained_leader_trait_agrarian
+									remove_leader_flag = gained_leader_trait_avg_agriculture
+									remove_leader_flag = gained_leader_trait_oppressive
 								}
 							}
 							19 = {
@@ -1444,6 +1657,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_proud
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.23} }
+									remove_leader_flag = gained_leader_trait_green_thumb
+									remove_leader_flag = gained_leader_trait_agrarian
+									remove_leader_flag = gained_leader_trait_avg_agriculture
+									remove_leader_flag = gained_leader_trait_oppressive
 								}
 							}
 							19 = {
@@ -1455,6 +1672,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_well_respected
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.23} }
+									remove_leader_flag = gained_leader_trait_green_thumb
+									remove_leader_flag = gained_leader_trait_agrarian
+									remove_leader_flag = gained_leader_trait_avg_agriculture
+									remove_leader_flag = gained_leader_trait_oppressive
 								}
 							}
 							19 = {
@@ -1466,6 +1687,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_avg_reputation
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.23} }
+									remove_leader_flag = gained_leader_trait_green_thumb
+									remove_leader_flag = gained_leader_trait_agrarian
+									remove_leader_flag = gained_leader_trait_avg_agriculture
+									remove_leader_flag = gained_leader_trait_oppressive
 								}
 							}
 						}
@@ -1473,7 +1698,7 @@ country_event = {
 			if = {
 				limit = {
 					leader_class = governor
-					has_level = 8
+					has_level = 9
 				}
 						random_list = {
 							49 = {
@@ -1485,6 +1710,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_corrupted
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.23} }
+									remove_leader_flag = gained_leader_trait_proud
+									remove_leader_flag = gained_leader_trait_well_respected
+									remove_leader_flag = gained_leader_trait_avg_reputation
+									remove_leader_flag = gained_leader_trait_despised
 								}
 							}
 							17 = {
@@ -1496,6 +1725,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_incorruptible
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.23} }
+									remove_leader_flag = gained_leader_trait_proud
+									remove_leader_flag = gained_leader_trait_well_respected
+									remove_leader_flag = gained_leader_trait_avg_reputation
+									remove_leader_flag = gained_leader_trait_despised
 								}
 							}
 							17 = {
@@ -1507,6 +1740,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_honest
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.23} }
+									remove_leader_flag = gained_leader_trait_proud
+									remove_leader_flag = gained_leader_trait_well_respected
+									remove_leader_flag = gained_leader_trait_avg_reputation
+									remove_leader_flag = gained_leader_trait_despised
 								}
 							}
 							17 = {
@@ -1518,6 +1755,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_avg_ethics
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.23} }
+									remove_leader_flag = gained_leader_trait_proud
+									remove_leader_flag = gained_leader_trait_well_respected
+									remove_leader_flag = gained_leader_trait_avg_reputation
+									remove_leader_flag = gained_leader_trait_despised
 								}
 							}
 						}
@@ -1525,7 +1766,7 @@ country_event = {
 			if = {
 				limit = {
 					leader_class = governor
-					has_level = 9
+					has_level = 10
 				}
 						random_list = {
 							55 = {
@@ -1537,6 +1778,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_senile_governor
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.23} }
+									remove_leader_flag = gained_leader_trait_incorruptible
+									remove_leader_flag = gained_leader_trait_honest
+									remove_leader_flag = gained_leader_trait_avg_ethics
+									remove_leader_flag = gained_leader_trait_corrupted
 								}
 							}
 							15 = {
@@ -1548,6 +1793,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_legendary_scholar
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.23} }
+									remove_leader_flag = gained_leader_trait_incorruptible
+									remove_leader_flag = gained_leader_trait_honest
+									remove_leader_flag = gained_leader_trait_avg_ethics
+									remove_leader_flag = gained_leader_trait_corrupted
 								}
 							}
 							15 = {
@@ -1559,6 +1808,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_legendary_investor
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.23} }
+									remove_leader_flag = gained_leader_trait_incorruptible
+									remove_leader_flag = gained_leader_trait_honest
+									remove_leader_flag = gained_leader_trait_avg_ethics
+									remove_leader_flag = gained_leader_trait_corrupted
 								}
 							}
 							15 = {
@@ -1570,6 +1823,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_legendary_industrialist
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.23} }
+									remove_leader_flag = gained_leader_trait_incorruptible
+									remove_leader_flag = gained_leader_trait_honest
+									remove_leader_flag = gained_leader_trait_avg_ethics
+									remove_leader_flag = gained_leader_trait_corrupted
 								}
 							}
 						}
@@ -1577,7 +1834,7 @@ country_event = {
 			if = {
 				limit = {
 					leader_class = scientist
-					has_level = 1
+					has_level = 2
 				}
 						random_list = {
 							7 = {
@@ -1629,7 +1886,7 @@ country_event = {
 			if = {
 				limit = {
 					leader_class = scientist
-					has_level = 2
+					has_level = 3
 				}
 						random_list = {
 							13 = {
@@ -1641,6 +1898,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_paranoid
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.21} }
+									remove_leader_flag = gained_leader_trait_ambitious
+									remove_leader_flag = gained_leader_trait_driven
+									remove_leader_flag = gained_leader_trait_avg_ambition
+									remove_leader_flag = gained_leader_trait_content
 								}
 							}
 							29 = {
@@ -1652,6 +1913,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_expertise_banking
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.21} }
+									remove_leader_flag = gained_leader_trait_ambitious
+									remove_leader_flag = gained_leader_trait_driven
+									remove_leader_flag = gained_leader_trait_avg_ambition
+									remove_leader_flag = gained_leader_trait_content
 								}
 							}
 							29 = {
@@ -1663,6 +1928,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_expertise_weaponry
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.21} }
+									remove_leader_flag = gained_leader_trait_ambitious
+									remove_leader_flag = gained_leader_trait_driven
+									remove_leader_flag = gained_leader_trait_avg_ambition
+									remove_leader_flag = gained_leader_trait_content
 								}
 							}
 							29 = {
@@ -1674,6 +1943,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_expertise_voidcraft
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.21} }
+									remove_leader_flag = gained_leader_trait_ambitious
+									remove_leader_flag = gained_leader_trait_driven
+									remove_leader_flag = gained_leader_trait_avg_ambition
+									remove_leader_flag = gained_leader_trait_content
 								}
 							}
 						}
@@ -1681,7 +1954,7 @@ country_event = {
 			if = {
 				limit = {
 					leader_class = scientist
-					has_level = 3
+					has_level = 4
 				}
 						random_list = {
 							19 = {
@@ -1693,6 +1966,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_closeminded
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.21} }
+									remove_leader_flag = gained_leader_trait_paranoid
+									remove_leader_flag = gained_leader_trait_expertise_banking
+									remove_leader_flag = gained_leader_trait_expertise_weaponry
+									remove_leader_flag = gained_leader_trait_expertise_voidcraft
 								}
 							}
 							27 = {
@@ -1704,6 +1981,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_expertise_ai
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.21} }
+									remove_leader_flag = gained_leader_trait_paranoid
+									remove_leader_flag = gained_leader_trait_expertise_banking
+									remove_leader_flag = gained_leader_trait_expertise_weaponry
+									remove_leader_flag = gained_leader_trait_expertise_voidcraft
 								}
 							}
 							27 = {
@@ -1715,6 +1996,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_expertise_biology
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.21} }
+									remove_leader_flag = gained_leader_trait_paranoid
+									remove_leader_flag = gained_leader_trait_expertise_banking
+									remove_leader_flag = gained_leader_trait_expertise_weaponry
+									remove_leader_flag = gained_leader_trait_expertise_voidcraft
 								}
 							}
 							27 = {
@@ -1726,6 +2011,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_expertise_rocketry
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.21} }
+									remove_leader_flag = gained_leader_trait_paranoid
+									remove_leader_flag = gained_leader_trait_expertise_banking
+									remove_leader_flag = gained_leader_trait_expertise_weaponry
+									remove_leader_flag = gained_leader_trait_expertise_voidcraft
 								}
 							}
 						}
@@ -1733,29 +2022,37 @@ country_event = {
 			if = {
 				limit = {
 					leader_class = scientist
-					has_level = 4
+					has_level = 5
 				}
 						random_list = {
 							25 = {
 								if = {
 									limit = {
-										NOT = { has_trait = leader_trait_stubborn }
+										NOT = { has_trait = leader_trait_carefree }
 									}
-									add_trait = leader_trait_stubborn
-									set_leader_flag = gained_leader_trait_stubborn
+									add_trait = leader_trait_carefree
+									set_leader_flag = gained_leader_trait_carefree
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.21} }
+									remove_leader_flag = gained_leader_trait_closeminded 
+									remove_leader_flag = gained_leader_trait_expertise_ai
+									remove_leader_flag = gained_leader_trait_expertise_biology
+									remove_leader_flag = gained_leader_trait_expertise_rocketry
 								}
 							}
 							25 = {
 								if = {
 									limit = {
-										NOT = { has_trait = leader_trait_adaptable }
+										NOT = { has_trait = leader_trait_meticulous }
 									}
-									add_trait = leader_trait_adaptable
-									set_leader_flag = gained_leader_trait_adaptable
+									add_trait = leader_trait_meticulous
+									set_leader_flag = gained_leader_trait_meticulous
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.21} }
+									remove_leader_flag = gained_leader_trait_closeminded 
+									remove_leader_flag = gained_leader_trait_expertise_ai
+									remove_leader_flag = gained_leader_trait_expertise_biology
+									remove_leader_flag = gained_leader_trait_expertise_rocketry
 								}
 							}
 							25 = {
@@ -1767,6 +2064,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_spark_of_genius
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.21} }
+									remove_leader_flag = gained_leader_trait_closeminded 
+									remove_leader_flag = gained_leader_trait_expertise_ai
+									remove_leader_flag = gained_leader_trait_expertise_biology
+									remove_leader_flag = gained_leader_trait_expertise_rocketry
 								}
 							}
 							25 = {
@@ -1778,6 +2079,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_roamer
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.21} }
+									remove_leader_flag = gained_leader_trait_closeminded 
+									remove_leader_flag = gained_leader_trait_expertise_ai
+									remove_leader_flag = gained_leader_trait_expertise_biology
+									remove_leader_flag = gained_leader_trait_expertise_rocketry
 								}
 							}
 						}
@@ -1785,7 +2090,7 @@ country_event = {
 			if = {
 				limit = {
 					leader_class = scientist
-					has_level = 5
+					has_level = 6
 				}
 						random_list = {
 							31 = {
@@ -1797,6 +2102,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_dumb
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.21} }
+									remove_leader_flag = gained_leader_trait_carefree
+									remove_leader_flag = gained_leader_trait_meticulous
+									remove_leader_flag = gained_leader_trait_spark_of_genius
+									remove_leader_flag = gained_leader_trait_roamer
 								}
 							}
 							23 = {
@@ -1808,6 +2117,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_brilliant
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.21} }
+									remove_leader_flag = gained_leader_trait_carefree
+									remove_leader_flag = gained_leader_trait_meticulous
+									remove_leader_flag = gained_leader_trait_spark_of_genius
+									remove_leader_flag = gained_leader_trait_roamer
 								}
 							}
 							23 = {
@@ -1819,6 +2132,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_smart
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.21} }
+									remove_leader_flag = gained_leader_trait_carefree
+									remove_leader_flag = gained_leader_trait_meticulous
+									remove_leader_flag = gained_leader_trait_spark_of_genius
+									remove_leader_flag = gained_leader_trait_roamer
 								}
 							}
 							23 = {
@@ -1830,6 +2147,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_avg_intellect
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.21} }
+									remove_leader_flag = gained_leader_trait_carefree
+									remove_leader_flag = gained_leader_trait_meticulous
+									remove_leader_flag = gained_leader_trait_spark_of_genius
+									remove_leader_flag = gained_leader_trait_roamer
 								}
 							}
 						}
@@ -1837,29 +2158,37 @@ country_event = {
 			if = {
 				limit = {
 					leader_class = scientist
-					has_level = 6
+					has_level = 7
 				}
 						random_list = {
 							37 = {
 								if = {
 									limit = {
-										NOT = { has_trait = leader_trait_antisocial }
+										NOT = { has_trait = leader_trait_antisociety }
 									}
-									add_trait = leader_trait_antisocial
-									set_leader_flag = gained_leader_trait_antisocial
+									add_trait = leader_trait_antisociety
+									set_leader_flag = gained_leader_trait_antisociety
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.21} }
+									remove_leader_flag = gained_leader_trait_brilliant
+									remove_leader_flag = gained_leader_trait_smart
+									remove_leader_flag = gained_leader_trait_avg_intellect
+									remove_leader_flag = gained_leader_trait_dumb
 								}
 							}
 							21 = {
 								if = {
 									limit = {
-										NOT = { has_trait = leader_trait_archaeologist }
+										NOT = { has_trait = leader_trait_expertise_computing }
 									}
-									add_trait = leader_trait_archaeologist
-									set_leader_flag = gained_leader_trait_archaeologist
+									add_trait = leader_trait_expertise_computing
+									set_leader_flag = gained_leader_trait_expertise_computing
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.21} }
+									remove_leader_flag = gained_leader_trait_brilliant
+									remove_leader_flag = gained_leader_trait_smart
+									remove_leader_flag = gained_leader_trait_avg_intellect
+									remove_leader_flag = gained_leader_trait_dumb
 								}
 							}
 							21 = {
@@ -1871,6 +2200,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_expertise_bio_labs
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.21} }
+									remove_leader_flag = gained_leader_trait_brilliant
+									remove_leader_flag = gained_leader_trait_smart
+									remove_leader_flag = gained_leader_trait_avg_intellect
+									remove_leader_flag = gained_leader_trait_dumb
 								}
 							}
 							21 = {
@@ -1882,6 +2215,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_expertise_armor
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.21} }
+									remove_leader_flag = gained_leader_trait_brilliant
+									remove_leader_flag = gained_leader_trait_smart
+									remove_leader_flag = gained_leader_trait_avg_intellect
+									remove_leader_flag = gained_leader_trait_dumb
 								}
 							}
 						}
@@ -1889,7 +2226,7 @@ country_event = {
 			if = {
 				limit = {
 					leader_class = scientist
-					has_level = 7
+					has_level = 8
 				}
 						random_list = {
 							43 = {
@@ -1901,6 +2238,11 @@ country_event = {
 									set_leader_flag = gained_leader_trait_antiphysics
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.21} }
+									remove_leader_flag = gained_leader_trait_antisociety
+									remove_leader_flag = gained_leader_trait_expertise_computing
+									remove_leader_flag = gained_leader_trait_expertise_bio_labs
+									remove_leader_flag = gained_leader_trait_expertise_armor
+
 								}
 							}
 							19 = {
@@ -1912,6 +2254,11 @@ country_event = {
 									set_leader_flag = gained_leader_trait_expertise_ftl_travel
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.21} }
+									remove_leader_flag = gained_leader_trait_antisociety
+									remove_leader_flag = gained_leader_trait_expertise_computing
+									remove_leader_flag = gained_leader_trait_expertise_bio_labs
+									remove_leader_flag = gained_leader_trait_expertise_armor
+
 								}
 							}
 							19 = {
@@ -1923,6 +2270,11 @@ country_event = {
 									set_leader_flag = gained_leader_trait_expertise_mineral_processing
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.21} }
+									remove_leader_flag = gained_leader_trait_antisociety
+									remove_leader_flag = gained_leader_trait_expertise_computing
+									remove_leader_flag = gained_leader_trait_expertise_bio_labs
+									remove_leader_flag = gained_leader_trait_expertise_armor
+
 								}
 							}
 							19 = {
@@ -1934,6 +2286,11 @@ country_event = {
 									set_leader_flag = gained_leader_trait_expertise_genetics
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.21} }
+									remove_leader_flag = gained_leader_trait_antisociety
+									remove_leader_flag = gained_leader_trait_expertise_computing
+									remove_leader_flag = gained_leader_trait_expertise_bio_labs
+									remove_leader_flag = gained_leader_trait_expertise_armor
+
 								}
 							}
 						}
@@ -1941,29 +2298,37 @@ country_event = {
 			if = {
 				limit = {
 					leader_class = scientist
-					has_level = 8
+					has_level = 9
 				}
 						random_list = {
 							49 = {
 								if = {
 									limit = {
-										NOT = { has_trait = leader_trait_wastrel }
+										NOT = { has_trait = leader_trait_antiengineering }
 									}
-									add_trait = leader_trait_wastrel
-									set_leader_flag = gained_leader_trait_wastrel
+									add_trait = leader_trait_antiengineering
+									set_leader_flag = gained_leader_trait_antiengineering
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.21} }
+									remove_leader_flag = gained_leader_trait_antiphysics
+									remove_leader_flag = gained_leader_trait_expertise_genetics
+									remove_leader_flag = gained_leader_trait_expertise_mineral_processing
+									remove_leader_flag = gained_leader_trait_expertise_ftl_travel 
 								}
 							}
 							17 = {
 								if = {
 									limit = {
-										NOT = { has_trait = leader_trait_resilient }
+										NOT = { has_trait = leader_trait_expertise_orbital_stations }
 									}
-									add_trait = leader_trait_resilient
-									set_leader_flag = gained_leader_trait_resilient
+									add_trait = leader_trait_expertise_orbital_stations
+									set_leader_flag = gained_leader_trait_expertise_orbital_stations
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.21} }
+									remove_leader_flag = gained_leader_trait_antiphysics
+									remove_leader_flag = gained_leader_trait_expertise_genetics
+									remove_leader_flag = gained_leader_trait_expertise_mineral_processing
+									remove_leader_flag = gained_leader_trait_expertise_ftl_travel 
 								}
 							}
 							17 = {
@@ -1975,6 +2340,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_expertise_statecraft
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.21} }
+									remove_leader_flag = gained_leader_trait_antiphysics
+									remove_leader_flag = gained_leader_trait_expertise_genetics
+									remove_leader_flag = gained_leader_trait_expertise_mineral_processing
+									remove_leader_flag = gained_leader_trait_expertise_ftl_travel 
 								}
 							}
 							17 = {
@@ -1986,6 +2355,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_expertise_psionics
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.21} }
+									remove_leader_flag = gained_leader_trait_antiphysics
+									remove_leader_flag = gained_leader_trait_expertise_genetics
+									remove_leader_flag = gained_leader_trait_expertise_mineral_processing
+									remove_leader_flag = gained_leader_trait_expertise_ftl_travel 
 								}
 							}
 						}
@@ -1993,7 +2366,7 @@ country_event = {
 			if = {
 				limit = {
 					leader_class = scientist
-					has_level = 9
+					has_level = 10
 				}
 						random_list = {
 							55 = {
@@ -2005,6 +2378,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_senile_science
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.21} }
+									remove_leader_flag = gained_leader_trait_antiengineering
+									remove_leader_flag = gained_leader_trait_expertise_psionics
+									remove_leader_flag = gained_leader_trait_expertise_statecraft
+									remove_leader_flag = gained_leader_trait_expertise_orbital_stations
 								}
 							}
 							15 = {
@@ -2016,6 +2393,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_science_master
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.21} }
+									remove_leader_flag = gained_leader_trait_antiengineering
+									remove_leader_flag = gained_leader_trait_expertise_psionics
+									remove_leader_flag = gained_leader_trait_expertise_statecraft
+									remove_leader_flag = gained_leader_trait_expertise_orbital_stations
 								}
 							}
 							15 = {
@@ -2027,6 +2408,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_custom_AI_assistant
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.21} }
+									remove_leader_flag = gained_leader_trait_antiengineering
+									remove_leader_flag = gained_leader_trait_expertise_psionics
+									remove_leader_flag = gained_leader_trait_expertise_statecraft
+									remove_leader_flag = gained_leader_trait_expertise_orbital_stations
 								}
 							}
 							15 = {
@@ -2038,6 +2423,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_sentient_AI_assistant
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.21} }
+									remove_leader_flag = gained_leader_trait_antiengineering
+									remove_leader_flag = gained_leader_trait_expertise_psionics
+									remove_leader_flag = gained_leader_trait_expertise_statecraft
+									remove_leader_flag = gained_leader_trait_expertise_orbital_stations
 								}
 							}
 						}
@@ -2045,7 +2434,7 @@ country_event = {
 			if = {
 				limit = {
 					leader_class = general
-					has_level = 1
+					has_level = 2
 				}
 						random_list = {
 							7 = {
@@ -2097,7 +2486,7 @@ country_event = {
 			if = {
 				limit = {
 					leader_class = general
-					has_level = 2
+					has_level = 3
 				}
 						random_list = {
 							13 = {
@@ -2109,6 +2498,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_timid
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.24} }
+									remove_leader_flag = gained_leader_trait_ambitious
+									remove_leader_flag = gained_leader_trait_driven
+									remove_leader_flag = gained_leader_trait_avg_ambition
+									remove_leader_flag = gained_leader_trait_content
 								}
 							}
 							29 = {
@@ -2120,6 +2513,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_bloodthirsty
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.24} }
+									remove_leader_flag = gained_leader_trait_ambitious
+									remove_leader_flag = gained_leader_trait_driven
+									remove_leader_flag = gained_leader_trait_avg_ambition
+									remove_leader_flag = gained_leader_trait_content
 								}
 							}
 							29 = {
@@ -2131,6 +2528,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_fierce
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.24} }
+									remove_leader_flag = gained_leader_trait_ambitious
+									remove_leader_flag = gained_leader_trait_driven
+									remove_leader_flag = gained_leader_trait_avg_ambition
+									remove_leader_flag = gained_leader_trait_content
 								}
 							}
 							29 = {
@@ -2142,6 +2543,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_avg_ferocity
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.24} }
+									remove_leader_flag = gained_leader_trait_ambitious
+									remove_leader_flag = gained_leader_trait_driven
+									remove_leader_flag = gained_leader_trait_avg_ambition
+									remove_leader_flag = gained_leader_trait_content
 								}
 							}
 						}
@@ -2149,7 +2554,7 @@ country_event = {
 			if = {
 				limit = {
 					leader_class = general
-					has_level = 3
+					has_level = 4
 				}
 						random_list = {
 							19 = {
@@ -2161,6 +2566,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_cowardly
 									set_leader_flag = has_gained_level_cowardly
 									owner = { country_event = { id = leader.24} }
+									remove_leader_flag = gained_leader_trait_bloodthirsty
+									remove_leader_flag = gained_leader_trait_fierce
+									remove_leader_flag = gained_leader_trait_avg_ferocity
+									remove_leader_flag = gained_leader_trait_timid
 								}
 							}
 							27 = {
@@ -2172,6 +2581,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_fearless
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.24} }
+									remove_leader_flag = gained_leader_trait_bloodthirsty
+									remove_leader_flag = gained_leader_trait_fierce
+									remove_leader_flag = gained_leader_trait_avg_ferocity
+									remove_leader_flag = gained_leader_trait_timid
 								}
 							}
 							27 = {
@@ -2183,6 +2596,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_brave
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.24} }
+									remove_leader_flag = gained_leader_trait_bloodthirsty
+									remove_leader_flag = gained_leader_trait_fierce
+									remove_leader_flag = gained_leader_trait_avg_ferocity
+									remove_leader_flag = gained_leader_trait_timid
 								}
 							}
 							27 = {
@@ -2194,6 +2611,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_avg_courage
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.24} }
+									remove_leader_flag = gained_leader_trait_bloodthirsty
+									remove_leader_flag = gained_leader_trait_fierce
+									remove_leader_flag = gained_leader_trait_avg_ferocity
+									remove_leader_flag = gained_leader_trait_timid
 								}
 							}
 						}
@@ -2201,7 +2622,7 @@ country_event = {
 			if = {
 				limit = {
 					leader_class = general
-					has_level = 4
+					has_level = 5
 				}
 						random_list = {
 							25 = {
@@ -2213,17 +2634,25 @@ country_event = {
 									set_leader_flag = gained_leader_trait_weak
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.24} }
+									remove_leader_flag = gained_leader_trait_fearless
+									remove_leader_flag = gained_leader_trait_brave
+									remove_leader_flag = gained_leader_trait_avg_courage
+									remove_leader_flag = gained_leader_trait_cowardly
 								}
 							}
 							25 = {
 								if = {
 									limit = {
-										NOT = { has_trait = leader_trait_unyielding }
+										NOT = { has_trait = leader_trait_defiant }
 									}
-									add_trait = leader_trait_unyielding
-									set_leader_flag = gained_leader_trait_unyielding
+									add_trait = leader_trait_defiant
+									set_leader_flag = gained_leader_trait_defiant
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.24} }
+									remove_leader_flag = gained_leader_trait_fearless
+									remove_leader_flag = gained_leader_trait_brave
+									remove_leader_flag = gained_leader_trait_avg_courage
+									remove_leader_flag = gained_leader_trait_cowardly
 								}
 							}
 							25 = {
@@ -2235,6 +2664,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_steadfast
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.24} }
+									remove_leader_flag = gained_leader_trait_fearless
+									remove_leader_flag = gained_leader_trait_brave
+									remove_leader_flag = gained_leader_trait_avg_courage
+									remove_leader_flag = gained_leader_trait_cowardly
 								}
 							}
 							25 = {
@@ -2246,6 +2679,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_avg_toughness
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.24} }
+									remove_leader_flag = gained_leader_trait_fearless
+									remove_leader_flag = gained_leader_trait_brave
+									remove_leader_flag = gained_leader_trait_avg_courage
+									remove_leader_flag = gained_leader_trait_cowardly
 								}
 							}
 						}
@@ -2253,7 +2690,7 @@ country_event = {
 			if = {
 				limit = {
 					leader_class = general
-					has_level = 5
+					has_level = 6
 				}
 						random_list = {
 							31 = {
@@ -2265,6 +2702,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_dumb
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.24} }
+									remove_leader_flag = gained_leader_trait_defiant
+									remove_leader_flag = gained_leader_trait_steadfast
+									remove_leader_flag = gained_leader_trait_avg_toughness
+									remove_leader_flag = gained_leader_trait_weak
 								}
 							}
 							23 = {
@@ -2276,6 +2717,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_brilliant
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.24} }
+									remove_leader_flag = gained_leader_trait_defiant
+									remove_leader_flag = gained_leader_trait_steadfast
+									remove_leader_flag = gained_leader_trait_avg_toughness
+									remove_leader_flag = gained_leader_trait_weak
 								}
 							}
 							23 = {
@@ -2287,6 +2732,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_smart
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.24} }
+									remove_leader_flag = gained_leader_trait_defiant
+									remove_leader_flag = gained_leader_trait_steadfast
+									remove_leader_flag = gained_leader_trait_avg_toughness
+									remove_leader_flag = gained_leader_trait_weak
 								}
 							}
 							23 = {
@@ -2298,6 +2747,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_avg_intellect
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.24} }
+									remove_leader_flag = gained_leader_trait_defiant
+									remove_leader_flag = gained_leader_trait_steadfast
+									remove_leader_flag = gained_leader_trait_avg_toughness
+									remove_leader_flag = gained_leader_trait_weak
 								}
 							}
 						}
@@ -2305,18 +2758,22 @@ country_event = {
 			if = {
 				limit = {
 					leader_class = general
-					has_level = 6
+					has_level = 7
 				}
 						random_list = {
 							37 = {
 								if = {
 									limit = {
-										NOT = { has_trait = leader_trait_stubborn }
+										NOT = { has_trait = leader_trait_unimaginative }
 									}
-									add_trait = leader_trait_stubborn
-									set_leader_flag = gained_leader_trait_stubborn
+									add_trait = leader_trait_unimaginative
+									set_leader_flag = gained_leader_trait_unimaginative
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.24} }
+									remove_leader_flag = gained_leader_trait_brilliant
+									remove_leader_flag = gained_leader_trait_smart
+									remove_leader_flag = gained_leader_trait_avg_intellect
+									remove_leader_flag = gained_leader_trait_dumb
 								}
 							}
 							21 = {
@@ -2328,6 +2785,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_innovative
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.24} }
+									remove_leader_flag = gained_leader_trait_brilliant
+									remove_leader_flag = gained_leader_trait_smart
+									remove_leader_flag = gained_leader_trait_avg_intellect
+									remove_leader_flag = gained_leader_trait_dumb
 								}
 							}
 							21 = {
@@ -2339,6 +2800,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_tinkerer
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.24} }
+									remove_leader_flag = gained_leader_trait_brilliant
+									remove_leader_flag = gained_leader_trait_smart
+									remove_leader_flag = gained_leader_trait_avg_intellect
+									remove_leader_flag = gained_leader_trait_dumb
 								}
 							}
 							21 = {
@@ -2350,6 +2815,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_avg_innovation
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.24} }
+									remove_leader_flag = gained_leader_trait_brilliant
+									remove_leader_flag = gained_leader_trait_smart
+									remove_leader_flag = gained_leader_trait_avg_intellect
+									remove_leader_flag = gained_leader_trait_dumb
 								}
 							}
 						}
@@ -2357,7 +2826,7 @@ country_event = {
 			if = {
 				limit = {
 					leader_class = general
-					has_level = 7
+					has_level = 8
 				}
 						random_list = {
 							43 = {
@@ -2369,6 +2838,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_nasty
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.24} }
+									remove_leader_flag = gained_leader_trait_innovative
+									remove_leader_flag = gained_leader_trait_tinkerer
+									remove_leader_flag = gained_leader_trait_avg_innovation
+									remove_leader_flag = gained_leader_trait_unimaginative
 								}
 							}
 							19 = {
@@ -2380,6 +2853,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_honorable
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.24} }
+									remove_leader_flag = gained_leader_trait_innovative
+									remove_leader_flag = gained_leader_trait_tinkerer
+									remove_leader_flag = gained_leader_trait_avg_innovation
+									remove_leader_flag = gained_leader_trait_unimaginative
 								}
 							}
 							19 = {
@@ -2391,6 +2868,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_kind
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.24} }
+									remove_leader_flag = gained_leader_trait_innovative
+									remove_leader_flag = gained_leader_trait_tinkerer
+									remove_leader_flag = gained_leader_trait_avg_innovation
+									remove_leader_flag = gained_leader_trait_unimaginative
 								}
 							}
 							19 = {
@@ -2402,6 +2883,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_avg_honor
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.24} }
+									remove_leader_flag = gained_leader_trait_innovative
+									remove_leader_flag = gained_leader_trait_tinkerer
+									remove_leader_flag = gained_leader_trait_avg_innovation
+									remove_leader_flag = gained_leader_trait_unimaginative
 								}
 							}
 						}
@@ -2409,7 +2894,7 @@ country_event = {
 			if = {
 				limit = {
 					leader_class = general
-					has_level = 8
+					has_level = 9
 				}
 						random_list = {
 							49 = {
@@ -2421,6 +2906,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_decadent
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.24} }
+									remove_leader_flag = gained_leader_trait_honorable
+									remove_leader_flag = gained_leader_trait_kind
+									remove_leader_flag = gained_leader_trait_avg_honor
+									remove_leader_flag = gained_leader_trait_nasty
 								}
 							}
 							17 = {
@@ -2432,6 +2921,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_champion
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.24} }
+									remove_leader_flag = gained_leader_trait_honorable
+									remove_leader_flag = gained_leader_trait_kind
+									remove_leader_flag = gained_leader_trait_avg_honor
+									remove_leader_flag = gained_leader_trait_nasty
 								}
 							}
 							17 = {
@@ -2443,6 +2936,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_veteran
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.24} }
+									remove_leader_flag = gained_leader_trait_honorable
+									remove_leader_flag = gained_leader_trait_kind
+									remove_leader_flag = gained_leader_trait_avg_honor
+									remove_leader_flag = gained_leader_trait_nasty
 								}
 							}
 							17 = {
@@ -2454,6 +2951,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_avg_readiness
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.24} }
+									remove_leader_flag = gained_leader_trait_honorable
+									remove_leader_flag = gained_leader_trait_kind
+									remove_leader_flag = gained_leader_trait_avg_honor
+									remove_leader_flag = gained_leader_trait_nasty
 								}
 							}
 						}
@@ -2461,7 +2962,7 @@ country_event = {
 			if = {
 				limit = {
 					leader_class = general
-					has_level = 9
+					has_level = 10
 				}
 						random_list = {
 							55 = {
@@ -2473,6 +2974,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_senile_general
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.24} }
+									remove_leader_flag = gained_leader_trait_champion
+									remove_leader_flag = gained_leader_trait_veteran
+									remove_leader_flag = gained_leader_trait_avg_readiness
+									remove_leader_flag = gained_leader_trait_decadent
 								}
 							}
 							15 = {
@@ -2484,6 +2989,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_legendary_butcher
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.24} }
+									remove_leader_flag = gained_leader_trait_champion
+									remove_leader_flag = gained_leader_trait_veteran
+									remove_leader_flag = gained_leader_trait_avg_readiness
+									remove_leader_flag = gained_leader_trait_decadent
 								}
 							}
 							15 = {
@@ -2495,6 +3004,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_legendary_invader
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.24} }
+									remove_leader_flag = gained_leader_trait_champion
+									remove_leader_flag = gained_leader_trait_veteran
+									remove_leader_flag = gained_leader_trait_avg_readiness
+									remove_leader_flag = gained_leader_trait_decadent
 								}
 							}
 							15 = {
@@ -2506,6 +3019,10 @@ country_event = {
 									set_leader_flag = gained_leader_trait_legendary_protector
 									set_leader_flag = has_gained_level_trait
 									owner = { country_event = { id = leader.24} }
+									remove_leader_flag = gained_leader_trait_champion
+									remove_leader_flag = gained_leader_trait_veteran
+									remove_leader_flag = gained_leader_trait_avg_readiness
+									remove_leader_flag = gained_leader_trait_decadent
 								}
 							}
 						}
@@ -2523,40 +3040,38 @@ country_event = {
 			hidden:fromfrom = {
 				switch = {
 					trigger = has_leader_flag
-					#best traits
 					gained_leader_trait_ambitious = { text = leader.21.desc.ambitious }
 					gained_leader_trait_content = { text = leader.21.desc.content }
 					gained_leader_trait_driven = { text = leader.21.desc.driven }
 					gained_leader_trait_avg_ambition = { text = leader.21.desc.avg_ambition }
 					gained_leader_trait_brilliant = { text = leader.21.desc.brilliant }
+					gained_leader_trait_smart = { text = leader.21.desc.smart }
 					gained_leader_trait_paranoid = { text = leader.21.desc.paranoid }
 					gained_leader_trait_expertise_banking = { text = leader.21.desc.expertise_banking }
 					gained_leader_trait_expertise_weaponry = { text = leader.21.desc.expertise_weaponry }
-					#good traits
 					gained_leader_trait_expertise_voidcraft = { text = leader.21.desc.expertise_voidcraft }
 					gained_leader_trait_closeminded = { text = leader.21.desc.closeminded }
 					gained_leader_trait_expertise_ai = { text = leader.21.desc.expertise_ai }
 					gained_leader_trait_expertise_biology = { text = leader.21.desc.expertise_biology }
 					gained_leader_trait_expertise_rocketry = { text = leader.21.desc.expertise_rocketry }
-					gained_leader_trait_stubborn = { text = leader.21.desc.stubborn }
-					gained_leader_trait_adaptable = { text = leader.21.desc.adaptable }
+					gained_leader_trait_carefree = { text = leader.21.desc.carefree }
+					gained_leader_trait_meticulous = { text = leader.21.desc.meticulous }
 					gained_leader_trait_spark_of_genius = { text = leader.21.desc.spark_of_genius }
-					#avg traits
 					gained_leader_trait_roamer = { text = leader.21.desc.roamer }
 					gained_leader_trait_expertise_psionics = { text = leader.21.desc.expertise_psionics }
 					gained_leader_trait_expertise_statecraft = { text = leader.21.desc.expertise_statecraft }
-					gained_leader_trait_resilient = { text = leader.21.desc.resilient }
+					gained_leader_trait_expertise_orbital_stations = { text = leader.21.desc.expertise_orbital_stations }
 					gained_leader_trait_avg_intellect = { text = leader.21.desc.avg_intellect }
 					gained_leader_trait_expertise_genetics = { text = leader.21.desc.expertise_genetics }
 					gained_leader_trait_expertise_mineral_processing = { text = leader.21.desc.expertise_mineral_processing }
 					gained_leader_trait_expertise_ftl_travel = { text = leader.21.desc.expertise_ftl_travel }
-					#bad traits
-					gained_leader_trait_content = { text = leader.21.desc.content }
-					gained_leader_trait_lazy = { text = leader.21.desc.lazy }
-					gained_leader_trait_confused = { text = leader.21.desc.confused }
-					gained_leader_trait_wastrel = { text = leader.21.desc.substance_abuser }
+					gained_leader_trait_expertise_computing = { text = leader.21.desc.expertise_computing }
+					gained_leader_trait_expertise_bio_labs = { text = leader.21.desc.expertise_bio_labs }
+					gained_leader_trait_expertise_armor = { text = leader.21.desc.expertise_armor }
+					gained_leader_trait_antiengineering = { text = leader.21.desc.antiengineering }
+					gained_leader_trait_antisociety = { text = leader.21.desc.antisociety }
+					gained_leader_trait_antiphysics = { text = leader.21.desc.antiphysics }					
 					gained_leader_trait_dumb = { text = leader.21.desc.dumb }
-					gained_leader_trait_spacesick = { text = leader.21.desc.spacesick }
 					gained_leader_trait_senile_science = { text = leader.21.desc.senile_science }
 					#legendary traits
 					gained_leader_trait_science_master = { text = leader.21.desc.science_master }
@@ -2593,7 +3108,7 @@ country_event = {
 			}
 		}
 	}
-	#admirals
+	#scientists
 	option = {
 		name = leader.21.a.positive
 		trigger = {
@@ -2603,29 +3118,29 @@ country_event = {
 					has_leader_flag = gained_leader_trait_custom_AI_assistant
 					has_leader_flag = gained_leader_trait_sentient_AI_assistant
 					has_leader_flag = gained_leader_trait_roamer
+					has_leader_flag = gained_leader_trait_spark_of_genius
+					has_leader_flag = gained_leader_trait_meticulous
 					has_leader_flag = gained_leader_trait_expertise_psionics
 					has_leader_flag = gained_leader_trait_expertise_statecraft
-					has_leader_flag = gained_leader_trait_resilient
-					has_leader_flag = gained_leader_trait_avg_intellect
+					has_leader_flag = gained_leader_trait_expertise_orbital_stations		
 					has_leader_flag = gained_leader_trait_expertise_genetics
 					has_leader_flag = gained_leader_trait_expertise_mineral_processing
 					has_leader_flag = gained_leader_trait_expertise_ftl_travel 
 					has_leader_flag = gained_leader_trait_expertise_voidcraft
-					has_leader_flag = gained_leader_trait_closeminded 
+					has_leader_flag = gained_leader_trait_expertise_banking
+					has_leader_flag = gained_leader_trait_expertise_weaponry
 					has_leader_flag = gained_leader_trait_expertise_ai
 					has_leader_flag = gained_leader_trait_expertise_biology
 					has_leader_flag = gained_leader_trait_expertise_rocketry
-					has_leader_flag = gained_leader_trait_stubborn
-					has_leader_flag = gained_leader_trait_adaptable
-					has_leader_flag = gained_leader_trait_spark_of_genius
+					has_leader_flag = gained_leader_trait_expertise_computing
+					has_leader_flag = gained_leader_trait_expertise_bio_labs
+					has_leader_flag = gained_leader_trait_expertise_armor
 					has_leader_flag = gained_leader_trait_ambitious
-					
 					has_leader_flag = gained_leader_trait_driven
 					has_leader_flag = gained_leader_trait_avg_ambition
 					has_leader_flag = gained_leader_trait_brilliant
-					has_leader_flag = gained_leader_trait_paranoid
-					has_leader_flag = gained_leader_trait_expertise_banking
-					has_leader_flag = gained_leader_trait_expertise_weaponry
+					has_leader_flag = gained_leader_trait_smart
+					has_leader_flag = gained_leader_trait_avg_intellect
 				}
 			}
 		}
@@ -2637,13 +3152,14 @@ country_event = {
 			fromfrom = {
 				OR = {
 					has_leader_flag = gained_leader_trait_content
-					has_leader_flag = gained_leader_trait_lazy
-					has_leader_flag = gained_leader_trait_confused 
-					has_leader_flag = gained_leader_trait_wastrel
+					has_leader_flag = gained_leader_trait_paranoid
+					has_leader_flag = gained_leader_trait_carefree
+					has_leader_flag = gained_leader_trait_closeminded
 					has_leader_flag = gained_leader_trait_dumb
-					has_leader_flag = gained_leader_trait_spacesick
-					has_leader_flag = gained_leader_trait_disheartened
-					has_leader_flag = gained_leader_trait_crippled 
+					has_leader_flag = gained_leader_trait_antisociety
+					has_leader_flag = gained_leader_trait_antiengineering
+					has_leader_flag = gained_leader_trait_antiphysics
+					has_leader_flag = gained_leader_trait_senile_science
 				}
 			}
 		}
@@ -2963,7 +3479,7 @@ country_event = {
 					gained_leader_trait_cowardly = { text = leader.24.desc.cowardly }
 					gained_leader_trait_weak = { text = leader.24.desc.weak }
 					gained_leader_trait_dumb = { text = leader.24.desc.dumb }
-					gained_leader_trait_stubborn = { text = leader.24.desc.stubborn }
+					gained_leader_trait_unimaginative = { text = leader.24.desc.unimaginative }
 					gained_leader_trait_nasty = { text = leader.24.desc.nasty }
 					gained_leader_trait_decadent = { text = leader.24.desc.decadent }
 					gained_leader_trait_senile_general = { text = leader.24.desc.senile_general }
@@ -3055,7 +3571,7 @@ country_event = {
 					has_leader_flag = gained_leader_trait_cowardly
 					has_leader_flag = gained_leader_trait_weak
 					has_leader_flag = gained_leader_trait_dumb
-					has_leader_flag = gained_leader_trait_stubborn
+					has_leader_flag = gained_leader_trait_unimaginative
 					has_leader_flag = gained_leader_trait_nasty
 					has_leader_flag = gained_leader_trait_decadent
 					has_leader_flag = gained_leader_trait_senile_general

@@ -87,7 +87,8 @@ leader_trait_carefree = {
 	modification = no
 	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_carefree.dds"
 	modifier = {
-		ship_anomaly_research_speed_mult = 0.35
+		ship_anomaly_research_speed_mult = 0.50
+		ship_anomaly_fail_risk = 0.10
 	}
 	leader_trait = yes
 	leader_class = { scientist }
@@ -1327,12 +1328,12 @@ leader_trait_closeminded = {
 	# increased chance to discover rare techs (weighted in tech-script)
 }
 
-leader_trait_antisocial = {
+leader_trait_antisociety = {
 	cost = 1
 	modification = no
 	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_paranoid.dds"
 	modifier = {
-		country_society_tech_research_speed = -0.03
+		country_society_tech_research_speed = -0.10
 	}
 	leader_trait = yes
 	leader_class = { scientist }
@@ -1345,7 +1346,7 @@ leader_trait_antiengineering = {
 	modification = no
 	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_paranoid.dds"
 	modifier = {
-		country_engineering_tech_research_speed = -0.03
+		country_engineering_tech_research_speed = -0.10
 	}
 	leader_trait = yes
 	leader_class = { scientist }
@@ -1358,7 +1359,7 @@ leader_trait_antiphysics = {
 	modification = no
 	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_paranoid.dds"
 	modifier = {
-		country_physics_tech_research_speed = -0.03
+		country_physics_tech_research_speed = -0.10
 	}
 	leader_trait = yes
 	leader_class = { scientist }
