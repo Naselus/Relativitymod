@@ -165,3 +165,32 @@
  pft_individualist_faction_desc:0 "The Individualists believe that self-interested individuals acting in non-violent competition will ultimately provide the best solution for everyone."
  pft_collectivist_faction:0 "The Collectivists"
  pft_collectivist_faction_desc:0 "The Collectivists believe that everyone should work together for the good of all, and that a highly-organized society can overcome any challenge."
+ 
+ #Governments
+ xenophobe_democracy:0 "Xenophobic Democracy" 
+ xenophobe_democracy_adv:0 "Advanced Xenophobic Democracy"
+ xenophobe_oligarchy:0 "Xenophobic Oligarchy"
+ xenophobe_oligarchy_adv:0 "Advanced Xenophobic Oligarchy"
+ xenophobe_empire:0 "Xenophobic Dictatorship"
+ xenophobe_empire_adv:0 "Advanced Xenophobic Dictatorship"
+ 
+ xenophile_democracy:0 "Xenophilic Democracy" 
+ xenophile_democracy_adv:0 "Advanced Xenophilic Democracy"
+ xenophile_oligarchy:0 "Xenophilic Oligarchy"
+ xenophile_oligarchy_adv:0 "Advanced Xenophilic Oligarchy"
+ xenophile_empire:0 "Xenophilic Dictatorship"
+ xenophile_empire_adv:0 "Advanced Xenophilic Dictatorship"
+ 
+ collectivist_democracy:0 "Collectivist Democracy" 
+ collectivist_democracy_adv:0 "Advanced Collectivist Democracy"
+ collectivist_oligarchy:0 "Collectivist Oligarchy"
+ collectivist_oligarchy_adv:0 "Advanced Collectivist Oligarchy"
+ collectivist_empire:0 "Collectivist Dictatorship"
+ collectivist_empire_adv:0 "Advanced Collectivist Dictatorship"
+ 
+ individualist_democracy:0 "Iindividualist Democracy" 
+ individualist_democracy_adv:0 "Advanced Iindividualist Democracy"
+ individualist_oligarchy:0 "Iindividualist Oligarchy"
+ individualist_oligarchy_adv:0 "Advanced Iindividualist Oligarchy"
+ individualist_empire:0 "Iindividualist Dictatorship"
+ individualist_empire_adv:0 "Advanced Iindividualist Dictatorship"

@@ -362,4 +362,7 @@ Version 102.0.1
 
 * Starting leader now has his ethics set to the ones you picked at game start, rather than overwriting yours.
 * Fixed the flags on the levelling events.
-
+* Added new Xenophobic government types.
+* Added Collectivist government types
+* Added Xenophilic and Individualist government types.
+* Unlocked old government type restrictions (so individualists and collectivists are no longer locked out of dictatorships/democracies, respectively).
