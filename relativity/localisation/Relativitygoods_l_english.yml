@@ -194,3 +194,12 @@
  individualist_oligarchy_adv:0 "Advanced Iindividualist Oligarchy"
  individualist_empire:0 "Iindividualist Dictatorship"
  individualist_empire_adv:0 "Advanced Iindividualist Dictatorship"
+ 
+ 
+ nomad_corvette:0 "Nomad Corvette"
+ nomad_corvette_plural:0 "Nomad Corvettes"
+ nomad_destroyer:0 "Nomand Destroyer"
+ nomad_destroyer_plural:0 "Nomad Destroyers"
+ slavery_allowed_regulated_xenos_only:0 "Regulated Xenos Slaves"
+ slavery_allowed_regulated_xenos_only_desc:0 "This is going away soon so localization really doesn't matter"
+ slavery_allowed_regulated_xenos_only_name:0 "Regulated Xenos Slaves"

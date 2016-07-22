@@ -1528,7 +1528,7 @@ xenophile_democracy = {
 	modifier = {
 		pop_ethic_shift = 0.1
 		influence_gain_add = 0.5
-		pop_migration_time =-0.05
+		pop_other_species_happiness = 0.05
 	}
 
 	
@@ -1558,7 +1558,7 @@ xenophile_democracy_adv = {
 	
 	modifier = {
 		pop_ethic_shift = 0.2
-		pop_migration_time =-0.1
+		pop_other_species_happiness = 0.1
 		influence_gain_add = 1
 	}
 	
@@ -1586,7 +1586,7 @@ xenophile_oligarchy = {
 	
 	modifier = {
 		country_leader_cap = 1
-		max_rivalries = 1
+		pop_other_species_happiness = 0.05
 	}
 	
 	election_term_years = 40
@@ -1638,7 +1638,7 @@ xenophile_oligarchy_adv = {
 	
 	modifier = {
 		country_leader_cap = 2
-		pop_migration_time =-0.1
+		pop_other_species_happiness = 0.1
 	}
 	
 	election_term_years = 40
@@ -1702,7 +1702,7 @@ xenophile_empire = {
 	modifier = {
 		pop_ethic_shift = -0.1
 		influence_gain_add = -0.5
-		max_rivalries = 1
+		pop_other_species_happiness = 0.05
 	}
 	upgrade = xenophile_empire_adv
 }
@@ -1729,7 +1729,7 @@ xenophile_empire_adv = {
 	modifier = {
 		pop_ethic_shift = -0.2
 		influence_gain_add = -1
-		pop_migration_time =-0.1
+		pop_other_species_happiness = 0.1
 	}
 	
 	ruler_title = RT_EMPEROR

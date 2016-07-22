@@ -49,10 +49,10 @@ engineering_research = {
 }
 
 influence = {
-	accumulative = yes
 	AI_category = influence
-	max = 100
 	sector_ignore_cost = yes
+	accumulative = yes
+	max = 1
 }
 
 ###########################

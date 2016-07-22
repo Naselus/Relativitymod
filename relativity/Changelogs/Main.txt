@@ -366,3 +366,7 @@ Version 102.0.1
 * Added Collectivist government types
 * Added Xenophilic and Individualist government types.
 * Unlocked old government type restrictions (so individualists and collectivists are no longer locked out of dictatorships/democracies, respectively).
+* Influence accumulation removed.
+* added placeholder icons for the missing building GFX
+* Fixed some broken localizations.
+* Cleared up all the remaining startup bugs in the error log (aside from the duplicate reptile battleship sections).
