@@ -7,7 +7,12 @@
 ################
 
 # Military Democracy
-military_republic = {
+
+
+# Military Autocracy
+military_dictatorship = {
+	icon = "gfx/interface/icons/governments/militarist_empire.dds"
+	
 	potential = {
 		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
 	}
@@ -20,22 +25,44 @@ military_republic = {
 	}
 	
 	modifier = {
-		pop_ethic_shift = 0.1
+		pop_ethic_shift = -0.1
 		navy_size_mult = 0.1
-		influence_gain_add = 0.5
+		influence_gain_add = -0.5
 	}
 	
-	uses_mandates = yes
-	election_term_years = 5
-	re_election_allowed = yes
-	election_type = democratic
+	election_type = oligarchic
+	election_term_years = 0
 	
-	ruler_title = RT_CONSUL
-	upgrade = martial_demarchy
+	max_election_candidates = 4
+	election_candidates = {
+		modifier = {
+			add = 1000
+			leader_class = ruler
+			exists = pop_faction
+			pop_faction = {
+				AND = {
+					is_scope_valid = yes
+					is_pop_faction_type = loyalist
+				}
+			}
+		}
+		modifier = {
+			add = 100
+			OR = {
+				leader_class = admiral
+				leader_class = general
+			}
+		}
+	}
+	
+	ruler_title = RT_GRAND_MARSHAL
+	can_build_ruler_ship = yes
+	upgrade = martial_empire
 }
 
-# Advanced Military Democracy
-martial_demarchy = {
+# Advanced Military Autocracy
+martial_empire = {
+	icon = "gfx/interface/icons/governments/militarist_empire_adv.dds"
 	prerequisites = { "tech_galactic_administration" }
 	
 	potential = {
@@ -50,24 +77,46 @@ martial_demarchy = {
 	}
 	
 	modifier = {
-		pop_ethic_shift = 0.2
+		pop_ethic_shift = -0.2
 		navy_size_mult = 0.2
-		influence_gain_add = 1
+		influence_gain_add = -1
 	}
 	
-	uses_mandates = yes
-	election_term_years = 5
-	re_election_allowed = yes
-	election_type = democratic
+	election_type = oligarchic
+	election_term_years = 0
 	
-	ruler_title = RT_LORD_PROTECTOR
-	ruler_title_female = RT_LADY_PROTECTOR
+	max_election_candidates = 4
+	election_candidates = {
+		modifier = {
+			add = 1000
+			leader_class = ruler
+			exists = pop_faction
+			pop_faction = {
+				AND = {
+					is_scope_valid = yes
+					is_pop_faction_type = loyalist
+				}
+			}
+		}
+		modifier = {
+			add = 100
+			OR = {
+				leader_class = admiral
+				leader_class = general
+			}
+		}
+	}
+	
+	ruler_title = RT_IMPERATOR
+	ruler_title_female = RT_IMPERATRIX
 	
 	pickable_at_start = no
+	can_build_ruler_ship = yes
 }
 
 # Military Oligarchy
 military_junta = {
+	icon = "gfx/interface/icons/governments/militarist_oligarchy.dds"
 	potential = {
 		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
 	}
@@ -121,6 +170,7 @@ military_junta = {
 
 # Advanced Military Oligarchy
 ordered_stratocracy = {
+	icon = "gfx/interface/icons/governments/militarist_oligarchy_adv.dds"
 	prerequisites = { "tech_galactic_administration" }
 
 	potential = {
@@ -175,10 +225,8 @@ ordered_stratocracy = {
 	pickable_at_start = no
 }
 
-# Military Autocracy
-military_dictatorship = {
-	icon = "gfx/interface/icons/governments/military_dictatorship.dds"
-	
+military_republic = {
+	icon = "gfx/interface/icons/governments/militarist_democracy.dds"
 	potential = {
 		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
 	}
@@ -187,119 +235,13 @@ military_dictatorship = {
 		OR = {
 			has_ethic = "ethic_militarist"
 			has_ethic = "ethic_fanatic_militarist"
-		}
-	}
-	
-	modifier = {
-		pop_ethic_shift = -0.1
-		navy_size_mult = 0.1
-		influence_gain_add = -0.5
-	}
-	
-	election_type = oligarchic
-	election_term_years = 0
-	
-	max_election_candidates = 4
-	election_candidates = {
-		modifier = {
-			add = 1000
-			leader_class = ruler
-			exists = pop_faction
-			pop_faction = {
-				AND = {
-					is_scope_valid = yes
-					is_pop_faction_type = loyalist
-				}
-			}
-		}
-		modifier = {
-			add = 100
-			OR = {
-				leader_class = admiral
-				leader_class = general
-			}
-		}
-	}
-	
-	ruler_title = RT_GRAND_MARSHAL
-	can_build_ruler_ship = yes
-	upgrade = martial_empire
-}
-
-# Advanced Military Autocracy
-martial_empire = {
-	prerequisites = { "tech_galactic_administration" }
-	
-	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
-	}
-
-	ethics = {
-		OR = {
-			has_ethic = "ethic_militarist"
-			has_ethic = "ethic_fanatic_militarist"
-		}
-	}
-	
-	modifier = {
-		pop_ethic_shift = -0.2
-		navy_size_mult = 0.2
-		influence_gain_add = -1
-	}
-	
-	election_type = oligarchic
-	election_term_years = 0
-	
-	max_election_candidates = 4
-	election_candidates = {
-		modifier = {
-			add = 1000
-			leader_class = ruler
-			exists = pop_faction
-			pop_faction = {
-				AND = {
-					is_scope_valid = yes
-					is_pop_faction_type = loyalist
-				}
-			}
-		}
-		modifier = {
-			add = 100
-			OR = {
-				leader_class = admiral
-				leader_class = general
-			}
-		}
-	}
-	
-	ruler_title = RT_IMPERATOR
-	ruler_title_female = RT_IMPERATRIX
-	
-	pickable_at_start = no
-	can_build_ruler_ship = yes
-}
-
-################
-# SPIRITUALIST
-################
-
-# Spiritualist Democracy
-theocratic_republic = {
-	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
-	}
-
-	ethics = {
-		OR = {
-			has_ethic = "ethic_spiritualist"
-			has_ethic = "ethic_fanatic_spiritualist"
 		}
 	}
 	
 	modifier = {
 		pop_ethic_shift = 0.1
-		pop_happiness = 0.1
-		influence_gain_add = 0.5		
+		navy_size_mult = 0.1
+		influence_gain_add = 0.5
 	}
 	
 	uses_mandates = yes
@@ -307,12 +249,13 @@ theocratic_republic = {
 	re_election_allowed = yes
 	election_type = democratic
 	
-	ruler_title = RT_REVERED_ELDER
-	upgrade = transcendent_republic
+	ruler_title = RT_CONSUL
+	upgrade = martial_demarchy
 }
 
-# Advanced Spiritualist Democracy
-transcendent_republic = {
+# Advanced Military Democracy
+martial_demarchy = {
+	icon = "gfx/interface/icons/governments/militarist_democracy_adv.dds"
 	prerequisites = { "tech_galactic_administration" }
 	
 	potential = {
@@ -321,14 +264,14 @@ transcendent_republic = {
 
 	ethics = {
 		OR = {
-			has_ethic = "ethic_spiritualist"
-			has_ethic = "ethic_fanatic_spiritualist"
+			has_ethic = "ethic_militarist"
+			has_ethic = "ethic_fanatic_militarist"
 		}
 	}
 	
 	modifier = {
 		pop_ethic_shift = 0.2
-		pop_happiness = 0.2
+		navy_size_mult = 0.2
 		influence_gain_add = 1
 	}
 	
@@ -337,14 +280,316 @@ transcendent_republic = {
 	re_election_allowed = yes
 	election_type = democratic
 	
-	ruler_title = RT_HIGH_PRIEST
-	ruler_title_female = RT_HIGH_PRIESTESS
+	ruler_title = RT_LORD_PROTECTOR
+	ruler_title_female = RT_LADY_PROTECTOR
+	
+	pickable_at_start = no
+}
+
+###################
+# PACIFIST
+###################
+
+# Pacifist Democracy
+moral_democracy = {
+icon = "gfx/interface/icons/governments/pacifist_democracy.dds"
+	potential = {
+		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+	}
+
+	ethics = {
+		OR = {
+			has_ethic = "ethic_pacifist"
+			has_ethic = "ethic_fanatic_pacifist"
+		}
+	}
+	
+	modifier = {
+		pop_ethic_shift = 0.1
+		tile_resource_energy_mult = 0.05
+		influence_gain_add = 0.5
+	}
+	
+	uses_mandates = yes
+	election_term_years = 5
+	re_election_allowed = yes
+	election_type = democratic
+	
+	ruler_title = RT_PRIME_MINISTER
+	upgrade = irenic_democracy
+}
+
+# Advanced Pacifist Democracy
+irenic_democracy = {
+icon = "gfx/interface/icons/governments/pacifist_democracy_adv.dds"
+	prerequisites = { "tech_galactic_administration" }
+
+	potential = {
+		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+	}
+
+	ethics = {
+		OR = {
+			has_ethic = "ethic_pacifist"
+			has_ethic = "ethic_fanatic_pacifist"
+		}
+	}
+	
+	modifier = {
+		pop_ethic_shift = 0.2
+		tile_resource_energy_mult = 0.1
+		influence_gain_add = 1
+	}
+	
+	uses_mandates = yes
+	election_term_years = 5
+	re_election_allowed = yes
+	election_type = democratic
+	
+	ruler_title = RT_CENSOR
+	
+	pickable_at_start = no
+}
+
+# Pacifist Oligarchy
+peaceful_bureaucracy = {
+icon = "gfx/interface/icons/governments/pacifist_oligarchy.dds"
+	potential = {
+		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+	}
+
+	ethics = {
+		OR = {
+			has_ethic = "ethic_pacifist"
+			has_ethic = "ethic_fanatic_pacifist"
+		}
+	}
+	
+	modifier = {
+		tile_resource_energy_mult = 0.05
+		country_leader_cap = 1
+	}
+	
+	election_term_years = 40
+	election_term_variance = 10 # +/- 10 years
+	election_type = oligarchic
+	can_have_emergency_elections = yes
+	emergency_election_cost = 0
+	has_agendas = yes
+	
+	max_election_candidates = 4
+	election_candidates = {
+		modifier = {
+			add = 1000
+			OR = {
+				leader_class = ruler
+				AND = {
+					exists = pop_faction
+					pop_faction = {
+						is_scope_valid = yes
+						is_pop_faction_type = loyalist
+					}
+				}
+			}
+		}
+		modifier = {
+			add = 100
+			leader_class = governor
+		}
+	}
+	
+	ruler_title = RT_COORDINATOR
+	upgrade = irenic_protectorate
+}
+
+# Advanced Pacifist Oligarchy
+irenic_protectorate = {
+icon = "gfx/interface/icons/governments/pacifist_oligarchy_adv.dds"
+	prerequisites = { "tech_galactic_administration" }
+	
+	potential = {
+		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+	}
+
+	ethics = {
+		OR = {
+			has_ethic = "ethic_pacifist"
+			has_ethic = "ethic_fanatic_pacifist"
+		}
+	}
+	
+	modifier = {
+		tile_resource_energy_mult = 0.1
+		country_leader_cap = 2
+	}
+	
+	election_term_years = 40
+	election_term_variance = 10 # +/- 10 years
+	election_type = oligarchic
+	can_have_emergency_elections = yes
+	emergency_election_cost = 0
+	has_agendas = yes
+	
+	max_election_candidates = 4
+	election_candidates = {
+		modifier = {
+			add = 1000
+			OR = {
+				leader_class = ruler
+				AND = {
+					exists = pop_faction
+					pop_faction = {
+						is_scope_valid = yes
+						is_pop_faction_type = loyalist
+					}
+				}
+			}
+		}
+		modifier = {
+			add = 100
+			leader_class = governor
+		}
+	}
+	
+	ruler_title = RT_PROTECTOR
+	
+	pickable_at_start = no
+}
+
+# Pacifist Autocracy
+enlightened_monarchy = {
+icon = "gfx/interface/icons/governments/pacifist_empire.dds"
+	has_heir = yes
+	use_regnal_names = yes
+	dynastic_last_names = yes
+	
+	potential = {
+		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+	}
+
+	ethics = {
+		OR = {
+			has_ethic = "ethic_pacifist"
+			has_ethic = "ethic_fanatic_pacifist"
+		}
+	}
+	
+	modifier = {
+		pop_ethic_shift = -0.1
+		tile_resource_energy_mult = 0.05
+		influence_gain_add = -0.5
+	}
+	
+	ruler_title = RT_KING
+	ruler_title_female = RT_QUEEN
+	heir_title = HT_CROWN_PRINCE
+	heir_title_female = HT_CROWN_PRINCESS
+	upgrade = irenic_monarchy
+}
+
+# Advanced Pacifist Autocracy
+irenic_monarchy = {
+icon = "gfx/interface/icons/governments/pacifist_empire_adv.dds"
+	prerequisites = { "tech_galactic_administration" }
+	has_heir = yes
+	use_regnal_names = yes
+	dynastic_last_names = yes
+	
+	potential = {
+		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+	}
+
+	ethics = {
+		OR = {
+			has_ethic = "ethic_pacifist"
+			has_ethic = "ethic_fanatic_pacifist"
+		}
+	}
+	
+	modifier = {
+		pop_ethic_shift = -0.2
+		tile_resource_energy_mult = 0.1
+		influence_gain_add = -1
+	}
+	
+	ruler_title = RT_HIGH_KING
+	ruler_title_female = RT_HIGH_QUEEN
+	heir_title = HT_CROWN_PRINCE
+	heir_title_female = HT_CROWN_PRINCESS
+	
+	pickable_at_start = no
+}
+
+################
+# SPIRITUALIST
+################
+
+# Spiritualist Autocracy
+divine_mandate = {
+	icon = "gfx/interface/icons/governments/spiritualist_empire.dds"
+	has_heir = yes
+	use_regnal_names = yes
+	dynastic_last_names = yes
+	
+	potential = {
+		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+	}
+
+	ethics = {
+		OR = {
+			has_ethic = "ethic_spiritualist"
+			has_ethic = "ethic_fanatic_spiritualist"
+		}
+	}
+	
+	modifier = {
+		pop_ethic_shift = -0.1
+		pop_happiness = 0.1
+		influence_gain_add = -0.5
+	}
+	
+	ruler_title = RT_ARCHPROPHET
+	ruler_title_female = RT_ARCHPROPHETESS
+	heir_title = HT_PRIEST
+	heir_title_female = HT_PRIESTESS
+	upgrade = transcendent_empire
+}
+
+# Advanced Spiritualist Autocracy
+transcendent_empire = {
+	icon = "gfx/interface/icons/governments/spiritualist_empire_adv.dds"
+	prerequisites = { "tech_galactic_administration" }
+	has_heir = yes
+	use_regnal_names = yes
+	dynastic_last_names = yes
+	
+	potential = {
+		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+	}
+
+	ethics = {
+		OR = {
+			has_ethic = "ethic_spiritualist"
+			has_ethic = "ethic_fanatic_spiritualist"
+		}
+	}
+	
+	modifier = {
+		pop_ethic_shift = -0.2
+		pop_happiness = 0.2
+		influence_gain_add = -1
+	}
+	
+	ruler_title = RT_GOD_EMPEROR
+	ruler_title_female = RT_GOD_EMPRESS
+	heir_title = HT_SAINT
 	
 	pickable_at_start = no
 }
 
 # Spiritualist Oligarchy
 theocratic_oligarchy = {
+	icon = "gfx/interface/icons/governments/spiritualist_oligarchy.dds"
 	potential = {
 		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
 	}
@@ -396,6 +641,7 @@ theocratic_oligarchy = {
 
 # Advanced Spiritualist Oligarchy
 transcendent_oligarchy = {
+	icon = "gfx/interface/icons/governments/spiritualist_oligarchy_adv.dds"
 	prerequisites = { "tech_galactic_administration" }
 
 	potential = {
@@ -448,12 +694,10 @@ transcendent_oligarchy = {
 	pickable_at_start = no
 }
 
-# Spiritualist Autocracy
-divine_mandate = {
-	has_heir = yes
-	use_regnal_names = yes
-	dynastic_last_names = yes
-	
+
+# Spiritualist Democracy
+theocratic_republic = {
+	icon = "gfx/interface/icons/governments/spiritualist_democracy.dds"
 	potential = {
 		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
 	}
@@ -466,24 +710,24 @@ divine_mandate = {
 	}
 	
 	modifier = {
-		pop_ethic_shift = -0.1
+		pop_ethic_shift = 0.1
 		pop_happiness = 0.1
-		influence_gain_add = -0.5
+		influence_gain_add = 0.5		
 	}
 	
-	ruler_title = RT_ARCHPROPHET
-	ruler_title_female = RT_ARCHPROPHETESS
-	heir_title = HT_PRIEST
-	heir_title_female = HT_PRIESTESS
-	upgrade = transcendent_empire
+	uses_mandates = yes
+	election_term_years = 5
+	re_election_allowed = yes
+	election_type = democratic
+	
+	ruler_title = RT_REVERED_ELDER
+	upgrade = transcendent_republic
 }
 
-# Advanced Spiritualist Autocracy
-transcendent_empire = {
+# Advanced Spiritualist Democracy
+transcendent_republic = {
+	icon = "gfx/interface/icons/governments/spiritualist_democracy_adv.dds"
 	prerequisites = { "tech_galactic_administration" }
-	has_heir = yes
-	use_regnal_names = yes
-	dynastic_last_names = yes
 	
 	potential = {
 		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
@@ -497,17 +741,22 @@ transcendent_empire = {
 	}
 	
 	modifier = {
-		pop_ethic_shift = -0.2
+		pop_ethic_shift = 0.2
 		pop_happiness = 0.2
-		influence_gain_add = -1
+		influence_gain_add = 1
 	}
 	
-	ruler_title = RT_GOD_EMPEROR
-	ruler_title_female = RT_GOD_EMPRESS
-	heir_title = HT_SAINT
+	uses_mandates = yes
+	election_term_years = 5
+	re_election_allowed = yes
+	election_type = democratic
+	
+	ruler_title = RT_HIGH_PRIEST
+	ruler_title_female = RT_HIGH_PRIESTESS
 	
 	pickable_at_start = no
 }
+
 
 ###################
 # MATERIALIST
@@ -515,6 +764,7 @@ transcendent_empire = {
 
 # Materialist Democracy
 direct_democracy = {
+	icon = "gfx/interface/icons/governments/materialist_democracy.dds"
 	potential = {
 		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
 	}
@@ -543,6 +793,7 @@ direct_democracy = {
 
 # Advanced Materialist Democracy
 subconscious_consensus = {
+icon = "gfx/interface/icons/governments/materialist_democracy_adv.dds"
 	prerequisites = { "tech_galactic_administration" }
 	
 	potential = {
@@ -574,6 +825,7 @@ subconscious_consensus = {
 
 # Materialist Oligarchy
 science_directorate = {
+icon = "gfx/interface/icons/governments/materialist_oligarchy.dds"
 	potential = {
 		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
 	}
@@ -624,6 +876,7 @@ science_directorate = {
 
 # Advanced Materialist Oligarchy
 illuminated_technocracy = {
+icon = "gfx/interface/icons/governments/materialist_oligarchy_adv.dds"
 	prerequisites = { "tech_galactic_administration" }
 	
 	potential = {
@@ -678,6 +931,7 @@ illuminated_technocracy = {
 
 # Materialist Autocracy
 despotic_hegemony = {
+icon = "gfx/interface/icons/governments/materialist_empire.dds"
 	has_heir = yes
 	use_regnal_names = yes
 	dynastic_last_names = yes
@@ -706,6 +960,7 @@ despotic_hegemony = {
 
 # Advanced Materialist Autocracy
 ai_overlordship = {
+icon = "gfx/interface/icons/governments/materialist_empire_adv.dds"
 	prerequisites = { "tech_galactic_administration" }
 	has_heir = yes
 	use_regnal_names = yes
@@ -734,174 +989,11 @@ ai_overlordship = {
 	pickable_at_start = no
 }
 
-###################
-# PACIFIST
-###################
+############Individualists
 
-# Pacifist Democracy
-moral_democracy = {
-	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
-	}
-
-	ethics = {
-		OR = {
-			has_ethic = "ethic_pacifist"
-			has_ethic = "ethic_fanatic_pacifist"
-		}
-	}
-	
-	modifier = {
-		pop_ethic_shift = 0.1
-		tile_resource_energy_mult = 0.05
-		influence_gain_add = 0.5
-	}
-	
-	uses_mandates = yes
-	election_term_years = 5
-	re_election_allowed = yes
-	election_type = democratic
-	
-	ruler_title = RT_PRIME_MINISTER
-	upgrade = irenic_democracy
-}
-
-# Advanced Pacifist Democracy
-irenic_democracy = {
-	prerequisites = { "tech_galactic_administration" }
-
-	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
-	}
-
-	ethics = {
-		OR = {
-			has_ethic = "ethic_pacifist"
-			has_ethic = "ethic_fanatic_pacifist"
-		}
-	}
-	
-	modifier = {
-		pop_ethic_shift = 0.2
-		tile_resource_energy_mult = 0.1
-		influence_gain_add = 1
-	}
-	
-	uses_mandates = yes
-	election_term_years = 5
-	re_election_allowed = yes
-	election_type = democratic
-	
-	ruler_title = RT_CENSOR
-	
-	pickable_at_start = no
-}
-
-# Pacifist Oligarchy
-peaceful_bureaucracy = {
-	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
-	}
-
-	ethics = {
-		OR = {
-			has_ethic = "ethic_pacifist"
-			has_ethic = "ethic_fanatic_pacifist"
-		}
-	}
-	
-	modifier = {
-		tile_resource_energy_mult = 0.05
-		country_leader_cap = 1
-	}
-	
-	election_term_years = 40
-	election_term_variance = 10 # +/- 10 years
-	election_type = oligarchic
-	can_have_emergency_elections = yes
-	emergency_election_cost = 0
-	has_agendas = yes
-	
-	max_election_candidates = 4
-	election_candidates = {
-		modifier = {
-			add = 1000
-			OR = {
-				leader_class = ruler
-				AND = {
-					exists = pop_faction
-					pop_faction = {
-						is_scope_valid = yes
-						is_pop_faction_type = loyalist
-					}
-				}
-			}
-		}
-		modifier = {
-			add = 100
-			leader_class = governor
-		}
-	}
-	
-	ruler_title = RT_COORDINATOR
-	upgrade = irenic_protectorate
-}
-
-# Advanced Pacifist Oligarchy
-irenic_protectorate = {
-	prerequisites = { "tech_galactic_administration" }
-	
-	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
-	}
-
-	ethics = {
-		OR = {
-			has_ethic = "ethic_pacifist"
-			has_ethic = "ethic_fanatic_pacifist"
-		}
-	}
-	
-	modifier = {
-		tile_resource_energy_mult = 0.1
-		country_leader_cap = 2
-	}
-	
-	election_term_years = 40
-	election_term_variance = 10 # +/- 10 years
-	election_type = oligarchic
-	can_have_emergency_elections = yes
-	emergency_election_cost = 0
-	has_agendas = yes
-	
-	max_election_candidates = 4
-	election_candidates = {
-		modifier = {
-			add = 1000
-			OR = {
-				leader_class = ruler
-				AND = {
-					exists = pop_faction
-					pop_faction = {
-						is_scope_valid = yes
-						is_pop_faction_type = loyalist
-					}
-				}
-			}
-		}
-		modifier = {
-			add = 100
-			leader_class = governor
-		}
-	}
-	
-	ruler_title = RT_PROTECTOR
-	
-	pickable_at_start = no
-}
-
-# Pacifist Autocracy
-enlightened_monarchy = {
+#  Autocracy
+individualist_empire = {
+	can_build_ruler_military_station = yes
 	has_heir = yes
 	use_regnal_names = yes
 	dynastic_last_names = yes
@@ -912,27 +1004,30 @@ enlightened_monarchy = {
 
 	ethics = {
 		OR = {
-			has_ethic = "ethic_pacifist"
-			has_ethic = "ethic_fanatic_pacifist"
+			has_ethic = "ethic_individualist"
+			has_ethic = "ethic_fanatic_individualist"
 		}
 	}
+	
+	ruler_title = RT_EMPEROR
+	ruler_title_female = RT_EMPRESS
+	heir_title = HT_CROWN_PRINCE
+	heir_title_female = HT_CROWN_PRINCESS
+	
+	default_pop_factions = { loyalist }
 	
 	modifier = {
 		pop_ethic_shift = -0.1
-		tile_resource_energy_mult = 0.05
 		influence_gain_add = -0.5
+		planet_building_cost_mult = -0.05
 	}
-	
-	ruler_title = RT_KING
-	ruler_title_female = RT_QUEEN
-	heir_title = HT_CROWN_PRINCE
-	heir_title_female = HT_CROWN_PRINCESS
-	upgrade = irenic_monarchy
+	upgrade = individualist_empire_adv
 }
 
-# Advanced Pacifist Autocracy
-irenic_monarchy = {
+# Advanced  Autocracy
+individualist_empire_adv = {
 	prerequisites = { "tech_galactic_administration" }
+	can_build_ruler_military_station = yes
 	has_heir = yes
 	use_regnal_names = yes
 	dynastic_last_names = yes
@@ -943,96 +1038,40 @@ irenic_monarchy = {
 
 	ethics = {
 		OR = {
-			has_ethic = "ethic_pacifist"
-			has_ethic = "ethic_fanatic_pacifist"
+			has_ethic = "ethic_individualist"
+			has_ethic = "ethic_fanatic_individualist"
 		}
 	}
 	
 	modifier = {
 		pop_ethic_shift = -0.2
-		tile_resource_energy_mult = 0.1
 		influence_gain_add = -1
+		planet_building_cost_mult =-0.1
 	}
 	
-	ruler_title = RT_HIGH_KING
-	ruler_title_female = RT_HIGH_QUEEN
+	ruler_title = RT_EMPEROR
+	ruler_title_female = RT_EMPRESS
 	heir_title = HT_CROWN_PRINCE
 	heir_title_female = HT_CROWN_PRINCESS
 	
 	pickable_at_start = no
 }
 
-######################
-# GENERIC
-######################
-
-# Generic Democracy
-indirect_democracy = {
+#  Oligarchy
+individualist_oligarchy = {
 	potential = {
 		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
 	}
-
 	ethics = {
-		NOT = { has_ethic = "ethic_collectivist" }
-		NOT = { has_ethic = "ethic_fanatic_collectivist" }
-	}
-	
-	modifier = {
-		pop_ethic_shift = 0.1
-		influence_gain_add = 0.5
-	}
-
-	
-	uses_mandates = yes
-	election_term_years = 5
-	re_election_allowed = yes
-	election_type = democratic
-	
-	ruler_title = RT_PRESIDENT
-	upgrade = democratic_utopia
-}
-
-# Advanced Generic Democracy
-democratic_utopia = {
-	prerequisites = { "tech_galactic_administration" }
-	
-	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
-	}
-
-	ethics = {
-		NOT = { has_ethic = "ethic_collectivist" }
-		NOT = { has_ethic = "ethic_fanatic_collectivist" }
-	}
-	
-	modifier = {
-		pop_ethic_shift = 0.2
-		influence_gain_add = 1
-	}
-	
-	uses_mandates = yes
-	election_term_years = 5
-	re_election_allowed = yes
-	election_type = democratic
-	
-	ruler_title = RT_PRESIDENT
-	
-	pickable_at_start = no
-}
-
-# Generic Oligarchy
-plutocratic_oligarchy = {
-	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
-	}
-
-	ethics = {
-		NOT = { has_ethic = "ethic_fanatic_collectivist" }
-		NOT = { has_ethic = "ethic_fanatic_individualist" }
+		OR = {
+			has_ethic = "ethic_individualist"
+			has_ethic = "ethic_fanatic_individualist"
+		}
 	}
 	
 	modifier = {
 		country_leader_cap = 1
+		planet_building_cost_mult =-0.05
 	}
 	
 	election_term_years = 40
@@ -1064,11 +1103,11 @@ plutocratic_oligarchy = {
 	}
 	
 	ruler_title = RT_CHIEF_EXECUTIVE
-	upgrade = mega_corporation
+	upgrade = individualist_oligarchy_adv
 }
 
-# Advanced Generic Oligarchy
-mega_corporation = {
+# Advanced Oligarchy
+individualist_oligarchy_adv = {
 	prerequisites = { "tech_galactic_administration" }
 	
 	potential = {
@@ -1076,12 +1115,15 @@ mega_corporation = {
 	}
 
 	ethics = {
-		NOT = { has_ethic = "ethic_fanatic_collectivist" }
-		NOT = { has_ethic = "ethic_fanatic_individualist" }
+		OR = {
+			has_ethic = "ethic_individualist"
+			has_ethic = "ethic_fanatic_individualist"
+		}
 	}
 	
 	modifier = {
 		country_leader_cap = 2
+		planet_building_cost_mult =-0.1
 	}
 	
 	election_term_years = 40
@@ -1117,8 +1159,232 @@ mega_corporation = {
 	pickable_at_start = no
 }
 
-# Generic Autocracy
-despotic_empire = {
+
+individualist_democracy = {
+	potential = {
+		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+	}
+
+	ethics = {
+		OR = {
+			has_ethic = "ethic_individualist"
+			has_ethic = "ethic_fanatic_individualist"
+		}
+	}
+	
+	modifier = {
+		pop_ethic_shift = 0.1
+		influence_gain_add = 0.5
+		planet_building_cost_mult =-0.05
+	}
+
+	
+	uses_mandates = yes
+	election_term_years = 5
+	re_election_allowed = yes
+	election_type = democratic
+	
+	ruler_title = RT_PRESIDENT
+	upgrade = individualist_democracy_adv
+}
+
+# Advanced Democracy
+individualist_democracy_adv = {
+	prerequisites = { "tech_galactic_administration" }
+	
+	potential = {
+		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+	}
+
+	ethics = {
+		OR = {
+			has_ethic = "ethic_individualist"
+			has_ethic = "ethic_fanatic_individualist"
+		}
+	}
+	
+	modifier = {
+		pop_ethic_shift = 0.2
+		planet_building_cost_mult =-0.1
+		influence_gain_add = 1
+	}
+	
+	uses_mandates = yes
+	election_term_years = 5
+	re_election_allowed = yes
+	election_type = democratic
+	
+	ruler_title = RT_PRESIDENT
+	
+	pickable_at_start = no
+}
+
+
+############Collectivists
+
+collectivist_democracy = {
+	potential = {
+		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+	}
+
+	ethics = {
+		OR = {
+			has_ethic = "ethic_collectivist"
+			has_ethic = "ethic_fanatic_collectivist"
+		}
+	}
+	
+	modifier = {
+		pop_ethic_shift = 0.1
+		influence_gain_add = 0.5
+		building_time_mult =-0.05
+	}
+
+	
+	uses_mandates = yes
+	election_term_years = 5
+	re_election_allowed = yes
+	election_type = democratic
+	
+	ruler_title = RT_PRESIDENT
+	upgrade = collectivist_democracy_adv
+}
+
+# Advanced Democracy
+collectivist_democracy_adv = {
+	prerequisites = { "tech_galactic_administration" }
+	
+	potential = {
+		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+	}
+
+	ethics = {
+		OR = {
+			has_ethic = "ethic_collectivist"
+			has_ethic = "ethic_fanatic_collectivist"
+		}
+	}
+	
+	modifier = {
+		pop_ethic_shift = 0.2
+		building_time_mult =-0.1
+		influence_gain_add = 1
+	}
+	
+	uses_mandates = yes
+	election_term_years = 5
+	re_election_allowed = yes
+	election_type = democratic
+	
+	ruler_title = RT_PRESIDENT
+	
+	pickable_at_start = no
+}
+
+#  Oligarchy
+collectivist_oligarchy = {
+	potential = {
+		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+	}
+	ethics = {
+		OR = {
+			has_ethic = "ethic_collectivist"
+			has_ethic = "ethic_fanatic_collectivist"
+		}
+	}
+	
+	modifier = {
+		country_leader_cap = 1
+		building_time_mult = -0.05
+	}
+	
+	election_term_years = 40
+	election_term_variance = 10 # +/- 10 years
+	election_type = oligarchic
+	can_have_emergency_elections = yes
+	emergency_election_cost = 0
+	has_agendas = yes
+	
+	max_election_candidates = 4
+	election_candidates = {
+		modifier = {
+			add = 1000
+			OR = {
+				leader_class = ruler
+				AND = {
+					exists = pop_faction
+					pop_faction = {
+						is_scope_valid = yes
+						is_pop_faction_type = loyalist
+					}
+				}
+			}
+		}
+		modifier = {
+			add = 100
+			leader_class = governor
+		}
+	}
+	
+	ruler_title = RT_CHIEF_EXECUTIVE
+	upgrade = collectivist_oligarchy_adv
+}
+
+# Advanced Oligarchy
+collectivist_oligarchy_adv = {
+	prerequisites = { "tech_galactic_administration" }
+	
+	potential = {
+		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+	}
+
+	ethics = {
+		OR = {
+			has_ethic = "ethic_collectivist"
+			has_ethic = "ethic_fanatic_collectivist"
+		}
+	}
+	
+	modifier = {
+		country_leader_cap = 2
+		building_time_mult =-0.1
+	}
+	
+	election_term_years = 40
+	election_term_variance = 10 # +/- 10 years
+	election_type = oligarchic
+	can_have_emergency_elections = yes
+	emergency_election_cost = 0
+	has_agendas = yes
+	
+	max_election_candidates = 4
+	election_candidates = {
+		modifier = {
+			add = 1000
+			OR = {
+				leader_class = ruler
+				AND = {
+					exists = pop_faction
+					pop_faction = {
+						is_scope_valid = yes
+						is_pop_faction_type = loyalist
+					}
+				}
+			}
+		}
+		modifier = {
+			add = 100
+			leader_class = governor
+		}
+	}
+	
+	ruler_title = RT_CEO
+	
+	pickable_at_start = no
+}
+
+#  Autocracy
+collectivist_empire = {
 	can_build_ruler_military_station = yes
 	has_heir = yes
 	use_regnal_names = yes
@@ -1129,8 +1395,10 @@ despotic_empire = {
 	}
 
 	ethics = {
-		NOT = { has_ethic = "ethic_individualist" }
-		NOT = { has_ethic = "ethic_fanatic_individualist" }
+		OR = {
+			has_ethic = "ethic_collectivist"
+			has_ethic = "ethic_fanatic_collectivist"
+		}
 	}
 	
 	ruler_title = RT_EMPEROR
@@ -1143,12 +1411,13 @@ despotic_empire = {
 	modifier = {
 		pop_ethic_shift = -0.1
 		influence_gain_add = -0.5
+		building_time_mult =-0.05
 	}
-	upgrade = star_empire
+	upgrade = collectivist_empire_adv
 }
 
-# Advanced Generic Autocracy
-star_empire = {
+# Advanced  Autocracy
+collectivist_empire_adv = {
 	prerequisites = { "tech_galactic_administration" }
 	can_build_ruler_military_station = yes
 	has_heir = yes
@@ -1160,13 +1429,16 @@ star_empire = {
 	}
 
 	ethics = {
-		NOT = { has_ethic = "ethic_individualist" }
-		NOT = { has_ethic = "ethic_fanatic_individualist" }
+		OR = {
+			has_ethic = "ethic_collectivist"
+			has_ethic = "ethic_fanatic_collectivist"
+		}
 	}
 	
 	modifier = {
 		pop_ethic_shift = -0.2
 		influence_gain_add = -1
+		building_time_mult =-0.1
 	}
 	
 	ruler_title = RT_EMPEROR
@@ -1177,115 +1449,15 @@ star_empire = {
 	pickable_at_start = no
 }
 
-
-######################
-# Other
-######################
-
-### Primitive Governments
-# Primitive Feudalism
-primitive_feudalism = {
-	potential = {
-		is_primitive = yes
-	}
-	
-	modifier = {
-	}
-	
-	pickable_at_start = no
-	
-	ruler_title = RT_KING
-	ruler_title_female = RT_QUEEN
-}
-
-# Fragmented Nations
-fragmented_nations = {
-	potential = {
-		is_primitive = yes
-	}
-	
-	modifier = {
-	}
-	
-	pickable_at_start = no
-	
-	ruler_title = RT_SECRETARY
-}
-
-### Pirate Government
-pirate_codex = {
-	potential = {
-		is_pirate = yes
-	}
-	
-	modifier = {
-		army_upkeep_mult = -1
-		ship_upkeep_mult = -1
-	}
-	
-	pickable_at_start = no
-	
-	ruler_title = RT_KING
-	ruler_title_female = RT_QUEEN
-}
-
-### Fallen Empire Government
-stagnated_ascendancy = {
-	potential = {
-		is_country_type = fallen_empire
-	}
-	
-	modifier = {
-		army_upkeep_mult = -1
-		ship_upkeep_mult = -1
-	}	
-	
-	pickable_at_start = no
-	
-	ruler_title = RT_EMPEROR
-}
-
-### Sentinels Government
-military_order = {
-	icon = "gfx/interface/icons/governments/military_dictatorship.dds"
-	potential = {
-		is_country_type = sentinels
-	}
-	
-	modifier = {
-	}
-	
-	pickable_at_start = no
-	
-	ruler_title = RT_GRAND_MASTER
-}
-
-### AI Government
-machine_consciousness = {
-	icon = "gfx/interface/icons/governments/ai_overlordship.dds"
-	potential = {
-		is_country_type = ai_empire
-	}
-	
-	modifier = {
-		army_upkeep_mult = -0.5
-		ship_upkeep_mult = -0.5
-		spaceport_ship_build_cost_mult = -0.3
-		country_ship_upgrade_cost_mult = -0.5
-		planet_building_cost_mult = -0.2
-		all_technology_research_speed = 0.3
-	}
-	
-	pickable_at_start = no
-	
-	ruler_title = RT_EMPEROR
-}
-
-
-
-
 ############Xenophobes
-xenophobe_democracy = {
+
+#  Autocracy
+xenophobe_empire = {
+	can_build_ruler_military_station = yes
+	has_heir = yes
+	use_regnal_names = yes
+	dynastic_last_names = yes
+	
 	potential = {
 		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
 	}
@@ -1297,25 +1469,28 @@ xenophobe_democracy = {
 		}
 	}
 	
+	ruler_title = RT_EMPEROR
+	ruler_title_female = RT_EMPRESS
+	heir_title = HT_CROWN_PRINCE
+	heir_title_female = HT_CROWN_PRINCESS
+	
+	default_pop_factions = { loyalist }
+	
 	modifier = {
-		pop_ethic_shift = 0.1
-		influence_gain_add = 0.5
+		pop_ethic_shift = -0.1
+		influence_gain_add = -0.5
 		max_rivalries = 1
 	}
-
-	
-	uses_mandates = yes
-	election_term_years = 5
-	re_election_allowed = yes
-	election_type = democratic
-	
-	ruler_title = RT_PRESIDENT
-	upgrade = xenophobe_democracy_adv
+	upgrade = xenophobe_empire_adv
 }
 
-# Advanced Democracy
-xenophobe_democracy_adv = {
+# Advanced  Autocracy
+xenophobe_empire_adv = {
 	prerequisites = { "tech_galactic_administration" }
+	can_build_ruler_military_station = yes
+	has_heir = yes
+	use_regnal_names = yes
+	dynastic_last_names = yes
 	
 	potential = {
 		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
@@ -1329,17 +1504,15 @@ xenophobe_democracy_adv = {
 	}
 	
 	modifier = {
-		pop_ethic_shift = 0.2
+		pop_ethic_shift = -0.2
+		influence_gain_add = -1
 		max_rivalries = 2
-		influence_gain_add = 1
 	}
 	
-	uses_mandates = yes
-	election_term_years = 5
-	re_election_allowed = yes
-	election_type = democratic
-	
-	ruler_title = RT_PRESIDENT
+	ruler_title = RT_EMPEROR
+	ruler_title_female = RT_EMPRESS
+	heir_title = HT_CROWN_PRINCE
+	heir_title_female = HT_CROWN_PRINCESS
 	
 	pickable_at_start = no
 }
@@ -1446,13 +1619,7 @@ xenophobe_oligarchy_adv = {
 	pickable_at_start = no
 }
 
-#  Autocracy
-xenophobe_empire = {
-	can_build_ruler_military_station = yes
-	has_heir = yes
-	use_regnal_names = yes
-	dynastic_last_names = yes
-	
+xenophobe_democracy = {
 	potential = {
 		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
 	}
@@ -1464,28 +1631,25 @@ xenophobe_empire = {
 		}
 	}
 	
-	ruler_title = RT_EMPEROR
-	ruler_title_female = RT_EMPRESS
-	heir_title = HT_CROWN_PRINCE
-	heir_title_female = HT_CROWN_PRINCESS
-	
-	default_pop_factions = { loyalist }
-	
 	modifier = {
-		pop_ethic_shift = -0.1
-		influence_gain_add = -0.5
+		pop_ethic_shift = 0.1
+		influence_gain_add = 0.5
 		max_rivalries = 1
 	}
-	upgrade = xenophobe_empire_adv
+
+	
+	uses_mandates = yes
+	election_term_years = 5
+	re_election_allowed = yes
+	election_type = democratic
+	
+	ruler_title = RT_PRESIDENT
+	upgrade = xenophobe_democracy_adv
 }
 
-# Advanced  Autocracy
-xenophobe_empire_adv = {
+# Advanced Democracy
+xenophobe_democracy_adv = {
 	prerequisites = { "tech_galactic_administration" }
-	can_build_ruler_military_station = yes
-	has_heir = yes
-	use_regnal_names = yes
-	dynastic_last_names = yes
 	
 	potential = {
 		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
@@ -1499,18 +1663,24 @@ xenophobe_empire_adv = {
 	}
 	
 	modifier = {
-		pop_ethic_shift = -0.2
-		influence_gain_add = -1
+		pop_ethic_shift = 0.2
 		max_rivalries = 2
+		influence_gain_add = 1
 	}
 	
-	ruler_title = RT_EMPEROR
-	ruler_title_female = RT_EMPRESS
-	heir_title = HT_CROWN_PRINCE
-	heir_title_female = HT_CROWN_PRINCESS
+	uses_mandates = yes
+	election_term_years = 5
+	re_election_allowed = yes
+	election_type = democratic
+	
+	ruler_title = RT_PRESIDENT
 	
 	pickable_at_start = no
 }
+
+
+
+
 ############Xenophiles
 
 xenophile_democracy = {
@@ -1742,24 +1912,21 @@ xenophile_empire_adv = {
 
 
 
-############Individualists
 
-individualist_democracy = {
+
+######################
+# GENERIC
+######################
+
+# Generic Democracy
+indirect_democracy = {
 	potential = {
 		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
 	}
 
-	ethics = {
-		OR = {
-			has_ethic = "ethic_individualist"
-			has_ethic = "ethic_fanatic_individualist"
-		}
-	}
-	
 	modifier = {
 		pop_ethic_shift = 0.1
 		influence_gain_add = 0.5
-		planet_building_cost_mult =-0.05
 	}
 
 	
@@ -1769,27 +1936,20 @@ individualist_democracy = {
 	election_type = democratic
 	
 	ruler_title = RT_PRESIDENT
-	upgrade = individualist_democracy_adv
+	upgrade = democratic_utopia
 }
 
-# Advanced Democracy
-individualist_democracy_adv = {
+# Advanced Generic Democracy
+democratic_utopia = {
 	prerequisites = { "tech_galactic_administration" }
 	
 	potential = {
 		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
 	}
 
-	ethics = {
-		OR = {
-			has_ethic = "ethic_individualist"
-			has_ethic = "ethic_fanatic_individualist"
-		}
-	}
 	
 	modifier = {
 		pop_ethic_shift = 0.2
-		planet_building_cost_mult =-0.1
 		influence_gain_add = 1
 	}
 	
@@ -1803,21 +1963,15 @@ individualist_democracy_adv = {
 	pickable_at_start = no
 }
 
-#  Oligarchy
-individualist_oligarchy = {
+# Generic Oligarchy
+plutocratic_oligarchy = {
 	potential = {
 		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
 	}
-	ethics = {
-		OR = {
-			has_ethic = "ethic_individualist"
-			has_ethic = "ethic_fanatic_individualist"
-		}
-	}
+
 	
 	modifier = {
 		country_leader_cap = 1
-		max_rivalries = 1
 	}
 	
 	election_term_years = 40
@@ -1849,27 +2003,20 @@ individualist_oligarchy = {
 	}
 	
 	ruler_title = RT_CHIEF_EXECUTIVE
-	upgrade = individualist_oligarchy_adv
+	upgrade = mega_corporation
 }
 
-# Advanced Oligarchy
-individualist_oligarchy_adv = {
+# Advanced Generic Oligarchy
+mega_corporation = {
 	prerequisites = { "tech_galactic_administration" }
 	
 	potential = {
 		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
 	}
 
-	ethics = {
-		OR = {
-			has_ethic = "ethic_individualist"
-			has_ethic = "ethic_fanatic_individualist"
-		}
-	}
 	
 	modifier = {
 		country_leader_cap = 2
-		planet_building_cost_mult =-0.1
 	}
 	
 	election_term_years = 40
@@ -1905,8 +2052,8 @@ individualist_oligarchy_adv = {
 	pickable_at_start = no
 }
 
-#  Autocracy
-individualist_empire = {
+# Generic Autocracy
+despotic_empire = {
 	can_build_ruler_military_station = yes
 	has_heir = yes
 	use_regnal_names = yes
@@ -1914,13 +2061,6 @@ individualist_empire = {
 	
 	potential = {
 		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
-	}
-
-	ethics = {
-		OR = {
-			has_ethic = "ethic_individualist"
-			has_ethic = "ethic_fanatic_individualist"
-		}
 	}
 	
 	ruler_title = RT_EMPEROR
@@ -1933,13 +2073,12 @@ individualist_empire = {
 	modifier = {
 		pop_ethic_shift = -0.1
 		influence_gain_add = -0.5
-		max_rivalries = 1
 	}
-	upgrade = individualist_empire_adv
+	upgrade = star_empire
 }
 
-# Advanced  Autocracy
-individualist_empire_adv = {
+# Advanced Generic Autocracy
+star_empire = {
 	prerequisites = { "tech_galactic_administration" }
 	can_build_ruler_military_station = yes
 	has_heir = yes
@@ -1948,19 +2087,11 @@ individualist_empire_adv = {
 	
 	potential = {
 		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
-	}
-
-	ethics = {
-		OR = {
-			has_ethic = "ethic_individualist"
-			has_ethic = "ethic_fanatic_individualist"
-		}
 	}
 	
 	modifier = {
 		pop_ethic_shift = -0.2
 		influence_gain_add = -1
-		planet_building_cost_mult =-0.1
 	}
 	
 	ruler_title = RT_EMPEROR
@@ -1972,232 +2103,105 @@ individualist_empire_adv = {
 }
 
 
-############Collectivists
+######################
+# Other
+######################
 
-collectivist_democracy = {
+### Primitive Governments
+# Primitive Feudalism
+primitive_feudalism = {
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
-	}
-
-	ethics = {
-		OR = {
-			has_ethic = "ethic_collectivist"
-			has_ethic = "ethic_fanatic_collectivist"
-		}
+		is_primitive = yes
 	}
 	
 	modifier = {
-		pop_ethic_shift = 0.1
-		influence_gain_add = 0.5
-		building_time_mult =-0.05
 	}
-
-	
-	uses_mandates = yes
-	election_term_years = 5
-	re_election_allowed = yes
-	election_type = democratic
-	
-	ruler_title = RT_PRESIDENT
-	upgrade = collectivist_democracy_adv
-}
-
-# Advanced Democracy
-collectivist_democracy_adv = {
-	prerequisites = { "tech_galactic_administration" }
-	
-	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
-	}
-
-	ethics = {
-		OR = {
-			has_ethic = "ethic_collectivist"
-			has_ethic = "ethic_fanatic_collectivist"
-		}
-	}
-	
-	modifier = {
-		pop_ethic_shift = 0.2
-		building_time_mult =-0.1
-		influence_gain_add = 1
-	}
-	
-	uses_mandates = yes
-	election_term_years = 5
-	re_election_allowed = yes
-	election_type = democratic
-	
-	ruler_title = RT_PRESIDENT
 	
 	pickable_at_start = no
+	
+	ruler_title = RT_KING
+	ruler_title_female = RT_QUEEN
 }
 
-#  Oligarchy
-collectivist_oligarchy = {
+# Fragmented Nations
+fragmented_nations = {
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
-	}
-	ethics = {
-		OR = {
-			has_ethic = "ethic_collectivist"
-			has_ethic = "ethic_fanatic_collectivist"
-		}
+		is_primitive = yes
 	}
 	
 	modifier = {
-		country_leader_cap = 1
-		max_rivalries = 1
 	}
-	
-	election_term_years = 40
-	election_term_variance = 10 # +/- 10 years
-	election_type = oligarchic
-	can_have_emergency_elections = yes
-	emergency_election_cost = 0
-	has_agendas = yes
-	
-	max_election_candidates = 4
-	election_candidates = {
-		modifier = {
-			add = 1000
-			OR = {
-				leader_class = ruler
-				AND = {
-					exists = pop_faction
-					pop_faction = {
-						is_scope_valid = yes
-						is_pop_faction_type = loyalist
-					}
-				}
-			}
-		}
-		modifier = {
-			add = 100
-			leader_class = governor
-		}
-	}
-	
-	ruler_title = RT_CHIEF_EXECUTIVE
-	upgrade = collectivist_oligarchy_adv
-}
-
-# Advanced Oligarchy
-collectivist_oligarchy_adv = {
-	prerequisites = { "tech_galactic_administration" }
-	
-	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
-	}
-
-	ethics = {
-		OR = {
-			has_ethic = "ethic_collectivist"
-			has_ethic = "ethic_fanatic_collectivist"
-		}
-	}
-	
-	modifier = {
-		country_leader_cap = 2
-		building_time_mult =-0.1
-	}
-	
-	election_term_years = 40
-	election_term_variance = 10 # +/- 10 years
-	election_type = oligarchic
-	can_have_emergency_elections = yes
-	emergency_election_cost = 0
-	has_agendas = yes
-	
-	max_election_candidates = 4
-	election_candidates = {
-		modifier = {
-			add = 1000
-			OR = {
-				leader_class = ruler
-				AND = {
-					exists = pop_faction
-					pop_faction = {
-						is_scope_valid = yes
-						is_pop_faction_type = loyalist
-					}
-				}
-			}
-		}
-		modifier = {
-			add = 100
-			leader_class = governor
-		}
-	}
-	
-	ruler_title = RT_CEO
 	
 	pickable_at_start = no
+	
+	ruler_title = RT_SECRETARY
 }
 
-#  Autocracy
-collectivist_empire = {
-	can_build_ruler_military_station = yes
-	has_heir = yes
-	use_regnal_names = yes
-	dynastic_last_names = yes
-	
+### Pirate Government
+pirate_codex = {
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+		is_pirate = yes
 	}
+	
+	modifier = {
+		army_upkeep_mult = -1
+		ship_upkeep_mult = -1
+	}
+	
+	pickable_at_start = no
+	
+	ruler_title = RT_KING
+	ruler_title_female = RT_QUEEN
+}
 
-	ethics = {
-		OR = {
-			has_ethic = "ethic_collectivist"
-			has_ethic = "ethic_fanatic_collectivist"
-		}
+### Fallen Empire Government
+stagnated_ascendancy = {
+	potential = {
+		is_country_type = fallen_empire
 	}
+	
+	modifier = {
+		army_upkeep_mult = -1
+		ship_upkeep_mult = -1
+	}	
+	
+	pickable_at_start = no
 	
 	ruler_title = RT_EMPEROR
-	ruler_title_female = RT_EMPRESS
-	heir_title = HT_CROWN_PRINCE
-	heir_title_female = HT_CROWN_PRINCESS
-	
-	default_pop_factions = { loyalist }
-	
-	modifier = {
-		pop_ethic_shift = -0.1
-		influence_gain_add = -0.5
-		max_rivalries = 1
-	}
-	upgrade = collectivist_empire_adv
 }
 
-# Advanced  Autocracy
-collectivist_empire_adv = {
-	prerequisites = { "tech_galactic_administration" }
-	can_build_ruler_military_station = yes
-	has_heir = yes
-	use_regnal_names = yes
-	dynastic_last_names = yes
-	
+### Sentinels Government
+military_order = {
+	icon = "gfx/interface/icons/governments/military_dictatorship.dds"
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
-	}
-
-	ethics = {
-		OR = {
-			has_ethic = "ethic_collectivist"
-			has_ethic = "ethic_fanatic_collectivist"
-		}
+		is_country_type = sentinels
 	}
 	
 	modifier = {
-		pop_ethic_shift = -0.2
-		influence_gain_add = -1
-		building_time_mult =-0.1
 	}
-	
-	ruler_title = RT_EMPEROR
-	ruler_title_female = RT_EMPRESS
-	heir_title = HT_CROWN_PRINCE
-	heir_title_female = HT_CROWN_PRINCESS
 	
 	pickable_at_start = no
+	
+	ruler_title = RT_GRAND_MASTER
 }
 
+### AI Government
+machine_consciousness = {
+	icon = "gfx/interface/icons/governments/ai_overlordship.dds"
+	potential = {
+		is_country_type = ai_empire
+	}
+	
+	modifier = {
+		army_upkeep_mult = -0.5
+		ship_upkeep_mult = -0.5
+		spaceport_ship_build_cost_mult = -0.3
+		country_ship_upgrade_cost_mult = -0.5
+		planet_building_cost_mult = -0.2
+		all_technology_research_speed = 0.3
+	}
+	
+	pickable_at_start = no
+	
+	ruler_title = RT_EMPEROR
+}

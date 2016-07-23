@@ -366,7 +366,14 @@ Version 102.0.1
 * Added Collectivist government types
 * Added Xenophilic and Individualist government types.
 * Unlocked old government type restrictions (so individualists and collectivists are no longer locked out of dictatorships/democracies, respectively).
-* Influence accumulation removed.
+* Influence maximum reduced to 1.
 * added placeholder icons for the missing building GFX
 * Fixed some broken localizations.
 * Cleared up all the remaining startup bugs in the error log (aside from the duplicate reptile battleship sections).
+* Changed species creation screen to fit all the new governments.
+* Added new icons to repreesnt the new governments
+* re-organized the government picker so that democracies run down the center and dictatorships run down the outside; lined up ethical categories.
+* Corrected gov bonuses.
+* Corrected spelling of 'Individualist' in government localizations.
+* Removed species and habitability traits files so that vanilla ones apply.
+* 
