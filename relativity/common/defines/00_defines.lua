@@ -392,7 +392,7 @@ NDefines = {
 		PLANET_ORBIT_DISTANCE 	= 10.0,				-- how far from the planet ships will orbit
 		PLANET_STATION_ORBIT_DISTANCE = 6.0,		-- how far from the planet orbital stations will be
 
-		BASE_MONTHLY_INFLUENCE 		= 1,				-- Base Influence gained per month
+		BASE_MONTHLY_INFLUENCE 		= 1.0,				-- Base Influence gained per month
 		BASE_MONTHLY_MINERALS 		= 0,				-- Base Minerals gained per month
 		BASE_MONTHLY_PHYSICS 		= 5,				-- Base Physics gained per month
 		BASE_MONTHLY_SOCIETY 		= 5,				-- Base Society gained per month

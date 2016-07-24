@@ -169,13 +169,7 @@ malcontent_slaves = {
 		}
 
 		# Regulated slavery
-		modifier = {
-			factor = 0.8
-			OR = {
-				root = { has_policy_flag = slavery_allowed_regulated }
-				root = { has_policy_flag = slavery_allowed_regulated_xenos_only }
-			}
-		}
+
 		
 		# Unfeeling robot
 		modifier = {

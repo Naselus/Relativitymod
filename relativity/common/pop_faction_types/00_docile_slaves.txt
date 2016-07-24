@@ -25,10 +25,6 @@ docile_slaves = {
 
 	is_dangerous = {
 		support > 0.49
-		owner = {
-			NOT = { has_policy_flag = slavery_allowed_regulated }
-			NOT = { has_policy_flag = slavery_allowed_regulated_xenos_only }
-		}
 		any_support_effect_chance > 0.01
 	}
 
@@ -80,12 +76,6 @@ docile_slaves = {
 		potential = {
 			custom_tooltip_fail = {
 				text = docile_slaves_demand_fulfilled
-				owner = {
-					NOT = {
-						has_policy_flag = slavery_allowed_regulated
-						has_policy_flag = slavery_allowed_regulated_xenos_only
-					}
-				}
 			}
 		}
 	}
@@ -126,13 +116,6 @@ docile_slaves = {
 			NOT = { is_same_species = root.species }
 		}
 
-		modifier = {
-			factor = 1.2
-			OR = {
-				root = { has_policy_flag = slavery_allowed_regulated }
-				root = { has_policy_flag = slavery_allowed_regulated_xenos_only }
-			}
-		}
 		
 		modifier = {
 			factor = 0
@@ -154,15 +137,6 @@ docile_slaves = {
 					custom_tooltip_success = {
 						text = recent_special_treatment_tooltip
 						has_pop_faction_flag = recent_special_treatment
-					}
-					custom_tooltip_success = {
-						text = docile_slaves_demand_fulfilled
-						owner = {
-							OR = {
-								has_policy_flag = slavery_allowed_regulated
-								has_policy_flag = slavery_allowed_regulated_xenos_only
-							}
-						}
 					}
 				}
 			}
@@ -217,15 +191,6 @@ docile_slaves = {
 						text = recent_special_treatment_tooltip
 						has_pop_faction_flag = recent_scare_tactics
 					}
-					custom_tooltip_success = {
-						text = docile_slaves_demand_fulfilled
-						owner = {
-							OR = {
-								has_policy_flag = slavery_allowed_regulated
-								has_policy_flag = slavery_allowed_regulated_xenos_only
-							}
-						}
-					}
 				}
 			}
 
@@ -279,18 +244,6 @@ docile_slaves = {
 			spawn_chance = {
 				base = 3
 
-				modifier = {
-					factor = 0
-					custom_tooltip_success = {
-						text = docile_slaves_demand_fulfilled
-						owner = {
-							OR = {
-								has_policy_flag = slavery_allowed_regulated
-								has_policy_flag = slavery_allowed_regulated_xenos_only
-							}
-						}
-					}
-				}
 
 				modifier = {
 					factor = 0
@@ -369,18 +322,6 @@ docile_slaves = {
 			spawn_chance = {
 				base = 2
 
-				modifier = {
-					factor = 0
-					custom_tooltip_success = {
-						text = docile_slaves_demand_fulfilled
-						owner = {
-							OR = {
-								has_policy_flag = slavery_allowed_regulated
-								has_policy_flag = slavery_allowed_regulated_xenos_only
-							}
-						}
-					}
-				}
 
 				modifier = {
 					factor = 0
@@ -455,18 +396,6 @@ docile_slaves = {
 					}
 				}
 
-				modifier = {
-					factor = 0
-					custom_tooltip_success = {
-						text = docile_slaves_demand_fulfilled
-						owner = {
-							OR = {
-								has_policy_flag = slavery_allowed_regulated
-								has_policy_flag = slavery_allowed_regulated_xenos_only
-							}
-						}
-					}
-				}
 			}
 
 

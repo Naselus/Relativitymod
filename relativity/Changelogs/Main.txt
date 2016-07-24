@@ -376,4 +376,10 @@ Version 102.0.1
 * Corrected gov bonuses.
 * Corrected spelling of 'Individualist' in government localizations.
 * Removed species and habitability traits files so that vanilla ones apply.
-* 
+* removed regulated slavery
+* Orbital Bombardment and First Contact merged into war philosophy
+* Slavery, leadership, purge, migration, voting rights, resettlement merged into Citizenship policy.
+* Enlightenment merged into interference
+* Added environment, justice, economy, health, religious, foreign policy groups.
+* Added happiness effects for new policies.
+* removed happiness bonus and ethics shift reduction from homeworld.
