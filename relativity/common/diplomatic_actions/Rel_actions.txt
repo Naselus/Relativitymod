@@ -1,0 +1,16 @@
+action_embassy = {
+	auto_accepted = yes
+	requires_actor_independence = yes
+	requires_recipient_independence = yes
+	requires_recipient_federation_leader = no
+	should_show_auto_accept_message_recipient = yes
+	AI_acceptance_base_value = -5
+}
+
+action_recall_embassy = {
+	auto_accepted = yes
+	requires_actor_independence = no
+	requires_recipient_independence = no
+	requires_recipient_federation_leader = no
+	should_show_auto_accept_message_recipient = yes
+}

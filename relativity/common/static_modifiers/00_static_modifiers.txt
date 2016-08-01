@@ -867,7 +867,6 @@ mineral_deficit = {
 }
 
 influence_deficit = {
-	pop_happiness = -0.20
 }
 
 energy_deficit = {

@@ -335,7 +335,7 @@ can_resettle_pop = {
 				has_policy_flag = resettlement_allowed
 			}
 			AND = {
-					ROOT = { has_policy_flag = resettlement_allowed_xenos_only }
+					FROM = { has_policy_flag = resettlement_allowed_xenos_only }
 					NOT = {
 						OR = {
 							is_same_species = ROOT 

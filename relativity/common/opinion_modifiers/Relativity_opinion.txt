@@ -1,0 +1,11 @@
+# Embassy opinion modifier
+opinion_embassy = {
+	opinion = {
+		base = 0.08
+	}
+	
+	max = 10
+	min = 0
+
+	accumulative = yes
+}

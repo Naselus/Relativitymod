@@ -29,6 +29,7 @@ planet_edict = {
 				has_country_flag = birth_of_civtrade
 				NOT = { has_country_flag = trade_hub_active }
 				has_technology = tech_trade_facilities_one
+				influence > 0
 		}
 	}
 	length = 3600
@@ -50,7 +51,7 @@ planet_edict = {
 	potential = {
 		owner = {
 			has_country_flag = birth_of_civtrade
-		
+			influence > 0
 		}
 	}
 	
@@ -78,6 +79,7 @@ planet_edict = {
 	potential = {
 		owner = {
 				has_country_flag = birth_of_civtrade
+				influence > 0
 		}
 	}
 	
@@ -104,6 +106,7 @@ planet_edict = {
 	potential = {
 		owner = {
 				has_country_flag = birth_of_civtrade
+				influence > 0
 		}
 	}
 	
@@ -139,7 +142,8 @@ country_edict = {
 	influence_cost = 1
 	
 	potential = {
-		has_country_flag = birth_of_civtrade					
+		has_country_flag = birth_of_civtrade
+		influence > 0		
 	}
 	
 	allow = {

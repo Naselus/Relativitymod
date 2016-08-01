@@ -39,6 +39,7 @@ planet_edict = {
 				has_ethic = ethic_fanatic_collectivist
 				has_modifier = edict1_active
 			}
+			influence > 0
 		}
 	}
 	
@@ -79,6 +80,7 @@ planet_edict = {
 				has_ethic = ethic_fanatic_collectivist
 				has_modifier = edict2_active
 			}
+			influence > 0
 		}
 	}
 	
@@ -114,6 +116,7 @@ planet_edict = {
 				has_ethic = ethic_fanatic_spiritualist
 				has_modifier = edict3_active
 			}
+			influence > 0
 		}
 	}
 	effect ={
@@ -157,6 +160,7 @@ planet_edict = {
 			NOT = {
 				has_modifier = edict4_active
 			}
+			influence > 0
 		}
 	}	
 	effect ={
@@ -192,6 +196,7 @@ planet_edict = {
 				has_ethic = ethic_fanatic_individualist
 				has_modifier = edict5_active
 			}
+			influence > 0
 		}
 	}
 	
@@ -233,6 +238,7 @@ planet_edict = {
 			NOT = {
 				has_modifier = edict6_active
 			}
+			influence > 0
 		}
 	}	
 	length = 3600
@@ -274,6 +280,7 @@ planet_edict = {
 			NOT = {
 				has_modifier = edict7_active
 			}
+			influence > 0
 		}
 	}	
 	length = 3600
@@ -324,6 +331,7 @@ planet_edict = {
 			NOT = {
 				has_modifier = edict8_active			
 			}
+			influence > 0
 		}
 	}
 	effect ={
@@ -363,6 +371,7 @@ planet_edict = {
 			NOT = {
 				has_modifier = edict9_active			
 			}			
+			influence > 0
 		}
 	}
 	effect ={
@@ -402,6 +411,7 @@ planet_edict = {
 			NOT = {
 				has_modifier = edict10_active			
 			}
+			influence > 0
 		}
 	}
 	effect ={
@@ -443,6 +453,7 @@ planet_edict = {
 			NOT = {
 				has_modifier = edict11_active			
 			}			
+			influence > 0
 		}
 	}
 	effect ={
@@ -482,6 +493,7 @@ planet_edict = {
 			NOT = {
 				has_modifier = edict12_active			
 			}
+			influence > 0
 		}
 	}
 	effect ={
@@ -517,6 +529,7 @@ planet_edict = {
 			NOT = {
 				has_modifier = edict13_active			
 			}
+			influence > 0
 		}
 	}
 	effect ={
@@ -553,6 +566,7 @@ planet_edict = {
 			NOT = {
 				has_modifier = edict14_active			
 			}
+			influence > 0
 		}
 	}
 	effect ={
@@ -598,6 +612,7 @@ planet_edict = {
 				NOT = {
 				has_modifier = edict15_active			
 			}
+			influence > 0
 		}
 	}
 	effect ={

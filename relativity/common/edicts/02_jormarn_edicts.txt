@@ -31,6 +31,7 @@ planet_edict = {
 			NOT = {
 				has_policy_flag = slavery_not_allowed
 			}
+			influence > 0
 		}
 		free_pop_tiles > 1
 	}

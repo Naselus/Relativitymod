@@ -383,3 +383,15 @@ Version 102.0.1
 * Added environment, justice, economy, health, religious, foreign policy groups.
 * Added happiness effects for new policies.
 * removed happiness bonus and ethics shift reduction from homeworld.
+
+121.0.98
+
+* Added 5 new galaxy sizes which provide less-clustered starts
+* Government influence bonus/malus switched to multiplier.
+* Negative effect removed from influence deficit.
+* All edicts now require >0 influence to activate
+* Embassies are back; they now increase relations by 1 per year while active, upto a maximum of 100.
+* Many diplomatic treaties have been switched to building relations bonuses rather than flat, so an alliance is more valuable if it is long-lasting.
+* AI spending priorities tweaked a fair bit to encourage internal development over ships.
+* Added names for new gov types.
+

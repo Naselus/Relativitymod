@@ -1,0 +1,77 @@
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1
+			OR = {
+				has_government = "individualist_oligarchy"
+				has_government = "individualist_oligarchy_adv"
+				has_government = "collectivist_oligarchy"
+				has_government = "collectivist_oligarchy_adv"
+				has_government = "xenophobe_oligarchy"
+				has_government = "xenophobe_oligarchy_adv"
+				has_government = "xenophile_oligarchy"
+				has_government = "xenophile_oligarchy_adv"				
+			}
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+		}
+	}
+	format = "<democracy_mat_desc> [This.GetSpeciesName] <oligarchy_gen>"
+	noun = "[This.GetSpeciesName]"
+	prefix_format = "[This.GetSpeciesName] <oligarchy_gen>"
+	# Great Human Empire
+}
+
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1
+			OR = {
+				has_government = "individualist_empire"
+				has_government = "individualist_empire_adv"
+				has_government = "collectivist_empire"
+				has_government = "collectivist_empire_adv"
+				has_government = "xenophobe_empire"
+				has_government = "xenophobe_empire_adv"
+				has_government = "xenophile_empire"
+				has_government = "xenophile_empire_adv"				
+			}
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+		}
+	}
+	format = "<democracy_mat_desc> [This.GetSpeciesName] <autocracy_gen>"
+	noun = "[This.GetSpeciesName]"
+	prefix_format = "[This.GetSpeciesName] <autocracy_gen>"
+	# Great Human Empire
+}
+
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1
+			OR = {
+				has_government = "individualist_democracy"
+				has_government = "individualist_democracy_adv"
+				has_government = "collectivist_democracy"
+				has_government = "collectivist_democracy_adv"
+				has_government = "xenophobe_democracy"
+				has_government = "xenophobe_democracy_adv"
+				has_government = "xenophile_democracy"
+				has_government = "xenophile_democracy_adv"				
+			}
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+		}
+	}
+	format = "<democracy_mat_desc> [This.GetSpeciesName] <democracy_gen>"
+	noun = "[This.GetSpeciesName]"
+	prefix_format = "[This.GetSpeciesName] <democracy_gen>"
+	# Great Human Empire
+}

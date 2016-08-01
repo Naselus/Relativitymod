@@ -1114,13 +1114,13 @@ NDefines = {
 		MAX_PLANETS_FOR_BUDGET_FACTOR = 4,		-- At this amount of planets, budget is normalized
 
 		MINERAL_MILITARY_STATION_BUDGET_FRACTION = 0.05, -- AI will spend this fraction of their stored minerals on military stations
-		MINERAL_NAVY_BUDGET_FRACTION = 0.30, 	-- AI will spend this fraction of their stored minerals on ships
+		MINERAL_NAVY_BUDGET_FRACTION = 0.20, 	-- AI will spend this fraction of their stored minerals on ships
 		MINERAL_STATION_BUDGET_FRACTION = 0.15, -- AI will spend this fraction of their stored minerals on stations (used for spaceport instead when it needs a new spaceport)
-		MINERAL_BUILDING_BUDGET_FRACTION = 0.15,-- AI will spend this fraction of their stored minerals on buildings (used for spaceport instead when it needs a new spaceport)
-		MINERAL_SPACEPORT_BUDGET_FRACTION = 0.1, -- AI will spend this fraction of their stored minerals on spaceport modules
-		MINERAL_COLONY_BUDGET_FRACTION = 0.15,
-		MINERAL_ARMY_BUDGET_FRACTION = 0.04,	-- AI will spend this fraction on armies
-		MINERAL_TILE_BLOCKER_BUDGET_FRACTION = 0.03,	-- AI will spend this fraction on tile blockers
+		MINERAL_BUILDING_BUDGET_FRACTION = 0.2,-- AI will spend this fraction of their stored minerals on buildings (used for spaceport instead when it needs a new spaceport)
+		MINERAL_SPACEPORT_BUDGET_FRACTION = 0.05, -- AI will spend this fraction of their stored minerals on spaceport modules
+		MINERAL_COLONY_BUDGET_FRACTION = 0.2,
+		MINERAL_ARMY_BUDGET_FRACTION = 0.02,	-- AI will spend this fraction on armies
+		MINERAL_TILE_BLOCKER_BUDGET_FRACTION = 0.1,	-- AI will spend this fraction on tile blockers
 		MINERAL_ROBOT_BUDGET_FRACTION = 0.03,	-- AI will spend this fraction of their stored minerals on robots (transfered to buildings if they don't use robots)
 		
 		DISBAND_THRESHOLD = 0.8,			-- If budget does not cover at least this fraction of the navy maintenance, disband ships & stations
@@ -1160,7 +1160,7 @@ NDefines = {
 		EXPECTED_TECH_BASE = 5,						-- AI expects to make this base amount in tech
 		EXPECTED_TECH_PER_POP = 2,					-- AI expects to make about their num pops x this in tech
 		EXPECTED_ENERGY_BASE = 5,					-- AI expects to make this base amount in energy
-		EXPECTED_ENERGY_PER_POP = 1.5,				-- AI expects to make about their num pops x this in energy
+		EXPECTED_ENERGY_PER_POP = 1.3,				-- AI expects to make about their num pops x this in energy
 		EXPECTED_ENERGY_SURPLUS = 3,				-- AI wants a surplus of least this amount in monthly energy production (temporary spending such as colonies does not count)
 		EXPECTED_SECTOR_ENERGY_SURPLUS = 3,			-- As above, but for sectors
 		

@@ -27,7 +27,7 @@ military_dictatorship = {
 	modifier = {
 		pop_ethic_shift = -0.1
 		navy_size_mult = 0.1
-		influence_gain_add = -0.5
+		influence_gain_mult = -0.2
 	}
 	
 	election_type = oligarchic
@@ -79,7 +79,7 @@ martial_empire = {
 	modifier = {
 		pop_ethic_shift = -0.2
 		navy_size_mult = 0.2
-		influence_gain_add = -1
+		influence_gain_mult = -0.5
 	}
 	
 	election_type = oligarchic
@@ -241,7 +241,7 @@ military_republic = {
 	modifier = {
 		pop_ethic_shift = 0.1
 		navy_size_mult = 0.1
-		influence_gain_add = 0.5
+		influence_gain_mult = 0.2
 	}
 	
 	uses_mandates = yes
@@ -272,7 +272,7 @@ martial_demarchy = {
 	modifier = {
 		pop_ethic_shift = 0.2
 		navy_size_mult = 0.2
-		influence_gain_add = 1
+		influence_gain_mult = 0.5
 	}
 	
 	uses_mandates = yes
@@ -307,7 +307,7 @@ icon = "gfx/interface/icons/governments/pacifist_democracy.dds"
 	modifier = {
 		pop_ethic_shift = 0.1
 		tile_resource_energy_mult = 0.05
-		influence_gain_add = 0.5
+		influence_gain_mult = 0.2
 	}
 	
 	uses_mandates = yes
@@ -338,7 +338,7 @@ icon = "gfx/interface/icons/governments/pacifist_democracy_adv.dds"
 	modifier = {
 		pop_ethic_shift = 0.2
 		tile_resource_energy_mult = 0.1
-		influence_gain_add = 1
+		influence_gain_mult = 0.5
 	}
 	
 	uses_mandates = yes
@@ -477,7 +477,7 @@ icon = "gfx/interface/icons/governments/pacifist_empire.dds"
 	modifier = {
 		pop_ethic_shift = -0.1
 		tile_resource_energy_mult = 0.05
-		influence_gain_add = -0.5
+		influence_gain_mult = -0.2
 	}
 	
 	ruler_title = RT_KING
@@ -509,7 +509,7 @@ icon = "gfx/interface/icons/governments/pacifist_empire_adv.dds"
 	modifier = {
 		pop_ethic_shift = -0.2
 		tile_resource_energy_mult = 0.1
-		influence_gain_add = -1
+		influence_gain_mult = -0.5
 	}
 	
 	ruler_title = RT_HIGH_KING
@@ -545,7 +545,7 @@ divine_mandate = {
 	modifier = {
 		pop_ethic_shift = -0.1
 		pop_happiness = 0.1
-		influence_gain_add = -0.5
+		influence_gain_mult = -0.2
 	}
 	
 	ruler_title = RT_ARCHPROPHET
@@ -577,7 +577,7 @@ transcendent_empire = {
 	modifier = {
 		pop_ethic_shift = -0.2
 		pop_happiness = 0.2
-		influence_gain_add = -1
+		influence_gain_mult = -0.5
 	}
 	
 	ruler_title = RT_GOD_EMPEROR
@@ -712,7 +712,7 @@ theocratic_republic = {
 	modifier = {
 		pop_ethic_shift = 0.1
 		pop_happiness = 0.1
-		influence_gain_add = 0.5		
+		influence_gain_mult = 0.2		
 	}
 	
 	uses_mandates = yes
@@ -743,7 +743,7 @@ transcendent_republic = {
 	modifier = {
 		pop_ethic_shift = 0.2
 		pop_happiness = 0.2
-		influence_gain_add = 1
+		influence_gain_mult = 0.5
 	}
 	
 	uses_mandates = yes
@@ -779,7 +779,7 @@ direct_democracy = {
 	modifier = {
 		pop_ethic_shift = 0.1
 		all_technology_research_speed = 0.05
-		influence_gain_add = 0.5
+		influence_gain_mult = 0.2
 	}
 	
 	uses_mandates = yes
@@ -810,7 +810,7 @@ icon = "gfx/interface/icons/governments/materialist_democracy_adv.dds"
 	modifier = {
 		pop_ethic_shift = 0.2
 		all_technology_research_speed = 0.1
-		influence_gain_add = 1
+		influence_gain_mult = 0.5
 	}
 	
 	uses_mandates = yes
@@ -950,7 +950,7 @@ icon = "gfx/interface/icons/governments/materialist_empire.dds"
 	modifier = {
 		pop_ethic_shift = -0.1
 		all_technology_research_speed = 0.05
-		influence_gain_add = -0.5
+		influence_gain_mult = -0.2
 	}
 	
 	ruler_title = RT_OVERLORD
@@ -980,7 +980,7 @@ icon = "gfx/interface/icons/governments/materialist_empire_adv.dds"
 	modifier = {
 		pop_ethic_shift = -0.2
 		all_technology_research_speed = 0.1
-		influence_gain_add = -1
+		influence_gain_mult = -0.5
 	}
 	
 	ruler_title = RT_HIGH_TECHNICIAN
@@ -1018,7 +1018,7 @@ individualist_empire = {
 	
 	modifier = {
 		pop_ethic_shift = -0.1
-		influence_gain_add = -0.5
+		influence_gain_mult = -0.2
 		planet_building_cost_mult = -0.05
 	}
 	upgrade = individualist_empire_adv
@@ -1045,7 +1045,7 @@ individualist_empire_adv = {
 	
 	modifier = {
 		pop_ethic_shift = -0.2
-		influence_gain_add = -1
+		influence_gain_mult = -0.5
 		planet_building_cost_mult =-0.1
 	}
 	
@@ -1174,7 +1174,7 @@ individualist_democracy = {
 	
 	modifier = {
 		pop_ethic_shift = 0.1
-		influence_gain_add = 0.5
+		influence_gain_mult = 0.2
 		planet_building_cost_mult =-0.05
 	}
 
@@ -1206,7 +1206,7 @@ individualist_democracy_adv = {
 	modifier = {
 		pop_ethic_shift = 0.2
 		planet_building_cost_mult =-0.1
-		influence_gain_add = 1
+		influence_gain_mult = 0.5
 	}
 	
 	uses_mandates = yes
@@ -1236,7 +1236,7 @@ collectivist_democracy = {
 	
 	modifier = {
 		pop_ethic_shift = 0.1
-		influence_gain_add = 0.5
+		influence_gain_mult = 0.2
 		building_time_mult =-0.05
 	}
 
@@ -1268,7 +1268,7 @@ collectivist_democracy_adv = {
 	modifier = {
 		pop_ethic_shift = 0.2
 		building_time_mult =-0.1
-		influence_gain_add = 1
+		influence_gain_mult = 0.5
 	}
 	
 	uses_mandates = yes
@@ -1410,7 +1410,7 @@ collectivist_empire = {
 	
 	modifier = {
 		pop_ethic_shift = -0.1
-		influence_gain_add = -0.5
+		influence_gain_mult = -0.2
 		building_time_mult =-0.05
 	}
 	upgrade = collectivist_empire_adv
@@ -1437,7 +1437,7 @@ collectivist_empire_adv = {
 	
 	modifier = {
 		pop_ethic_shift = -0.2
-		influence_gain_add = -1
+		influence_gain_mult = -0.5
 		building_time_mult =-0.1
 	}
 	
@@ -1478,7 +1478,7 @@ xenophobe_empire = {
 	
 	modifier = {
 		pop_ethic_shift = -0.1
-		influence_gain_add = -0.5
+		influence_gain_mult = -0.2
 		max_rivalries = 1
 	}
 	upgrade = xenophobe_empire_adv
@@ -1505,7 +1505,7 @@ xenophobe_empire_adv = {
 	
 	modifier = {
 		pop_ethic_shift = -0.2
-		influence_gain_add = -1
+		influence_gain_mult = -0.5
 		max_rivalries = 2
 	}
 	
@@ -1633,7 +1633,7 @@ xenophobe_democracy = {
 	
 	modifier = {
 		pop_ethic_shift = 0.1
-		influence_gain_add = 0.5
+		influence_gain_mult = 0.2
 		max_rivalries = 1
 	}
 
@@ -1665,7 +1665,7 @@ xenophobe_democracy_adv = {
 	modifier = {
 		pop_ethic_shift = 0.2
 		max_rivalries = 2
-		influence_gain_add = 1
+		influence_gain_mult = 0.5
 	}
 	
 	uses_mandates = yes
@@ -1697,8 +1697,8 @@ xenophile_democracy = {
 	
 	modifier = {
 		pop_ethic_shift = 0.1
-		influence_gain_add = 0.5
-		pop_other_species_happiness = 0.05
+		influence_gain_mult = 0.2
+		max_embassies = 1
 	}
 
 	
@@ -1728,8 +1728,8 @@ xenophile_democracy_adv = {
 	
 	modifier = {
 		pop_ethic_shift = 0.2
-		pop_other_species_happiness = 0.1
-		influence_gain_add = 1
+		max_embassies = 2
+		influence_gain_mult = 0.5
 	}
 	
 	uses_mandates = yes
@@ -1756,7 +1756,7 @@ xenophile_oligarchy = {
 	
 	modifier = {
 		country_leader_cap = 1
-		pop_other_species_happiness = 0.05
+		max_embassies = 1
 	}
 	
 	election_term_years = 40
@@ -1808,7 +1808,7 @@ xenophile_oligarchy_adv = {
 	
 	modifier = {
 		country_leader_cap = 2
-		pop_other_species_happiness = 0.1
+				max_embassies = 2
 	}
 	
 	election_term_years = 40
@@ -1871,8 +1871,8 @@ xenophile_empire = {
 	
 	modifier = {
 		pop_ethic_shift = -0.1
-		influence_gain_add = -0.5
-		pop_other_species_happiness = 0.05
+		influence_gain_mult = -0.2
+		max_embassies = 1
 	}
 	upgrade = xenophile_empire_adv
 }
@@ -1898,8 +1898,8 @@ xenophile_empire_adv = {
 	
 	modifier = {
 		pop_ethic_shift = -0.2
-		influence_gain_add = -1
-		pop_other_species_happiness = 0.1
+		influence_gain_mult = -0.5
+		max_embassies = 2
 	}
 	
 	ruler_title = RT_EMPEROR
@@ -1926,7 +1926,7 @@ indirect_democracy = {
 
 	modifier = {
 		pop_ethic_shift = 0.1
-		influence_gain_add = 0.5
+		influence_gain_mult = 0.2
 	}
 
 	
@@ -1950,7 +1950,7 @@ democratic_utopia = {
 	
 	modifier = {
 		pop_ethic_shift = 0.2
-		influence_gain_add = 1
+		influence_gain_mult = 0.5
 	}
 	
 	uses_mandates = yes
@@ -2072,7 +2072,7 @@ despotic_empire = {
 	
 	modifier = {
 		pop_ethic_shift = -0.1
-		influence_gain_add = -0.5
+		influence_gain_mult = -0.2
 	}
 	upgrade = star_empire
 }
@@ -2091,7 +2091,7 @@ star_empire = {
 	
 	modifier = {
 		pop_ethic_shift = -0.2
-		influence_gain_add = -1
+		influence_gain_mult = -0.5
 	}
 	
 	ruler_title = RT_EMPEROR

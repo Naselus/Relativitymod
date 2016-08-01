@@ -310,3 +310,6 @@
  Restrictive:0 "Restrictive"
  Restrictive_desc:0 "The state makes great efforts to maintain a carbon-neutral industrial impact."
  capital_punishment_name:0 "Capital Punishment"
+ ACTION_EMBASSY1_TITLE:0 "Establish Embassy"
+ ACTION_EMBASSY1_DESC:0 "Establish an embassy on their capital planet."
+ ACTION_EMBASSY1_COST:2 "This will increase our relations very slowly. Our nation can only maintain a limited number of embassies at any time."
