@@ -39,6 +39,7 @@ planet_edict = {
 				has_ethic = ethic_fanatic_collectivist
 				has_modifier = edict1_active
 			}
+			influence > 0
 		}
 	}
 	
@@ -79,6 +80,7 @@ planet_edict = {
 				has_ethic = ethic_fanatic_collectivist
 				has_modifier = edict2_active
 			}
+			influence > 0
 		}
 	}
 	
@@ -102,8 +104,9 @@ planet_edict = {
 	name = "farming_subsidies"
 	influence_cost = @standardEdictCost
 	modifier = {
-		tile_resource_food_mult = 0.25
+		pop_growth_req_mult = -0.1
 	}
+
 	
 	length = 3600
 	
@@ -113,6 +116,7 @@ planet_edict = {
 				has_ethic = ethic_fanatic_spiritualist
 				has_modifier = edict3_active
 			}
+			influence > 0
 		}
 	}
 	effect ={
@@ -156,6 +160,7 @@ planet_edict = {
 			NOT = {
 				has_modifier = edict4_active
 			}
+			influence > 0
 		}
 	}	
 	effect ={
@@ -191,6 +196,7 @@ planet_edict = {
 				has_ethic = ethic_fanatic_individualist
 				has_modifier = edict5_active
 			}
+			influence > 0
 		}
 	}
 	
@@ -232,6 +238,7 @@ planet_edict = {
 			NOT = {
 				has_modifier = edict6_active
 			}
+			influence > 0
 		}
 	}	
 	length = 3600
@@ -273,6 +280,7 @@ planet_edict = {
 			NOT = {
 				has_modifier = edict7_active
 			}
+			influence > 0
 		}
 	}	
 	length = 3600
@@ -323,6 +331,7 @@ planet_edict = {
 			NOT = {
 				has_modifier = edict8_active			
 			}
+			influence > 0
 		}
 	}
 	effect ={
@@ -362,6 +371,7 @@ planet_edict = {
 			NOT = {
 				has_modifier = edict9_active			
 			}			
+			influence > 0
 		}
 	}
 	effect ={
@@ -401,6 +411,7 @@ planet_edict = {
 			NOT = {
 				has_modifier = edict10_active			
 			}
+			influence > 0
 		}
 	}
 	effect ={
@@ -432,7 +443,7 @@ planet_edict = {
 	length = 3600
 	modifier = {
 		spaceport_module_cost_mult = -0.25
-		planet_ship_build_speed_mult = 0.33
+		spaceport_ship_build_speed_mult = 0.33
 		planet_army_build_speed_mult = 0.33
 	}
 	
@@ -442,6 +453,7 @@ planet_edict = {
 			NOT = {
 				has_modifier = edict11_active			
 			}			
+			influence > 0
 		}
 	}
 	effect ={
@@ -481,6 +493,7 @@ planet_edict = {
 			NOT = {
 				has_modifier = edict12_active			
 			}
+			influence > 0
 		}
 	}
 	effect ={
@@ -516,6 +529,7 @@ planet_edict = {
 			NOT = {
 				has_modifier = edict13_active			
 			}
+			influence > 0
 		}
 	}
 	effect ={
@@ -546,13 +560,13 @@ planet_edict = {
 		tile_resource_food_mult = 0.10
 		pop_growth_req_mult = -0.20
 	}
-	
 	potential = {
 		owner = {
 			has_ethic = ethic_fanatic_spiritualist
 			NOT = {
 				has_modifier = edict14_active			
 			}
+			influence > 0
 		}
 	}
 	effect ={
@@ -598,6 +612,7 @@ planet_edict = {
 				NOT = {
 				has_modifier = edict15_active			
 			}
+			influence > 0
 		}
 	}
 	effect ={

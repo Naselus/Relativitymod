@@ -15,19 +15,19 @@ opinion_from_personality = {
 		}		
 		modifier = {
 			add = -1000
-			has_ai_personality_type = purifier
+			has_ai_personality = fanatic_purifiers
 			NOT = { is_same_species = FROM }
 			NOT = { is_subspecies = FROM }			
 		}	
 		modifier = {
 			add = -50
-			has_ai_personality_type = honorbound
-			has_ethic = "ethic_pacifist"
+			has_ai_personality = honorbound_warriors
+			FROM = { has_ethic = "ethic_pacifist" }
 		}
 		modifier = {
 			add = -100
-			has_ai_personality_type = honorbound
-			has_ethic = "ethic_fanatic_pacifist"
+			has_ai_personality = honorbound_warriors
+			FROM = { has_ethic = "ethic_fanatic_pacifist" }
 		}
 		modifier = {
 			add = 25
@@ -47,7 +47,7 @@ opinion_from_personality = {
 		modifier = {
 			add = -100
 			NOT = { has_ai_personality = democratic_crusaders }
-			has_ai_personality_type = ideologue
+			has_ai_personality_behaviour = ideologue
 			OR = {
 				AND = {
 					OR = {

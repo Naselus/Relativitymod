@@ -1,0 +1,175 @@
+#To be used in last_created_pop to simulate the migration of the pop.  
+# Set ethic of this pop to ethic of PREV pop
+#
+#
+#
+fn_novelwardemand_setethic { 
+
+	if = { 		#If it is xenophobe, it can not be Fanatic xenophobe or xenophile same for every group of ethic
+		limit = { 
+			PREV = {
+				pop_has_ethic = ethic_xenophobe 
+			}
+		}
+		pop_add_ethic = ethic_xenophobe 
+		
+		else = {
+			if = {
+				limit = { 
+					PREV = {
+						pop_has_ethic = ethic_fanatic_xenophobe 
+					}
+				}
+				pop_add_ethic = ethic_fanatic_xenophobe 
+				
+				else = {
+					if = {
+						limit = { 
+							PREV = {
+								pop_has_ethic = ethic_xenophile 
+							}
+						}
+						pop_add_ethic = ethic_xenophile
+						
+						else = {
+							if = {
+								limit = { 
+									PREV = {
+										pop_has_ethic = ethic_fanatic_xenophile 
+									}
+								}
+								pop_add_ethic = ethic_fanatic_xenophile 
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	if = {
+		limit = { 
+			PREV = {
+				pop_has_ethic = ethic_pacifist 
+			}
+		}
+		pop_add_ethic = ethic_pacifist 
+		
+		else = {
+			if = {
+				limit = { 
+					PREV = {
+						pop_has_ethic = ethic_fanatic_pacifist 
+					}
+				}
+				pop_add_ethic = ethic_fanatic_pacifist 
+				
+				else = {
+					if = {
+						limit = { 
+							PREV = {
+								pop_has_ethic = ethic_militarist 
+							}
+						}
+						pop_add_ethic = ethic_militarist
+						
+						else = {
+							if = {
+								limit = { 
+									PREV = {
+										pop_has_ethic = ethic_fanatic_militarist 
+									}
+								}
+								pop_add_ethic = ethic_fanatic_militarist 
+							}
+						}
+					}
+				}
+			}
+		}
+	}	
+
+	if = {
+		limit = { 
+			PREV = {
+				pop_has_ethic = ethic_collectivist 
+			}
+		}
+		pop_add_ethic = ethic_collectivist 
+		
+		else = {
+			if = {
+				limit = { 
+					PREV = {
+						pop_has_ethic = ethic_fanatic_collectivist
+					}
+				}
+				pop_add_ethic = ethic_fanatic_collectivist 
+				
+				else = {
+					if = {
+						limit = { 
+							PREV = {
+								pop_has_ethic = ethic_individualist  
+							}
+						}
+						pop_add_ethic = ethic_individualist 
+						
+						else = {
+							if = {
+								limit = { 
+									PREV = {
+										pop_has_ethic = ethic_fanatic_individualist 
+									}
+								}
+								pop_add_ethic = ethic_fanatic_individualist
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	if = {
+		limit = { 
+			PREV = {
+				pop_has_ethic = ethic_spiritualist 
+			}
+		}
+		pop_add_ethic = ethic_spiritualist 
+		
+		else = {
+			if = {
+				limit = { 
+					PREV = {
+						pop_has_ethic = ethic_fanatic_spiritualist
+					}
+				}
+				pop_add_ethic = ethic_fanatic_spiritualist 
+				
+				else = {
+					if = {
+						limit = { 
+							PREV = {
+								pop_has_ethic = ethic_materialist  
+							}
+						}
+						pop_add_ethic = ethic_materialist 
+						
+						else = {
+							if = {
+								limit = { 
+									PREV = {
+										pop_has_ethic = ethic_fanatic_materialist 
+									}
+								}
+								pop_add_ethic = ethic_fanatic_materialist
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

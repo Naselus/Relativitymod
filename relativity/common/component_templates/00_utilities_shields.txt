@@ -32,21 +32,21 @@
 @cost_M1 = 10
 @cost_L1 = 20
            
-@cost_S2 = 7.5
-@cost_M2 = 15
-@cost_L2 = 30
+@cost_S2 = 10
+@cost_M2 = 20
+@cost_L2 = 40
            
-@cost_S3 = 10
-@cost_M3 = 20
-@cost_L3 = 40
+@cost_S3 = 20
+@cost_M3 = 40
+@cost_L3 = 80
            
-@cost_S4 = 12.5
-@cost_M4 = 25
-@cost_L4 = 50
+@cost_S4 = 40
+@cost_M4 = 80
+@cost_L4 = 160
            
-@cost_S5 = 15
-@cost_M5 = 30
-@cost_L5 = 60
+@cost_S5 = 80
+@cost_M5 = 160
+@cost_L5 = 320
 
 #############
 #	SHIELD	#
@@ -60,17 +60,17 @@
 @shield_M2 = 100
 @shield_L2 = 200
 
-@shield_S3 = 75
-@shield_M3 = 150
-@shield_L3 = 300
+@shield_S3 = 100
+@shield_M3 = 200
+@shield_L3 = 400
 
-@shield_S4 = 100
-@shield_M4 = 200
-@shield_L4 = 400
+@shield_S4 = 200
+@shield_M4 = 400
+@shield_L4 = 800
 
-@shield_S5 = 125
-@shield_M5 = 250
-@shield_L5 = 500
+@shield_S5 = 400
+@shield_M5 = 800
+@shield_L5 = 1600
 
 #############
 # UTILITIES #

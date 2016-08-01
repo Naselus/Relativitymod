@@ -1,0 +1,51 @@
+##########################################################################
+# Planet edicts
+##########################################################################
+
+# Variables:
+#  name, the name of the edict, also serves as localisation key.
+#  influence_cost, the base influence cost of activating the edict.
+#  potential, planet or country trigger to decide whether the edict should be shown.
+#  allow, planet or country trigger to decide if whether this edict can be activated.
+#  effect, an effect that is executed when this trigger activates.
+#  prerequisites, tech requirements for this trigger.
+#  ai_will_do, determines AI scoring for edict
+#  modifier, a list of modifiers
+#  length, number of days the trigger is active.
+
+# Sets the edict-cost for all edicts with this variable
+@standardEdictCost = 00
+
+
+planet_edict = {
+	name = "slave_target"
+	influence_cost = 0
+
+	modifier = {
+		planet_migration_all_pull	= -0.1
+	}
+	
+	
+	potential = {
+		owner = {
+			NOT = {
+				has_policy_flag = slavery_not_allowed
+			}
+			influence > 0
+		}
+		free_pop_tiles > 1
+	}
+	
+	length = 360
+	
+	allow = {
+	}
+	
+	ai_weight = {
+		weight = 1			# I hope this means "always do if not ..."
+		modifier = {
+			factor = 0
+			free_pop_tiles < 5
+		}
+	}	
+}

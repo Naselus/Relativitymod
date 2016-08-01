@@ -1,0 +1,271 @@
+leader_fcollectivist = {
+	cost = 2
+	modification = no
+	icon = "gfx/interface/icons/ethics/ethic_fanatic_collectivist.dds"
+
+	leader_class = { admiral scientist general governor ruler}
+	opposites = { "leader_findividualist" "leader_individualist" "leader_collectivist" }
+	leader_trait = yes
+
+	ai_categories = {
+		engineering
+		physics
+		society
+		survey
+	}	
+}
+
+leader_collectivist = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/ethics/ethic_collectivist.dds"
+
+	leader_class = { admiral scientist general governor ruler}
+	opposites = { "leader_findividualist" "leader_individualist" "leader_fcollectivist" }
+	leader_trait = yes
+	
+	ai_categories = {
+		engineering
+		physics
+		society
+		survey
+	}
+}
+
+leader_findividualist = {
+	cost = 2
+	modification = no
+	icon = "gfx/interface/icons/ethics/ethic_fanatic_individualist.dds"
+
+	leader_class = { admiral scientist general governor ruler}
+	opposites = { "leader_fcollectivist" "leader_individualist" "leader_collectivist" }
+	leader_trait = yes
+	
+	ai_categories = {
+		engineering
+		physics
+		society
+		survey
+	}	
+}
+
+leader_individualist = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/ethics/ethic_individualist.dds"
+
+	leader_class = { admiral scientist general governor ruler}
+	opposites = { "leader_findividualist" "leader_fcollectivist" "leader_collectivist" }
+	leader_trait = yes
+	
+	ai_categories = {
+		engineering
+		physics
+		society
+		survey
+	}
+}
+
+leader_fmilitarist = {
+	cost = 2
+	modification = no
+	icon = "gfx/interface/icons/ethics/ethic_fanatic_militarist.dds"
+
+	leader_class = { admiral scientist general governor ruler}
+	opposites = { "leader_militarist" "leader_pacifist" "leader_fpacifist" }
+	leader_trait = yes
+	
+	ai_categories = {
+		engineering
+		physics
+		society
+		survey
+	}
+}
+
+leader_militarist = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/ethics/ethic_militarist.dds"
+
+	leader_class = { admiral scientist general governor ruler}
+	opposites = { "leader_fmilitarist" "leader_pacifist" "leader_fpacifist" }
+	leader_trait = yes
+	
+	ai_categories = {
+		engineering
+		physics
+		society
+		survey
+	}
+}
+
+leader_pacifist = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/ethics/ethic_pacifist.dds"
+
+	leader_class = { admiral scientist general governor ruler}
+	opposites = { "leader_fmilitarist" "leader_militarist" "leader_fpacifist" }
+	leader_trait = yes
+	
+	ai_categories = {
+		engineering
+		physics
+		society
+		survey
+	}
+}
+
+leader_fpacifist = {
+	cost = 2
+	modification = no
+	icon = "gfx/interface/icons/ethics/ethic_fanatic_pacifist.dds"
+
+	leader_class = { admiral scientist general governor ruler}
+	opposites = { "leader_pacifist" "leader_militarist" "leader_fmilitarist" }
+	leader_trait = yes
+	
+	ai_categories = {
+		engineering
+		physics
+		society
+		survey
+	}
+}
+
+leader_fmaterialist = {
+	cost = 2
+	modification = no
+	icon = "gfx/interface/icons/ethics/ethic_fanatic_materialist.dds"
+
+	leader_class = { admiral scientist general governor ruler}
+	opposites = { "leader_materialist" "leader_spiritualist" "leader_fspiritualist" }
+	leader_trait = yes
+	
+	ai_categories = {
+		engineering
+		physics
+		society
+		survey
+	}
+}
+
+leader_materialist = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/ethics/ethic_materialist.dds"
+
+	leader_class = { admiral scientist general governor ruler}
+	opposites = { "leader_fmaterialist" "leader_spiritualist" "leader_fspiritualist" }
+	leader_trait = yes
+	
+	ai_categories = {
+		engineering
+		physics
+		society
+		survey
+	}
+}
+
+leader_spiritualist = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/ethics/ethic_spiritualist.dds"
+
+	leader_class = { admiral scientist general governor ruler}
+	opposites = { "leader_materialist" "leader_fmaterialist" "leader_fspiritualist" }
+	leader_trait = yes
+
+	ai_categories = {
+		engineering
+		physics
+		society
+		survey
+	}	
+}
+
+leader_fspiritualist = {
+	cost = 2
+	modification = no
+	icon = "gfx/interface/icons/ethics/ethic_fanatic_spiritualist.dds"
+
+	leader_class = { admiral scientist general governor ruler}
+	opposites = { "leader_materialist" "leader_fmaterialist" "leader_fspiritualist" }
+	leader_trait = yes
+	
+	ai_categories = {
+		engineering
+		physics
+		society
+		survey
+	}
+}
+
+leader_fxenophobe = {
+	cost = 2
+	modification = no
+	icon = "gfx/interface/icons/ethics/ethic_fanatic_xenophobe.dds"
+
+	leader_class = { admiral scientist general governor ruler}
+	opposites = { "leader_xenophobe" "leader_xenophile" "leader_fxenophile" }
+	leader_trait = yes
+	
+	ai_categories = {
+		engineering
+		physics
+		society
+		survey
+	}
+}
+
+leader_xenophobe = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/ethics/ethic_xenophobe.dds"
+
+	leader_class = { admiral scientist general governor ruler}
+	opposites = { "leader_fxenophobe" "leader_xenophile" "leader_fxenophile" }
+	leader_trait = yes
+	
+	ai_categories = {
+		engineering
+		physics
+		society
+		survey
+	}
+}
+
+leader_xenophile = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/ethics/ethic_xenophile.dds"
+
+	leader_class = { admiral scientist general governor ruler}
+	opposites = { "leader_xenophobe" "leader_fxenophobe" "leader_fxenophile" }
+	leader_trait = yes
+	
+	ai_categories = {
+		engineering
+		physics
+		society
+		survey
+	}
+}
+
+leader_fxenophile = {
+	cost = 2
+	modification = no
+	icon = "gfx/interface/icons/ethics/ethic_fanatic_xenophile.dds"
+
+	leader_class = { admiral scientist general governor ruler}
+	opposites = { "leader_xenophobe" "leader_xenophile" "leader_fxenophobe" }
+	leader_trait = yes
+	
+	ai_categories = {
+		engineering
+		physics
+		society
+		survey
+	}
+}

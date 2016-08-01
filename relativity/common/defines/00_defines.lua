@@ -1,3 +1,5 @@
+-- Note: for modding, avoid overwriting this file - instead overwrite individual
+-- keys from another lua file using the format NDefines.NCamera.FOV = 50
 NDefines = {
 
 	NCamera = {
@@ -169,6 +171,11 @@ NDefines = {
 		SCIENCE_SHIP_SURVEY_ENTITY_MAX_SCALE_FACTOR = 1.0, -- Scale in xy can max be scale z * SCIENCE_SHIP_SURVEY_ENTITY_MAX_SCALE_FACTOR. Scale z will be equal to the distance between surveyed object and ship
 		STATION_CONSTRUCTION_ENTITY_NUM_STATES = 0,	-- states should be named "progress_X" where X is a multiple of 100 / STATION_CONSTRUCTION_ENTITY_NUM_STATES. i.e progress_0, progress_20, progress_40 etc ( if define is 5 )
 
+		CONSTRUCTION_SHIP_TERRAFORMING_BEAM_ENTITY = "terraforming_effect_entity",
+		CONSTRUCTION_SHIP_TERRAFORMING_PLANET_ENTITY = "terraforming_planet_effect_entity",
+		CONSTRUCTION_SHIP_TERRAFORMING_BEAM_ENTITY_SCALE_XY = 1.0, -- Scale xy in local coords between ship and planet.
+		CONSTRUCTION_SHIP_TERRAFORMING_BEAM_ENTITY_SCALE_Z = 0.62, -- Scale beam tip z in local coords so beam hits planet surface.
+		CONSTRUCTION_SHIP_TERRAFORMING_PLANET_ENTITY_SCALE_R = 3.0, -- Scale radius r of the cloud surrounding the planet.
 		-- NAVIGATION_ARROW_X values might require a game restart to push changes
 		NAVIGATION_ARROW_ENTITY	= "navigation_arrow_entity",
 		NAVIGATION_ARROW_OFFSET = 150.0,	-- offsets the arrow towards the edge
@@ -274,6 +281,8 @@ NDefines = {
 		MAX_GFX_MISSILES = 50,
 		MUZZLE_FLASH_LIMIT = 50,
 		MUZZLE_FLASH_DURATION = 2.0,
+		
+		MAP_MODE_NEUTRAL_COLOR = { 0.5, 0.5, 0.5, 0.75 }
 	},
 
 	NInterface = {
@@ -339,7 +348,10 @@ NDefines = {
 		SITUATION_LOG_DEBRIS_PICTURE_SPRITE		= "GFX_situation_log_debris_picture",
 		SITUATION_LOG_DEBRIS_ICON_FILENAME		= "gfx/interface/icons/situation_log/situation_log_debris.dds",
 		SITUATION_LOG_MODIFICATION_PICTURE_SPRITE 	= "GFX_situation_log_modification_picture",
-		SITUATION_LOG_MODIFICATION_ICON_FILENAME 	= "gfx/interface/icons/situation_log/situation_log_modification.dds"
+		SITUATION_LOG_MODIFICATION_ICON_FILENAME 	= "gfx/interface/icons/situation_log/situation_log_modification.dds",
+
+		MIN_GUI_SCALE							= 0.5, -- Minimum UI scale factor
+		BROWSER_BASE_URL						= "http://www.stellariswiki.com/",
 	},
 
 	NGameplay = {
@@ -380,7 +392,7 @@ NDefines = {
 		PLANET_ORBIT_DISTANCE 	= 10.0,				-- how far from the planet ships will orbit
 		PLANET_STATION_ORBIT_DISTANCE = 6.0,		-- how far from the planet orbital stations will be
 
-		BASE_MONTHLY_INFLUENCE 		= 1,				-- Base Influence gained per month
+		BASE_MONTHLY_INFLUENCE 		= 1.0,				-- Base Influence gained per month
 		BASE_MONTHLY_MINERALS 		= 0,				-- Base Minerals gained per month
 		BASE_MONTHLY_PHYSICS 		= 5,				-- Base Physics gained per month
 		BASE_MONTHLY_SOCIETY 		= 5,				-- Base Society gained per month
@@ -436,7 +448,7 @@ NDefines = {
 		LEADER_GOVERNOR_POP_IS_BORN_EXPERIENCE						= 8, -- Exp-gain for each Pop born
 		LEADER_GOVERNOR_SECTOR_MONTHLY_EXPERIENCE					= 5,	-- Monthy exp from governing sector.
 
-		LEADER_AGE_DEATH_CHANCE_AGE	= 72,			-- Before this age the chance wont increase
+		LEADER_AGE_DEATH_CHANCE_AGE	= 82,			-- Before this age the chance wont increase
 		LEADER_AGE_DEATH_CHANCE_INC = 0.01,			-- Increase with these % for each year above CHANCE_AGE
 
 		GENERAL_DAMAGE_EXP_MULT		= 1.0,				-- Multiplier of how much damage translates into experience.
@@ -448,7 +460,7 @@ NDefines = {
 
 		BORDER_BASE_RADIUS				= 12,		-- The base radius of the border
 		BORDER_NEW_COLONY_START			= 0.25,		-- Newly started colony's borders is modified by this, goes up to 1x with progress
-		BORDER_POPULATION_MODIFIER		= 0.15,		-- The border population modifier
+		BORDER_POPULATION_MODIFIER		= 0.25,		-- The border population modifier
 		
 		PLANETARY_BUILDING_ADD_FACTOR 	= 20,		-- Used in the calculation of the planetary building progress
 		ORBITAL_BUILDING_DIV_FACTOR		= 6,		-- Used in the calculation of the orbital building progress
@@ -468,10 +480,10 @@ NDefines = {
 		REBELS_POWER_THRESHOLD 				= 0.5, 		-- A Threshold that controls when rebels think they have a chance, Higher = more unwilling
 		
 		GARRISON_SIZE_BASE					= 2,		-- Planet always spawns this number of garrisons
-		GARRISON_SIZE_MULT					= 0.4,		-- Per pop over 1
+		GARRISON_SIZE_MULT					= 0.1,		-- Per pop over 1
 		PLANET_FORTIFICATION_BASE			= 1000,		-- Planet always has this much fortification health
 		PLANET_FORTIFICATION_MULT			= 100,		-- Per pop over 1
-		PLANET_FORTIFICATION_DEFENSE_BONUS	= 10,		-- At 100% fortification, divide damage to defending armies by this
+		PLANET_FORTIFICATION_DEFENSE_BONUS	= 2,		-- At 100% fortification, divide damage to defending armies by this
 		PLANET_FORTIFICATION_DEFENSE_MIN	= 0.5,		-- At 0% fortification, divide damage to defending armies by this
 		PLANET_FORTIFICATION_REPAIR 		= 0.01,		-- Each day
 		PLANET_FORTIFICATION_REPAIR_DELAY 	= 60,	-- Days since being bombarded before repairs to fortifications start
@@ -483,12 +495,14 @@ NDefines = {
 
 		ETHOS_MAX_POINTS					= 3,	-- Number of points which you can spend on ethos.
 
-		ETHOS_CONFLICTING					= -10, 	-- Conflicting ethos results in this opinion value
-		ETHOS_RIVAL							= -5,	-- Rival ethos results in this opinion value
-		ETHOS_DIFFERENT						= -1,	-- Ethic is two steps from ours.
-		ETHOS_RELATED						= 5, 	-- Related ethos results in this opinion value
-		ETHOS_UNIFORM						= 10,	-- Uniform ethos results in this opinion value
+--		ETHOS_CONFLICTING					= -10, 	-- Conflicting ethos results in this opinion value
+--		ETHOS_RIVAL							= -5,	-- Rival ethos results in this opinion value
+--		ETHOS_DIFFERENT						= -1,	-- Ethic is two steps from ours.
+--		ETHOS_RELATED						= 5, 	-- Related ethos results in this opinion value
+--		ETHOS_UNIFORM						= 10,	-- Uniform ethos results in this opinion value
 
+		POP_ETHOS_NEW_POP_DIVERGENCE_MULT	= 10,	-- Determines effect of ethics divergence on how likely new pops are to take empire ethics from existing pops
+		POP_ETHOS_SAME_SPECIES_MULT			= 5,	-- How much more likely are new pops to take their ethics from same-species pops
 		POP_ETHOS_DIVERGENCE_INTERVAL		= 360,	-- Number of days until a Pop has a change to diverge from empire ethos
 		POP_ETHOS_DIVERGENCE_RATE_MULT		= 0.1,	-- Base rate multiplier to the chance of Pop Ethics convergence and divergence
 		POP_CHANGE_FACTION_CHANCE			= 0.1,	-- Once every month a pop has X chance to change faction, but only if the pop wants to
@@ -505,6 +519,8 @@ NDefines = {
 		FEDERATION_USES_LEADER_ROTATION		= 1,	-- Toggle whether rotation should be used
 		FEDERATION_TAX_PER_POP				= 0.1,	-- Tax paid to federation per pop in empire
 		FEDERATION_MIN_MEMBERS_TO_FORM		= 4,	-- Minimal amount of members to form a federation.
+		ALLIANCE_MIN_MEMBERS_TO_KICK		= 3,	-- Can't kick alliance members unless you have at least this many members
+
 
 		WAR_VASSALIZATION_PER_POP			= 20.0,	-- Influence cost to vassalize someone scaled with pop amount
 		WAR_RELEASE_PER_POP					= 10.0,	-- Influence cost to release a vassal scaled with pop amount
@@ -535,8 +551,13 @@ NDefines = {
 		TERRAFORM_DEFAULT_DURATION_DAYS		= 3600,	-- Default number of days required to successfully terraform a planet
 		AUTO_DECLINE_DIPLOMACY_DAYS			= 180,	-- Number of days after which diplomatic action will automatically be declined
 		
+		FEDERATION_FLEET_SIZE				= 0.2,	-- Federation fleet capacity is this % of all members' fleets
+		
 		MIN_RIVAL_YEARS						= 10,	-- Years before you can remove an empire as a rival
+		DEFENSIVE_PACT_INFLUENCE_COST  		= 1,	-- Per defensive pact
+		GUARANTEE_INFLUENCE_COST  			= 1,	-- Per guarantee
 		ALLIANCE_INFLUENCE_COST  			= 2,	-- For being in an alliance
+		FEDERATION_INFLUENCE_COST  			= 2,	-- For being in a federation
 		RIVALRY_INFLUENCE_GAIN				= 2,	-- Per rival (scales to relative power, value here is at 2x power) 	
 		
 		MAX_FRICTION 						= 100,	-- Max friction (total)
@@ -549,14 +570,14 @@ NDefines = {
 		
 		ADVANCED_EMPIRE_EXTRA_POPS_MIN = 1,		-- How many extra pops does advanced empires get on their homeworld?
 		ADVANCED_EMPIRE_EXTRA_POPS_MAX = 3,	
-		ADVANCED_EMPIRE_EXTRA_MINERALS_MIN = 500, -- How much extra minerals does advanced empires start with?
+		ADVANCED_EMPIRE_EXTRA_MINERALS_MIN = 1000, -- How much extra minerals does advanced empires start with?
 		ADVANCED_EMPIRE_EXTRA_MINERALS_MAX = 1500,	
-		ADVANCED_EMPIRE_EXTRA_ENERGY_MIN = 300,   -- How much extra energy does advanced empires start with?
-		ADVANCED_EMPIRE_EXTRA_ENERGY_MAX = 900,	
-		ADVANCED_EMPIRE_EXTRA_INFLUENCE_MIN = 50,   -- How much extra influence does advanced empires start with?
-		ADVANCED_EMPIRE_EXTRA_INFLUENCE_MAX = 150,	
-		ADVANCED_EMPIRE_EXTRA_WARSHIPS_MIN = 3,	-- How many extra war ships do advanced empires start with?
-		ADVANCED_EMPIRE_EXTRA_WARSHIPS_MAX = 7,
+		ADVANCED_EMPIRE_EXTRA_ENERGY_MIN = 800,   -- How much extra energy does advanced empires start with?
+		ADVANCED_EMPIRE_EXTRA_ENERGY_MAX = 1500,	
+		ADVANCED_EMPIRE_EXTRA_INFLUENCE_MIN = 0,   -- How much extra influence does advanced empires start with?
+		ADVANCED_EMPIRE_EXTRA_INFLUENCE_MAX = 0,	
+		ADVANCED_EMPIRE_EXTRA_WARSHIPS_MIN = 1,	-- How many extra war ships do advanced empires start with?
+		ADVANCED_EMPIRE_EXTRA_WARSHIPS_MAX = 3,
 		ADVANCED_EMPIRE_MAX_EXTRA_COLONIES = 4,	-- Max extra colonies an advanced empire can start with
 		ADVANCED_EMPIRE_COLONY_DISTANCE = 50,	-- Max distance at which an advanced empire can get extra colonies
 		ADVANCED_EMPIRE_COLONY_CHANCE = 50,		-- Per colonizeable planet within colony distance (after the 1st)
@@ -564,13 +585,13 @@ NDefines = {
 		ADVANCED_EMPIRE_COLONY_NUM_FARMS = 1,
 		ADVANCED_EMPIRE_COLONY_NUM_POWER_PLANTS = 2,
 		
-		ADVANCED_EMPIRE_COLONY_CAPITAL	= "building_capital_1",
+		ADVANCED_EMPIRE_COLONY_CAPITAL	= "building_capital_2",
 		ADVANCED_EMPIRE_COLONY_POWER_PLANT	= "building_power_plant_1",
 		ADVANCED_EMPIRE_COLONY_FARM	= "building_hydroponics_farm_1",
 		
-		GROUND_SUPPORT_SOFT_DMG					= 0.30, -- Multiplier to fortification damage
+		GROUND_SUPPORT_SOFT_DMG					= 0.20, -- Multiplier to fortification damage
 		GROUND_SUPPORT_LIMITED_DMG				= 0.40, -- Multiplier to fortification damage
-		GROUND_SUPPORT_FULL_DMG					= 0.50, -- Multiplier to fortification damage
+		GROUND_SUPPORT_FULL_DMG					= 0.60, -- Multiplier to fortification damage
 		
 		LIFE_DATA_OBSERVATION_OUTPOST			= 3,  	-- Number of added life data when building an observation outpost
 
@@ -580,14 +601,14 @@ NDefines = {
 
 		INFLUENCE_ADD_UPLIFTED_SPECIES			= 0,	-- Influence gain when uplifting species
 
-		PLANET_ARMIES_LIMIT						= 12,	-- Maximum number of troops per planet
+		PLANET_ARMIES_LIMIT						= 50,	-- Maximum number of troops per planet
 
 		MAX_OBSERVATION_STATIONS 				= 8, 	--Maximum observation stations per planet
 
-		SPACEPORT_CONSTRUCTION_TIME				= 360,	-- Amount of days it takes to construct a spaceport.
+		SPACEPORT_CONSTRUCTION_TIME				= 720,	-- Amount of days it takes to construct a spaceport.
 		SPACEPORT_CONSTRUCTION_HEALTH			= 0.1,	-- How much HP, in %, that the spaceport starts with.
 		SPACEPORT_LEVELS 						= 6,	-- Number of spaceport levels
-		SPACEPORT_UPGRADE_TIME					= 180,	--	Time to upgrade a spaceport to the next level
+		SPACEPORT_UPGRADE_TIME					= 720,	--	Time to upgrade a spaceport to the next level
 
 		--SHIP_COST_RESOURCE = "minerals", -- resource to pay ships with
 
@@ -597,33 +618,34 @@ NDefines = {
 		ANOMALY_CRITICAL_FAIL_CHANCE			= 0.20, -- 20% chance of critical fail on fail
 		ANOMALY_SPAWN_CHANCE					= 0.025,-- Percent chance that a planet gets a discovery when surveyed
 		ANOMALY_SPAWN_CHANCE_INCREMENT			= 0.005,-- Percentage increase towards next chance when failing
-		GOVERNMENT_COOLDOWN_YEARS				= 20,	-- Cooldown years after changing government before you can change it again
-		GOVERNMENT_CHANGE_INFLUENCE_COST		= 250,	-- The Influence it costs to change government type
+		GOVERNMENT_COOLDOWN_YEARS				= 50,	-- Cooldown years after changing government before you can change it again
+		GOVERNMENT_CHANGE_INFLUENCE_COST		= 0,	-- The Influence it costs to change government type
 
 		NUM_TECH_ALTERNATIVES					= 5,
 		TECH_WEIGHT_BASE						= 10,
 		TECH_WEIGHT_POTENTIAL_ADD				= 0,
 		TECH_RESEARCH_NO_LEADER_PENALTY			= 0,
 		TECH_COST_MULT_NUM_COLONIES				= 0.0, -- Each Planet adds +X% tech cost
-		TECH_COST_FREE_POPS						= 10, -- First X pops do not add any tech cost
-		TECH_COST_MULT_NUM_POPS					= 0.03, -- Each non-free Pop adds +X% tech cost
+		TECH_COST_FREE_POPS						= 20, -- First X pops do not add any tech cost
+		TECH_COST_MULT_NUM_POPS					= 0.025, -- Each non-free Pop adds +X% tech cost
 		TECH_WEIGHT_PREVIOUS_OPTION				= 0.5,	-- If a tech was one of the alternatives last time its weight will be multiplied with TECH_WEIGHT_PREVIOUS_OPTION
 
 		KEYBOARD_DOUBLE_CLICK_TIME				= 0.5,	-- Seconds listening to control group double clicks.
 		DOCKED_FLEET_MAINTENANCE_REDUCTION		= 0.5,	-- Docked fleets will have a lowered maintenance reduction of this amount
 
+		TRADE_DIPLOMATIC_OPTIONS 				= 0,	-- If set to 1, you can trade for guarantees, migration access, NAPs and support independence instead of having them as diplomatic actions
 		MIN_TRADE_DEAL_LENGTH_YEARS				= 10,	-- Minimum length of a trade deal in years.
-		MAX_TRADE_DEAL_LENGTH_YEARS				= 30,	-- Maximum length of a trade deal in years.
+		MAX_TRADE_DEAL_LENGTH_YEARS				= 50,	-- Maximum length of a trade deal in years.
 
 		ORBITAL_BOMBARDMENT_COLONIZE_PROGRESS_DAMAGE_PER_DAY = 4 / 30, -- Damage dealt to a colony's progress each day of orbital bombardment. Only applies during the initial colonization process, established colonies are unaffected.
 
 		MISSION_PROGRESS_MAX					= 1,	-- When is a mission finished?
 
-		CORE_SECTOR_PLANET_CAP					= 75,	-- Too many planets in core sector will apply modifier inefficient_planet_management.
+		CORE_SECTOR_SYSTEM_CAP					= 75,	-- Too many planets in core sector will apply modifier inefficient_planet_management.
 		SECTOR_CAP								= 20,	-- Too many sectors will apply modifier inefficient_sector_management.
 		SECTOR_CAP_INCR							= 0.25,	-- 0.25 means that for every four planets an extra sector can be created.
 		SECTOR_SUPPORT_RESOURCE_AMOUNT			= 100, 	-- How much resources each click will give the sector.
-		SECTOR_REVOKE_PLANET_COST				= 0,	-- Influence cost for revoking a planet from a sector
+		SECTOR_REVOKE_SYSTEM_COST				= 0,	-- Influence cost for revoking a planet from a sector
 		DELETE_SECTOR_COST						= 0,	-- Influence cost for deleting a sector
 
 		NEW_HEIR_CHANCE							= 0.05,	-- Chance to get a new heir each day. Range is 0 to 1
@@ -637,24 +659,24 @@ NDefines = {
 
 		SET_DEFENDER_WAR_DEMANDS_TIME_LIMIT		= 360,	-- Days defender have to set war demands after war started.
 		PEACE_OFFER_DECLINE_THRESHOLD			= 30.0,	-- War score diff threshold for when declining a peace offer has a cost applied.
-		PEACE_OFFER_DECLINE_COST				= 100.0, -- Cost for declining an offer the AI would accept.
+		PEACE_OFFER_DECLINE_COST				= 0, -- Cost for declining an offer the AI would accept.
 	
-		RESOURCE_CLUSTER_COUNT					= 6, 	-- Number of resource clusters containing special resources
+		RESOURCE_CLUSTER_COUNT					= 8, 	-- Number of resource clusters containing special resources
 	
 		POP_MIGRATION_NOT_ALLOWED_POLICY_FLAG	= "migration_not_allowed", -- Policy flag for pop migration not allowed (used by migration access)
 		POP_MIGRATION_ALLOWED_PRIMARY_ONLY_POLICY_FLAG	= "migration_allowed_primary_only", -- Policy flag for pop migration not allowed (used by migration access)
 	
 		RESEARCH_AGREEMENT_COST_MULT			= -0.05,	-- Technology cost reduced with 25% for trade research agreement deal
 		
-		INTEGRATE_SUBJECT_MIN_DAYS 				= 3600, -- Amount of days the subject has been a subject before we can integrate it
-		SUBJECTS_INTEGRATION_CAP				= 1, -- Amount of integrations you're allowed to have at the same time
-		SUBJECT_INTEGRATION_BASE_PROGRESS 		= 3, -- Cost per month for subject integration
+		INTEGRATE_SUBJECT_MIN_DAYS 				= 9000, -- Amount of days the subject has been a subject before we can integrate it
+		SUBJECTS_INTEGRATION_CAP				= 5, -- Amount of integrations you're allowed to have at the same time
+		SUBJECT_INTEGRATION_BASE_PROGRESS 		= 2, -- Cost per month for subject integration
 		SUBJECT_INTEGRATION_COST_BASE			= 20, -- Base cost for integration
 		SUBJECT_INTEGRATION_COST_PER_POP 		= 10, -- Integration cost per pop 
 		SUBJECT_INTEGRATION_COST_PER_PLANET		= 50, -- Integration cost per planet
 		XENOPHOBIA_SAME_SPECIES_CLASS_MULT  	= 0.5, -- Same Species Class: All Xenophobia and Xenophilia happiness and opinion effects are multiplied by this
-		XENOPHOBIA_SUBSPECIES_MULT  			= 0.25, -- Subspecies: All Xenophobia and Xenophilia happiness and opinion effects are multiplied by this
-		XENOPHOBIA_ROBOT_MULT  					= 0.25, -- Robots and Synthetics: All Xenophobia and Xenophilia happiness and opinion effects are multiplied by this
+		XENOPHOBIA_SUBSPECIES_MULT  			= 0.1, -- Subspecies: All Xenophobia and Xenophilia happiness and opinion effects are multiplied by this
+		XENOPHOBIA_ROBOT_MULT  					= 0.05, -- Robots and Synthetics: All Xenophobia and Xenophilia happiness and opinion effects are multiplied by this
 		XENOPHOBIA_CLIENT_PATRON_MULT  			= 0.25, -- Uplifed vs Uplifter: All Xenophobia and Xenophilia happiness and opinion effects are multiplied by this
 		XENOPHOBIA_ALIEN_OVERLORDS_MULT  		= 2, 	-- Unhappiness effect Multiplier for Xenophobe Pops within Alien empires
 		
@@ -675,7 +697,11 @@ NDefines = {
 			"GFX_weapon_type_02",
 			"GFX_weapon_type_03",
 		},
-		
+		STARTING_FTL_TYPES = {
+			"warp",
+			"hyperdrive",
+			"wormhole",
+		},
 		TECH_TO_SURVEY_OWNED = "tech_galactic_ambitions",
 	},
 
@@ -683,7 +709,7 @@ NDefines = {
 		MAX_ETHIC_POINTS 					= 3,
 		MAX_TRAIT_POINTS 					= 2,
 		MAX_TRAITS 							= 4,		-- Max racial traits (1 is always used for homeworld type trait)
-		MAX_TRAIT_POINTS_LEADER				= 2,		-- How many trait points a leader can have
+		MAX_TRAIT_POINTS_LEADER				= 3,		-- How many trait points a leader can have
 		MAX_TRAIT_POINTS_RULER				= 3,
 		TRAIT_MODIFICATION_COST_MULT 		= 30, 		-- The cost of the species modification special project is trait cost * this
 		UPLIFT_COST_BASE					= 250.0,
@@ -693,7 +719,7 @@ NDefines = {
 
 	NShip = {
 		DESIGNER_WEAPON_PREF_MUL			= 1.33,			-- How much does weapon preference tags in the ship designer affect the weight it assigns a weapon?
-		DESIGNER_WEAPON_STACKING_DIV		= 0.20,			-- The higher this is, the more the ship designer will try to vary which weapon types are used on its sections
+		DESIGNER_WEAPON_STACKING_DIV		= 0.10,			-- The higher this is, the more the ship designer will try to vary which weapon types are used on its sections
 		
 		ENERGY_MAINTENANCE_MUL				= 0.01,		-- Ship Maintenance Multiplier, Percentage of the cost of the ship
 		MINERAL_MAINTENANCE_MUL				= 0.0,		-- Ship Maintenance Multiplier, Percentage of the cost of the ship
@@ -733,12 +759,15 @@ NDefines = {
 		HYPERDRIVE_INTERSTELLAR_TRAVEL_SPEED = 1.0, -- In micro updates ( 10/day )
 		RULER_SHIP_SCALE_MULT				= 0.5,	-- Scale up of unique ruler ship.
 		
-		MILITARY_POWER_HEALTH_WEIGHT		= 0.5,
+		MILITARY_POWER_HEALTH_WEIGHT		= 1,
 		MILITARY_POWER_DAMAGE_WEIGHT		= 0.5,
 		MILITARY_POWER_SPACEPORT_MULT 		= 1,
 		MILITARY_POWER_SCALE				= 1,
 		MILITARY_POWER_EXPONENT				= 0.55,	-- math: power = ( ( effective_health * damage_per_day ) ^ exponent ) * scale
 		MILITARY_POWER_ESTIMATED_ARMOR_PENETRATION	= 0.3,	-- use as an estimated armor penetration in formula damage_reduction *= 1 - armor_penetration.
+		MILITARY_POWER_SPACEPORT_ADD 		= 100,
+		EXCESS_POWER_BONUS_THRESHOLD_MAX	= 1.0, 	-- 0.5 means 0-50% excess power linearly scales ship_excess_power modifier between 0-1.
+		EXCESS_POWER_BONUS_THRESHOLD_MIN	= 0.05, -- min value for excess power to be used.
 	},
 
 	NCombat = {
@@ -771,14 +800,14 @@ NDefines = {
 	NPop = {
 		MAX_POPS_BASE 						= 10,		-- Max pops is base multiplied by planet size
 		MIGRATION_CROWDING_EFFECT			= 0.20,		-- How much does crowding affect where pops want to migrate
-		MIN_FOOD_SURPLUS_FOR_MIGRATION		= 3,		-- Only if this much food surplus on target planet
+		MIN_FOOD_SURPLUS_FOR_MIGRATION		= 2,		-- Only if this much food surplus on target planet
 		MIN_HAPPINESS_DIFF_FOR_MIGRATION 	= 0.1,		-- Only if the difference in happiness is greater than this will a pop migrate
 		MIN_HABITABILITY_TO_MIGRATE			= 0.5,		-- Will not migrate to players with habitability under this
 		MIGRATION_SPEED						= 0.05,		-- Monthly migration speed of pops: when the pop has reached a migration progress of 1, it will be moved
 		WAS_ENSLAVED_LENGTH_DAYS			= 3650,		-- Number of days after emancipation a pop is angry for being enslaved
 		
 		GROWTH_BASE							= 40,	-- Required growth for a pop to become fully grown.
-		GROWTH_INCREASE_PER_POP 			= -1,	-- Increased growth cost per pop planet [+ POP_INCREASE_PER_POP*(num_pop - 1)]
+		GROWTH_INCREASE_PER_POP 			= -2,	-- Increased growth cost per pop planet [+ POP_INCREASE_PER_POP*(num_pop - 1)]
 		GROWTH_INCREASE_FACTOR 				= 1,	-- Increased growth factor [+ (num_pop - 1)^POP_INCREASE_FACTOR]
 		FALLEN_EMPIRE_GROWTH_REQ_MULT		= 40,	-- Fallen Empire pops need this much more food for growth
 		
@@ -809,7 +838,7 @@ NDefines = {
 
 		BASE_RESEARCH					= 1.0,	-- Base value of pop research
 		BASE_PRODUCTION					= 1.0,  -- Base value of pop production
-		BASE_HAPPINESS					= 0.6,  -- Base value of pop happiness
+		BASE_HAPPINESS					= 0.5,  -- Base value of pop happiness
 		
 		EMPIRE_SLAVERY_HAPPINESS_MULT	= 0.5, -- How much local Pops care about slavery in the empire as a whole. The higher will be used: the local slavery proportion or empire-wide proportion times this multiplier.
 
@@ -828,12 +857,12 @@ NDefines = {
 		BASE_DAMAGE_MAX					= 3.0,				-- Base max damage
 
 		BASE_MORALE						= 200.0,			-- Base morale
-		MORALE_DAMAGE_MULT				= 1.0,				-- Morale Damage Multiplier, how much of damage is also dealt to morale.
-		MONTHLY_MORALE_REGENERATION		= 0.4,				-- How much morale this unit regenerates each month, percentage of max value.
+		MORALE_DAMAGE_MULT				= 0.5,				-- Morale Damage Multiplier, how much of damage is also dealt to morale.
+		MONTHLY_MORALE_REGENERATION		= 0.1,				-- How much morale this unit regenerates each month, percentage of max value.
 
 		EXP_EXPERIENCED					= 100,				-- Amount of exp to reach experienced rank
-		EXP_VETERAN						= 1000,				-- Amount of exp to reach veteran rank
-		EXP_ELITE						= 10000,			-- Amount of exp to reach elite rank
+		EXP_VETERAN						= 500,				-- Amount of exp to reach veteran rank
+		EXP_ELITE						= 1000,			-- Amount of exp to reach elite rank
 
 		NUM_DAYS_BEFORE_RETREAT			= 14,				-- How many days that need to pass before we can retreat.
 
@@ -858,17 +887,17 @@ NDefines = {
 		COLONY_SHIP_MAINTENANCE 			= 8.0, 		-- Monthly colony ship maintenance
 		CONSTRUCTION_SHIP_PRODUCTION		= 100.0, 	-- Construction ship production cost
 		SCIENCE_SHIP_PRODUCTION				= 100.0, 	-- Science ship production cost
-		COLONY_SHIP_PRODUCTION				= 350.0, 	-- Colony ship production cost
-		SPONSORED_COLONY_SHIP_PRODUCTION	= 250.0, 	-- Sponsored colony ship production cost
-		FLEET_UPGRADE_TIME_COST_MULT		= 0.25,		-- Upgrade fleet cost
+		COLONY_SHIP_PRODUCTION				= 250.0, 	-- Colony ship production cost
+		SPONSORED_COLONY_SHIP_COST_MULT		= -0.50,	-- Sponsored colony ship energy cost = colony ship mineral cost * (1 + MULT)
+		FLEET_UPGRADE_TIME_COST_MULT		= 0.8,		-- Upgrade fleet cost
 		FLEET_UPGRADE_MINERAL_COST_BASE		= 5.0,		-- mineral cost of ship upgrade is base + abs( price difference between old and new designs * FLEET_UPGRADE_MINERAL_COST_MULT )
 		FLEET_UPGRADE_MINERAL_COST_MULT		= 0.75,		
 		OBSERVATION_STATION_MAINTENANCE		= 3.0,		-- Monthly observation station maintenance
 		SPACEPORT_UPGRADE_COSTS				= { 300.0, 450.0, 600.0, 850.0, 1000.0 }, -- Mineral costs for upgrading the spaceport
 		SEVERE_DEFICIT_VALUE				= 0.8,		-- Balance/Income smaller than this value counts as severe
-		OUTPOST_STATION_MINERAL_COST		= 200,		-- Mineral cost to build outpost
+		OUTPOST_STATION_MINERAL_COST		= 500,		-- Mineral cost to build outpost
 		OUTPOST_STATION_INFLUENCE_COST		= 0,		-- Influence cost to build outpost
-		OUTPOST_STATION_MAINTENANCE			= 2,		-- Monthly outpost station EC maintenance
+		OUTPOST_STATION_MAINTENANCE			= 3,		-- Monthly outpost station EC maintenance
 		OUTPOST_STATION_INFLUENCE_MAINTENANCE = 0,	-- Monthly outpost station Influence maintenance
 
 		BUILDING_REPARATION_TIME_RATE		= 0.25,		-- Amount of time required to repair ruined buildings
@@ -876,6 +905,10 @@ NDefines = {
 		
 		RESETTLEMENT_COST_RESOURCES			= { "minerals" }, -- Resources for manual resettlement
 		RESETTLEMENT_COST_AMOUNTS			= { 50 }, -- Resource costs for manual resettlement
+		EXPANSION_COST_BASE 				= 0.0,		-- the influence base cost of colonzation and frontier outposts by this value.
+		EXPANSION_COST_DISTANCE_FREE 		= 30.0,		-- a certain amount of distance that is reduced from actual distance, in effect making a "free" distance
+		EXPANSION_COST_DISTANCE_COST		= 0,		-- each 1 range equals X of this define as an influence cost to colonize or build a frontier outpost
+		EXPANSION_COST_DISTANCE_SCALE 		= 0,		-- scaled cost for exponentially increased costs depending on range
 	},
 
 	NEngine = {
@@ -884,13 +917,27 @@ NDefines = {
 
 	NAI = {
 		WAS_HUMAN_MONTHS = 120,							-- Amount of months that the AI will refrain from making large changes to the empire if it's taking over from a player
+		
+		MAX_TRUST = 100,								-- trust can never be more than this
+		MAX_TRUST_DEFENSIVE_PACT = 75,					-- trust can tick up to this if defensive pact
+		MAX_TRUST_NO_ALLIANCE = 50,						-- trust can tick up to this if no alliance or defensive pact
+		BASE_TRUST_CHANGE = -0.25,						-- only applied if no other factor is changing trust
+		MONTHLY_TRUST_GUARANTEE = 0.25,
+		MONTHLY_TRUST_RESEARCH_TREATY = 0.10,
+		MONTHLY_TRUST_MIGRATION_TREATY = 0.25,
+		MONTHLY_TRUST_NON_AGGRESSION_PACT = 0.50,		
+		MONTHLY_TRUST_DEFENSIVE_PACT = 0.75,				
+		MONTHLY_TRUST_SUBJECT = 0.5,				
+		MONTHLY_TRUST_ALLIANCE = 1.00,				
+		MONTHLY_TRUST_AT_WAR = -2.00,
+		MONTHLY_TRUST_RIVAL = -2.00,
 	
-		DEFICIT_SPENDING_START_WAR = 0.25,				-- If at war and energy is at this fraction of max storage, deficit spend energy
-		DEFICIT_SPENDING_START_PEACE = 0.5,			-- If at peace and energy is at this fraction of max storage, deficit spend energy
-		DEFICIT_SPENDING_STOP_WAR = 0.1,				-- If at war and energy is at this fraction of max storage, stop deficit spending
-		DEFICIT_SPENDING_STOP_PEACE = 0.2,				-- If at peace and energy is at this fraction of max storage, stop deficit spending
-		DEFICIT_SPENDING_MONTHLY_PEACE = 0.003,				-- This percentage of max storage should be deficit spent each month when at peace
-		DEFICIT_SPENDING_MONTHLY_WAR = 0.005,				-- This percentage of max storage should be deficit spent each month when at war
+		DEFICIT_SPENDING_START_WAR = 0.02,				-- If at war and energy is at this fraction of max storage, deficit spend energy
+		DEFICIT_SPENDING_START_PEACE = 0.05,			-- If at peace and energy is at this fraction of max storage, deficit spend energy
+		DEFICIT_SPENDING_STOP_WAR = 0.01,				-- If at war and energy is at this fraction of max storage, stop deficit spending
+		DEFICIT_SPENDING_STOP_PEACE = 0.02,				-- If at peace and energy is at this fraction of max storage, stop deficit spending
+		DEFICIT_SPENDING_MONTHLY_PEACE = 0.001,				-- This percentage of max storage should be deficit spent each month when at peace
+		DEFICIT_SPENDING_MONTHLY_WAR = 0.001,				-- This percentage of max storage should be deficit spent each month when at war
 	
 		BROKEN_TRADE_DEAL_FACTOR = 0.1,				-- How much does each broken trade deal affect future trade willingness ( * value of deal and years )
 		BROKEN_TRADE_DEAL_MAX = 50,	
@@ -903,6 +950,7 @@ NDefines = {
 		HIGH_THREAT_THRESHOLD = 50,					-- Must have at least this much threat to become fearful		
 		SHARED_THREAT_MULT = 0.5,					-- How much does having a shared threat boost opinion?
 		SHARED_THREAT_MAX = 200,					
+		THREAT_SHARED_THREAT_REDUCTION = 4,		
 		THREAT_DECAY = -0.5,							-- Each month
 		THREAT_DISTANCE_FACTOR = 0.5,				-- The higher this is, the larger the threat reduction from being far away
 		THREAT_SIZE_FACTOR = 1.0,					-- How much does the relative power of the aggressive empire affect threat?
@@ -913,8 +961,8 @@ NDefines = {
 		THREAT_OPINION_MAX = 1.25,
 		THREAT_OPINION_MIN = 0.75,
 		
-		COLONIZE_NON_ADJACENT = 0,				-- If enabled, AI will colonize far away systems (will result in border gore)
-		COLONIZE_NON_ADJACENT_DIV = 3,			-- If colony is far away, divide priority to colonize it by this
+		COLONIZE_NON_ADJACENT = 1,				-- If enabled, AI will colonize far away systems (will result in border gore)
+		COLONIZE_NON_ADJACENT_DIV = 10,			-- If colony is far away, divide priority to colonize it by this
 	
 		AI_AGGRESSIVENESS_LOW_MULT = 0.5,		
 		AI_AGGRESSIVENESS_HIGH_MULT = 2.0,		
@@ -925,7 +973,7 @@ NDefines = {
 		AI_AGGRESSIVENESS_NO_COLONY_TARGET_MULT = 2, -- When an AI has no immediate colony targets and at least MAX_PLANETS_FOR_BUDGET_FACTOR planets (but is not boxed in), aggression is multiplied by this value
 	
 		MAX_RESOURCE_SCORE = 10000,				-- Maximum amount AI will value a resource at
-		MAX_RESOURCE_SCORE_DIV = 1000,			-- Resources that aren't critical prio are divided by this amount
+		MAX_RESOURCE_SCORE_DIV = 10000,			-- Resources that aren't critical prio are divided by this amount
 	
 		ACTION_MIN_DAYS_REJECTED = 1000,		-- AI will remember a rejection at least this time
 		ACTION_MIN_DAYS_REJECTED_PEACE = 150,	-- AI will remember a peace deal rejection at least this time
@@ -933,11 +981,14 @@ NDefines = {
 		INSTANT_AI_DIPLOMACY = 0,				-- AI answers diplomacy immediately. No proposals are sent off to AIs.
 		ACTION_DAYS_REJECTED_RANDOM_PEACE = 100,-- Max random extra days AI will reject peace offer
 
+		ALLIANCE_BREAK_THRESHOLD = -50,		-- If AI values an existing alliance at less than this, leave it
+		ALLIANCE_KICK_THRESHOLD = -30,		-- If AI values an existing alliance at less than this, try to kick them
 		ACCEPTANCE_DEAL_BREAKER = -1000,	-- This is used when something is a deal breaker in diplomacy
 		ACCEPTANCE_DEAL_ALWAYS = 1000,			-- This is used when the AI should always accept a deal
 
 		-- Below are various acceptance factors for specific actions
 		ALLIANCE_ACCEPTANCE_OPINION_FACTOR = 0.1,
+		ALLIANCE_ACCEPTANCE_VOTED_DOWN_PROPOSAL = -50,
 		ALLIANCE_ACCEPTANCE_ATTITUDE_ALLIANCE = 30,
 		ALLIANCE_ACCEPTANCE_ATTITUDE_COEXIST = 10, 
 		ALLIANCE_ACCEPTANCE_OTHER_ATTITUDE = -30,
@@ -947,6 +998,7 @@ NDefines = {
 		ALLIANCE_ACCEPTANCE_NAP = 2,	-- per year NAP has been active
 		ALLIANCE_ACCEPTANCE_NAP_MAX = 10,
 		ALLIANCE_CONQUEROR_DIFFERENCE = -20,	-- penalty if one side is expansionistic and the other isn't
+		ALLIANCE_CONQUEROR_POLICY_FLAG = "unrestricted_wars",
 		ALLIANCE_ACCEPTANCE_RELATIVE_STRENGTH_FACTOR = 5, -- For each 1x we are stronger than them
 		ALLIANCE_ACCEPTANCE_RELATIVE_STRENGTH_MAX = 20,
 		ALLIANCE_ACCEPTANCE_MEMBER_VOTE = 60,	-- added to acceptance when a member is voting whether to approve an alliance invite
@@ -955,6 +1007,30 @@ NDefines = {
 		ALLIANCE_ACCEPTANCE_DISTANCE_MULT = 0,
 		ALLIANCE_ACCEPTANCE_HARD_DIFFICULTY = -25,
 		ALLIANCE_ACCEPTANCE_INSANE_DIFFICULTY = -50,
+		
+		DEFENSIVE_PACT_ACCEPTANCE_OPINION_FACTOR = 0.2,
+		DEFENSIVE_PACT_ACCEPTANCE_ATTITUDE_ALLIANCE = 50,
+		DEFENSIVE_PACT_ACCEPTANCE_ATTITUDE_COEXIST = 20, 
+		DEFENSIVE_PACT_ACCEPTANCE_OTHER_ATTITUDE = -50,
+		DEFENSIVE_PACT_ACCEPTANCE_SHARED_RIVAL = 25, -- per rival
+		DEFENSIVE_PACT_ACCEPTANCE_SHARED_THREAT = 1,	-- scales with actual threat
+		DEFENSIVE_PACT_ACCEPTANCE_RELATIVE_STRENGTH_FACTOR = 5, -- For each 1x we are stronger than them
+		DEFENSIVE_PACT_ACCEPTANCE_RELATIVE_STRENGTH_MAX = 20,
+		
+		NON_AGGRESSION_PACT_ACCEPTANCE_OPINION_FACTOR = 0.2,
+		NON_AGGRESSION_PACT_ACCEPTANCE_ATTITUDE_ALLIANCE = 100,
+		NON_AGGRESSION_PACT_ACCEPTANCE_ATTITUDE_COEXIST = 100, 
+		NON_AGGRESSION_PACT_ACCEPTANCE_OTHER_ATTITUDE = 0,
+		NON_AGGRESSION_PACT_ACCEPTANCE_SHARED_RIVAL = 25, -- per rival
+		NON_AGGRESSION_PACT_ACCEPTANCE_SHARED_THREAT = 1,	-- scales with actual threat
+		NON_AGGRESSION_PACT_ACCEPTANCE_RELATIVE_STRENGTH_FACTOR = 20, -- For each 1x we are stronger than them
+		NON_AGGRESSION_PACT_ACCEPTANCE_RELATIVE_STRENGTH_MAX = 100,	
+		
+		MIGRATION_PACT_ACCEPTANCE_OPINION_FACTOR = 0.5,
+		MIGRATION_PACT_ACCEPTANCE_ATTITUDE_ALLIANCE = 30,
+		MIGRATION_PACT_ACCEPTANCE_ATTITUDE_COEXIST = 10, 
+		MIGRATION_PACT_ACCEPTANCE_OTHER_ATTITUDE = 0,
+		MIGRATION_PACT_ACCEPTANCE_MIGRATOR_PERSONALITY = 20,
 		
 		VASSALIZATION_ACCEPTANCE_PROTECTORATE_MULT = 0.1,		-- multiplied by number of techs potential overlord is ahead in
 		VASSALIZATION_ACCEPTANCE_PROTECTORATE_MAX = 20,		
@@ -969,8 +1045,7 @@ NDefines = {
 		VASSALIZATION_ACCEPTANCE_OTHER_THREAT_MULT = 0.2,
 		VASSALIZATION_ACCEPTANCE_OTHER_THREAT_MAX = 20,
 		VASSALIZATION_ACCEPTANCE_DISTANCE_MULT = 1,
-		VASSALIZATION_ACCEPTANCE_HARD_DIFFICULTY = -50,
-		VASSALIZATION_ACCEPTANCE_INSANE_DIFFICULTY = -100,		
+
 		
 		OFFER_VASSALIZATION_ACCEPTANCE_ATTITUDE_VASSALIZE = 100,
 		OFFER_VASSALIZATION_ACCEPTANCE_OTHER_ATTITUDE = -1000,
@@ -995,7 +1070,9 @@ NDefines = {
 		
 		MIN_WILLINGNESS_TO_OFFER_TRADE = 0.75, -- AIs with a personality whose trade willingness is below this will not offer trades
 	
-		TRADE_VALUE_RESOURCE = 0.5,	-- for minerals and energy
+		TRADE_VALUE_RESOURCE_INCOME_BASE = 0.5,	-- for minerals and energy
+		TRADE_VALUE_RESOURCE = 1,	-- for minerals and energy (scaled by income & need)
+		TRADE_VALUE_RESOURCE_MONTHLY_MULT = 0.8, -- value of monthly resources is multiplied by this compared to lump-sum
 		TRADE_VALUE_STRATEGIC_RESOURCE = 1, -- for 1 strategic resource (per year)
 		TRADE_VALUE_SYSTEM = 100,
 		TRADE_VALUE_COLONY = 10, -- Per pop
@@ -1021,7 +1098,7 @@ NDefines = {
 		TRADE_VALUE_RESEARCH_AGREEMENT_MAX = 5, -- Multiplied by treaty years			
 		-- Above are various acceptance factors for specific actions
 		
-		NON_MINED_RESOURCES_ENERGY_WANT_FACTOR = 1,	-- If 100% of AI's resources in space are unmined, increase desire for energy by this
+		NON_MINED_RESOURCES_ENERGY_WANT_FACTOR = 0,	-- If 100% of AI's resources in space are unmined, increase desire for energy by this
 		
 		MILITARY_STATION_BUDGET_FRACTION = 0.1,	-- AI will spend this fraction of their income on military stations
 		SAVINGS_BUDGET_FRACTION = 0.00, 		-- AI will spend this fraction of their income on savings (normally not needed as fleets in dock will result in energy surplus)
@@ -1033,18 +1110,18 @@ NDefines = {
 		
 		SHIPSIZE_BUDGET_FACTOR = 0.05,			-- For each ship size unlocked, increase navy budget by this amount
 		NAVAL_CAPACITY_BUDGET_MAX = 100,		-- At this naval capacity, AI puts max budget into ships
-		PLANET_BUDGET_FACTOR = 0.35,			-- When AI has few planets, it will decrease building/mil station budget by this and put it into colonies/stations instead
+		PLANET_BUDGET_FACTOR = 0.3,			-- When AI has few planets, it will decrease building/mil station budget by this and put it into colonies/stations instead
 		MAX_PLANETS_FOR_BUDGET_FACTOR = 4,		-- At this amount of planets, budget is normalized
 
-		MINERAL_MILITARY_STATION_BUDGET_FRACTION = 0.10, -- AI will spend this fraction of their stored minerals on military stations
-		MINERAL_NAVY_BUDGET_FRACTION = 0.30, 	-- AI will spend this fraction of their stored minerals on ships
-		MINERAL_STATION_BUDGET_FRACTION = 0.10, -- AI will spend this fraction of their stored minerals on stations (used for spaceport instead when it needs a new spaceport)
-		MINERAL_BUILDING_BUDGET_FRACTION = 0.20,-- AI will spend this fraction of their stored minerals on buildings (used for spaceport instead when it needs a new spaceport)
+		MINERAL_MILITARY_STATION_BUDGET_FRACTION = 0.05, -- AI will spend this fraction of their stored minerals on military stations
+		MINERAL_NAVY_BUDGET_FRACTION = 0.20, 	-- AI will spend this fraction of their stored minerals on ships
+		MINERAL_STATION_BUDGET_FRACTION = 0.15, -- AI will spend this fraction of their stored minerals on stations (used for spaceport instead when it needs a new spaceport)
+		MINERAL_BUILDING_BUDGET_FRACTION = 0.2,-- AI will spend this fraction of their stored minerals on buildings (used for spaceport instead when it needs a new spaceport)
 		MINERAL_SPACEPORT_BUDGET_FRACTION = 0.05, -- AI will spend this fraction of their stored minerals on spaceport modules
-		MINERAL_COLONY_BUDGET_FRACTION = 0.1,
-		MINERAL_ARMY_BUDGET_FRACTION = 0.05,	-- AI will spend this fraction on armies
-		MINERAL_TILE_BLOCKER_BUDGET_FRACTION = 0.05,	-- AI will spend this fraction on tile blockers
-		MINERAL_ROBOT_BUDGET_FRACTION = 0.05,	-- AI will spend this fraction of their stored minerals on robots (transfered to buildings if they don't use robots)
+		MINERAL_COLONY_BUDGET_FRACTION = 0.2,
+		MINERAL_ARMY_BUDGET_FRACTION = 0.02,	-- AI will spend this fraction on armies
+		MINERAL_TILE_BLOCKER_BUDGET_FRACTION = 0.1,	-- AI will spend this fraction on tile blockers
+		MINERAL_ROBOT_BUDGET_FRACTION = 0.03,	-- AI will spend this fraction of their stored minerals on robots (transfered to buildings if they don't use robots)
 		
 		DISBAND_THRESHOLD = 0.8,			-- If budget does not cover at least this fraction of the navy maintenance, disband ships & stations
 		MIN_NAVY_BUDGET = 3,			-- Always add this amount to the navy budget so we can have at least a few ships
@@ -1061,7 +1138,7 @@ NDefines = {
 		MIN_MINERALS_STORED_STATIONS = 100,			-- Minerals AI will store for stations when it does not need more
 		MAX_MINERALS_STORED_SPACEPORT = 500,		-- Minerals AI will store for spaceport when it needs more
 		MIN_MINERALS_STORED_SPACEPORT = 100,		-- Minerals AI will store for spaceport when it does not need more
-		MAX_MINERALS_STORED_COLONIES = 400,		-- Minerals AI will store for colonies when it needs more
+		MAX_MINERALS_STORED_COLONIES = 500,		-- Minerals AI will store for colonies when it needs more
 		MIN_MINERALS_STORED_COLONIES = 350,			-- Minerals AI will store for colonies when it does not need more		
 		MAX_MINERALS_STORED_ARMIES = 300,			-- Minerals AI will store for armies when it needs more
 		MIN_MINERALS_STORED_ARMIES = 0,			-- Minerals AI will store for armies when it does not need more		
@@ -1071,17 +1148,19 @@ NDefines = {
 		MIN_MINERALS_STORED_ROBOTS = 0,				-- Minerals AIwill store for robots when it does not need more
 		AI_DESIRED_NAVY_MINERALS_AT_WAR = 500,		-- AI wants at least this many minerals for ships while at war
 		AI_DESIRED_ARMY_MINERALS_AT_WAR = 100,		-- AI wants at least this many minerals for armies while at war
+		MAX_STORED_ENERGY_POST = 500,				-- AI will store maximum this amount for each energy budget post
 		-- Above values are increased when mineral storage capacity goes up
 		
 		MAX_MINERALS_STORED_SECTOR_POST = 500,		-- Minerals AI will store for each budget post in sectors	
+		MAX_MINERALS_STORED_SECTOR_POST_BUILDINGS = 1000,		-- Minerals AI will store for buildings
 		MAX_MINERALS_SPENT_ON_NAVY = 0.50,			-- Spend no more than this fraction of mineral income on navy maintenance
 
-		EXPECTED_MINERALS_BASE = 10,				-- AI expects to make this base amount in minerals
-		EXPECTED_MINERALS_PER_POP = 0.5,				-- AI expects to make about their num pops x this in minerals
-		EXPECTED_TECH_BASE = 10,						-- AI expects to make this base amount in tech
-		EXPECTED_TECH_PER_POP = 1,					-- AI expects to make about their num pops x this in tech
-		EXPECTED_ENERGY_BASE = 10,					-- AI expects to make this base amount in energy
-		EXPECTED_ENERGY_PER_POP = 2,				-- AI expects to make about their num pops x this in energy
+		EXPECTED_MINERALS_BASE = 5,				-- AI expects to make this base amount in minerals
+		EXPECTED_MINERALS_PER_POP = 2,				-- AI expects to make about their num pops x this in minerals
+		EXPECTED_TECH_BASE = 5,						-- AI expects to make this base amount in tech
+		EXPECTED_TECH_PER_POP = 2,					-- AI expects to make about their num pops x this in tech
+		EXPECTED_ENERGY_BASE = 5,					-- AI expects to make this base amount in energy
+		EXPECTED_ENERGY_PER_POP = 1.3,				-- AI expects to make about their num pops x this in energy
 		EXPECTED_ENERGY_SURPLUS = 3,				-- AI wants a surplus of least this amount in monthly energy production (temporary spending such as colonies does not count)
 		EXPECTED_SECTOR_ENERGY_SURPLUS = 3,			-- As above, but for sectors
 		
@@ -1090,16 +1169,16 @@ NDefines = {
 		
 		MIN_RESOURCES_TO_BUILD_ORBITAL_STATION = 1,	-- If a planet has less than this amount of minerals/research, don't bother with a mining/research station here
 		
-		ENERGY_COLONY_BUDGET_FRACTION = 0.3, -- AI will spend this fraction of their energy on new colonies
+		ENERGY_COLONY_BUDGET_FRACTION = 0.4, -- AI will spend this fraction of their energy on new colonies
 		ENERGY_FACTIONS_BUDGET_FRACTION = 0.2, -- AI will spend this fraction of their energy on factions
-		ENERGY_TILE_BLOCKER_BUDGET_FRACTION = 0.2, -- AI will spend this fraction of their energy on tile blockers
+		ENERGY_TILE_BLOCKER_BUDGET_FRACTION = 0.1, -- AI will spend this fraction of their energy on tile blockers
 		ENERGY_ROBOT_BUDGET_FRACTION = 0.2, -- AI will spend this fraction of their energy on robots (transfered to colonies if no robots)
 		ENERGY_SAVINGS_BUDGET_FRACTION = 0.1, -- AI will spend this fraction of their energy on savings
 		
 		EXPAND_NAVY_LIMIT_FACTOR = 10,			-- If the AI Navy maintenance is this much bigger than the opponents, navy will not be expanded
 
-		CONSTRUCTOR_SHIPS_MUL = 0.04,			-- Number of constructor ships of AI is the number of planets times this value
-		THRESHOLD_DISBAND_SHIPS = 3,			-- AI will disband ships if wanted + this value < owned
+		CONSTRUCTOR_SHIPS_MUL = 0.1,			-- Number of constructor ships of AI is the number of planets times this value
+		THRESHOLD_DISBAND_SHIPS = 2,			-- AI will disband ships if wanted + this value < owned
 
 		COLONIZER_SHIPS_MAX = 2,				-- Maximum number of colonizer ships of AI
 		RESEARCH_SHIPS_MAX = 2,					-- Maximum number of research ships of AI
@@ -1118,7 +1197,8 @@ NDefines = {
 		PEACE_LENGTH_OF_WAR_UNDER_FACTOR = -0.8,
 		PEACE_LENGTH_OF_WAR_OVER_FACTOR = 0.2,
 		PEACE_RELATIVE_NAVY_STRENGTH_FACTOR = 20,	
-		PEACE_OTHER_WARS_FACTOR = 10,
+		PEACE_OTHER_WARS_FACTOR = 3,
+		PEACE_ANNEXATION_FACTOR = -30,
 
 		MILITARY_STATION_DISTANCE = 50.0,		-- Distance from planet to where military station should be built
 		MILITARY_STATION_ANGLE_MAX = 3,			-- A random value between 0 and the angle max is added to the angle of where the military station is built
@@ -1151,7 +1231,7 @@ NDefines = {
 		BUILDING_ENERGY_MAX = 1000,				-- Used to calc AI want for buildings with energy
 		INFLUENCE_MULT = 1,						-- Used to calc AI want for buildings with influence
 		BUILDING_PRODUCTION_MAX = 5000,			-- Used to calc AI want for buildings with production points
-		POP_FOOD_MIN = 50,						-- AI should always prioritize to get more food when planet food tot is below this value
+		POP_FOOD_MIN = 25,						-- AI should always prioritize to get more food when planet food tot is below this value
 
 		WORMHOLE_STATION_OFFSET = 150.0,		-- Used to place wormhole stations in system
 
@@ -1160,7 +1240,7 @@ NDefines = {
 		CRISIS_FLEET_SIZE_LIMIT_LOWER = 130,	-- Swarm fleet will aim for this size before attacking targets
 		CRISIS_NAVY_SIZE_LIMIT = 130,			-- Swarm fleet will aim for this size before attacking targets
 
-		SECTOR_PLANET_CAP_MIN = 2,				-- AI sectors will have minimum these many planets in each sector before creating new sectors
+		SECTOR_SYSTEM_CAP_MIN = 2,				-- AI sectors will have minimum these many planets in each sector before creating new sectors
 
 		SECTOR_FOCUS_EFFECT = 10,				-- Resources designated as the focus of a sector are valued this much more
 		SECTOR_IGNORE_TILE_RESOURCE = 1,		-- Should sectors ignore which resources are on the tile when building?
@@ -1179,9 +1259,9 @@ NDefines = {
 
 		AI_COMMUNICATIONS_RANDOM_VALUE = 60,		-- AI communications days will vary with +- these many days
 		
-		OUTPOST_STATION_RESOURCES_BUILD = 4,			-- AI should build outpost station if system has more than this many resources
-		OUTPOST_STATION_RESOURCES_NEIGHBORS_BUILD = 15, -- AI should build oupost station if neighboring systems have these many resources
-		OUTPOST_STATION_DISTANCE_MIN = 20,			-- AI consideres station in neighboring system if square distance is less than this value
+		OUTPOST_STATION_RESOURCES_BUILD = 1,			-- AI should build outpost station if system has more than this many resources
+		OUTPOST_STATION_RESOURCES_NEIGHBORS_BUILD = 5, -- AI should build oupost station if neighboring systems have these many resources
+		OUTPOST_STATION_DISTANCE_MIN = 30,			-- AI consideres station in neighboring system if square distance is less than this value
 		OUTPOST_STATION_DISTANCE_MAX = 30,			-- AI consideres station in neighboring system if square distance is higher than this value from a colony
 		OUTPOST_STATION_RANGE = 20,					-- AI consider outpost station to be able to extrude border about this far
 		

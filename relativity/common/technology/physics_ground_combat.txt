@@ -134,12 +134,7 @@ tech_drop_pod = {
 	}
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_army_4 = {
@@ -156,12 +151,7 @@ tech_army_4 = {
 	}
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_army_5 = {
@@ -178,12 +168,7 @@ tech_army_5 = {
 	}
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_army_6 = {
@@ -200,12 +185,7 @@ tech_army_6 = {
 	}
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_army_7 = {
@@ -222,12 +202,7 @@ tech_army_7 = {
 	}
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_army_8 = {
@@ -244,12 +219,7 @@ tech_army_8 = {
 	}
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_army_9 = {
@@ -266,12 +236,7 @@ tech_army_9 = {
 	}
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_army_10 = {
@@ -288,12 +253,7 @@ tech_army_10 = {
 	}
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 
@@ -311,12 +271,7 @@ tech_army_11 = {
 	}
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_army_12 = {
@@ -333,12 +288,7 @@ tech_army_12 = {
 	}
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_army_13 = {
@@ -355,12 +305,7 @@ tech_army_13 = {
 	}
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_army_14 = {
@@ -377,12 +322,7 @@ tech_army_14 = {
 	}
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_army_15 = {
@@ -399,12 +339,7 @@ tech_army_15 = {
 	}
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_army_16 = {
@@ -421,12 +356,7 @@ tech_army_16 = {
 	}
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_army_17 = {
@@ -443,12 +373,7 @@ tech_army_17 = {
 	}
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_army_18 = {
@@ -465,12 +390,7 @@ tech_army_18 = {
 	}
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_army_19 = {
@@ -487,12 +407,7 @@ tech_army_19 = {
 	}
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_army_20 = {
@@ -509,10 +424,5 @@ tech_army_20 = {
 	}
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }

@@ -2274,3 +2274,56 @@ event = {
 		}
 	}
 }
+
+# Mining drones spawn rapidly 
+country_event = {
+	id = galactic_features.363
+	hide_window = yes
+
+	trigger = {
+		is_country_type = drone
+		any_owned_ship = {
+			is_ship_size = mining_station
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	immediate = {
+	
+		random_owned_ship = {
+			limit = { is_ship_size = mining_station }
+			save_event_target_as = drone_home
+			create_fleet = { name = "Ancient Mining Drones" }
+			last_created_fleet = {
+				set_fleet_stance = aggressive
+				set_aggro_range_measure_from = return_point
+				set_aggro_range = 1500
+				set_owner = PREV
+				create_ship = {
+				name = "Drone 2432-D"
+				design = "Mining"
+				}
+				create_ship = {
+					name = "Drone 7731-A"
+					design = "Mining"
+				}
+				create_ship = {
+					name = "Drone 4119-X"
+					design = "Mining"
+				}
+				set_location = PREVPREV
+				queue_actions = {
+					repeat = {
+						wait = {
+							duration = 999
+							random = 10
+						}
+					}
+				}
+				
+
+			}
+		}
+	}
+}

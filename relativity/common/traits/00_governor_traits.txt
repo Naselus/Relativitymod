@@ -23,6 +23,7 @@ leader_trait_iron_fist = {
 	leader_trait = yes
 	leader_class = { governor }
 	prerequisites = { tech_ethical_equations }
+	initial = no
 }
 
 leader_trait_army_veteran = {
@@ -38,6 +39,7 @@ leader_trait_army_veteran = {
 	leader_class = { governor }
 	prerequisites = { tech_centralized_command }
 	opposites = { "leader_trait_retired_fleet_officer" }
+	initial = no
 }
 
 leader_trait_retired_fleet_officer = {
@@ -45,7 +47,7 @@ leader_trait_retired_fleet_officer = {
 	modification = no
 	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_retired_fleet_officer.dds"
 	modifier = {
-		planet_ship_build_speed_mult = 0.20
+		spaceport_ship_build_speed_mult = 0.20
 		spaceport_ship_build_cost_mult = -0.10
 		spaceport_module_cost_mult = -0.10
 	}
@@ -53,6 +55,7 @@ leader_trait_retired_fleet_officer = {
 	leader_class = { governor }
 	prerequisites = { tech_interstellar_fleet_traditions }
 	opposites = { "leader_trait_army_veteran" }
+	initial = no
 }
 
 leader_trait_architectural_interest = {
@@ -65,6 +68,7 @@ leader_trait_architectural_interest = {
 	}
 	leader_trait = yes
 	leader_class = { governor }
+	initial = no
 }
 
 leader_trait_agrarian_upbringing = {
@@ -77,6 +81,7 @@ leader_trait_agrarian_upbringing = {
 	}
 	leader_trait = yes
 	leader_class = { governor }
+	initial = no
 }
 
 leader_trait_intellectual = {
@@ -90,6 +95,7 @@ leader_trait_intellectual = {
 	}
 	leader_trait = yes
 	leader_class = { governor }
+	initial = no
 }
 
 leader_trait_environmental_engineer = {
@@ -102,4 +108,5 @@ leader_trait_environmental_engineer = {
 	}
 	leader_trait = yes
 	leader_class = { governor }
+	initial = no
 }

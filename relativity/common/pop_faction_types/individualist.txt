@@ -1,0 +1,181 @@
+individualist_faction = {
+	lose_support_on_pop_leave = no
+
+	is_potential = {
+		always = yes
+	}
+	
+	parameters = {
+		empire = {
+			type = country
+			valid_objects = {
+				is_same_value = root
+			}
+		}
+	}
+
+	can_create = {
+		always = yes
+	}
+	mandate = {
+		key = "mandate_emancipation2"
+		parameter_transfer = {}
+		weight = {
+			base = 20
+		}
+	}
+
+	mandate = {
+		key = "mandate_miner"
+		parameter_transfer = {}
+		weight = {
+			base = 20
+		}
+	}
+
+	mandate = {
+		key = "mandate_orbital_researcher"
+		parameter_transfer = {}
+		weight = {
+			base = 20
+		}
+	}
+
+	mandate = {
+		key = "mandate_slaver"
+		parameter_transfer = {}
+		weight = {
+			base = 20
+		}
+	}
+	
+	flag = {
+		icon = {
+			category = "special"
+			file = "ethic_individualist.dds"
+		}
+		background= {
+			category = "backgrounds"
+			file = "new_dawn.dds"
+		}
+		colors={
+			"dark_teal"
+			"teal"
+			"null"
+			"null"
+		}
+	}	
+	
+	
+	on_create = {
+		set_name = random
+		set_support = 1.0
+		owner = {
+			if = {
+				limit = {
+					any_owned_leader = {
+						leader_class = ruler
+						OR = {
+							has_trait = leader_findividualist 
+							has_trait = leader_individualist
+						}					
+					}
+				}
+				random_owned_leader = {
+					limit = { 
+						leader_class = ruler
+						OR = {
+							has_trait = leader_findividualist 
+							has_trait = leader_individualist
+						}
+					}
+					root = {
+						assign_leader = prev
+					}
+				}
+				else = {
+					if = {
+						limit = {
+							any_owned_leader = {
+								leader_of_faction = no 
+								OR = {
+									has_trait = leader_findividualist 
+									has_trait = leader_individualist
+								}					
+							}
+						}
+						random_owned_leader = {
+							limit = { 
+								leader_of_faction = no 
+								OR = {
+									has_trait = leader_findividualist 
+									has_trait = leader_individualist
+								}
+							}
+							root = {
+								assign_leader = prev
+							}
+						}
+						else = {
+							create_leader = {
+								type = governor
+								species = prevprev
+								name = random
+								skill = 0
+								traits = {
+								has_trait = leader_findividualist
+								trait = random_traits
+								}
+							}
+							last_created_leader = {
+								recruitable = no
+								root = {
+									assign_leader = prev
+								}
+							}					
+						}
+					}
+				}
+			}
+			every_owned_pop = {
+				if = {
+					limit = { 
+						member_of_faction = no
+						OR = {
+							pop_has_ethic = ethic_fanatic_individualist
+						}
+					}
+					set_pop_faction = ROOT
+				}
+			}
+		}
+	}
+	
+	# demand = {
+	# }
+	
+	# Executed with a pop scope, country is stored in root
+	attraction = {
+		base = 0
+
+		scaled_modifier = {
+			scope = this
+			add = 100
+			calc = pop_happiness
+		}		
+		
+		modifier = {
+			factor = 0
+			AND = {
+				not = { pop_has_ethic = ethic_individualist }			
+				not = { pop_has_ethic = ethic_fanatic_individualist}
+			}
+		}
+	}
+	
+	actions = {
+	}
+	
+	support_effects = {
+	}
+}

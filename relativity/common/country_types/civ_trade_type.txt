@@ -1,0 +1,41 @@
+civtrader = {
+	has_leaders = yes
+	relations = no
+	leave_ftl_trails = no
+	show_in_contacts_list = no
+	share_communications = yes
+	playable = no
+	has_capital = no
+	diplomatic_wars = yes
+	
+	ai = {
+		enabled = no
+		declare_war = no
+		colonizer = no
+		internal_policies = no
+		construction = no
+		limited_construction = no
+		tech = no
+	}
+	faction = {
+		neutral = no
+		hostile = no
+		auto_delete = no
+		needs_border_access = yes
+		generate_borders = no
+		needs_colony = no
+	}
+
+	modules = {
+		standard_leader_module = {}	
+		all_technology_module = {}
+		exclusive_diplomacy_module = {
+			can_receive = {
+				action_declare_war
+				action_offer_peace			
+			}
+			
+		}
+	}
+}
+

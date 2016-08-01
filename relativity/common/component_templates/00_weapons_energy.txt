@@ -378,7 +378,7 @@ weapon_component_template = {
 	range = 10.0
 	accuracy = 1
 	type = instant
-	
+	static_rotation = yes	
 	
 	icon = "GFX_ship_part_energy_lance_1"
 	icon_frame = 1
@@ -402,7 +402,7 @@ weapon_component_template = {
 	range = 10.0
 	accuracy = 1
 	type = instant
-	
+	static_rotation = yes	
 	
 	icon = "GFX_ship_part_energy_lance_2"
 	icon_frame = 1
@@ -663,7 +663,7 @@ weapon_component_template = {
 	range = 10.0
 	accuracy = 1
 	type = instant
-	
+	static_rotation = yes	
 	icon = "GFX_ship_part_arc_emitter_1"
 	icon_frame = 1
 	color = { 1.0 1.0 1.0 1 }
@@ -686,7 +686,7 @@ weapon_component_template = {
 	range = 10.0
 	accuracy = 1
 	type = instant
-	
+	static_rotation = yes	
 	icon = "GFX_ship_part_arc_emitter_2"
 	icon_frame = 1
 	color = { 0.1 1.0 0.1 1 }
@@ -919,7 +919,7 @@ weapon_component_template = {
 	range = 10.0
 	accuracy = 1
 	type = instant
-	
+	static_rotation = yes	
 	icon = "GFX_ship_part_energy_torpedo_1"
 	icon_frame = 1
 	color = { 1.0 1.0 1.0 1 }
@@ -942,7 +942,7 @@ weapon_component_template = {
 	range = 10.0
 	accuracy = 1
 	type = instant
-	
+	static_rotation = yes	
 	icon = "GFX_ship_part_energy_torpedo_2"
 	icon_frame = 1
 	color = { 0.1 1.0 0.1 1 }

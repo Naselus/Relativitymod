@@ -223,7 +223,7 @@ nationalist = {
 			description = "POP_FACTION_NATIONALIST_INTEGRATION_CAMPAIGN_1_DESC"
 			
 			cost = {
-				influence = @integration_campaign_1_cost
+				energy = 200
 			}
 			
 			potential = {
@@ -262,7 +262,7 @@ nationalist = {
 			description = "POP_FACTION_NATIONALIST_INTEGRATION_CAMPAIGN_2_DESC"
 			
 			cost = {
-				influence = @integration_campaign_2_cost
+				energy = 400
 			}
 			
 			potential = {
@@ -302,7 +302,7 @@ nationalist = {
 			description = "POP_FACTION_NATIONALIST_INTEGRATION_CAMPAIGN_3_DESC"
 			
 			cost = {
-				influence = @integration_campaign_3_cost
+				energy = 800
 			}
 			
 			potential = {
@@ -394,7 +394,6 @@ nationalist = {
 
 			cost = {
 				energy = 400
-				influence = 50
 			}
 
 			effect = {
@@ -432,7 +431,6 @@ nationalist = {
 		
 			cost = {
 				energy = 200
-				influence = 200
 			}
 		
 			effect = {

@@ -136,7 +136,7 @@ Version 102.0.1
 * Added Physics_Labs_4 in Tech and tech localization files
 * Lab Buildings have correct unlocks now
 * AI aggressiveness increased a bit
-* Changed level unlocks for ships: corvette 1 destroyer 2 cruiser 3 light carrier 3 battlecruiser 4 battelship 5 carrier 5 dreadnaught 6.
+* Changed level unlocks for ships: corvette 1 destroyer 2 cruiser 3 light carrier 3 battlecruiser 4 battleship 5 carrier 5 dreadnaught 6.
 
 110.0.7
 
@@ -151,3 +151,247 @@ Version 102.0.1
 * Sorted out maintenance for science buildings
 * AI kickstart economy settings tweaked (so it spends more on colonies until it has 3 planets)
 * Vassals now like you more if you're much more powerful than they are.
+* PD has had it's cooldown trebled. It's still less then missiles or torps, but you should no longer be able to tank 3-4 ships worth of missiles.
+* Space Amoeba weapons now ignore both shields and armour. Don't mess with space amoebas.
+* Barren Cold now terraforms to Arctic rather than Tundra
+* Societal Research moved into Bio Labs category
+* Localized Corvette and DD Assembly Yards 2
+* Tech Localizations reworked again for proper ship unlocks
+* DN Tech prereq is now Spaceport 6
+* Spaceport 7-11 are now filler until new ship types are created
+* Power Hubs moved from Society to Engineering
+* Added weighted modifiers and AI weight to mining, power plants, and mineral processing.
+* Reduced research costs for upper level power plants
+* Increased research costs for upper level mining buildings
+* AI should now be a bit more interested in banks
+* Dreadnaughts buffed to 10k health.
+* Battlecruiser buffed to 2800 health.
+* Armour on bigger ships buffed considerably.
+* Armour removed from Void clouds, health buffed to compensate.
+* Most hostile space monsters now remain a threat until much later.
+* Mining drones should now procreate very rapidly when they have live space stations; individual drones have had their health halved as a result.
+* Fallen Empire ships buffed. They're pretty scary now.
+
+110.0.8
+
+* Added the Novel Wargoals mod by Jormarn.
+* Made empire init for early game a bit easier for the AI's sake (some extra Tritanium and power for free)
+* Tweaked where the AI builds banks
+* Added Genemodfix by Sledjer.
+* Meddled with the availability of certain Vast deposits on certain planet types (so Arctic is unlikely to have rich farmland)
+* Fixed Basic Science Lab localization (at last)
+* Arrested Development Leaders now only suffer -25% xp gain rather than -100%
+* Eager leaders now get +25% xp gain rather than the now-useless recruitment cost reduction.
+* upper-tier building costs increased a great deal (now doubles every level) so that it's closer to the actual progression of income - this WILL change later as I get more late-game balance feedback.
+* Reworked ground combat and armies. Ground combat will be quite slow early on but will speed up as more powerful units appear, and there is a substantial tech 'gap' now - you do NOT want to be sending regular troops against Space Marines or xenomorphs now.
+* Armies now consume Population to create. De-queuing an army will restore the pop, unless it's space marines (who cannot be re-integrated). Robot, droid, clone and xenomorph armies don't consume any.
+* Interacting with factions no longer costs influence.
+* Max influence reduced to 100, mostly to encourage bug reports about stuff where flat inf costs still exist.
+* Hospitals buffed considerably.
+* Nerfed fortifications - now 100% fortified is only 50% damage reduction (rather than 90%).
+* Garrisons now spawn based on population/10 (not /2.5).
+* Weapon prices updated so that more advanced and bigger ships get much, much more expensive.
+* Substantially increased build time for bigger ships. It now takes nearly 3 years to build a battleship and over 5 for a dreadnaught.
+
+110.0.9
+
+* Added new building icons by Brokensky.
+* Betharian Powerplant no longer eroneously appears on Betharian Mining tech.
+* Removed automatic morale damage from health damage (all armies now have their own morale damage output)
+* Clone armies now have identical stats to Assault armies, don't consume a pop and need 5 years to build.
+* Xenomorph and Gene warrior armies need 10 years to build
+* Titanic Life army count now reduces by 1 every 5 years (to a min of 0); this should mean that even if they get wiped out you can build a new one every 5 years afterwards
+* Building and upgrading Space Ports is now slower
+* Planets can now have 50 armies per planet (you're limited in other ways).
+* Now 50 year cooldown on government changes
+* Government changes no longer cost inf
+* You now get 20 free pops before tech costs begin to increase (up from 10)
+* Slight nerf to cost increase per POP
+* Now takes 25 years before you can begin integrating a subject
+* Subject integration slowed 50%
+* Can now attempt integration of upto 5 subjects at once (because you're likey to need to with the above restrictions)
+* A bunch of AI work to try and encourage it to build Frontier Outposts more
+* Armies now gain experience faster
+* Small PD range has been nerfed. Ranges now go 4, 6 8. This makes PD3 more attractive (since it's better for protecting other ships)
+* Kinetics now have lower energy costs
+* autocannons buffed a bit
+* Bigger guns now have longer range, lower accuracy and some armour penetration. You'll need big guns to beat enemy big ships because of their disgustingly high health and armouir values. Smaller ships cannot become 'immune' to guns, but can evade better
+* Torpedo damage hugely buffed - they're now very good for using against big ships.
+* Destroyer evasion buffed.
+* Dreadnaught evasion nerfed.
+* Buffed Health as a portion of military power.
+* Emergency election costs removed.
+* Larger populations now breed more rapidly than smaller ones.
+* Belonging to a sector no longer impacts Ethics Divergence (distance from capital still does)
+* Removed more inf costs from Edicts
+* Hangars now produce 8 fighters/bombers each (up from 4).
+* Added T2 mineral processor icons by myself - if anyone wants to replace these with something better, do feel free.
+
+
+110.0.91
+
+* Fixed Army morale
+* T2 credit hub no longer planet unique
+* Hospital happiness boost buffed.
+* T1 mines now all use T1 energy
+* T2 mines now all use T2 energy
+* T3 mines now all use T3 energy
+* Banks now all use T1 energy
+* increased AI's interest in minerals science and energy
+* Removed a bunch of surplus techs that are no longer in use
+* Slightly reduced food-for-growth reductions on techs (was allowing for <0% growth)
+* Slightly reduced tech time reduction from techs.
+* Psionics now requires at least some grounding in genetics
+* Removed industry boost tech line (was just causing overcrowding)
+* No more free mineral storage from techs. Learn to build silos.
+* Orbital hydroponics now produce nutrients rather than consuming it
+* Consolidated loads of techs.
+* Ships now unlock separately from starports (need the starport tech to unlock the correct ship size tech)
+* Advanced pd and defenses will now require better AIs. Best PD now locked to sentient AIs.
+* moved power plants to physics (from the decidedly overcrowded engineering)
+* Moved SR discovery techs to Physics
+* Binned the repeatables. They will return consolidated.
+* AI will now colonize non-adjacents, but with a hefty penalty to their desirability.
+* Incorporated some icons from Stellaris Tycoon, with thanks to REDDQ
+* Incorporated the outstanding Civilian Trade mod by Kyojin
+* Deleted several unused tech branches
+* Consolidated even more, and branched several.
+* Tile Blocker tech progress now staggered a lot more.
+* All influence rewards in events switched to credits
+* Removed influence cost to supress nationalists.
+
+
+110.0.92
+
+* Removed influence costs from Civilian Trade edicts
+* Reduced cost of voidcraft techs
+* Adjusted Genetics progression.
+* Clone and Robot armies are now a bit quicker to build (still much slower than conscript forces)
+* Removed dreadnaught and Bcruiser assembly yards (since the modifiers for them don't exist)
+* Rescaled Ship unlock tech costs to be more appropriate for the time period when they're researched
+* Removed influence from fleet academy.
+* POPs that have been released from the army now have ethics (they're the same as the owner for now)
+
+
+110.0.93
+
+* Armour buffed considerably - Dreadnoughts can now get to like 90% reduction as intended.
+* Strike Craft now much, much tougher.
+* Strike Craft do a lot more damage. End-game bombers will be reasonably effective against even dreadnoughts.
+* States and Vassals now costs science and everything
+* Empire Capital Complex no longer empire-unique, now called 'Sector Capital-Complex'
+* Solar Panel Networks and Orbital Hydroponic farms commented out (they didn't work properly).
+* Reduced Colonial Shelter ethics divergence to 5%
+* Reworked the drone 'breeding' event
+* Primatives now get a free bank and mineral processing plant when they get space flight.
+* adjusted intial post-spaceflight tile bonuses for prims.
+* AI now able to use all new research lines (previously unable to acquire banks.
+* Android armies buffed, made more expensive.
+* Now need a minimum of 2 POPs before you can recruit armies.
+* Pirate event now randomized a bit more so it's timing is less predictable.
+* Pirate stations will now spawn periodically in unowned systems.
+
+110.0.94
+
+* Small and Medium Plasma weapons now have reduced shield damage
+* Fixed Tachyon Lance armour pene.
+* Addded level 4 and 5 capital complexes
+* Higher-level science building techs now gated on being able to produce the appropriate power plants (so you can't accidentally upgrade your labs to buildings you cannot actually operate)
+* Smaller science deposits now don't fill orbital slots (1 or 2 science).
+* Social science NEVER fills and orbital slots (no people to observe)
+* Adjacency bonuses from plant capitals now multipliers.
+* High-end PD damage buffed.
+* Lances and other supertech weapons are now fixed axis weaponry
+* Missiles are now on turrets
+* Ethos opposite dislike standardized to -0.1 for fanatics and no penalty for normals.
+* Reworked ethics
+* Pirates no longer spawn multiple stations, and will randomly pick from your various known weapon types.
+
+110.0.95
+
+* Fixed science deposits still showing up in orbital slots.
+* Leaders now spawn with only Ethics traits.
+* All non-POP modifiers removed from Ethics.
+* Fixed an error in the pirate event
+* Added the leader gfx fix from TVS by Velorian
+* Colony ships now consume a POP (currently picked at random, thoguh if I ever get round to looking at Jor's approach I may use that instead)
+
+120.0.96
+
+* Space stations no longer designable (may go back to being designed later once I've had time to check out the possibilities)
+* Pirates now always known to everyone
+* Mineral cost of colony ships reduced (to 250 - might reduce it further since they now cost POPs).
+* Pop base happiness reduced to 50%
+* AI now thinks nutrients are a food type so it should staff nutrient buildings more regularly.
+* Governments reworked:
+	* Dictatoriships of all kinda now get reduced ethics drift, reduced influence.
+	* Oligarchies of all types now get +1 leader.
+	* Democracies of all types now get extra ethics shift, bonus influence.
+	* Military governments get bonus navy cap.
+	* Theocracies get bonus happiness.
+	* Materialist govss now get bonus science.
+	* Pacifist govs get bonus energy output.
+* Pirate respawn event no longer pays attention to the existing number of pirates.
+* Mineral procesing line of techs no longer depends on mining network tech.
+* Colony Shelter now consumes influence
+* Fixed broken uplift traits screen
+* Levelling trait revamp completed:
+	* Every different class is now eligible for 4 different traits every level, so no more endless repeats
+	* Each level, there are 3 good traits and 1 bad trait.
+	* The chance of a leader getting the bad trait starts small but increases per level.
+* UPDATED TO ASIMOV
+* Reduced AI's base mineral and energy expectations (were too high, causing them to destaff nutrients)
+* Removed colonization influence costs
+* Pirates now always known to be pirates (in case you bump into other people's).	
+* event-spawned Leaders now have ethical traits
+* Fixed a bunch of errors in buildings.txt
+* Removed some flat inf costs
+
+
+121.0.97
+
+* Fixed diplo message icons
+* Added 8 new factions, based on ethics.
+* Slaves changed. Slaves now have a huge ethics shift penalty (driving them toward the Empire's ethics) in exchange for happiness and science penalties.
+* Xenophobia and Xenophilia both heavily nerfed.
+* removed some obsolete war demands (raze, limit war economy, nuke)
+* Removed a lot more unusued files (delete the old version before installing)
+
+
+121.0.98
+
+* Starting leader now has his ethics set to the ones you picked at game start, rather than overwriting yours.
+* Fixed the flags on the levelling events.
+* Added new Xenophobic government types.
+* Added Collectivist government types
+* Added Xenophilic and Individualist government types.
+* Unlocked old government type restrictions (so individualists and collectivists are no longer locked out of dictatorships/democracies, respectively).
+* Influence maximum reduced to 1.
+* added placeholder icons for the missing building GFX
+* Fixed some broken localizations.
+* Cleared up all the remaining startup bugs in the error log (aside from the duplicate reptile battleship sections).
+* Changed species creation screen to fit all the new governments.
+* Added new icons to repreesnt the new governments
+* re-organized the government picker so that democracies run down the center and dictatorships run down the outside; lined up ethical categories.
+* Corrected gov bonuses.
+* Corrected spelling of 'Individualist' in government localizations.
+* Removed species and habitability traits files so that vanilla ones apply.
+* removed regulated slavery
+* Orbital Bombardment and First Contact merged into war philosophy
+* Slavery, leadership, purge, migration, voting rights, resettlement merged into Citizenship policy.
+* Enlightenment merged into interference
+* Added environment, justice, economy, health, religious, foreign policy groups.
+* Added happiness effects for new policies.
+* removed happiness bonus and ethics shift reduction from homeworld.
+
+121.0.98
+
+* Added 5 new galaxy sizes which provide less-clustered starts
+* Government influence bonus/malus switched to multiplier.
+* Negative effect removed from influence deficit.
+* All edicts now require >0 influence to activate
+* Embassies are back; they now increase relations by 1 per year while active, upto a maximum of 100.
+* Many diplomatic treaties have been switched to building relations bonuses rather than flat, so an alliance is more valuable if it is long-lasting.
+* AI spending priorities tweaked a fair bit to encourage internal development over ships.
+* Added names for new gov types.
+

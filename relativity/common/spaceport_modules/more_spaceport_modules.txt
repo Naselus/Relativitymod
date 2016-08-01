@@ -1,138 +1,138 @@
-solar_panel_network2 = {
-	icon = "GFX_solar_panel_network"
-	section = "ASSEMBLYYARD_SPACEPORT_SECTION"
-	construction_days = 180
-	prerequisites = { "tech_solar_panel_network_2" }
-	spaceport_level = 3
+# solar_panel_network2 = {
+	# icon = "GFX_solar_panel_network"
+	# section = "ASSEMBLYYARD_SPACEPORT_SECTION"
+	# construction_days = 180
+	# prerequisites = { "tech_spaceport_4" }
+	# spaceport_level = 3
 	
-	cost = {
-		minerals = 250
-	}	
+	# cost = {
+		# minerals = 250
+	# }	
 	
-	produced_resources = {
-		sr_plasma = 6
-	}
+	# produced_resources = {
+		# sr_plasma = 6
+	# }
 	
-	ai_weight = { 
-		modifier = {
-			factor = 5
-		}
-	}
-}
+	# ai_weight = { 
+		# modifier = {
+			# factor = 5
+		# }
+	# }
+# }
 
-solar_panel_network3 = {
-	icon = "GFX_solar_panel_network"
-	section = "ASSEMBLYYARD_SPACEPORT_SECTION"
-	construction_days = 270
-	prerequisites = { "tech_solar_panel_network_3" }
-	spaceport_level = 5
+# solar_panel_network3 = {
+	# icon = "GFX_solar_panel_network"
+	# section = "ASSEMBLYYARD_SPACEPORT_SECTION"
+	# construction_days = 270
+	# prerequisites = { "tech_spaceport_6" }
+	# spaceport_level = 5
 	
-	cost = {
-		minerals = 500
-	}	
+	# cost = {
+		# minerals = 500
+	# }	
 	
-	produced_resources = {
-		sr_plasma = 10
-	}
+	# produced_resources = {
+		# sr_plasma = 10
+	# }
 	
-	ai_weight = { 
-		modifier = {
-			factor = 5
-		}
-	}
-}
+	# ai_weight = { 
+		# modifier = {
+			# factor = 5
+		# }
+	# }
+# }
 
-solar_panel_network4 = {
-	icon = "GFX_solar_panel_network"
-	section = "ASSEMBLYYARD_SPACEPORT_SECTION"
-	construction_days = 360
-	prerequisites = { "tech_solar_panel_network_4" }
-	spaceport_level = 6
+# solar_panel_network4 = {
+	# icon = "GFX_solar_panel_network"
+	# section = "ASSEMBLYYARD_SPACEPORT_SECTION"
+	# construction_days = 360
+	# prerequisites = { "tech_spaceport_8" }
+	# spaceport_level = 6
 	
-	cost = {
-		minerals = 1000
-	}	
+	# cost = {
+		# minerals = 1000
+	# }	
 	
-	produced_resources = {
-		sr_plasma = 15
-	}
+	# produced_resources = {
+		# sr_plasma = 15
+	# }
 	
-		required_resources = {
-		minerals = 7
-	}
+		# required_resources = {
+		# minerals = 7
+	# }
 	
-	ai_weight = { 
-		modifier = {
-			factor = 5
-		}
-	}
-}
+	# ai_weight = { 
+		# modifier = {
+			# factor = 5
+		# }
+	# }
+# }
 
-hydroponic_farms2 = {
-	icon = "GFX_spaceport_module_hydroponic_farms"
-	section = "SCIENCE_SPACEPORT_SECTION"
-	construction_days = 180
-	prerequisites = { "tech_orbital_hydroponics_2" }
-	spaceport_level = 3
+# hydroponic_farms2 = {
+	# icon = "GFX_spaceport_module_hydroponic_farms"
+	# section = "SCIENCE_SPACEPORT_SECTION"
+	# construction_days = 180
+	# prerequisites = { "tech_spaceport_4" }
+	# spaceport_level = 3
 	
-	cost = {
-		minerals = 250
-	}
+	# cost = {
+		# minerals = 250
+	# }
 	
-	required_resources = {
-		sr_plasma = 2
-	}
-		produced_resources = {
-		sr_nutrients = 2
-	}
+	# required_resources = {
+		# sr_plasma = 2
+	# }
+		# produced_resources = {
+		# sr_nutrients = 2
+	# }
 	
-	
-
-}
-
-hydroponic_farms3 = {
-	icon = "GFX_spaceport_module_hydroponic_farms"
-	section = "SCIENCE_SPACEPORT_SECTION"
-	construction_days = 270
-	prerequisites = { "tech_orbital_hydroponics_3" }
-	spaceport_level = 5
-	
-	cost = {
-		minerals = 500
-	}
-	
-	required_resources = {
-		sr_plasma = 4
-	}
-	
-		produced_resources = {
-		sr_nutrients = 4
-	}
 	
 
-}
+# }
 
-hydroponic_farms4 = {
-	icon = "GFX_spaceport_module_hydroponic_farms"
-	section = "SCIENCE_SPACEPORT_SECTION"
-	construction_days = 360
-	prerequisites = { "tech_orbital_hydroponics_4" }
-	spaceport_level = 6
+# hydroponic_farms3 = {
+	# icon = "GFX_spaceport_module_hydroponic_farms"
+	# section = "SCIENCE_SPACEPORT_SECTION"
+	# construction_days = 270
+	# prerequisites = { "tech_spaceport_6" }
+	# spaceport_level = 5
 	
-	cost = {
-		minerals = 1000
-	}
+	# cost = {
+		# minerals = 500
+	# }
 	
-	required_resources = {
-		sr_plasma = 7
-	}
+	# required_resources = {
+		# sr_plasma = 4
+	# }
 	
-		produced_resources = {
-		sr_nutrients = 7
-	}
+		# produced_resources = {
+		# sr_nutrients = 4
+	# }
 	
 
-}
+# }
+
+# hydroponic_farms4 = {
+	# icon = "GFX_spaceport_module_hydroponic_farms"
+	# section = "SCIENCE_SPACEPORT_SECTION"
+	# construction_days = 360
+	# prerequisites = { "tech_spaceport_8" }
+	# spaceport_level = 6
+	
+	# cost = {
+		# minerals = 1000
+	# }
+	
+	# required_resources = {
+		# sr_plasma = 7
+	# }
+	
+		# produced_resources = {
+		# sr_nutrients = 7
+	# }
+	
+
+# }
 
 corvette_assembly_yards2 = {
 	icon = "GFX_spaceport_module_corvette_assembly_yard"
@@ -203,7 +203,7 @@ cruiser_assembly_yards2 = {
 	icon = "GFX_spaceport_module_cruiser_assembly_yard"
 	section = "ASSEMBLYYARD_SPACEPORT_SECTION"
 	construction_days = 360
-	prerequisites = { "tech_cruiser_yard_2" }
+	prerequisites = { "tech_spaceport_7" }
 	spaceport_level = 6
 	
 	cost = {
@@ -224,12 +224,11 @@ battleship_assembly_yards_2 = {
 	icon = "GFX_spaceport_module_battleship_assembly_yard"
 	section = "ASSEMBLYYARD_SPACEPORT_SECTION"
 	construction_days = 540
-	prerequisites = { "tech_battleship_yard_2" }
+	prerequisites = { "tech_spaceport_9" }
 	spaceport_level = 6
 	
 	cost = {
 		minerals = 2000
-		influence = 100
 	}	
 	
 	required_resources = {
@@ -335,7 +334,7 @@ ship_assembly_yards_2 = {
 	icon = "GFX_spaceport_module_cruiser_assembly_yard"
 	section = "ASSEMBLYYARD_SPACEPORT_SECTION"
 	construction_days = 360
-	prerequisites = { "tech_cruiser_yard" }
+	prerequisites = { "tech_spaceport_6" }
 	spaceport_level = 5
 	
 	cost = {
@@ -351,7 +350,7 @@ ship_assembly_yards_2 = {
 		shipsize_corvette_build_cost_mult = -0.10
 		shipsize_destroyer_construction_speed_mult = 0.15
 		shipsize_destroyer_build_cost_mult = -0.5
-		shipsize_cruiser_construction_speed_mult = 0.10
+		shipsize_cruiser_construction_speed_mult = 0.10	
 	}
 }
 
@@ -359,7 +358,7 @@ ship_assembly_yards_3 = {
 	icon = "GFX_spaceport_module_battleship_assembly_yard"
 	section = "ASSEMBLYYARD_SPACEPORT_SECTION"
 	construction_days = 540
-	prerequisites = { "tech_battleship_yard" }
+	prerequisites = { "tech_spaceport_8" }
 	spaceport_level = 6
 	
 	cost = {
@@ -385,7 +384,7 @@ ship_assembly_yards_4 = {
 	icon = "GFX_spaceport_module_battleship_assembly_yard"
 	section = "ASSEMBLYYARD_SPACEPORT_SECTION"
 	construction_days = 720
-	prerequisites = { "tech_battleship_yard_2" }
+	prerequisites = { "tech_spaceport_10" }
 	spaceport_level = 6
 	
 	cost = {

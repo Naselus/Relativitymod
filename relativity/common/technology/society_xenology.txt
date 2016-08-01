@@ -280,17 +280,12 @@ tech_xenology_4 = {
 	tier = 2
 	category = { xenology }
 	prerequisites = { "tech_xeno_integration" }
-	weight = @tier2weight1
+	weight = 0
 	
 	
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_xenology_5 = {
@@ -304,12 +299,7 @@ tech_xenology_5 = {
 	
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_xenology_6 = {
@@ -323,12 +313,7 @@ tech_xenology_6 = {
 	
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_xenology_7 = {
@@ -342,12 +327,7 @@ tech_xenology_7 = {
 	
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 tech_xenology_8 = {
 	area = society
@@ -360,12 +340,7 @@ tech_xenology_8 = {
 	
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_xenology_9 = {
@@ -379,12 +354,7 @@ tech_xenology_9 = {
 	
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_xenology_10 = {
@@ -398,12 +368,7 @@ tech_xenology_10 = {
 	
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_xenology_11 = {
@@ -417,12 +382,7 @@ tech_xenology_11 = {
 	
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_xenology_12 = {
@@ -436,12 +396,7 @@ tech_xenology_12 = {
 	
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_xenology_13 = {
@@ -455,12 +410,7 @@ tech_xenology_13 = {
 	
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_xenology_14 = {
@@ -474,12 +424,7 @@ tech_xenology_14 = {
 	
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_xenology_15 = {
@@ -493,12 +438,7 @@ tech_xenology_15 = {
 	
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_xenology_16 = {
@@ -512,12 +452,7 @@ tech_xenology_16 = {
 	
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_xenology_17 = {
@@ -531,12 +466,7 @@ tech_xenology_17 = {
 	
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_xenology_18 = {
@@ -550,12 +480,7 @@ tech_xenology_18 = {
 	
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_xenology_19 = {
@@ -569,12 +494,7 @@ tech_xenology_19 = {
 	
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_xenology_20 = {
@@ -588,10 +508,5 @@ tech_xenology_20 = {
 	
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }

@@ -112,13 +112,13 @@ tech_xeno_outreach = {
 
 #Xeno Relations
 tech_xeno_relations = {
-	cost = 0
+	cost = @tier1cost1
 	area = society
 	category = { diplomacy }
-	tier = 0
-	start_tech = yes
+	tier = 1
+	prerequisites = { "tech_planetary_unification"}
+	weight = @tier2weight1
 
-	# unlocks alliances
 	prereqfor_desc = {
 		diplo_action = {
 			title = "TECH_UNLOCK_DIPLOMATIC_ACTION_CREATE_ALLIANCE_TITLE"
@@ -129,11 +129,12 @@ tech_xeno_relations = {
 
 #Xeno Supremacy
 tech_xeno_supremacy = {
-	cost = 0
+	cost = @tier1cost2
 	area = society
 	category = { diplomacy }
-	tier = 0
-	start_tech = yes
+	tier = 2
+	prerequisites = { "tech_xeno_relations"  "tech_colonial_centralization"}
+	weight = @tier2weight1
 
 	# unlocks vassals
 	prereqfor_desc = {
@@ -149,6 +150,7 @@ tech_xeno_diplomacy = {
 	area = society
 	category = { diplomacy }
 	tier = 2	
+	prerequisites = { "tech_xeno_supremacy" "tech_galactic_administration"}
 	weight = @tier2weight1
 	
 	# unlocks federations
@@ -201,10 +203,6 @@ tech_xeno_diplomacy = {
 	ai_weight = {
 		factor = 3
 		modifier = {
-			factor = 10
-			has_ai_personality_type = federation_builder
-		}	
-		modifier = {
 			factor = 2
 			has_ethic = ethic_xenophile
 		}
@@ -234,12 +232,7 @@ tech_diplomacy_5 = {
 		max_embassies = 1
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_diplomacy_6 = {
@@ -254,12 +247,7 @@ tech_diplomacy_6 = {
 		max_rivalries = 1
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_diplomacy_7 = {
@@ -274,12 +262,7 @@ tech_diplomacy_7 = {
 		max_embassies = 1
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_diplomacy_8 = {
@@ -294,12 +277,7 @@ tech_diplomacy_8 = {
 		max_rivalries = 1
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_diplomacy_9 = {
@@ -314,12 +292,7 @@ tech_diplomacy_9 = {
 		max_embassies = 1
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_diplomacy_10 = {
@@ -331,15 +304,10 @@ tech_diplomacy_10 = {
 	weight = @tier2weight1
 	
 	modifier = {
-		alliance_influence_cost = -1
+		max_rivalries = 1
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_diplomacy_11 = {
@@ -354,12 +322,7 @@ tech_diplomacy_11 = {
 		max_rivalries = 1
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_diplomacy_12 = {
@@ -374,12 +337,7 @@ tech_diplomacy_12 = {
 		max_embassies = 1
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_diplomacy_13 = {
@@ -394,12 +352,7 @@ tech_diplomacy_13 = {
 		max_rivalries = 1
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_diplomacy_14 = {
@@ -414,12 +367,7 @@ tech_diplomacy_14 = {
 		max_embassies = 1
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_diplomacy_15 = {
@@ -434,12 +382,7 @@ tech_diplomacy_15 = {
 		max_rivalries = 1
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_diplomacy_16 = {
@@ -454,12 +397,7 @@ tech_diplomacy_16 = {
 		max_embassies = 1
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_diplomacy_17 = {
@@ -474,12 +412,7 @@ tech_diplomacy_17 = {
 		max_rivalries = 1
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_diplomacy_18 = {
@@ -494,12 +427,7 @@ tech_diplomacy_18 = {
 		max_embassies = 1
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_diplomacy_19 = {
@@ -514,12 +442,7 @@ tech_diplomacy_19 = {
 		max_rivalries = 1
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_diplomacy_20 = {
@@ -534,10 +457,5 @@ tech_diplomacy_20 = {
 		max_embassies = 1
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }

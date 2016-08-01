@@ -1,0 +1,147 @@
+﻿l_polish:
+
+ #############################
+ # Civilian Trade Events
+ #############################
+
+
+ civtrade.1.name:0 "Handel Cywilny"
+ civtrade.1.desc:0 "Po założeniu pierwszej kolonii należącej do [Root.Owner.GetSpeciesName] pierwsi niezalezni podroznicy na [Root.Capital.GetName] ustanowili pierwsze szlaki handlowe na kolonie zewnętrzne. \n\nTo niezapomniany dzień dla [Root.Owner.GetName] i na zawsze zmieni to kierunek w którym idzie cywilizacja odkrywając głębie kosmosu."
+ # Options 
+ civtrade.1.a:0 "Niech wiara prowadzi ich w podróży."
+ civtrade.1.b:0 "Twoje pozwolenia wydają się w porządku. Możesz kontynuować." 
+ civtrade.1.c:0 "Niezależne czyny rodzą się z niezależnych myśli. Pamiętaj o tym." 
+ civtrade.1.d:0 "Rozwój dzięki własnej pracy jest warty zachodu."  
+ civtrade.1.e:0 "Próby ustanowienia niezależnego przedsiębiorstwa nie będą tolerowane."  
+ civtrade.1.f:0 "Pilnuj by opłacać pozwolenia i podatki a nie będzie problemu."  
+ civtrade.1.g:0 "Swoboda przemieszczania się i swoboda handlu to jedne z najważniejszych rzeczy."
+ civtrade.1.h:0 "Twoje pozwolenie zostało zaakceptowane. Możesz kontynuować."
+
+ civ.1.name:0 "Największe show na każdym świecie!"
+ civ.1.desc:0 "Po przemierzeniu najdalszych zakątków kosmosu, wielki Kemplerer postanowił ujawnić swój statek - Rosette! Wypełniony cudami z całej galaktyki. \n\nJeśli Kemplerer i jego okręt Rosette znajdują się w systemie to upewnij się by wejść na pokład na Wielką Galaktyczną Galę!"
+ # Options 
+ civ.1.a:0 "Zaczynamy Pokaz!"
+ 
+ #############################
+ # Civilian Trade effects
+ #############################
+  
+  
+ expanded_trade_network:0 " Powiększony Szlak handlowy"
+ expanded_trade_network_desc:0 "Zwiększając pojemność i z odpowiednią infrastrukturą ta planeta może zwiększyć profity płynące od handlarzy."
+ trade_network:0 "Szlak handlowy"
+ trade_network_desc:0 "Międzyplanetarni handlarze ostatnio zatrzymali się na tej planecie zapewniając małe wsparcie dla jej ekonomii."
+ trade_network_minerals:0 "Szlak handlowy"
+ trade_network_minerals_desc:0 "Międzyplanetarni handlarze ostatnio zatrzymali się na tej planecie zapewniając małe wsparcie dla jej ekonomii."
+ trade_network_energy:0 "Szlak handlowy"
+ trade_network_energy_desc:0 "Międzyplanetarni handlarze ostatnio zatrzymali się na tej planecie zapewniając małe wsparcie dla jej ekonomii."  
+ trade_network_food:0 "Szlak handlowy"
+ trade_network_food_desc:0 "Międzyplanetarni handlarze ostatnio zatrzymali się na tej planecie zapewniając małe wsparcie dla jej ekonomii."
+ 
+ reduced_trade_network:0 "Zmniejszony Szlak handlowy"
+ reduced_trade_network_desc:0 "Zwiększając pojemność i z odpowiednią infrastrukturą ta planeta może zwiększyć profity płynące od handlarzy. Ten efekt został ograniczony przez ostatnio naniesione sankcje."
+ reduced_trade_network_minerals:0 "Zmniejszony Szlak handlowy"
+ reduced_trade_network_minerals_desc:0 "Międzyplanetarni handlarze ostatnio zatrzymali się na tej planecie zapewniając małe wsparcie dla jej ekonomii. Ten efekt został ograniczony przez ostatnio naniesione sankcje."
+ reduced_trade_network_energy:0 "Zmniejszony Szlak handlowy"
+ reduced_trade_network_energy_desc:0 "Międzyplanetarni handlarze ostatnio zatrzymali się na tej planecie zapewniając małe wsparcie dla jej ekonomii. Ten efekt został ograniczony przez ostatnio naniesione sankcje."  
+ reduced_trade_network_food:0 "Zmniejszony Szlak handlowy"
+ reduced_trade_network_food_desc:0 "Międzyplanetarni handlarze ostatnio zatrzymali się na tej planecie zapewniając małe wsparcie dla jej ekonomii. Ten efekt został ograniczony przez ostatnio naniesione sankcje."
+ 
+ circus_in_town:0 "Okręt cyrkowy w systemie"
+ circus_in_town_desc: "Wielki Cyrk Kemplerer jest w systemie. Wejdźcie na pokład i przekonajcie się jakie fantastyczne i cudne rzeczy znajdują się w środku!"
+ 
+ #############################
+ # Civilian Trade personality
+ #############################
+ 
+ personality_civilian_traders:0 "Handlarze Cywilni"
+ personality_civilian_traders_desc:0 "Handlarze Cywilni przemierzają twoje imperium zawsze szukając okazji do handlu."
+ 
+ ####################################
+ # Edicts
+ #################################### 
+
+ # Planet Edicts
+ 
+ edict_trade_hub:0 "Węzeł Handlowy"
+ edict_trade_hub_desc:0 "Zapewniając dostęp do większych przestrzeni oraz pomocy w handlu zwiększy się liczba chętnych handlarzy by odwiedzić ten świat jednocześnie wyciągając profity z ich obecności."
+ 
+ edict_mineral_focus:0 "Priorytet na minerały"
+ edict_mineral_focus_desc:0 "Nakaż administratorom zakupić minerały u handlarzy."
+ 
+ edict_energy_focus:0 "Priorytet na kredyty"
+ edict_energy_focus_desc:0 "Nakaż administratorom handlować za kredyty."
+ 
+ edict_food_focus:0 "Priorytet na żywność"
+ edict_food_focus_desc:0 "Nakaż administratorom zakupić jedzenie u handlarzy."
+ 
+ # Country Edicts
+ 
+ edict_trade_subsidies:0 "Wsparcie handlu"
+ edict_trade_subsidies_desc:0 "Wyciągając pomocną dłoń do początkujących handlarzy sprawisz, że będą pojawiać się częściej."
+ 
+ ####################################
+ # Policies
+ #################################### 
+ 
+ policy_civilian_trade:0 "Handel Cywilny"
+ policy_civilian_trade_desc:0 "W zależności od twojego podejścia do handlu, twoje imperium będzie miało więcej lub mniej cywilnych handlarzy."
+ 
+ unrestricted_trade:0 "Nieograniczony "
+ unrestricted_trade_name: "Nieograniczony Handel" 
+ unrestricted_trade_desc:0 "Nie ingerując pozwalasz rynkowi decydować o własnym rozroście."
+
+ restricted_trade:0 "Ograniczony "
+ restricted_trade_name:0 "Ograniczony Handel"
+ restricted_trade_desc:0 "Ograniczając handel blokujesz tworzenie się nowych jednostek handlowych oraz z czasem: wycofywanie już istniejących. "
+
+ ####################################
+ # Hull Sizes
+ ####################################  
+ 
+ civilian_trade_freighter:0 "Cywilny Frachtowiec"
+ civilian_trade_freighter_plural:0 "Cywilne Frachtowce"
+ civilian_trade_tanker:0 "Cywilny Tankowiec"
+ civilian_trade_tanker_plural:0 "Cywilne Tankowce"
+ 
+ ####################################
+ # Technologies
+ ####################################  
+ 
+ tech_trade_facilities_one:0 "Placówka Handlowa I"
+ tech_trade_facilities_one_desc:0 "Wydając dodatkowe zasoby na ogólnodostępne placówki i koszty administracyjne możemy zwiększyć ilość wysyłanych handlarzy cywilnych."
+ tech_trade_facilities_two:0 "Placówka Handlowa II"
+ tech_trade_facilities_two_desc:0 "Wydając dodatkowe zasoby na ogólnodostępne placówki i koszty administracyjne możemy zwiększyć ilość wysyłanych handlarzy cywilnych."
+ tech_trade_facilities_three:0 "Placówka Handlowa III"
+ tech_trade_facilities_three_desc:0 "Wydając dodatkowe zasoby na ogólnodostępne placówki i koszty administracyjne możemy zwiększyć ilość wysyłanych handlarzy cywilnych."
+ 
+ TECH_UNLOCK_TRADE_FACILITIES_ONE_TITLE:0 "§HUnlocks Max Traders:§! 10 Traders"
+ TECH_UNLOCK_TRADE_FACILITIES_ONE_DESC:0 "§HMore Traders§!\nPozwala zwiększyć ilość okrętów dostępnych dla naszych cywili."
+ TECH_UNLOCK_TRADE_FACILITIES_TWO_TITLE:0 "§HUnlocks Max Traders:§! 20 Traders"
+ TECH_UNLOCK_TRADE_FACILITIES_TWO_DESC:0 "§HMore Traders§!\nPozwala zwiększyć ilość okrętów dostępnych dla naszych cywili."
+ TECH_UNLOCK_TRADE_FACILITIES_THREE_TITLE:0 "§HUnlocks Max Traders:§! 30 Traders"
+ TECH_UNLOCK_TRADE_FACILITIES_THREE_DESC:0 "§HMore Traders§!\nPozwala zwiększyć ilość okrętów dostępnych dla naszych cywili."
+ 
+ TECH_UNLOCK_TRADE_HUB_TITLE:0 "§HUnlocks Planetary Edict:§! Węzeł Handlowy"
+ TECH_UNLOCK_TRADE_HUB_DESC:0 "§HTrade Hub§!\nZapewniając dostęp do większych przestrzeni oraz pomocy w handlu zwiększy się liczba chętnych handlarzy by odwiedzić ten świat jednocześnie wyciągając profity z ich obecności."
+ 
+ ####################################
+ # Subjects
+ #################################### 
+ 
+ SUBJECT_traders:0 "Cywilni Handlarze"
+ SUBJECT_DESC_traders:0 "Członkowie twojej populacji, którzy wznieśli się do gwiazd by handlować."
+ 
+ ####################################
+ # War Demands
+ ####################################  
+  
+  
+ war_demand_trade_sanctions_header:1 "§HTrade Sanctions§!"
+ war_demand_trade_sanctions_subtext:0 "[parameter:country.GetName]"
+ war_demand_trade_sanctions_tooltip_header:0 "$war_demand_trade_sanctions_header$"
+ war_demand_trade_sanctions_tooltip_content:1 "[parameter:country.GetName] Nakładając sankcje zabranisz handlu na 10 lat oraz tłumisz go przez 20."
+ war_demand_trade_sanctions_tooltip_proper_header:0 "$war_demand_trade_sanctions_header$"
+ war_demand_trade_sanctions_tooltip_proper_content:1 "$war_demand_trade_sanctions_tooltip_content$"
+ 
+ 

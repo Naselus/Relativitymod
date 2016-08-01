@@ -10,11 +10,17 @@ can_enslave_pop = {
 		limit = { 
 			OR = { 
 				AND = {
-					ROOT = { has_policy_flag = slavery_allowed_all }
+					ROOT = {
+						OR = {
+							has_policy_flag = slavery_allowed_all
+						}
+					}
 					NOT = { is_species = "ROBOT_POP_SPECIES_3" }
 				}
 				AND = {
-					ROOT = { has_policy_flag = slavery_allowed_xenos_only }
+					OR = {
+						ROOT = { has_policy_flag = slavery_allowed_xenos_only }
+					}
 					NOT = { 
 						is_same_species = ROOT 
 						is_species = "ROBOT_POP_SPECIES_3"
@@ -40,13 +46,13 @@ can_enslave_pop = {
 #Root = country
 #This = pop
 can_purge_pop = {
-	if = { 
-		limit = { 
-			OR = { 
+	if = {
+		limit = {
+			OR = {
 				ROOT = { has_policy_flag = purge_allowed_all }
 				AND = {
 					ROOT = { has_policy_flag = purge_allowed_xenos_only }
-					NOT = { 
+					NOT = {
 						OR = {
 							is_same_species = ROOT 
 							is_species = "ROBOT_POP_SPECIES_3"
@@ -54,12 +60,17 @@ can_purge_pop = {
 					}
 				}
 				AND = {
-					ROOT = { has_policy_flag = ai_servitude }
+					ROOT = {
+						OR = {
+							has_policy_flag = ai_servitude
+							has_policy_flag = ai_outlawed
+						}
+					}
 					is_species = "ROBOT_POP_SPECIES_3"
 				}
 				has_trait = trait_robotic_1 # allow if non-sentient robot
 				has_trait = trait_robotic_2 # allow if non-sentient robot
-			} 
+			}
 		}
 		always = yes
 		else = {
@@ -77,7 +88,8 @@ can_purge_pop = {
 can_auto_migrate_pop = {
 	if = { 
 		limit = {
-			AND = {
+			AND = {		
+				is_enslaved = no
 				OR = {
 					ROOT = { has_policy_flag = migration_allowed_all }
 					AND = {
@@ -132,16 +144,6 @@ can_generate_leader_from_pop = {
 					is_same_species = ROOT 
 				}
 				AND = {
-					ROOT = { has_policy_flag = leadership_allow_xeno }
-					NOT = { 
-						OR = {
-							has_trait = trait_robotic_1
-							has_trait = trait_robotic_2
-							has_trait = trait_robotic_3
-						}
-					}
-				}
-				AND = {
 					ROOT = { has_policy_flag = leadership_allow_robot }
 					OR = {
 						has_trait = trait_robotic_3
@@ -176,27 +178,72 @@ can_take_hostile_actions = {
 			always = no
 		}
 		else = {
-		
-			#attacking primitives with non-interference
 			if = {
 				limit = {
-					ROOT = { 
-						OR = { 
-							has_policy_flag = interference_passive 
-							has_policy_flag = interference_active
+					AND = {
+						NOT = { has_country_flag = hostile_to_nomads }
+						ROOT = {
+							is_country_type = nomad
 						}
 					}
-					is_primitive = yes
 				}
 				custom_tooltip = {
-					text = "CAN_TAKE_HOSTILE_ACTION_NATIVE_INTERFERENCE"
+					text = "CAN_TAKE_HOSTILE_ACTION_FIRST_CONTACT_PROTOCOL"
 					always = no
 				}
-			
 				else = {
-					always = yes
+					#attacking primitives with non-interference
+					if = {
+						limit = {
+							ROOT = { 
+								OR = { 
+									has_policy_flag = interference_passive 
+									has_policy_flag = interference_active
+								}
+							}
+							is_primitive = yes
+						}
+						custom_tooltip = {
+							text = "CAN_TAKE_HOSTILE_ACTION_NATIVE_INTERFERENCE"
+							always = no
+						}
+						else = {
+							always = yes
+						}
+					}
 				}
 			}
+		}
+	}
+}
+
+#Root = country, attacker
+#This = country, target
+#This rule is a condition for declaring war
+can_declare_war = {
+	custom_tooltip_fail = {
+		text = "ACTION_DECLARE_WAR_OVERLORD_ON_SUBJECT"
+		NOT = {
+			AND = {
+				OR = {
+					is_subject_type = "vassal"
+					is_subject_type = "protectorate"
+				}
+				overlord = {
+					is_same_value = root
+				}
+			}
+		}
+	}
+	if = {
+		limit = { 
+			ROOT = {
+				has_policy_flag = no_wars
+			}
+		}
+		custom_tooltip = {
+			text = "CAN_DECLARE_WAR_POLICY"
+			always = no
 		}
 	}
 }
@@ -240,6 +287,7 @@ can_colonize_with_pop = {
 				has_modifier = culture_shock_machine_age 
 				has_modifier = culture_shock_atomic_age 
 				has_modifier = culture_shock_early_space_age 
+				is_sentient = no
 			}
 		}
 		custom_tooltip = {
@@ -287,6 +335,15 @@ can_resettle_pop = {
 				has_policy_flag = resettlement_allowed
 			}
 			AND = {
+					FROM = { has_policy_flag = resettlement_allowed_xenos_only }
+					NOT = {
+						OR = {
+							is_same_species = ROOT 
+							is_species = "ROBOT_POP_SPECIES_3"
+						}
+					}
+				}
+			AND = {
 				exists = this
 				OR = {
 					has_trait = trait_robotic_1 # allow if non-sentient robot
@@ -329,4 +386,10 @@ can_pop_procreate = {
 			}
 		}
 	}
+}
+
+# Checks if a crisis event exists
+# This = Gamestate
+exists_any_crisis = {
+	has_global_flag = galactic_crisis_happened
 }

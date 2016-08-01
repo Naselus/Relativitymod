@@ -206,12 +206,7 @@ tech_strike_craft_4 = {
 	weight = 0
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_strike_craft_5 = {
@@ -223,12 +218,7 @@ tech_strike_craft_5 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_strike_craft_6 = {
@@ -240,12 +230,7 @@ tech_strike_craft_6 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_strike_craft_7 = {
@@ -257,12 +242,7 @@ tech_strike_craft_7 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_strike_craft_8 = {
@@ -274,12 +254,7 @@ tech_strike_craft_8 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_strike_craft_9 = {
@@ -291,12 +266,7 @@ tech_strike_craft_9 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_strike_craft_10 = {
@@ -308,12 +278,7 @@ tech_strike_craft_10 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_strike_craft_11 = {
@@ -325,12 +290,7 @@ tech_strike_craft_11 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_strike_craft_12 = {
@@ -342,12 +302,7 @@ tech_strike_craft_12 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_strike_craft_13 = {
@@ -359,12 +314,7 @@ tech_strike_craft_13 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_strike_craft_14 = {
@@ -376,12 +326,7 @@ tech_strike_craft_14 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_strike_craft_15 = {
@@ -393,12 +338,7 @@ tech_strike_craft_15 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_strike_craft_16 = {
@@ -410,12 +350,7 @@ tech_strike_craft_16 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_strike_craft_17 = {
@@ -427,12 +362,7 @@ tech_strike_craft_17 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_strike_craft_18 = {
@@ -444,12 +374,7 @@ tech_strike_craft_18 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_strike_craft_19 = {
@@ -461,12 +386,7 @@ tech_strike_craft_19 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_strike_craft_20 = {
@@ -478,10 +398,5 @@ tech_strike_craft_20 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }

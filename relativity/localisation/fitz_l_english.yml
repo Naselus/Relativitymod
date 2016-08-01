@@ -1,0 +1,53 @@
+﻿l_english:
+ ####################################
+
+ SEPARATOR:0 "---"
+ 
+#####################################
+# NOVEL WAR DEMAND
+#####################################
+
+#Forced Free thoughts
+DEMAND_FITZ_FORCE_FREE_THOUGHTS:0 "§GForce Free Thoughts§!"
+DEMAND_FITZ_FORCE_FREE_THOUGHTS_TITLE:0 "§GForce Free Thoughts§"
+DEMAND_FITZ_FORCE_FREE_THOUGHTS_INFO:0 "Force the government of [parameter:country.GetName] to let their population think freely. Diverging them greatly from their current ethic."
+DEMAND_FITZ_FORCE_FREE_THOUGHTS_INFO_SOLO:0 "Let the population think freely. "
+
+war_demand_fitz_force_free_thoughts_header:1 "§GForce free thoughts§!"
+war_demand_fitz_force_free_thoughts_subtext:0 "[parameter:country.GetName]"
+war_demand_fitz_force_free_thoughts_tooltip_header:0 "$war_demand_fitz_force_free_thoughts_header$"
+war_demand_fitz_force_free_thoughts_tooltip_content:0 "Force free thoughts on [parameter:country.GetName]. "
+war_demand_fitz_force_free_thoughts_tooltip_proper_header:0 "$war_demand_fitz_force_free_thoughts_tooltip_header$"
+war_demand_fitz_force_free_thoughts_ticking_warscore:0 "The free thoughts war demand will give §Y1§! warscore every month that the protected target is completely liberated."
+war_demand_fitz_force_free_thoughts_tooltip_proper_content:1 "[GetCountry.GetName] will help free the population of [parameter:country.GetName]\n$war_demand_enforce_peace_ticking_warscore$"
+
+
+war_demand_fitz_free_thoughts_wrong_type:0 "Entities like this do not really understand what free thoughts is ..."
+war_demand_fitz_free_thoughts_no_planets:0 "All of the Empire's planets will be ceded, try making the cold empty space think freely"
+war_demand_force_free_thought_not_individualist:0 "Only Individualists would be able to accomplish this"
+
+fitz_forced_free_thoughts:0 "Forced free thoughts from war"
+opinion_fitz_free_thoughts_country:0 "Forced free thoughts on us"
+
+#Hacking 
+DEMAND_FITZ_HACK_TECHNOLOGY:0 "§GHack their research stream§!"
+DEMAND_FITZ_HACK_TECHNOLOGY_TITLE:0 "§GHack their research stream§"
+DEMAND_FITZ_HACK_TECHNOLOGY_INFO:0 "Hack [parameter:country.GetName]'s research stream and get a portion of their data. "
+DEMAND_FITZ_HACK_TECHNOLOGY_INFO_SOLO:0 "Let the population think freely. "
+
+war_demand_fitz_hack_technology_header:1 "§GHack research stream§!"
+war_demand_fitz_hack_technology_subtext:0 "[parameter:country.GetName]"
+war_demand_fitz_hack_technology_tooltip_header:0 "$war_demand_fitz_hack_technology_header$"
+war_demand_fitz_hack_technology_tooltip_content:0 "Hack and duplicate research of [parameter:country.GetName]. "
+war_demand_fitz_hack_technology_tooltip_proper_header:0 "$war_demand_fitz_hack_technology_tooltip_header$"
+war_demand_fitz_hack_technology_ticking_warscore:0 "The hack technology war demand will give §Y1§! warscore every month that the protected target is completely liberated."
+war_demand_fitz_hack_technology_tooltip_proper_content:1 "[GetCountry.GetName] will hack the research stream of [parameter:country.GetName]\n$war_demand_fitz_hack_technology_ticking_warscore$"
+
+
+
+war_demand_fitz_free_thoughts_wrong_type:0 "Entities like this do not really do research ..."
+war_demand_fitz_free_thoughts_no_planets:0 "All of the Empire's planets will be ceded, try hacking the cold empty space"
+
+fitz_hacking:0 "Access to foreign data streams"
+#opinion_fitz_free_thoughts_country:0 "Forced free thoughts on us" 
+

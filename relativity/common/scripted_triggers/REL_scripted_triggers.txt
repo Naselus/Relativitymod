@@ -1,0 +1,99 @@
+#	Example:
+# 
+#	example_trigger = {
+#		is_country_type = default
+#		free_leader_slots > 0
+#	}
+#
+#
+#	In a script file:
+#
+#	trigger = {
+#		exampel_trigger = yes
+#	}
+
+	leader_trait_expertise_rocketry = {
+		has_trait = leader_trait_expertise_rocketry
+	}
+	
+	leader_trait_expertise_mining = {
+		has_trait = leader_trait_expertise_mining
+	}
+	leader_trait_expertise_psionics = {
+		has_trait = leader_trait_expertise_psionics
+	}
+	leader_trait_expertise_new_worlds = {
+		has_trait = leader_trait_expertise_new_worlds
+	}
+	
+	leader_trait_expertise_genetics = {
+		has_trait = leader_trait_expertise_genetics
+	}
+	
+	leader_trait_expertise_xeno_tech = {
+		has_trait = leader_trait_expertise_xeno_tech
+	}
+	
+	leader_trait_expertise_xenobiology = {
+		has_trait = leader_trait_expertise_xenobiology
+	}
+	
+	leader_trait_expertise_xeno_weaponry = {
+		has_trait = leader_trait_expertise_weaponry
+	}
+	
+	leader_trait_expertise_reactors = {
+		has_trait = leader_trait_expertise_reactors
+	}
+	
+	leader_trait_expertise_ground_combat = {
+		has_trait = leader_trait_expertise_ground_combat
+	}
+	
+	leader_trait_expertise_societal_research = {
+		has_trait = leader_trait_expertise_societal_research
+	}
+ 
+	leader_trait_expertise_xenology = {
+		has_trait = leader_trait_expertise_xenology
+	}
+	
+	leader_trait_expertise_diplomacy = {
+		has_trait = leader_trait_expertise_diplomacy
+	}
+	
+	leader_trait_expertise_public_opinion = {
+		has_trait = leader_trait_expertise_public_opinion
+	}
+	
+	leader_trait_expertise_banking = {
+		has_trait = leader_trait_expertise_banking
+	}
+	
+	leader_trait_expertise_economics_institutes = {
+		has_trait = leader_trait_expertise_economics_institutes
+	}
+	
+	leader_trait_expertise_orbital_stations = {
+		has_trait = leader_trait_expertise_orbital_stations 
+	}
+	
+	leader_trait_expertise_power_hubs = {
+		has_trait = leader_trait_expertise_power_hubs
+	}
+	
+	leader_trait_expertise_mineral_processing = {
+		has_trait = leader_trait_expertise_mineral_processing
+	}
+	
+	leader_trait_expertise_strikecraft = {
+		has_trait = leader_trait_expertise_strikecraft
+	}
+	
+	leader_trait_expertise_engineering_labs = {
+		has_trait = leader_trait_expertise_engineering_labs
+	}
+	
+	leader_trait_expertise_spaceport_expansion = {
+		has_trait = leader_trait_expertise_spaceport_expansion
+	}

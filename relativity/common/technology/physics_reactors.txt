@@ -263,12 +263,7 @@ tech_reactors_6 = {
 	weight = 0
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_reactors_7 = {
@@ -280,12 +275,7 @@ tech_reactors_7 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_reactors_8 = {
@@ -297,12 +287,7 @@ tech_reactors_8 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_reactors_9 = {
@@ -314,12 +299,7 @@ tech_reactors_9 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_reactors_10 = {
@@ -331,12 +311,7 @@ tech_reactors_10 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_reactors_11 = {
@@ -348,12 +323,7 @@ tech_reactors_11 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_reactors_12 = {
@@ -365,12 +335,7 @@ tech_reactors_12 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_reactors_13 = {
@@ -382,12 +347,7 @@ tech_reactors_13 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_reactors_14 = {
@@ -399,12 +359,7 @@ tech_reactors_14 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_reactors_15 = {
@@ -416,12 +371,7 @@ tech_reactors_15 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_reactors_16 = {
@@ -433,12 +383,7 @@ tech_reactors_16 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_reactors_17 = {
@@ -450,12 +395,7 @@ tech_reactors_17 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_reactors_18 = {
@@ -467,12 +407,7 @@ tech_reactors_18 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_reactors_19 = {
@@ -484,12 +419,7 @@ tech_reactors_19 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_reactors_20 = {
@@ -501,10 +431,5 @@ tech_reactors_20 = {
 	weight = @tier2weight1
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }

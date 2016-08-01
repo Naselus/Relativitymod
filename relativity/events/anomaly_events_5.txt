@@ -249,7 +249,7 @@ ship_event = {
 							is_country_type = default
 							NOT = {
 								is_same_value = event_target:MyCountry
-								has_established_contact = { who = event_target:MyCountry }
+								has_established_contact = event_target:MyCountry
 							}
 						}
 					}
@@ -397,8 +397,7 @@ country_event = {
 	hide_window = yes
 	is_triggered_only = yes
 
-	option = {
-		name = OK
+	immediate = {
 		set_country_flag = me
 		FROM = { solar_system = { save_event_target_as = anomaly_planet } }
 		random_planet = {
@@ -413,7 +412,7 @@ country_event = {
 					is_country_type = "default"
 					NOT = {
 						has_country_flag = me
-						has_established_contact = { who = root }
+						has_established_contact = root
 					}
 				}
 			}
@@ -787,8 +786,8 @@ ship_event = {
 					NOT = {
 						has_star_flag = current_system
 						has_star_flag = hostile_system
-						has_star_flag = sc_pirate_system
 					}
+					is_pirate_system = no
 					has_owner = no
 				}
 				save_event_target_as = some_system_1
@@ -804,9 +803,9 @@ ship_event = {
 					NOT = {
 						has_star_flag = current_system
 						has_star_flag = hostile_system
-						has_star_flag = sc_pirate_system
 						has_star_flag = some_system_1
 					}
+					is_pirate_system = no
 					has_owner = no
 				}
 				save_event_target_as = some_system_2
@@ -3369,7 +3368,7 @@ ship_event = {
 				NOT = {
 					has_trait = leader_trait_careful
 					has_trait = leader_trait_expertise_statecraft
-					has_trait = leader_trait_expertise_genetics
+					has_trait = leader_trait_expertise_biology
 				}
 			}
 		}
@@ -3381,7 +3380,7 @@ ship_event = {
 				OR = {
 					has_trait = leader_trait_careful
 					has_trait = leader_trait_expertise_statecraft
-					has_trait = leader_trait_expertise_genetics
+					has_trait = leader_trait_expertise_biology
 				}
 			}
 		}
@@ -4450,12 +4449,8 @@ ship_event = {
 					}
 				}
 				save_event_target_as = MonsterLocation
-				create_country = {
-					name = "Life Tree Protectors"
-					type = faction
-					auto_delete = yes
-				}
-				last_created_country = {
+				create_amoeba_country = yes
+				event_target:amoeba_country = {
 					create_fleet = { name = "Life Tree Protectors" }
 					last_created_fleet = {
 						set_owner = prev
@@ -4772,20 +4767,13 @@ ship_event = {
 	immediate = {
 		hidden_effect = { owner = { country_event = { id = story.5 days = 30 } } }
 		owner = {
-			set_policy = {
-				policy = slavery
-				option = slavery_allowed_all
-				cooldown = no
-			}
-		}
-		owner = {
 			if = {
 				limit = {
 					NOT = { has_policy_flag = "slavery_allowed_all" }
 				}
 				add_modifier = {
 					modifier = slavery_bad_juju
-					days = 1825
+					days = 1800
 				}
 			}
 			if = {
@@ -4794,7 +4782,7 @@ ship_event = {
 				}
 				add_modifier = {
 					modifier = slavery_very_bad_juju
-					days = 1825
+					days = 1800
 				}
 			}
 		}
@@ -5844,6 +5832,7 @@ planet_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		has_modifier = "gas_rich_planet"
 		owner = {
 			has_country_flag = limited_modifier_gas_rich_planet
 		}

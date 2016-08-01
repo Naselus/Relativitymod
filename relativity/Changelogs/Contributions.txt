@@ -1,0 +1,8 @@
+#
+# Mod: NovelWarGoals
+# 
+# Creator = Jormarn
+# Contributor = FitzOmega
+#
+#
+# Version: 0.8

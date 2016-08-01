@@ -20,11 +20,11 @@ namespace = faction
 
 
 #########################
-# Slave Faction and general events
+# Pop faction set-up events
 # id 000
 #########################
 
-# Pop enslaved - create faction, force pop to evaluate
+# Pop enslaved - create factions, force pop to evaluate
 pop_event = {
 	id = faction.1
 	hide_window = yes
@@ -34,29 +34,210 @@ pop_event = {
 		NOT = {
 			is_species = "ROBOT_POP_SPECIES_1"
 			is_species = "ROBOT_POP_SPECIES_2"
-			is_species = "ROBOT_POP_SPECIES_3"
+			#is_species = "ROBOT_POP_SPECIES_3"
 		}
 	}
 
 	immediate = {
-		owner = {
+		# Malcontent if Individualist
+		if = {
+			limit = {
+				OR = {
+					has_pop_flag = former_malcontent
+					pop_has_ethic = ethic_fanatic_individualist
+					pop_has_ethic = ethic_individualist
+				}
+			}
 			if = {
 				limit = {
-					count_pop_factions = {
-						limit = { is_pop_faction_type = slave }
-						count < 1
+					owner = {
+						count_pop_factions = {
+							limit = { is_pop_faction_type = malcontent_slaves }
+							count < 1
+						}
 					}
 				}
-				create_pop_faction = {
-					type = slave
-					pop = root
+				owner = {
+					create_pop_faction = {
+						type = malcontent_slaves
+						parameter:owner_empire = this
+						pop = root
+					}
+				}
+				else = {
+					owner = {
+						random_pop_faction = {
+							limit = { is_pop_faction_type = malcontent_slaves }
+							save_event_target_as = malcontent_faction
+						}
+					}
+					set_pop_faction = event_target:malcontent_faction
+				}
+				break = yes
+			}
+		}
+		# Docile if Collectivist
+		if = {
+			limit = {
+				OR = {
+					has_pop_flag = former_docile
+					pop_has_ethic = ethic_fanatic_collectivist
+					pop_has_ethic = ethic_collectivist
+				}
+			}
+			if = {
+				limit = {
+					owner = {
+						count_pop_factions = {
+							limit = { is_pop_faction_type = docile_slaves }
+							count < 1
+						}
+					}
+				}
+				owner = {
+					create_pop_faction = {
+						type = docile_slaves
+						parameter:owner_empire = this
+						pop = root
+					}
+				}
+				else = {
+					owner = {
+						random_pop_faction = {
+							limit = { is_pop_faction_type = docile_slaves }
+							save_event_target_as = docile_faction
+						}
+					}
+					set_pop_faction = event_target:docile_faction
+				}
+				break = yes
+			}
+		}
+		# Random if neither
+		if = {
+			limit = {
+				NOR = {
+					has_pop_flag = former_docile
+					has_pop_flag = former_malcontent
+					pop_has_ethic = ethic_fanatic_individualist
+					pop_has_ethic = ethic_individualist
+					pop_has_ethic = ethic_fanatic_collectivist
+					pop_has_ethic = ethic_collectivist
+				}
+			}
+
+			random_list = {
+				# Malcontent
+				50 = {
+					# Militarist
+					modifier = {
+						factor = 1.25
+						pop_has_ethic = ethic_militarist
+						owner = {
+							NOR = {
+								has_ethic = ethic_militarist
+								has_ethic = ethic_fanatic_militarist
+							}
+						}
+					}
+					# Fanatic Militarist
+					modifier = {
+						factor = 1.5
+						pop_has_ethic = ethic_fanatic_militarist
+						owner = {
+							NOR = {
+								has_ethic = ethic_militarist
+								has_ethic = ethic_fanatic_militarist
+							}
+						}
+					}
+					if = {
+						limit = {
+							owner = {
+								count_pop_factions = {
+									limit = { is_pop_faction_type = malcontent_slaves }
+									count < 1
+								}
+							}
+						}
+						owner = {
+							create_pop_faction = {
+								type = malcontent_slaves
+								parameter:owner_empire = this
+								pop = root
+							}
+						}
+						else = {
+							owner = {
+								random_pop_faction = {
+									limit = { is_pop_faction_type = malcontent_slaves }
+									save_event_target_as = malcontent_faction
+								}
+							}
+							set_pop_faction = event_target:malcontent_faction
+						}
+						break = yes
+					}
+				}
+
+				# Docile
+				50 = {
+					# Pacifist
+					modifier = {
+						factor = 1.25
+						pop_has_ethic = ethic_pacifist
+						owner = {
+							NOR = {
+								has_ethic = ethic_militarist
+								has_ethic = ethic_fanatic_militarist
+							}
+						}
+					}
+					# Fanatic Militarist
+					modifier = {
+						factor = 1.5
+						pop_has_ethic = ethic_fanatic_pacifist
+						owner = {
+							NOR = {
+								has_ethic = ethic_militarist
+								has_ethic = ethic_fanatic_militarist
+							}
+						}
+					}
+					if = {
+						limit = {
+							owner = {
+								count_pop_factions = {
+									limit = { is_pop_faction_type = docile_slaves }
+									count < 1
+								}
+							}
+						}
+						owner = {
+							create_pop_faction = {
+								type = docile_slaves
+								parameter:owner_empire = this
+								pop = root
+							}
+						}
+						else = {
+							owner = {
+								random_pop_faction = {
+									limit = { is_pop_faction_type = docile_slaves }
+									save_event_target_as = docile_faction
+								}
+							}
+							set_pop_faction = event_target:docile_faction
+						}
+						break = yes
+					}
 				}
 			}
 		}
 	}
 }
 
-# Pop emancipated or purged - force pop to evaluate
+# Pop emancipated 
 pop_event = {
 	id = faction.2
 	hide_window = yes
@@ -64,14 +245,351 @@ pop_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		force_faction_evaluation = this
 		if = {
 			limit = {
-				is_enslaved = no
-				has_modifier = 6_hour_workday
+				exists = pop_faction
+				pop_faction = { is_pop_faction_type = malcontent_slaves }
 			}
-			remove_modifier = 6_hour_workday
+			set_timed_pop_flag = {
+				flag = former_malcontent
+				days = 360
+			}
+			else = {
+				if = {
+					limit = {
+						exists = pop_faction
+						pop_faction = { is_pop_faction_type = docile_slaves }
+					}
+					set_timed_pop_flag = {
+						flag = former_docile
+						days = 360
+					}
+				}
+			}
 		}
+		owner = {
+			default_pop_faction = {
+				root = {
+					set_pop_faction = prev
+				}
+			}
+		}
+		force_faction_evaluation = this
+	}
+}
+
+# Pop purged
+pop_event = {
+	id = faction.3
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		owner = {
+			if = {
+				limit = {
+					count_pop_factions = {
+						limit = { is_pop_faction_type = purged }
+						count < 1
+					}
+				}
+				create_pop_faction = {
+					type = purged
+					pop = root
+				}
+				else = {
+					random_owned_pop = {
+						limit = {
+							exists = pop_faction
+							pop_faction = { is_pop_faction_type = purged }
+						}
+						pop_faction = {
+							root = {
+								set_pop_faction = prev
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+# Pop ceases to be purged
+pop_event = {
+	id = faction.4
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		force_faction_evaluation = this
+	}
+}
+
+#########################
+# Docile Slaves Faction
+# id 10 - 49
+#########################
+
+# Slave Unrest
+# All Docile Slaves on unrest_planet gain negative modifier
+pop_faction_event = {
+	id = faction.10
+	title = faction.10.title
+	desc = {
+		trigger = {
+			hidden:owner = {
+				switch = {
+					trigger = has_ethic
+					ethic_fanatic_collectivist = { text = faction.10.desc.colle }
+					ethic_collectivist = { text = faction.10.desc.colle }
+					default = { text = faction.10.desc }
+				}
+			}
+		}
+	}
+	picture = GFX_evt_smugglers_in_bar
+	show_sound = event_conversation
+	location = event_target:unrest_planet
+
+	is_triggered_only = yes
+
+	option = {
+		name = OK
+		#custom_tooltip = {
+		#	every_owned_pop = {
+		#		add_modifier = {
+		#			modifier = docile_slaves_unrest_modifier
+		#			days = 1440 # 4 years
+		#		}
+		#	}
+		#}
+	}
+}
+
+# Slaves kill random pop on roving_gangs_planet
+# Triggers response from affected pop faction
+pop_faction_event = {
+	id = faction.15
+	title = faction.15.title
+	#desc = {
+	#	trigger = {
+	#		owner = {
+	#			switch = {
+	#				trigger = has_ethic
+	#				ethic_fanatic_collectivist = { text = faction.15.desc.colle }
+	#				ethic_collectivist = { text = faction.15.desc.colle }
+	#				default = { text = faction.15.desc }
+	#			}
+	#		}
+	#	}
+	#}
+	desc = faction.15.desc
+	picture = GFX_evt_city_ruins
+	show_sound = event_planetary_riot
+	location = event_target:roving_gangs_planet
+
+	is_triggered_only = yes
+
+	immediate = {
+		event_target:roving_gangs_planet = {
+			if = {
+				limit = {
+					count_pops = {
+						limit = {
+							exists = pop_faction
+							pop_faction = { is_same_value = root }
+						}
+						count < 2
+					}
+				}
+				random_owned_pop = {
+					limit = {
+						exists = pop_faction
+						pop_faction = { NOT = { is_same_value = root } }
+					}
+					kill_pop = yes
+				}
+				else = {
+					random_owned_pop = {
+						limit = {
+							exists = pop_faction
+						}
+						#pop_event = { faction.16 }
+						kill_pop = yes
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = OK
+	}
+}
+
+#########################
+# Malcontent Slaves Faction
+# id 50 - 79
+#########################
+
+# Interstellar Railroad, 1-5 slaves are removed
+pop_faction_event = {
+	id = faction.50
+	title = faction.50.title
+	desc = {
+		trigger = {
+			hidden:owner = {
+				switch = {
+					trigger = has_ethic
+					ethic_fanatic_collectivist = { text = faction.50.desc.colle }
+					ethic_collectivist = { text = faction.50.desc.colle }
+					default = { text = faction.50.desc }
+				}
+			}
+		}
+	}
+	picture = GFX_evt_unknown_ships
+	show_sound = event_ship_thrusters
+	location = root.owner.capital_scope
+
+	is_triggered_only = yes
+
+	option = {
+		name = faction.50.a
+		custom_tooltip = faction.50.5.tooltip
+		trigger = {
+			owner = {
+				has_country_flag = 5_railroaded
+			}
+		}
+		hidden_effect = {
+			owner = {
+				remove_country_flag = 5_railroaded
+			}
+		}
+	}
+
+	option = {
+		name = faction.50.a
+		custom_tooltip = faction.50.4.tooltip
+		trigger = {
+			owner = {
+				has_country_flag = 4_railroaded
+			}
+		}
+		hidden_effect = {
+			owner = {
+				remove_country_flag = 4_railroaded
+			}
+		}
+	}
+
+	option = {
+		name = faction.50.a
+		custom_tooltip = faction.50.3.tooltip
+		trigger = {
+			owner = {
+				has_country_flag = 3_railroaded
+			}
+		}
+		hidden_effect = {
+			owner = {
+				remove_country_flag = 3_railroaded
+			}
+		}
+	}
+
+	option = {
+		name = faction.50.a
+		custom_tooltip = faction.50.1.tooltip
+		trigger = {
+			owner = {
+				has_country_flag = 1_railroaded
+			}
+		}
+		hidden_effect = {
+			owner = {
+				remove_country_flag = 1_railroaded
+			}
+		}
+	}
+}
+
+# Riots, building on riots_planet is ruined
+pop_faction_event = {
+	id = faction.55
+	title = faction.55.title
+	desc = {
+		trigger = {
+			hidden:owner = {
+				switch = {
+					trigger = has_ethic
+					ethic_fanatic_collectivist = { text = faction.55.desc.colle }
+					ethic_collectivist = { text = faction.55.desc.colle }
+					default = { text = faction.55.desc }
+				}
+			}
+		}
+	}
+	picture = GFX_evt_burning_settlement
+	show_sound = event_planetary_riot
+	location = event_target:riots_planet
+
+	is_triggered_only = yes
+
+	option = {
+		name = UNFORTUNATE
+	}
+}
+
+# Revolt on revolt_planet
+pop_faction_event = {
+	id = faction.60
+	title = faction.60.title
+	desc = {
+		trigger = {
+			hidden:owner = {
+				switch = {
+					trigger = has_ethic
+					ethic_fanatic_collectivist = { text = faction.60.desc.fcolle }
+					ethic_collectivist = { text = faction.60.desc.colle }
+					default = { text = faction.60.desc }
+				}
+			}
+		}
+	}
+	picture = GFX_evt_ground_combat
+	show_sound = event_planetary_riot
+	location = event_target:riots_planet
+
+	is_triggered_only = yes
+
+	option = {
+		name = UNFORTUNATE
+	}
+}
+
+#########################
+# Emancipation Faction
+# id 80 - 99
+#########################
+
+# Slaves radicalized
+pop_faction_event = {
+	id = faction.80
+	title = faction.80.title
+	desc = faction.80.desc
+	picture = GFX_evt_smugglers_in_bar
+	show_sound = event_conversation
+	#location = root.owner.capital_scope
+
+	is_triggered_only = yes
+
+	option = {
+		name = UNFORTUNATE
 	}
 }
 
@@ -87,7 +605,7 @@ pop_faction_event = {
 	desc = faction.100.desc
 	picture = GFX_evt_galactic_senate
 	show_sound = event_planetary_riot
-	location = event_target:rebelling_planet
+	location = event_target:planet
 
 	is_triggered_only = yes
 
@@ -112,28 +630,6 @@ pop_faction_event = {
 	}
 }
 
-# Leader Assassinated
-#pop_faction_event = {
-#	id = faction.102
-#	title = faction.102.title
-#	desc = faction.102.desc
-#	picture = GFX_evt_smugglers_in_bar
-#	show_sound = event_cityscape
-#
-#	is_triggered_only = yes
-#
-#	option = {
-#		name = OK
-#		leader = {
-#			kill_leader = {
-#				type = governor
-#				show_notification = no
-#			}
-#		}
-#	}
-#}
-
-
 ######################
 # Nationalist Faction
 # id 300
@@ -143,7 +639,20 @@ pop_faction_event = {
 pop_faction_event = {
 	id = faction.301
 	title = faction.301.title
-	desc = faction.301.desc
+	desc = {
+		trigger = {
+			hidden:owner = {
+				switch = {
+					trigger = has_ethic
+					ethic_fanatic_xenophobe = { text = faction.301.desc.phobe }
+					ethic_xenophobe = { text = faction.301.desc.phobe }
+					ethic_fanatic_xenophile = { text = faction.301.desc.phile }
+					ethic_xenophile = { text = faction.301.desc.phile }
+					default = { text = faction.301.desc }
+				}
+			}
+		}
+	}
 	picture = GFX_evt_burning_settlement
 	show_sound = event_planetary_riot
 	location = event_target:planet
@@ -159,7 +668,20 @@ pop_faction_event = {
 pop_faction_event = {
 	id = faction.302
 	title = faction.302.title
-	desc = faction.302.desc
+	desc = {
+		trigger = {
+			hidden:owner = {
+				switch = {
+					trigger = has_ethic
+					ethic_fanatic_xenophobe = { text = faction.302.desc.phobe }
+					ethic_xenophobe = { text = faction.302.desc.phobe }
+					ethic_fanatic_xenophile = { text = faction.302.desc.phile }
+					ethic_xenophile = { text = faction.302.desc.phile }
+					default = { text = faction.302.desc }
+				}
+			}
+		}
+	}
 	picture = GFX_evt_burning_settlement
 	show_sound = event_planetary_riot
 	location = root
@@ -168,34 +690,5 @@ pop_faction_event = {
 
 	option = {
 		name = UNFORTUNATE
-	}
-}
-
-######################
-# Purged Faction
-# id 800
-######################
-
-pop_event = {
-	id = faction.800
-	hide_window = yes
-	is_triggered_only = yes
-
-	immediate = {
-		owner = {
-			if = {
-				limit = {
-					root = { NOT = { has_modifier = hunger_strike } }
-					count_pop_factions = {
-						limit = { is_pop_faction_type = purged }
-						count < 1
-					}
-				}
-				create_pop_faction = {
-					type = purged
-					pop = root
-				}
-			}
-		}
 	}
 }

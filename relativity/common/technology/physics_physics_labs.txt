@@ -161,12 +161,12 @@ tech_physics_lab_2 = {
 	weight = @tier1weight3
 	
 	modifier = {
-		country_physics_tech_research_speed = 0.05
+		country_physics_tech_research_speed = 0.03
 	}
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -181,12 +181,12 @@ tech_physics_lab_3 = {
 	weight = @tier1weight4
 	
 	modifier = {
-		country_physics_tech_research_speed = 0.05
+		country_physics_tech_research_speed = 0.03
 	}
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -203,7 +203,7 @@ tech_global_research_initiative = {
 	
 	weight_modifier = {
 		modifier = {
-			factor = 0.75
+			factor = 1.75
 			NOT = {
 				research_leader = {
 					area = physics
@@ -212,7 +212,7 @@ tech_global_research_initiative = {
 			}
 		}
 		modifier = {
-			factor = 0
+			factor = 1
 			NOT = {
 				OR = {
 					has_ethic = ethic_materialist
@@ -262,11 +262,13 @@ tech_physics_lab_4 = {
 	prerequisites = { "tech_physics_lab_3"}	
 	weight = @tier2weight2
 	
-	
+	modifier = {
+		country_physics_tech_research_speed = 0.03
+	}	
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -277,7 +279,7 @@ tech_physics_lab_5 = {
 	area = physics
 	tier = 2
 	category = { physics_labs }
-	prerequisites = { "tech_physics_lab_4" "tech_colonial_centralization"}
+	prerequisites = { "tech_physics_lab_4" "tech_power_plant_6"}
 	weight = @tier2weight3
 		
 	#unlock physics lab lvl 2
@@ -329,12 +331,12 @@ tech_physics_lab_6 = {
 	weight = @tier3weight1
 	
 	modifier = {
-		country_physics_tech_research_speed = 0.05
+		country_physics_tech_research_speed = 0.03
 	}
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -349,12 +351,12 @@ tech_physics_lab_7 = {
 	weight = @tier3weight2
 	
 	modifier = {
-		country_physics_tech_research_speed = 0.05
+		country_physics_tech_research_speed = 0.03
 	}
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -369,12 +371,12 @@ tech_physics_lab_8 = {
 	weight = @tier3weight3
 	
 	modifier = {
-		country_physics_tech_research_speed = 0.05
+		country_physics_tech_research_speed = 0.03
 	}
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -389,12 +391,12 @@ tech_physics_lab_9 = {
 	weight = @tier3weight4
 	
 	modifier = {
-		country_physics_tech_research_speed = 0.05
+		country_physics_tech_research_speed = 0.03
 	}
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -457,12 +459,12 @@ tech_physics_lab_11 = {
 	weight = @tier4weight2
 	
 	modifier = {
-		country_physics_tech_research_speed = 0.05
+		country_physics_tech_research_speed = 0.03
 	}
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -477,12 +479,12 @@ tech_physics_lab_12 = {
 	weight = @tier4weight4
 	
 	modifier = {
-		country_physics_tech_research_speed = 0.05
+		country_physics_tech_research_speed = 0.03
 	}
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -497,12 +499,12 @@ tech_physics_lab_13 = {
 	weight = @tier5weight2
 	
 	modifier = {
-		country_physics_tech_research_speed = 0.05
+		country_physics_tech_research_speed = 0.03
 	}
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -517,12 +519,12 @@ tech_physics_lab_14 = {
 	weight = @tier5weight3
 	
 	modifier = {
-		country_physics_tech_research_speed = 0.05
+		country_physics_tech_research_speed = 0.03
 	}
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -533,7 +535,7 @@ tech_physics_lab_15 = {
 	cost = @tier5cost4
 	tier = 5
 	category = { physics_labs }
-	prerequisites = { "tech_physics_lab_14" "tech_galactic_ambitions" }	
+	prerequisites = { "tech_physics_lab_14" "tech_galactic_ambitions" "tech_power_plant_11"}	
 	weight = @tier5weight4
 		
 	# # unlock physics lab lvl 4
@@ -585,12 +587,12 @@ tech_physics_lab_16 = {
 	weight = @tier6weight1
 	
 	modifier = {
-		country_physics_tech_research_speed = 0.05
+		country_physics_tech_research_speed = 0.03
 	}
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -605,12 +607,12 @@ tech_physics_lab_17 = {
 	weight = @tier6weight2
 	
 	modifier = {
-		country_physics_tech_research_speed = 0.05
+		country_physics_tech_research_speed = 0.03
 	}
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -625,12 +627,12 @@ tech_physics_lab_18 = {
 	weight = @tier6weight3
 	
 	modifier = {
-		country_physics_tech_research_speed = 0.05
+		country_physics_tech_research_speed = 0.03
 	}
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}
@@ -645,12 +647,12 @@ tech_physics_lab_19 = {
 	weight = @tier7weight1
 	
 	modifier = {
-		country_physics_tech_research_speed = 0.05
+		country_physics_tech_research_speed = 0.03
 	}
 	
 	ai_weight = {
 		modifier = {
-			factor = 0
+			factor = 1
 			always = yes
 		}
 	}

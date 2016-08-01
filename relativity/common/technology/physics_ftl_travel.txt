@@ -500,12 +500,7 @@ tech_ftl_13 = {
 		ship_ftl_warp_range_mult = 0.10
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_ftl_14 = {
@@ -520,12 +515,7 @@ tech_ftl_14 = {
 		ship_ftl_warp_range_mult = 0.10
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_ftl_15 = {
@@ -540,12 +530,7 @@ tech_ftl_15 = {
 		ship_ftl_warp_range_mult = 0.10
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_ftl_16 = {
@@ -560,12 +545,7 @@ tech_ftl_16 = {
 		ship_interstellar_speed_mult = 0.10
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_ftl_17 = {
@@ -580,12 +560,7 @@ tech_ftl_17 = {
 		ship_interstellar_speed_mult = 0.10
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_ftl_18 = {
@@ -600,12 +575,7 @@ tech_ftl_18 = {
 		ship_interstellar_speed_mult = 0.10
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_ftl_19 = {
@@ -621,12 +591,7 @@ tech_ftl_19 = {
 		ship_ftl_wormhole_range_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_ftl_20 = {
@@ -642,10 +607,5 @@ tech_ftl_20 = {
 		ship_ftl_wormhole_range_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }

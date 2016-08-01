@@ -30,7 +30,7 @@ leader_trait_careful = {
 	leader_trait = yes
 	leader_class = { scientist }
 	opposites = { "leader_trait_carefree" }
-	
+	initial = no	
 	ai_categories = {
 		survey
 	}
@@ -50,7 +50,7 @@ leader_trait_meticulous = {
 	leader_trait = yes
 	leader_class = { scientist }
 	opposites = { "leader_trait_carefree" }
-	
+	initial = no	
 	ai_categories = {
 		survey
 	}
@@ -70,7 +70,7 @@ leader_trait_spark_of_genius = {
 	leader_trait = yes
 	leader_class = { scientist }
 	# increased chance to discover rare techs (weighted in tech-script)
-	
+	initial = no	
 	ai_categories = {
 		physics
 		society
@@ -87,7 +87,8 @@ leader_trait_carefree = {
 	modification = no
 	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_carefree.dds"
 	modifier = {
-		ship_anomaly_research_speed_mult = 0.35
+		ship_anomaly_research_speed_mult = 0.50
+		ship_anomaly_fail_risk = 0.10
 	}
 	leader_trait = yes
 	leader_class = { scientist }
@@ -95,7 +96,7 @@ leader_trait_carefree = {
 	ai_categories = {
 		survey
 	}
-	
+	initial = no	
 	ai_weight = {
 		weight = 50
 	}
@@ -110,7 +111,7 @@ leader_trait_roamer = {
 	}
 	leader_trait = yes
 	leader_class = { scientist }
-	
+	initial = no	
 	ai_categories = {
 		survey
 	}
@@ -166,7 +167,7 @@ leader_trait_archaeologist = {
 		}
 	leader_trait = yes
 	leader_class = { scientist }
-	
+	initial = no	
 	ai_categories = {
 		survey
 	}
@@ -176,18 +177,27 @@ leader_trait_archaeologist = {
 	}
 }
 
-leader_trait_paranoid = {
+leader_trait_expertise_psionics = {
 	cost = 1
 	modification = no
-	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_paranoid.dds"
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_psionics.dds"
 	modifier = {
-		all_technology_research_speed = -0.05
-		ship_anomaly_research_speed_mult = -0.10
+		#category_psionics_research_speed_mult = @categorybonus
 	}
 	leader_trait = yes
 	leader_class = { scientist }
+	prerequisites = { tech_psionic_theory }
 	initial = no
-	# increased chance to discover rare techs (weighted in tech-script)
+	# higher chance to generate techs in category psionics (done in tech-script)
+	
+	ai_categories = {
+		society
+		physics
+	}
+	
+	ai_weight = {
+		weight = 100
+	}
 }
 
 leader_trait_maniacal = {
@@ -200,7 +210,7 @@ leader_trait_maniacal = {
 	leader_trait = yes
 	leader_class = { scientist }
 	# increased chance to discover risky techs (weighted in tech-script)
-	
+	initial = no	
 	ai_categories = {
 		physics
 		society
@@ -225,7 +235,7 @@ leader_trait_custom_AI_assistant = {
 	leader_class = { scientist }
 	prerequisites = { tech_self_aware_logic }
 	opposites = { "leader_trait_sentient_AI_assistant" }
-	
+		initial = no
 	ai_categories = {
 		survey
 		physics
@@ -251,7 +261,7 @@ leader_trait_sentient_AI_assistant = {
 	leader_class = { scientist }
 	prerequisites = { tech_sentient_ai }
 	opposites = { "leader_trait_custom_AI_assistant" }
-	
+		initial = no
 	ai_categories = {
 		survey
 		physics
@@ -273,7 +283,7 @@ leader_trait_expertise_armor = {
 	}
 	leader_trait = yes
 	leader_class = { scientist }
-
+	initial = no
 	# higher chance to generate techs in category armor (done in tech-script)
 	
 	ai_categories = {
@@ -294,7 +304,7 @@ leader_trait_expertise_rocketry = {
 	}
 	leader_trait = yes
 	leader_class = { scientist }
-
+	initial = no
 	# higher chance to generate techs in category rocketry (done in tech-script)
 	
 	ai_categories = {
@@ -315,12 +325,11 @@ leader_trait_expertise_voidcraft = {
 	}
 	leader_trait = yes
 	leader_class = { scientist }
-
+	initial = no
 	# higher chance to generate techs in category zero-g structures (done in tech-script)
 	
 	ai_categories = {
 		engineering
-		physics
 	}
 	
 	ai_weight = {
@@ -337,7 +346,7 @@ leader_trait_expertise_mining = {
 	}
 	leader_trait = yes
 	leader_class = { scientist }
-
+	initial = no
 	# higher chance to generate techs in category planetary structures (done in tech-script)
 	
 	ai_categories = {
@@ -360,7 +369,7 @@ leader_trait_expertise_field_manipulation = {
 	leader_class = { scientist }
 
 	# higher chance to generate techs in category field manipulation (done in tech-script)
-	
+	initial = no	
 	ai_categories = {
 		engineering
 	}
@@ -379,7 +388,7 @@ leader_trait_expertise_particles = {
 	}
 	leader_trait = yes
 	leader_class = { scientist }
-	
+	initial = no	
 	ai_categories = {
 		physics
 	}
@@ -398,7 +407,7 @@ leader_trait_expertise_ai = {
 	}
 	leader_trait = yes
 	leader_class = { scientist }
-
+	initial = no
 	# higher chance to generate techs in category ai (done in tech-script)
 	
 	ai_categories = {
@@ -410,28 +419,7 @@ leader_trait_expertise_ai = {
 	}
 }
 
-leader_trait_expertise_psionics = {
-	cost = 1
-	modification = no
-	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_psionics.dds"
-	modifier = {
-		#category_psionics_research_speed_mult = @categorybonus
-	}
-	leader_trait = yes
-	leader_class = { scientist }
-	prerequisites = { tech_psionic_theory }
 
-	# higher chance to generate techs in category psionics (done in tech-script)
-	
-	ai_categories = {
-		society
-		physics
-	}
-	
-	ai_weight = {
-		weight = 100
-	}
-}
 
 leader_trait_expertise_new_worlds = {
 	cost = 1
@@ -442,7 +430,7 @@ leader_trait_expertise_new_worlds = {
 	}
 	leader_trait = yes
 	leader_class = { scientist }
-
+	initial = no
 	# higher chance to generate techs in category environmental systems (done in tech-script)
 	
 	ai_categories = {
@@ -464,7 +452,7 @@ leader_trait_expertise_statecraft = {
 	}
 	leader_trait = yes
 	leader_class = { scientist }
-
+	initial = no
 	# higher chance to generate techs in category financial theory (done in tech-script)
 	
 	ai_categories = {
@@ -485,7 +473,7 @@ leader_trait_expertise_genetics = {
 	}
 	leader_trait = yes
 	leader_class = { scientist }
-
+	initial = no
 	# higher chance to generate techs in category genetics (done in tech-script)
 	
 	ai_categories = {
@@ -506,7 +494,7 @@ leader_trait_expertise_military_theory = {
 	}
 	leader_trait = yes
 	leader_class = { scientist }
-
+	initial = no
 	# higher chance to generate techs in category military organization (done in tech-script)
 	
 	ai_categories = {
@@ -527,7 +515,7 @@ leader_trait_expertise_spaceport_expansion = {
 	}
 	leader_trait = yes
 	leader_class = { scientist }
-
+	initial = no
 	# higher chance to generate techs in category armor (done in tech-script)
 	
 	ai_categories = {
@@ -548,7 +536,7 @@ leader_trait_expertise_terraforming = {
 	}
 	leader_trait = yes
 	leader_class = { scientist }
-
+	initial = no
 	# higher chance to generate techs in category rocketry (done in tech-script)
 	
 	ai_categories = {
@@ -569,7 +557,7 @@ leader_trait_expertise_engineering_labs = {
 	}
 	leader_trait = yes
 	leader_class = { scientist }
-
+	initial = no
 	# higher chance to generate techs in category zero-g structures (done in tech-script)
 	
 	ai_categories = {
@@ -590,7 +578,7 @@ leader_trait_expertise_sensors = {
 	}
 	leader_trait = yes
 	leader_class = { scientist }
-
+	initial = no
 	# higher chance to generate techs in category planetary structures (done in tech-script)
 	
 	ai_categories = {
@@ -611,7 +599,7 @@ leader_trait_expertise_strikecraft = {
 	}
 	leader_trait = yes
 	leader_class = { scientist }
-
+	initial = no
 	# higher chance to generate techs in category field manipulation (done in tech-script)
 	
 	ai_categories = {
@@ -632,7 +620,7 @@ leader_trait_expertise_thrusters = {
 	}
 	leader_trait = yes
 	leader_class = { scientist }
-
+	initial = no
 	
 	ai_categories = {
 		engineering
@@ -652,7 +640,7 @@ leader_trait_expertise_mineral_processing = {
 	}
 	leader_trait = yes
 	leader_class = { scientist }
-
+	initial = no
 	# higher chance to generate techs in category ai (done in tech-script)
 	
 	ai_categories = {
@@ -674,7 +662,7 @@ leader_trait_expertise_power_plants = {
 	leader_trait = yes
 	leader_class = { scientist }
 	prerequisites = { tech_psionic_theory }
-
+	initial = no
 	# higher chance to generate techs in category psionics (done in tech-script)
 	
 	ai_categories = {
@@ -695,7 +683,7 @@ leader_trait_expertise_power_hubs = {
 	}
 	leader_trait = yes
 	leader_class = { scientist }
-
+	initial = no
 	# higher chance to generate techs in category environmental systems (done in tech-script)
 	
 	ai_categories = {
@@ -716,7 +704,7 @@ leader_trait_expertise_farming = {
 	}
 	leader_trait = yes
 	leader_class = { scientist }
-
+	initial = no
 	# higher chance to generate techs in category financial theory (done in tech-script)
 	
 	ai_categories = {
@@ -737,7 +725,7 @@ leader_trait_expertise_orbital_stations = {
 	}
 	leader_trait = yes
 	leader_class = { scientist }
-
+	initial = no
 	# higher chance to generate techs in category genetics (done in tech-script)
 	
 	ai_categories = {
@@ -758,7 +746,7 @@ leader_trait_expertise_spaceport_economics = {
 	}
 	leader_trait = yes
 	leader_class = { scientist }
-
+	initial = no
 	# higher chance to generate techs in category military organization (done in tech-script)
 	
 	ai_categories = {
@@ -779,7 +767,7 @@ leader_trait_expertise_economics_institutes = {
 	}
 	leader_trait = yes
 	leader_class = { scientist }
-
+	initial = no
 	# higher chance to generate techs in category armor (done in tech-script)
 	
 	ai_categories = {
@@ -800,7 +788,7 @@ leader_trait_expertise_financial_regulation = {
 	}
 	leader_trait = yes
 	leader_class = { scientist }
-
+	initial = no
 	# higher chance to generate techs in category rocketry (done in tech-script)
 	
 	ai_categories = {
@@ -821,7 +809,7 @@ leader_trait_expertise_banking = {
 	}
 	leader_trait = yes
 	leader_class = { scientist }
-
+	initial = no
 	# higher chance to generate techs in category zero-g structures (done in tech-script)
 	
 	ai_categories = {
@@ -842,7 +830,7 @@ leader_trait_expertise_edicts = {
 	}
 	leader_trait = yes
 	leader_class = { scientist }
-
+	initial = no
 	# higher chance to generate techs in category planetary structures (done in tech-script)
 	
 	ai_categories = {
@@ -863,7 +851,7 @@ leader_trait_expertise_public_opinion = {
 	}
 	leader_trait = yes
 	leader_class = { scientist }
-
+	initial = no
 	# higher chance to generate techs in category field manipulation (done in tech-script)
 	
 	ai_categories = {
@@ -884,7 +872,7 @@ leader_trait_expertise_influence = {
 	}
 	leader_trait = yes
 	leader_class = { scientist }
-
+	initial = no
 	
 	ai_categories = {
 		society
@@ -904,7 +892,7 @@ leader_trait_expertise_diplomacy = {
 	}
 	leader_trait = yes
 	leader_class = { scientist }
-
+	initial = no
 	# higher chance to generate techs in category ai (done in tech-script)
 	
 	ai_categories = {
@@ -926,7 +914,7 @@ leader_trait_expertise_sector_management = {
 	leader_trait = yes
 	leader_class = { scientist }
 	prerequisites = { tech_psionic_theory }
-
+	initial = no
 	# higher chance to generate techs in category psionics (done in tech-script)
 	
 	ai_categories = {
@@ -947,7 +935,7 @@ leader_trait_expertise_xenology = {
 	}
 	leader_trait = yes
 	leader_class = { scientist }
-
+	initial = no
 	# higher chance to generate techs in category environmental systems (done in tech-script)
 	
 	ai_categories = {
@@ -968,7 +956,7 @@ leader_trait_expertise_social_engineering = {
 	}
 	leader_trait = yes
 	leader_class = { scientist }
-
+	initial = no
 	# higher chance to generate techs in category financial theory (done in tech-script)
 	
 	ai_categories = {
@@ -989,7 +977,7 @@ leader_trait_expertise_societal_research = {
 	}
 	leader_trait = yes
 	leader_class = { scientist }
-
+	initial = no
 	# higher chance to generate techs in category genetics (done in tech-script)
 	
 	ai_categories = {
@@ -1012,7 +1000,7 @@ leader_trait_expertise_ballistics = {
 	leader_class = { scientist }
 
 	# higher chance to generate techs in category military organization (done in tech-script)
-	
+		initial = no
 	ai_categories = {
 		physics
 	}
@@ -1031,7 +1019,7 @@ leader_trait_expertise_industry = {
 	}
 	leader_trait = yes
 	leader_class = { scientist }
-
+	initial = no
 	# higher chance to generate techs in category armor (done in tech-script)
 	
 	ai_categories = {
@@ -1052,7 +1040,7 @@ leader_trait_expertise_ground_combat = {
 	}
 	leader_trait = yes
 	leader_class = { scientist }
-
+	initial = no
 	# higher chance to generate techs in category armor (done in tech-script)
 	
 	ai_categories = {
@@ -1073,7 +1061,7 @@ leader_trait_expertise_physics_labs = {
 	}
 	leader_trait = yes
 	leader_class = { scientist }
-
+	initial = no
 	# higher chance to generate techs in category rocketry (done in tech-script)
 	
 	ai_categories = {
@@ -1094,7 +1082,7 @@ leader_trait_expertise_reactors = {
 	}
 	leader_trait = yes
 	leader_class = { scientist }
-
+	initial = no
 	# higher chance to generate techs in category zero-g structures (done in tech-script)
 	
 	ai_categories = {
@@ -1115,7 +1103,7 @@ leader_trait_expertise_ftl_travel = {
 	}
 	leader_trait = yes
 	leader_class = { scientist }
-
+	initial = no
 	# higher chance to generate techs in category planetary structures (done in tech-script)
 	
 	ai_categories = {
@@ -1136,7 +1124,7 @@ leader_trait_expertise_xeno_weaponry = {
 	}
 	leader_trait = yes
 	leader_class = { scientist }
-
+	initial = no
 	# higher chance to generate techs in category field manipulation (done in tech-script)
 	
 	ai_categories = {
@@ -1157,7 +1145,7 @@ leader_trait_expertise_bio_labs = {
 	}
 	leader_trait = yes
 	leader_class = { scientist }
-
+	initial = no
 	ai_categories = {
 		physics
 	}
@@ -1176,7 +1164,7 @@ leader_trait_expertise_xenobiology = {
 	}
 	leader_trait = yes
 	leader_class = { scientist }
-
+	initial = no
 	# higher chance to generate techs in category ai (done in tech-script)
 	
 	ai_categories = {
@@ -1198,7 +1186,7 @@ leader_trait_expertise_surveying_techniques = {
 	leader_trait = yes
 	leader_class = { scientist }
 	prerequisites = { tech_psionic_theory }
-
+	initial = no
 	# higher chance to generate techs in category psionics (done in tech-script)
 	
 	ai_categories = {
@@ -1219,7 +1207,7 @@ leader_trait_expertise_xeno_tech = {
 	}
 	leader_trait = yes
 	leader_class = { scientist }
-
+	initial = no
 	# higher chance to generate techs in category environmental systems (done in tech-script)
 	
 	ai_categories = {
@@ -1239,7 +1227,7 @@ leader_trait_expertise_computing = {
 	}
 	leader_trait = yes
 	leader_class = { scientist }
-
+	initial = no
 	# higher chance to generate techs in category environmental systems (done in tech-script)
 	
 	ai_categories = {
@@ -1261,7 +1249,7 @@ leader_trait_expertise_biology = {
 	leader_trait = yes
 	leader_class = { scientist }
 	# higher chance to generate techs in category environmental systems (done in tech-script)
-	
+		initial = no
 	ai_categories = {
 		physics
 	}
@@ -1281,7 +1269,7 @@ leader_trait_expertise_orbital_stations = {
 	leader_trait = yes
 	leader_class = { scientist }
 	# higher chance to generate techs in category environmental systems (done in tech-script)
-	
+	initial = no	
 	ai_categories = {
 		physics
 	}
@@ -1301,7 +1289,7 @@ leader_trait_expertise_weaponry = {
 	leader_trait = yes
 	leader_class = { scientist }
 	# higher chance to generate techs in category environmental systems (done in tech-script)
-	
+	initial = no	
 	ai_categories = {
 		physics
 	}
@@ -1309,4 +1297,72 @@ leader_trait_expertise_weaponry = {
 	ai_weight = {
 		weight = 100
 	}
+}
+
+
+#bad traits
+
+leader_trait_paranoid = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_paranoid.dds"
+	modifier = {
+		ship_anomaly_research_speed_mult = -0.10
+	}
+	leader_trait = yes
+	leader_class = { scientist }
+	initial = no
+	# increased chance to discover rare techs (weighted in tech-script)
+}
+
+leader_trait_closeminded = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_paranoid.dds"
+	modifier = {
+		all_technology_research_speed = -0.03
+	}
+	leader_trait = yes
+	leader_class = { scientist }
+	initial = no
+	# increased chance to discover rare techs (weighted in tech-script)
+}
+
+leader_trait_antisociety = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_paranoid.dds"
+	modifier = {
+		country_society_tech_research_speed = -0.10
+	}
+	leader_trait = yes
+	leader_class = { scientist }
+	initial = no
+	# increased chance to discover rare techs (weighted in tech-script)
+}
+
+leader_trait_antiengineering = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_paranoid.dds"
+	modifier = {
+		country_engineering_tech_research_speed = -0.10
+	}
+	leader_trait = yes
+	leader_class = { scientist }
+	initial = no
+	# increased chance to discover rare techs (weighted in tech-script)
+}
+
+leader_trait_antiphysics = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_paranoid.dds"
+	modifier = {
+		country_physics_tech_research_speed = -0.10
+	}
+	leader_trait = yes
+	leader_class = { scientist }
+	initial = no
+	# increased chance to discover rare techs (weighted in tech-script)
 }

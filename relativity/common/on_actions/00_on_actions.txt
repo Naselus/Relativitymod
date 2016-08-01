@@ -2,17 +2,26 @@
 on_yearly_pulse = {
 	events = {
 		pirate.4
+		galactic_features.363
+		crisis.204
+		crisis.205
+		crisis.208
+		crisis.1254
 	}
 }
 
 # No scope, like on_game_start
 on_bi_yearly_pulse = {
 	events = {
+		crisis.206
 	}
 }
 
 # No scope, like on_game_start
 on_five_year_pulse = {
+	events = {
+	country.2000
+	}
 }
 
 # No scope, like on_game_start
@@ -30,6 +39,7 @@ on_game_start = {
 		game_start.2
 		game_start.3
 		game_start.4
+		game_start.5
 	}
 }
 
@@ -39,6 +49,7 @@ on_press_begin = {
 	events = {
 		tutorial.104
 		advisor.1
+		ethicschanger.2
 	}
 }
 
@@ -53,6 +64,7 @@ on_custom_diplomacy = {
 		crisis.1050
 		crisis.1051
 		crisis.1052
+		nomad.30
 	}
 }
 
@@ -66,8 +78,9 @@ on_first_contact = {
 		action.17
 		action.18
 		action.25
-		action.31
+#		action.31
 		tutorial.59
+		nomad.6
 	}
 }
 
@@ -153,7 +166,9 @@ on_entering_system = {
 		country.2
 		country.6
 		galactic_features.2
-		anomaly.141
+		anomaly.142
+		anomaly.143
+		anomaly.144
 		country.1030
 		country.1050
 		country.1102
@@ -173,6 +188,7 @@ on_entering_system = {
 # From = System
 on_entering_system_fleet = {
 	events = {
+		action.40
 		country.211
 		country.1002
 		anomaly.3095
@@ -183,6 +199,9 @@ on_entering_system_fleet = {
 		story.408
 		anomaly.3114
 		anomaly.3115
+		nomad.3
+		nomad.7
+		nomad.8
 	}
 }
 
@@ -215,6 +234,14 @@ on_survey = {
 	}
 }
 
+# A country has gained a surveyed status on a planet. Happens after "on_survey" if a science ship surveyed a planet.
+# From = Country
+# Root = Planet
+on_planet_surveyed = {
+	events = {
+		action.46
+	}
+}
 # A ship is done surveying the last unsurveyed planet in a system
 # Scope = ship
 # From = system
@@ -237,6 +264,11 @@ on_colonization_started = {
 	events = {
 		advisor.17
 		progress.3
+	}
+	random_events = {
+		190 = 0
+
+		10 = diplomatic.21
 	}
 }
 
@@ -275,6 +307,7 @@ on_entering_battle = {
 # FromFromFrom = ship 2
 on_ship_destroyed_victim = {
 	events = {
+		mandate.143
 	}
 }
 
@@ -429,7 +462,6 @@ on_entering_war = {
 # From = Fleet
 on_fleet_detected = {
 	events = {
-		nomad.1
 	}
 }
 
@@ -483,7 +515,7 @@ on_purge_complete = {
 # From = Planet
 on_purge_begun = {
 	events = {
-		faction.800
+		faction.3
 		action.26 # Pop happiness effects
 	}
 }
@@ -492,7 +524,7 @@ on_purge_begun = {
 # From = Planet
 on_purge_canceled = {
 	events = {
-		faction.2
+		faction.4
 		action.27 # Pop happiness effects
 	}
 }
@@ -585,6 +617,7 @@ on_leader_level_up = {
 # This = Country
 on_ruler_set = {
 	events = {
+		ethicschanger.1
 	}
 }
 
@@ -634,7 +667,9 @@ on_ship_built = {
 		tutorial.8
 		tutorial.21
 		tutorial.25
-	}
+		shipcost.1
+		mandate.144
+		}
 }
 
 # A ship design has been finished
@@ -646,6 +681,14 @@ on_ship_designed = {
 	}
 }
 
+# A war is beginning, executed for every country in the war.
+# Root = Country
+# From = War
+on_war_beginning = {
+	events = {
+		action.41
+	}
+}
 # A war has ended
 # Root = Loser
 # From = Main Winner
@@ -855,8 +898,18 @@ on_white_peace_forced = {
 	}
 }
 
+# A pop has finished migrating to another planet
+# Root = pop
+# From = Tile on the new planet
+# FromFrom = Tile on the old planet
+on_pop_migration_end = {
+	events = {
+	}
+}
+
 # A pop has been resettled to another planet
-# This = pop
+# Root = pop
+# From = Tile on the old planet
 on_pop_resettled = {
 	events = {
 	}
@@ -867,6 +920,7 @@ on_pop_resettled = {
 on_pop_birth = {
 	events = {
 		action.28
+		action.141 # Transfer shorter Culture Shock to children
 	}
 }
 
@@ -903,6 +957,21 @@ on_election_ended = {
 	}
 }
 
+#From = Country scope
+#This = Planet scope
+on_planet_ownerless = {
+	events = {
+		action.43
+	}
+}
+
+#From = Country scope
+#This = Planet scope
+on_planet_transfer = {
+	events = {
+		action.42
+	}
+}
 # X years has passed since a planet was colonized (won't trigger on empire homeworld)
 on_colony_1_year_old = {
 	events = {

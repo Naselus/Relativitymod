@@ -38,7 +38,7 @@ Light_Carrier = {
 	can_have_federation_design = yes
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
 	
-	prerequisites = { "tech_spaceport_3" }
+	prerequisites = { "tech_void_3" }
 	
 	class = shipclass_military
 	required_component_set = "ftl_components"
@@ -56,21 +56,21 @@ Battlecruiser = {
 	collision_radius = @battlecruiser_collision_radius
 	modifier = {
 		ship_evasion_mult = -0.5
-		ship_armor_add = 12
+		ship_armor_add = 30
 	}
-	max_hitpoints = 1200
+	max_hitpoints = 2800
 	size_multiplier = 4
 	fleet_slot_size = 4
 	section_slots = { "bow" = { locator = "part1" } "mid" = { locator = "part2" } "stern" = { locator = "part3" } }
 	num_target_locators = 4
 	is_space_station = no
 	icon_frame = 4
-	base_buildtime = 350
+	base_buildtime = 480
 	required_spaceport_level = 4
 	can_have_federation_design = yes
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
 	
-	prerequisites = { "tech_spaceport_4" }
+	prerequisites = { "tech_void_3" }
 	
 	class = shipclass_military
 	required_component_set = "ftl_components"
@@ -102,7 +102,7 @@ Carrier = {
 	can_have_federation_design = yes
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
 	
-	prerequisites = { "tech_carrier_1" }
+	prerequisites = { "tech_void_4" }
 	
 	class = shipclass_military
 	required_component_set = "ftl_components"
@@ -120,22 +120,22 @@ Dreadnought = {
 	combat_rotation_speed = @dreadnought_combat_rotation
 	collision_radius = @dreadnought_collision_radius
 	modifier = {
-		ship_evasion_mult = -0.75
-		ship_armor_add = 80
+		ship_evasion_mult = -0.8
+		ship_armor_add = 70
 	}
-	max_hitpoints = 4500
+	max_hitpoints = 10000
 	size_multiplier = 8
 	fleet_slot_size = 10
 	section_slots = { "bow" = { locator = "part1" } "mid" = { locator = "part2" } "stern" = { locator = "part3" } }
 	num_target_locators = 4
 	is_space_station = no
 	icon_frame = 5
-	base_buildtime = 700
+	base_buildtime = 1800
 	required_spaceport_level = 6
 	can_have_federation_design = yes
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
 	
-	prerequisites = { "tech_dreadnought_1" }
+	prerequisites = { "tech_void_5" }
 	
 	class = shipclass_military
 	required_component_set = "ftl_components"

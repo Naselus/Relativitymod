@@ -8,7 +8,7 @@ country_edict = {
 		pop_ethic_shift = -0.10
 		all_technology_research_speed = -0.05
 	}
-	
+	potential = { influence > 0 }
 	influence_cost = 1
 		
 	allow = {
@@ -34,7 +34,7 @@ country_edict = {
 		pop_ethic_shift = 0.15
 		all_technology_research_speed = 0.10
 	}
-	
+	potential = { influence > 0 }	
 	influence_cost = 1
 		
 	allow = {
@@ -60,7 +60,7 @@ country_edict = {
 		science_ship_survey_speed = 0.25
 		ship_anomaly_generation_chance_mult = 0.10
 	}
-	
+	potential = { influence > 0 }	
 	influence_cost = 1
 		
 	allow = {
@@ -82,7 +82,7 @@ country_edict = {
 		country_society_tech_research_speed = -0.10
 		country_physics_tech_research_speed = -0.10
 	}
-	
+	potential = { influence > 0 }	
 	influence_cost = 1
 		
 	allow = {
@@ -106,7 +106,7 @@ country_edict = {
 		country_society_tech_research_speed = -0.10
 		country_physics_tech_research_speed = 0.3
 	}
-	
+	potential = { influence > 0 }	
 	influence_cost = 1
 		
 	allow = {
@@ -130,7 +130,7 @@ country_edict = {
 		country_society_tech_research_speed = 0.3
 		country_physics_tech_research_speed = -0.10
 	}
-	
+	potential = { influence > 0 }	
 	influence_cost = 1
 		
 	allow = {
@@ -154,7 +154,7 @@ country_edict = {
 		tile_resource_energy_mult = -0.2
 		tile_resource_minerals_mult = -0.2
 	}
-	
+	potential = { influence > 0 }	
 	influence_cost = 1
 		
 	allow = {
@@ -178,7 +178,7 @@ country_edict = {
 	}
 	
 	influence_cost = 2
-		
+	potential = { influence > 0 }		
 	allow = {
 	}
 	
@@ -198,7 +198,7 @@ country_edict = {
 		slave_food_output = 0.2
 		pop_robot_production_output = 0.2
 	}
-	
+	potential = { influence > 0 }	
 	influence_cost = 2
 		
 	allow = {

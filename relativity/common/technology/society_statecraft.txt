@@ -174,7 +174,7 @@ tech_colonial_centralization = {
 	area = society
 	tier = 1
 	category = { statecraft }
-	prerequisites = { "tech_planetary_unification" }
+	prerequisites = { "tech_planetary_unification" "tech_adaptive_bureaucracy"}
 	weight = @tier1weight4
 	
 	# unlocks Planetary Capital
@@ -306,7 +306,7 @@ tech_living_state = {
 	area = society
 	tier = 2
 	category = { statecraft }
-	prerequisites = { "tech_colonial_centralization" }
+	prerequisites = { "tech_colonial_centralization" "tech_adaptive_bureaucracy"}
 	weight = @tier2weight2
 	
 	modifier = {
@@ -364,7 +364,7 @@ tech_collective_self = {
 	area = society
 	tier = 3
 	category = { statecraft }
-	prerequisites = { "tech_living_state" }
+	prerequisites = { "tech_living_state" "tech_galactic_administration" }
 	weight = @tier3weight2
 	
 	modifier = {
@@ -424,42 +424,70 @@ tech_collective_self = {
 
 tech_statecraft_10 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier4cost3
+	tier = 4
 	category = { statecraft }
-	prerequisites = { "tech_collective_self" }
-	weight = @tier2weight1
+	prerequisites = { "tech_living_state" "tech_galactic_administration" }
+	weight = @tier4weight1
 	
 	modifier = {
 		country_leader_cap = 1
 	}	
 	
+	weight_modifier = {
+		factor = 4
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
 	
 	ai_weight = {
+		factor = 10
 		modifier = {
-			factor = 0
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
 		}
 	}
 }
 
 tech_statecraft_11 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier5cost3
+	tier = 5
 	category = { statecraft }
 	prerequisites = { "tech_statecraft_10" }
-	weight = @tier2weight1
+	weight = @tier5weight4
 	
 	modifier = {
 		country_leader_cap = 1
-	}		
+	}	
 	
+	weight_modifier = {
+		factor = 4
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
 	
 	ai_weight = {
+		factor = 10
 		modifier = {
-			factor = 0
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
 		}
 	}
 }
@@ -477,12 +505,7 @@ tech_statecraft_12 = {
 	}	
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_statecraft_13 = {
@@ -498,12 +521,7 @@ tech_statecraft_13 = {
 	}	
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_statecraft_14 = {
@@ -519,12 +537,7 @@ tech_statecraft_14 = {
 	}		
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_statecraft_15 = {
@@ -540,12 +553,7 @@ tech_statecraft_15 = {
 	}		
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_statecraft_16 = {
@@ -561,12 +569,7 @@ tech_statecraft_16 = {
 	}		
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_statecraft_17 = {
@@ -582,12 +585,7 @@ tech_statecraft_17 = {
 	
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_statecraft_18 = {
@@ -603,12 +601,7 @@ tech_statecraft_18 = {
 	
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_statecraft_19 = {
@@ -623,12 +616,7 @@ tech_statecraft_19 = {
 	}		
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_statecraft_20 = {
@@ -644,10 +632,5 @@ tech_statecraft_20 = {
 	}		
 	
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }

@@ -25,7 +25,7 @@ weapon_component_template = {
 	range = 20.0
 	icon = "GFX_ship_part_missile_1"
 	icon_frame = 1
-	static_rotation = yes
+	
 	type = missile
 	type = missile
 	power = -3
@@ -48,7 +48,7 @@ weapon_component_template = {
 	range = 20.0
 	icon = "GFX_ship_part_missile_1"
 	icon_frame = 1
-	static_rotation = yes
+	
 	type = missile
 	power = -6
 	cost = 4
@@ -70,7 +70,7 @@ weapon_component_template = {
 	range = 20.0
 	icon = "GFX_ship_part_missile_1"
 	icon_frame = 1
-	static_rotation = yes
+	
 	type = missile
 	power = -9
 	cost = 2
@@ -92,7 +92,7 @@ weapon_component_template = {
 	range = 20.0
 	icon = "GFX_ship_part_missile_2"
 	icon_frame = 1
-	static_rotation = yes
+	
 	type = missile
 	power = -9
 	cost = 2
@@ -114,7 +114,7 @@ weapon_component_template = {
 	range = 20.0
 	icon = "GFX_ship_part_missile_2"
 	icon_frame = 1
-	static_rotation = yes
+	
 	type = missile
 	power = -14
 	cost = 4
@@ -136,7 +136,7 @@ weapon_component_template = {
 	range = 20.0
 	icon = "GFX_ship_part_missile_2"
 	icon_frame = 1
-	static_rotation = yes
+	
 	type = missile
 	power = -18
 	cost = 2
@@ -158,7 +158,7 @@ weapon_component_template = {
 	range = 20.0
 	icon = "GFX_ship_part_missile_3"
 	icon_frame = 1
-	static_rotation = yes
+	
 	type = missile
 	power = -27
 	cost = 2
@@ -180,7 +180,7 @@ weapon_component_template = {
 	range = 20.0
 	icon = "GFX_ship_part_missile_3"
 	icon_frame = 1
-	static_rotation = yes
+	
 	type = missile
 	power = -41
 	cost = 2
@@ -202,7 +202,7 @@ weapon_component_template = {
 	range = 20.0
 	icon = "GFX_ship_part_missile_3"
 	icon_frame = 1
-	static_rotation = yes
+	
 	type = missile
 	power = -54
 	cost = 2
@@ -224,7 +224,7 @@ weapon_component_template = {
 	range = 20.0
 	icon = "GFX_ship_part_missile_4"
 	icon_frame = 1
-	static_rotation = yes
+	
 	type = missile
 	power = -81
 	cost = 2
@@ -246,7 +246,7 @@ weapon_component_template = {
 	range = 20.0
 	icon = "GFX_ship_part_missile_4"
 	icon_frame = 1
-	static_rotation = yes
+	
 	type = missile
 	power = -122
 	cost = 4
@@ -268,7 +268,7 @@ weapon_component_template = {
 	range = 20.0
 	icon = "GFX_ship_part_missile_4"
 	icon_frame = 1
-	static_rotation = yes
+	
 	type = missile
 	power = -162
 	cost = 2
@@ -290,7 +290,7 @@ weapon_component_template = {
 	range = 20.0
 	icon = "GFX_ship_part_missile_5"
 	icon_frame = 1
-	static_rotation = yes
+	
 	type = missile
 	power = -243
 	cost = 2
@@ -312,7 +312,7 @@ weapon_component_template = {
 	range = 20.0
 	icon = "GFX_ship_part_missile_5"
 	icon_frame = 1
-	static_rotation = yes
+	
 	type = missile
 	power = -365
 	cost = 4
@@ -334,7 +334,7 @@ weapon_component_template = {
 	range = 20.0
 	icon = "GFX_ship_part_missile_5"
 	icon_frame = 1
-	static_rotation = yes
+	
 	type = missile
 	power = -486
 	cost = 2
@@ -425,7 +425,7 @@ weapon_component_template = {
 	range = 20.0
 	icon = "GFX_ship_part_swarmer_missile_1"
 	icon_frame = 1
-	static_rotation = yes
+	
 	type = missile
 	power = -162
 	cost = 2
@@ -447,7 +447,7 @@ weapon_component_template = {
 	range = 20.0
 	icon = "GFX_ship_part_swarmer_missile_2"
 	icon_frame = 1
-	static_rotation = yes
+	
 	type = missile
 	power = -486
 	cost = 2
@@ -473,7 +473,7 @@ weapon_component_template = {
 	range = 20.0
 	icon = "GFX_ship_part_torpedo_1"
 	icon_frame = 1
-	static_rotation = yes
+	
 	type = missile
 	type = missile
 	power = -3
@@ -496,7 +496,7 @@ weapon_component_template = {
 	range = 20.0
 	icon = "GFX_ship_part_torpedo_1"
 	icon_frame = 1
-	static_rotation = yes
+	
 	type = missile
 	power = -6
 	cost = 4
@@ -518,7 +518,7 @@ weapon_component_template = {
 	range = 20.0
 	icon = "GFX_ship_part_torpedo_1"
 	icon_frame = 1
-	static_rotation = yes
+	
 	type = missile
 	power = -9
 	cost = 2
@@ -540,7 +540,7 @@ weapon_component_template = {
 	range = 20.0
 	icon = "GFX_ship_part_torpedo_2"
 	icon_frame = 1
-	static_rotation = yes
+	
 	type = missile
 	power = -9
 	cost = 2
@@ -562,7 +562,7 @@ weapon_component_template = {
 	range = 20.0
 	icon = "GFX_ship_part_torpedo_2"
 	icon_frame = 1
-	static_rotation = yes
+	
 	type = missile
 	power = -14
 	cost = 4
@@ -584,7 +584,7 @@ weapon_component_template = {
 	range = 20.0
 	icon = "GFX_ship_part_torpedo_2"
 	icon_frame = 1
-	static_rotation = yes
+	
 	type = missile
 	power = -18
 	cost = 2
@@ -606,7 +606,7 @@ weapon_component_template = {
 	range = 20.0
 	icon = "GFX_ship_part_torpedo_3"
 	icon_frame = 1
-	static_rotation = yes
+	
 	type = missile
 	power = -27
 	cost = 2
@@ -628,7 +628,7 @@ weapon_component_template = {
 	range = 20.0
 	icon = "GFX_ship_part_torpedo_3"
 	icon_frame = 1
-	static_rotation = yes
+	
 	type = missile
 	power = -41
 	cost = 2
@@ -650,7 +650,7 @@ weapon_component_template = {
 	range = 20.0
 	icon = "GFX_ship_part_torpedo_3"
 	icon_frame = 1
-	static_rotation = yes
+	
 	type = missile
 	power = -54
 	cost = 2

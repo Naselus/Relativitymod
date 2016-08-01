@@ -100,702 +100,86 @@
 #################
 ####Ships, Shipyards, and Fortresses
 #################
-
-tech_cruiser_yard = {
-	cost = @tier2cost4
+tech_void_1 = {
 	area = engineering
-	tier = 2
-	category = { voidcraft }	
-	prerequisites = { "tech_spaceport_5" }
-	weight = @tier2weight4
-		
-	## unlock cruiser assembly yard
-	
-	weight_modifier = {
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
-		}
-	}
-	
-	ai_weight = {
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
-		}
-	}
-}
-
-tech_battleship_yard = {
-	cost = @tier3cost3
-	area = engineering
-	tier = 2
-	category = { voidcraft }	
-	prerequisites = { "tech_spaceport_6" }
-	weight = @tier3weight3
-		
-	## unlock battleship assembly yard
-	
-	weight_modifier = {
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
-		}
-	}
-	
-	ai_weight = {
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
-		}
-	}
-}
-
-
-tech_corvette_yard_2 = {
-	cost = @tier3cost4
-	area = engineering
-	tier = 3
-	is_rare = no
-	category = { voidcraft }	
-	prerequisites = { "tech_spaceport_4" }
-	weight = @tier3weight4
-		
-	
-	weight_modifier = {
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
-		}
-	}
-	
-	ai_weight = {
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
-		}
-	}
-}
-
-tech_destroyer_yard_2 = {
-	cost = @tier4cost2
-	area = engineering
+	cost = @tier2cost1
 	tier = 4
-	is_rare = no
-	category = { voidcraft }	
-	prerequisites = { "tech_spaceport_5" }
-	weight = @tier4weight2
-		
-	
-	weight_modifier = {
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
-		}
-	}
+	category = { voidcraft }
+	prerequisites = { "tech_spaceport_3"}	
+	weight = @tier4weight3
 	
 	ai_weight = {
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
-		}
-	}
-}
-
-tech_cruiser_yard_2 = {
-	cost = @tier4cost4
-	area = engineering
-	tier = 4
-	is_rare = no
-	category = { voidcraft }	
-	prerequisites = { "tech_cruiser_yard" }
-	weight = @tier4weight4
-		
-	
-	weight_modifier = {
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
-		}
-	}
-	
-	ai_weight = {
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
-		}
-	}
-}
-
-tech_battleship_yard_2 = {
-	cost = @tier5cost2
-	area = engineering
-	tier = 5
-	is_rare = no
-	category = { voidcraft }	
-	prerequisites = { "tech_battleship_yard" }
-	weight = @tier5weight2
-		
-	
-	weight_modifier = {
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
-		}
-	}
-	
-	ai_weight = {
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
-		}
-	}
-}
-
-#Defense Stations
-
-#Defense Platform
-tech_space_defense_station_1 = {
-	cost = @tier1cost2
-	area = engineering
-	tier = 1
-	category = { voidcraft }	
-	prerequisites = { "tech_space_construction" }
-	weight = @tier1weight2
-	
-	weight_modifier = {
-		modifier = {
-			factor = 2
-			is_ai = yes
-		}
-		modifier = {
-			factor = 5
-			has_technology = tech_spaceport_2
-		}	
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
-		}
-		modifier = {
-			factor = 1.25
-			OR = {
-				has_ethic = ethic_militarist
-				has_ethic = ethic_fanatic_militarist
-			}
-		}
-	}
-	
-	prereqfor_desc = {
-		ship = {
-			title = "TECH_UNLOCK_DEFENSE_PLATFORM_TITLE"
-			desc = "TECH_UNLOCK_DEFENSE_PLATFORM_DESC"
-		}
-	}
-	
-	ai_weight = {
-		weight = 10
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
-		}
-	}
-		
-	## unlock defense platform
-}
-
-#Defense Station
-tech_space_defense_station_2 = {
-	cost = @tier2cost3
-	area = engineering
-	tier = 2
-	category = { voidcraft }	
-	prerequisites = { "tech_space_defense_station_1" }
-	weight = @tier2weight3
-	
-	weight_modifier = {
-		modifier = {
-			factor = 2
-			is_ai = yes
-		}		
-		modifier = {
-			factor = 5
-			has_technology = tech_spaceport_4
-		}		
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
-		}
-		modifier = {
-			factor = 1.25
-			OR = {
-				has_ethic = ethic_militarist
-				has_ethic = ethic_fanatic_militarist
-			}
-		}
-	}
-	
-	prereqfor_desc = {
-		ship = {
-			title = "TECH_UNLOCK_DEFENSE_STATION_TITLE"
-			desc = "TECH_UNLOCK_DEFENSE_STATION_DESC"
-		}
-	}
-	
-	ai_weight = {
-		weight = 10
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
-		}
-	}
-		
-	## unlock defense station
-}
-
-#Fortress
-tech_space_defense_station_3 = {
-	cost = @tier3cost3
-	area = engineering
-	tier = 3
-	category = { voidcraft }	
-	prerequisites = { "tech_space_defense_station_2" }
-	weight = @tier3weight3
-	
-	weight_modifier = {
-		modifier = {
-			factor = 5
-			has_technology = tech_spaceport_6
-		}		
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
-		}
-		modifier = {
-			factor = 1.25
-			OR = {
-				has_ethic = ethic_militarist
-				has_ethic = ethic_fanatic_militarist
-			}
-		}
-	}
-	
-	prereqfor_desc = {
-		ship = {
-			title = "TECH_UNLOCK_FORTRESS_TITLE"
-			desc = "TECH_UNLOCK_FORTRESS_DESC"
-		}
-	}
-	
-	ai_weight = {
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
-		}
-	}
-		
-	## unlock space fortress
-}
-
-#Corps of Engineers
-tech_space_defense_station_improvement = {
-	cost = @tier2cost3
-	area = engineering
-	tier = 2
-	category = { voidcraft }		
-	prerequisites = { "tech_space_defense_station_2" }
-	is_rare = yes
-	weight = @tier2weight3
-	
-	# unlocks spaceport-module - reinforced hull layers	
-	# unlock defense station +25% HP and -10% cost
-	
-	modifier = {
-		shipclass_military_station_build_cost_mult = -0.15
-		shipclass_military_station_hit_points_mult = 0.25
-	}
-	
-	weight_modifier = {
-		modifier = {
-			factor = 0.25
-			NOT = {
-				research_leader = {
-					area = engineering
-					has_trait = "leader_trait_expertise_voidcraft"
-				}
-			}
-		}
-		modifier = {
-			factor = 1.25
-			OR = {
-				has_ethic = ethic_militarist
-				has_ethic = ethic_fanatic_militarist
-			}
-		}
-	}
-	
-	ai_weight = {
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
-		}
-	}
-}
-
-#Carrier
-tech_carrier_1 = {
-	cost = @tier3cost4
-	area = engineering
-	tier = 3
-	category = { voidcraft }	
-	prerequisites = { "tech_spaceport_6" }
-	weight = @tier3weight4
-		
-	## unlock carrier	
-	prereqfor_desc = {
-		ship = {
-			title = "TECH_UNLOCK_CARRIER_CONSTRUCTION_TITLE"
-			desc = "TECH_UNLOCK_CARRIER_CONSTRUCTION_DESC"
-		}
-	}
-	
-	weight_modifier = {
-		modifier = {
-			factor = 0.1
-			NOT = { years_passed > 50 }
-		}	
 		modifier = {
 			factor = 10
-			any_neighbor_country = {
-				has_technology = tech_carrier_1
-			}
-		}
-		modifier = {
-			factor = 2
-			years_passed > 60
-		}
-		modifier = {
-			factor = 3
-			years_passed > 65
-		}
-		modifier = {
-			factor = 4
-			years_passed > 70
-		}
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
-		}
-	}
-	
-	ai_weight = {
-		factor = 100 #higher factor due to CV hull
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
+			always = yes
 		}
 	}
 }
 
-#Dreadnought
-tech_dreadnought_1 = {
-	cost = @tier4cost2
+tech_void_2 = {
 	area = engineering
+	cost = @tier3cost1
 	tier = 4
-	category = { voidcraft }	
-	prerequisites = { "tech_spaceport_6" }
-	weight = @tier4weight2
-		
-	## unlock dreadnought	
+	category = { voidcraft }
+	prerequisites = {"tech_spaceport_5"}	
+	weight = @tier4weight3
+	ai_weight = {
+		modifier = {
+			factor = 10
+			always = yes
+		}
+	}
+}
+
+tech_void_3 = {
+	area = engineering
+	cost = @tier4cost1
+	tier = 4
+	category = { voidcraft }
+	prerequisites = {"tech_spaceport_7"}
+	weight = @tier4weight3
+	ai_weight = {
+		modifier = {
+			factor = 10
+			always = yes
+		}
+	}
+
+}
+
+tech_void_4 = {
+	area = engineering
+	cost = @tier5cost1
+	tier = 4
+	category = { voidcraft }
+	prerequisites = {"tech_spaceport_9"}
+	weight = @tier4weight3
+	ai_weight = {
+		modifier = {
+			factor = 10
+			always = yes
+		}
+	}
+}
+
+tech_void_5 = {
+	area = engineering
+	cost = @tier6cost1
+	tier = 4
+	category = { voidcraft }
+	prerequisites = {"tech_spaceport_11"}
+	weight = @tier4weight3
+
 	prereqfor_desc = {
 		ship = {
 			title = "TECH_UNLOCK_DREADNOUGHT_CONSTRUCTION_TITLE"
 			desc = "TECH_UNLOCK_DREADNOUGHT_CONSTRUCTION_DESC"
 		}
 	}
-	
-	weight_modifier = {
-		modifier = {
-			factor = 0.1
-			NOT = { years_passed > 50 }
-		}	
+	ai_weight = {
 		modifier = {
 			factor = 10
-			any_neighbor_country = {
-				has_technology = tech_dreadnought_1
-			}
-		}
-		modifier = {
-			factor = 2
-			years_passed > 70
-		}
-		modifier = {
-			factor = 3
-			years_passed > 75
-		}
-		modifier = {
-			factor = 4
-			years_passed > 80
-		}
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
-		}
-	}
-	
-	ai_weight = {
-		factor = 100 #higher factor due to dreadnought hull
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
-		}
-	}
-}
-
-tech_void_12 = {
-	area = engineering
-	cost = @tier4cost3
-	tier = 4
-	category = { voidcraft }
-	prerequisites = { "tech_dreadnought_1"}	
-	weight = @tier4weight3
-	
-	modifier = {
-		ship_hitpoints_mult = 0.05 
-	}
-	
-	ai_weight = {
-		modifier = {
-			factor = 0
 			always = yes
 		}
-	}
-}
-
-tech_void_13 = {
-	area = engineering
-	cost = @tier4cost4
-	tier = 4
-	category = { voidcraft }
-	prerequisites = { "tech_void_12"}	
-	weight = @tier4weight4
-	
-	modifier = {
-		ship_hitpoints_mult = 0.05 
-	}
-	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
-}
-
-tech_void_14 = {
-	area = engineering
-	cost = @tier4cost4
-	tier = 4
-	category = { voidcraft }
-	prerequisites = { "tech_void_13"}	
-	weight = @tier4weight4
-	
-	modifier = {
-		ship_hitpoints_mult = 0.05 
-	}
-	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
-}
-
-tech_void_15 = {
-	area = engineering
-	cost = @tier5cost1
-	tier = 5
-	category = { voidcraft }
-	prerequisites = { "tech_void_14"}	
-	weight = @tier5weight1
-	
-	modifier = {
-		ship_hitpoints_mult = 0.05 
-	}
-	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
-}
-
-tech_void_16 = {
-	area = engineering
-	cost = @tier5cost2
-	tier = 5
-	category = { voidcraft }
-	prerequisites = { "tech_void_15"}	
-	weight = @tier5weight2
-	
-	modifier = {
-		ship_hitpoints_mult = 0.05 
-	}
-	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
-}
-
-tech_void_17 = {
-	area = engineering
-	cost = @tier5cost3
-	tier = 5
-	category = { voidcraft }
-	prerequisites = { "tech_void_16"}	
-	weight = @tier5weight3
-	
-	modifier = {
-		ship_hitpoints_mult = 0.05 
-	}
-	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
-}
-
-tech_void_18 = {
-	area = engineering
-	cost = @tier5cost4
-	tier = 5
-	category = { voidcraft }
-	prerequisites = { "tech_void_17"}	
-	weight = @tier5weight4
-	
-	modifier = {
-		ship_hitpoints_mult = 0.05 
-	}
-	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
-}
-
-tech_void_19 = {
-	area = engineering
-	cost = @tier6cost1
-	tier = 6
-	category = { voidcraft }
-	prerequisites = { "tech_void_18"}	
-	weight = @tier6weight1
-	
-	modifier = {
-		ship_hitpoints_mult = 0.05 
-	}
-	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
-}
-
-tech_void_20 = {
-	area = engineering
-	cost = @tier6cost2
-	tier = 6
-	category = { voidcraft }
-	prerequisites = { "tech_void_19"}	
-	weight = @tier6weight2
-	
-	modifier = {
-		ship_hitpoints_mult = 0.05 
-	}
-	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	}	
 }

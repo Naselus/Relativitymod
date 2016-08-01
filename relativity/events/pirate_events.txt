@@ -130,6 +130,7 @@ country_event = {
 	
 	immediate = {
 		set_country_flag = birth_of_piracy
+		set_global_flag = apirateslifeforme
 		capital_scope = { save_event_target_as = capital }
 		capital_scope = {
 			solar_system = { save_event_target_as = capital_system }
@@ -194,6 +195,8 @@ country_event = {
 						establish_communications_no_message = ROOT
 						
 						create_fleet = { name = "Pirate Station" }
+						random_list = {
+						5 ={
 						if = {
 							limit = {
 								root = { has_technology = tech_mass_drivers_1 }
@@ -208,6 +211,8 @@ country_event = {
 								set_location = PREVPREV
 							}
 						}
+						}
+						5={
 						if = {
 							limit = {
 								root = { has_technology = tech_lasers_1 }
@@ -222,6 +227,8 @@ country_event = {
 								set_location = PREVPREV
 							}
 						}
+						}
+						5 = {
 						if = {
 							limit = {
 								root = { has_technology = tech_missiles_1 }
@@ -236,6 +243,8 @@ country_event = {
 								set_location = PREVPREV
 							}
 						}
+						}
+						}
 						create_leader = {
 							type = admiral
 							species = owner_main_species
@@ -248,6 +257,8 @@ country_event = {
 							set_aggro_range_measure_from = self
 							set_aggro_range = 150
 							set_owner = PREV
+							random_list = {
+							5={
 							if = {
 								limit = {
 									root = { has_technology = tech_mass_drivers_1 }
@@ -256,7 +267,29 @@ country_event = {
 									design = "Reaver"
 									ftl = ROOT
 								}
+							create_ship = {
+								name = random
+								design = last_created_design
+								graphical_culture = "pirate_01"
 							}
+							create_ship = {
+								name = random
+								design = last_created_design
+								graphical_culture = "pirate_01"
+							}
+							create_ship = {
+								name = random
+								design = last_created_design
+								graphical_culture = "pirate_01"
+							}
+							create_ship = {
+								name = random
+								design = last_created_design
+								graphical_culture = "pirate_01"
+							}								
+							}
+							}
+							5 = {
 							if = {
 								limit = {
 									root = { has_technology = tech_lasers_1 }
@@ -265,7 +298,29 @@ country_event = {
 									design = "Hunter"
 									ftl = ROOT
 								}
+							create_ship = {
+								name = random
+								design = last_created_design
+								graphical_culture = "pirate_01"
 							}
+							create_ship = {
+								name = random
+								design = last_created_design
+								graphical_culture = "pirate_01"
+							}
+							create_ship = {
+								name = random
+								design = last_created_design
+								graphical_culture = "pirate_01"
+							}
+							create_ship = {
+								name = random
+								design = last_created_design
+								graphical_culture = "pirate_01"
+							}								
+							}
+							}
+							5 = {
 							if = {
 								limit = {
 									root = { has_technology = tech_missiles_1 }
@@ -274,7 +329,6 @@ country_event = {
 									design = "Vagabond"
 									ftl = ROOT
 								}
-							}
 							create_ship = {
 								name = random
 								design = last_created_design
@@ -294,6 +348,9 @@ country_event = {
 								name = random
 								design = last_created_design
 								graphical_culture = "pirate_01"
+							}								
+							}
+							}
 							}
 							assign_leader = last_created_leader
 							set_location = PREVPREV
@@ -443,150 +500,243 @@ country_event = {
 								set_country_flag = wormhole_pirates
 								establish_communications_no_message = ROOT
 								
-								create_fleet = { name = "Pirate Station" }
-								last_created_fleet = {
-									set_owner = PREV
-									create_ship = {
-										name = random
-										design = "Pirate Lair"
-										graphical_culture = "pirate_01"
-									}
-									set_location = PREVPREV
-								}
-								create_leader = {
-									type = admiral
-									species = owner_main_species
+						create_fleet = { name = "Pirate Station" }
+						random_list = {
+						5 ={
+						if = {
+							limit = {
+								root = { has_technology = tech_mass_drivers_1 }
+							}
+							last_created_fleet = {
+								set_owner = PREV
+								create_ship = {
 									name = random
-									skill = 100
+									design = "Pirate Nest"
+									graphical_culture = "pirate_01"
 								}
-								create_fleet = { name = "Pirate Fleet" }
-								last_created_fleet = {
-									set_fleet_stance = aggressive
-									set_aggro_range_measure_from = self
-									set_aggro_range = 150
-									set_owner = PREV
-									if = {
-										limit = {
-											root = { has_technology = tech_mass_drivers_1 }
-										}
-										create_ship_design = {
-											design = "Reaver"
-											ftl = ROOT
-										}
-									}
-									if = {
-										limit = {
-											root = { has_technology = tech_lasers_1 }
-										}
-										create_ship_design = {
-											design = "Hunter"
-											ftl = ROOT
-										}
-									}
-									if = {
-										limit = {
-											root = { has_technology = tech_missiles_1 }
-										}
-										create_ship_design = {
-											design = "Vagabond"
-											ftl = ROOT
-										}
-									}
-									create_ship = {
-										name = random
-										design = last_created_design
-										graphical_culture = "pirate_01"
-									}
-									create_ship = {
-										name = random
-										design = last_created_design
-										graphical_culture = "pirate_01"
-									}
-									create_ship = {
-										name = random
-										design = last_created_design
-										graphical_culture = "pirate_01"
-									}
-									assign_leader = last_created_leader
-									set_location = PREVPREV
-									
-									queue_actions = {
-										repeat = {
-											find_random_system = {
-												trigger = {
-													id = "pirate.1.trigger.5"
-													NOT = { 
-														has_star_flag = hostile_system 
-														is_same_value = event_target:capital_system
-													}
-													any_planet = {
-														OR = {
-															has_mining_station = yes
-															has_research_station = yes
-														}
-														exists = controller
-														controller = { is_same_value = event_target:pirate_target }
-													}
-													distance = {
-														source = PREV
-														max_distance = 100
-														min_distance = 20
-													}
-												}
-												found_system = {
-													move_to = THIS
-												}	
+								set_location = PREVPREV
+							}
+						}
+						}
+						5={
+						if = {
+							limit = {
+								root = { has_technology = tech_lasers_1 }
+							}
+							last_created_fleet = {
+								set_owner = PREV
+								create_ship = {
+									name = random
+									design = "Pirate Lair"
+									graphical_culture = "pirate_01"
+								}
+								set_location = PREVPREV
+							}
+						}
+						}
+						5 = {
+						if = {
+							limit = {
+								root = { has_technology = tech_missiles_1 }
+							}
+							last_created_fleet = {
+								set_owner = PREV
+								create_ship = {
+									name = random
+									design = "Pirate Den"
+									graphical_culture = "pirate_01"
+								}
+								set_location = PREVPREV
+							}
+						}
+						}
+						}
+						create_leader = {
+							type = admiral
+							species = owner_main_species
+							name = random
+							skill = 100
+						}
+						create_fleet = { name = "Pirate Fleet" }
+						last_created_fleet = {
+							set_fleet_stance = aggressive
+							set_aggro_range_measure_from = self
+							set_aggro_range = 150
+							set_owner = PREV
+							random_list = {
+							5={
+							if = {
+								limit = {
+									root = { has_technology = tech_mass_drivers_1 }
+								}
+								create_ship_design = {
+									design = "Reaver"
+									ftl = ROOT
+								}
+							create_ship = {
+								name = random
+								design = last_created_design
+								graphical_culture = "pirate_01"
+							}
+							create_ship = {
+								name = random
+								design = last_created_design
+								graphical_culture = "pirate_01"
+							}
+							create_ship = {
+								name = random
+								design = last_created_design
+								graphical_culture = "pirate_01"
+							}
+							create_ship = {
+								name = random
+								design = last_created_design
+								graphical_culture = "pirate_01"
+							}								
+							}
+							}
+							5 = {
+							if = {
+								limit = {
+									root = { has_technology = tech_lasers_1 }
+								}
+								create_ship_design = {
+									design = "Hunter"
+									ftl = ROOT
+								}
+							create_ship = {
+								name = random
+								design = last_created_design
+								graphical_culture = "pirate_01"
+							}
+							create_ship = {
+								name = random
+								design = last_created_design
+								graphical_culture = "pirate_01"
+							}
+							create_ship = {
+								name = random
+								design = last_created_design
+								graphical_culture = "pirate_01"
+							}
+							create_ship = {
+								name = random
+								design = last_created_design
+								graphical_culture = "pirate_01"
+							}								
+							}
+							}
+							5 = {
+							if = {
+								limit = {
+									root = { has_technology = tech_missiles_1 }
+								}
+								create_ship_design = {
+									design = "Vagabond"
+									ftl = ROOT
+								}
+							create_ship = {
+								name = random
+								design = last_created_design
+								graphical_culture = "pirate_01"
+							}
+							create_ship = {
+								name = random
+								design = last_created_design
+								graphical_culture = "pirate_01"
+							}
+							create_ship = {
+								name = random
+								design = last_created_design
+								graphical_culture = "pirate_01"
+							}
+							create_ship = {
+								name = random
+								design = last_created_design
+								graphical_culture = "pirate_01"
+							}								
+							}
+							}
+							}
+							assign_leader = last_created_leader
+							set_location = PREVPREV
+							
+							queue_actions = {
+								repeat = {
+									find_random_system = {
+										trigger = {
+											id = "pirate.1.trigger.9"
+											NOT = { 
+												has_star_flag = hostile_system 
+												is_same_value = event_target:capital_system
 											}
-											find_closest_planet = {
-												trigger = {
-													id = "pirate.1.trigger.6"
-													OR = {
-														has_mining_station = yes
-														has_research_station = yes
-													}
+											any_planet = {
+												OR = {
+													has_mining_station = yes
+													has_research_station = yes
 												}
-												found_planet = {
-													orbit_planet = THIS
-													wait = {
-														duration = 20
-													}
-												}
+												exists = controller
+												controller = { is_same_value = event_target:pirate_target }
 											}
-											find_random_system = {
-												trigger = {
-													id = "pirate.1.trigger.7"
-													any_planet = {
-														is_planet = event_target:pirate_home
-													}
-												}
-												found_system = {
-													move_to = THIS
-												}	
+											distance = {
+												source = PREV
+												max_distance = 100
+												min_distance = 20
 											}
-											find_closest_planet = {
-												trigger = {
-													id = "pirate.1.trigger.8"
-													is_planet = event_target:pirate_home
-												}
-												found_planet = {
-													orbit_planet = THIS
-													wait = {
-														duration = 200
-														random = 150
-													}
-												}
+										}
+										found_system = {
+											move_to = THIS
+										}	
+									}
+									find_closest_planet = {
+										trigger = {
+											id = "pirate.1.trigger.10"
+											OR = {
+												has_mining_station = yes
+												has_research_station = yes
+											}
+										}
+										found_planet = {
+											orbit_planet = THIS
+											wait = {
+												duration = 20
+											}
+										}
+									}
+									find_random_system = {
+										trigger = {
+											id = "pirate.1.trigger.11"
+											any_planet = {
+												is_planet = event_target:pirate_home
+											}
+										}
+										found_system = {
+											move_to = THIS
+										}	
+									}
+									find_closest_planet = {
+										trigger = {
+											id = "pirate.1.trigger.12"
+											is_planet = event_target:pirate_home
+										}
+										found_planet = {
+											orbit_planet = THIS
+											wait = {
+												duration = 200
+												random = 150
 											}
 										}
 									}
 								}
 							}
 						}
-					}
-				}
-			}
-		}
-	}
-	
+}
+}
+}
+}
+}
+}
+}	
 	option = {
 		name = pirate.2.a
 		trigger = {
@@ -666,6 +816,7 @@ country_event = {
 			}
 		}
 	}
+
 }
 
 # New Ships (HIDDEN)
@@ -675,10 +826,6 @@ country_event = {
 	
 	trigger = {
 		is_country_type = pirate
-		OR = {
-			num_fleets < 2
-			num_ships < 3
-		}
 		any_owned_ship = {
 			is_ship_size = pirate_station
 		}
@@ -1129,7 +1276,6 @@ country_event = {
 	id = pirate.5
 	hide_window = yes
 	is_triggered_only = yes
-
 	trigger = {
 		is_country_type = default
 		OR = {
@@ -1139,12 +1285,117 @@ country_event = {
 			}
 		}
 	}
-
+	
 	immediate = {	
 		random_list = {
-			30 = { country_event = { id = pirate.1 days = 50 random = 25 } }
-			30 = { country_event = { id = pirate.1 days = 150 random = 50 } }
+			30 = { country_event = { id = pirate.1 days = 50 random = 45 } }
+			30 = { country_event = { id = pirate.1 days = 500 random = 450 } }
 			40 = {  }
+		}
+	}
+}
+
+
+
+event = {
+	id = pirate.6
+	hide_window = yes
+
+	trigger = {
+			has_global_flag = apirateslifeforme
+	}
+	
+		
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	immediate = {
+		random_country = {
+		capital_scope = { save_event_target_as = capital }
+		capital_scope = {
+			solar_system = { save_event_target_as = capital_system }
+		}
+		save_event_target_as = pirate_target
+			random_system = {
+				limit = {
+					distance = {
+						source = event_target:capital
+						max_distance = 600
+						min_distance = 5
+					}
+					any_planet = { is_asteroid = yes }
+					NOT = { has_star_flag = hostile_system }
+					has_owner = no
+
+				}
+				random_system_planet = {
+					limit = { is_asteroid = yes }
+					save_event_target_as = pirate_home
+					create_country = {
+						name = "Pirates"
+						type = pirate
+						species = random
+						name_list = "PRT1"
+						flag = {
+							icon = {
+								category = "pirate"
+								file = "flag_pirate_7.dds"
+							}
+							background = {
+								category = "backgrounds"
+								file = "00_solid.dds"
+							}
+							colors ={
+								"red"
+								"red"
+								"null"
+								"null"
+							}
+						}
+					}
+					last_created_country = {
+						set_name = random
+						save_event_target_as = pirate_band
+						create_fleet = { name = "Pirate Station" }
+						Random_list = {
+						33 = {
+							last_created_fleet = {
+								set_owner = PREV
+								create_ship = {
+									name = random
+									design = "Pirate Nest"
+									graphical_culture = "pirate_01"
+								}
+								set_location = PREVPREV
+							}
+						}
+						33 = {
+							last_created_fleet = {
+								set_owner = PREV
+								create_ship = {
+									name = random
+									design = "Pirate Lair"
+									graphical_culture = "pirate_01"
+								}
+								set_location = PREVPREV
+							}
+						}
+						33 = {
+							last_created_fleet = {
+								set_owner = PREV
+								create_ship = {
+									name = random
+									design = "Pirate Den"
+									graphical_culture = "pirate_01"
+								}
+								set_location = PREVPREV
+							}
+						}
+						}
+					}
+				}
+			}
 		}
 	}
 }

@@ -1,0 +1,244 @@
+##################
+### TECH COSTS ###
+##################
+#If you change any of these, use replace in files so the values are the same across all files
+
+@tier1cost1 = 240
+@tier1cost2 = 360
+@tier1cost3 = 480
+@tier1cost4 = 600
+
+@tier2cost1 = 900
+@tier2cost2 = 1200
+@tier2cost3 = 1500
+@tier2cost4 = 1800
+
+@tier3cost1 = 2320
+@tier3cost2 = 2840
+@tier3cost3 = 3360
+@tier3cost4 = 3880
+
+####################
+### TECH WEIGHTS ###
+####################
+
+@tier1weight1 = 100
+@tier1weight2 = 95
+@tier1weight3 = 90
+@tier1weight4 = 85
+
+@tier2weight1 = 75
+@tier2weight2 = 70
+@tier2weight3 = 65
+@tier2weight4 = 60
+
+@tier3weight1 = 50
+@tier3weight2 = 45
+@tier3weight3 = 40
+@tier3weight4 = 35
+
+# ##################
+# Trade Techs
+# ##################
+
+
+tech_trade_facilities_one = {
+	cost = @tier1cost4
+	area = society
+	tier = 1
+	category = { spaceport_expansion  }
+	weight = @tier1weight4
+	
+	prereqfor_desc = {
+		feature = {
+			title = "TECH_UNLOCK_TRADE_FACILITIES_ONE_TITLE"
+			desc = "TECH_UNLOCK_TRADE_FACILITIES_ONE_DESC"
+		}
+		edict = {
+			title = "TECH_UNLOCK_TRADE_HUB_TITLE"
+			desc = "TECH_UNLOCK_TRADE_HUB_DESC"
+		}
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0.5
+			has_ethic = ethic_fanatic_collectivist
+			has_ethic = ethic_fanatic_spiritualist
+		}
+		modifier = {
+			factor = 0.75
+			has_ethic = ethic_collectivist
+			has_ethic = ethic_spiritualist
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_materialist
+			has_ethic = ethic_individualist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_materialist
+			has_ethic = ethic_fanatic_individualist
+		}
+		modifier = {
+			factor = 0
+			NOT = { has_country_flag = birth_of_civtrade }
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 0.5
+			has_ethic = ethic_fanatic_xenophobe
+		}
+		modifier = {
+			factor = 0.75
+			has_ethic = ethic_xenophobe
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_xenophile
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_xenophile
+		}
+		modifier = {
+			factor = 0
+			NOT = { has_country_flag = birth_of_civtrade }
+		}
+	}
+}
+
+tech_trade_facilities_two = {
+	cost = @tier2cost4
+	area = society
+	tier = 1
+	category = { spaceport_expansion  }
+	prerequisites = { "tech_trade_facilities_one" }
+	weight = @tier2weight4
+	
+	prereqfor_desc = {
+		feature = {
+			title = "TECH_UNLOCK_TRADE_FACILITIES_TWO_TITLE"
+			desc = "TECH_UNLOCK_TRADE_FACILITIES_TWO_DESC"
+		}
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0.5
+			has_ethic = ethic_fanatic_collectivist
+			has_ethic = ethic_fanatic_spiritualist
+		}
+		modifier = {
+			factor = 0.75
+			has_ethic = ethic_collectivist
+			has_ethic = ethic_spiritualist
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_materialist
+			has_ethic = ethic_individualist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_materialist
+			has_ethic = ethic_fanatic_individualist
+		}
+		modifier = {
+			factor = 0
+			NOT = { has_country_flag = birth_of_civtrade }
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 0.5
+			has_ethic = ethic_fanatic_xenophobe
+		}
+		modifier = {
+			factor = 0.75
+			has_ethic = ethic_xenophobe
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_xenophile
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_xenophile
+		}
+		modifier = {
+			factor = 0
+			NOT = { has_country_flag = birth_of_civtrade }
+		}
+	}
+}
+
+tech_trade_facilities_three = {
+	cost = @tier3cost4
+	area = society
+	tier = 1
+	category = { spaceport_expansion  }
+	prerequisites = { "tech_trade_facilities_two" }
+	weight = @tier3weight4
+	
+	prereqfor_desc = {
+		feature = {
+			title = "TECH_UNLOCK_TRADE_FACILITIES_THREE_TITLE"
+			desc = "TECH_UNLOCK_TRADE_FACILITIES_THREE_DESC"
+		}
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0.5
+			has_ethic = ethic_fanatic_collectivist
+			has_ethic = ethic_fanatic_spiritualist
+		}
+		modifier = {
+			factor = 0.75
+			has_ethic = ethic_collectivist
+			has_ethic = ethic_spiritualist
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_materialist
+			has_ethic = ethic_individualist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_materialist
+			has_ethic = ethic_fanatic_individualist
+		}
+		modifier = {
+			factor = 0
+			NOT = { has_country_flag = birth_of_civtrade }
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 0.5
+			has_ethic = ethic_fanatic_xenophobe
+		}
+		modifier = {
+			factor = 0.75
+			has_ethic = ethic_xenophobe
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_xenophile
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_xenophile
+		}
+		modifier = {
+			factor = 0
+			NOT = { has_country_flag = birth_of_civtrade }
+		}
+	}
+}

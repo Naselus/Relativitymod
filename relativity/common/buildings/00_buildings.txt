@@ -15,6 +15,7 @@
 # upgrades, buildings list, buildings this building can upgrade into.
 # is_listed, boolean, toggles if this building is shown in the non-upgrade buildable list.
 # planet_unique, toggles if one can build multiple of this type on a single planet.
+# ai_weight, weight for AI, default is set to one, weight set to 0 means that AI will never build it
 
 #
 # BALANCE
@@ -31,27 +32,27 @@
 @b1upkeep = 1
 
 @b2time = 240
-@b2cost = 90
+@b2cost = 120
 @b2effect = 3
 @b2upkeep = 1.5
 
 @b3time = 300
-@b3cost = 120
+@b3cost = 240
 @b3effect = 4
 @b3upkeep = 2
 
 @b4time = 360
-@b4cost = 150
+@b4cost = 480
 @b4effect = 5
 @b4upkeep = 2.5
 
 @b5time = 420
-@b5cost = 180
+@b5cost = 960
 @b5effect = 8
 @b5upkeep = 3
 
 @b6time = 480
-@b6cost = 210
+@b6cost = 1920
 @b6effect = 12
 @b6upkeep = 4
 
@@ -291,7 +292,7 @@ betharian_power_plant_1 = {
 	}
 	
 	prerequisites = {
-		"tech_mine_betharian" "tech_power_plant_6"
+		"tech_power_plant_6"
 	}
 	
 	allow = {
@@ -421,6 +422,10 @@ betharian_power_plant_4 = {
 		sr_plasma = 1
 	}	
 	
+	upgrades = {
+		betharian_power_plant_5
+	}
+	
 	prerequisites = {
 			"tech_power_plant_9"
 	}
@@ -502,7 +507,7 @@ building_power_hub_1 = {
 building_power_hub_2 = {
 	base_buildtime = @b3time
 	is_listed = no
-	planet_unique = yes
+
 	
 	cost = {
 		minerals = 250
@@ -953,7 +958,7 @@ building_mining_network_3 = {
 	}
 	
 	required_resources = {
-		sr_plasma2 = 1
+		sr_plasma = 1
 	}
 	
 	upgrades = {
@@ -990,7 +995,7 @@ building_mining_network_4 = {
 	}
 	
 	required_resources = {
-		sr_plasma3 = 1
+		sr_plasma = 1
 	}
 	
 	upgrades = {
@@ -1024,7 +1029,7 @@ building_mining_network_5 = {
 	}
 	
 	required_resources = {
-		sr_plasma3 = 1
+		sr_plasma = 1
 	}
 	
 	prerequisites = {
@@ -1036,7 +1041,7 @@ building_mineral_processing_plant_1T1 = {
 	base_buildtime = @b2time
 	
 	cost = {
-		minerals = 150
+		minerals = @b1cost
 	}
 	
 
@@ -1048,7 +1053,7 @@ building_mineral_processing_plant_1T1 = {
 	}
 	
 	planet_modifier  = {
-		tile_resource_minerals_mult = 0.10
+		tile_resource_minerals_mult = 0.05
 	}
 	
 	required_resources = {
@@ -1070,7 +1075,7 @@ building_mineral_processing_plant_2T1 = {
 	is_listed = no
 	
 	cost = {
-		minerals = 250
+		minerals = @b2cost
 		#influence = 25
 	}
 	
@@ -1095,7 +1100,7 @@ building_mineral_processing_plant_2T1 = {
 	}
 	
 	planet_modifier  = {
-		tile_resource_minerals_mult = 0.15
+		tile_resource_minerals_mult = 0.05
 	}
 	
 	required_resources = {
@@ -1115,7 +1120,7 @@ building_mineral_processing_plant_3T1 = {
 	is_listed = no
 	
 	cost = {
-		minerals = 250
+		minerals = @b3cost
 
 	}
 	
@@ -1139,7 +1144,7 @@ building_mineral_processing_plant_3T1 = {
 	}
 	
 	planet_modifier  = {
-		tile_resource_minerals_mult = 0.15
+		tile_resource_minerals_mult = 0.05
 	}
 	
 	required_resources = {
@@ -1161,7 +1166,7 @@ building_mineral_processing_plant_4T1 = {
 	is_listed = no
 	
 	cost = {
-		minerals = 250
+		minerals = @b4cost
 		#influence = 25
 	}
 	
@@ -1185,7 +1190,7 @@ building_mineral_processing_plant_4T1 = {
 	}
 	
 	planet_modifier  = {
-		tile_resource_minerals_mult = 0.15
+		tile_resource_minerals_mult = 0.05
 	}
 	
 	required_resources = {
@@ -1207,7 +1212,7 @@ building_mineral_processing_plant_5T1 = {
 	is_listed = no
 	
 	cost = {
-		minerals = 250
+		minerals = @b5cost
 		#influence = 25
 	}
 	
@@ -1231,7 +1236,7 @@ building_mineral_processing_plant_5T1 = {
 	}
 	
 	planet_modifier  = {
-		tile_resource_minerals_mult = 0.15
+		tile_resource_minerals_mult = 0.05
 	}
 	
 	required_resources = {
@@ -1341,7 +1346,7 @@ building_engineering_facility_2 = {
 	}
 	
 	required_resources = {
-		sr_plasma = @b3upkeep
+		sr_plasma2 = @b3upkeep
 	}
 	
 	upgrades = {
@@ -1516,7 +1521,7 @@ building_physics_lab_2 = {
 	}
 	
 	required_resources = {
-		sr_plasma = @b3upkeep
+		sr_plasma2 = @b3upkeep
 	}
 	
 	upgrades = {
@@ -1695,7 +1700,7 @@ building_biolab_2 = {
 	}
 	
 	required_resources = {
-		sr_plasma = @b3upkeep
+		sr_plasma2 = @b3upkeep
 	}
 	
 	upgrades = {
@@ -1819,7 +1824,7 @@ building_colony_shelter = {
 	}
 	
 	planet_modifier = {
-		pop_ethic_shift = 0.20
+		pop_ethic_shift = 0.05
 	}
 	
 	potential = {
@@ -1843,6 +1848,7 @@ building_colony_shelter = {
 	
 	produced_resources = {
 		food = 5
+		influence = -0.25
 	}
 
 	required_resources = {
@@ -1884,12 +1890,11 @@ building_capital_1 = {
 	produced_resources = {
 		food = 10
 		minerals = 1
-		influence = 0.25
 	}
 	
 	adjacency_bonus = {
-		resource_minerals_add = 1
-		resource_energy_add = 1
+		tile_resource_minerals_mult = 0.25
+		tile_resource_energy_mult = 0.25
 	}
 
 	required_resources = {
@@ -1936,12 +1941,12 @@ building_capital_2 = {
 	produced_resources = {
 		food = 15
 		minerals = 2
-		influence = 0.5
+		influence = 0.25
 	}
 	
 	adjacency_bonus = {
-		resource_minerals_add = 2
-		resource_energy_add = 2
+		tile_resource_minerals_mult = 0.5
+		tile_resource_energy_mult = 0.5
 	}
 	required_resources = {
 		sr_nutrients = 4
@@ -1981,22 +1986,23 @@ building_capital_3 = {
 
 	planet_unique = yes
 	capital = yes
-	empire_unique = yes
 	level = 3
 	
 	produced_resources = {
 		food = 30
 		minerals = 3
-		influence = 1
+		influence = 0.5
 	}
-	
+	upgrades = {
+		building_capital_4
+	}		
 	required_resources = {
 		sr_nutrients = 8
 	}
 	
 	adjacency_bonus = {
-		resource_minerals_add = 3
-		resource_energy_add = 3
+		tile_resource_minerals_mult = 0.75
+		tile_resource_energy_mult = 0.75
 	}
 	
 	prerequisites = {
@@ -3112,7 +3118,7 @@ building_mining2_network_1 = {
 	}
 
 	required_resources = {
-		sr_plasma = 1
+		sr_plasma2 = 1
 	}	
 	
 	upgrades = {
@@ -3240,7 +3246,7 @@ building_mining2_network_4 = {
 	}
 	
 	required_resources = {
-		sr_plasma3 = 1
+		sr_plasma2 = 1
 	}
 	
 	upgrades = {
@@ -3275,7 +3281,7 @@ building_mining2_network_5 = {
 	}
 	
 	required_resources = {
-		sr_plasma3 = 1
+		sr_plasma2 = 1
 	}
 	
 	prerequisites = {
@@ -3296,7 +3302,7 @@ building_mining3_network_1 = {
 	}
 
 	required_resources = {
-		sr_plasma = 1
+		sr_plasma3 = 1
 	}	
 	
 	upgrades = {
@@ -3348,7 +3354,7 @@ building_mining3_network_2 = {
 	}
 	
 	required_resources = {
-		sr_plasma2 = 1
+		sr_plasma3 = 1
 	}
 	
 	upgrades = {
@@ -3386,7 +3392,7 @@ building_mining3_network_3 = {
 	}
 	
 	required_resources = {
-		sr_plasma2 = 1
+		sr_plasma3 = 1
 	}
 	
 	upgrades = {
@@ -3495,7 +3501,7 @@ building_mineral_processing_plant_1T2 = {
 	}
 	
 	planet_modifier  = {
-		tile_resource_minerals_mult = 0.10
+		tile_resource_minerals_mult = 0.05
 	}
 	
 	required_resources = {
@@ -3542,7 +3548,7 @@ building_mineral_processing_plant_2T2 = {
 	}
 	
 	planet_modifier  = {
-		tile_resource_minerals_mult = 0.15
+		tile_resource_minerals_mult = 0.05
 	}
 	
 	required_resources = {
@@ -3586,7 +3592,7 @@ building_mineral_processing_plant_3T2 = {
 	}
 	
 	planet_modifier  = {
-		tile_resource_minerals_mult = 0.15
+		tile_resource_minerals_mult = 0.05
 	}
 	
 	required_resources = {
@@ -3632,7 +3638,7 @@ building_mineral_processing_plant_4T2 = {
 	}
 	
 	planet_modifier  = {
-		tile_resource_minerals_mult = 0.15
+		tile_resource_minerals_mult = 0.05
 	}
 	
 	required_resources = {
@@ -3678,7 +3684,7 @@ building_mineral_processing_plant_5T2 = {
 	}
 	
 	planet_modifier  = {
-		tile_resource_minerals_mult = 0.15
+		tile_resource_minerals_mult = 0.05
 	}
 	
 	required_resources = {
@@ -3719,7 +3725,7 @@ building_mineral_processing_plant_1T3 = {
 	}
 	
 	planet_modifier  = {
-		tile_resource_minerals_mult = 0.10
+		tile_resource_minerals_mult = 0.05
 	}
 	
 	required_resources = {
@@ -3766,7 +3772,7 @@ building_mineral_processing_plant_2T3 = {
 	}
 	
 	planet_modifier  = {
-		tile_resource_minerals_mult = 0.15
+		tile_resource_minerals_mult = 0.05
 	}
 	
 	required_resources = {
@@ -3810,7 +3816,7 @@ building_mineral_processing_plant_3T3 = {
 	}
 	
 	planet_modifier  = {
-		tile_resource_minerals_mult = 0.15
+		tile_resource_minerals_mult = 0.05
 	}
 	
 	required_resources = {
@@ -3856,7 +3862,7 @@ building_mineral_processing_plant_4T3 = {
 	}
 	
 	planet_modifier  = {
-		tile_resource_minerals_mult = 0.15
+		tile_resource_minerals_mult = 0.05
 	}
 	
 	required_resources = {
@@ -3902,7 +3908,7 @@ building_mineral_processing_plant_5T3 = {
 	}
 	
 	planet_modifier  = {
-		tile_resource_minerals_mult = 0.15
+		tile_resource_minerals_mult = 0.05
 	}
 	
 	required_resources = {
@@ -3957,7 +3963,7 @@ building_bank = {
 
 building_bank_2 = {
 	base_buildtime = @b2time
-	
+	is_listed = no	
 	cost = {
 		minerals = @b2cost
 	}
@@ -3997,7 +4003,7 @@ building_bank_2 = {
 
 building_bank_3 = {
 	base_buildtime = @b3time
-	
+	is_listed = no	
 	cost = {
 		minerals = @b3cost
 	}
@@ -4014,7 +4020,7 @@ building_bank_3 = {
 	}
 
 	required_resources = {
-		sr_plasma2 = 1
+		sr_plasma = 1
 	}
 	
 	prerequisites = {
@@ -4036,7 +4042,7 @@ building_bank_3 = {
 
 building_bank_4 = {
 	base_buildtime = @b4time
-	
+	is_listed = no	
 	cost = {
 		minerals = @b4cost
 	}
@@ -4054,7 +4060,7 @@ building_bank_4 = {
 	}
 
 	required_resources = {
-		sr_plasma3 = 1
+		sr_plasma = 1
 	}	
 	
 	upgrades = {
@@ -4074,7 +4080,7 @@ building_bank_4 = {
 
 building_bank_5 = {
 	base_buildtime = @b5time
-	
+	is_listed = no	
 	cost = {
 		minerals = @b5cost
 	}
@@ -4092,7 +4098,7 @@ building_bank_5 = {
 	}
 
 	required_resources = {
-		sr_plasma3 = 1
+		sr_plasma = 1
 	}	
 	
 	allow = {
@@ -4117,8 +4123,8 @@ building_basic_hospital = {
 	}
 	
 	planet_modifier = {
-		pop_growth_req_mult = -0.03
-		pop_happiness = 0.01
+		pop_growth_req_mult = -0.05
+		pop_happiness = 0.03
 	}
 	
 	upgrades = {
@@ -4146,14 +4152,14 @@ building_basic_hospital = {
 building_hospital_2 = {
 	base_buildtime = @b2time
 	planet_unique = yes	
-	
+	is_listed = no	
 	cost = {
 		minerals = @b2cost
 	}
 	
 	planet_modifier = {
-		pop_growth_req_mult = -0.06
-		pop_happiness = 0.02
+		pop_growth_req_mult = -0.1
+		pop_happiness = 0.06
 	}
 	
 	upgrades = {
@@ -4180,14 +4186,14 @@ building_hospital_2 = {
 building_hospital_3 = {
 	base_buildtime = @b3time
 	planet_unique = yes	
-	
+	is_listed = no	
 	cost = {
 		minerals = @b3cost
 	}
 	
 	planet_modifier = {
-		pop_growth_req_mult = -0.09
-		pop_happiness = 0.03
+		pop_growth_req_mult = -0.15
+		pop_happiness = 0.09
 	}
 	
 	upgrades = {
@@ -4215,14 +4221,14 @@ building_hospital_3 = {
 building_hospital_4 = {
 	base_buildtime = @b4time
 	planet_unique = yes	
-	
+	is_listed = no	
 	cost = {
 		minerals = @b4cost
 	}
 	
 	planet_modifier = {
-		pop_growth_req_mult = -0.12
-		pop_happiness = 0.04
+		pop_growth_req_mult = -0.20
+		pop_happiness = 0.12
 	}
 	
 	upgrades = {
@@ -4250,14 +4256,14 @@ building_hospital_4 = {
 building_hospital_5 = {
 	base_buildtime = @b5time
 	planet_unique = yes
-	
+	is_listed = no	
 	cost = {
 		minerals = @b5cost
 	}
 	
 	planet_modifier = {
-		pop_growth_req_mult = -0.15
-		pop_happiness = 0.05
+		pop_growth_req_mult = -0.25
+		pop_happiness = 0.15
 	}
 	
 	prerequisites = {
@@ -4276,4 +4282,102 @@ building_hospital_5 = {
 		}
 	}
  
+}
+
+building_capital_4 = {
+	base_buildtime = 1080
+	is_listed = no
+	
+	cost = {
+		minerals = 2000
+		#influence = 200
+	}
+	
+	allow = {
+		always = no
+		custom_tooltip = {
+			text = "Requires 15 POPs"
+			planet = {
+				count_pops = {
+					count > 14
+					limit = {
+						is_colony_pop = yes
+					}
+				}
+			}
+		}
+	}
+
+	planet_unique = yes
+	capital = yes
+	level = 4
+	
+	produced_resources = {
+		food = 50
+		minerals = 4
+		influence = 1
+	}
+	
+	required_resources = {
+		sr_nutrients = 16
+	}
+	upgrades = {
+		building_capital_5
+	}	
+	adjacency_bonus = {
+		tile_resource_minerals_mult = 1
+		tile_resource_energy_mult = 1
+	}
+	
+	prerequisites = {
+	"tech_statecraft_10"
+	}	
+}
+
+building_capital_5 = {
+	base_buildtime = 1080
+	is_listed = no
+	
+	cost = {
+		minerals = 4000
+		#influence = 200
+	}
+	
+	allow = {
+		always = no
+		custom_tooltip = {
+			text = "Requires 20 POPs"
+			planet = {
+				count_pops = {
+					count > 19
+					limit = {
+						is_colony_pop = yes
+					}
+				}
+			}
+		}
+	}
+
+	planet_unique = yes
+	capital = yes
+	level = 5
+	
+	produced_resources = {
+		food = 100
+		minerals = 5
+		influence = 2
+	}
+	
+	required_resources = {
+		sr_nutrients = 32
+	}
+	
+	adjacency_bonus = {
+		tile_resource_minerals_mult = 1.5
+		tile_resource_energy_mult = 1.5
+	}
+	
+	prerequisites = {
+		"tech_statecraft_11"
+	}	
 }

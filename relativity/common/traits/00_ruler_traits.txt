@@ -25,6 +25,7 @@ trait_ruler_corvette_focus = {
 	}
 	leader_trait = yes
 	leader_class = { ruler }
+	initial = no
 	opposites = { "trait_ruler_destroyer_focus" "trait_ruler_cruiser_focus" "trait_ruler_battleship_focus" }
 }
 
@@ -37,6 +38,7 @@ trait_ruler_destroyer_focus = {
 	}
 	leader_trait = yes
 	leader_class = { ruler }
+	initial = no
 	prerequisites = { tech_spaceport_3 }
 	opposites = { "trait_ruler_corvette_focus" "trait_ruler_cruiser_focus" "trait_ruler_battleship_focus" }
 }
@@ -50,6 +52,7 @@ trait_ruler_cruiser_focus = {
 	}
 	leader_trait = yes
 	leader_class = { ruler }
+	initial = no
 	prerequisites = { tech_spaceport_5 }
 	opposites = { "trait_ruler_corvette_focus" "trait_ruler_destroyer_focus" "trait_ruler_battleship_focus" }
 }
@@ -63,6 +66,7 @@ trait_ruler_battleship_focus = {
 	}
 	leader_trait = yes
 	leader_class = { ruler }
+	initial = no
 	prerequisites = { tech_spaceport_6 }
 	opposites = { "trait_ruler_corvette_focus" "trait_ruler_destroyer_focus" "trait_ruler_cruiser_focus" }
 }
@@ -77,6 +81,7 @@ trait_ruler_recruiter = {
 	}
 	leader_trait = yes
 	leader_class = { ruler }
+	initial = no
 	prerequisites = { tech_centralized_command  }
 }
 
@@ -89,6 +94,7 @@ trait_ruler_from_the_ranks = {
 	}
 	leader_trait = yes
 	leader_class = { ruler }
+	initial = no
 	prerequisites = { tech_combat_training  }
 }
 
@@ -106,7 +112,8 @@ trait_ruler_fortifier = {
 	}
 	leader_trait = yes
 	leader_class = { ruler }
-	prerequisites = { tech_space_defense_station_1 }
+	initial = no
+	prerequisites = { tech_void_2  }
 }
 
 trait_ruler_logistic_understanding = {
@@ -118,6 +125,7 @@ trait_ruler_logistic_understanding = {
 	}
 	leader_trait = yes
 	leader_class = { ruler }
+	initial = no
 	prerequisites = { tech_doctrine_fleet_support  }
 }
 
@@ -131,6 +139,7 @@ trait_ruler_military_pioneer = {
 	}
 	leader_trait = yes
 	leader_class = { ruler }
+	initial = no
 	prerequisites = { tech_doctrine_refit_standards }
 }
 
@@ -144,6 +153,7 @@ trait_ruler_warlike = {
 	}
 	leader_trait = yes
 	leader_class = { ruler }
+	initial = no
 }
 
 trait_ruler_architectural_sense = {
@@ -155,6 +165,7 @@ trait_ruler_architectural_sense = {
 	}
 	leader_trait = yes
 	leader_class = { ruler }
+	initial = no
 }
 
 trait_ruler_frontier_spirit = {
@@ -167,6 +178,7 @@ trait_ruler_frontier_spirit = {
 	}
 	leader_trait = yes
 	leader_class = { ruler }
+	initial = no
 	prerequisites = { tech_colonization_1 }
 }
 
@@ -181,6 +193,7 @@ trait_ruler_world_shaper = {
 	}
 	leader_trait = yes
 	leader_class = { ruler }
+	initial = no
 	prerequisites = { tech_terrestrial_sculpting }
 }
 
@@ -194,6 +207,7 @@ trait_ruler_home_in_the_sky = {
 	}
 	leader_trait = yes
 	leader_class = { ruler }
+	initial = no
 }
 
 trait_ruler_industrialist = {
@@ -205,6 +219,7 @@ trait_ruler_industrialist = {
 	}
 	leader_trait = yes
 	leader_class = { ruler }
+	initial = no
 }
 
 trait_ruler_eye_for_talent = {
@@ -217,6 +232,7 @@ trait_ruler_eye_for_talent = {
 	}
 	leader_trait = yes
 	leader_class = { ruler }
+	initial = no
 	prerequisites = { tech_galactic_administration }
 }
 
@@ -228,6 +244,7 @@ trait_ruler_deep_connections = {
 		influence_gain_add = 1
 	}
 	leader_trait = yes
+	initial = no
 	leader_class = { ruler }
 }
 
@@ -241,6 +258,7 @@ trait_ruler_charismatic = {
 	}
 	leader_trait = yes
 	leader_class = { ruler }
+	initial = no
 }
 
 trait_ruler_champion_of_the_people = {
@@ -252,6 +270,7 @@ trait_ruler_champion_of_the_people = {
 	}
 	leader_trait = yes
 	leader_class = { ruler }
+	initial = no
 }
 
 trait_ruler_expansionist = {
@@ -263,6 +282,7 @@ trait_ruler_expansionist = {
 	}
 	leader_trait = yes
 	leader_class = { ruler }
+	initial = no
 }
 
 trait_ruler_fertility_preacher = {
@@ -274,6 +294,7 @@ trait_ruler_fertility_preacher = {
 	}
 	leader_trait = yes
 	leader_class = { ruler }
+	initial = no
 }
 
 trait_ruler_investor = {
@@ -285,6 +306,7 @@ trait_ruler_investor = {
 	}
 	leader_trait = yes
 	leader_class = { ruler }
+	initial = no
 }
 
 trait_ruler_space_miner = {
@@ -297,6 +319,7 @@ trait_ruler_space_miner = {
 	}
 	leader_trait = yes
 	leader_class = { ruler }
+	initial = no
 }
 
 trait_ruler_explorer = {
@@ -309,6 +332,7 @@ trait_ruler_explorer = {
 	}
 	leader_trait = yes
 	leader_class = { ruler }
+	initial = no
 }
 
 leader_trait_fleet_organizer = {
@@ -320,6 +344,7 @@ leader_trait_fleet_organizer = {
 	}
 	leader_trait = yes
 	leader_class = { ruler }
+	initial = no
 	prerequisites = { tech_doctrine_fleet_size_2 }
 	opposites = { "leader_trait_nervous" }
 }
@@ -333,6 +358,7 @@ leader_trait_nervous = {
 	}
 	leader_trait = yes
 	leader_class = { ruler }
+	initial = no
 	prerequisites = { tech_doctrine_fleet_size_2 }
 	opposites = { "leader_trait_fleet_organizer" "leader_trait_unyielding" }
 }

@@ -19,131 +19,93 @@ opinion_cheat = {
 # Enemy opinion
 opinion_in_war = {
 	opinion = {
-		base = -50
+		base = -5
 	}
+	max = 0
+	min = -50
+
+	accumulative = yes
 }
 
 # Ally opinion
 opinion_alliance = {
 	opinion = {
-		base = 50
+		base = 0.5
 	}
+	max = 25
+	min = 5
+
+	accumulative = yes
+}
+
+# Defensive pact opinion
+opinion_defensive_pact = {
+	opinion = {
+		base = 0.25
+	}
+	max = 20
+	min = 0
+
+	accumulative = yes
 }
 
 # Federation member opinion
 opinion_federation = {
 	opinion = {
-		base = 50
+		base = 1
 	}
-}
+	max = 50
+	min = 10
 
-# subject opinion of other subject under same overlord
-opinion_subject = {
-	opinion = {
-		base = 25
-	}
-}
-
-# subject opinion of overlord
-opinion_is_subject = {
-	opinion = {
-		base = 25
-	}
-}
-
-# Non-aggression pact opinion
-opinion_non_agg_pact = {
-	opinion = {
-		base = 25
-		modifier = {
-			factor = 0
-			is_country_type = fallen_empire
-		}		
-	}
-}
-
-# Supports our independence
-opinion_supports_independence = {
-	opinion = {
-		base = 50
-		modifier = {
-			factor = 0
-			is_country_type = fallen_empire
-		}		
-	}
+	accumulative = yes
 }
 
 # Guarantees our independence
 opinion_guarantees_independence = {
 	opinion = {
-		base = 25
-		modifier = {
-			factor = 0
-			is_country_type = fallen_empire
-		}		
+		base = 0.1
 	}
+	
+	max = 10
+	min = 0
+
+	accumulative = yes
 }
 
-# Grants us Military Access
-opinion_military_access = {
+# Has closed borders to us
+opinion_closed_borders = {
 	opinion = {
-		base = 5
-		modifier = {
-			factor = 0
-			is_country_type = fallen_empire
-		}		
+		base = -0.2
 	}
+	max = 0
+	min = -20
+
+	accumulative = yes
 }
 
-# Grants us Civilian Access
-opinion_civilian_access = {
+
+# subject opinion of other subject under same overlord
+opinion_subject = {
 	opinion = {
-		base = 5
-		modifier = {
-			factor = 0
-			is_country_type = fallen_empire
-		}		
+		base = 0.1
 	}
+
+	max = 10
+	min = 0
+
+	accumulative = yes	
 }
 
-# Grants us Construction Access
-opinion_construction_access = {
+# subject opinion of overlord
+opinion_is_subject = {
 	opinion = {
-		base = 5
-		modifier = {
-			factor = 0
-			is_country_type = fallen_empire
-		}		
+		base = 0.25
 	}
-}
 
-# Has Migration Treaty
-opinion_migration_treaty = {
-	opinion = {
-		base = 10
-		modifier = {
-			factor = 0
-			is_country_type = fallen_empire
-		}		
-	}
-}
+	max = 25
+	min = -25
 
-# Has Research Treaty
-opinion_research_treaty = {
-	opinion = {
-		base = 10
-		modifier = {
-			factor = 0
-			is_country_type = fallen_empire
-		}
-	}
-}
-
-# Has resource trade deal
-opinion_in_trade = {
-	opinion = {
-		base = 5
-	}
+	accumulative = yes
 }
 
 # Repugnant
@@ -151,7 +113,7 @@ opinion_repugnant_species = {
 	opinion = {
 		base = 0
 		modifier = {
-			add = -15
+			add = -10
 			FROM = {
 				has_trait = "trait_repugnant"
 			}
@@ -168,14 +130,13 @@ opinion_charismatic_species = {
 	opinion = {
 		base = 0
 		modifier = {
-			add = 15
+			add = 10
 			FROM = {
 				has_trait = "trait_charismatic"		
 			}
 		}		
 	}
 }
-
 
 # Opinions of Interference Policy
 opinion_policy_interference = {
@@ -190,7 +151,7 @@ opinion_policy_interference = {
 		}
 
 		modifier = {
-			add = -10
+			add = -5
 			has_ethic = "ethic_fanatic_xenophobe"
 			FROM = {
 				has_policy_flag = interference_passive
@@ -198,7 +159,7 @@ opinion_policy_interference = {
 		}
 
 		modifier = {
-			add = 10
+			add = 5
 			has_policy_flag = interference_passive
 			FROM = {
 				has_policy_flag = interference_passive
@@ -212,7 +173,7 @@ opinion_policy_slavery = {
 	opinion = {
 		base = 0
 		modifier = {
-			add = -10
+			add = -5
 			has_ethic = "ethic_individualist"
 
 			FROM = {
@@ -224,7 +185,7 @@ opinion_policy_slavery = {
 		}
 
 		modifier = {
-			add = -20
+			add = -10
 
 			has_ethic = "ethic_fanatic_individualist"
 
@@ -383,7 +344,7 @@ opinion_policy_orbital_bombardment = {
 			has_ethic = "ethic_pacifist"
 
 			FROM = {
-				has_policy_flag = orbital_bombardment_limited
+				has_policy_flag = allow_orbital_bombardment_limited
 			}
 		}
 
@@ -393,7 +354,7 @@ opinion_policy_orbital_bombardment = {
 			has_ethic = "ethic_fanatic_pacifist"
 
 			FROM = {
-				has_policy_flag = orbital_bombardment_limited
+				has_policy_flag = allow_orbital_bombardment_limited
 			}
 		}
 
@@ -402,7 +363,7 @@ opinion_policy_orbital_bombardment = {
 			has_ethic = "ethic_pacifist"
 
 			FROM = {
-				has_policy_flag = orbital_bombardment_full
+				has_policy_flag = allow_orbital_bombardment_full
 			}
 		}
 
@@ -412,7 +373,7 @@ opinion_policy_orbital_bombardment = {
 			has_ethic = "ethic_fanatic_pacifist"
 
 			FROM = {
-				has_policy_flag = orbital_bombardment_full
+				has_policy_flag = allow_orbital_bombardment_full
 			}
 		}
 	}
@@ -495,15 +456,23 @@ opinion_policy_leadership = {
 # We had a small conflict with this empire us before first contact was established (event action.7)
 opinion_first_contact_hostility = {
 	opinion = {
-		base = -10
+		base = -25
 	}
+	
+	decay = {
+		base = 1
+	}	
 }
 
 # We had a large conflict with this empire us before first contact was established (event action.7)
 opinion_first_contact_war = {
 	opinion = {
-		base = -25
+		base = -75
 	}
+	decay = {
+		base = 1
+	}	
+	
 }
 
 # Xenophobes are a bit less popular with everyone else
@@ -1105,7 +1074,20 @@ opinion_nuker = {
 # They left our Federation for another Federation
 opinion_changed_federation = {
 	opinion = {
-		base = -50
+		base = -75
+	}
+	min = -1000
+	accumulative = yes
+
+	decay = {
+		base = 2
+	}
+}
+
+# They left our Federation
+opinion_broke_federation = {
+	opinion = {
+		base = -75
 	}
 
 	accumulative = yes
@@ -1115,8 +1097,34 @@ opinion_changed_federation = {
 	}
 }
 
-# They left our Federation
-opinion_broke_federation = {
+# They kicked us from the alliance
+opinion_kicked_from_alliance = {
+	opinion = {
+		base = -100
+	}
+
+	accumulative = yes
+
+	decay = {
+		base = 2
+	}
+}
+
+# They tried to kick us from the alliance
+opinion_tried_to_kick = {
+	opinion = {
+		base = -75
+	}
+
+	accumulative = yes
+
+	decay = {
+		base = 2
+	}
+}
+
+# They voted down our proposal
+opinion_voted_down_proposal = {
 	opinion = {
 		base = -50
 	}
@@ -1124,7 +1132,7 @@ opinion_broke_federation = {
 	accumulative = yes
 
 	decay = {
-		base = 10
+		base = 2
 	}
 }
 
@@ -1137,12 +1145,25 @@ opinion_changed_alliance = {
 	accumulative = yes
 
 	decay = {
-		base = 10
+		base = 2
 	}
 }
 
 # They left our alliance
 opinion_broke_alliance = {
+	opinion = {
+		base = -50
+	}
+
+	accumulative = yes
+
+	decay = {
+		base = 2
+	}
+}
+
+# They left our defensive pact
+opinion_broke_defensive_pact = {
 	opinion = {
 		base = -40
 	}
@@ -1150,7 +1171,46 @@ opinion_broke_alliance = {
 	accumulative = yes
 
 	decay = {
-		base = 10
+		base = 2
+	}
+}
+
+# They left our NAP
+opinion_broke_non_aggression_pact = {
+	opinion = {
+		base = -25
+	}
+
+	accumulative = yes
+
+	decay = {
+		base = 2
+	}
+}
+
+# They broke migration treaty
+opinion_broke_migration_pact = {
+	opinion = {
+		base = -15
+	}
+
+	accumulative = yes
+
+	decay = {
+		base = 2
+	}
+}
+
+# They broke their guarantee
+opinion_broke_guarantee = {
+	opinion = {
+		base = -25
+	}
+
+	accumulative = yes
+
+	decay = {
+		base = 2
 	}
 }
 
@@ -1211,29 +1271,33 @@ opinion_white_peace_not_accepted = {
 	}
 }
 
-# Unused
-opinion_trade_gift = {
+# Took less than they could in a war
+opinion_merciful = {
 	opinion = {
-		base = 20
+		base = 1
 	}
 
 	accumulative = yes
+	
+	max = 100
 
 	decay = {
-		base = 5
+		base = 2
 	}
 }
 
-#Unused
-opinion_trade_tribute = {
+# Favorable trade deal
+opinion_trade_gift = {
 	opinion = {
-		base = -20
+		base = 3
 	}
 
 	accumulative = yes
+	
+	max = 100
 
 	decay = {
-		base = 5
+		base = 2
 	}
 }
 
@@ -1243,7 +1307,7 @@ opinion_was_in_trade = {
 		base = -1
 	}
 	
-	min = -100
+	min = -50
 	
 	decay = {
 		base = 2
@@ -1253,12 +1317,11 @@ opinion_was_in_trade = {
 # Former overlord's opinion of a subject who broke free
 opinion_subject_broke_free = {
 	opinion = {
-		base = -20
+		base = -50
 	}
 
-	monthly = yes
 	decay = {
-		base = 5
+		base = 2
 	}
 }
 
@@ -1312,10 +1375,21 @@ opinion_threat = {
 	unique = yes
 }
 
+# Threat opinion modifier
+opinion_trust = {
+	opinion = {
+		base = 1
+	}
+	
+	max = 100
+	
+	unique = yes
+}
+
 # Subject's relative power to overlord
 opinion_relative_power = {
 	opinion = {
-		base = 1 # per 1% power
+		base = -2 # per 1% power
 	}
 	
 	min = -1000
@@ -1866,6 +1940,36 @@ opinion_refused_fallen_empire_demand = {
 	}
 	
 	min = -200
+	
+	decay = {
+		base = 5
+	}
+}
+
+opinion_heretical_research = {
+	opinion = {
+		base = -50
+	}
+	
+	decay = {
+		base = 5
+	}
+}
+
+encroaching_colony = {
+	opinion = {
+		base = -75
+	}
+	
+	decay = {
+		base = 5
+	}
+}
+
+encroaching_scientists = {
+	opinion = {
+		base = -50
+	}
 	
 	decay = {
 		base = 5

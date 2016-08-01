@@ -750,12 +750,7 @@ tech_rocketry_11 = {
 		weapon_type_explosive_weapon_fire_rate_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_rocketry_12 = {
@@ -771,12 +766,7 @@ tech_rocketry_12 = {
 		weapon_type_explosive_weapon_fire_rate_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_rocketry_13 = {
@@ -792,12 +782,7 @@ tech_rocketry_13 = {
 		weapon_type_explosive_weapon_fire_rate_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_rocketry_14 = {
@@ -813,12 +798,7 @@ tech_rocketry_14 = {
 		weapon_type_explosive_weapon_fire_rate_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_rocketry_15 = {
@@ -834,12 +814,7 @@ tech_rocketry_15 = {
 		weapon_type_explosive_weapon_fire_rate_mult = 0.05
 	}
 
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_rocketry_16 = {
@@ -855,12 +830,7 @@ tech_rocketry_16 = {
 		weapon_type_explosive_weapon_fire_rate_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_rocketry_17 = {
@@ -876,12 +846,7 @@ tech_rocketry_17 = {
 		weapon_type_explosive_weapon_fire_rate_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_rocketry_18 = {
@@ -897,12 +862,7 @@ tech_rocketry_18 = {
 		weapon_type_explosive_weapon_fire_rate_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_rocketry_19 = {
@@ -918,12 +878,7 @@ tech_rocketry_19 = {
 		weapon_type_explosive_weapon_fire_rate_mult = 0.05
 	}
 
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_rocketry_20 = {
@@ -939,10 +894,5 @@ tech_rocketry_20 = {
 		weapon_type_explosive_weapon_fire_rate_mult = 0.05
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }

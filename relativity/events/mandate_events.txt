@@ -572,10 +572,7 @@ country_event = {
 	immediate = {
 		if = {
 			limit = {
-				count_owned_ships = {
-					limit = { is_ship_class = shipclass_military }
-					count > 11
-				}
+				used_naval_capacity_percent > 0.749
 			}
 			end_event_chain = mandate_shipwright_chain
 			country_event = { id = mandate.141 }
@@ -622,6 +619,65 @@ country_event = {
 	}
 }
 
+#Check if the chain completion token should be on or off
+country_event = {
+	id = mandate.143
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = { has_event_chain = mandate_shipwright_chain }
+
+	immediate = {
+		if = {
+			limit = {
+				used_naval_capacity_percent > 0.75
+				NOT = {
+					has_completed_event_chain_counter = {
+						event_chain = mandate_shipwright_chain
+						counter = "military_presence_maintained"
+					}
+				}
+			}
+			add_event_chain_counter = {
+				event_chain = mandate_shipwright_chain
+				counter = military_presence_maintained
+				amount = 1
+			}
+			else = {
+				if = {
+					limit = {
+						has_completed_event_chain_counter = {
+							event_chain = mandate_shipwright_chain
+							counter = "military_presence_maintained"
+						}
+					}
+					add_event_chain_counter = {
+						event_chain = "mandate_shipwright_chain"
+						counter = "military_presence_maintained"
+						amount = -1
+					}
+				}
+			}
+		}
+	}
+}
+
+ship_event = {
+	id = mandate.144
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = { owner = { has_event_chain = mandate_shipwright_chain } }
+
+	immediate = {
+		owner = {
+			country_event = { id = mandate.143 }
+		}
+	}
+}
+
 ############################
 # Emancipator events
 # id 150
@@ -638,7 +694,6 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		last_changed_policy = slavery
 		NOT = { has_policy_flag = slavery_allowed_all }
 		has_event_chain = mandate_emancipation_chain
 	}

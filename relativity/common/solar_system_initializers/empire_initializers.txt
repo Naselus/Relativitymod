@@ -105,7 +105,7 @@ random_empire_init_01 = {
 						set_building = "building_mining_network_1"
 						add_resource = {
 							resource = sr_steel
-							amount = 1
+							amount = 2
 							replace = yes
 						}						
 					}				
@@ -117,6 +117,11 @@ random_empire_init_01 = {
 			random_tile = {
 				limit = { has_blocker = no has_building = no }
 						set_building = "building_power_plant_1"
+						add_resource = {
+							resource = sr_plasma
+							amount = 2
+							replace = yes
+						}		
 			}
 			random_tile = {
 				limit = { has_blocker = no has_building = no }
@@ -303,7 +308,7 @@ random_empire_init_02 = {
 						set_building = "building_mining_network_1"
 						add_resource = {
 							resource = sr_steel
-							amount = 1
+							amount = 2
 							replace = yes
 						}						
 					}				
@@ -315,6 +320,11 @@ random_empire_init_02 = {
 			random_tile = {
 				limit = { has_blocker = no has_building = no }
 						set_building = "building_power_plant_1"
+						add_resource = {
+							resource = sr_plasma
+							amount = 2
+							replace = yes
+						}	
 			}
 			random_tile = {
 				limit = { has_blocker = no has_building = no }
@@ -587,7 +597,7 @@ random_empire_init_03 = {
 						set_building = "building_mining_network_1"
 						add_resource = {
 							resource = sr_steel
-							amount = 1
+							amount = 2
 							replace = yes
 						}						
 					}				
@@ -599,6 +609,11 @@ random_empire_init_03 = {
 			random_tile = {
 				limit = { has_blocker = no has_building = no }
 						set_building = "building_power_plant_1"
+						add_resource = {
+							resource = sr_plasma
+							amount = 2
+							replace = yes
+						}	
 			}
 				random_tile = {
 					limit = { has_blocker = no has_building = no }
@@ -768,7 +783,7 @@ random_empire_init_04 = {
 				}
 				random_neighboring_tile = {
 					limit = { has_blocker = no has_building = no }
-					set_building = "building_power_plant_1"
+					set_building = "building_bank"
 					add_resource = {
 						resource = sr_plasma
 						amount = 1
@@ -777,10 +792,10 @@ random_empire_init_04 = {
 				}
 				random_neighboring_tile = {
 					limit = { has_blocker = no has_building = no }
-					set_building = "building_power_plant_1"
+					set_building = "building_mineral_processing_plant_1T1"
 					add_resource = {
 						resource = sr_plasma
-						amount = 1
+						amount = 2
 						replace = yes
 					}						
 				}
@@ -789,7 +804,7 @@ random_empire_init_04 = {
 					set_building = "building_mining_network_1"
 					add_resource = {
 						resource = sr_steel
-						amount = 1
+						amount = 2
 						replace = yes
 					}						
 				}				
@@ -800,7 +815,12 @@ random_empire_init_04 = {
 			}
 			random_tile = {
 				limit = { has_blocker = no has_building = no }
-				set_building = "building_mineral_processing_plant_1T1"
+				set_building = "building_power_plant_1"
+					add_resource = {
+						resource = sr_plasma
+						amount = 2
+						replace = yes
+					}	
 			}
 			random_tile = {
 				limit = { has_blocker = no has_building = no }

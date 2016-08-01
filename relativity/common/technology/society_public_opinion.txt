@@ -204,19 +204,14 @@ tech_public_opinion_3 = {
 	cost = @tier2cost1
 	tier = 2
 	category = { public_opinion }
-	prerequisites = { "tech_hyper_entertainment_forum" }
+	prerequisites = { "tech_planetary_unification" }
 	weight = @tier2weight1
 	
 	modifier = {
 		pop_happiness = 0.03
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_public_opinion_4 = {
@@ -231,12 +226,7 @@ tech_public_opinion_4 = {
 		pop_happiness = 0.03
 	}
 
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_public_opinion_5 = {
@@ -251,12 +241,7 @@ tech_public_opinion_5 = {
 		pop_happiness = 0.03
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_public_opinion_6 = {
@@ -271,12 +256,7 @@ tech_public_opinion_6 = {
 		pop_happiness = 0.03
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_public_opinion_7 = {
@@ -291,12 +271,7 @@ tech_public_opinion_7 = {
 		pop_happiness = 0.03
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_public_opinion_8 = {
@@ -311,12 +286,7 @@ tech_public_opinion_8 = {
 		pop_happiness = 0.03
 	}
 
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_public_opinion_9 = {
@@ -331,12 +301,7 @@ tech_public_opinion_9 = {
 		pop_happiness = 0.03
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_public_opinion_10 = {
@@ -351,12 +316,7 @@ tech_public_opinion_10 = {
 		pop_happiness = 0.03
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_public_opinion_11 = {
@@ -371,12 +331,7 @@ tech_public_opinion_11 = {
 		pop_happiness = 0.03
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_public_opinion_12 = {
@@ -391,12 +346,7 @@ tech_public_opinion_12 = {
 		pop_happiness = 0.03
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_public_opinion_13 = {
@@ -411,12 +361,7 @@ tech_public_opinion_13 = {
 		pop_happiness = 0.03
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_public_opinion_14 = {
@@ -431,12 +376,7 @@ tech_public_opinion_14 = {
 		pop_happiness = 0.03
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_public_opinion_15 = {
@@ -451,12 +391,7 @@ tech_public_opinion_15 = {
 		pop_happiness = 0.03
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_public_opinion_16 = {
@@ -471,12 +406,7 @@ tech_public_opinion_16 = {
 		pop_happiness = 0.03
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_public_opinion_17 = {
@@ -491,12 +421,7 @@ tech_public_opinion_17 = {
 		pop_happiness = 0.03
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_public_opinion_18 = {
@@ -511,12 +436,7 @@ tech_public_opinion_18 = {
 		pop_happiness = 0.03
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_public_opinion_19 = {
@@ -531,12 +451,7 @@ tech_public_opinion_19 = {
 		pop_happiness = 0.03
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }
 
 tech_public_opinion_20 = {
@@ -551,10 +466,5 @@ tech_public_opinion_20 = {
 		pop_happiness = 0.03
 	}
 	
-	ai_weight = {
-		modifier = {
-			factor = 0
-			always = yes
-		}
-	}
+	ai_weight = { factor = 1 }
 }

@@ -1,0 +1,53 @@
+﻿l_german:
+ ####################################
+
+ SEPARATOR:0 "---"
+ 
+#####################################
+# NOVEL WAR DEMAND
+#####################################
+
+#Forced Free thoughts
+DEMAND_FITZ_FORCE_FREE_THOUGHTS:0 "§GMinderheiten fördern§!"
+DEMAND_FITZ_FORCE_FREE_THOUGHTS_TITLE:0 "§GMinderheiten fördern§"
+DEMAND_FITZ_FORCE_FREE_THOUGHTS_INFO:0 "Zwingt die Regierung von [parameter:country.GetName] Minderheiten nicht mehr zu marginalisieren und Freiheit der Presse nicht mehr zu bestrafen. Die Ethikdivergenz des Ziels erhöht sich zeitweise signifikant."
+DEMAND_FITZ_FORCE_FREE_THOUGHTS_INFO_SOLO:0 "Minderheiten fördern"
+
+war_demand_fitz_force_free_thoughts_header:1 "§GMinderheiten fördern§!"
+war_demand_fitz_force_free_thoughts_subtext:0 "[parameter:country.GetName]"
+war_demand_fitz_force_free_thoughts_tooltip_header:0 "$war_demand_fitz_force_free_thoughts_header$"
+war_demand_fitz_force_free_thoughts_tooltip_content:0 "Zwingt die Regierung von [parameter:country.GetName] Minderheiten nicht mehr zu marginalisieren und Freiheit der Presse nicht mehr zu bestrafen. Die Ethikdivergenz des Ziels erhöht sich zeitweise signifikant."
+war_demand_fitz_force_free_thoughts_tooltip_proper_header:0 "$war_demand_fitz_force_free_thoughts_tooltip_header$"
+war_demand_fitz_force_free_thoughts_ticking_warscore:0 "Die Kriegsforderung "Minderheiten fördern" wird jeden Monat, den das Ziel komplett befreit ist §Y1§! Kriegspunkte geben."
+war_demand_fitz_force_free_thoughts_tooltip_proper_content:1 "[GetCountry.GetName] wird veranlassen, dass die Regierung von  [parameter:country.GetName] Minderheiten unterstützt und freie Meinungsäußerungen fördert. \n$war_demand_enforce_peace_ticking_warscore$"
+
+
+war_demand_fitz_free_thoughts_wrong_type:0 "Einer Entität dieser Art ist das Konzept von freier Meinung wahrscheinlich fremd."
+war_demand_fitz_free_thoughts_no_planets:0 "Dieses Reich wird nach Ende des Krieges nicht mehr existieren."
+war_demand_force_free_thought_not_individualist:0 "Nur Individualisten wären zu dieser Maßnahme fähig."
+
+fitz_forced_free_thoughts:0 "Wir sind gezwungen freie Meinungsäußerungen und Minderheiten zu fördern."
+opinion_fitz_free_thoughts_country:0 "Zwingt uns Minderheiten zu fördern."
+
+#Hacking 
+DEMAND_FITZ_HACK_TECHNOLOGY:0 "§GZugriff auf Forschungsnetzwerk§!"
+DEMAND_FITZ_HACK_TECHNOLOGY_TITLE:0 "§GZugriff auf Forschungsnetzwer§"
+DEMAND_FITZ_HACK_TECHNOLOGY_INFO:0 "Erhalte für 2 Jahre Zugriff auf das Forschungsnetzwerk von [parameter:country.GetName]. Ein Teil ihrer gewonnen Erkenntnisse werden mit dem Angreifer geteilt. "
+DEMAND_FITZ_HACK_TECHNOLOGY_INFO_SOLO:0 "Let the population think freely. "
+
+war_demand_fitz_hack_technology_header:1 "§GZugriff auf Forschungsnetzwerk§!"
+war_demand_fitz_hack_technology_subtext:0 "[parameter:country.GetName]"
+war_demand_fitz_hack_technology_tooltip_header:0 "$war_demand_fitz_hack_technology_header$"
+war_demand_fitz_hack_technology_tooltip_content:0 "Greife auf das Netzwerk von [parameter:country.GetName] zu erhalte Zugang zu ihren neuesten Erkenntnissen. "
+war_demand_fitz_hack_technology_tooltip_proper_header:0 "$war_demand_fitz_hack_technology_tooltip_header$"
+war_demand_fitz_hack_technology_ticking_warscore:0 "Die Kriegsforderung "Zugriff auf das Forschungsnetzwerk" wird jeden Monat, den das Ziel komplett befreit ist §Y1§! Kriegspunkte geben."
+war_demand_fitz_hack_technology_tooltip_proper_content:1 "[GetCountry.GetName] wird für 2 Jahre erhalten Zugriff auf das Forschungsnetzwerk von [parameter:country.GetName] erhalten.\n$war_demand_fitz_hack_technology_ticking_warscore$"
+
+
+
+war_demand_fitz_free_thoughts_wrong_type:0 "Eine Entität dieser Art führt keine Forschung durch"
+war_demand_fitz_free_thoughts_no_planets:0 "Nach Ende des Krieges wird dieses Reich keinen Forschungsstationen mehr besitzen"
+
+fitz_hacking:0 "Zugriff auf fremdes Forschungsnetzwerk"
+opinion_fitz_free_thoughts_country:0 "Erzwangen politische Freiheiten."
+

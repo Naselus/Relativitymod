@@ -23,28 +23,10 @@ country_event = {
 	trigger = {
 		is_country_type = fallen_empire
 		is_at_war = no
-		OR = {
-			fleet_power < 5000
-			AND = {
-				num_owned_planets > 2
-				fleet_power < 10000
-			}
-			AND = {
-				num_owned_planets > 4
-				fleet_power < 20000
-			}
-			AND = {
-				num_owned_planets > 6
-				fleet_power < 30000
-			}
-			AND = {
-				num_owned_planets > 8
-				fleet_power < 40000
-			}			
-		}
+		fleet_power < 5000
 	}
 	
-	option = {
+	immediate = {
 		capital_scope = {
 			create_fleet = { }
 			last_created_fleet = {
@@ -223,7 +205,7 @@ country_event = {
 		}
 	}
 	
-	option = {
+	immediate = {
 		random_country = {
 			limit = {
 				is_country_type = default
@@ -243,7 +225,7 @@ country_event = {
 						has_ai_personality = fallen_empire_spiritualist
 					}
 					any_owned_planet = {
-						has_planet_modifier = "pm_holy_planet"
+						has_modifier = "holy_planet"
 					}
 				}			
 				root = { remove_country_flag = make_demand }
@@ -352,13 +334,13 @@ country_event = {
 		every_owned_planet = {
 			limit = {
 				OR = {
-					has_planet_modifier = "pm_holy_planet"
+					has_modifier = "holy_planet"
 					is_planet_class = pc_nuked
 				}
 			}
 			destroy_colony = yes
 		}
-		add_modifier = { modifier = humiliated days = 3650 }
+		add_modifier = { modifier = humiliated days = 3600 }
 		from = { add_opinion_modifier = { who = root modifier = opinion_accepted_fallen_empire_demand } }
 	}
 	
@@ -404,7 +386,7 @@ country_event = {
 				cooldown = yes
 			}
 		}
-		add_modifier = { modifier = humiliated days = 3650 }
+		add_modifier = { modifier = humiliated days = 3600 }
 		from = { add_opinion_modifier = { who = root modifier = opinion_accepted_fallen_empire_demand } }
 	}
 	
@@ -446,17 +428,12 @@ country_event = {
 		custom_tooltip = fallen_empires.6.a.tooltip
 		hidden_effect = {
 			set_policy = {
-				policy = slavery
-				option = slavery_not_allowed
+				policy = citizenship_policy
+				option = full_citizenship
 				cooldown = yes
 			}
-			set_policy = {
-				policy = purge
-				option = purge_not_allowed
-				cooldown = yes
-			}	
 		}
-		add_modifier = { modifier = humiliated days = 3650 }
+		add_modifier = { modifier = humiliated days = 3600 }
 		from = { add_opinion_modifier = { who = root modifier = opinion_accepted_fallen_empire_demand } }
 	}
 	
@@ -500,7 +477,7 @@ country_event = {
 			}
 			destroy_colony = yes
 		}
-		add_modifier = { modifier = humiliated days = 3650 }
+		add_modifier = { modifier = humiliated days = 3600 }
 		from = { add_opinion_modifier = { who = root modifier = opinion_accepted_fallen_empire_demand } }
 	}
 	
@@ -538,7 +515,7 @@ country_event = {
 				fleet_power > 50000
 			}			
 		}		
-		add_modifier = { modifier = humiliated days = 3650 }
+		add_modifier = { modifier = humiliated days = 3600 }
 		from = { add_opinion_modifier = { who = root modifier = opinion_accepted_fallen_empire_demand } }
 	}
 	
@@ -579,13 +556,13 @@ country_event = {
 		every_owned_planet = {
 			limit = {
 				OR = {
-					has_planet_modifier = "pm_holy_planet"
+					has_modifier = "holy_planet"
 					is_planet_class = pc_nuked
 				}
 			}
 			destroy_colony = yes
 		}
-		add_modifier = { modifier = humiliated days = 3650 }
+		add_modifier = { modifier = humiliated days = 3600 }
 		from = { add_opinion_modifier = { who = root modifier = opinion_accepted_fallen_empire_demand } }
 	}
 	
@@ -616,24 +593,18 @@ country_event = {
 		is_at_war = no
 		any_country = {
 			is_country_type = default
-			NOT = { has_communications = root }
-			any_system = {
-				distance = {
-					source = root:capital
-					max_distance = 200				
-				}
-			}
+			NOT = { has_communications = root }			
 			OR = {
 				AND = {
 					root = { has_ai_personality = fallen_empire_spiritualist }
 					OR = {
 						any_owned_planet = {
-							has_planet_modifier = "pm_holy_planet"
+							has_modifier = "holy_planet"
 						}	
 						any_owned_planet = {
 							is_planet_class = pc_nuked
 						}						
-					}
+					}				
 				}
 				AND = {
 					root = { has_ai_personality = fallen_empire_materialist }
@@ -641,44 +612,56 @@ country_event = {
 						has_technology = tech_sentient_ai
 						has_technology = tech_synthetic_workers
 					}
-				}				
-			}
-		}
-	}
-	
-	option = {
-		random_country = {
-			limit = {
-				any_country = {
-					is_country_type = default
-					NOT = { has_communications = root }
 					any_system = {
 						distance = {
 							source = root:capital
 							max_distance = 200				
 						}
-					}
-					OR = {
-						AND = {
-							root = { has_ai_personality = fallen_empire_spiritualist }
-							OR = {
-								any_owned_planet = {
-									has_planet_modifier = "pm_holy_planet"
-								}	
-								any_owned_planet = {
-									is_planet_class = pc_nuked
-								}						
-							}
-						}
-						AND = {
-							root = { has_ai_personality = fallen_empire_materialist }
-							OR = {
-								has_technology = tech_sentient_ai
-								has_technology = tech_synthetic_workers
-							}
-						}				
-					}
+					}					
 				}
+				# also contact if we border them
+				any_owned_planet = {
+					is_neighbor_of = root			
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		random_country = {
+			limit = {
+				is_country_type = default
+				NOT = { has_communications = root }				
+				OR = {
+					AND = {
+						root = { has_ai_personality = fallen_empire_spiritualist }
+						OR = {
+							any_owned_planet = {
+								has_modifier = "holy_planet"
+							}	
+							any_owned_planet = {
+								is_planet_class = pc_nuked
+							}						
+						}						
+					}					
+					AND = {
+						root = { has_ai_personality = fallen_empire_materialist }
+						OR = {
+							has_technology = tech_sentient_ai
+							has_technology = tech_synthetic_workers
+						}
+						any_system = {
+							distance = {
+								source = root:capital
+								max_distance = 200				
+							}
+						}						
+					}	
+					# also contact if we border them
+					any_owned_planet = {
+						is_neighbor_of = root			
+					}						
+				}					
 			}
 
 			establish_communications_no_message = root	
@@ -709,7 +692,7 @@ country_event = {
 		}
 	}
 	
-	option = {
+	immediate = {
 		capital_scope = {
 			create_fleet = { }
 			last_created_fleet = {

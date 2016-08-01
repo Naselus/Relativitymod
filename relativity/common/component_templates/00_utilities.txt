@@ -36,17 +36,17 @@
 @cost_2M = 8
 @cost_2L = 16
 
-@cost_3S = 6
-@cost_3M = 12
-@cost_3L = 24
+@cost_3S = 8
+@cost_3M = 16
+@cost_3L = 32
 
-@cost_4S = 8
-@cost_4M = 16
-@cost_4L = 32
+@cost_4S = 16
+@cost_4M = 32
+@cost_4L = 64
 
-@cost_5S = 10
-@cost_5M = 20
-@cost_5L = 40
+@cost_5S = 32
+@cost_5M = 64
+@cost_5L = 128
 
 #############
 # UTILITIES #
