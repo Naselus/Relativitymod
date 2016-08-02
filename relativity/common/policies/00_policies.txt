@@ -33,8 +33,9 @@ war_philosophy = {
 		}
 		
 		valid = {
-			NOT = {
+			NOR = {
 				has_ethic = "ethic_fanatic_pacifist"
+				has_ethic = "ethic_pacifist"
 			}
 		}	
 		
@@ -48,7 +49,7 @@ war_philosophy = {
 				}
 			}
 			modifier = {
-				factor = 10
+				factor = 20
 				has_valid_ai_personality = yes
 				OR = {
 					has_ai_personality_behaviour = conqueror
@@ -76,7 +77,7 @@ war_philosophy = {
 			}			
 		}
 	}
-	
+
 	option = {
 		name = "liberation_wars"
 		
@@ -86,7 +87,13 @@ war_philosophy = {
 			allow_orbital_bombardment_limited
 			first_contact_attack_not_allowed
 		}
-				
+		
+		valid = {
+			NOT = {
+					has_ethic = "ethic_fanatic_pacifist"
+				}
+		}
+		
 		AI_weight = {
 			modifier = {
 				factor = 5
@@ -94,18 +101,14 @@ war_philosophy = {
 				has_ethic = "ethic_pacifist"
 			}
 			modifier = {
-				factor = 5
+				factor = 20
 				has_valid_ai_personality = yes
-				OR = {
-					has_ai_personality_behaviour = conqueror
-					has_ai_personality_behaviour = subjugator
-					has_ai_personality_behaviour = liberator
-				}
+				has_ai_personality_behaviour = liberator
 			}
 			modifier = {
 				factor = 0
 				OR = {
-					has_ethic = "ethic_pacifist"
+					has_ethic = "ethic_fanatic_militarist"
 					has_ethic = "ethic_fanatic_pacifist"
 				}
 			}			
@@ -132,19 +135,40 @@ war_philosophy = {
 			allow_orbital_bombardment_light
 			first_contact_attack_not_allowed
 		}				
+
+		valid = {
+			NOT = {
+					has_ai_personality_behaviour = liberator
+					has_ai_personality_behaviour = conqueror
+					has_ai_personality_behaviour = subjugator
+					has_ethic = "ethic_fanatic_militarist"
+					has_ethic = "ethic_militarist"
+				}
+		}
 		
 		AI_weight = {
 			modifier = {
 				factor = 10
-				has_ethic = "ethic_fanatic_pacifist"
-			}
-			modifier = {
-				factor = 10
-				has_valid_ai_personality = yes
-				NOR = {
-					has_ai_personality_behaviour = liberator
+				has_valid_ai_personality = no
+				NOT = {
+					
 					has_ai_personality_behaviour = conqueror
 					has_ai_personality_behaviour = subjugator
+				}
+			}
+			modifier = {
+				factor = 20
+				has_valid_ai_personality = yes
+				OR = {
+					has_ethic = "ethic_pacifist"
+					has_ethic = "ethic_fanatic_pacifist"
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_ethic = "ethic_militarist"
+					has_ethic = "ethic_fanatic_militarist"
 				}
 			}			
 		}
@@ -319,8 +343,33 @@ citizenship_policy = {
 			voting_not_allowed			
 		}		
 		valid = {
+			NOR = {
+			has_ethic = "ethic_fanatic_individualist"
+			has_ethic = "ethic_fanatic_xenophobe"
+			}
 		}	
 		AI_weight = {
+			modifier = {
+				factor = 10
+				has_valid_ai_personality = no
+				NOR = {
+					has_ethic = "ethic_individualist"
+					has_ethic = "ethic_fanatic_individualist"
+				}
+			}
+			modifier = {
+				factor = 20
+				has_valid_ai_personality = yes
+				has_ethic = "ethic_fanatic_collectivist"
+			}
+			
+			modifier = {
+				factor = 0
+				OR = {
+					has_ethic = "ethic_individualist"
+					has_ethic = "ethic_fanatic_individualist"
+				}
+			}	
 		}
 		pop_happiness = {
 			base = 0
@@ -346,6 +395,10 @@ citizenship_policy = {
 			voting_allowed_primary_only
 		}		
 		valid = {
+			NOR = {
+				has_ethic = "ethic_fanatic_xenophile"
+				has_ethic = "ethic_xenophile"
+				}
 		}	
 		pop_happiness = {
 			base = 0
@@ -359,6 +412,37 @@ citizenship_policy = {
 			}
 		}
 		AI_weight = {
+			modifier = {
+				factor = 10
+				has_valid_ai_personality = no
+				NOR = {
+					has_ethic = "ethic_fanatic_materialist"
+					has_ethic = "ethic_fanatic_spiritualist"
+				}
+			}
+			modifier = {
+				factor = 20
+				has_valid_ai_personality = yes
+				OR = {
+					OR = {
+						has_ethic = "ethic_fanatic_xenophobe"
+						has_ethic = "ethic_xenophobe"
+						}
+					OR = {
+						has_ethic = "ethic_collectivist"
+						has_ethic = "ethic_individualist"
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 0
+				OR = {
+					has_ethic = "ethic_fanatic_xenophile"
+					has_ethic = "ethic_xenophile"
+					has_ethic = "ethic_fanatic_collectivist"
+				}
+			}	
 		}
 	}
 	option = {
@@ -383,6 +467,11 @@ citizenship_policy = {
 			}
 		}
 		valid = {
+			NOR = {
+				has_ethic = "ethic_fanatic_collectivist"
+				has_ethic = "ethic_fanatic_xenophobe"
+				has_ai_personality_behaviour = purger
+			}
 		}	
 		pop_happiness = {
 			base = 0
@@ -396,6 +485,38 @@ citizenship_policy = {
 			}
 		}
 		AI_weight = {
+			modifier = {
+				factor = 10
+				has_valid_ai_personality = no
+				NOR = {
+					has_ethic = "ethic_fanatic_collectivist"
+					has_ethic = "ethic_fanatic_xenophobe"
+					has_ethic = "ethic_xenophobe"
+				}
+			}
+			modifier = {
+				factor = 20
+				has_valid_ai_personality = yes
+				OR = {
+				has_ethic = "ethic_fanatic_individualist"
+				AND = {
+					has_ethic = "ethic_individualist"
+					OR = {
+						has_ethic = "ethic_fanatic_xenophile"
+						has_ethic = "ethic_xenophile"
+						}
+					}
+					has_ethic = "ethic_fanatic_xenophile"	
+						}
+					}
+			modifier = {
+				factor = 0
+				OR = {
+					has_ethic = "ethic_fanatic_xenophile"
+					has_ethic = "ethic_xenophile"
+					has_ethic = "ethic_fanatic_collectivist"
+				}
+			}	
 		}
 	}	
 }
@@ -492,7 +613,7 @@ leader_enhancement = {
 				}
 			}
 			modifier = {
-				factor = 2
+				factor = 5
 				OR = {
 					has_ethic = "ethic_individualist"
 					has_ethic = "ethic_fanatic_individualist"
@@ -524,7 +645,12 @@ leader_enhancement = {
 		modifier = {
 			leader_age = 50
 		}
-		
+		valid = {
+			NOR = {
+				has_ethic = "ethic_fanatic_collectivist"
+				has_ethic = "ethic_fanatic_spiritualist"
+			}
+		}
 		prerequisites = { tech_capacity_boosters }
 		
 		AI_weight = {
@@ -538,14 +664,29 @@ leader_enhancement = {
 				}
 			}
 			modifier = {
-				factor = 2
-				OR = {
-					has_ethic = "ethic_individualist"
-					has_ethic = "ethic_fanatic_individualist"
+				factor = 3
+				has_valid_ai_personality = no
+				NOR = {
+					has_ethic = "ethic_collectivist"
+					has_ethic = "ethic_fanatic_collectivist"
+					has_ethic = "ethic_spiritualist"
+					has_ethic = "ethic_fanatic_spiritualist"
 				}
 			}
-		}
-		
+			modifier = {
+				factor = 10
+				OR = {
+					has_ethic = "ethic_fanatic_individualist"
+					AND = {
+						has_ethic = "ethic_individualist"
+						OR = {
+							has_ethic = "ethic_fanatic_materialist"
+							has_ethic = "ethic_materialist"
+						}
+					}
+				}
+			}
+		}	
 		pop_happiness = {
 			base = 0
 			modifier = {
@@ -723,7 +864,9 @@ artificial_intelligence_policy = {
 			modifier = {
 				factor = 0
 				has_valid_ai_personality = yes
-				NOT = { has_ai_personality_behaviour = robot_liberator }
+				NOT = { 
+				has_ai_personality_behaviour = robot_liberator 
+				}
 			}	
 			modifier = {
 				factor = 2
@@ -735,6 +878,7 @@ artificial_intelligence_policy = {
 				OR = {
 					has_ethic = "ethic_spiritualist"
 					has_ethic = "ethic_fanatic_spiritualist"
+					has_ai_personality_behaviour = robot_exploiter
 				}
 			}
 			modifier = {
@@ -742,6 +886,7 @@ artificial_intelligence_policy = {
 				OR = {
 					has_ethic = "ethic_xenophobe"
 					has_ethic = "ethic_fanatic_xenophobe"
+					has_ai_personality_behaviour = robot_exploiter					
 				}
 			}
 			modifier = {
@@ -811,8 +956,32 @@ economic_policy = {
 			tile_resource_energy_mult = 0.25
 		}
 		valid = {
+			NOT = {
+				has_ethic = "ethic_fanatic_collectivist"
+			}
 		}	
 		AI_weight = {
+			modifier = {
+				factor = 10
+				has_valid_ai_personality = no
+				NOR = {
+					has_ethic = "ethic_collectivist"
+					has_ethic = "ethic_fanatic_collectivist"
+				}
+			}
+			modifier = {
+				factor = 20
+				has_valid_ai_personality = yes
+				has_ethic = "ethic_fanatic_individualist"
+			}
+			
+			modifier = {
+				factor = 0
+				OR = {
+					has_ethic = "ethic_collectivist"
+					has_ethic = "ethic_fanatic_collectivist"
+				}
+			}	
 		}
 		pop_happiness = {
 			base = 0
@@ -835,6 +1004,30 @@ economic_policy = {
 		valid = {
 		}	
 		AI_weight = {
+			modifier = {
+				factor = 10
+				has_valid_ai_personality = no
+				NOR = {
+					has_ethic = "ethic_fanatic_individualist"
+					has_ethic = "ethic_fanatic_collectivist"
+				}
+			}
+			modifier = {
+				factor = 20
+				has_valid_ai_personality = yes
+				OR = {
+				has_ethic = "ethic_individualist"
+				has_ethic = "ethic_collectivist"
+				}
+			}
+			
+			modifier = {
+				factor = 0
+				OR = {
+					has_ethic = "ethic_fanatic_collectivist"
+					has_ethic = "ethic_fanatic_individualist"
+				}
+			}	
 		}
 
 	}
@@ -845,12 +1038,13 @@ economic_policy = {
 			planned_economy
 		}		
 		valid = {
+			NOT = { 
+				has_ethic = "ethic_fanatic_individualist"
+				}
 		}	
 		modifier = {
 			tile_resource_minerals_mult = 0.25
 		}		
-		AI_weight = {
-		}
 		pop_happiness = {
 			base = 0
 			modifier = {
@@ -862,7 +1056,30 @@ economic_policy = {
 				pop_has_ethic = "ethic_fanatic_individualist"
 			}
 		}		
+		AI_weight = {
+			modifier = {
+				factor = 10
+				has_valid_ai_personality = no
+				NOR = {
+					has_ethic = "ethic_fanatic_collectivist"
+					has_ethic = "ethic_collectivist"
+				}
+			}
+			modifier = {
+				factor = 20
+				has_valid_ai_personality = yes
+				has_ethic = "ethic_fanatic_individualist"
 
+			}
+			
+			modifier = {
+				factor = 0
+				OR = {
+					has_ethic = "ethic_collectivist"
+					has_ethic = "ethic_fanatic_collectivist"
+				}
+			}	
+		}
 	}	
 }
 
@@ -881,6 +1098,9 @@ foreign_policy = {
 			isolationism
 		}		
 		valid = {
+			NOT = { 
+			has_ethic = "ethic_fanatic_xenophile"
+			}
 		}	
 		pop_happiness = {
 			base = 0
@@ -894,6 +1114,28 @@ foreign_policy = {
 			}
 		}		
 		AI_weight = {
+			modifier = {
+				factor = 10
+				has_valid_ai_personality = no
+				NOR = {
+					has_ethic = "ethic_xenophile"
+					has_ethic = "ethic_fanatic_xenophile"
+				}
+			}
+			modifier = {
+				factor = 20
+				has_valid_ai_personality = yes
+				has_ethic = "ethic_fanatic_xenophobe"
+
+			}
+			
+			modifier = {
+				factor = 0
+				OR = {
+					has_ethic = "ethic_xenophile"
+					has_ethic = "ethic_fanatic_xenophile"
+				}
+			}	
 		}
 	}
 	option = {
@@ -904,6 +1146,30 @@ foreign_policy = {
 		valid = {
 		}	
 		AI_weight = {
+			modifier = {
+				factor = 10
+				has_valid_ai_personality = no
+				NOR = {
+					has_ethic = "ethic_fanatic_xenophile"
+					has_ethic = "ethic_fanatic_xenophobe"
+				}
+			}
+			modifier = {
+				factor = 20
+				has_valid_ai_personality = yes
+				OR = {
+				has_ethic = "ethic_xenophile"
+				has_ethic = "ethic_xenophobe"
+				}
+			}
+			
+			modifier = {
+				factor = 0
+				OR = {
+					has_ethic = "ethic_fanatic_xenophile"
+					has_ethic = "ethic_fanatic_xenophobe"
+				}
+			}	
 		}
 	}
 	option = {
@@ -912,6 +1178,9 @@ foreign_policy = {
 			federalism
 		}		
 		valid = {
+		NOT = {
+			has_ethic = "ethic_fanatic_xenophobe"
+			}
 		}	
 		pop_happiness = {
 			base = 0
@@ -925,6 +1194,27 @@ foreign_policy = {
 			}
 		}	
 		AI_weight = {
+			modifier = {
+				factor = 10
+				has_valid_ai_personality = no
+				NOR = {
+					has_ethic = "ethic_xenophobe"
+					has_ethic = "ethic_fanatic_xenophobe"
+				}
+			}
+			modifier = {
+				factor = 20
+				has_valid_ai_personality = yes
+				has_ethic = "ethic_fanatic_xenophile"
+			}
+			
+			modifier = {
+				factor = 0
+				OR = {
+					has_ethic = "ethic_fanatic_xenophobe"
+					has_ethic = "ethic_xenophobe"
+				}
+			}	
 		}
 	}
 }
@@ -944,6 +1234,9 @@ religious_policy = {
 			state_church
 		}		
 		valid = {
+		NOT = {
+			has_ethic = "ethic_fanatic_materialist"
+			}
 		}	
 		modifier = {
 			pop_ethic_shift = -0.1
@@ -960,6 +1253,27 @@ religious_policy = {
 			}
 		}	
 		AI_weight = {
+			modifier = {
+				factor = 10
+				has_valid_ai_personality = no
+				NOR = {
+					has_ethic = "ethic_fanatic_materialist"
+					has_ethic = "ethic_materialist"
+				}
+			}
+			modifier = {
+				factor = 20
+				has_valid_ai_personality = yes
+				has_ethic = "ethic_fanatic_spiritualist"
+			}
+			
+			modifier = {
+				factor = 0
+				OR = {
+					has_ethic = "ethic_materialist"
+					has_ethic = "ethic_fanatic_materialist"
+				}
+			}	
 		}
 	}
 	option = {
@@ -970,6 +1284,30 @@ religious_policy = {
 		valid = {
 		}	
 		AI_weight = {
+			modifier = {
+				factor = 10
+				has_valid_ai_personality = no
+				NOR = {
+					has_ethic = "ethic_fanatic_materialist"
+					has_ethic = "ethic_fanatic_spiritualist"
+				}
+			}
+			modifier = {
+				factor = 20
+				has_valid_ai_personality = yes
+				OR = {
+				has_ethic = "ethic_materialist"
+				has_ethic = "ethic_spiritualist"
+				}
+			}
+			
+			modifier = {
+				factor = 0
+				OR = {
+					has_ethic = "ethic_fanatic_materialist"
+					has_ethic = "ethic_fanatic_spiritualist"
+				}
+			}	
 		}
 	}
 	option = {
@@ -981,6 +1319,9 @@ religious_policy = {
 			all_technology_research_speed = 0.1
 		}
 		valid = {
+			NOT = {
+					has_ethic = "ethic_fanatic_spiritualist"
+				}
 		}	
 		pop_happiness = {
 			base = 0
@@ -995,6 +1336,27 @@ religious_policy = {
 		}		
 	
 		AI_weight = {
+			modifier = {
+				factor = 10
+				has_valid_ai_personality = no
+				NOR = {
+					has_ethic = "ethic_spiritualist"
+					has_ethic = "ethic_fanatic_spiritualist"
+				}
+			}
+			modifier = {
+				factor = 20
+				has_valid_ai_personality = yes
+				has_ethic = "ethic_fanatic_materialist"
+			}
+			
+			modifier = {
+				factor = 0
+				OR = {
+					has_ethic = "ethic_spiritualist"
+					has_ethic = "ethic_fanatic_spiritualist"
+				}
+			}	
 		}
 	}	
 }
@@ -1014,6 +1376,9 @@ health_policy = {
 			no_healthcare
 		}		
 		valid = {
+		NOT = { 
+			has_ethic = "ethic_fanatic_collectivist"
+			}
 		}	
 		pop_happiness = {
 			base = 0
@@ -1027,6 +1392,27 @@ health_policy = {
 			}
 		}
 		AI_weight = {
+			modifier = {
+				factor = 10
+				has_valid_ai_personality = no
+				NOR = {
+					has_ethic = "ethic_collectivist"
+					has_ethic = "ethic_fanatic_collectivist"
+				}
+			}
+			modifier = {
+				factor = 20
+				has_valid_ai_personality = yes
+				has_ethic = "ethic_fanatic_individualist"
+			}
+			
+			modifier = {
+				factor = 0
+				OR = {
+					has_ethic = "ethic_collectivist"
+					has_ethic = "ethic_fanatic_collectivist"
+				}
+			}	
 		}
 	}
 	option = {
@@ -1041,6 +1427,29 @@ health_policy = {
 		pop_growth_req_mult = -0.1
 		}
 		AI_weight = {
+			modifier = {
+				factor = 10
+				has_valid_ai_personality = no
+				NOR = {
+					has_ethic = "ethic_fanatic_collectivist"
+					has_ethic = "ethic_fanatic_individualist"
+				}
+			}
+			modifier = {
+				factor = 20
+				has_valid_ai_personality = yes
+				OR = { 
+				has_ethic = "ethic_collectivist"
+				has_ethic = "ethic_individualist"
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_ethic = "ethic_fanatic_collectivist"
+					has_ethic = "ethic_fanatic_individualist"
+				}
+			}	
 		}
 	}	
 	option = {
@@ -1049,6 +1458,9 @@ health_policy = {
 			full_healthcare
 		}		
 		valid = {
+		NOT = {
+			has_ethic = "ethic_fanatic_individualist"
+			}
 		}	
 		modifier = {
 		tile_resource_energy_mult = -0.2
@@ -1066,8 +1478,28 @@ health_policy = {
 			}
 		}
 		AI_weight = {
+			modifier = {
+				factor = 10
+				has_valid_ai_personality = no
+				NOR = {
+					has_ethic = "ethic_individualist"
+					has_ethic = "ethic_fanatic_individualist"
+				}
+			}
+			modifier = {
+				factor = 20
+				has_valid_ai_personality = yes
+				has_ethic = "ethic_fanatic_collectivist"
+			}
+			
+			modifier = {
+				factor = 0
+				OR = {
+					has_ethic = "ethic_individualist"
+					has_ethic = "ethic_fanatic_individualist"
+				}
+			}	
 		}
-
 	}	
 }
 
@@ -1086,6 +1518,9 @@ justice_policy = {
 			capital_punishment
 		}		
 		valid = {
+		NOT = {
+			has_ethic = ethic_fanatic_pacifist
+			}
 		}	
 		modifier = {
 			pop_growth_req_mult = 0.1
@@ -1102,6 +1537,26 @@ justice_policy = {
 			}
 		}
 		AI_weight = {
+			modifier = {
+				factor = 10
+				has_valid_ai_personality = no
+				NOR = {
+					has_ethic = "ethic_pacifist"
+					has_ethic = "ethic_fanatic_pacifist"
+				}
+			}
+			modifier = {
+				factor = 20
+				has_valid_ai_personality = yes
+				has_ethic = "ethic_fanatic_militarist"
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_ethic = "ethic_pacifist"
+					has_ethic = "ethic_fanatic_pacifist"
+				}
+			}	
 		}
 	}
 	option = {
@@ -1116,6 +1571,29 @@ justice_policy = {
 		pop_growth_req_mult = 0.05
 		}		
 		AI_weight = {
+			modifier = {
+				factor = 10
+				has_valid_ai_personality = no
+				NOR = {
+					has_ethic = "ethic_fanatic_pacifist"
+					has_ethic = "ethic_fanatic_militarist"
+				}
+			}
+			modifier = {
+				factor = 20
+				has_valid_ai_personality = yes
+				OR = {
+				has_ethic = "ethic_militarist"
+				has_ethic = "ethic_pacifist"
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_ethic = "ethic_fanatic_pacifist"
+					has_ethic = "ethic_fanatic_militarist"
+				}
+			}	
 		}
 	}
 	option = {
@@ -1124,6 +1602,9 @@ justice_policy = {
 			rehab
 		}		
 		valid = {
+		NOT = {
+			has_ethic = "ethic_fanatic_militarist"
+			}
 		}	
 		modifier = {
 		tile_resource_energy_mult = -0.1
@@ -1139,7 +1620,28 @@ justice_policy = {
 				pop_has_ethic = "ethic_fanatic_militarist"
 			}
 		}
+		
 		AI_weight = {
+			modifier = {
+				factor = 10
+				has_valid_ai_personality = no
+				NOR = {
+					has_ethic = "ethic_militarist"
+					has_ethic = "ethic_fanatic_militarist"
+				}
+			}
+			modifier = {
+				factor = 20
+				has_valid_ai_personality = yes
+				has_ethic = "ethic_fanatic_pacifist"
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_ethic = "ethic_militarist"
+					has_ethic = "ethic_fanatic_militarist"
+				}
+			}	
 		}
 	}	
 }
@@ -1159,6 +1661,9 @@ environment_policy = {
 			unrestricted_env
 		}		
 		valid = {
+		NOT = {
+			has_ethic = "ethic_fanatic_spiritualist"
+			}
 		}	
 		modifier = {
 			pop_environment_tolerance = -0.1
@@ -1175,6 +1680,26 @@ environment_policy = {
 			}
 		}
 		AI_weight = {
+			modifier = {
+				factor = 10
+				has_valid_ai_personality = no
+				NOR = {
+					has_ethic = "ethic_fanatic_spiritualist"
+					has_ethic = "ethic_spiritualist"
+				}
+			}
+			modifier = {
+				factor = 20
+				has_valid_ai_personality = yes
+				has_ethic = "ethic_fanatic_materialist"
+				}
+			modifier = {
+				factor = 0
+				OR = {
+					has_ethic = "ethic_spiritualist"
+					has_ethic = "ethic_fanatic_spiritualist"
+				}
+			}
 		}
 	}
 	option = {
@@ -1183,12 +1708,36 @@ environment_policy = {
 			regulated_env
 		}		
 		valid = {
+
 		}	
 		modifier = {
 			pop_environment_tolerance = -0.05
 			tile_resource_minerals_mult = -0.05
 		}
 		AI_weight = {
+			modifier = {
+				factor = 10
+				has_valid_ai_personality = no
+				NOR = {
+					has_ethic = "ethic_fanatic_spiritualist"
+					has_ethic = "ethic_fanatic_materialist"
+				}
+			}
+			modifier = {
+				factor = 20
+				has_valid_ai_personality = yes
+				OR = {
+				has_ethic = "ethic_materialist"
+				has_ethic = "ethic_spiritualist"
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_ethic = "ethic_fanatic_spiritualist"
+					has_ethic = "ethic_fanatic_materialist"
+				}
+			}
 		}
 	}
 	option = {
@@ -1197,6 +1746,9 @@ environment_policy = {
 			balanced_env
 		}		
 		valid = {
+		NOT = {
+			has_ethic = "ethic_fanatic_materialist"
+			}
 		}	
 		modifier = {
 			tile_resource_minerals_mult = -0.1
@@ -1213,6 +1765,26 @@ environment_policy = {
 			}
 		}
 		AI_weight = {
+			modifier = {
+				factor = 10
+				has_valid_ai_personality = no
+				NOR = {
+					has_ethic = "ethic_materialist"
+					has_ethic = "ethic_fanatic_materialist"
+				}
+			}
+			modifier = {
+				factor = 20
+				has_valid_ai_personality = yes
+				has_ethic = "ethic_fanatic_spiritualist"
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_ethic = "ethic_materialist"
+					has_ethic = "ethic_fanatic_materialist"
+				}
+			}			
 		}
 	}	
 }

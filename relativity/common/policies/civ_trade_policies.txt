@@ -6,7 +6,11 @@ civilian_trade = {
 	
 	option = {
 		name = "unrestricted_trade"	
-		
+		valid = {
+		NOT = {
+			has_ethic = "ethic_fanatic_collectivist"
+			}
+	}
 		policy_flags = {
 			unrestricted_trade
 		}
@@ -26,8 +30,10 @@ civilian_trade = {
 			base = 10
 			modifier = {
 				factor = 50
+				OR = {
 				has_ethic = "ethic_fanatic_collectivist"
 				has_ethic = "ethic_collectivist"
+				}
 			}
 		}
 	}
