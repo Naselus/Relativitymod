@@ -256,11 +256,11 @@ tech_global_research_initiative = {
 
 tech_physics_lab_4 = {
 	area = physics
-	cost = @tier2cost2
+	cost = @tier2cost1
 	tier = 2
 	category = { physics_labs }
 	prerequisites = { "tech_physics_lab_3"}	
-	weight = @tier2weight2
+	weight = @tier2weight1
 	
 	modifier = {
 		country_physics_tech_research_speed = 0.03
@@ -275,12 +275,12 @@ tech_physics_lab_4 = {
 }
 
 tech_physics_lab_5 = {
-	cost = @tier2cost3
+	cost = @tier2cost2
 	area = physics
 	tier = 2
 	category = { physics_labs }
 	prerequisites = { "tech_physics_lab_4" "tech_power_plant_6"}
-	weight = @tier2weight3
+	weight = @tier2weight2
 		
 	#unlock physics lab lvl 2
 	
@@ -324,11 +324,11 @@ tech_physics_lab_5 = {
 
 tech_physics_lab_6 = {
 	area = physics
-	cost = @tier3cost1
-	tier = 3
+	cost = @tier2cost3
+	tier = 2
 	category = { physics_labs }
 	prerequisites = { "tech_physics_lab_5"}	
-	weight = @tier3weight1
+	weight = @tier2weight3
 	
 	modifier = {
 		country_physics_tech_research_speed = 0.03
@@ -344,11 +344,11 @@ tech_physics_lab_6 = {
 
 tech_physics_lab_7 = {
 	area = physics
-	cost = @tier3cost2
+	cost = @tier3cost1
 	tier = 3
 	category = { physics_labs }
 	prerequisites = { "tech_physics_lab_6"}	
-	weight = @tier3weight2
+	weight = @tier3weight1
 	
 	modifier = {
 		country_physics_tech_research_speed = 0.03
@@ -364,11 +364,11 @@ tech_physics_lab_7 = {
 
 tech_physics_lab_8 = {
 	area = physics
-	cost = @tier3cost3
+	cost = @tier3cost1
 	tier = 3
 	category = { physics_labs }
 	prerequisites = { "tech_physics_lab_7"}	
-	weight = @tier3weight3
+	weight = @tier3weight1
 	
 	modifier = {
 		country_physics_tech_research_speed = 0.03
@@ -384,11 +384,11 @@ tech_physics_lab_8 = {
 
 tech_physics_lab_9 = {
 	area = physics
-	cost = @tier3cost4
+	cost = @tier3cost2
 	tier = 3
 	category = { physics_labs }
 	prerequisites = { "tech_physics_lab_8"}	
-	weight = @tier3weight4
+	weight = @tier3weight2
 	
 	modifier = {
 		country_physics_tech_research_speed = 0.03
@@ -403,12 +403,12 @@ tech_physics_lab_9 = {
 }
 
 tech_physics_lab_10 = {
-	cost = @tier4cost1
+	cost = @tier3cost3
 	area = physics
-	tier = 4
+	tier = 3
 	category = { physics_labs }
 	prerequisites = { "tech_physics_lab_9" "tech_galactic_ambitions"}
-	weight = @tier4weight1
+	weight = @tier3weight3
 		
 	# # unlock physics lab lvl 3
 	
@@ -452,11 +452,11 @@ tech_physics_lab_10 = {
 
 tech_physics_lab_11 = {
 	area = physics
-	cost = @tier4cost2
-	tier = 4
+	cost = @tier3cost3
+	tier = 3
 	category = { physics_labs }
 	prerequisites = { "tech_physics_lab_10"}	
-	weight = @tier4weight2
+	weight = @tier3weight3
 	
 	modifier = {
 		country_physics_tech_research_speed = 0.03
@@ -472,11 +472,11 @@ tech_physics_lab_11 = {
 
 tech_physics_lab_12 = {
 	area = physics
-	cost = @tier4cost4
-	tier = 4
+	cost = @tier3cost4
+	tier = 3
 	category = { physics_labs }
 	prerequisites = { "tech_physics_lab_11"}	
-	weight = @tier4weight4
+	weight = @tier3weight4
 	
 	modifier = {
 		country_physics_tech_research_speed = 0.03
@@ -492,11 +492,11 @@ tech_physics_lab_12 = {
 
 tech_physics_lab_13 = {
 	area = physics
-	cost = @tier5cost2
-	tier = 5
+	cost = @tier3cost4
+	tier = 3
 	category = { physics_labs }
 	prerequisites = { "tech_physics_lab_12"}	
-	weight = @tier5weight2
+	weight = @tier3weight4
 	
 	modifier = {
 		country_physics_tech_research_speed = 0.03
@@ -512,11 +512,11 @@ tech_physics_lab_13 = {
 
 tech_physics_lab_14 = {
 	area = physics
-	cost = @tier5cost3
-	tier = 5
+	cost = @tier4cost1
+	tier = 4
 	category = { physics_labs }
 	prerequisites = { "tech_physics_lab_13"}	
-	weight = @tier5weight3
+	weight = @tier4weight1
 	
 	modifier = {
 		country_physics_tech_research_speed = 0.03
@@ -532,11 +532,11 @@ tech_physics_lab_14 = {
 
 tech_physics_lab_15 = {
 	area = physics
-	cost = @tier5cost4
-	tier = 5
+	cost = @tier4cost1
+	tier = 4
 	category = { physics_labs }
 	prerequisites = { "tech_physics_lab_14" "tech_galactic_ambitions" "tech_power_plant_11"}	
-	weight = @tier5weight4
+	weight = @tier4weight1
 		
 	# # unlock physics lab lvl 4
 	
@@ -580,11 +580,11 @@ tech_physics_lab_15 = {
 
 tech_physics_lab_16 = {
 	area = physics
-	cost = @tier6cost1
-	tier = 6
+	cost = @tier4cost2
+	tier = 4
 	category = { physics_labs }
 	prerequisites = { "tech_physics_lab_15"}	
-	weight = @tier6weight1
+	weight = @tier4weight2
 	
 	modifier = {
 		country_physics_tech_research_speed = 0.03
@@ -600,11 +600,11 @@ tech_physics_lab_16 = {
 
 tech_physics_lab_17 = {
 	area = physics
-	cost = @tier6cost2
-	tier = 6
+	cost = @tier4cost2
+	tier = 4
 	category = { physics_labs }
 	prerequisites = { "tech_physics_lab_16"}	
-	weight = @tier6weight2
+	weight = @tier4weight2
 	
 	modifier = {
 		country_physics_tech_research_speed = 0.03
@@ -620,11 +620,11 @@ tech_physics_lab_17 = {
 
 tech_physics_lab_18 = {
 	area = physics
-	cost = @tier6cost3
-	tier = 6
+	cost = @tier4cost2
+	tier = 4
 	category = { physics_labs }
 	prerequisites = { "tech_physics_lab_17"}	
-	weight = @tier6weight3
+	weight = @tier4weight2
 	
 	modifier = {
 		country_physics_tech_research_speed = 0.03
@@ -640,11 +640,11 @@ tech_physics_lab_18 = {
 
 tech_physics_lab_19 = {
 	area = physics
-	cost = @tier7cost1
-	tier = 7
+	cost = @tier4cost3
+	tier = 4
 	category = { physics_labs }
 	prerequisites = { "tech_physics_lab_18"}	
-	weight = @tier7weight1
+	weight = @tier4weight3
 	
 	modifier = {
 		country_physics_tech_research_speed = 0.03
@@ -660,11 +660,11 @@ tech_physics_lab_19 = {
 
 tech_physics_lab_20 = {
 	area = physics
-	cost = @tier7cost2
-	tier = 7
+	cost = @tier4cost4
+	tier = 4
 	category = { physics_labs }
 	prerequisites = { "tech_physics_lab_19" "tech_galactic_ambitions" }	
-	weight = @tier7weight2
+	weight = @tier4weight4
 		
 	# # unlock physics lab lvl 5
 	

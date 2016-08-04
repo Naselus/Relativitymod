@@ -163,11 +163,18 @@ tech_tb_mountain_range = {
 				area = engineering
 				has_trait = "leader_trait_expertise_new_worlds"
 			}
+		}	
+		modifier = {
+			factor = 3
+			OR = {
+			has_trait = "trait_rapid_breeders"
+			has_trait = "trait_nonadaptive"
+			}
 		}
 		modifier = {
 			factor = 0
 			num_owned_planets < 2
-		}	
+		}
 	}
 }
 
@@ -211,6 +218,7 @@ tech_tb_volcano = {
 			factor = 0
 			num_owned_planets < 2
 		}
+		
 	}
 	
 	ai_weight = {
@@ -238,6 +246,13 @@ tech_tb_volcano = {
 			factor = 0
 			num_owned_planets < 2
 		}	
+		modifier = {
+			factor = 3
+			OR = {
+			has_trait = "trait_rapid_breeders"
+			has_trait = "trait_nonadaptive"
+			}
+		}
 	}
 }
 
@@ -307,7 +322,14 @@ tech_tb_dangerous_wildlife = {
 		modifier = {
 			factor = 0
 			num_owned_planets < 2
-		}	
+		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_trait = "trait_rapid_breeders"
+			has_trait = "trait_nonadaptive"
+			}
+		}		
 	}
 }
 
@@ -377,7 +399,14 @@ tech_tb_dense_jungle = {
 		modifier = {
 			factor = 0
 			num_owned_planets < 2
-		}	
+		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_trait = "trait_rapid_breeders"
+			has_trait = "trait_nonadaptive"
+			}
+		}
 	}
 }
 
@@ -447,7 +476,14 @@ tech_tb_quicksand_basin = {
 		modifier = {
 			factor = 0
 			num_owned_planets < 2
-		}	
+		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_trait = "trait_rapid_breeders"
+			has_trait = "trait_nonadaptive"
+			}
+		}
 	}
 }
 
@@ -512,6 +548,13 @@ tech_tb_noxious_swamp = {
 			research_leader = {
 				area = engineering
 				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_trait = "trait_rapid_breeders"
+			has_trait = "trait_nonadaptive"
 			}
 		}
 		modifier = {
@@ -585,6 +628,13 @@ tech_tb_massive_glacier = {
 			}
 		}
 		modifier = {
+			factor = 3
+			OR = {
+			has_trait = "trait_rapid_breeders"
+			has_trait = "trait_nonadaptive"
+			}
+		}
+		modifier = {
 			factor = 0
 			num_owned_planets < 2
 		}	
@@ -652,6 +702,13 @@ tech_tb_toxic_kelp = {
 			research_leader = {
 				area = engineering
 				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_trait = "trait_rapid_breeders"
+			has_trait = "trait_nonadaptive"
 			}
 		}
 		modifier = {
@@ -725,6 +782,13 @@ tech_tb_deep_sinkhole = {
 			}
 		}
 		modifier = {
+			factor = 3
+			OR = {
+			has_trait = "trait_rapid_breeders"
+			has_trait = "trait_nonadaptive"
+			}
+		}
+		modifier = {
 			factor = 0
 			num_owned_planets < 2
 		}	
@@ -769,6 +833,13 @@ tech_terrestrial_sculpting = {
 				has_trait = "leader_trait_expertise_new_worlds"
 			}
 		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_trait = "trait_rapid_breeders"
+			has_trait = "trait_nonadaptive"
+			}
+		}
 	}	
 }
 
@@ -807,6 +878,13 @@ tech_atmospheric_manipulation = {
 			research_leader = {
 				area = engineering
 				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_trait = "trait_rapid_breeders"
+			has_trait = "trait_nonadaptive"
 			}
 		}
 	}
@@ -857,6 +935,13 @@ tech_terraforming_12 = {
 				ideal_planet_class = pc_desert
 			}
 		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_trait = "trait_rapid_breeders"
+			has_trait = "trait_nonadaptive"
+			}
+		}
 	}
 }
 
@@ -903,6 +988,13 @@ tech_terraforming_13 = {
 			OR = {
 				ideal_planet_class = pc_tundra
 				ideal_planet_class = pc_desert
+			}
+		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_trait = "trait_rapid_breeders"
+			has_trait = "trait_nonadaptive"
 			}
 		}
 	}
@@ -953,6 +1045,13 @@ tech_terraforming_14 = {
 				ideal_planet_class = pc_desert
 			}
 		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_trait = "trait_rapid_breeders"
+			has_trait = "trait_nonadaptive"
+			}
+		}
 	}
 }
 
@@ -999,6 +1098,13 @@ tech_terraforming_15 = {
 			OR = {
 				ideal_planet_class = pc_tundra
 				ideal_planet_class = pc_desert
+			}
+		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_trait = "trait_rapid_breeders"
+			has_trait = "trait_nonadaptive"
 			}
 		}
 	}
@@ -1049,6 +1155,13 @@ tech_terraforming_16 = {
 				ideal_planet_class = pc_desert
 			}
 		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_trait = "trait_rapid_breeders"
+			has_trait = "trait_nonadaptive"
+			}
+		}
 	}
 }
 
@@ -1097,6 +1210,13 @@ tech_terraforming_17 = {
 				ideal_planet_class = pc_desert
 			}
 		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_trait = "trait_rapid_breeders"
+			has_trait = "trait_nonadaptive"
+			}
+		}
 	}
 }
 
@@ -1112,7 +1232,23 @@ tech_terraforming_18= {
 		pop_environment_tolerance = 0.05
 	}
 	
-	ai_weight = { factor = 1 }
+	ai_weight = {
+		factor = 3
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_trait = "trait_rapid_breeders"
+			has_trait = "trait_nonadaptive"
+			}
+		}
+	}
 }
 
 tech_terraforming_19 = {
@@ -1127,7 +1263,23 @@ tech_terraforming_19 = {
 		pop_environment_tolerance = 0.05
 	}
 	
-	ai_weight = { factor = 1 }
+	ai_weight = {
+		factor = 3
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_trait = "trait_rapid_breeders"
+			has_trait = "trait_nonadaptive"
+			}
+		}
+	}
 }
 
 tech_terraforming_20 = {
@@ -1142,6 +1294,22 @@ tech_terraforming_20 = {
 		pop_environment_tolerance = 0.05
 	}
 	
-	ai_weight = { factor = 1 }
+	ai_weight = {
+		factor = 3
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_trait = "trait_rapid_breeders"
+			has_trait = "trait_nonadaptive"
+			}
+		}
+	}
 }
 

@@ -103,10 +103,10 @@
 tech_void_1 = {
 	area = engineering
 	cost = @tier2cost1
-	tier = 4
+	tier = 2
 	category = { voidcraft }
 	prerequisites = { "tech_spaceport_3"}	
-	weight = @tier4weight3
+	weight = @tier2weight1
 	
 	ai_weight = {
 		modifier = {
@@ -118,11 +118,11 @@ tech_void_1 = {
 
 tech_void_2 = {
 	area = engineering
-	cost = @tier3cost1
-	tier = 4
+	cost = @tier2cost4
+	tier = 2
 	category = { voidcraft }
 	prerequisites = {"tech_spaceport_5"}	
-	weight = @tier4weight3
+	weight = @tier2weight4
 	ai_weight = {
 		modifier = {
 			factor = 10
@@ -133,11 +133,11 @@ tech_void_2 = {
 
 tech_void_3 = {
 	area = engineering
-	cost = @tier4cost1
-	tier = 4
+	cost = @tier3cost4
+	tier = 3
 	category = { voidcraft }
 	prerequisites = {"tech_spaceport_7"}
-	weight = @tier4weight3
+	weight = @tier3weight4
 	ai_weight = {
 		modifier = {
 			factor = 10
@@ -149,11 +149,11 @@ tech_void_3 = {
 
 tech_void_4 = {
 	area = engineering
-	cost = @tier5cost1
+	cost = @tier4cost2
 	tier = 4
 	category = { voidcraft }
 	prerequisites = {"tech_spaceport_9"}
-	weight = @tier4weight3
+	weight = @tier4weight2
 	ai_weight = {
 		modifier = {
 			factor = 10
@@ -164,11 +164,11 @@ tech_void_4 = {
 
 tech_void_5 = {
 	area = engineering
-	cost = @tier6cost1
+	cost = @tier4cost4
 	tier = 4
 	category = { voidcraft }
 	prerequisites = {"tech_spaceport_11"}
-	weight = @tier4weight3
+	weight = @tier4weight4
 
 	prereqfor_desc = {
 		ship = {

@@ -116,12 +116,12 @@ tech_eco_simulation = {
 
 #Hydroponics
 tech_hydroponics = {
-	cost = @tier1cost1
+	cost = @tier1cost4
 	area = society
 	tier = 1
 	category = { farming }
 	prerequisites = { "tech_eco_simulation" }
-	weight = @tier1weight1
+	weight = @tier1weight4
 	
 	# unlocks farms level 2
 	
@@ -146,11 +146,11 @@ tech_hydroponics = {
 	ai_weight = {
 		factor = 1.5 #farms are good
 		modifier = {
-			factor = 1.25
+			factor = 1.5
 			has_ethic = ethic_pacifist
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.75
 			has_ethic = ethic_fanatic_pacifist
 		}
 		modifier = {
@@ -160,17 +160,24 @@ tech_hydroponics = {
 				has_trait = "leader_trait_expertise_farming"
 			}
 		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_ai_personality = slaving_despots
+			has_trait = "trait_agrarian"
+			}
+		}
 	}
 }
 
 #Gene Crops
 tech_gene_crops = {
-	cost = @tier2cost1
+	cost = @tier2cost3
 	area = society
 	tier = 2
 	category = { farming }
 	prerequisites = { "tech_hydroponics" "tech_colonial_centralization"}
-	weight = @tier2weight1
+	weight = @tier2weight3
 	
 	# unlocks farms level 3
 	
@@ -195,11 +202,11 @@ tech_gene_crops = {
 	ai_weight = {
 		factor = 1.5 #farms are good
 		modifier = {
-			factor = 1.25
+			factor = 1.5
 			has_ethic = ethic_pacifist
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.75
 			has_ethic = ethic_fanatic_pacifist
 		}
 		modifier = {
@@ -209,17 +216,24 @@ tech_gene_crops = {
 				has_trait = "leader_trait_expertise_farming"
 			}
 		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_ai_personality = slaving_despots
+			has_trait = "trait_agrarian"
+			}
+		}
 	}
 }
 
 #Nano-Vitality Crops
 tech_nano_vitality_crops = {
-	cost = @tier2cost4
+	cost = @tier3cost2
 	area = society
-	tier = 2
+	tier = 3
 	category = { farming }	
 	prerequisites = { "tech_gene_crops" "tech_galactic_administration"}
-	weight = @tier2weight4
+	weight = @tier3weight2
 	
 	# unlocks farms level 4
 	
@@ -244,11 +258,11 @@ tech_nano_vitality_crops = {
 	ai_weight = {
 		factor = 1.5 #farms are good
 		modifier = {
-			factor = 1.25
+			factor = 1.5
 			has_ethic = ethic_pacifist
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.75
 			has_ethic = ethic_fanatic_pacifist
 		}
 		modifier = {
@@ -258,16 +272,23 @@ tech_nano_vitality_crops = {
 				has_trait = "leader_trait_expertise_farming"
 			}
 		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_ai_personality = slaving_despots
+			has_trait = "trait_agrarian"
+			}
+		}
 	}
 }
 
 tech_nutrient_replication = {
-	cost = @tier3cost3
+	cost = @tier4cost2
 	area = society
-	tier = 3
+	tier = 4
 	category = { farming }
 	prerequisites = { "tech_nano_vitality_crops" }
-	weight = @tier3weight3
+	weight = @tier4weight2
 		
 	modifier = {
 		tile_resource_food_mult = 0.25
@@ -292,12 +313,13 @@ tech_nutrient_replication = {
 	}
 	
 	ai_weight = {
+		factor = 1.5 #farms are good
 		modifier = {
-			factor = 1.25
+			factor = 1.5
 			has_ethic = ethic_pacifist
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.75
 			has_ethic = ethic_fanatic_pacifist
 		}
 		modifier = {
@@ -305,6 +327,13 @@ tech_nutrient_replication = {
 			research_leader = {
 				area = society
 				has_trait = "leader_trait_expertise_farming"
+			}
+		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_ai_personality = slaving_despots
+			has_trait = "trait_agrarian"
 			}
 		}
 	}

@@ -184,6 +184,23 @@ tech_colonization_2 = {
 				has_trait = "leader_trait_expertise_new_worlds"
 			}
 		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_nonadaptive"
+			has_trait = "trait_slow_breeders"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = hive_mind
+			has_ai_personality = erudite_explorers
+			has_ai_personality = migrating_flock
+			has_ai_personality_behaviour = migrator
+			has_ai_personality_behaviour = conqueror
+			}
+		}
 	}
 }
 
@@ -218,6 +235,23 @@ tech_colonization_3 = {
 				has_trait = "leader_trait_expertise_new_worlds"
 			}
 		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_nonadaptive"
+			has_trait = "trait_slow_breeders"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = hive_mind
+			has_ai_personality = erudite_explorers
+			has_ai_personality = migrating_flock
+			has_ai_personality_behaviour = migrator
+			has_ai_personality_behaviour = conqueror
+			}
+		}
 	}
 }
 
@@ -236,6 +270,33 @@ tech_frontier_health = {
 			research_leader = {
 				area = society
 				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_nonadaptive"
+			has_trait = "trait_slow_breeders"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = hive_mind
+			has_ai_personality = erudite_explorers
+			has_ai_personality = migrating_flock
+			has_ai_personality_behaviour = migrator
+			has_ai_personality_behaviour = conqueror
 			}
 		}
 	}
@@ -810,6 +871,23 @@ tech_frontier_collectives = {
 				has_trait = "leader_trait_expertise_new_worlds"
 			}
 		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_nonadaptive"
+			has_trait = "trait_slow_breeders"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = hive_mind
+			has_ai_personality = erudite_explorers
+			has_ai_personality = migrating_flock
+			has_ai_personality_behaviour = migrator
+			has_ai_personality_behaviour = conqueror
+			}
+		}
 	}
 }
 
@@ -866,14 +944,31 @@ tech_frontier_commissars = {
 	
 	 ai_weight = {
 		 factor = 3 #rare tech
-		 modifier = {
-			 factor = 1.25
-			 research_leader = {
-				 area = society
-				 has_trait = "leader_trait_expertise_new_worlds"
-			 }
-		 }
-	 }
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_nonadaptive"
+			has_trait = "trait_slow_breeders"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = hive_mind
+			has_ai_personality = erudite_explorers
+			has_ai_personality = migrating_flock
+			has_ai_personality_behaviour = migrator
+			has_ai_personality_behaviour = conqueror
+			}
+		}
+	}
  }
 
 #Frontier Initiatives
@@ -936,6 +1031,23 @@ tech_frontier_initiatives = {
 				has_trait = "leader_trait_expertise_new_worlds"
 			}
 		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_nonadaptive"
+			has_trait = "trait_slow_breeders"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = hive_mind
+			has_ai_personality = erudite_explorers
+			has_ai_personality = migrating_flock
+			has_ai_personality_behaviour = migrator
+			has_ai_personality_behaviour = conqueror
+			}
+		}
 	}
 }
 
@@ -993,16 +1105,33 @@ tech_frontier_traditions = {
 				has_trait = "leader_trait_expertise_new_worlds"
 			}
 		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_nonadaptive"
+			has_trait = "trait_slow_breeders"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = hive_mind
+			has_ai_personality = erudite_explorers
+			has_ai_personality = migrating_flock
+			has_ai_personality_behaviour = migrator
+			has_ai_personality_behaviour = conqueror
+			}
+		}
 	}
 }
 
 tech_colonization_16 = {
 	area = society
-	cost = @tier4cost1
-	tier = 4
+	cost = @tier3cost3
+	tier = 3
 	category = { new_worlds }
 	prerequisites = { "tech_colonization_3"}
-	weight = @tier4weight1
+	weight = @tier3weight3
 	
 	
 	modifier = {
@@ -1014,8 +1143,25 @@ tech_colonization_16 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = engineering
+				area = society
 				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_nonadaptive"
+			has_trait = "trait_slow_breeders"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = hive_mind
+			has_ai_personality = erudite_explorers
+			has_ai_personality = migrating_flock
+			has_ai_personality_behaviour = migrator
+			has_ai_personality_behaviour = conqueror
 			}
 		}
 	}
@@ -1023,10 +1169,92 @@ tech_colonization_16 = {
 
 tech_colonization_17 = {
 	area = society
-	cost = @tier4cost3
+	cost = @tier4cost1
 	tier = 4
 	category = { new_worlds }
 	prerequisites = { "tech_colonization_16" }
+	weight = @tier4weight1
+	
+	modifier = {
+		pop_environment_tolerance = 0.05
+	}
+	
+	ai_weight = {
+		factor = 3
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_nonadaptive"
+			has_trait = "trait_slow_breeders"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = hive_mind
+			has_ai_personality = erudite_explorers
+			has_ai_personality = migrating_flock
+			has_ai_personality_behaviour = migrator
+			has_ai_personality_behaviour = conqueror
+			}
+		}
+	}
+}
+
+tech_colonization_18 = {
+	area = society
+	cost = @tier4cost2
+	tier = 4
+	category = { new_worlds }
+	prerequisites = { "tech_colonization_17" }
+	weight = @tier4weight2
+	
+	modifier = {
+		pop_environment_tolerance = 0.05
+	}
+	
+	ai_weight = {
+		factor = 3
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_nonadaptive"
+			has_trait = "trait_slow_breeders"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = hive_mind
+			has_ai_personality = erudite_explorers
+			has_ai_personality = migrating_flock
+			has_ai_personality_behaviour = migrator
+			has_ai_personality_behaviour = conqueror
+			}
+		}
+	}
+}
+
+tech_colonization_19 = {
+	area = society
+	cost = @tier4cost3
+	tier = 4
+	category = { new_worlds }
+	prerequisites = { "tech_colonization_18" }
 	weight = @tier4weight3
 	
 	modifier = {
@@ -1038,56 +1266,25 @@ tech_colonization_17 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = engineering
+				area = society
 				has_trait = "leader_trait_expertise_new_worlds"
 			}
 		}
-	}
-}
-
-tech_colonization_18 = {
-	area = society
-	cost = @tier5cost1
-	tier = 5
-	category = { new_worlds }
-	prerequisites = { "tech_colonization_17" }
-	weight = @tier5weight1
-	
-	modifier = {
-		pop_environment_tolerance = 0.05
-	}
-	
-	ai_weight = {
-		factor = 3
 		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_new_worlds"
+			factor = 2
+			OR = {
+			has_trait = "trait_nonadaptive"
+			has_trait = "trait_slow_breeders"
 			}
 		}
-	}
-}
-
-tech_colonization_19 = {
-	area = society
-	cost = @tier5cost1
-	tier = 5
-	category = { new_worlds }
-	prerequisites = { "tech_colonization_18" }
-	weight = @tier5weight3
-	
-	modifier = {
-		pop_environment_tolerance = 0.05
-	}
-	
-	ai_weight = {
-		factor = 3
 		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_new_worlds"
+			factor = 2
+			OR = {
+			has_ai_personality = hive_mind
+			has_ai_personality = erudite_explorers
+			has_ai_personality = migrating_flock
+			has_ai_personality_behaviour = migrator
+			has_ai_personality_behaviour = conqueror
 			}
 		}
 	}
@@ -1110,8 +1307,25 @@ tech_colonization_20 = {
 		modifier = {
 			factor = 1.25
 			research_leader = {
-				area = engineering
+				area = society
 				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_nonadaptive"
+			has_trait = "trait_slow_breeders"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = hive_mind
+			has_ai_personality = erudite_explorers
+			has_ai_personality = migrating_flock
+			has_ai_personality_behaviour = migrator
+			has_ai_personality_behaviour = conqueror
 			}
 		}
 	}

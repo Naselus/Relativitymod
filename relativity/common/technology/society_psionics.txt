@@ -182,7 +182,7 @@ tech_psionic_theory = {
 	ai_weight = {
 		factor = 5 #very rare tech
 		modifier = {
-			factor = 1.5
+			factor = 2
 			OR = {
 				has_ethic = ethic_spiritualist
 				has_ethic = ethic_fanatic_spiritualist
@@ -194,6 +194,10 @@ tech_psionic_theory = {
 				area = society
 				has_trait = "leader_trait_expertise_psionics"
 			}
+		}
+		modifier = {
+			factor = 2
+			has_ai_personality = hive_mind
 		}
 	}
 }
@@ -262,7 +266,7 @@ tech_telepathy = {
 	ai_weight = {
 		factor = 5 #very rare tech
 		modifier = {
-			factor = 1.5
+			factor = 2
 			OR = {
 				has_ethic = ethic_spiritualist
 				has_ethic = ethic_fanatic_spiritualist
@@ -275,17 +279,21 @@ tech_telepathy = {
 				has_trait = "leader_trait_expertise_psionics"
 			}
 		}
+		modifier = {
+			factor = 2
+			has_ai_personality = hive_mind
+		}
 	}
 }
 
 tech_precognition_interface = {
-	cost = @tier3cost1
+	cost = @tier3cost2
 	area = society
 	tier = 3
 	category = { psionics }
 	is_rare = yes
 	prerequisites = { "tech_telepathy" }
-	weight = @tier3weight1
+	weight = @tier3weight2
 	
 	# unlocks precognitive interface-component, combat-computer granting evasion to ships
 	
@@ -363,6 +371,17 @@ tech_precognition_interface = {
 				area = society
 				has_trait = "leader_trait_expertise_psionics"
 			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_ai_personality = evangelising_zealots
+				has_ai_personality = fanatic_purifiers
+			}
+		}
+		modifier = {
+			factor = 2
+			has_ai_personality = hive_mind
 		}
 	}
 }

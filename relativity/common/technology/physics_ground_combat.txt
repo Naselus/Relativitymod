@@ -122,11 +122,11 @@ tech_assault_armies = {
 
 tech_drop_pod = {
 	area = physics
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier1cost4
+	tier = 1
 	category = { ground_combat }
 	prerequisites = { "tech_assault_armies" }
-	weight = @tier2weight1
+	weight = @tier1weight4
 	
 	modifier = {
 		army_health = 0.05
@@ -134,7 +134,24 @@ tech_drop_pod = {
 	}
 	
 	
-	ai_weight = { factor = 1 }
+	ai_weight = { 
+		factor = 1
+		modifier = {
+			factor = 2
+			OR = {
+				has_trait = "trait_strong"
+				has_trait = "trait_very_strong"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_ethic = "ethic_militarist"
+				has_ethic = "ethic_fanatic_militarist"
+				has_ai_personality_behaviour = conqueror
+			}
+		}
+	}
 }
 
 tech_army_4 = {
@@ -151,7 +168,24 @@ tech_army_4 = {
 	}
 	
 	
-	ai_weight = { factor = 1 }
+	ai_weight = { 
+		factor = 1
+		modifier = {
+			factor = 2
+			OR = {
+				has_trait = "trait_strong"
+				has_trait = "trait_very_strong"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_ethic = "ethic_militarist"
+				has_ethic = "ethic_fanatic_militarist"
+				has_ai_personality_behaviour = conqueror
+			}
+		}
+	}
 }
 
 tech_army_5 = {
@@ -168,16 +202,33 @@ tech_army_5 = {
 	}
 	
 	
-	ai_weight = { factor = 1 }
+	ai_weight = { 
+		factor = 1
+		modifier = {
+			factor = 2
+			OR = {
+				has_trait = "trait_strong"
+				has_trait = "trait_very_strong"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_ethic = "ethic_militarist"
+				has_ethic = "ethic_fanatic_militarist"
+				has_ai_personality_behaviour = conqueror
+			}
+		}
+	}
 }
 
 tech_army_6 = {
 	area = physics
-	cost = @tier2cost3
+	cost = @tier2cost2
 	tier = 2
 	category = { ground_combat }
 	prerequisites = { "tech_army_5" }
-	weight = @tier2weight1
+	weight = @tier2weight2
 	
 	modifier = {
 		army_upkeep_mult = -0.05
@@ -185,7 +236,24 @@ tech_army_6 = {
 	}
 	
 	
-	ai_weight = { factor = 1 }
+	ai_weight = { 
+		factor = 1
+		modifier = {
+			factor = 2
+			OR = {
+				has_trait = "trait_strong"
+				has_trait = "trait_very_strong"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_ethic = "ethic_militarist"
+				has_ethic = "ethic_fanatic_militarist"
+				has_ai_personality_behaviour = conqueror
+			}
+		}
+	}
 }
 
 tech_army_7 = {
@@ -194,7 +262,7 @@ tech_army_7 = {
 	tier = 2
 	category = { ground_combat }
 	prerequisites = { "tech_army_6" }
-	weight = @tier2weight1
+	weight = @tier2weight3
 	
 	modifier = {
 		army_health = 0.05
@@ -202,15 +270,100 @@ tech_army_7 = {
 	}
 	
 	
-	ai_weight = { factor = 1 }
+	ai_weight = { 
+		factor = 1
+		modifier = {
+			factor = 2
+			OR = {
+				has_trait = "trait_strong"
+				has_trait = "trait_very_strong"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_ethic = "ethic_militarist"
+				has_ethic = "ethic_fanatic_militarist"
+				has_ai_personality_behaviour = conqueror
+			}
+		}
+	}
 }
 
 tech_army_8 = {
 	area = physics
+	cost = @tier2cost4
+	tier = 2
+	category = { ground_combat }
+	prerequisites = { "tech_army_7" }
+	weight = @tier2weight4
+	
+	modifier = {
+		army_upkeep_mult = -0.05
+		army_morale = 0.05
+	}
+	
+	
+	ai_weight = { 
+		factor = 1
+		modifier = {
+			factor = 2
+			OR = {
+				has_trait = "trait_strong"
+				has_trait = "trait_very_strong"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_ethic = "ethic_militarist"
+				has_ethic = "ethic_fanatic_militarist"
+				has_ai_personality_behaviour = conqueror
+			}
+		}
+	}
+}
+
+tech_army_9 = {
+	area = physics
 	cost = @tier3cost1
 	tier = 3
 	category = { ground_combat }
-	prerequisites = { "tech_army_7" }
+	prerequisites = { "tech_army_8" }
+	weight = @tier3weight1
+	
+	modifier = {
+		army_health = 0.05
+		army_damage_mult = 0.05
+	}
+	
+	
+	ai_weight = { 
+		factor = 1
+		modifier = {
+			factor = 2
+			OR = {
+				has_trait = "trait_strong"
+				has_trait = "trait_very_strong"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_ethic = "ethic_militarist"
+				has_ethic = "ethic_fanatic_militarist"
+				has_ai_personality_behaviour = conqueror
+			}
+		}
+	}
+}
+
+tech_army_10 = {
+	area = physics
+	cost = @tier3cost1
+	tier = 3
+	category = { ground_combat }
+	prerequisites = { "tech_army_9" }
 	weight = @tier3weight1
 	
 	modifier = {
@@ -219,15 +372,101 @@ tech_army_8 = {
 	}
 	
 	
-	ai_weight = { factor = 1 }
+	ai_weight = { 
+		factor = 1
+		modifier = {
+			factor = 2
+			OR = {
+				has_trait = "trait_strong"
+				has_trait = "trait_very_strong"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_ethic = "ethic_militarist"
+				has_ethic = "ethic_fanatic_militarist"
+				has_ai_personality_behaviour = conqueror
+			}
+		}
+	}
 }
 
-tech_army_9 = {
+
+tech_army_11 = {
+	area = physics
+	cost = @tier3cost2
+	tier = 3
+	category = { ground_combat }
+	prerequisites = { "tech_army_10" }
+	weight = @tier3weight2
+	
+	modifier = {
+		army_health = 0.05
+		army_damage_mult = 0.05
+	}
+	
+	
+	ai_weight = { 
+		factor = 1
+		modifier = {
+			factor = 2
+			OR = {
+				has_trait = "trait_strong"
+				has_trait = "trait_very_strong"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_ethic = "ethic_militarist"
+				has_ethic = "ethic_fanatic_militarist"
+				has_ai_personality_behaviour = conqueror
+			}
+		}
+	}
+}
+
+tech_army_12 = {
+	area = physics
+	cost = @tier3cost2
+	tier = 3
+	category = { ground_combat }
+	prerequisites = { "tech_army_11" }
+	weight = @tier3weight2
+	
+	modifier = {
+		army_upkeep_mult = -0.05
+		army_morale = 0.05
+	}
+	
+	
+	ai_weight = { 
+		factor = 1
+		modifier = {
+			factor = 2
+			OR = {
+				has_trait = "trait_strong"
+				has_trait = "trait_very_strong"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_ethic = "ethic_militarist"
+				has_ethic = "ethic_fanatic_militarist"
+				has_ai_personality_behaviour = conqueror
+			}
+		}
+	}
+}
+
+tech_army_13 = {
 	area = physics
 	cost = @tier3cost3
 	tier = 3
 	category = { ground_combat }
-	prerequisites = { "tech_army_8" }
+	prerequisites = { "tech_army_12" }
 	weight = @tier3weight3
 	
 	modifier = {
@@ -236,16 +475,33 @@ tech_army_9 = {
 	}
 	
 	
-	ai_weight = { factor = 1 }
+	ai_weight = { 
+		factor = 1
+		modifier = {
+			factor = 2
+			OR = {
+				has_trait = "trait_strong"
+				has_trait = "trait_very_strong"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_ethic = "ethic_militarist"
+				has_ethic = "ethic_fanatic_militarist"
+				has_ai_personality_behaviour = conqueror
+			}
+		}
+	}
 }
 
-tech_army_10 = {
+tech_army_14 = {
 	area = physics
-	cost = @tier3cost3
+	cost = @tier3cost4
 	tier = 3
 	category = { ground_combat }
-	prerequisites = { "tech_army_9" }
-	weight = @tier3weight3
+	prerequisites = { "tech_army_13" }
+	weight = @tier3weight4
 	
 	modifier = {
 		army_upkeep_mult = -0.05
@@ -253,16 +509,32 @@ tech_army_10 = {
 	}
 	
 	
-	ai_weight = { factor = 1 }
+	ai_weight = { 
+		factor = 1
+		modifier = {
+			factor = 2
+			OR = {
+				has_trait = "trait_strong"
+				has_trait = "trait_very_strong"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_ethic = "ethic_militarist"
+				has_ethic = "ethic_fanatic_militarist"
+				has_ai_personality_behaviour = conqueror
+			}
+		}
+	}
 }
 
-
-tech_army_11 = {
+tech_army_15 = {
 	area = physics
 	cost = @tier4cost1
 	tier = 4
 	category = { ground_combat }
-	prerequisites = { "tech_army_10" }
+	prerequisites = { "tech_army_14" }
 	weight = @tier4weight1
 	
 	modifier = {
@@ -271,84 +543,33 @@ tech_army_11 = {
 	}
 	
 	
-	ai_weight = { factor = 1 }
-}
-
-tech_army_12 = {
-	area = physics
-	cost = @tier4cost3
-	tier = 4
-	category = { ground_combat }
-	prerequisites = { "tech_army_11" }
-	weight = @tier4weight3
-	
-	modifier = {
-		army_upkeep_mult = -0.05
-		army_morale = 0.05
+	ai_weight = { 
+		factor = 1
+		modifier = {
+			factor = 2
+			OR = {
+				has_trait = "trait_strong"
+				has_trait = "trait_very_strong"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_ethic = "ethic_militarist"
+				has_ethic = "ethic_fanatic_militarist"
+				has_ai_personality_behaviour = conqueror
+			}
+		}
 	}
-	
-	
-	ai_weight = { factor = 1 }
-}
-
-tech_army_13 = {
-	area = physics
-	cost = @tier4cost3
-	tier = 4
-	category = { ground_combat }
-	prerequisites = { "tech_army_12" }
-	weight = @tier4weight3
-	
-	modifier = {
-		army_health = 0.05
-		army_damage_mult = 0.05
-	}
-	
-	
-	ai_weight = { factor = 1 }
-}
-
-tech_army_14 = {
-	area = physics
-	cost = @tier5cost1
-	tier = 5
-	category = { ground_combat }
-	prerequisites = { "tech_army_13" }
-	weight = @tier5weight1
-	
-	modifier = {
-		army_upkeep_mult = -0.05
-		army_morale = 0.05
-	}
-	
-	
-	ai_weight = { factor = 1 }
-}
-
-tech_army_15 = {
-	area = physics
-	cost = @tier5cost3
-	tier = 5
-	category = { ground_combat }
-	prerequisites = { "tech_army_14" }
-	weight = @tier5weight3
-	
-	modifier = {
-		army_health = 0.05
-		army_damage_mult = 0.05
-	}
-	
-	
-	ai_weight = { factor = 1 }
 }
 
 tech_army_16 = {
 	area = physics
-	cost = @tier5cost3
-	tier = 5
+	cost = @tier4cost2
+	tier = 4
 	category = { ground_combat }
 	prerequisites = { "tech_army_15" }
-	weight = @tier5weight3
+	weight = @tier4weight2
 	
 	modifier = {
 		army_upkeep_mult = -0.05
@@ -356,16 +577,33 @@ tech_army_16 = {
 	}
 	
 	
-	ai_weight = { factor = 1 }
+	ai_weight = { 
+		factor = 1
+		modifier = {
+			factor = 2
+			OR = {
+				has_trait = "trait_strong"
+				has_trait = "trait_very_strong"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_ethic = "ethic_militarist"
+				has_ethic = "ethic_fanatic_militarist"
+				has_ai_personality_behaviour = conqueror
+			}
+		}
+	}
 }
 
 tech_army_17 = {
 	area = physics
-	cost = @tier6cost1
-	tier = 6
+	cost = @tier4cost2
+	tier = 4
 	category = { ground_combat }
 	prerequisites = { "tech_army_16" }
-	weight = @tier6weight1
+	weight = @tier4weight2
 	
 	modifier = {
 		army_health = 0.05
@@ -373,16 +611,33 @@ tech_army_17 = {
 	}
 	
 	
-	ai_weight = { factor = 1 }
+	ai_weight = { 
+		factor = 1
+		modifier = {
+			factor = 2
+			OR = {
+				has_trait = "trait_strong"
+				has_trait = "trait_very_strong"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_ethic = "ethic_militarist"
+				has_ethic = "ethic_fanatic_militarist"
+				has_ai_personality_behaviour = conqueror
+			}
+		}
+	}
 }
 
 tech_army_18 = {
 	area = physics
-	cost = @tier6cost1
-	tier = 6
+	cost = @tier4cost3
+	tier = 4
 	category = { ground_combat }
 	prerequisites = { "tech_army_17" }
-	weight = @tier6weight1
+	weight = @tier4weight3
 	
 	modifier = {
 		army_upkeep_mult = -0.05
@@ -390,16 +645,33 @@ tech_army_18 = {
 	}
 	
 	
-	ai_weight = { factor = 1 }
+	ai_weight = { 
+		factor = 1
+		modifier = {
+			factor = 2
+			OR = {
+				has_trait = "trait_strong"
+				has_trait = "trait_very_strong"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_ethic = "ethic_militarist"
+				has_ethic = "ethic_fanatic_militarist"
+				has_ai_personality_behaviour = conqueror
+			}
+		}
+	}
 }
 
 tech_army_19 = {
 	area = physics
-	cost = @tier6cost3
-	tier = 6
+	cost = @tier4cost3
+	tier = 4
 	category = { ground_combat }
 	prerequisites = { "tech_army_18" }
-	weight = @tier6weight3
+	weight = @tier4weight3
 	
 	modifier = {
 		army_health = 0.05
@@ -407,16 +679,33 @@ tech_army_19 = {
 	}
 	
 	
-	ai_weight = { factor = 1 }
+	ai_weight = { 
+		factor = 1
+		modifier = {
+			factor = 2
+			OR = {
+				has_trait = "trait_strong"
+				has_trait = "trait_very_strong"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_ethic = "ethic_militarist"
+				has_ethic = "ethic_fanatic_militarist"
+				has_ai_personality_behaviour = conqueror
+			}
+		}
+	}
 }
 
 tech_army_20 = {
 	area = physics
-	cost = @tier6cost3
-	tier = 6
+	cost = @tier4cost4
+	tier = 4
 	category = { ground_combat }
 	prerequisites = { "tech_army_19" }
-	weight = @tier6weight3
+	weight = @tier4weight4
 	
 	modifier = {
 		army_upkeep_mult = -0.05
@@ -424,5 +713,22 @@ tech_army_20 = {
 	}
 	
 	
-	ai_weight = { factor = 1 }
+	ai_weight = { 
+		factor = 1
+		modifier = {
+			factor = 2
+			OR = {
+				has_trait = "trait_strong"
+				has_trait = "trait_very_strong"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_ethic = "ethic_militarist"
+				has_ethic = "ethic_fanatic_militarist"
+				has_ai_personality_behaviour = conqueror
+			}
+		}
+	}
 }

@@ -62,14 +62,14 @@ tech_trade_facilities_one = {
 	
 	weight_modifier = {
 		modifier = {
-			factor = 0.5
+			factor = 0.25
 			has_ethic = ethic_fanatic_collectivist
-			has_ethic = ethic_fanatic_spiritualist
+			has_ethic = ethic_fanatic_xenophobe
 		}
 		modifier = {
 			factor = 0.75
 			has_ethic = ethic_collectivist
-			has_ethic = ethic_spiritualist
+			has_ethic = ethic_xenophobe
 		}
 		modifier = {
 			factor = 1.25
@@ -89,24 +89,35 @@ tech_trade_facilities_one = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0.5
+			factor = 0.25
 			has_ethic = ethic_fanatic_xenophobe
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.6
 			has_ethic = ethic_xenophobe
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.5
 			has_ethic = ethic_xenophile
 		}
 		modifier = {
-			factor = 1.5
+			factor = 2
 			has_ethic = ethic_fanatic_xenophile
 		}
 		modifier = {
 			factor = 0
+			OR = {
 			NOT = { has_country_flag = birth_of_civtrade }
+			has_ethic = "ethic_fanatic_collectivist"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = peaceful_traders
+			has_ai_personality = migrating_flock
+			has_ai_personality = ruthless_capitalists
+			}
 		}
 	}
 }
@@ -114,7 +125,7 @@ tech_trade_facilities_one = {
 tech_trade_facilities_two = {
 	cost = @tier2cost4
 	area = society
-	tier = 1
+	tier = 2
 	category = { spaceport_expansion  }
 	prerequisites = { "tech_trade_facilities_one" }
 	weight = @tier2weight4
@@ -130,12 +141,12 @@ tech_trade_facilities_two = {
 		modifier = {
 			factor = 0.5
 			has_ethic = ethic_fanatic_collectivist
-			has_ethic = ethic_fanatic_spiritualist
+			has_ethic = ethic_fanatic_xenophobe
 		}
 		modifier = {
 			factor = 0.75
 			has_ethic = ethic_collectivist
-			has_ethic = ethic_spiritualist
+			has_ethic = ethic_xenophobe
 		}
 		modifier = {
 			factor = 1.25
@@ -155,24 +166,35 @@ tech_trade_facilities_two = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0.5
+			factor = 0.25
 			has_ethic = ethic_fanatic_xenophobe
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.6
 			has_ethic = ethic_xenophobe
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.5
 			has_ethic = ethic_xenophile
 		}
 		modifier = {
-			factor = 1.5
+			factor = 2
 			has_ethic = ethic_fanatic_xenophile
 		}
 		modifier = {
 			factor = 0
+			OR = {
 			NOT = { has_country_flag = birth_of_civtrade }
+			has_ethic = "ethic_fanatic_collectivist"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = peaceful_traders
+			has_ai_personality = migrating_flock
+			has_ai_personality = ruthless_capitalists
+			}
 		}
 	}
 }
@@ -180,7 +202,7 @@ tech_trade_facilities_two = {
 tech_trade_facilities_three = {
 	cost = @tier3cost4
 	area = society
-	tier = 1
+	tier = 3
 	category = { spaceport_expansion  }
 	prerequisites = { "tech_trade_facilities_two" }
 	weight = @tier3weight4
@@ -196,12 +218,12 @@ tech_trade_facilities_three = {
 		modifier = {
 			factor = 0.5
 			has_ethic = ethic_fanatic_collectivist
-			has_ethic = ethic_fanatic_spiritualist
+			has_ethic = ethic_fanatic_xenophobe
 		}
 		modifier = {
 			factor = 0.75
 			has_ethic = ethic_collectivist
-			has_ethic = ethic_spiritualist
+			has_ethic = ethic_xenophobe
 		}
 		modifier = {
 			factor = 1.25
@@ -221,24 +243,38 @@ tech_trade_facilities_three = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 0.5
+			factor = 0.25
 			has_ethic = ethic_fanatic_xenophobe
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.6
+			OR = {
 			has_ethic = ethic_xenophobe
-		}
-		modifier = {
-			factor = 1.25
-			has_ethic = ethic_xenophile
+			has_ethic = ethic_collectivist
+			}
 		}
 		modifier = {
 			factor = 1.5
+			has_ethic = ethic_xenophile
+		}
+		modifier = {
+			factor = 2
 			has_ethic = ethic_fanatic_xenophile
 		}
 		modifier = {
 			factor = 0
+			OR = {
 			NOT = { has_country_flag = birth_of_civtrade }
+			has_ethic = "ethic_fanatic_collectivist"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = peaceful_traders
+			has_ai_personality = migrating_flock
+			has_ai_personality = ruthless_capitalists
+			}
 		}
 	}
 }

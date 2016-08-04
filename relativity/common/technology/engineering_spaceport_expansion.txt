@@ -183,7 +183,7 @@ tech_spaceport_2 = {
 tech_spaceport_3 = {
 	cost = @tier2cost1
 	area = engineering
-	tier = 1
+	tier = 2
 	category = { spaceport_expansion }	
 	prerequisites = { "tech_spaceport_2" }
 	weight = @tier2weight1
@@ -448,7 +448,7 @@ tech_spaceport_7 = {
 	}
 	
 	ai_weight = {
-		factor = 2
+		factor = 5
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -501,7 +501,7 @@ tech_spaceport_8 = {
 	}
 	
 	ai_weight = {
-		factor = 2
+		factor = 5
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -556,7 +556,7 @@ tech_spaceport_9 = {
 	}
 	
 	ai_weight = {
-		factor = 2 
+		factor = 5 
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -610,7 +610,7 @@ tech_spaceport_10 = {
 	}
 	
 	ai_weight = {
-		factor = 2 
+		factor = 4 
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -665,7 +665,7 @@ tech_spaceport_11 = {
 	}
 	
 	ai_weight = {
-		factor = 2
+		factor = 4
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -682,7 +682,7 @@ tech_spaceport_12 = {
 	tier = 2
 	category = { spaceport_expansion }
 	prerequisites = { "tech_spaceport_11"}	
-	weight = 1
+	weight = 0
 	
 	weight_modifier = {
 		modifier = {

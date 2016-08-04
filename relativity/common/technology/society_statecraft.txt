@@ -151,12 +151,19 @@ tech_planetary_unification = {
 			}
 		}
 		modifier = {
-			factor = 1.25
+			factor = 2
+			OR = {
 			has_ethic = ethic_collectivist
+			has_trait = "trait_talented"
+			}
 		}
 		modifier = {
-			factor = 1.5
+			factor = 2
+			OR = {
 			has_ethic = ethic_fanatic_collectivist
+			has_ai_personality = democratic_crusaders
+			has_ai_personality = hegemonic_imperialists
+			}
 		}
 		modifier = {
 			factor = 1.25
@@ -168,89 +175,6 @@ tech_planetary_unification = {
 	}
 }
 
-#Colonial Centralization
-tech_colonial_centralization = {
-	cost = @tier1cost4
-	area = society
-	tier = 1
-	category = { statecraft }
-	prerequisites = { "tech_planetary_unification" "tech_adaptive_bureaucracy"}
-	weight = @tier1weight4
-	
-	# unlocks Planetary Capital
-	# unlocks production-targets edict
-	
-	modifier = {
-		influence_gain_add = 0.5
-		country_leader_cap = 1	
-	}
-	
-	weight_modifier = {
-		factor = 4
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_new_worlds"
-			}
-		}
-	}
-	
-	ai_weight = {
-		factor = 10
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_new_worlds"
-			}
-		}
-	}
-}
-
-#Galactic Administration
-tech_galactic_administration = {
-	cost = @tier2cost2
-	area = society
-	tier = 2
-	category = { statecraft }
-	prerequisites = { "tech_colonial_centralization" }
-	weight = @tier2weight2
-	
-	# unlocks Empire Capital-Complex, advanced government forms
-	prereqfor_desc = {
-		government = {
-			title = "TECH_UNLOCK_ADVANCED_GOVERNMENT_FORMS_TITLE"
-			desc = "TECH_UNLOCK_ADVANCED_GOVERNMENT_FORMS_DESC"
-		}
-	}
-	
-	modifier = {
-		country_leader_cap = 1
-	}	
-	
-	weight_modifier = {
-		factor = 4
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
-			}
-		}
-	}
-	
-	ai_weight = {
-		factor = 10
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
-			}
-		}
-	}
-}
 #Adaptive Bureaucracy
 tech_adaptive_bureaucracy = {
 	cost = @tier1cost2
@@ -298,8 +222,64 @@ tech_adaptive_bureaucracy = {
 				has_trait = "leader_trait_expertise_statecraft"
 			}
 		}
+		modifier = {
+			factor = 1.5
+			OR = {
+			has_ethic = ethic_collectivist
+			has_trait = "trait_talented"
+			}
+		}	
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = ethic_fanatic_collectivist
+			has_ai_personality = democratic_crusaders
+			has_ai_personality = hegemonic_imperialists
+			}
+		}
 	}
 }
+
+#Colonial Centralization
+tech_colonial_centralization = {
+	cost = @tier1cost4
+	area = society
+	tier = 1
+	category = { statecraft }
+	prerequisites = { "tech_planetary_unification" "tech_adaptive_bureaucracy"}
+	weight = @tier1weight4
+	
+	# unlocks Planetary Capital
+	# unlocks production-targets edict
+	
+	modifier = {
+		influence_gain_add = 0.5
+		country_leader_cap = 1	
+	}
+	
+	weight_modifier = {
+		factor = 4
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+	}
+}
+
 #Living State
 tech_living_state = {
 	cost = @tier2cost2
@@ -348,6 +328,65 @@ tech_living_state = {
 	}
 	
 	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+			has_ethic = ethic_collectivist
+			has_trait = "trait_talented"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = ethic_fanatic_collectivist
+			has_ai_personality = democratic_crusaders
+			has_ai_personality = hegemonic_imperialists
+			}
+		}
+	}
+}
+
+#Galactic Administration
+tech_galactic_administration = {
+	cost = @tier2cost4
+	area = society
+	tier = 2
+	category = { statecraft }
+	prerequisites = { "tech_colonial_centralization" }
+	weight = @tier2weight4
+	
+	# unlocks Empire Capital-Complex, advanced government forms
+	prereqfor_desc = {
+		government = {
+			title = "TECH_UNLOCK_ADVANCED_GOVERNMENT_FORMS_TITLE"
+			desc = "TECH_UNLOCK_ADVANCED_GOVERNMENT_FORMS_DESC"
+		}
+	}
+	
+	modifier = {
+		country_leader_cap = 1
+	}	
+	
+	weight_modifier = {
+		factor = 4
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 10
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -419,16 +458,31 @@ tech_collective_self = {
 				has_trait = "leader_trait_expertise_statecraft"
 			}
 		}
+		modifier = {
+			factor = 1.5
+			OR = {
+			has_ethic = ethic_collectivist
+			has_trait = "trait_talented"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = ethic_fanatic_collectivist
+			has_ai_personality = democratic_crusaders
+			has_ai_personality = hegemonic_imperialists
+			}
+		}
 	}
 }
 
 tech_statecraft_10 = {
 	area = society
-	cost = @tier4cost3
-	tier = 4
+	cost = @tier3cost1
+	tier = 3
 	category = { statecraft }
 	prerequisites = { "tech_living_state" "tech_galactic_administration" }
-	weight = @tier4weight1
+	weight = @tier3weight1
 	
 	modifier = {
 		country_leader_cap = 1
@@ -452,6 +506,21 @@ tech_statecraft_10 = {
 			research_leader = {
 				area = society
 				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+			has_ethic = ethic_collectivist
+			has_trait = "trait_talented"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = ethic_fanatic_collectivist
+			has_ai_personality = democratic_crusaders
+			has_ai_personality = hegemonic_imperialists
 			}
 		}
 	}
@@ -459,11 +528,11 @@ tech_statecraft_10 = {
 
 tech_statecraft_11 = {
 	area = society
-	cost = @tier5cost3
-	tier = 5
+	cost = @tier3cost2
+	tier = 3
 	category = { statecraft }
 	prerequisites = { "tech_statecraft_10" }
-	weight = @tier5weight4
+	weight = @tier3weight2
 	
 	modifier = {
 		country_leader_cap = 1
@@ -489,148 +558,379 @@ tech_statecraft_11 = {
 				has_trait = "leader_trait_expertise_statecraft"
 			}
 		}
+		modifier = {
+			factor = 1.5
+			OR = {
+			has_ethic = ethic_collectivist
+			has_trait = "trait_talented"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = ethic_fanatic_collectivist
+			has_ai_personality = democratic_crusaders
+			has_ai_personality = hegemonic_imperialists
+			}
+		}
 	}
 }
 
 tech_statecraft_12 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier3cost3
+	tier = 3
 	category = { statecraft }
 	prerequisites = { "tech_statecraft_11" }
-	weight = @tier2weight1
+	weight = @tier3weight3
 	
 		modifier = {
 		country_leader_cap = 1
 	}	
 	
 	
-	ai_weight = { factor = 1 }
+	ai_weight = {
+		factor = 5
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+			has_ethic = ethic_collectivist
+			has_trait = "trait_talented"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = ethic_fanatic_collectivist
+			has_ai_personality = democratic_crusaders
+			has_ai_personality = hegemonic_imperialists
+			}
+		}
+	}
 }
 
 tech_statecraft_13 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier3cost4
+	tier = 3
 	category = { statecraft }
 	prerequisites = { "tech_statecraft_12" }
-	weight = @tier2weight1
+	weight = @tier3weight4
 	
 		modifier = {
 		country_leader_cap = 1
 	}	
 	
 	
-	ai_weight = { factor = 1 }
+	ai_weight = {
+		factor = 5
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+			has_ethic = ethic_collectivist
+			has_trait = "trait_talented"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = ethic_fanatic_collectivist
+			has_ai_personality = democratic_crusaders
+			has_ai_personality = hegemonic_imperialists
+			}
+		}
+	}
 }
 
 tech_statecraft_14 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier4cost1
+	tier = 4
 	category = { statecraft }
 	prerequisites = { "tech_statecraft_13" }
-	weight = @tier2weight1
+	weight = @tier4weight1
 	
 	modifier = {
 		country_leader_cap = 1
 	}		
 	
 	
-	ai_weight = { factor = 1 }
+	ai_weight = {
+		factor = 5
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+			has_ethic = ethic_collectivist
+			has_trait = "trait_talented"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = ethic_fanatic_collectivist
+			has_ai_personality = democratic_crusaders
+			has_ai_personality = hegemonic_imperialists
+			}
+		}
+	}
 }
 
 tech_statecraft_15 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier4cost2
+	tier = 4
 	category = { statecraft }
 	prerequisites = { "tech_statecraft_14" }
-	weight = @tier2weight1
+	weight = @tier4weight2
 	
 	modifier = {
 		country_leader_cap = 1
 	}		
 	
 	
-	ai_weight = { factor = 1 }
+	ai_weight = {
+		factor = 5
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+			has_ethic = ethic_collectivist
+			has_trait = "trait_talented"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = ethic_fanatic_collectivist
+			has_ai_personality = democratic_crusaders
+			has_ai_personality = hegemonic_imperialists
+			}
+		}
+	}
 }
 
 tech_statecraft_16 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier4cost3
+	tier = 4
 	category = { statecraft }
 	prerequisites = { "tech_statecraft_15" }
-	weight = @tier2weight1
+	weight = @tier4weight3
 	
 	modifier = {
 		country_leader_cap = 1
 	}		
 	
 	
-	ai_weight = { factor = 1 }
+	ai_weight = {
+		factor = 5
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+			has_ethic = ethic_collectivist
+			has_trait = "trait_talented"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = ethic_fanatic_collectivist
+			has_ai_personality = democratic_crusaders
+			has_ai_personality = hegemonic_imperialists
+			}
+		}
+	}
 }
 
 tech_statecraft_17 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier4cost4
+	tier = 4
 	category = { statecraft }
 	prerequisites = { "tech_statecraft_16" }
-	weight = @tier2weight1
+	weight = @tier4weight4
 	modifier = {
 		country_leader_cap = 1
 	}		
 	
 	
 	
-	ai_weight = { factor = 1 }
+	ai_weight = {
+		factor = 5
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+			has_ethic = ethic_collectivist
+			has_trait = "trait_talented"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = ethic_fanatic_collectivist
+			has_ai_personality = democratic_crusaders
+			has_ai_personality = hegemonic_imperialists
+			}
+		}
+	}
 }
 
 tech_statecraft_18 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier5cost1
+	tier = 5
 	category = { statecraft }
 	prerequisites = { "tech_statecraft_17" }
-	weight = @tier2weight1
+	weight = @tier5weight1
 	modifier = {
 		country_leader_cap = 1
 	}		
 	
 	
 	
-	ai_weight = { factor = 1 }
+	ai_weight = {
+		factor = 5
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+			has_ethic = ethic_collectivist
+			has_trait = "trait_talented"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = ethic_fanatic_collectivist
+			has_ai_personality = democratic_crusaders
+			has_ai_personality = hegemonic_imperialists
+			}
+		}
+	}
 }
 
 tech_statecraft_19 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier5cost1
+	tier = 5
 	category = { statecraft }
 	prerequisites = { "tech_statecraft_18" }
-	weight = @tier2weight1
+	weight = @tier5weight1
 	modifier = {
 		country_leader_cap = 1
 	}		
 	
 	
-	ai_weight = { factor = 1 }
+	ai_weight = {
+		factor = 5
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+			has_ethic = ethic_collectivist
+			has_trait = "trait_talented"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = ethic_fanatic_collectivist
+			has_ai_personality = democratic_crusaders
+			has_ai_personality = hegemonic_imperialists
+			}
+		}
+	}
 }
 
 tech_statecraft_20 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier5cost2
+	tier = 5
 	category = { statecraft }
 	prerequisites = { "tech_statecraft_19" }
-	weight = @tier2weight1
+	weight = @tier5weight2
 	
 	modifier = {
 		country_leader_cap = 1
 	}		
 	
 	
-	ai_weight = { factor = 1 }
+	ai_weight = {
+		factor = 5
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+			has_ethic = ethic_collectivist
+			has_trait = "trait_talented"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = ethic_fanatic_collectivist
+			has_ai_personality = democratic_crusaders
+			has_ai_personality = hegemonic_imperialists
+			}
+		}
+	}
 }
