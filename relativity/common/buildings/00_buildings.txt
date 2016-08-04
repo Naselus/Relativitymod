@@ -141,6 +141,11 @@ building_power_plant_1 = {
 			}
 		}
 	}
+	ai_special_building = yes
+	ai_weight = {
+		weight = 50
+
+	}
 }
 
 building_power_plant_2 = {
@@ -174,7 +179,12 @@ building_power_plant_2 = {
 
 	prerequisites = {
 		"tech_power_plant_2"
-	}		
+	}
+ai_special_building = yes
+	ai_weight = {
+		weight = 50
+
+	}	
 }
 
 building_power_plant_3 = {
@@ -207,6 +217,12 @@ building_power_plant_3 = {
 	
 	prerequisites = {
 		"tech_power_plant_3"
+	}
+	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 50
+
 	}	
 }
 
@@ -240,7 +256,13 @@ building_power_plant_4 = {
 	
 	prerequisites = {
 		"tech_power_plant_4"
-	}	
+	}
+
+	ai_special_building = yes
+	ai_weight = {
+		weight = 50
+
+	}
 }
 
 building_power_plant_5 = {
@@ -267,6 +289,12 @@ building_power_plant_5 = {
 	prerequisites = {
 		"tech_power_plant_5"
 	}	
+	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 50
+
+	}
 }
 
 betharian_power_plant_1 = {
@@ -306,6 +334,12 @@ betharian_power_plant_1 = {
 				}
 			}
 		}
+	}
+	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 60
+
 	}
 }
 
@@ -349,6 +383,12 @@ betharian_power_plant_2 = {
 	prerequisites = {
 			"tech_power_plant_7"
 	}
+	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 60
+
+	}
 }
 
 betharian_power_plant_3 = {
@@ -388,6 +428,12 @@ betharian_power_plant_3 = {
 
 	prerequisites = {
 			"tech_power_plant_8"
+	}
+	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 60
+
 	}
 }
 
@@ -429,6 +475,12 @@ betharian_power_plant_4 = {
 	prerequisites = {
 			"tech_power_plant_9"
 	}
+	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 60
+
+	}
 }
 
 betharian_power_plant_5 = {
@@ -463,6 +515,12 @@ betharian_power_plant_5 = {
 	
 	prerequisites = {
 			"tech_power_plant_10"
+	}
+	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 60
+
 	}
 }
 
@@ -502,6 +560,12 @@ building_power_hub_1 = {
 	prerequisites = {
 		"tech_power_hub_1"
 	}
+	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 60
+
+	}
 }
 
 building_power_hub_2 = {
@@ -539,6 +603,10 @@ building_power_hub_2 = {
 	}
 	
 	ai_special_building = yes
+	ai_weight = {
+		weight = 60
+
+	}
 }
 
 #
@@ -600,7 +668,12 @@ building_hydroponics_farm_1 = {
 				}
 			}
 		}
-	}		
+	}
+ai_special_building = yes
+	ai_weight = {
+		weight = 40
+
+	}	
 }
 
 building_hydroponics_farm_2 = {
@@ -636,6 +709,11 @@ building_hydroponics_farm_2 = {
 	prerequisites = {
 		"tech_hydroponics"
 	}	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 40
+
+	}
 }
 
 building_hydroponics_farm_3 = {
@@ -670,6 +748,11 @@ building_hydroponics_farm_3 = {
 	prerequisites = {
 		"tech_gene_crops"
 	}	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 40
+
+	}
 }
 
 building_hydroponics_farm_4 = {
@@ -704,6 +787,11 @@ building_hydroponics_farm_4 = {
 	prerequisites = {
 		"tech_nano_vitality_crops"
 	}	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 40
+
+	}
 }
 
 building_hydroponics_farm_5 = {
@@ -731,6 +819,11 @@ building_hydroponics_farm_5 = {
 	prerequisites = {
 		"tech_nutrient_replication"
 	}	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 40
+
+	}
 }
 
 #
@@ -752,7 +845,11 @@ building_mineral_silo_1 = {
 		building_mineral_silo_2
 	}		
 	
-	#ai_special_building = yes
+	ai_special_building = yes
+	ai_weight = {
+		weight = 30
+
+	}
 }
 
 building_mineral_silo_2 = {
@@ -793,7 +890,11 @@ building_mineral_silo_2 = {
 		building_mineral_silo_3
 	}	
 	
-	#ai_special_building = yes
+	ai_special_building = yes
+	ai_weight = {
+		weight = 30
+
+	}
 }
 
 building_mineral_silo_3 = {
@@ -829,7 +930,11 @@ building_mineral_silo_3 = {
 		"tech_mineral_processing_2"
 	}
 	
-	#ai_special_building = yes
+	ai_special_building = yes
+	ai_weight = {
+		weight = 30
+
+	}
 }
 
 
@@ -893,6 +998,11 @@ building_mining_network_1 = {
 			}
 		}
 	}
+	ai_special_building = yes
+	ai_weight = {
+		weight = 40
+
+	}
 }
 
 building_mining_network_2 = {
@@ -931,6 +1041,11 @@ building_mining_network_2 = {
 	prerequisites = {
 		"tech_mining_network_2"
 	}	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 40
+
+	}
 }
 
 building_mining_network_3 = {
@@ -968,6 +1083,11 @@ building_mining_network_3 = {
 	prerequisites = {
 		"tech_mining_network_3"
 	}	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 40
+
+	}
 }
 
 building_mining_network_4 = {
@@ -1005,6 +1125,11 @@ building_mining_network_4 = {
 	prerequisites = {
 		"tech_mining_network_4"
 	}	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 40
+
+	}
 }
 
 building_mining_network_5 = {
@@ -1035,6 +1160,11 @@ building_mining_network_5 = {
 	prerequisites = {
 		"tech_mining_network_5"
 	}	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 40
+
+	}
 }
 
 building_mineral_processing_plant_1T1 = {
@@ -1068,6 +1198,11 @@ building_mineral_processing_plant_1T1 = {
 	prerequisites = {
 	}
 	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 70
+
+	}
 }
 
 building_mineral_processing_plant_2T1 = {
@@ -1112,6 +1247,11 @@ building_mineral_processing_plant_2T1 = {
 	}	
 	prerequisites = {
 		"tech_mineral_processing_2"
+	}
+	ai_special_building = yes
+	ai_weight = {
+		weight = 70
+
 	}
 }
 
@@ -1159,6 +1299,11 @@ building_mineral_processing_plant_3T1 = {
 	prerequisites = {
 		"tech_mineral_processing_3"
 	}
+	ai_special_building = yes
+	ai_weight = {
+		weight = 70
+
+	}
 }
 
 building_mineral_processing_plant_4T1 = {
@@ -1205,6 +1350,12 @@ building_mineral_processing_plant_4T1 = {
 	prerequisites = {
 		"tech_mineral_processing_4"
 	}
+	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 70
+
+	}
 }
 
 building_mineral_processing_plant_5T1 = {
@@ -1246,6 +1397,12 @@ building_mineral_processing_plant_5T1 = {
 	
 	prerequisites = {
 		"tech_mineral_processing_5"
+	}
+	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 70
+
 	}
 }
 
@@ -1319,6 +1476,11 @@ building_engineering_facility_1 = {
 	prerequisites = {
 		"tech_engineering_lab_1"
 	}
+	ai_special_building = yes
+	ai_weight = {
+		weight = 60
+
+	}
 }
 
 building_engineering_facility_2 = {
@@ -1356,6 +1518,11 @@ building_engineering_facility_2 = {
 	prerequisites = {
 		"tech_engineering_lab_5"
 	}	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 60
+
+	}
 }
 
 building_engineering_facility_3 = {
@@ -1393,6 +1560,11 @@ building_engineering_facility_3 = {
 	prerequisites = {
 		"tech_engineering_lab_10"
 	}	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 60
+
+	}
 }
 
 building_engineering_facility_4 = {
@@ -1423,6 +1595,11 @@ building_engineering_facility_4 = {
 	prerequisites = {
 		"tech_engineering_lab_15"
 	}	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 60
+
+	}
 }
 
 building_engineering_facility_5 = {
@@ -1453,6 +1630,11 @@ building_engineering_facility_5 = {
 	prerequisites = {
 		"tech_engineering_lab_20"
 	}	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 60
+
+	}
 }
 #
 #	PHYSICS
@@ -1494,6 +1676,11 @@ building_physics_lab_1 = {
 	prerequisites = {
 		"tech_physics_lab_1"
 	}	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 60
+
+	}
 }
 
 building_physics_lab_2 = {
@@ -1531,6 +1718,11 @@ building_physics_lab_2 = {
 	prerequisites = {
 		"tech_physics_lab_5"
 	}	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 60
+
+	}
 }
 
 building_physics_lab_3 = {
@@ -1568,6 +1760,11 @@ building_physics_lab_3 = {
 	prerequisites = {
 		"tech_physics_lab_10"
 	}	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 60
+
+	}
 }
 
 building_physics_lab_4 = {
@@ -1602,6 +1799,11 @@ building_physics_lab_4 = {
 	prerequisites = {
 		"tech_physics_lab_15"
 	}	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 60
+
+	}
 }
 
 building_physics_lab_5 = {
@@ -1632,6 +1834,11 @@ building_physics_lab_5 = {
 	prerequisites = {
 		"tech_physics_lab_20"
 	}	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 60
+
+	}
 }
 #
 #	SOCIETY
@@ -1673,6 +1880,11 @@ building_biolab_1 = {
 	prerequisites = {
 		"tech_biolab_1"
 	}	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 60
+
+	}
 }
 
 building_biolab_2 = {
@@ -1710,6 +1922,11 @@ building_biolab_2 = {
 	prerequisites = {
 		"tech_biolab_2"
 	}	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 60
+
+	}
 }
 
 building_biolab_3 = {
@@ -1747,6 +1964,11 @@ building_biolab_3 = {
 	prerequisites = {
 		"tech_biolab_3"
 	}	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 60
+
+	}
 }
 
 building_biolab_4 = {
@@ -1781,6 +2003,11 @@ building_biolab_4 = {
 	prerequisites = {
 		"tech_biolab_4"
 	}	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 60
+
+	}
 }
 
 building_biolab_5 = {
@@ -1811,6 +2038,11 @@ building_biolab_5 = {
 	prerequisites = {
 		"tech_biolab_5"
 	}	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 60
+
+	}
 }
 #
 # OTHER
@@ -1958,6 +2190,11 @@ building_capital_2 = {
 	prerequisites = {
 		"tech_planetary_government"
 	}	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 100
+
+	}
 }
 
 # Empire Capital-Complex
@@ -2008,6 +2245,11 @@ building_capital_3 = {
 	prerequisites = {
 		"tech_galactic_administration"
 	}	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 100
+
+	}
 }
 
 # Clone Vats are required to build Clone Armies
@@ -2885,6 +3127,11 @@ building_basic_science_lab_2 = {
 	prerequisites = {
 		"tech_basic_science_lab_1"
 	}	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 60
+
+	}
 }
 
 building_basic_science_lab_3 = {
@@ -2909,6 +3156,11 @@ building_basic_science_lab_3 = {
 	prerequisites = {
 		"tech_basic_science_lab_1"
 	}	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 60
+
+	}
 }
 
 dm_power_plant_1 = {
@@ -2947,6 +3199,11 @@ dm_power_plant_1 = {
    
 	prerequisites = {
 			"tech_power_plant_11"
+	}
+	ai_special_building = yes
+	ai_weight = {
+		weight = 60
+
 	}
 }
 
@@ -2988,6 +3245,11 @@ dm_power_plant_2 = {
 	prerequisites = {
 			"tech_power_plant_12"
 	}
+	ai_special_building = yes
+	ai_weight = {
+		weight = 60
+
+	}
 }
 
 dm_power_plant_3 = {
@@ -3028,6 +3290,11 @@ dm_power_plant_3 = {
 	prerequisites = {
 			"tech_power_plant_13"
 	}
+	ai_special_building = yes
+	ai_weight = {
+		weight = 60
+
+	}
 }
 
 dm_power_plant_4 = {
@@ -3067,6 +3334,11 @@ dm_power_plant_4 = {
 	prerequisites = {
 			"tech_power_plant_14"
 	}
+	ai_special_building = yes
+	ai_weight = {
+		weight = 60
+
+	}
 }
 
 dm_power_plant_5 = {
@@ -3102,6 +3374,11 @@ dm_power_plant_5 = {
 	
 	prerequisites = {
 			"tech_power_plant_15"
+	}
+	ai_special_building = yes
+	ai_weight = {
+		weight = 60
+
 	}
 }
 
@@ -3140,6 +3417,11 @@ building_mining2_network_1 = {
 				}
 			}
 		}
+	}
+	ai_special_building = yes
+	ai_weight = {
+		weight = 40
+
 	}
 }
 
@@ -3180,6 +3462,11 @@ building_mining2_network_2 = {
 	prerequisites = {
 		"tech_mining_7"
 	}	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 40
+
+	}
 }
 
 building_mining2_network_3 = {
@@ -3218,6 +3505,11 @@ building_mining2_network_3 = {
 	prerequisites = {
 		"tech_mining_8"
 	}	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 40
+
+	}
 }
 
 building_mining2_network_4 = {
@@ -3256,6 +3548,11 @@ building_mining2_network_4 = {
 	prerequisites = {
 		"tech_mining_9"
 	}	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 40
+
+	}
 }
 
 building_mining2_network_5 = {
@@ -3287,6 +3584,11 @@ building_mining2_network_5 = {
 	prerequisites = {
 		"tech_mining_10"
 	}	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 40
+
+	}
 }
 
 building_mining3_network_1 = {
@@ -3324,6 +3626,11 @@ building_mining3_network_1 = {
 				}
 			}
 		}
+	}
+	ai_special_building = yes
+	ai_weight = {
+		weight = 40
+
 	}
 }
 
@@ -3364,6 +3671,11 @@ building_mining3_network_2 = {
 	prerequisites = {
 		"tech_mining_12"
 	}	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 40
+
+	}
 }
 
 building_mining3_network_3 = {
@@ -3402,6 +3714,11 @@ building_mining3_network_3 = {
 	prerequisites = {
 		"tech_mining_13"
 	}	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 40
+
+	}
 }
 
 building_mining3_network_4 = {
@@ -3440,6 +3757,11 @@ building_mining3_network_4 = {
 	prerequisites = {
 		"tech_mining_14"
 	}	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 40
+
+	}
 }
 
 building_mining3_network_5 = {
@@ -3471,6 +3793,11 @@ building_mining3_network_5 = {
 	prerequisites = {
 		"tech_mining_15"
 	}	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 40
+
+	}
 }
 
 building_mineral_processing_plant_1T2 = {
@@ -3517,6 +3844,11 @@ building_mineral_processing_plant_1T2 = {
 		"tech_mineral_processing_6"
 	}
 	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 70
+
+	}
 }
 
 building_mineral_processing_plant_2T2 = {
@@ -3560,6 +3892,12 @@ building_mineral_processing_plant_2T2 = {
 	}	
 	prerequisites = {
 		"tech_mineral_processing_7"
+	}
+	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 70
+
 	}
 }
 
@@ -3607,6 +3945,12 @@ building_mineral_processing_plant_3T2 = {
 	prerequisites = {
 		"tech_mineral_processing_8"
 	}
+	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 70
+
+	}
 }
 
 building_mineral_processing_plant_4T2 = {
@@ -3653,6 +3997,12 @@ building_mineral_processing_plant_4T2 = {
 	prerequisites = {
 		"tech_mineral_processing_9"
 	}
+	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 70
+
+	}
 }
 
 building_mineral_processing_plant_5T2 = {
@@ -3694,6 +4044,12 @@ building_mineral_processing_plant_5T2 = {
 	
 	prerequisites = {
 		"tech_mineral_processing_10"
+	}
+	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 70
+
 	}
 }
 
@@ -3741,6 +4097,12 @@ building_mineral_processing_plant_1T3 = {
 		"tech_mineral_processing_11"
 	}
 	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 70
+
+	}
+	
 }
 
 building_mineral_processing_plant_2T3 = {
@@ -3784,6 +4146,12 @@ building_mineral_processing_plant_2T3 = {
 	}	
 	prerequisites = {
 		"tech_mineral_processing_12"
+	}
+	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 70
+
 	}
 }
 
@@ -3831,6 +4199,12 @@ building_mineral_processing_plant_3T3 = {
 	prerequisites = {
 		"tech_mineral_processing_13"
 	}
+	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 70
+
+	}
 }
 
 building_mineral_processing_plant_4T3 = {
@@ -3877,6 +4251,12 @@ building_mineral_processing_plant_4T3 = {
 	prerequisites = {
 		"tech_mineral_processing_14"
 	}
+	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 70
+
+	}
 }
 
 building_mineral_processing_plant_5T3 = {
@@ -3919,6 +4299,12 @@ building_mineral_processing_plant_5T3 = {
 	prerequisites = {
 		"tech_mineral_processing_15"
 	}
+	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 70
+
+	}
 }
 
 #############
@@ -3958,6 +4344,12 @@ building_bank = {
 				}
 			}
 		}
+	}
+	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 60
+
 	}
 }
 
@@ -3999,6 +4391,12 @@ building_bank_2 = {
 			}
 		}
 	}
+	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 60
+
+	}
 }
 
 building_bank_3 = {
@@ -4038,6 +4436,12 @@ building_bank_3 = {
 			}
 		}
 	}
+	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 60
+
+	}
 }
 
 building_bank_4 = {
@@ -4076,6 +4480,12 @@ building_bank_4 = {
 			}
 		}
 	}
+	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 60
+
+	}
 }
 
 building_bank_5 = {
@@ -4109,6 +4519,12 @@ building_bank_5 = {
 					has_building = "building_capital_3"
 			}
 		}
+	}
+	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 60
+
 	}
 }
 ###############
@@ -4147,6 +4563,12 @@ building_basic_hospital = {
 		}
 	}
  
+ 
+ ai_special_building = yes
+	ai_weight = {
+		weight = 70
+
+	}
 }
 
 building_hospital_2 = {
@@ -4181,6 +4603,12 @@ building_hospital_2 = {
 		}
 	}
  
+ 
+	ai_special_building = yes
+	ai_weight = {
+		weight = 70
+
+	}
 }
 
 building_hospital_3 = {
@@ -4215,7 +4643,12 @@ building_hospital_3 = {
 			}
 		}
 	}
- 
+	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 70
+
+	}
 }
 
 building_hospital_4 = {
@@ -4250,6 +4683,12 @@ building_hospital_4 = {
 			}
 		}
 	}
+	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 70
+
+	}
  
 }
 
@@ -4280,6 +4719,12 @@ building_hospital_5 = {
 				}
 			}
 		}
+	}
+	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 70
+
 	}
  
 }
@@ -4332,6 +4777,12 @@ building_capital_4 = {
 	prerequisites = {
 	"tech_statecraft_10"
 	}	
+	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 100
+
+	}
 }
 
 building_capital_5 = {
@@ -4380,4 +4831,10 @@ building_capital_5 = {
 	prerequisites = {
 		"tech_statecraft_11"
 	}	
+	
+	ai_special_building = yes
+	ai_weight = {
+		weight = 100
+
+	}
 }
