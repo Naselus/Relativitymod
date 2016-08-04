@@ -114,12 +114,12 @@ tech_basic_industry = {
 
 #Mining Network 2
 tech_mining_network_2 = {
-	cost = @tier1cost1
+	cost = @tier1cost4
 	area = engineering
 	tier = 1
 	category = { mining }	
 	prerequisites = { "tech_basic_industry" }
-	weight = @tier1weight1
+	weight = @tier1weight4
 	
 		
 	# unlock mining network lvl 2
@@ -135,6 +135,7 @@ tech_mining_network_2 = {
 	}
 	
 	ai_weight = {
+		factor = 3
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -142,17 +143,36 @@ tech_mining_network_2 = {
 				has_trait = "leader_trait_expertise_mining"
 			}
 		}
+		modifier = {
+			factor = 2
+			has_trait = "trait_industrious"
+		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_ai_personality = peaceful_traders
+			has_ai_personality = ruthless_capitalists
+			has_ai_personality = slaving_despots
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = "ethic_collectivist"
+			has_ethic = "ethic_fanatic_collectivist"
+			}
+		}
 	}
 }
 
 #Mining Network 3
 tech_mining_network_3 = {
-	cost = @tier2cost1
+	cost = @tier2cost2
 	area = engineering
 	tier = 2
 	category = { mining }
 	prerequisites = { "tech_mining_network_2" "tech_colonial_centralization" }
-	weight = @tier2weight1
+	weight = @tier2weight2
 	
 
 		
@@ -169,6 +189,7 @@ tech_mining_network_3 = {
 	}
 	
 	ai_weight = {
+		factor = 3
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -176,17 +197,36 @@ tech_mining_network_3 = {
 				has_trait = "leader_trait_expertise_mining"
 			}
 		}
+		modifier = {
+			factor = 2
+			has_trait = "trait_industrious"
+		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_ai_personality = peaceful_traders
+			has_ai_personality = ruthless_capitalists
+			has_ai_personality = slaving_despots
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = "ethic_collectivist"
+			has_ethic = "ethic_fanatic_collectivist"
+			}
+		}
 	}
 }
 
 #Mining Network 4
 tech_mining_network_4 = {
-	cost = @tier2cost4
+	cost = @tier2cost3
 	area = engineering
 	tier = 2
 	category = { mining }
 	prerequisites = { "tech_mining_network_3" "tech_galactic_administration" }
-	weight = @tier2weight4
+	weight = @tier2weight3
 	
 
 		
@@ -203,11 +243,31 @@ tech_mining_network_4 = {
 	}
 	
 	ai_weight = {
+		factor = 3
 		modifier = {
 			factor = 1.25
 			research_leader = {
 				area = engineering
 				has_trait = "leader_trait_expertise_mining"
+			}
+		}
+		modifier = {
+			factor = 2
+			has_trait = "trait_industrious"
+		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_ai_personality = peaceful_traders
+			has_ai_personality = ruthless_capitalists
+			has_ai_personality = slaving_despots
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = "ethic_collectivist"
+			has_ethic = "ethic_fanatic_collectivist"
 			}
 		}
 	}
@@ -215,11 +275,11 @@ tech_mining_network_4 = {
 
 tech_mining_network_5 = {
 	area = engineering
-	cost = @tier3cost1
-	tier = 3
+	cost = @tier2cost4
+	tier = 2
 	category = { mining }
 	prerequisites = { "tech_mining_network_4"}	
-	weight = @tier3weight1
+	weight = @tier2weight4
 
 
 	
@@ -234,11 +294,31 @@ tech_mining_network_5 = {
 	}
 	
 	ai_weight = {
+		factor = 3
 		modifier = {
 			factor = 1.25
 			research_leader = {
 				area = engineering
 				has_trait = "leader_trait_expertise_mining"
+			}
+		}
+		modifier = {
+			factor = 2
+			has_trait = "trait_industrious"
+		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_ai_personality = peaceful_traders
+			has_ai_personality = ruthless_capitalists
+			has_ai_personality = slaving_despots
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = "ethic_collectivist"
+			has_ethic = "ethic_fanatic_collectivist"
 			}
 		}
 	}
@@ -246,10 +326,61 @@ tech_mining_network_5 = {
 #Steel 2 Start
 tech_mining_6 = {
 	area = engineering
+	cost = @tier2cost4
+	tier = 2
+	category = { mining }
+	prerequisites = { "tech_mining_network_5"}	
+	weight = @tier2weight4
+
+
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_mining"
+			}			
+		}
+	}
+	
+	ai_weight = {
+		factor = 3
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_mining"
+			}
+		}
+		modifier = {
+			factor = 2
+			has_trait = "trait_industrious"
+		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_ai_personality = peaceful_traders
+			has_ai_personality = ruthless_capitalists
+			has_ai_personality = slaving_despots
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = "ethic_collectivist"
+			has_ethic = "ethic_fanatic_collectivist"
+			}
+		}
+	}
+}
+
+tech_mining_7 = {
+	area = engineering
 	cost = @tier3cost1
 	tier = 3
 	category = { mining }
-	prerequisites = { "tech_mining_network_5"}	
+	prerequisites = { "tech_mining_6"}	
 	weight = @tier3weight1
 
 
@@ -265,6 +396,7 @@ tech_mining_6 = {
 	}
 	
 	ai_weight = {
+		factor = 3
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -272,17 +404,35 @@ tech_mining_6 = {
 				has_trait = "leader_trait_expertise_mining"
 			}
 		}
+		modifier = {
+			factor = 2
+			has_trait = "trait_industrious"
+		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_ai_personality = peaceful_traders
+			has_ai_personality = ruthless_capitalists
+			has_ai_personality = slaving_despots
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = "ethic_collectivist"
+			has_ethic = "ethic_fanatic_collectivist"
+			}
+		}
 	}
 }
 
-tech_mining_7 = {
+tech_mining_8 = {
 	area = engineering
 	cost = @tier3cost2
 	tier = 3
 	category = { mining }
-	prerequisites = { "tech_mining_6"}	
+	prerequisites = { "tech_mining_7"}	
 	weight = @tier3weight2
-
 
 	
 	weight_modifier = {
@@ -296,6 +446,7 @@ tech_mining_7 = {
 	}
 	
 	ai_weight = {
+		factor = 3
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -303,15 +454,34 @@ tech_mining_7 = {
 				has_trait = "leader_trait_expertise_mining"
 			}
 		}
+		modifier = {
+			factor = 2
+			has_trait = "trait_industrious"
+		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_ai_personality = peaceful_traders
+			has_ai_personality = ruthless_capitalists
+			has_ai_personality = slaving_despots
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = "ethic_collectivist"
+			has_ethic = "ethic_fanatic_collectivist"
+			}
+		}
 	}
 }
 
-tech_mining_8 = {
+tech_mining_9 = {
 	area = engineering
 	cost = @tier3cost3
 	tier = 3
 	category = { mining }
-	prerequisites = { "tech_mining_7"}	
+	prerequisites = { "tech_mining_8"}	
 	weight = @tier3weight3
 
 	
@@ -323,9 +493,11 @@ tech_mining_8 = {
 				has_trait = "leader_trait_expertise_mining"
 			}			
 		}
+		
 	}
 	
 	ai_weight = {
+		factor = 3
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -333,15 +505,34 @@ tech_mining_8 = {
 				has_trait = "leader_trait_expertise_mining"
 			}
 		}
+		modifier = {
+			factor = 2
+			has_trait = "trait_industrious"
+		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_ai_personality = peaceful_traders
+			has_ai_personality = ruthless_capitalists
+			has_ai_personality = slaving_despots
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = "ethic_collectivist"
+			has_ethic = "ethic_fanatic_collectivist"
+			}
+		}
 	}
 }
 
-tech_mining_9 = {
+tech_mining_10 = {
 	area = engineering
 	cost = @tier3cost4
 	tier = 3
 	category = { mining }
-	prerequisites = { "tech_mining_8"}	
+	prerequisites = { "tech_mining_9"}	
 	weight = @tier3weight4
 
 	
@@ -356,6 +547,7 @@ tech_mining_9 = {
 	}
 	
 	ai_weight = {
+		factor = 3
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -363,15 +555,35 @@ tech_mining_9 = {
 				has_trait = "leader_trait_expertise_mining"
 			}
 		}
+		modifier = {
+			factor = 2
+			has_trait = "trait_industrious"
+		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_ai_personality = peaceful_traders
+			has_ai_personality = ruthless_capitalists
+			has_ai_personality = slaving_despots
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = "ethic_collectivist"
+			has_ethic = "ethic_fanatic_collectivist"
+			}
+		}
 	}
 }
 
-tech_mining_10 = {
+#Steel 3 Start
+tech_mining_11 = {
 	area = engineering
 	cost = @tier4cost1
 	tier = 4
 	category = { mining }
-	prerequisites = { "tech_mining_9"}	
+	prerequisites = { "tech_mining_10"}	
 	weight = @tier4weight1
 
 	
@@ -386,6 +598,7 @@ tech_mining_10 = {
 	}
 	
 	ai_weight = {
+		factor = 3
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -393,35 +606,23 @@ tech_mining_10 = {
 				has_trait = "leader_trait_expertise_mining"
 			}
 		}
-	}
-}
-
-#Steel 3 Start
-tech_mining_11 = {
-	area = engineering
-	cost = @tier4cost2
-	tier = 4
-	category = { mining }
-	prerequisites = { "tech_mining_10"}	
-	weight = @tier4weight2
-
-	
-	weight_modifier = {
 		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_mining"
-			}			
+			factor = 2
+			has_trait = "trait_industrious"
 		}
-	}
-	
-	ai_weight = {
 		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_mining"
+			factor = 3
+			OR = {
+			has_ai_personality = peaceful_traders
+			has_ai_personality = ruthless_capitalists
+			has_ai_personality = slaving_despots
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = "ethic_collectivist"
+			has_ethic = "ethic_fanatic_collectivist"
 			}
 		}
 	}
@@ -429,11 +630,11 @@ tech_mining_11 = {
 
 tech_mining_12 = {
 	area = engineering
-	cost = @tier4cost3
+	cost = @tier4cost2
 	tier = 4
 	category = { mining }
 	prerequisites = { "tech_mining_11"}	
-	weight = @tier4weight3
+	weight = @tier4weight2
 	
 	
 	weight_modifier = {
@@ -447,11 +648,31 @@ tech_mining_12 = {
 	}
 	
 	ai_weight = {
+		factor = 3
 		modifier = {
 			factor = 1.25
 			research_leader = {
 				area = engineering
 				has_trait = "leader_trait_expertise_mining"
+			}
+		}
+		modifier = {
+			factor = 2
+			has_trait = "trait_industrious"
+		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_ai_personality = peaceful_traders
+			has_ai_personality = ruthless_capitalists
+			has_ai_personality = slaving_despots
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = "ethic_collectivist"
+			has_ethic = "ethic_fanatic_collectivist"
 			}
 		}
 	}
@@ -459,11 +680,11 @@ tech_mining_12 = {
 
 tech_mining_13 = {
 	area = engineering
-	cost = @tier4cost4
+	cost = @tier4cost3
 	tier = 4
 	category = { mining }
 	prerequisites = { "tech_mining_12"}	
-	weight = @tier4weight4
+	weight = @tier4weight3
 
 	
 	weight_modifier = {
@@ -477,11 +698,31 @@ tech_mining_13 = {
 	}
 	
 	ai_weight = {
+		factor = 3
 		modifier = {
 			factor = 1.25
 			research_leader = {
 				area = engineering
 				has_trait = "leader_trait_expertise_mining"
+			}
+		}
+		modifier = {
+			factor = 2
+			has_trait = "trait_industrious"
+		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_ai_personality = peaceful_traders
+			has_ai_personality = ruthless_capitalists
+			has_ai_personality = slaving_despots
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = "ethic_collectivist"
+			has_ethic = "ethic_fanatic_collectivist"
 			}
 		}
 	}
@@ -489,11 +730,11 @@ tech_mining_13 = {
 
 tech_mining_14 = {
 	area = engineering
-	cost = @tier5cost1
-	tier = 5
+	cost = @tier4cost4
+	tier = 4
 	category = { mining }
 	prerequisites = { "tech_mining_13"}	
-	weight = @tier5weight1
+	weight = @tier4weight4
 	
 	
 	weight_modifier = {
@@ -507,6 +748,7 @@ tech_mining_14 = {
 	}
 	
 	ai_weight = {
+		factor = 3
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -514,16 +756,35 @@ tech_mining_14 = {
 				has_trait = "leader_trait_expertise_mining"
 			}
 		}
+		modifier = {
+			factor = 2
+			has_trait = "trait_industrious"
+		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_ai_personality = peaceful_traders
+			has_ai_personality = ruthless_capitalists
+			has_ai_personality = slaving_despots
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = "ethic_collectivist"
+			has_ethic = "ethic_fanatic_collectivist"
+			}
+		}
 	}
 }
 
 tech_mining_15 = {
 	area = engineering
-	cost = @tier5cost2
+	cost = @tier5cost1
 	tier = 5
 	category = { mining }
 	prerequisites = { "tech_mining_14"}	
-	weight = @tier5weight2
+	weight = @tier5weight1
 
 	
 	weight_modifier = {
@@ -537,11 +798,31 @@ tech_mining_15 = {
 	}
 	
 	ai_weight = {
+		factor = 3
 		modifier = {
 			factor = 1.25
 			research_leader = {
 				area = engineering
 				has_trait = "leader_trait_expertise_mining"
+			}
+		}
+		modifier = {
+			factor = 2
+			has_trait = "trait_industrious"
+		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_ai_personality = peaceful_traders
+			has_ai_personality = ruthless_capitalists
+			has_ai_personality = slaving_despots
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = "ethic_collectivist"
+			has_ethic = "ethic_fanatic_collectivist"
 			}
 		}
 	}

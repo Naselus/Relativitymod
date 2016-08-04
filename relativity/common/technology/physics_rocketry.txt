@@ -197,20 +197,81 @@ tech_missiles_2 = {
 	ai_weight = {
 		factor = 2		#weapons are good
 		modifier = {
-			factor = 0.65
-			has_ethic = ethic_fanatic_pacifist
+			factor = 2
+			has_ethic = "ethic_militarist"
 		}
 		modifier = {
-			factor = 0.8
-			has_ethic = ethic_pacifist
+			factor = 2
+			OR = {
+			has_ai_personality = hegemonic_imperialists
+			has_ai_personality = honorbound_warriors
+			has_ai_personality = fanatic_purifiers
+			has_ai_personality = evangelising_zealots
+			has_ai_personality = slaving_despots
+			}
+		}
+		modifier = {
+			factor = 4
+			has_ethic = "ethic_fanatic_militarist"
+		}
+		modifier = {
+			factor = 0.75
+			has_ethic = "ethic_pacifist"
+		}
+		modifier = {
+			factor = 0.5
+			has_ethic = "ethic_fanatic_pacifist"
 		}
 		modifier = {
 			factor = 1.25
-			has_ethic = ethic_militarist
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_rocketry"
+			}
+		}
+	}
+}
+
+tech_rocketry_11 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { rocketry }
+	prerequisites = { "tech_missiles_2" }
+	weight = @tier2weight1
+
+	modifier = {
+		weapon_type_explosive_weapon_damage_mult = 0.05
+		weapon_type_explosive_weapon_fire_rate_mult = 0.05
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 2
+			has_ethic = "ethic_militarist"
 		}
 		modifier = {
-			factor = 1.5
-			has_ethic = ethic_fanatic_militarist
+			factor = 2
+			OR = {
+			has_ai_personality = hegemonic_imperialists
+			has_ai_personality = honorbound_warriors
+			has_ai_personality = fanatic_purifiers
+			has_ai_personality = evangelising_zealots
+			has_ai_personality = slaving_despots
+			}
+		}
+		modifier = {
+			factor = 4
+			has_ethic = "ethic_fanatic_militarist"
+		}
+		modifier = {
+			factor = 0.75
+			has_ethic = "ethic_pacifist"
+		}
+		modifier = {
+			factor = 0.5
+			has_ethic = "ethic_fanatic_pacifist"
 		}
 		modifier = {
 			factor = 1.25
@@ -225,12 +286,12 @@ tech_missiles_2 = {
 # Antimatter Missiles
 tech_missiles_3 = {
 	area = physics
-	cost = @tier2cost1
+	cost = @tier2cost3
 	tier = 2
 	category = { rocketry }
 	ai_update_type = military
-	prerequisites = { "tech_missiles_2" }
-	weight = @tier2weight1
+	prerequisites = { "tech_rocketry_11" }
+	weight = @tier2weight3
 	
 	weight_modifier = {
 		modifier = {
@@ -261,20 +322,81 @@ tech_missiles_3 = {
 	ai_weight = {
 		factor = 2		#weapons are good
 		modifier = {
-			factor = 0.65
-			has_ethic = ethic_fanatic_pacifist
+			factor = 2
+			has_ethic = "ethic_militarist"
 		}
 		modifier = {
-			factor = 0.8
-			has_ethic = ethic_pacifist
+			factor = 2
+			OR = {
+			has_ai_personality = hegemonic_imperialists
+			has_ai_personality = honorbound_warriors
+			has_ai_personality = fanatic_purifiers
+			has_ai_personality = evangelising_zealots
+			has_ai_personality = slaving_despots
+			}
+		}
+		modifier = {
+			factor = 4
+			has_ethic = "ethic_fanatic_militarist"
+		}
+		modifier = {
+			factor = 0.75
+			has_ethic = "ethic_pacifist"
+		}
+		modifier = {
+			factor = 0.5
+			has_ethic = "ethic_fanatic_pacifist"
 		}
 		modifier = {
 			factor = 1.25
-			has_ethic = ethic_militarist
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_rocketry"
+			}
+		}
+	}
+}
+
+tech_rocketry_12 = {
+	area = physics
+	cost = @tier2cost4
+	tier = 2
+	category = { rocketry }
+	prerequisites = { "tech_missiles_3" }
+	weight = @tier2weight4
+
+	modifier = {
+		weapon_type_explosive_weapon_damage_mult = 0.05
+		weapon_type_explosive_weapon_fire_rate_mult = 0.05
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 2
+			has_ethic = "ethic_militarist"
 		}
 		modifier = {
-			factor = 1.5
-			has_ethic = ethic_fanatic_militarist
+			factor = 2
+			OR = {
+			has_ai_personality = hegemonic_imperialists
+			has_ai_personality = honorbound_warriors
+			has_ai_personality = fanatic_purifiers
+			has_ai_personality = evangelising_zealots
+			has_ai_personality = slaving_despots
+			}
+		}
+		modifier = {
+			factor = 4
+			has_ethic = "ethic_fanatic_militarist"
+		}
+		modifier = {
+			factor = 0.75
+			has_ethic = "ethic_pacifist"
+		}
+		modifier = {
+			factor = 0.5
+			has_ethic = "ethic_fanatic_pacifist"
 		}
 		modifier = {
 			factor = 1.25
@@ -289,12 +411,12 @@ tech_missiles_3 = {
 # Heavy Missiles
 tech_missiles_4 = {
 	area = physics
-	cost = @tier2cost4
-	tier = 2
+	cost = @tier3cost1
+	tier = 3
 	category = { rocketry }
 	ai_update_type = military
-	prerequisites = { "tech_missiles_3" }
-	weight = @tier2weight4
+	prerequisites = { "tech_rocketry_12" }
+	weight = @tier3weight1
 	
 	weight_modifier = {
 		modifier = {
@@ -325,20 +447,81 @@ tech_missiles_4 = {
 	ai_weight = {
 		factor = 2		#weapons are good
 		modifier = {
-			factor = 0.65
-			has_ethic = ethic_fanatic_pacifist
+			factor = 2
+			has_ethic = "ethic_militarist"
 		}
 		modifier = {
-			factor = 0.8
-			has_ethic = ethic_pacifist
+			factor = 2
+			OR = {
+			has_ai_personality = hegemonic_imperialists
+			has_ai_personality = honorbound_warriors
+			has_ai_personality = fanatic_purifiers
+			has_ai_personality = evangelising_zealots
+			has_ai_personality = slaving_despots
+			}
+		}
+		modifier = {
+			factor = 4
+			has_ethic = "ethic_fanatic_militarist"
+		}
+		modifier = {
+			factor = 0.75
+			has_ethic = "ethic_pacifist"
+		}
+		modifier = {
+			factor = 0.5
+			has_ethic = "ethic_fanatic_pacifist"
 		}
 		modifier = {
 			factor = 1.25
-			has_ethic = ethic_militarist
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_rocketry"
+			}
+		}
+	}
+}
+
+tech_rocketry_13 = {
+	area = physics
+	cost = @tier3cost3
+	tier = 3
+	category = { rocketry }
+	prerequisites = { "tech_missiles_4" }
+	weight = @tier3weight3
+	
+	modifier = {
+		weapon_type_explosive_weapon_damage_mult = 0.05
+		weapon_type_explosive_weapon_fire_rate_mult = 0.05
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 2
+			has_ethic = "ethic_militarist"
 		}
 		modifier = {
-			factor = 1.5
-			has_ethic = ethic_fanatic_militarist
+			factor = 2
+			OR = {
+			has_ai_personality = hegemonic_imperialists
+			has_ai_personality = honorbound_warriors
+			has_ai_personality = fanatic_purifiers
+			has_ai_personality = evangelising_zealots
+			has_ai_personality = slaving_despots
+			}
+		}
+		modifier = {
+			factor = 4
+			has_ethic = "ethic_fanatic_militarist"
+		}
+		modifier = {
+			factor = 0.75
+			has_ethic = "ethic_pacifist"
+		}
+		modifier = {
+			factor = 0.5
+			has_ethic = "ethic_fanatic_pacifist"
 		}
 		modifier = {
 			factor = 1.25
@@ -357,7 +540,7 @@ tech_missiles_5 = {
 	tier = 3
 	category = { rocketry }
 	ai_update_type = military
-	prerequisites = { "tech_missiles_4" }
+	prerequisites = { "tech_rocketry_13" }
 	weight = @tier3weight4
 	
 	weight_modifier = {
@@ -389,20 +572,81 @@ tech_missiles_5 = {
 	ai_weight = {
 		factor = 2		#weapons are good
 		modifier = {
-			factor = 0.65
-			has_ethic = ethic_fanatic_pacifist
+			factor = 2
+			has_ethic = "ethic_militarist"
 		}
 		modifier = {
-			factor = 0.8
-			has_ethic = ethic_pacifist
+			factor = 2
+			OR = {
+			has_ai_personality = hegemonic_imperialists
+			has_ai_personality = honorbound_warriors
+			has_ai_personality = fanatic_purifiers
+			has_ai_personality = evangelising_zealots
+			has_ai_personality = slaving_despots
+			}
+		}
+		modifier = {
+			factor = 4
+			has_ethic = "ethic_fanatic_militarist"
+		}
+		modifier = {
+			factor = 0.75
+			has_ethic = "ethic_pacifist"
+		}
+		modifier = {
+			factor = 0.5
+			has_ethic = "ethic_fanatic_pacifist"
 		}
 		modifier = {
 			factor = 1.25
-			has_ethic = ethic_militarist
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_rocketry"
+			}
+		}
+	}
+}
+
+tech_rocketry_14 = {
+	area = physics
+	cost = @tier3cost4
+	tier = 3
+	category = { rocketry }
+	prerequisites = { "tech_missiles_5" }
+	weight = @tier3weight4
+	
+	modifier = {
+		weapon_type_explosive_weapon_damage_mult = 0.05
+		weapon_type_explosive_weapon_fire_rate_mult = 0.05
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 2
+			has_ethic = "ethic_militarist"
 		}
 		modifier = {
-			factor = 1.5
-			has_ethic = ethic_fanatic_militarist
+			factor = 2
+			OR = {
+			has_ai_personality = hegemonic_imperialists
+			has_ai_personality = honorbound_warriors
+			has_ai_personality = fanatic_purifiers
+			has_ai_personality = evangelising_zealots
+			has_ai_personality = slaving_despots
+			}
+		}
+		modifier = {
+			factor = 4
+			has_ethic = "ethic_fanatic_militarist"
+		}
+		modifier = {
+			factor = 0.75
+			has_ethic = "ethic_pacifist"
+		}
+		modifier = {
+			factor = 0.5
+			has_ethic = "ethic_fanatic_pacifist"
 		}
 		modifier = {
 			factor = 1.25
@@ -421,7 +665,7 @@ tech_swarmer_missiles_1 = {
 	tier = 3
 	category = { rocketry }
 	ai_update_type = military	
-	prerequisites = { "tech_missiles_4" }
+	prerequisites = { "tech_rocketry_13" }
 	weight = @tier3weight1
 	
 	weight_modifier = {
@@ -453,20 +697,81 @@ tech_swarmer_missiles_1 = {
 	ai_weight = {
 		factor = 2		#weapons are good
 		modifier = {
-			factor = 0.65
-			has_ethic = ethic_fanatic_pacifist
+			factor = 2
+			has_ethic = "ethic_militarist"
 		}
 		modifier = {
-			factor = 0.8
-			has_ethic = ethic_pacifist
+			factor = 2
+			OR = {
+			has_ai_personality = hegemonic_imperialists
+			has_ai_personality = honorbound_warriors
+			has_ai_personality = fanatic_purifiers
+			has_ai_personality = evangelising_zealots
+			has_ai_personality = slaving_despots
+			}
+		}
+		modifier = {
+			factor = 4
+			has_ethic = "ethic_fanatic_militarist"
+		}
+		modifier = {
+			factor = 0.75
+			has_ethic = "ethic_pacifist"
+		}
+		modifier = {
+			factor = 0.5
+			has_ethic = "ethic_fanatic_pacifist"
 		}
 		modifier = {
 			factor = 1.25
-			has_ethic = ethic_militarist
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_rocketry"
+			}
+		}
+	}
+}
+
+tech_rocketry_15 = {
+	area = physics
+	cost = @tier3cost4
+	tier = 3
+	category = { rocketry }
+	prerequisites = { "tech_swarmer_missiles_1" }
+	weight = @tier3weight4
+	
+	modifier = {
+		weapon_type_explosive_weapon_damage_mult = 0.05
+		weapon_type_explosive_weapon_fire_rate_mult = 0.05
+	}
+
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 2
+			has_ethic = "ethic_militarist"
 		}
 		modifier = {
-			factor = 1.5
-			has_ethic = ethic_fanatic_militarist
+			factor = 2
+			OR = {
+			has_ai_personality = hegemonic_imperialists
+			has_ai_personality = honorbound_warriors
+			has_ai_personality = fanatic_purifiers
+			has_ai_personality = evangelising_zealots
+			has_ai_personality = slaving_despots
+			}
+		}
+		modifier = {
+			factor = 4
+			has_ethic = "ethic_fanatic_militarist"
+		}
+		modifier = {
+			factor = 0.75
+			has_ethic = "ethic_pacifist"
+		}
+		modifier = {
+			factor = 0.5
+			has_ethic = "ethic_fanatic_pacifist"
 		}
 		modifier = {
 			factor = 1.25
@@ -485,7 +790,7 @@ tech_swarmer_missiles_2 = {
 	tier = 3
 	category = { rocketry }
 	ai_update_type = military	
-	prerequisites = { "tech_swarmer_missiles_1" }
+	prerequisites = { "tech_rocketry_15" }
 	weight = @tier3weight4
 	
 	weight_modifier = {
@@ -517,20 +822,30 @@ tech_swarmer_missiles_2 = {
 	ai_weight = {
 		factor = 2		#weapons are good
 		modifier = {
-			factor = 0.65
-			has_ethic = ethic_fanatic_pacifist
+			factor = 2
+			has_ethic = "ethic_militarist"
 		}
 		modifier = {
-			factor = 0.8
-			has_ethic = ethic_pacifist
+			factor = 2
+			OR = {
+			has_ai_personality = hegemonic_imperialists
+			has_ai_personality = honorbound_warriors
+			has_ai_personality = fanatic_purifiers
+			has_ai_personality = evangelising_zealots
+			has_ai_personality = slaving_despots
+			}
 		}
 		modifier = {
-			factor = 1.25
-			has_ethic = ethic_militarist
+			factor = 4
+			has_ethic = "ethic_fanatic_militarist"
 		}
 		modifier = {
-			factor = 1.5
-			has_ethic = ethic_fanatic_militarist
+			factor = 0.75
+			has_ethic = "ethic_pacifist"
+		}
+		modifier = {
+			factor = 0.5
+			has_ethic = "ethic_fanatic_pacifist"
 		}
 		modifier = {
 			factor = 1.25
@@ -548,139 +863,11 @@ tech_swarmer_missiles_2 = {
 #Space Torpedoes
 tech_torpedoes_1 = {
 	area = physics
-	cost = @tier2cost1
-	tier = 2
-	category = { rocketry }
-	prerequisites = { "tech_missiles_5" }	
-	ai_update_type = military
-	weight = @tier2weight1
-	
-	weight_modifier = {
-		modifier = {
-			factor = 0.65
-			has_ethic = ethic_fanatic_pacifist
-		}
-		modifier = {
-			factor = 0.8
-			has_ethic = ethic_pacifist
-		}
-		modifier = {
-			factor = 1.25
-			has_ethic = ethic_militarist
-		}
-		modifier = {
-			factor = 1.5
-			has_ethic = ethic_fanatic_militarist
-		}
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_rocketry"
-			}
-		}
-	}
-	
-	ai_weight = {
-		factor = 2		#weapons are good
-		modifier = {
-			factor = 0.65
-			has_ethic = ethic_fanatic_pacifist
-		}
-		modifier = {
-			factor = 0.8
-			has_ethic = ethic_pacifist
-		}
-		modifier = {
-			factor = 1.25
-			has_ethic = ethic_militarist
-		}
-		modifier = {
-			factor = 1.5
-			has_ethic = ethic_fanatic_militarist
-		}
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_rocketry"
-			}
-		}
-	}
-}
-
-#Armored Torpedoes
-tech_torpedoes_2 = {
-	area = physics
-	cost = @tier2cost4
-	tier = 2
-	category = { rocketry }
-	ai_update_type = military
-	prerequisites = { "tech_torpedoes_1" }
-	weight = @tier2weight4
-	
-	weight_modifier = {
-		modifier = {
-			factor = 0.65
-			has_ethic = ethic_fanatic_pacifist
-		}
-		modifier = {
-			factor = 0.8
-			has_ethic = ethic_pacifist
-		}
-		modifier = {
-			factor = 1.25
-			has_ethic = ethic_militarist
-		}
-		modifier = {
-			factor = 1.5
-			has_ethic = ethic_fanatic_militarist
-		}
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_rocketry"
-			}
-		}	
-	}
-	
-	ai_weight = {
-		factor = 2		#weapons are good
-		modifier = {
-			factor = 0.65
-			has_ethic = ethic_fanatic_pacifist
-		}
-		modifier = {
-			factor = 0.8
-			has_ethic = ethic_pacifist
-		}
-		modifier = {
-			factor = 1.25
-			has_ethic = ethic_militarist
-		}
-		modifier = {
-			factor = 1.5
-			has_ethic = ethic_fanatic_militarist
-		}
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_rocketry"
-			}
-		}
-	}
-}
-
-#Devastator Torpedoes
-tech_torpedoes_3 = {
-	area = physics
 	cost = @tier3cost4
 	tier = 3
 	category = { rocketry }
-	ai_update_type = military	
-	prerequisites = { "tech_torpedoes_2" }
+	prerequisites = { "tech_rocketry_14" }	
+	ai_update_type = military
 	weight = @tier3weight4
 	
 	weight_modifier = {
@@ -706,11 +893,109 @@ tech_torpedoes_3 = {
 				area = physics
 				has_trait = "leader_trait_expertise_rocketry"
 			}
-		}	
+		}
 	}
 	
 	ai_weight = {
 		factor = 2		#weapons are good
+		modifier = {
+			factor = 2
+			has_ethic = "ethic_militarist"
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = hegemonic_imperialists
+			has_ai_personality = honorbound_warriors
+			has_ai_personality = fanatic_purifiers
+			has_ai_personality = evangelising_zealots
+			has_ai_personality = slaving_despots
+			}
+		}
+		modifier = {
+			factor = 4
+			has_ethic = "ethic_fanatic_militarist"
+		}
+		modifier = {
+			factor = 0.75
+			has_ethic = "ethic_pacifist"
+		}
+		modifier = {
+			factor = 0.5
+			has_ethic = "ethic_fanatic_pacifist"
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_rocketry"
+			}
+		}
+	}
+}
+
+tech_rocketry_16 = {
+	area = physics
+	cost = @tier4cost1
+	tier = 4
+	category = { rocketry }
+	prerequisites = { "tech_torpedoes_1" }
+	weight = @tier4weight1
+
+	modifier = {
+		weapon_type_explosive_weapon_damage_mult = 0.05
+		weapon_type_explosive_weapon_fire_rate_mult = 0.05
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 2
+			has_ethic = "ethic_militarist"
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = hegemonic_imperialists
+			has_ai_personality = honorbound_warriors
+			has_ai_personality = fanatic_purifiers
+			has_ai_personality = evangelising_zealots
+			has_ai_personality = slaving_despots
+			}
+		}
+		modifier = {
+			factor = 4
+			has_ethic = "ethic_fanatic_militarist"
+		}
+		modifier = {
+			factor = 0.75
+			has_ethic = "ethic_pacifist"
+		}
+		modifier = {
+			factor = 0.5
+			has_ethic = "ethic_fanatic_pacifist"
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_rocketry"
+			}
+		}
+	}
+}
+
+#Armored Torpedoes
+tech_torpedoes_2 = {
+	area = physics
+	cost = @tier4cost2
+	tier = 4
+	category = { rocketry }
+	ai_update_type = military
+	prerequisites = { "tech_rocketry_16" }
+	weight = @tier4weight2
+	
+	weight_modifier = {
 		modifier = {
 			factor = 0.65
 			has_ethic = ethic_fanatic_pacifist
@@ -733,166 +1018,320 @@ tech_torpedoes_3 = {
 				area = physics
 				has_trait = "leader_trait_expertise_rocketry"
 			}
+		}	
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 2
+			has_ethic = "ethic_militarist"
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = hegemonic_imperialists
+			has_ai_personality = honorbound_warriors
+			has_ai_personality = fanatic_purifiers
+			has_ai_personality = evangelising_zealots
+			has_ai_personality = slaving_despots
+			}
+		}
+		modifier = {
+			factor = 4
+			has_ethic = "ethic_fanatic_militarist"
+		}
+		modifier = {
+			factor = 0.75
+			has_ethic = "ethic_pacifist"
+		}
+		modifier = {
+			factor = 0.5
+			has_ethic = "ethic_fanatic_pacifist"
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_rocketry"
+			}
 		}
 	}
 }
 
-tech_rocketry_11 = {
-	area = physics
-	cost = @tier2cost1
-	tier = 2
-	category = { rocketry }
-	prerequisites = { "tech_torpedoes_3" }
-	weight = @tier2weight1
-
-	modifier = {
-		weapon_type_explosive_weapon_damage_mult = 0.05
-		weapon_type_explosive_weapon_fire_rate_mult = 0.05
-	}
-	
-	ai_weight = { factor = 1 }
-}
-
-tech_rocketry_12 = {
-	area = physics
-	cost = @tier2cost1
-	tier = 2
-	category = { rocketry }
-	prerequisites = { "tech_rocketry_11" }
-	weight = @tier2weight1
-
-	modifier = {
-		weapon_type_explosive_weapon_damage_mult = 0.05
-		weapon_type_explosive_weapon_fire_rate_mult = 0.05
-	}
-	
-	ai_weight = { factor = 1 }
-}
-
-tech_rocketry_13 = {
-	area = physics
-	cost = @tier2cost1
-	tier = 2
-	category = { rocketry }
-	prerequisites = { "tech_rocketry_12" }
-	weight = @tier2weight1
-	
-	modifier = {
-		weapon_type_explosive_weapon_damage_mult = 0.05
-		weapon_type_explosive_weapon_fire_rate_mult = 0.05
-	}
-	
-	ai_weight = { factor = 1 }
-}
-
-tech_rocketry_14 = {
-	area = physics
-	cost = @tier2cost1
-	tier = 2
-	category = { rocketry }
-	prerequisites = { "tech_rocketry_13" }
-	weight = @tier2weight1
-	
-	modifier = {
-		weapon_type_explosive_weapon_damage_mult = 0.05
-		weapon_type_explosive_weapon_fire_rate_mult = 0.05
-	}
-	
-	ai_weight = { factor = 1 }
-}
-
-tech_rocketry_15 = {
-	area = physics
-	cost = @tier2cost1
-	tier = 2
-	category = { rocketry }
-	prerequisites = { "tech_rocketry_14" }
-	weight = @tier2weight1
-	
-	modifier = {
-		weapon_type_explosive_weapon_damage_mult = 0.05
-		weapon_type_explosive_weapon_fire_rate_mult = 0.05
-	}
-
-	ai_weight = { factor = 1 }
-}
-
-tech_rocketry_16 = {
-	area = physics
-	cost = @tier2cost1
-	tier = 2
-	category = { rocketry }
-	prerequisites = { "tech_rocketry_15" }
-	weight = @tier2weight1
-
-	modifier = {
-		weapon_type_explosive_weapon_damage_mult = 0.05
-		weapon_type_explosive_weapon_fire_rate_mult = 0.05
-	}
-	
-	ai_weight = { factor = 1 }
-}
-
 tech_rocketry_17 = {
 	area = physics
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier4cost2
+	tier = 4
 	category = { rocketry }
-	prerequisites = { "tech_rocketry_16" }
-	weight = @tier2weight1
+	prerequisites = { "tech_torpedoes_2" }
+	weight = @tier4weight2
 
 	modifier = {
 		weapon_type_explosive_weapon_damage_mult = 0.05
 		weapon_type_explosive_weapon_fire_rate_mult = 0.05
 	}
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 2
+			has_ethic = "ethic_militarist"
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = hegemonic_imperialists
+			has_ai_personality = honorbound_warriors
+			has_ai_personality = fanatic_purifiers
+			has_ai_personality = evangelising_zealots
+			has_ai_personality = slaving_despots
+			}
+		}
+		modifier = {
+			factor = 4
+			has_ethic = "ethic_fanatic_militarist"
+		}
+		modifier = {
+			factor = 0.75
+			has_ethic = "ethic_pacifist"
+		}
+		modifier = {
+			factor = 0.5
+			has_ethic = "ethic_fanatic_pacifist"
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_rocketry"
+			}
+		}
+	}
+}
+
+#Devastator Torpedoes
+tech_torpedoes_3 = {
+	area = physics
+	cost = @tier4cost3
+	tier = 4
+	category = { rocketry }
+	ai_update_type = military	
+	prerequisites = { "tech_rocketry_17" }
+	weight = @tier4weight3
 	
-	ai_weight = { factor = 1 }
+	weight_modifier = {
+		modifier = {
+			factor = 0.65
+			has_ethic = ethic_fanatic_pacifist
+		}
+		modifier = {
+			factor = 0.8
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_rocketry"
+			}
+		}	
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 2
+			has_ethic = "ethic_militarist"
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = hegemonic_imperialists
+			has_ai_personality = honorbound_warriors
+			has_ai_personality = fanatic_purifiers
+			has_ai_personality = evangelising_zealots
+			has_ai_personality = slaving_despots
+			}
+		}
+		modifier = {
+			factor = 4
+			has_ethic = "ethic_fanatic_militarist"
+		}
+		modifier = {
+			factor = 0.75
+			has_ethic = "ethic_pacifist"
+		}
+		modifier = {
+			factor = 0.5
+			has_ethic = "ethic_fanatic_pacifist"
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_rocketry"
+			}
+		}
+	}
 }
 
 tech_rocketry_18 = {
 	area = physics
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier4cost3
+	tier = 4
 	category = { rocketry }
-	prerequisites = { "tech_rocketry_17" }	
-	weight = @tier2weight1
+	prerequisites = { "tech_torpedoes_3" }	
+	weight = @tier4weight3
 
 	modifier = {
 		weapon_type_explosive_weapon_damage_mult = 0.05
 		weapon_type_explosive_weapon_fire_rate_mult = 0.05
 	}
 	
-	ai_weight = { factor = 1 }
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 2
+			has_ethic = "ethic_militarist"
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = hegemonic_imperialists
+			has_ai_personality = honorbound_warriors
+			has_ai_personality = fanatic_purifiers
+			has_ai_personality = evangelising_zealots
+			has_ai_personality = slaving_despots
+			}
+		}
+		modifier = {
+			factor = 4
+			has_ethic = "ethic_fanatic_militarist"
+		}
+		modifier = {
+			factor = 0.75
+			has_ethic = "ethic_pacifist"
+		}
+		modifier = {
+			factor = 0.5
+			has_ethic = "ethic_fanatic_pacifist"
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_rocketry"
+			}
+		}
+	}
 }
 
 tech_rocketry_19 = {
 	area = physics
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier4cost4
+	tier = 4
 	category = { rocketry }
 	prerequisites = { "tech_rocketry_18" }	
-	weight = @tier2weight1
+	weight = @tier4weight4
 	
 	modifier = {
 		weapon_type_explosive_weapon_damage_mult = 0.05
 		weapon_type_explosive_weapon_fire_rate_mult = 0.05
 	}
 
-	ai_weight = { factor = 1 }
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 2
+			has_ethic = "ethic_militarist"
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = hegemonic_imperialists
+			has_ai_personality = honorbound_warriors
+			has_ai_personality = fanatic_purifiers
+			has_ai_personality = evangelising_zealots
+			has_ai_personality = slaving_despots
+			}
+		}
+		modifier = {
+			factor = 4
+			has_ethic = "ethic_fanatic_militarist"
+		}
+		modifier = {
+			factor = 0.75
+			has_ethic = "ethic_pacifist"
+		}
+		modifier = {
+			factor = 0.5
+			has_ethic = "ethic_fanatic_pacifist"
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_rocketry"
+			}
+		}
+	}
 }
 
 tech_rocketry_20 = {
 	area = physics
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier4cost4
+	tier = 4
 	category = { rocketry }
 	prerequisites = { "tech_rocketry_19" }	
-	weight = @tier2weight1
+	weight = @tier4weight4
 	
 	modifier = {
 		weapon_type_explosive_weapon_damage_mult = 0.05
 		weapon_type_explosive_weapon_fire_rate_mult = 0.05
 	}
 	
-	ai_weight = { factor = 1 }
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 2
+			has_ethic = "ethic_militarist"
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = hegemonic_imperialists
+			has_ai_personality = honorbound_warriors
+			has_ai_personality = fanatic_purifiers
+			has_ai_personality = evangelising_zealots
+			has_ai_personality = slaving_despots
+			}
+		}
+		modifier = {
+			factor = 4
+			has_ethic = "ethic_fanatic_militarist"
+		}
+		modifier = {
+			factor = 0.75
+			has_ethic = "ethic_pacifist"
+		}
+		modifier = {
+			factor = 0.5
+			has_ethic = "ethic_fanatic_pacifist"
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_rocketry"
+			}
+		}
+	}
 }

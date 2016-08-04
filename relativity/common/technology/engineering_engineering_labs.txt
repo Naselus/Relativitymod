@@ -205,11 +205,11 @@ tech_engineering_lab_3 = {
 
 tech_engineering_lab_4 = {
 	area = engineering
-	cost = @tier2cost2
+	cost = @tier2cost1
 	tier = 2
 	category = { engineering_labs }
 	prerequisites = { "tech_engineering_lab_3"}	
-	weight = @tier2weight2
+	weight = @tier2weight1
 	
 	modifier = {
 		country_engineering_tech_research_speed = 0.03
@@ -225,12 +225,12 @@ tech_engineering_lab_4 = {
 
 #Engineering Lab 2
 tech_engineering_lab_5 = {
-	cost = @tier2cost3
+	cost = @tier2cost2
 	area = engineering
 	tier = 2
 	category = { engineering_labs }	
 	prerequisites = { "tech_engineering_lab_4" "tech_power_plant_6" }
-	weight = @tier2weight3
+	weight = @tier2weight2
 		
 	## unlock engineering lab lvl 2
 	
@@ -274,11 +274,11 @@ tech_engineering_lab_5 = {
 
 tech_engineering_lab_6 = {
 	area = engineering
-	cost = @tier3cost1
-	tier = 3
+	cost = @tier2cost3
+	tier = 2
 	category = { engineering_labs }
 	prerequisites = { "tech_engineering_lab_5"}	
-	weight = @tier3weight1
+	weight = @tier2weight3
 	
 	modifier = {
 		country_engineering_tech_research_speed = 0.03
@@ -294,11 +294,11 @@ tech_engineering_lab_6 = {
 
 tech_engineering_lab_7 = {
 	area = engineering
-	cost = @tier3cost2
+	cost = @tier3cost1
 	tier = 3
 	category = { engineering_labs }
 	prerequisites = { "tech_engineering_lab_6"}	
-	weight = @tier3weight2
+	weight = @tier3weight1
 	
 	modifier = {
 		country_engineering_tech_research_speed = 0.03
@@ -314,11 +314,11 @@ tech_engineering_lab_7 = {
 
 tech_engineering_lab_8 = {
 	area = engineering
-	cost = @tier3cost3
+	cost = @tier3cost1
 	tier = 3
 	category = { engineering_labs }
 	prerequisites = { "tech_engineering_lab_7"}	
-	weight = @tier3weight3
+	weight = @tier3weight1
 	
 	modifier = {
 		country_engineering_tech_research_speed = 0.03
@@ -334,11 +334,11 @@ tech_engineering_lab_8 = {
 
 tech_engineering_lab_9 = {
 	area = engineering
-	cost = @tier3cost4
+	cost = @tier3cost2
 	tier = 3
 	category = { engineering_labs }
 	prerequisites = { "tech_engineering_lab_8"}	
-	weight = @tier3weight4
+	weight = @tier3weight2
 	
 	modifier = {
 		country_engineering_tech_research_speed = 0.03
@@ -354,12 +354,12 @@ tech_engineering_lab_9 = {
 
 #Engineering Lab 3
 tech_engineering_lab_10 = {
-	cost = @tier4cost1
+	cost = @tier4cost3
 	area = engineering
-	tier = 4
+	tier = 3
 	category = { engineering_labs }	
 	prerequisites = { "tech_engineering_lab_9" "tech_galactic_administration" }
-	weight = @tier4weight1
+	weight = @tier3weight3
 		
 	## unlock engineering lab lvl 3
 	
@@ -403,11 +403,11 @@ tech_engineering_lab_10 = {
 
 tech_engineering_lab_11 = {
 	area = engineering
-	cost = @tier4cost2
-	tier = 4
+	cost = @tier3cost3
+	tier = 3
 	category = { engineering_labs }
 	prerequisites = { "tech_engineering_lab_10"}	
-	weight = @tier4weight2
+	weight = @tier3weight3
 	
 	modifier = {
 		country_engineering_tech_research_speed = 0.03
@@ -423,11 +423,11 @@ tech_engineering_lab_11 = {
 
 tech_engineering_lab_12 = {
 	area = engineering
-	cost = @tier4cost4
-	tier = 4
+	cost = @tier3cost4
+	tier = 3
 	category = { engineering_labs }
 	prerequisites = { "tech_engineering_lab_11"}	
-	weight = @tier4weight4
+	weight = @tier3weight4
 	
 	modifier = {
 		country_engineering_tech_research_speed = 0.03
@@ -443,11 +443,11 @@ tech_engineering_lab_12 = {
 
 tech_engineering_lab_13 = {
 	area = engineering
-	cost = @tier5cost2
-	tier = 5
+	cost = @tier3cost4
+	tier = 3
 	category = { engineering_labs }
 	prerequisites = { "tech_engineering_lab_12"}	
-	weight = @tier5weight2
+	weight = @tier3weight4
 	
 	modifier = {
 		country_engineering_tech_research_speed = 0.03
@@ -463,11 +463,11 @@ tech_engineering_lab_13 = {
 
 tech_engineering_lab_14 = {
 	area = engineering
-	cost = @tier5cost3
-	tier = 5
+	cost = @tier4cost1
+	tier = 4
 	category = { engineering_labs }
 	prerequisites = { "tech_engineering_lab_13"}	
-	weight = @tier5weight3
+	weight = @tier4weight1
 	
 	modifier = {
 		country_engineering_tech_research_speed = 0.03
@@ -483,12 +483,12 @@ tech_engineering_lab_14 = {
 
 #Engineering Lab 4
 tech_engineering_lab_15 = {
-	cost = @tier5cost4
+	cost = @tier4cost1
 	area = engineering
-	tier = 5
+	tier = 4
 	category = { engineering_labs }	
 	prerequisites = { "tech_engineering_lab_14" "tech_power_plant_11" }
-	weight = @tier5weight4
+	weight = @tier4weight1
 		
 	## unlock engineering lab lvl 4
 	
@@ -532,11 +532,11 @@ tech_engineering_lab_15 = {
 
 tech_engineering_lab_16 = {
 	area = engineering
-	cost = @tier6cost1
-	tier = 6
+	cost = @tier4cost2
+	tier = 4
 	category = { engineering_labs }
 	prerequisites = { "tech_engineering_lab_15"}	
-	weight = @tier6weight1
+	weight = @tier4weight2
 	
 	modifier = {
 		country_engineering_tech_research_speed = 0.03
@@ -552,11 +552,11 @@ tech_engineering_lab_16 = {
 
 tech_engineering_lab_17 = {
 	area = engineering
-	cost = @tier6cost2
-	tier = 6
+	cost = @tier4cost2
+	tier = 4
 	category = { engineering_labs }
 	prerequisites = { "tech_engineering_lab_16"}	
-	weight = @tier6weight2
+	weight = @tier4weight2
 	
 	modifier = {
 		country_engineering_tech_research_speed = 0.03
@@ -572,11 +572,11 @@ tech_engineering_lab_17 = {
 
 tech_engineering_lab_18 = {
 	area = engineering
-	cost = @tier6cost3
-	tier = 6
+	cost = @tier4cost2
+	tier = 4
 	category = { engineering_labs }
 	prerequisites = { "tech_engineering_lab_17"}	
-	weight = @tier6weight3
+	weight = @tier4weight2
 	
 	modifier = {
 		country_engineering_tech_research_speed = 0.03
@@ -592,11 +592,11 @@ tech_engineering_lab_18 = {
 
 tech_engineering_lab_19 = {
 	area = engineering
-	cost = @tier7cost1
-	tier = 7
+	cost = @tier4cost3
+	tier = 4
 	category = { engineering_labs }
 	prerequisites = { "tech_engineering_lab_18"}	
-	weight = @tier7weight1
+	weight = @tier4weight3
 	
 	modifier = {
 		country_engineering_tech_research_speed = 0.03
@@ -612,12 +612,12 @@ tech_engineering_lab_19 = {
 
 #Engineering Lab 5
 tech_engineering_lab_20 = {
-	cost = @tier7cost2
+	cost = @tier4cost4
 	area = engineering
-	tier = 7
+	tier = 4
 	category = { engineering_labs }	
 	prerequisites = { "tech_engineering_lab_19" "tech_galactic_administration" }
-	weight = @tier7weight2
+	weight = @tier4weight4
 		
 	## unlock engineering lab lvl 5
 	

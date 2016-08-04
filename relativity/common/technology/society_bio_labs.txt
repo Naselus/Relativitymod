@@ -194,11 +194,11 @@ tech_societal_research_2 = {
 
 tech_societal_research_3 = {
 	area = society
-	cost = @tier2cost2
+	cost = @tier2cost1
 	tier = 2
 	category = { bio_labs }
 	prerequisites = { "tech_societal_research_2" }		
-	weight = @tier2weight2
+	weight = @tier2weight1
 	
 		modifier = {
 		country_society_tech_research_speed = 0.03	
@@ -215,12 +215,12 @@ tech_societal_research_3 = {
 
 #Bio Lab 2
 tech_biolab_2 = {
-	cost = @tier2cost3
+	cost = @tier2cost2
 	area = society
 	tier = 2
 	category = { bio_labs }
 	prerequisites = { "tech_societal_research_3" "tech_power_plant_6"}
-	weight = @tier2weight3
+	weight = @tier2weight2
 	
 	weight_modifier = {
 		modifier = {
@@ -262,11 +262,11 @@ tech_biolab_2 = {
 
 tech_societal_research_4 = {
 	area = society
-	cost = @tier3cost1
-	tier = 3
+	cost = @tier2cost3
+	tier = 2
 	category = { bio_labs }
 	prerequisites = { "tech_biolab_2" }		
-	weight = @tier3weight1
+	weight = @tier2weight3
 	
 		modifier = {
 		country_society_tech_research_speed = 0.03	
@@ -283,11 +283,11 @@ tech_societal_research_4 = {
 
 tech_societal_research_5 = {
 	area = society
-	cost = @tier3cost2
+	cost = @tier3cost1
 	tier = 3
 	category = { bio_labs }
 	prerequisites = { "tech_societal_research_4" }		
-	weight = @tier3weight2
+	weight = @tier3weight1
 	
 			modifier = {
 		country_society_tech_research_speed = 0.03	
@@ -304,11 +304,11 @@ tech_societal_research_5 = {
 
 tech_societal_research_6 = {
 	area = society
-	cost = @tier3cost3
+	cost = @tier3cost1
 	tier = 3
 	category = { bio_labs }
 	prerequisites = { "tech_societal_research_5" }		
-	weight = @tier3weight3
+	weight = @tier3weight1
 	
 		modifier = {
 		country_society_tech_research_speed = 0.03	
@@ -325,11 +325,11 @@ tech_societal_research_6 = {
 
 tech_societal_research_7 = {
 	area = society
-	cost = @tier3cost4
+	cost = @tier3cost2
 	tier = 3
 	category = { bio_labs }
 	prerequisites = { "tech_societal_research_6" }		
-	weight = @tier3weight4
+	weight = @tier3weight2
 	
 		modifier = {
 		country_society_tech_research_speed = 0.03	
@@ -346,12 +346,12 @@ tech_societal_research_7 = {
 
 #Bio Lab 3
 tech_biolab_3 = {
-	cost = @tier4cost1
+	cost = @tier3cost3
 	area = society
-	tier = 4
+	tier = 3
 	category = { bio_labs }	
 	prerequisites = { "tech_societal_research_7" "tech_galactic_ambitions" }
-	weight = @tier4weight1
+	weight = @tier3weight3
 	
 	weight_modifier = {
 		modifier = {
@@ -393,11 +393,11 @@ tech_biolab_3 = {
 
 tech_societal_research_8 = {
 	area = society
-	cost = @tier4cost2
-	tier = 4
+	cost = @tier3cost3
+	tier = 3
 	category = { bio_labs }
 	prerequisites = { "tech_societal_research_7" }		
-	weight = @tier4weight2
+	weight = @tier3weight3
 	
 		modifier = {
 		country_society_tech_research_speed = 0.03	
@@ -414,11 +414,11 @@ tech_societal_research_8 = {
 
 tech_societal_research_9 = {
 	area = society
-	cost = @tier4cost4
-	tier = 4
+	cost = @tier3cost4
+	tier = 3
 	category = { bio_labs }
 	prerequisites = { "tech_societal_research_8" }		
-	weight = @tier4weight4
+	weight = @tier3weight4
 	
 		modifier = {
 		country_society_tech_research_speed = 0.03	
@@ -435,11 +435,11 @@ tech_societal_research_9 = {
 
 tech_societal_research_10 = {
 	area = society
-	cost = @tier5cost2
-	tier = 5
+	cost = @tier3cost4
+	tier = 3
 	category = { bio_labs }
 	prerequisites = { "tech_societal_research_9" }		
-	weight = @tier5weight2
+	weight = @tier3weight4
 	
 		modifier = {
 		country_society_tech_research_speed = 0.03	
@@ -456,11 +456,11 @@ tech_societal_research_10 = {
 
 tech_societal_research_11 = {
 	area = society
-	cost = @tier5cost3
-	tier = 5
+	cost = @tier4cost1
+	tier = 4
 	category = { bio_labs }
 	prerequisites = { "tech_societal_research_10" }		
-	weight = @tier5weight3
+	weight = @tier4weight1
 	
 		modifier = {
 		country_society_tech_research_speed = 0.03	
@@ -477,11 +477,11 @@ tech_societal_research_11 = {
 
 tech_biolab_4 = {
 	area = society
-	cost = @tier5cost4
-	tier = 5
+	cost = @tier4cost1
+	tier = 4
 	category = { bio_labs }
 	prerequisites = { "tech_societal_research_11" "tech_power_plant_11" }	
-	weight = @tier5weight4
+	weight = @tier4weight1
 	
 	weight_modifier = {
 		modifier = {
@@ -523,11 +523,11 @@ tech_biolab_4 = {
 
 tech_societal_research_12 = {
 	area = society
-	cost = @tier6cost1
-	tier = 6
+	cost = @tier4cost2
+	tier = 4
 	category = { bio_labs }
 	prerequisites = { "tech_societal_research_11" }		
-	weight = @tier6weight1
+	weight = @tier4weight2
 	
 		modifier = {
 		country_society_tech_research_speed = 0.03	
@@ -544,11 +544,11 @@ tech_societal_research_12 = {
 
 tech_societal_research_13 = {
 	area = society
-	cost = @tier6cost2
-	tier = 6
+	cost = @tier4cost2
+	tier = 4
 	category = { bio_labs }
 	prerequisites = { "tech_societal_research_12" }		
-	weight = @tier6weight2
+	weight = @tier4weight2
 	
 		modifier = {
 		country_society_tech_research_speed = 0.03	
@@ -565,11 +565,11 @@ tech_societal_research_13 = {
 
 tech_societal_research_14 = {
 	area = society
-	cost = @tier6cost3
-	tier = 7
+	cost = @tier4cost2
+	tier = 4
 	category = { bio_labs }
 	prerequisites = { "tech_societal_research_13" }		
-	weight = @tier7weight2
+	weight = @tier4weight2
 	
 		modifier = {
 		country_society_tech_research_speed = 0.03	
@@ -586,11 +586,11 @@ tech_societal_research_14 = {
 
 tech_societal_research_15 = {
 	area = society
-	cost = @tier7cost1
-	tier = 7
+	cost = @tier4cost3
+	tier = 4
 	category = { bio_labs }
 	prerequisites = { "tech_societal_research_14" }		
-	weight = @tier7weight1
+	weight = @tier4weight3
 	
 			modifier = {
 		country_society_tech_research_speed = 0.03	
@@ -607,11 +607,11 @@ tech_societal_research_15 = {
 
 tech_biolab_5 = {
 	area = society
-	cost = @tier7cost2
-	tier = 7
+	cost = @tier4cost4
+	tier = 4
 	category = { bio_labs }
 	prerequisites = { "tech_societal_research_15" "tech_galactic_administration" }	
-	weight = @tier7weight2
+	weight = @tier4weight4
 	
 	weight_modifier = {
 		modifier = {

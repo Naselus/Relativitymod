@@ -155,13 +155,17 @@ tech_galactic_ambitions = {
 	}
 	
 	ai_weight = {
+		factor = 2
 		modifier = {
 			factor = 1.5
 			has_ethic = ethic_militarist
 		}
 		modifier = {
 			factor = 2
+			OR = {
+			has_ai_personality_behaviour = conqueror
 			has_ethic = ethic_fanatic_militarist
+			}
 		}
 		modifier = {
 			factor = 1.25
@@ -221,13 +225,17 @@ tech_manifest_destiny = {
 	}
 	
 	ai_weight = {
+		factor = 2
 		modifier = {
 			factor = 1.5
 			has_ethic = ethic_militarist
 		}
 		modifier = {
 			factor = 2
+			OR = {
+			has_ai_personality_behaviour = conqueror
 			has_ethic = ethic_fanatic_militarist
+			}
 		}
 		modifier = {
 			factor = 1.25
@@ -251,7 +259,27 @@ tech_influence_3 = {
 		country_border_mult = 0.05
 	}	
 
-	ai_weight = { factor = 1 }
+	ai_weight = {
+		factor = 2
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality_behaviour = conqueror
+			has_ethic = ethic_fanatic_militarist
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
 }
 
 tech_influence_4 = {
@@ -267,9 +295,24 @@ tech_influence_4 = {
 	}	
 	
 	ai_weight = {
+		factor = 2
 		modifier = {
-			factor = 1
-			always = yes
+			factor = 1.5
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality_behaviour = conqueror
+			has_ethic = ethic_fanatic_militarist
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
 		}
 	}
 }
@@ -287,9 +330,24 @@ tech_influence_5 = {
 	}	
 	
 	ai_weight = {
+		factor = 2
 		modifier = {
-			factor = 1
-			always = yes
+			factor = 1.5
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality_behaviour = conqueror
+			has_ethic = ethic_fanatic_militarist
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
 		}
 	}
 }
@@ -308,9 +366,24 @@ tech_influence_6 = {
 	}
 	
 	ai_weight = {
+		factor = 2
 		modifier = {
-			factor = 1
-			always = yes
+			factor = 1.5
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality_behaviour = conqueror
+			has_ethic = ethic_fanatic_militarist
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
 		}
 	}
 }
@@ -327,9 +400,24 @@ tech_influence_7 = {
 		country_border_mult = 0.05
 	}	
 	ai_weight = {
+		factor = 2
 		modifier = {
-			factor = 1
-			always = yes
+			factor = 1.5
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality_behaviour = conqueror
+			has_ethic = ethic_fanatic_militarist
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
 		}
 	}
 }
@@ -347,9 +435,24 @@ tech_influence_8 = {
 	}
 	
 	ai_weight = {
+		factor = 2
 		modifier = {
-			factor = 1
-			always = yes
+			factor = 1.5
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality_behaviour = conqueror
+			has_ethic = ethic_fanatic_militarist
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
 		}
 	}
 }
@@ -366,9 +469,24 @@ tech_influence_9 = {
 	}	
 
 	ai_weight = {
+		factor = 2
 		modifier = {
-			factor = 1
-			always = yes
+			factor = 1.5
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality_behaviour = conqueror
+			has_ethic = ethic_fanatic_militarist
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
 		}
 	}
 }
@@ -386,9 +504,24 @@ tech_influence_10 = {
 
 	
 	ai_weight = {
+		factor = 2
 		modifier = {
-			factor = 1
-			always = yes
+			factor = 1.5
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality_behaviour = conqueror
+			has_ethic = ethic_fanatic_militarist
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
 		}
 	}
 }
@@ -405,9 +538,24 @@ tech_influence_11 = {
 	}	
 
 	ai_weight = {
+		factor = 2
 		modifier = {
-			factor = 1
-			always = yes
+			factor = 1.5
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality_behaviour = conqueror
+			has_ethic = ethic_fanatic_militarist
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
 		}
 	}
 }
@@ -424,9 +572,24 @@ tech_influence_12 = {
 	}	
 
 	ai_weight = {
+		factor = 2
 		modifier = {
-			factor = 1
-			always = yes
+			factor = 1.5
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality_behaviour = conqueror
+			has_ethic = ethic_fanatic_militarist
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
 		}
 	}
 }
@@ -443,9 +606,24 @@ tech_influence_13 = {
 	}	
 		
 	ai_weight = {
+		factor = 2
 		modifier = {
-			factor = 1
-			always = yes
+			factor = 1.5
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality_behaviour = conqueror
+			has_ethic = ethic_fanatic_militarist
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
 		}
 	}
 }
@@ -462,9 +640,24 @@ tech_influence_14 = {
 	}	
 
 	ai_weight = {
+		factor = 2
 		modifier = {
-			factor = 1
-			always = yes
+			factor = 1.5
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality_behaviour = conqueror
+			has_ethic = ethic_fanatic_militarist
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
 		}
 	}
 }
@@ -482,9 +675,24 @@ tech_influence_15 = {
 	}
 	
 	ai_weight = {
+		factor = 2
 		modifier = {
-			factor = 1
-			always = yes
+			factor = 1.5
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality_behaviour = conqueror
+			has_ethic = ethic_fanatic_militarist
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
 		}
 	}
 }
@@ -502,9 +710,24 @@ tech_influence_16 = {
 	}
 	
 	ai_weight = {
+		factor = 2
 		modifier = {
-			factor = 1
-			always = yes
+			factor = 1.5
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality_behaviour = conqueror
+			has_ethic = ethic_fanatic_militarist
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
 		}
 	}
 }
@@ -522,9 +745,24 @@ tech_influence_17 = {
 	}
 	
 	ai_weight = {
+		factor = 2
 		modifier = {
-			factor = 1
-			always = yes
+			factor = 1.5
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality_behaviour = conqueror
+			has_ethic = ethic_fanatic_militarist
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
 		}
 	}
 }
@@ -542,9 +780,24 @@ tech_influence_18 = {
 	}
 	
 	ai_weight = {
+		factor = 2
 		modifier = {
-			factor = 1
-			always = yes
+			factor = 1.5
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality_behaviour = conqueror
+			has_ethic = ethic_fanatic_militarist
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
 		}
 	}
 }
@@ -561,7 +814,27 @@ tech_influence_19 = {
 		country_border_mult = 0.05
 	}
 	
-	ai_weight = { factor = 1 }
+	ai_weight = {
+		factor = 2
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality_behaviour = conqueror
+			has_ethic = ethic_fanatic_militarist
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
 }
 
 tech_influence_20 = {
@@ -576,5 +849,25 @@ tech_influence_20 = {
 		country_border_mult = 0.05
 	}
 	
-	ai_weight = { factor = 1 }
+	ai_weight = {
+		factor = 2
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality_behaviour = conqueror
+			has_ethic = ethic_fanatic_militarist
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
 }

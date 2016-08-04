@@ -134,6 +134,23 @@ tech_powered_exoskeletons = {
 				has_trait = "leader_trait_expertise_ai"
 			}
 		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_weak"
+			has_trait = "trait_slow_breeders"
+			has_trait = "trait_industrious"
+			has_trait = "trait_nonadaptive"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = "ethic_militarist"
+			has_ethic = "ethic_fanatic_militarist"
+			has_ai_personality_behaviour = conqueror
+			}
+		}
 	}
 }
 
@@ -167,6 +184,27 @@ tech_robotic_workers = {
 				area = engineering
 				has_trait = "leader_trait_expertise_ai"
 			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_weak"
+			has_trait = "trait_slow_breeders"
+			has_trait = "trait_industrious"
+			has_trait = "trait_nonadaptive"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality_behaviour = robot_exploiter
+			has_ai_personality = decadent_hierarchy
+			has_ai_personality = ruthless_capitalists
+			}
+		}
+		modifier = {
+			factor = 0.5
+			has_ethic = ethic_fanatic_spiritualist
 		}
 	}
 }
@@ -210,6 +248,39 @@ tech_droid_workers = {
 				area = engineering
 				has_trait = "leader_trait_expertise_ai"
 			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_weak"
+			has_trait = "trait_slow_breeders"
+			has_trait = "trait_industrious"
+			has_trait = "trait_nonadaptive"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = "ethic_militarist"
+			has_ethic = "ethic_fanatic_militarist"
+			has_ai_personality_behaviour = conqueror
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality_behaviour = robot_exploiter
+			has_ai_personality = decadent_hierarchy
+			has_ai_personality = ruthless_capitalists
+			}
+		}
+		modifier = {
+			factor = 0.25
+			has_ethic = ethic_fanatic_spiritualist
+		}
+		modifier = {
+			factor = 0.5
+			has_ethic = ethic_spiritualist
 		}
 	}
 }
@@ -261,6 +332,39 @@ tech_synthetic_workers = {
 				has_trait = "leader_trait_expertise_ai"
 			}
 		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_weak"
+			has_trait = "trait_slow_breeders"
+			has_trait = "trait_industrious"
+			has_trait = "trait_nonadaptive"
+			has_trait = "trait_solitary"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = "ethic_militarist"
+			has_ethic = "ethic_fanatic_militarist"
+			has_ai_personality_behaviour = conqueror
+			has_ai_personality = ruthless_capitalists
+			}
+		}
+		modifier = {
+			factor = 4
+			has_ai_personality_behaviour = robot_liberator
+		}
+		modifier = {
+			factor = 0
+			has_ethic = ethic_fanatic_spiritualist
+			has_ai_personality_behaviour = robot_exploiter
+		}
+		modifier = {
+			factor = 0.25
+			has_ethic = ethic_spiritualist
+			has_ai_personality = decadent_hierarchy
+		}
 	}
 }
 
@@ -310,6 +414,37 @@ tech_synthetic_leaders = {
 		}
 		#BREAKTHROUGH - check for scientist
 	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_ai"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_slow_breeders"
+			has_trait = "trait_nonadaptive"
+			has_trait = "trait_solitary"
+			}
+		}
+		modifier = {
+			factor = 4
+			has_ai_personality_behaviour = robot_liberator
+		}
+		modifier = {
+			factor = 0
+			OR = {
+			has_ethic = ethic_fanatic_spiritualist
+			has_ai_personality_behaviour = robot_exploiter
+			has_ethic = ethic_spiritualist
+			has_ai_personality = decadent_hierarchy
+			has_ai_personality_behaviour = slaver
+			}
+		}
+	}
 }
 
 #AI
@@ -344,6 +479,38 @@ tech_administrative_ai = {
 				has_trait = "leader_trait_expertise_ai"
 			}
 		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_slow_breeders"
+			has_trait = "trait_nonadaptive"
+			has_trait = "trait_quick_learners"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = "ethic_militarist"
+			has_ethic = "ethic_fanatic_militarist"
+			has_ai_personality_behaviour = conqueror
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality_behaviour = robot_exploiter
+			has_ai_personality = decadent_hierarchy
+			has_ai_personality = ruthless_capitalists
+			}
+		}
+		modifier = {
+			factor = 0.25
+			has_ethic = ethic_fanatic_spiritualist
+		}
+		modifier = {
+			factor = 0.75
+			has_ethic = ethic_spiritualist
+		}
 	}
 }
 
@@ -359,6 +526,39 @@ tech_cryostasis_1 = {
 	modifier = {
 		planet_colony_development_speed_mult = 0.25	
 	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_ai"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_slow_breeders"
+			has_trait = "trait_nonadaptive"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality_behaviour = robot_exploiter
+			has_ai_personality = decadent_hierarchy
+			has_ai_personality = ruthless_capitalists
+			}
+		}
+		modifier = {
+			factor = 0
+			has_ethic = ethic_fanatic_spiritualist
+		}
+		modifier = {
+			factor = 0.75
+			has_ethic = ethic_spiritualist
+		}
+	}
 }
 
 #Self-Aware Colony Ships
@@ -368,9 +568,45 @@ tech_cryostasis_2 = {
 	tier = 2
 	category = { ai }
 	prerequisites = { "tech_self_aware_logic" "tech_cryostasis_1" }
+	weight = @tier2weight4
 	
 	modifier = {
 		planet_colony_development_speed_mult = 0.25	
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_ai"
+			}
+		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_trait = "trait_slow_breeders"
+			has_trait = "trait_nonadaptive"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = decadent_hierarchy
+			has_ai_personality = ruthless_capitalists
+			}
+		}
+		modifier = {
+			factor = 0
+			has_ethic = ethic_fanatic_spiritualist
+		}
+		modifier = {
+			factor = 0.25
+			OR = {
+			has_ethic = ethic_spiritualist
+			has_ai_personality_behaviour = robot_exploiter
+			}
+		}
 	}
 }
 
@@ -397,6 +633,7 @@ tech_self_aware_logic = {
 	}
 	
 	ai_weight = {
+		factor = 5 #important tech
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -404,6 +641,7 @@ tech_self_aware_logic = {
 				has_trait = "leader_trait_expertise_ai"
 			}
 		}
+		
 	}
 }
 
@@ -465,6 +703,27 @@ tech_sentient_ai = {
 				has_trait = "leader_trait_expertise_ai"
 			}
 		}
+		modifier = {
+			factor = 2
+			has_ai_personality = ruthless_capitalists
+		}
+		modifier = {
+			factor = 4
+			OR = {
+			has_ai_personality_behaviour = robot_liberator
+			has_ai_personality = metalhead
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+			has_ethic = ethic_spiritualist
+			has_ethic = ethic_fanatic_spiritualist
+			has_ai_personality = decadent_hierarchy
+			has_ai_personality_behaviour = robot_exploiter
+			has_ai_personality_behaviour = slaver
+			}
+		}
 	}
 }
 
@@ -504,6 +763,38 @@ tech_pd_tracking_1 = {
 				has_trait = "leader_trait_expertise_ai"
 			}
 		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_weak"
+			has_trait = "trait_resilient"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = "ethic_militarist"
+			has_ai_personality_behaviour = conqueror
+			has_ethic = "ethic_pacifist"		
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = xenophobic_isolationists
+			has_ai_personality = hive_mind
+			has_ai_personality = decadent_hierarchy
+			has_ai_personality = federation_builders
+			}
+		}
+		modifier = {
+			factor = 4
+			has_ethic = "ethic_fanatic_militarist"
+		}
+		modifier = {
+			factor = 0.5
+			has_ethic = "ethic_fanatic_pacifist"
+		}
 	}
 }
 
@@ -537,6 +828,38 @@ tech_pd_tracking_2 = {
 				has_trait = "leader_trait_expertise_ai"
 			}
 		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_weak"
+			has_trait = "trait_resilient"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = "ethic_militarist"
+			has_ai_personality_behaviour = conqueror
+			has_ethic = "ethic_pacifist"		
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = xenophobic_isolationists
+			has_ai_personality = hive_mind
+			has_ai_personality = decadent_hierarchy
+			has_ai_personality = federation_builders
+			}
+		}
+		modifier = {
+			factor = 4
+			has_ethic = "ethic_fanatic_militarist"
+		}
+		modifier = {
+			factor = 0.5
+			has_ethic = "ethic_fanatic_pacifist"
+		}
 	}
 }
 
@@ -569,6 +892,38 @@ tech_pd_tracking_3 = {
 				area = engineering
 				has_trait = "leader_trait_expertise_ai"
 			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_weak"
+			has_trait = "trait_resilient"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = "ethic_militarist"
+			has_ai_personality_behaviour = conqueror
+			has_ethic = "ethic_pacifist"		
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = xenophobic_isolationists
+			has_ai_personality = hive_mind
+			has_ai_personality = decadent_hierarchy
+			has_ai_personality = federation_builders
+			}
+		}
+		modifier = {
+			factor = 4
+			has_ethic = "ethic_fanatic_militarist"
+		}
+		modifier = {
+			factor = 0.5
+			has_ethic = "ethic_fanatic_pacifist"
 		}
 	}
 }
@@ -621,18 +976,50 @@ tech_synchronized_defences = {
 				has_trait = "leader_trait_expertise_ai"
 			}
 		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_weak"
+			has_trait = "trait_resilient"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = "ethic_militarist"
+			has_ai_personality_behaviour = conqueror
+			has_ethic = "ethic_pacifist"		
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = xenophobic_isolationists
+			has_ai_personality = hive_mind
+			has_ai_personality = decadent_hierarchy
+			has_ai_personality = federation_builders
+			}
+		}
+		modifier = {
+			factor = 4
+			has_ethic = "ethic_fanatic_militarist"
+		}
+		modifier = {
+			factor = 0.5
+			has_ethic = "ethic_fanatic_pacifist"
+		}
 	}	
 }
 
 tech_synchronized_defences_2 = {
 	area = engineering
 	tier = 3
-	cost = @tier3cost3
+	cost = @tier3cost1
 	category = { ai }
 	ai_update_type = military		
 	prerequisites = { "tech_synchronized_defences" "tech_self_aware_logic"}
 	is_rare = no
-	weight = @tier3weight3
+	weight = @tier3weight1
 
 	
 	weight_modifier = {
@@ -670,6 +1057,38 @@ tech_synchronized_defences_2 = {
 				area = engineering
 				has_trait = "leader_trait_expertise_ai"
 			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_weak"
+			has_trait = "trait_resilient"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = "ethic_militarist"
+			has_ai_personality_behaviour = conqueror
+			has_ethic = "ethic_pacifist"		
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = xenophobic_isolationists
+			has_ai_personality = hive_mind
+			has_ai_personality = decadent_hierarchy
+			has_ai_personality = federation_builders
+			}
+		}
+		modifier = {
+			factor = 4
+			has_ethic = "ethic_fanatic_militarist"
+		}
+		modifier = {
+			factor = 0.5
+			has_ethic = "ethic_fanatic_pacifist"
 		}
 	}	
 }
@@ -720,6 +1139,38 @@ tech_synchronized_defences_3 = {
 				area = engineering
 				has_trait = "leader_trait_expertise_ai"
 			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_weak"
+			has_trait = "trait_resilient"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = "ethic_militarist"
+			has_ai_personality_behaviour = conqueror
+			has_ethic = "ethic_pacifist"		
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = xenophobic_isolationists
+			has_ai_personality = hive_mind
+			has_ai_personality = decadent_hierarchy
+			has_ai_personality = federation_builders
+			}
+		}
+		modifier = {
+			factor = 4
+			has_ethic = "ethic_fanatic_militarist"
+		}
+		modifier = {
+			factor = 0.5
+			has_ethic = "ethic_fanatic_pacifist"
 		}
 	}	
 }

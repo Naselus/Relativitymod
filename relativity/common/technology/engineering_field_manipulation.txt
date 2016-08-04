@@ -103,11 +103,11 @@
 
 tech_shields_1 = {
 	area = engineering
-	cost = @tier1cost1
+	cost = @tier1cost2
 	tier = 1
 	category = { field_manipulation }
 	ai_update_type = military
-	weight = @tier1weight1
+	weight = @tier1weight2
 	
 	modifier = {
 		planet_fortification_strength = 0.2
@@ -133,17 +133,217 @@ tech_shields_1 = {
 				has_trait = "leader_trait_expertise_field_manipulation"
 			}
 		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_weak"
+			has_trait = "trait_resilient"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = "ethic_militarist"
+			has_ai_personality_behaviour = conqueror
+			has_ethic = "ethic_pacifist"		
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = xenophobic_isolationists
+			has_ai_personality = hive_mind
+			has_ai_personality = decadent_hierarchy
+			has_ai_personality = federation_builders
+			}
+		}
+		modifier = {
+			factor = 4
+			has_ethic = "ethic_fanatic_militarist"
+		}
+		modifier = {
+			factor = 0.5
+			has_ethic = "ethic_fanatic_pacifist"
+		}
+	}
+}
+
+tech_field_manipulation_9 = {
+	area = engineering
+	cost = @tier1cost3
+	tier = 1
+	category = { field_manipulation }
+	prerequisites = { "tech_shields_1"}	
+	weight = @tier1weight3
+	
+	modifier = {
+		ship_shield_hp_mult = 0.05
+	}
+	
+	ai_weight = {
+		factor = 2 #good component
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_weak"
+			has_trait = "trait_resilient"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = "ethic_militarist"
+			has_ai_personality_behaviour = conqueror
+			has_ethic = "ethic_pacifist"		
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = xenophobic_isolationists
+			has_ai_personality = hive_mind
+			has_ai_personality = decadent_hierarchy
+			has_ai_personality = federation_builders
+			}
+		}
+		modifier = {
+			factor = 4
+			has_ethic = "ethic_fanatic_militarist"
+		}
+		modifier = {
+			factor = 0.5
+			has_ethic = "ethic_fanatic_pacifist"
+		}
+	}
+}
+
+tech_field_manipulation_10 = {
+	area = engineering
+	cost = @tier1cost4
+	tier = 1
+	category = { field_manipulation }
+	prerequisites = { "tech_field_manipulation_9"}	
+	weight = @tier1weight4
+	
+	modifier = {
+		ship_shield_hp_mult = 0.05
+	}
+	
+	ai_weight = {
+		factor = 2 #good component
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_weak"
+			has_trait = "trait_resilient"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = "ethic_militarist"
+			has_ai_personality_behaviour = conqueror
+			has_ethic = "ethic_pacifist"		
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = xenophobic_isolationists
+			has_ai_personality = hive_mind
+			has_ai_personality = decadent_hierarchy
+			has_ai_personality = federation_builders
+			}
+		}
+		modifier = {
+			factor = 4
+			has_ethic = "ethic_fanatic_militarist"
+		}
+		modifier = {
+			factor = 0.5
+			has_ethic = "ethic_fanatic_pacifist"
+		}
+	}
+}
+
+tech_field_manipulation_11 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { field_manipulation }
+	prerequisites = { "tech_field_manipulation_10"}	
+	weight = @tier2weight1
+	
+	modifier = {
+		ship_shield_hp_mult = 0.05
+	}
+	
+	ai_weight = {
+		factor = 2 #good component
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_weak"
+			has_trait = "trait_resilient"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = "ethic_militarist"
+			has_ai_personality_behaviour = conqueror
+			has_ethic = "ethic_pacifist"		
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = xenophobic_isolationists
+			has_ai_personality = hive_mind
+			has_ai_personality = decadent_hierarchy
+			has_ai_personality = federation_builders
+			}
+		}
+		modifier = {
+			factor = 4
+			has_ethic = "ethic_fanatic_militarist"
+		}
+		modifier = {
+			factor = 0.5
+			has_ethic = "ethic_fanatic_pacifist"
+		}
 	}
 }
 
 tech_shields_2 = {
 	area = engineering
-	cost = @tier1cost4
-	tier = 1
+	cost = @tier2cost2
+	tier = 2
 	category = { field_manipulation }
 	ai_update_type = military
-	prerequisites = { "tech_shields_1" }
-	weight = @tier1weight4
+	prerequisites = { "tech_field_manipulation_11" }
+	weight = @tier2weight2
 	
 	modifier = {
 		planet_fortification_strength = 0.2
@@ -169,24 +369,51 @@ tech_shields_2 = {
 				has_trait = "leader_trait_expertise_field_manipulation"
 			}
 		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_weak"
+			has_trait = "trait_resilient"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = "ethic_militarist"
+			has_ai_personality_behaviour = conqueror
+			has_ethic = "ethic_pacifist"		
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = xenophobic_isolationists
+			has_ai_personality = hive_mind
+			has_ai_personality = decadent_hierarchy
+			has_ai_personality = federation_builders
+			}
+		}
+		modifier = {
+			factor = 4
+			has_ethic = "ethic_fanatic_militarist"
+		}
+		modifier = {
+			factor = 0.5
+			has_ethic = "ethic_fanatic_pacifist"
+		}
 	}
 }
 
-tech_shields_3 = {
+tech_shield_rechargers_1 = {
 	area = engineering
-	cost = @tier2cost3
+	cost = @tier2cost2
 	tier = 2
 	category = { field_manipulation }
-	ai_update_type = military
+	ai_update_type = military	
 	prerequisites = { "tech_shields_2" }
-	weight = @tier2weight3
-	
-	modifier = {
-		planet_fortification_strength = 0.2
-	}
+	weight = @tier2weight2
 	
 	weight_modifier = {
-		factor = 1.25
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -205,16 +432,220 @@ tech_shields_3 = {
 				has_trait = "leader_trait_expertise_field_manipulation"
 			}
 		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_weak"
+			has_trait = "trait_resilient"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = "ethic_militarist"
+			has_ai_personality_behaviour = conqueror
+			has_ethic = "ethic_pacifist"		
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = xenophobic_isolationists
+			has_ai_personality = hive_mind
+			has_ai_personality = decadent_hierarchy
+			has_ai_personality = federation_builders
+			}
+		}
+		modifier = {
+			factor = 4
+			has_ethic = "ethic_fanatic_militarist"
+		}
+		modifier = {
+			factor = 0.5
+			has_ethic = "ethic_fanatic_pacifist"
+		}
 	}
 }
 
-tech_shields_4 = {
+tech_field_manipulation_12 = {
+	area = engineering
+	cost = @tier2cost3
+	tier = 2
+	category = { field_manipulation }
+	prerequisites = { "tech_shield_rechargers_1"}	
+	weight = @tier2weight3
+	
+	modifier = {
+		ship_shield_hp_mult = 0.05
+	}
+	
+	ai_weight = {
+		factor = 2 #good component
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_weak"
+			has_trait = "trait_resilient"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = "ethic_militarist"
+			has_ai_personality_behaviour = conqueror
+			has_ethic = "ethic_pacifist"		
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = xenophobic_isolationists
+			has_ai_personality = hive_mind
+			has_ai_personality = decadent_hierarchy
+			has_ai_personality = federation_builders
+			}
+		}
+		modifier = {
+			factor = 4
+			has_ethic = "ethic_fanatic_militarist"
+		}
+		modifier = {
+			factor = 0.5
+			has_ethic = "ethic_fanatic_pacifist"
+		}
+	}
+}
+
+tech_planetary_shield_generator = {
+	area = engineering
+	cost = @tier2cost4
+	tier = 2
+	category = { field_manipulation }
+	ai_update_type = military	
+	is_rare = yes
+	prerequisites = { "tech_field_manipulation_12" }
+	weight = @tier2weight4
+	
+	weight_modifier = {
+		factor = 0.25
+	}
+	
+	ai_weight = {
+		factor = 2 #good component
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_weak"
+			has_trait = "trait_resilient"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = "ethic_militarist"
+			has_ai_personality_behaviour = conqueror
+			has_ethic = "ethic_pacifist"		
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = xenophobic_isolationists
+			has_ai_personality = hive_mind
+			has_ai_personality = decadent_hierarchy
+			has_ai_personality = federation_builders
+			}
+		}
+		modifier = {
+			factor = 4
+			has_ethic = "ethic_fanatic_militarist"
+		}
+		modifier = {
+			factor = 0.5
+			has_ethic = "ethic_fanatic_pacifist"
+		}
+	}
+	# unlocks building: planetary shield generator
+}
+
+tech_field_manipulation_13 = {
+	area = engineering
+	cost = @tier3cost1
+	tier = 3
+	category = { field_manipulation }
+	prerequisites = { "tech_field_manipulation_12"}	
+	weight = @tier3weight1
+	
+	modifier = {
+		ship_shield_hp_mult = 0.05
+	}
+	
+	ai_weight = {
+		factor = 2 #good component
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_weak"
+			has_trait = "trait_resilient"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = "ethic_militarist"
+			has_ai_personality_behaviour = conqueror
+			has_ethic = "ethic_pacifist"		
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = xenophobic_isolationists
+			has_ai_personality = hive_mind
+			has_ai_personality = decadent_hierarchy
+			has_ai_personality = federation_builders
+			}
+		}
+		modifier = {
+			factor = 4
+			has_ethic = "ethic_fanatic_militarist"
+		}
+		modifier = {
+			factor = 0.5
+			has_ethic = "ethic_fanatic_pacifist"
+		}
+	}
+}
+
+
+tech_shields_3 = {
 	area = engineering
 	cost = @tier3cost1
 	tier = 3
 	category = { field_manipulation }
 	ai_update_type = military
-	prerequisites = { "tech_shields_3" }
+	prerequisites = { "tech_field_manipulation_13" }
 	weight = @tier3weight1
 	
 	modifier = {
@@ -241,31 +672,51 @@ tech_shields_4 = {
 				has_trait = "leader_trait_expertise_field_manipulation"
 			}
 		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_weak"
+			has_trait = "trait_resilient"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = "ethic_militarist"
+			has_ai_personality_behaviour = conqueror
+			has_ethic = "ethic_pacifist"		
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = xenophobic_isolationists
+			has_ai_personality = hive_mind
+			has_ai_personality = decadent_hierarchy
+			has_ai_personality = federation_builders
+			}
+		}
+		modifier = {
+			factor = 4
+			has_ethic = "ethic_fanatic_militarist"
+		}
+		modifier = {
+			factor = 0.5
+			has_ethic = "ethic_fanatic_pacifist"
+		}
 	}
 }
 
-tech_shields_5 = {
+tech_field_manipulation_14 = {
 	area = engineering
-	cost = @tier3cost4
+	cost = @tier3cost1
 	tier = 3
 	category = { field_manipulation }
-	ai_update_type = military
-	prerequisites = { "tech_shields_4" }
-	weight = @tier3weight4
+	prerequisites = { "tech_shields_3"}	
+	weight = @tier3weight1
 	
 	modifier = {
-		planet_fortification_strength = 0.2
-	}
-	
-	weight_modifier = {
-		factor = 1.25
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_field_manipulation"
-			}
-		}
+		ship_shield_hp_mult = 0.05
 	}
 	
 	ai_weight = {
@@ -277,49 +728,50 @@ tech_shields_5 = {
 				has_trait = "leader_trait_expertise_field_manipulation"
 			}
 		}
-	}
-}
-
-tech_shield_rechargers_1 = {
-	area = engineering
-	cost = @tier2cost4
-	tier = 2
-	category = { field_manipulation }
-	ai_update_type = military	
-	prerequisites = { "tech_shields_3" }
-	weight = @tier2weight4
-	
-	weight_modifier = {
 		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_field_manipulation"
+			factor = 2
+			OR = {
+			has_trait = "trait_weak"
+			has_trait = "trait_resilient"
 			}
 		}
-	}
-	
-	ai_weight = {
-		factor = 2 #good component
 		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_field_manipulation"
+			factor = 2
+			OR = {
+			has_ethic = "ethic_militarist"
+			has_ai_personality_behaviour = conqueror
+			has_ethic = "ethic_pacifist"		
 			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = xenophobic_isolationists
+			has_ai_personality = hive_mind
+			has_ai_personality = decadent_hierarchy
+			has_ai_personality = federation_builders
+			}
+		}
+		modifier = {
+			factor = 4
+			has_ethic = "ethic_fanatic_militarist"
+		}
+		modifier = {
+			factor = 0.5
+			has_ethic = "ethic_fanatic_pacifist"
 		}
 	}
 }
 
 tech_shield_recharge_aura_1 = {
 	area = engineering
-	cost = @tier2cost4
-	tier = 2
+	cost = @tier3cost2
+	tier = 3
 	category = { field_manipulation }
 	ai_update_type = military	
 	is_rare = yes
-	prerequisites = { "tech_shields_5" }
-	weight = @tier2weight4
+	prerequisites = { "tech_field_manipulation_14" }
+	weight = @tier3weight2
 	
 	weight_modifier = {
 		modifier = {
@@ -350,6 +802,38 @@ tech_shield_recharge_aura_1 = {
 				has_trait = "leader_trait_expertise_field_manipulation"
 			}
 		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_weak"
+			has_trait = "trait_resilient"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = "ethic_militarist"
+			has_ai_personality_behaviour = conqueror
+			has_ethic = "ethic_pacifist"		
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = xenophobic_isolationists
+			has_ai_personality = hive_mind
+			has_ai_personality = decadent_hierarchy
+			has_ai_personality = federation_builders
+			}
+		}
+		modifier = {
+			factor = 4
+			has_ethic = "ethic_fanatic_militarist"
+		}
+		modifier = {
+			factor = 0.5
+			has_ethic = "ethic_fanatic_pacifist"
+		}
 	}
 	
 		
@@ -361,199 +845,475 @@ tech_shield_recharge_aura_1 = {
 	}
 }
 
-tech_planetary_shield_generator = {
-	area = engineering
-	cost = @tier2cost4
-	tier = 2
-	category = { field_manipulation }
-	ai_update_type = military	
-	is_rare = yes
-	prerequisites = { "tech_shields_4" }
-	weight = @tier2weight4
-	
-	weight_modifier = {
-		factor = 0.25
-	}
-	
-	# unlocks building: planetary shield generator
-}
-
-tech_field_manipulation_9 = {
-	area = engineering
-	cost = @tier2cost1
-	tier = 2
-	category = { field_manipulation }
-	prerequisites = { "tech_shield_recharge_aura_1"}	
-	weight = @tier2weight1
-	
-	modifier = {
-		ship_shield_hp_mult = 0.05
-	}
-	
-	ai_weight = { factor = 1 }
-}
-
-tech_field_manipulation_10 = {
-	area = engineering
-	cost = @tier2cost1
-	tier = 2
-	category = { field_manipulation }
-	prerequisites = { "tech_field_manipulation_9"}	
-	weight = @tier2weight1
-	
-	modifier = {
-		ship_shield_hp_mult = 0.05
-	}
-	
-	ai_weight = { factor = 1 }
-}
-
-tech_field_manipulation_11 = {
-	area = engineering
-	cost = @tier2cost1
-	tier = 2
-	category = { field_manipulation }
-	prerequisites = { "tech_field_manipulation_10"}	
-	weight = @tier2weight1
-	
-	modifier = {
-		ship_shield_hp_mult = 0.05
-	}
-	
-	ai_weight = { factor = 1 }
-}
-
-tech_field_manipulation_12 = {
-	area = engineering
-	cost = @tier2cost1
-	tier = 2
-	category = { field_manipulation }
-	prerequisites = { "tech_field_manipulation_11"}	
-	weight = @tier2weight1
-	
-	modifier = {
-		ship_shield_hp_mult = 0.05
-	}
-	
-	ai_weight = { factor = 1 }
-}
-
-tech_field_manipulation_13 = {
-	area = engineering
-	cost = @tier2cost1
-	tier = 2
-	category = { field_manipulation }
-	prerequisites = { "tech_field_manipulation_12"}	
-	weight = @tier2weight1
-	
-	modifier = {
-		ship_shield_hp_mult = 0.05
-	}
-	
-	ai_weight = { factor = 1 }
-}
-
-tech_field_manipulation_14 = {
-	area = engineering
-	cost = @tier2cost1
-	tier = 2
-	category = { field_manipulation }
-	prerequisites = { "tech_field_manipulation_13"}	
-	weight = @tier2weight1
-	
-	modifier = {
-		ship_shield_hp_mult = 0.05
-	}
-	
-	ai_weight = { factor = 1 }
-}
-
 tech_field_manipulation_15 = {
 	area = engineering
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier3cost2
+	tier = 3
 	category = { field_manipulation }
 	prerequisites = { "tech_field_manipulation_14"}	
-	weight = @tier2weight1
+	weight = @tier3weight2
 	
 	modifier = {
 		ship_shield_hp_mult = 0.05
 	}
 	
-	ai_weight = { factor = 1 }
+	ai_weight = {
+		factor = 2 #good component
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_weak"
+			has_trait = "trait_resilient"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = "ethic_militarist"
+			has_ai_personality_behaviour = conqueror
+			has_ethic = "ethic_pacifist"		
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = xenophobic_isolationists
+			has_ai_personality = hive_mind
+			has_ai_personality = decadent_hierarchy
+			has_ai_personality = federation_builders
+			}
+		}
+		modifier = {
+			factor = 4
+			has_ethic = "ethic_fanatic_militarist"
+		}
+		modifier = {
+			factor = 0.5
+			has_ethic = "ethic_fanatic_pacifist"
+		}
+	}
 }
 
 tech_field_manipulation_16 = {
 	area = engineering
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier3cost3
+	tier = 3
 	category = { field_manipulation }
 	prerequisites = { "tech_field_manipulation_15"}	
-	weight = @tier2weight1
+	weight = @tier3weight3
 	
 	modifier = {
 		ship_shield_hp_mult = 0.05
 	}
 	
-	ai_weight = { factor = 1 }
+	ai_weight = {
+		factor = 2 #good component
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_weak"
+			has_trait = "trait_resilient"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = "ethic_militarist"
+			has_ai_personality_behaviour = conqueror
+			has_ethic = "ethic_pacifist"		
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = xenophobic_isolationists
+			has_ai_personality = hive_mind
+			has_ai_personality = decadent_hierarchy
+			has_ai_personality = federation_builders
+			}
+		}
+		modifier = {
+			factor = 4
+			has_ethic = "ethic_fanatic_militarist"
+		}
+		modifier = {
+			factor = 0.5
+			has_ethic = "ethic_fanatic_pacifist"
+		}
+	}
+}
+
+
+tech_shields_4 = {
+	area = engineering
+	cost = @tier3cost4
+	tier = 3
+	category = { field_manipulation }
+	ai_update_type = military
+	prerequisites = { "tech_field_manipulation_16" }
+	weight = @tier3weight4
+	
+	modifier = {
+		planet_fortification_strength = 0.2
+	}
+	
+	weight_modifier = {
+		factor = 1.25
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 2 #good component
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_weak"
+			has_trait = "trait_resilient"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = "ethic_militarist"
+			has_ai_personality_behaviour = conqueror
+			has_ethic = "ethic_pacifist"		
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = xenophobic_isolationists
+			has_ai_personality = hive_mind
+			has_ai_personality = decadent_hierarchy
+			has_ai_personality = federation_builders
+			}
+		}
+		modifier = {
+			factor = 4
+			has_ethic = "ethic_fanatic_militarist"
+		}
+		modifier = {
+			factor = 0.5
+			has_ethic = "ethic_fanatic_pacifist"
+		}
+	}
 }
 
 tech_field_manipulation_17 = {
 	area = engineering
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier3cost4
+	tier = 3
 	category = { field_manipulation }
-	prerequisites = { "tech_field_manipulation_16"}	
-	weight = @tier2weight1
+	prerequisites = { "tech_shields_4"}	
+	weight = @tier3weight4
 	
 	modifier = {
 		ship_shield_hp_mult = 0.05
 	}
 	
-	ai_weight = { factor = 1 }
+	ai_weight = {
+		factor = 2 #good component
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_weak"
+			has_trait = "trait_resilient"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = "ethic_militarist"
+			has_ai_personality_behaviour = conqueror
+			has_ethic = "ethic_pacifist"		
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = xenophobic_isolationists
+			has_ai_personality = hive_mind
+			has_ai_personality = decadent_hierarchy
+			has_ai_personality = federation_builders
+			}
+		}
+		modifier = {
+			factor = 4
+			has_ethic = "ethic_fanatic_militarist"
+		}
+		modifier = {
+			factor = 0.5
+			has_ethic = "ethic_fanatic_pacifist"
+		}
+	}
 }
 
 tech_field_manipulation_18 = {
 	area = engineering
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier4cost1
+	tier = 4
 	category = { field_manipulation }
 	prerequisites = { "tech_field_manipulation_17"}	
-	weight = @tier2weight1
+	weight = @tier4weight1
 	
 	modifier = {
 		ship_shield_hp_mult = 0.05
 	}
 	
-	ai_weight = { factor = 1 }
+	ai_weight = {
+		factor = 2 #good component
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_weak"
+			has_trait = "trait_resilient"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = "ethic_militarist"
+			has_ai_personality_behaviour = conqueror
+			has_ethic = "ethic_pacifist"		
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = xenophobic_isolationists
+			has_ai_personality = hive_mind
+			has_ai_personality = decadent_hierarchy
+			has_ai_personality = federation_builders
+			}
+		}
+		modifier = {
+			factor = 4
+			has_ethic = "ethic_fanatic_militarist"
+		}
+		modifier = {
+			factor = 0.5
+			has_ethic = "ethic_fanatic_pacifist"
+		}
+	}
 }
 
 tech_field_manipulation_19 = {
 	area = engineering
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier4cost2
+	tier = 4
 	category = { field_manipulation }
 	prerequisites = { "tech_field_manipulation_18"}	
-	weight = @tier2weight1
+	weight = @tier4weight2
 	
 	modifier = {
 		ship_shield_hp_mult = 0.05
 	}
 	
-	ai_weight = { factor = 1 }
+	ai_weight = {
+		factor = 2 #good component
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_weak"
+			has_trait = "trait_resilient"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = "ethic_militarist"
+			has_ai_personality_behaviour = conqueror
+			has_ethic = "ethic_pacifist"		
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = xenophobic_isolationists
+			has_ai_personality = hive_mind
+			has_ai_personality = decadent_hierarchy
+			has_ai_personality = federation_builders
+			}
+		}
+		modifier = {
+			factor = 4
+			has_ethic = "ethic_fanatic_militarist"
+		}
+		modifier = {
+			factor = 0.5
+			has_ethic = "ethic_fanatic_pacifist"
+		}
+	}
 }
 
 tech_field_manipulation_20 = {
 	area = engineering
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier4cost3
+	tier = 4
 	category = { field_manipulation }
 	prerequisites = { "tech_field_manipulation_19"}	
-	weight = @tier2weight1
+	weight = @tier4weight3
 	
 	modifier = {
 		ship_shield_hp_mult = 0.05
 	}
 	
-	ai_weight = { factor = 1 }
+	ai_weight = {
+		factor = 2 #good component
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_weak"
+			has_trait = "trait_resilient"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = "ethic_militarist"
+			has_ai_personality_behaviour = conqueror
+			has_ethic = "ethic_pacifist"		
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = xenophobic_isolationists
+			has_ai_personality = hive_mind
+			has_ai_personality = decadent_hierarchy
+			has_ai_personality = federation_builders
+			}
+		}
+		modifier = {
+			factor = 4
+			has_ethic = "ethic_fanatic_militarist"
+		}
+		modifier = {
+			factor = 0.5
+			has_ethic = "ethic_fanatic_pacifist"
+		}
+	}
+}
+
+tech_shields_5 = {
+	area = engineering
+	cost = @tier4cost4
+	tier = 4
+	category = { field_manipulation }
+	ai_update_type = military
+	prerequisites = { "tech_field_manipulation_20" }
+	weight = @tier4weight4
+	
+	modifier = {
+		planet_fortification_strength = 0.2
+	}
+	
+	weight_modifier = {
+		factor = 1.25
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 2 #good component
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_weak"
+			has_trait = "trait_resilient"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = "ethic_militarist"
+			has_ai_personality_behaviour = conqueror
+			has_ethic = "ethic_pacifist"		
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = xenophobic_isolationists
+			has_ai_personality = hive_mind
+			has_ai_personality = decadent_hierarchy
+			has_ai_personality = federation_builders
+			}
+		}
+		modifier = {
+			factor = 4
+			has_ethic = "ethic_fanatic_militarist"
+		}
+		modifier = {
+			factor = 0.5
+			has_ethic = "ethic_fanatic_pacifist"
+		}
+	}
 }

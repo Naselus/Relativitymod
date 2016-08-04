@@ -112,12 +112,12 @@ tech_fission_power = {
 
 tech_fusion_power = {
 	area = physics
-	cost = @tier1cost1
+	cost = @tier1cost3
 	tier = 1
 	category = { reactors }
 	ai_update_type = military	
 	prerequisites = { "tech_fission_power" }
-	weight = @tier1weight1
+	weight = @tier1weight3
 	
 	modifier = {
 		max_energy = 250
@@ -135,7 +135,7 @@ tech_fusion_power = {
 	}
 	
 	ai_weight = {
-		factor = 3 #important component
+		factor = 4 #important component
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -148,12 +148,12 @@ tech_fusion_power = {
 
 tech_cold_fusion_power = {
 	area = physics
-	cost = @tier2cost1
+	cost = @tier2cost3
 	tier = 2
 	category = { reactors }
 	ai_update_type = military
 	prerequisites = { "tech_fusion_power" }
-	weight = @tier2weight1
+	weight = @tier2weight3
 	
 	modifier = {
 		max_energy = 250
@@ -184,12 +184,12 @@ tech_cold_fusion_power = {
 
 tech_antimatter_power = {
 	area = physics
-	cost = @tier2cost4
-	tier = 2
+	cost = @tier3cost3
+	tier = 3
 	category = { reactors }
 	ai_update_type = military	
 	prerequisites = { "tech_cold_fusion_power" }
-	weight = @tier2weight4
+	weight = @tier3weight3
 
 	modifier = {
 		max_energy = 250
@@ -207,7 +207,7 @@ tech_antimatter_power = {
 	}
 	
 	ai_weight = {
-		factor = 3 #important component
+		factor = 4 #important component
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -220,12 +220,12 @@ tech_antimatter_power = {
 
 tech_zero_point_power = {
 	area = physics
-	cost = @tier3cost4
-	tier = 3
+	cost = @tier4cost2
+	tier = 4
 	category = { reactors }
 	ai_update_type = military	
 	prerequisites = { "tech_antimatter_power" }
-	weight = @tier3weight4
+	weight = @tier4weight2
 	
 	modifier = {
 		max_energy = 250
@@ -243,7 +243,7 @@ tech_zero_point_power = {
 	}
 	
 	ai_weight = {
-		factor = 3 #important component
+		factor = 4 #important component
 		modifier = {
 			factor = 1.25
 			research_leader = {

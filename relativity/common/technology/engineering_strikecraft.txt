@@ -121,6 +121,7 @@ tech_strike_craft_1 = {
 	}
 	
 	ai_weight = {
+		factor = 2 #weapons are good
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -128,19 +129,51 @@ tech_strike_craft_1 = {
 				has_trait = "leader_trait_expertise_voidcraft"
 			}
 		}
-	}
-		
+		modifier = {
+			factor = 2
+			has_ethic = "ethic_militarist"
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = hegemonic_imperialists
+			has_ai_personality = honorbound_warriors
+			has_ai_personality = fanatic_purifiers
+			has_ai_personality = evangelising_zealots
+			has_ai_personality = slaving_despots
+			}
+		}
+		modifier = {
+			factor = 4
+			has_ethic = "ethic_fanatic_militarist"
+		}
+		modifier = {
+			factor = 0.75
+			has_ethic = "ethic_pacifist"
+		}
+		modifier = {
+			factor = 0.5
+			has_ethic = "ethic_fanatic_pacifist"
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_rocketry"
+			}
+		}
+	}	
 	## unlock strike craft 1
 }
 
 tech_strike_craft_2 = {
-	cost = @tier2cost4
+	cost = @tier3cost1
 	area = engineering
-	tier = 2
+	tier = 3
 	ai_update_type = military
 	category = { voidcraft }	
 	prerequisites = { "tech_strike_craft_1" }
-	weight = @tier2weight4
+	weight = @tier3weight1
 	
 	weight_modifier = {
 		modifier = {
@@ -153,6 +186,7 @@ tech_strike_craft_2 = {
 	}
 	
 	ai_weight = {
+		factor = 2 #weapons are good
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -160,19 +194,52 @@ tech_strike_craft_2 = {
 				has_trait = "leader_trait_expertise_voidcraft"
 			}
 		}
-	}
+		modifier = {
+			factor = 2
+			has_ethic = "ethic_militarist"
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = hegemonic_imperialists
+			has_ai_personality = honorbound_warriors
+			has_ai_personality = fanatic_purifiers
+			has_ai_personality = evangelising_zealots
+			has_ai_personality = slaving_despots
+			}
+		}
+		modifier = {
+			factor = 4
+			has_ethic = "ethic_fanatic_militarist"
+		}
+		modifier = {
+			factor = 0.75
+			has_ethic = "ethic_pacifist"
+		}
+		modifier = {
+			factor = 0.5
+			has_ethic = "ethic_fanatic_pacifist"
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_rocketry"
+			}
+		}
+	}	
 		
 	## unlock strike craft 2
 }
 
 tech_strike_craft_3 = {
-	cost = @tier3cost2
+	cost = @tier3cost4
 	area = engineering
 	tier = 3
 	ai_update_type = military
 	category = { voidcraft }	
 	prerequisites = { "tech_strike_craft_2" }
-	weight = @tier3weight2
+	weight = @tier3weight4
 	
 	weight_modifier = {
 		modifier = {
@@ -185,6 +252,7 @@ tech_strike_craft_3 = {
 	}
 	
 	ai_weight = {
+		factor = 2 #weapons are good
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -192,7 +260,40 @@ tech_strike_craft_3 = {
 				has_trait = "leader_trait_expertise_voidcraft"
 			}
 		}
-	}
+		modifier = {
+			factor = 2
+			has_ethic = "ethic_militarist"
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = hegemonic_imperialists
+			has_ai_personality = honorbound_warriors
+			has_ai_personality = fanatic_purifiers
+			has_ai_personality = evangelising_zealots
+			has_ai_personality = slaving_despots
+			}
+		}
+		modifier = {
+			factor = 4
+			has_ethic = "ethic_fanatic_militarist"
+		}
+		modifier = {
+			factor = 0.75
+			has_ethic = "ethic_pacifist"
+		}
+		modifier = {
+			factor = 0.5
+			has_ethic = "ethic_fanatic_pacifist"
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_rocketry"
+			}
+		}
+	}	
 		
 	## unlock strike craft 3
 }

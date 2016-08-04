@@ -23,7 +23,7 @@
 @tier4cost3 = 6260
 @tier4cost4 = 7060
 
-@tier5cost1 = 8140
+@tier5cost1 = 8140 
 @tier5cost2 = 9220
 @tier5cost3 = 10300
 @tier5cost4 = 11380
@@ -202,6 +202,56 @@ tech_wormhole_generation_3  = {
 	}
 }
 
+tech_ftl_19 = {
+	area = physics
+	cost = @tier3cost3
+	tier = 3
+	category = { ftl_travel }
+	prerequisites = { "tech_wormhole_generation_3"}	
+	weight = @tier3weight3
+	
+	modifier = {
+		ship_ftl_wormhole_speed_mult = 0.1
+		ship_ftl_wormhole_range_mult = 0.1
+	}
+	
+	ai_weight = {
+		factor = 4 #FTL techs are good
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+}
+
+tech_ftl_20 = {
+	area = physics
+	cost = @tier4cost1
+	tier = 4
+	category = { ftl_travel }
+	prerequisites = { "tech_ftl_19"}	
+	weight = @tier4weight1
+	
+	modifier = {
+		ship_ftl_wormhole_speed_mult = 0.1
+		ship_ftl_wormhole_range_mult = 0.1
+	}
+	
+	ai_weight = {
+		factor = 4 #FTL techs are good
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+}
+
 tech_hyper_drive_1  = {
 	cost = 0
 	area = physics
@@ -311,53 +361,75 @@ tech_hyper_drive_3 = {
 	}
 }
 
-tech_hyperlane_mapping = {
-	cost = @tier2cost1
+tech_ftl_16 = {
 	area = physics
-	tier = 2
+	cost = @tier3cost2
+	tier = 3
 	category = { ftl_travel }
+	prerequisites = { "tech_hyper_drive_3"}	
+	weight = @tier3weight2
 	
-	is_rare = yes
-	weight = @tier2weight1
-	
-	feature_flags = {
-		hyperlanes
+	modifier = {
+		ship_interstellar_speed_mult = 0.10
 	}
 	
-	weight_modifier = {
-		modifier = {
-			factor = 0.10
-			NOT = {
-				research_leader = {
-					area = physics
-					has_trait = "leader_trait_expertise_particles"
-				}
-			}
-		}
-		modifier = {
-			factor = 1.10
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_maniacal"
-			}
-		}
+	ai_weight = {
+		factor = 4 #FTL techs are good
 		modifier = {
 			factor = 1.25
 			research_leader = {
 				area = physics
-				has_trait = "leader_trait_spark_of_genius"
+				has_trait = "leader_trait_expertise_particles"
 			}
 		}
-		
-		#maybe add factor if discovered debris with hyperlane drive
-		modifier = {
-			factor = 0
-			has_technology = "tech_hyper_drive_1"
-		}
+	}
+}
+
+tech_ftl_17 = {
+	area = physics
+	cost = @tier3cost4
+	tier = 3
+	category = { ftl_travel }
+	prerequisites = { "tech_ftl_16"}	
+	weight = @tier3weight4
+	
+	modifier = {
+		ship_interstellar_speed_mult = 0.10
 	}
 	
 	ai_weight = {
-		factor = 0	#AI doesn't need it :O
+		factor = 4 #FTL techs are good
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+
+tech_ftl_18 = {
+	area = physics
+	cost = @tier4cost1
+	tier = 4
+	category = { ftl_travel }
+	prerequisites = { "tech_ftl_17"}	
+	weight = @tier4weight1
+	
+	modifier = {
+		ship_interstellar_speed_mult = 0.10
+	}
+	
+	ai_weight = {
+		factor = 4 #FTL techs are good
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
 	}
 }
 
@@ -459,8 +531,130 @@ tech_warp_drive_3 = {
 	}
 }
 
+tech_ftl_13 = {
+	area = physics
+	cost = @tier3cost3
+	tier = 3
+	category = { ftl_travel }
+	prerequisites = { "tech_warp_drive_3"}	
+	weight = @tier3weight3
+	
+	modifier = {
+		ship_ftl_warp_range_mult = 0.10
+	}
+	
+	ai_weight = {
+		factor = 4 #FTL techs are good
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+}
+
+tech_ftl_14 = {
+	area = physics
+	cost = @tier3cost4
+	tier = 3
+	category = { ftl_travel }
+	prerequisites = { "tech_ftl_13"}	
+	weight = @tier3weight4
+	
+	modifier = {
+		ship_ftl_warp_range_mult = 0.10
+	}
+	
+	ai_weight = {
+		factor = 4 #FTL techs are good
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+}
+
+tech_ftl_15 = {
+	area = physics
+	cost = @tier4cost1
+	tier = 4
+	category = { ftl_travel }
+	prerequisites = { "tech_ftl_14"}	
+	weight = @tier4weight1
+	
+	modifier = {
+		ship_ftl_warp_range_mult = 0.10
+	}
+	
+	ai_weight = {
+		factor = 4 #FTL techs are good
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+}
+
+tech_hyperlane_mapping = {
+	cost = @tier2cost1
+	area = physics
+	tier = 2
+	category = { ftl_travel }
+	
+	is_rare = yes
+	weight = @tier2weight1
+	
+	feature_flags = {
+		hyperlanes
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0.10
+			NOT = {
+				research_leader = {
+					area = physics
+					has_trait = "leader_trait_expertise_particles"
+				}
+			}
+		}
+		modifier = {
+			factor = 1.10
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_maniacal"
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_spark_of_genius"
+			}
+		}
+		
+		#maybe add factor if discovered debris with hyperlane drive
+		modifier = {
+			factor = 0
+			has_technology = "tech_hyper_drive_1"
+		}
+	}
+	
+	ai_weight = {
+		factor = 0	#AI doesn't need it :O
+	}
+}
+
 tech_jump_drive_1 = {
-	cost = @tier3cost1
+	cost = @tier3cost3
 	area = physics
 	tier = 3
 	category = { ftl_travel }
@@ -468,7 +662,7 @@ tech_jump_drive_1 = {
 	is_reverse_engineerable = yes
 	is_rare = yes
 	is_dangerous = yes
-	weight = @tier3weight1
+	weight = @tier3weight3
 	is_dangerous = yes
 	prerequisites = { "tech_wormhole_generation_3" }
 	
@@ -488,124 +682,3 @@ tech_jump_drive_1 = {
 	}
 }
 
-tech_ftl_13 = {
-	area = physics
-	cost = @tier2cost1
-	tier = 2
-	category = { ftl_travel }
-	prerequisites = { "tech_warp_drive_3"}	
-	weight = @tier2weight1
-	
-	modifier = {
-		ship_ftl_warp_range_mult = 0.10
-	}
-	
-	ai_weight = { factor = 1 }
-}
-
-tech_ftl_14 = {
-	area = physics
-	cost = @tier2cost1
-	tier = 2
-	category = { ftl_travel }
-	prerequisites = { "tech_ftl_13"}	
-	weight = @tier2weight1
-	
-	modifier = {
-		ship_ftl_warp_range_mult = 0.10
-	}
-	
-	ai_weight = { factor = 1 }
-}
-
-tech_ftl_15 = {
-	area = physics
-	cost = @tier2cost1
-	tier = 2
-	category = { ftl_travel }
-	prerequisites = { "tech_ftl_14"}	
-	weight = @tier2weight1
-	
-	modifier = {
-		ship_ftl_warp_range_mult = 0.10
-	}
-	
-	ai_weight = { factor = 1 }
-}
-
-tech_ftl_16 = {
-	area = physics
-	cost = @tier2cost1
-	tier = 2
-	category = { ftl_travel }
-	prerequisites = { "tech_hyper_drive_3"}	
-	weight = @tier2weight1
-	
-	modifier = {
-		ship_interstellar_speed_mult = 0.10
-	}
-	
-	ai_weight = { factor = 1 }
-}
-
-tech_ftl_17 = {
-	area = physics
-	cost = @tier2cost1
-	tier = 2
-	category = { ftl_travel }
-	prerequisites = { "tech_ftl_16"}	
-	weight = @tier2weight1
-	
-	modifier = {
-		ship_interstellar_speed_mult = 0.10
-	}
-	
-	ai_weight = { factor = 1 }
-}
-
-tech_ftl_18 = {
-	area = physics
-	cost = @tier2cost1
-	tier = 2
-	category = { ftl_travel }
-	prerequisites = { "tech_ftl_17"}	
-	weight = @tier2weight1
-	
-	modifier = {
-		ship_interstellar_speed_mult = 0.10
-	}
-	
-	ai_weight = { factor = 1 }
-}
-
-tech_ftl_19 = {
-	area = physics
-	cost = @tier2cost1
-	tier = 2
-	category = { ftl_travel }
-	prerequisites = { "tech_wormhole_generation_3"}	
-	weight = @tier2weight1
-	
-	modifier = {
-		ship_ftl_wormhole_speed_mult = 0.05
-		ship_ftl_wormhole_range_mult = 0.05
-	}
-	
-	ai_weight = { factor = 1 }
-}
-
-tech_ftl_20 = {
-	area = physics
-	cost = @tier2cost1
-	tier = 2
-	category = { ftl_travel }
-	prerequisites = { "tech_ftl_19"}	
-	weight = @tier2weight1
-	
-	modifier = {
-		ship_ftl_wormhole_speed_mult = 0.05
-		ship_ftl_wormhole_range_mult = 0.05
-	}
-	
-	ai_weight = { factor = 1 }
-}

@@ -131,7 +131,97 @@ tech_paradise_dome = {
 	ai_weight = {
 		modifier = {
 			factor = 2
+			OR = {
+			has_ethic = ethic_pacifist
+			has_ethic = ethic_collectivist
+			}
+		}
+		modifier = {
+			factor = 3
+			OR = {
 			has_ethic = ethic_fanatic_pacifist
+			has_ethic = ethic_fanatic_collectivist
+			}
+		}
+		modifier = {
+			factor = 2
+			has_trait = "trait_communal"
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}	
+	}
+}
+
+tech_public_opinion_3 = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = { public_opinion }
+	prerequisites = { "tech_paradise_dome" }
+	weight = @tier2weight1
+	
+	modifier = {
+		pop_happiness = 0.03
+	}
+	
+	ai_weight = {
+		factor = 1.25
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = ethic_pacifist
+			has_ethic = ethic_collectivist
+			}
+		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_ethic = ethic_fanatic_pacifist
+			has_ethic = ethic_fanatic_collectivist
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}	
+	}
+}
+
+tech_public_opinion_4 = {
+	area = society
+	cost = @tier2cost2
+	tier = 2
+	category = { public_opinion }
+	prerequisites = { "tech_public_opinion_3" }
+	weight = @tier2weight2
+	
+	modifier = {
+		pop_happiness = 0.03
+	}
+
+	ai_weight = {
+		factor = 1.25
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = ethic_pacifist
+			has_ethic = ethic_collectivist
+			}
+		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_ethic = ethic_fanatic_pacifist
+			has_ethic = ethic_fanatic_collectivist
+			}
 		}
 		modifier = {
 			factor = 1.25
@@ -145,12 +235,12 @@ tech_paradise_dome = {
 
 #Hyper-Entertainment Forum
 tech_hyper_entertainment_forum = {
-	cost = @tier2cost1
+	cost = @tier2cost4
 	area = society
 	tier = 2
 	category = { public_opinion }
-	prerequisites = { "tech_colonial_centralization" }
-	weight = @tier2weight1
+	prerequisites = { "tech_colonial_centralization" "tech_public_opinion_4" }
+	weight = @tier2weight4
 	is_rare = yes
 	
 	# unlocks Hyper-Entertainment planet wonder
@@ -196,275 +286,617 @@ tech_hyper_entertainment_forum = {
 				has_trait = "leader_trait_expertise_statecraft"
 			}
 		}
+		modifier = {
+			factor = 2
+			has_trait = "trait_solitary"
+		}
 	}
-}
-
-tech_public_opinion_3 = {
-	area = society
-	cost = @tier2cost1
-	tier = 2
-	category = { public_opinion }
-	prerequisites = { "tech_planetary_unification" }
-	weight = @tier2weight1
-	
-	modifier = {
-		pop_happiness = 0.03
-	}
-	
-	ai_weight = { factor = 1 }
-}
-
-tech_public_opinion_4 = {
-	area = society
-	cost = @tier2cost1
-	tier = 2
-	category = { public_opinion }
-	prerequisites = { "tech_public_opinion_3" }
-	weight = @tier2weight1
-	
-	modifier = {
-		pop_happiness = 0.03
-	}
-
-	ai_weight = { factor = 1 }
 }
 
 tech_public_opinion_5 = {
 	area = society
-	cost = @tier2cost1
+	cost = @tier2cost4
 	tier = 2
 	category = { public_opinion }
-	prerequisites = { "tech_public_opinion_4" }
-	weight = @tier2weight1
+	prerequisites = { "tech_hyper_entertainment_forum" }
+	weight = @tier2weight4
 	
 	modifier = {
 		pop_happiness = 0.03
 	}
 	
-	ai_weight = { factor = 1 }
+	ai_weight = {
+		factor = 1.25
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = ethic_pacifist
+			has_ethic = ethic_collectivist
+			}
+		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_ethic = ethic_fanatic_pacifist
+			has_ethic = ethic_fanatic_collectivist
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}	
+	}
 }
 
 tech_public_opinion_6 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier3cost1
+	tier = 3
 	category = { public_opinion }
 	prerequisites = { "tech_public_opinion_5" }	
-	weight = @tier2weight1
+	weight = @tier3weight1
 
 	modifier = {
 		pop_happiness = 0.03
 	}
 	
-	ai_weight = { factor = 1 }
+	ai_weight = {
+		factor = 1.25
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = ethic_pacifist
+			has_ethic = ethic_collectivist
+			}
+		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_ethic = ethic_fanatic_pacifist
+			has_ethic = ethic_fanatic_collectivist
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}	
+	}
 }
 
 tech_public_opinion_7 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier3cost1
+	tier = 3
 	category = { public_opinion }
 	prerequisites = { "tech_public_opinion_6" }	
-	weight = @tier2weight1
+	weight = @tier3weight1
 
 	modifier = {
 		pop_happiness = 0.03
 	}
 	
-	ai_weight = { factor = 1 }
+	ai_weight = {
+		factor = 1.25
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = ethic_pacifist
+			has_ethic = ethic_collectivist
+			}
+		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_ethic = ethic_fanatic_pacifist
+			has_ethic = ethic_fanatic_collectivist
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}	
+	}
 }
 
 tech_public_opinion_8 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier3cost2
+	tier = 3
 	category = { public_opinion }
 	prerequisites = { "tech_public_opinion_7" }	
-	weight = @tier2weight1
+	weight = @tier3weight2
 	
 	modifier = {
 		pop_happiness = 0.03
 	}
 
-	ai_weight = { factor = 1 }
+	ai_weight = {
+		factor = 1.25
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = ethic_pacifist
+			has_ethic = ethic_collectivist
+			}
+		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_ethic = ethic_fanatic_pacifist
+			has_ethic = ethic_fanatic_collectivist
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}	
+	}
 }
 
 tech_public_opinion_9 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier3cost2
+	tier = 3
 	category = { public_opinion }
 	prerequisites = { "tech_public_opinion_8" }
-	weight = @tier2weight1
+	weight = @tier3weight2
 
 	modifier = {
 		pop_happiness = 0.03
 	}
 	
-	ai_weight = { factor = 1 }
+	ai_weight = {
+		factor = 1.25
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = ethic_pacifist
+			has_ethic = ethic_collectivist
+			}
+		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_ethic = ethic_fanatic_pacifist
+			has_ethic = ethic_fanatic_collectivist
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}	
+	}
 }
 
 tech_public_opinion_10 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier3cost3
+	tier = 3
 	category = { public_opinion }
 	prerequisites = { "tech_public_opinion_9" }	
-	weight = @tier2weight1
+	weight = @tier3weight3
 
 	modifier = {
 		pop_happiness = 0.03
 	}
 	
-	ai_weight = { factor = 1 }
+	ai_weight = {
+		factor = 1.25
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = ethic_pacifist
+			has_ethic = ethic_collectivist
+			}
+		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_ethic = ethic_fanatic_pacifist
+			has_ethic = ethic_fanatic_collectivist
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}	
+	}
 }
 
 tech_public_opinion_11 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier3cost3
+	tier = 3
 	category = { public_opinion }
 	prerequisites = { "tech_public_opinion_10" }	
-	weight = @tier2weight1
+	weight = @tier3weight3
 
 	modifier = {
 		pop_happiness = 0.03
 	}
 	
-	ai_weight = { factor = 1 }
+	ai_weight = {
+		factor = 1.25
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = ethic_pacifist
+			has_ethic = ethic_collectivist
+			}
+		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_ethic = ethic_fanatic_pacifist
+			has_ethic = ethic_fanatic_collectivist
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}	
+	}
 }
 
 tech_public_opinion_12 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier3cost4
+	tier = 3
 	category = { public_opinion }
 	prerequisites = { "tech_public_opinion_11" }	
-	weight = @tier2weight1
+	weight = @tier3weight4
 	
 	modifier = {
 		pop_happiness = 0.03
 	}
 	
-	ai_weight = { factor = 1 }
+	ai_weight = {
+		factor = 1.25
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = ethic_pacifist
+			has_ethic = ethic_collectivist
+			}
+		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_ethic = ethic_fanatic_pacifist
+			has_ethic = ethic_fanatic_collectivist
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}	
+	}
 }
 
 tech_public_opinion_13 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier3cost4
+	tier = 3
 	category = { public_opinion }
 	prerequisites = { "tech_public_opinion_12" }	
-	weight = @tier2weight1
+	weight = @tier3weight4
 	
 	modifier = {
 		pop_happiness = 0.03
 	}
 	
-	ai_weight = { factor = 1 }
+	ai_weight = {
+		factor = 1.25
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = ethic_pacifist
+			has_ethic = ethic_collectivist
+			}
+		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_ethic = ethic_fanatic_pacifist
+			has_ethic = ethic_fanatic_collectivist
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}	
+	}
 }
 
 tech_public_opinion_14 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier4cost1
+	tier = 4
 	category = { public_opinion }
 	prerequisites = { "tech_public_opinion_13" }	
-	weight = @tier2weight1
+	weight = @tier4weight1
 
 	modifier = {
 		pop_happiness = 0.03
 	}
 	
-	ai_weight = { factor = 1 }
+	ai_weight = {
+		factor = 1.25
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = ethic_pacifist
+			has_ethic = ethic_collectivist
+			}
+		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_ethic = ethic_fanatic_pacifist
+			has_ethic = ethic_fanatic_collectivist
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}	
+	}
 }
 
 tech_public_opinion_15 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier4cost1
+	tier = 4
 	category = { public_opinion }
 	prerequisites = { "tech_public_opinion_14" }		
-	weight = @tier2weight1
+	weight = @tier4weight1
 
 	modifier = {
 		pop_happiness = 0.03
 	}
 	
-	ai_weight = { factor = 1 }
+	ai_weight = {
+		factor = 1.25
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = ethic_pacifist
+			has_ethic = ethic_collectivist
+			}
+		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_ethic = ethic_fanatic_pacifist
+			has_ethic = ethic_fanatic_collectivist
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}	
+	}
 }
 
 tech_public_opinion_16 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier4cost2
+	tier = 4
 	category = { public_opinion }
 	prerequisites = { "tech_public_opinion_15" }		
-	weight = @tier2weight1
+	weight = @tier4weight2
 
 	modifier = {
 		pop_happiness = 0.03
 	}
 	
-	ai_weight = { factor = 1 }
+	ai_weight = {
+		factor = 1.25
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = ethic_pacifist
+			has_ethic = ethic_collectivist
+			}
+		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_ethic = ethic_fanatic_pacifist
+			has_ethic = ethic_fanatic_collectivist
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}	
+	}
 }
 
 tech_public_opinion_17 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier4cost2
+	tier = 4
 	category = { public_opinion }
 	prerequisites = { "tech_public_opinion_16" }	
-	weight = @tier2weight1
+	weight = @tier4weight2
 
 	modifier = {
 		pop_happiness = 0.03
 	}
 	
-	ai_weight = { factor = 1 }
+	ai_weight = {
+		factor = 1.25
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = ethic_pacifist
+			has_ethic = ethic_collectivist
+			}
+		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_ethic = ethic_fanatic_pacifist
+			has_ethic = ethic_fanatic_collectivist
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}	
+	}
 }
 
 tech_public_opinion_18 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier4cost3
+	tier = 4
 	category = { public_opinion }
 	prerequisites = { "tech_public_opinion_17" }		
-	weight = @tier2weight1
+	weight = @tier4weight3
 	
 	modifier = {
 		pop_happiness = 0.03
 	}
 	
-	ai_weight = { factor = 1 }
+	ai_weight = {
+		factor = 1.25
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = ethic_pacifist
+			has_ethic = ethic_collectivist
+			}
+		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_ethic = ethic_fanatic_pacifist
+			has_ethic = ethic_fanatic_collectivist
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}	
+	}
 }
 
 tech_public_opinion_19 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier4cost3
+	tier = 4
 	category = { public_opinion }
 	prerequisites = { "tech_public_opinion_18" }	
-	weight = @tier2weight1
+	weight = @tier4weight3
 	
 	modifier = {
 		pop_happiness = 0.03
 	}
 	
-	ai_weight = { factor = 1 }
+	ai_weight = {
+		factor = 1.25
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = ethic_pacifist
+			has_ethic = ethic_collectivist
+			}
+		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_ethic = ethic_fanatic_pacifist
+			has_ethic = ethic_fanatic_collectivist
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}	
+	}
 }
 
 tech_public_opinion_20 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier4cost4
+	tier = 4
 	category = { public_opinion }
 	prerequisites = { "tech_public_opinion_19" }		
-	weight = @tier2weight1
+	weight = @tier4weight4
 	
 	modifier = {
 		pop_happiness = 0.03
 	}
 	
-	ai_weight = { factor = 1 }
+	ai_weight = {
+		factor = 1.25
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = ethic_pacifist
+			has_ethic = ethic_collectivist
+			}
+		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_ethic = ethic_fanatic_pacifist
+			has_ethic = ethic_fanatic_collectivist
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}	
+	}
 }

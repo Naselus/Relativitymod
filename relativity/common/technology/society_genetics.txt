@@ -103,11 +103,11 @@
 
 #Genome Mapping
 tech_genome_mapping = {
-	cost = @tier1cost1
+	cost = @tier1cost2
 	area = society
 	tier = 1
 	category = { genetics }
-	weight = @tier1weight1
+	weight = @tier1weight2
 	
 	modifier = {
 		leader_age = 10
@@ -132,17 +132,69 @@ tech_genome_mapping = {
 				has_trait = "leader_trait_expertise_genetics"
 			}
 		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_talented"
+			has_trait = "trait_fleeting"
+			has_trait = "trait_slow_breeders"
+			}
+		}
+	}
+}
+
+tech_genetics_12 = {
+	area = society
+	cost = @tier1cost4
+	tier = 1
+	category = { genetics }
+	prerequisites = { "tech_genome_mapping" }
+	weight = @tier1weight4
+	modifier = {
+		 leader_age = 10
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.50
+			OR = {
+			has_ethic = "ethic_fanatic_individualist"
+			has_ethic = "ethic_fanatic_materialist"
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_genetics"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_talented"
+			has_trait = "trait_fleeting"
+			has_trait = "trait_slow_breeders"
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+			has_ethic = "ethic_fanatic_spiritualist"
+			has_ai_personality = fanatic_purifiers
+			}
+		}
 	}
 }
 
 #Epigenetic Triggers
 tech_epigenetic_triggers = {
-	cost = @tier2cost1
+	cost = @tier2cost2
 	area = society
 	tier = 2
 	category = { genetics }
-	prerequisites = { "tech_genome_mapping" }
-	weight = @tier2weight1
+	prerequisites = { "tech_genetics_12" }
+	weight = @tier2weight2
 	
 	feature_flags = {
 		uplifting
@@ -196,6 +248,14 @@ tech_epigenetic_triggers = {
 			has_ethic = ethic_fanatic_xenophile
 		}
 		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality_behaviour = uplifter
+			has_ai_personality = fanatic_befrienders
+			has_ai_personality = federation_builders
+			}
+		}
+		modifier = {
 			factor = 1.25
 			research_leader = {
 				area = society
@@ -209,13 +269,141 @@ tech_epigenetic_triggers = {
 	}
 }
 
+#Gene Tailoring
+tech_gene_tailoring = {
+	cost = @tier2cost2
+	area = society
+	tier = 2
+	category = { genetics }	
+	prerequisites = { "tech_epigenetic_triggers" }
+	weight = @tier2weight2
+	
+	modifier = {
+		trait_points = 1
+	}
+	
+	feature_flags = {
+		modify_traits
+		pop_self_modification
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_genetics"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_genetics"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_weak"
+			has_trait = "trait_slow_breeders"
+			has_trait = "trait_nonadaptive"
+			}
+		}
+		modifier = {
+			factor = 0.1
+			OR = {
+			has_ai_personality = fanatic_purifiers
+			has_ai_personality_behaviour = purger	
+			}
+		}
+	}
+}
+
+#Targeted Gene Expressions
+tech_gene_expressions = {
+	cost = @tier2cost4
+	area = society
+	category = { genetics }
+	tier = 2
+	is_rare = yes
+	prerequisites = { "tech_gene_tailoring" }
+	weight = @tier2weight4
+	
+	modifier = {
+		trait_points = 1
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0.50
+			NOT = {
+				research_leader = {
+					area = society
+					has_trait = "leader_trait_expertise_genetics"
+				}
+			}
+		}
+		modifier = {
+			factor = 1.50
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_spark_of_genius"
+			}
+		}
+		modifier = {
+			factor = 1.50
+			OR = {
+				has_ethic = ethic_collectivist
+				has_ethic = ethic_fanatic_collectivist
+			}
+		}
+		modifier = {
+			factor = 0.10
+			OR = {
+				has_ethic = ethic_individualist
+				has_ethic = ethic_fanatic_individualist
+			}
+		}
+	}	
+	
+	ai_weight = {
+		factor = 3 #rare tech
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_genetics"
+			}
+		}
+		modifier = {
+			factor = 0.1
+			OR = {
+			has_ai_personality = fanatic_purifiers
+			has_ai_personality_behaviour = purger	
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_weak"
+			has_trait = "trait_slow_breeders"
+			has_trait = "trait_nonadaptive"
+			}
+		}
+	}
+}
+
 #Cloning
 tech_cloning = {
 	cost = @tier2cost3
 	area = society
 	tier = 2
 	category = { genetics }	
-	prerequisites = { "tech_epigenetic_triggers" }
+	prerequisites = { "tech_gene_tailoring" }
 	weight = @tier2weight3
 	
 	weight_modifier = {
@@ -236,18 +424,69 @@ tech_cloning = {
 				has_trait = "leader_trait_expertise_genetics"
 			}
 		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_talented"
+			has_trait = "trait_fleeting"
+			has_trait = "trait_slow_breeders"
+			}
+		}
+	}
+}
+
+tech_genetics_13 = {
+	area = society
+	cost = @tier2cost4
+	tier = 2
+	category = { genetics }
+	prerequisites = { "tech_cloning" }
+	weight = @tier2weight4
+	modifier = {
+		 leader_age = 10
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.50
+			OR = {
+			has_ethic = "ethic_fanatic_individualist"
+			has_ethic = "ethic_fanatic_materialist"
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_genetics"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_talented"
+			has_trait = "trait_fleeting"
+			has_trait = "trait_slow_breeders"
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+			has_ethic = "ethic_fanatic_spiritualist"
+			has_ai_personality = fanatic_purifiers
+			}
+		}
 	}
 }
 
 #Gene Banks
 tech_gene_banks = {
-	cost = @tier3cost2
+	cost = @tier3cost1
 	area = society
 	tier = 3
 	category = { genetics }
 	is_rare = yes
-	prerequisites = { "tech_cloning" }
-	weight = @tier3weight2
+	prerequisites = { "tech_genetics_13" }
+	weight = @tier3weight1
 	
 	weight_modifier = {
 		modifier = {
@@ -289,6 +528,14 @@ tech_gene_banks = {
 			research_leader = {
 				area = society
 				has_trait = "leader_trait_expertise_genetics"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_talented"
+			has_trait = "trait_fleeting"
+			has_trait = "trait_slow_breeders"
 			}
 		}
 	}
@@ -367,11 +614,11 @@ tech_gene_seed_purification = {
 			has_ethic = ethic_pacifist
 		}
 		modifier = {
-			factor = 1.25
+			factor = 2
 			has_ethic = ethic_militarist
 		}
 		modifier = {
-			factor = 1.5
+			factor = 3
 			has_ethic = ethic_fanatic_militarist
 		}
 		modifier = {
@@ -381,17 +628,78 @@ tech_gene_seed_purification = {
 				has_trait = "leader_trait_expertise_genetics"
 			}
 		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_weak"
+			has_trait = "trait_strong"
+			has_trait = "trait_slow_breeders"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = hegemonic_imperialists
+			has_ai_personality = slaving_despots		
+			}
+		}
+	}
+}
+
+tech_genetics_14 = {
+	area = society
+	cost = @tier3cost3
+	tier = 3
+	category = { genetics }
+	prerequisites = { "tech_gene_seed_purification" }
+	weight = @tier3weight3
+	
+	modifier = {
+		trait_points = 1
+	}	
+	
+	ai_weight = {
+		factor = 3 #rare tech
+		modifier = {
+			factor = 1.50
+			OR = {
+			has_ethic = "ethic_fanatic_individualist"
+			has_ethic = "ethic_fanatic_materialist"
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_genetics"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_talented"
+			has_trait = "trait_fleeting"
+			has_trait = "trait_slow_breeders"
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+			has_ethic = "ethic_fanatic_spiritualist"
+			has_ai_personality = fanatic_purifiers
+			}
+		}
 	}
 }
 
 tech_morphogenetic_field_mastery = {
-	cost = @tier2cost3
+	cost = @tier3cost4
 	area = society
 	category = { genetics }
-	tier = 2
+	tier = 3
 	is_rare = yes
-	prerequisites = { "tech_gene_banks" }
-	weight = @tier2weight3
+	prerequisites = { "tech_genetics_14" }
+	weight = @tier3weight4
 	
 	# unlocks xeno-armies
 	
@@ -464,11 +772,11 @@ tech_morphogenetic_field_mastery = {
 			has_ethic = ethic_pacifist
 		}
 		modifier = {
-			factor = 1.25
+			factor = 2
 			has_ethic = ethic_militarist
 		}
 		modifier = {
-			factor = 1.5
+			factor = 3
 			has_ethic = ethic_fanatic_militarist
 		}
 		modifier = {
@@ -478,102 +786,18 @@ tech_morphogenetic_field_mastery = {
 				has_trait = "leader_trait_expertise_genetics"
 			}
 		}
-	}
-}
-
-#Gene Tailoring
-tech_gene_tailoring = {
-	cost = @tier2cost2
-	area = society
-	tier = 2
-	category = { genetics }	
-	prerequisites = { "tech_epigenetic_triggers" }
-	weight = @tier2weight2
-	
-	modifier = {
-		trait_points = 1
-	}
-	
-	feature_flags = {
-		modify_traits
-		pop_self_modification
-	}
-	
-	weight_modifier = {
 		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_genetics"
-			}
-		}
-	}
-	
-	ai_weight = {
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_genetics"
-			}
-		}
-	}
-}
-
-#Targeted Gene Expressions
-tech_gene_expressions = {
-	cost = @tier2cost4
-	area = society
-	category = { genetics }
-	tier = 2
-	is_rare = yes
-	prerequisites = { "tech_gene_tailoring" }
-	weight = @tier2weight4
-	
-	modifier = {
-		trait_points = 1
-	}
-	
-	weight_modifier = {
-		modifier = {
-			factor = 0.50
-			NOT = {
-				research_leader = {
-					area = society
-					has_trait = "leader_trait_expertise_genetics"
-				}
-			}
-		}
-		modifier = {
-			factor = 1.50
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_spark_of_genius"
-			}
-		}
-		modifier = {
-			factor = 1.50
+			factor = 2
 			OR = {
-				has_ethic = ethic_collectivist
-				has_ethic = ethic_fanatic_collectivist
+			has_trait = "trait_weak"
+			has_trait = "trait_slow_breeders"			
 			}
 		}
 		modifier = {
-			factor = 0.10
+			factor = 2
 			OR = {
-				has_ethic = ethic_individualist
-				has_ethic = ethic_fanatic_individualist
-			}
-		}
-	}	
-	
-	ai_weight = {
-		factor = 3 #rare tech
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_genetics"
+			has_ai_personality = hegemonic_imperialists
+			has_ai_personality = slaving_despots		
 			}
 		}
 	}
@@ -631,7 +855,10 @@ tech_selected_lineages = {
 		factor = 3 #rare tech
 		modifier = {
 			factor = 1.50
-			has_ethic = ethic_fanatic_individualist
+			OR = {
+			has_ethic = "ethic_fanatic_individualist"
+			has_ethic = "ethic_fanatic_materialist"
+			}
 		}
 		modifier = {
 			factor = 1.25
@@ -640,18 +867,72 @@ tech_selected_lineages = {
 				has_trait = "leader_trait_expertise_genetics"
 			}
 		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_talented"
+			has_trait = "trait_fleeting"
+			has_trait = "trait_slow_breeders"
+			}
+		}
+	}
+}
+
+tech_genetics_15 = {
+	area = society
+	cost = @tier3cost2
+	tier = 3
+	category = { genetics }
+	prerequisites = { "tech_selected_lineages" }	
+	weight = @tier3weight2
+	
+	modifier = {
+		 leader_age = 10
+	}	
+
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.50
+			OR = {
+			has_ethic = "ethic_fanatic_individualist"
+			has_ethic = "ethic_fanatic_materialist"
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_genetics"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_talented"
+			has_trait = "trait_fleeting"
+			has_trait = "trait_slow_breeders"
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+			has_ethic = "ethic_fanatic_spiritualist"
+			has_ai_personality = fanatic_purifiers
+			}
+		}
 	}
 }
 
 #Capacity Boosters
 tech_capacity_boosters = {
-	cost = @tier3cost1
+	cost = @tier3cost3
 	area = society
 	category = { genetics }
 	tier = 3
 	is_rare = yes
-	prerequisites = { "tech_selected_lineages" }
-	weight = @tier3weight1
+	prerequisites = { "tech_genetics_15" }
+	weight = @tier3weight3
 	
 	# Modifiers from this tech is added through a policy-option
 	modifier = {
@@ -697,10 +978,32 @@ tech_capacity_boosters = {
 	ai_weight = {
 		factor = 3 #rare tech
 		modifier = {
+			factor = 1.50
+			OR = {
+			has_ethic = "ethic_fanatic_individualist"
+			has_ethic = "ethic_fanatic_materialist"
+			}
+		}
+		modifier = {
 			factor = 1.25
 			research_leader = {
 				area = society
 				has_trait = "leader_trait_expertise_genetics"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_talented"
+			has_trait = "trait_fleeting"
+			has_trait = "trait_slow_breeders"
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+			has_ethic = "ethic_fanatic_spiritualist"
+			has_ai_personality = fanatic_purifiers
 			}
 		}
 	}
@@ -708,13 +1011,13 @@ tech_capacity_boosters = {
 
 tech_xenoplague = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier4cost1
+	tier = 4
 	is_rare = yes
 	is_dangerous = yes
 	category = { genetics }
-	prerequisites = { "tech_gene_tailoring"  }
-	weight = @tier2weight1
+	prerequisites = { "tech_gene_expressions"  }
+	weight = @tier4weight1
 
 	modifier = {
 		trait_points = 1
@@ -726,8 +1029,8 @@ tech_xenoplague = {
 			factor = 0.5
 			NOT = { 
 				OR = {
-					has_ethic = ethic_xenophobe
-					has_ethic = ethic_fanatic_xenophobe
+					has_ethic = "ethic_xenophobe"
+					has_ethic = "ethic_fanatic_xenophobe"
 				}
 			}
 		}
@@ -737,19 +1040,19 @@ tech_xenoplague = {
 		factor = 0.5
 		modifier = {
 			factor = 2
-			has_ethic = ethic_xenophobe
+			has_ethic = "ethic_xenophobe"
 		}	
 		modifier = {
 			factor = 5
-			has_ethic = ethic_fanatic_xenophobe
+			has_ethic = "ethic_fanatic_xenophobe"
 		}		
 		modifier = {
 			factor = 2
-			has_ethic = ethic_militarist
+			has_ethic = "ethic_militarist"
 		}
 		modifier = {
 			factor = 3
-			has_ethic = ethic_fanatic_militarist
+			has_ethic = "ethic_fanatic_militarist"
 		}
 		modifier = {
 			factor = 1.25
@@ -758,138 +1061,248 @@ tech_xenoplague = {
 				has_trait = "leader_trait_expertise_biology"
 			}
 		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_ai_personality_behaviour = purger
+			has_ai_personality = fanatic_purifiers
+			has_ai_personality_behaviour = conqueror
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+			has_ethic = "ethic_fanatic_xenophile"
+			has_ethic = "ethic_xenophile"
+			has_ai_personality = fanatic_purifiers
+			}
+		}
 	}
 
-}
-
-tech_genetics_12 = {
-	area = society
-	cost = @tier2cost1
-	tier = 2
-	category = { genetics }
-	prerequisites = { "tech_xenoplague" }
-	weight = @tier2weight1
-	modifier = {
-		 leader_age = 10
-	}
-	
-	ai_weight = { factor = 1 }
-}
-
-tech_genetics_13 = {
-	area = society
-	cost = @tier2cost1
-	tier = 2
-	category = { genetics }
-	prerequisites = { "tech_genetics_12" }
-	weight = @tier2weight1
-	modifier = {
-		 leader_age = 10
-	}
-	ai_weight = { factor = 1 }
-}
-
-tech_genetics_14 = {
-	area = society
-	cost = @tier2cost1
-	tier = 2
-	category = { genetics }
-	prerequisites = { "tech_genetics_13" }
-	weight = @tier2weight1
-	
-	modifier = {
-		trait_points = 1
-	}	
-	
-	ai_weight = { factor = 1 }
-}
-
-tech_genetics_15 = {
-	area = society
-	cost = @tier2cost1
-	tier = 2
-	category = { genetics }
-	prerequisites = { "tech_genetics_14" }	
-	weight = @tier2weight1
-	
-	modifier = {
-		 leader_age = 10
-	}	
-
-	
-	ai_weight = { factor = 1 }
 }
 
 tech_genetics_16 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier4cost2
+	tier = 4
 	category = { genetics }
 	prerequisites = { "tech_genetics_15" }
-	weight = @tier2weight1
+	weight = @tier4weight2
 	
 		modifier = {
 		 leader_age = 10
 	}
 	
-	ai_weight = { factor = 1 }
+	ai_weight = {
+		modifier = {
+			factor = 1.50
+			OR = {
+			has_ethic = "ethic_fanatic_individualist"
+			has_ethic = "ethic_fanatic_materialist"
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_genetics"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_talented"
+			has_trait = "trait_fleeting"
+			has_trait = "trait_slow_breeders"
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+			has_ethic = "ethic_fanatic_spiritualist"
+			has_ai_personality = fanatic_purifiers
+			}
+		}
+	}
 }
 
 tech_genetics_17 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier4cost2
+	tier = 4
 	category = { genetics }
 	prerequisites = { "tech_genetics_16" }	
-	weight = @tier2weight1
+	weight = @tier4weight2
 	
 	modifier = {
 		trait_points = 1
 	}
 	
-	ai_weight = { factor = 1 }
+	ai_weight = {
+		factor = 3 #rare tech
+		modifier = {
+			factor = 1.50
+			OR = {
+			has_ethic = "ethic_fanatic_individualist"
+			has_ethic = "ethic_fanatic_materialist"
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_genetics"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_talented"
+			has_trait = "trait_fleeting"
+			has_trait = "trait_slow_breeders"
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+			has_ethic = "ethic_fanatic_spiritualist"
+			has_ai_personality = fanatic_purifiers
+			}
+		}
+	}
 }
 
 tech_genetics_18 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier4cost3
+	tier = 4
 	category = { genetics }
 	prerequisites = { "tech_genetics_17" }	
-	weight = @tier2weight1
+	weight = @tier4weight3
 	modifier = {
 		 leader_age = 10
 	}	
 	
 	
-	ai_weight = { factor = 1 }
+	ai_weight = {
+		modifier = {
+			factor = 1.50
+			OR = {
+			has_ethic = "ethic_fanatic_individualist"
+			has_ethic = "ethic_fanatic_materialist"
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_genetics"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_talented"
+			has_trait = "trait_fleeting"
+			has_trait = "trait_slow_breeders"
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+			has_ethic = "ethic_fanatic_spiritualist"
+			has_ai_personality = fanatic_purifiers
+			}
+		}
+	}
 }
 
 tech_genetics_19 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier4cost3
+	tier = 4
 	category = { genetics }
 	prerequisites = { "tech_genetics_18" }	
-	weight = @tier2weight1
+	weight = @tier4weight3
 	modifier = {
 		 leader_age = 10
 	}
 	
-	ai_weight = { factor = 1 }
+	ai_weight = {
+		modifier = {
+			factor = 1.50
+			OR = {
+			has_ethic = "ethic_fanatic_individualist"
+			has_ethic = "ethic_fanatic_materialist"
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_genetics"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_talented"
+			has_trait = "trait_fleeting"
+			has_trait = "trait_slow_breeders"
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+			has_ethic = "ethic_fanatic_spiritualist"
+			has_ai_personality = fanatic_purifiers
+			}
+		}
+	}
 }
 
 tech_genetics_20 = {
 	area = society
-	cost = @tier2cost1
-	tier = 2
+	cost = @tier4cost4
+	tier = 4
 	category = { genetics }
 	prerequisites = { "tech_genetics_19" }	
-	weight = @tier2weight1
+	weight = @tier4weight4
 
 		modifier = {
 		trait_points = 1
 	}
 	
-	ai_weight = { factor = 1 }
+	ai_weight = {
+		factor = 3 #rare tech
+		modifier = {
+			factor = 1.50
+			OR = {
+			has_ethic = "ethic_fanatic_individualist"
+			has_ethic = "ethic_fanatic_materialist"
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_genetics"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_talented"
+			has_trait = "trait_fleeting"
+			has_trait = "trait_slow_breeders"
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+			has_ethic = "ethic_fanatic_spiritualist"
+			has_ai_personality = fanatic_purifiers
+			}
+		}
+	}
 }
