@@ -124,7 +124,7 @@ tech_mineral_processing_1 = {
 	}
 	
 	ai_weight = {
-		factor = 3
+		factor = 10
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -177,7 +177,7 @@ tech_mineral_processing_2 = {
 	}
 	
 	ai_weight = {
-		factor = 3
+		factor = 10
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -230,7 +230,7 @@ tech_mineral_processing_3 = {
 	}
 	
 	ai_weight = {
-		factor = 3
+		factor = 10
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -283,7 +283,7 @@ tech_mineral_processing_4 = {
 	}
 	
 	ai_weight = {
-		factor = 3
+		factor = 10
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -336,7 +336,7 @@ tech_mineral_processing_5 = {
 	}
 	
 	ai_weight = {
-		factor = 3
+		factor = 10
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -389,7 +389,7 @@ tech_mineral_processing_6 = {
 	}
 	
 	ai_weight = {
-		factor = 3
+		factor = 7
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -442,7 +442,7 @@ tech_mineral_processing_7 = {
 	}
 	
 	ai_weight = {
-		factor = 3
+		factor = 7
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -491,7 +491,7 @@ tech_mineral_processing_8 = {
 	}
 	
 	ai_weight = {
-		factor = 3
+		factor = 7
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -539,7 +539,7 @@ tech_mineral_processing_9 = {
 	}
 	
 	ai_weight = {
-		factor = 3
+		factor = 7
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -588,7 +588,7 @@ tech_mineral_processing_10 = {
 	}
 	
 	ai_weight = {
-		factor = 3
+		factor = 7
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -638,7 +638,7 @@ tech_mineral_processing_11 = {
 	}
 	
 	ai_weight = {
-		factor = 3
+		factor = 5
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -687,7 +687,7 @@ tech_mineral_processing_12 = {
 	}
 	
 	ai_weight = {
-		factor = 3
+		factor = 5
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -736,7 +736,7 @@ tech_mineral_processing_13 = {
 	}
 	
 	ai_weight = {
-		factor = 3
+		factor = 5
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -785,7 +785,7 @@ tech_mineral_processing_14 = {
 	}
 	
 	ai_weight = {
-		factor = 3
+		factor = 5
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -834,7 +834,7 @@ tech_mineral_processing_15 = {
 	}
 	
 	ai_weight = {
-		factor = 3
+		factor = 5
 		modifier = {
 			factor = 1.25
 			research_leader = {
