@@ -102,12 +102,12 @@
 ####################
 
 tech_tb_mountain_range = {
-	cost = @tier1cost2
+	cost = @tier2cost2
 	area = engineering
 	tier = 1
 	category = { terraforming }
 	prerequisites = { "tech_colonization_2" }
-	weight = @tier1weight2
+	weight = @tier2weight2
 	
 	weight_groups = {
 		tile_blockers
@@ -179,12 +179,12 @@ tech_tb_mountain_range = {
 }
 
 tech_tb_volcano = {
-	cost = @tier1cost2
+	cost = @tier2cost3
 	area = engineering
 	tier = 1
 	category = { terraforming }
 	prerequisites = { "tech_colonization_3" }
-	weight = @tier1weight2
+	weight = @tier2weight3
 	
 	weight_groups = {
 		tile_blockers
@@ -257,12 +257,12 @@ tech_tb_volcano = {
 }
 
 tech_tb_dangerous_wildlife = {
-	cost = @tier1cost2
+	cost = @tier2cost1
 	area = engineering
 	tier = 1
 	category = { terraforming }
 	prerequisites = { "tech_colonization_1" }
-	weight = @tier1weight2
+	weight = @tier2weight1
 	
 	weight_groups = {
 		tile_blockers
@@ -334,12 +334,12 @@ tech_tb_dangerous_wildlife = {
 }
 
 tech_tb_dense_jungle = {
-	cost = @tier1cost2
+	cost = @tier2cost1
 	area = engineering
 	tier = 1
 	category = { terraforming }
 	prerequisites = { "tech_colonization_1" }
-	weight = @tier1weight2
+	weight = @tier2weight1
 	
 	weight_groups = {
 		tile_blockers
@@ -411,12 +411,12 @@ tech_tb_dense_jungle = {
 }
 
 tech_tb_quicksand_basin = {
-	cost = @tier1cost2
+	cost = @tier2cost1
 	area = engineering
 	tier = 1
 	category = { terraforming }
 	prerequisites = { "tech_colonization_2" }
-	weight = @tier1weight2
+	weight = @tier2weight1
 	
 	weight_groups = {
 		tile_blockers
@@ -488,12 +488,12 @@ tech_tb_quicksand_basin = {
 }
 
 tech_tb_noxious_swamp = {
-	cost = @tier1cost2
+	cost = @tier2cost2
 	area = engineering
 	tier = 1
 	category = { terraforming }
 	prerequisites = { "tech_colonization_2" }
-	weight = @tier1weight2
+	weight = @tier2weight2
 	
 	weight_groups = {
 		tile_blockers
@@ -565,12 +565,12 @@ tech_tb_noxious_swamp = {
 }
 
 tech_tb_massive_glacier = {
-	cost = @tier1cost2
+	cost = @tier2cost3
 	area = engineering
 	tier = 1
 	category = { terraforming }
 	prerequisites = { "tech_colonization_3" }
-	weight = @tier1weight2
+	weight = @tier2weight3
 	
 	weight_groups = {
 		tile_blockers
@@ -642,12 +642,12 @@ tech_tb_massive_glacier = {
 }
 
 tech_tb_toxic_kelp = {
-	cost = @tier1cost2
+	cost = @tier2cost3
 	area = engineering
 	tier = 1
 	category = { terraforming }
 	prerequisites = { "tech_colonization_1" }
-	weight = @tier1weight2
+	weight = @tier2weight3
 	
 	weight_groups = {
 		tile_blockers
@@ -719,12 +719,12 @@ tech_tb_toxic_kelp = {
 }
 
 tech_tb_deep_sinkhole = {
-	cost = @tier1cost2
+	cost = @tier2cost2
 	area = engineering
 	tier = 1
 	category = { terraforming }
 	prerequisites = { "tech_colonization_3" }
-	weight = @tier1weight2
+	weight = @tier2weight2
 	
 	weight_groups = {
 		tile_blockers

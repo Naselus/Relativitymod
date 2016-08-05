@@ -136,6 +136,16 @@ tech_lasers_1 = {
 				has_trait = "leader_trait_expertise_particles"
 			}
 		}
+		modifier = {
+			factor = 0.5
+			AND = {
+			years_passed = 20
+			OR = {
+			has_technology = tech_missiles_1
+			has_technology = tech_mass_drivers_1
+			}
+			}
+		}
 	}
 	
 	ai_weight = {
