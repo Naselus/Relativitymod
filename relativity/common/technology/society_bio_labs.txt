@@ -164,9 +164,13 @@ tech_societal_research_1 = {
 		}
 
 	ai_weight = {
+		weight = 10
 		modifier = {
-			factor = 1
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_bio_labs"
+			}
 		}
 	}
 }
@@ -185,9 +189,13 @@ tech_societal_research_2 = {
 	
 	
 	ai_weight = {
+		weight = 10
 		modifier = {
-			factor = 1
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_bio_labs"
+			}
 		}
 	}
 }
@@ -206,9 +214,13 @@ tech_societal_research_3 = {
 	
 	
 	ai_weight = {
+		weight = 10
 		modifier = {
-			factor = 1
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_bio_labs"
+			}
 		}
 	}
 }
@@ -274,9 +286,13 @@ tech_societal_research_4 = {
 	
 	
 	ai_weight = {
+		weight = 10
 		modifier = {
-			factor = 1
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_bio_labs"
+			}
 		}
 	}
 }
@@ -295,9 +311,13 @@ tech_societal_research_5 = {
 	
 	
 	ai_weight = {
+		weight = 10
 		modifier = {
-			factor = 1
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_bio_labs"
+			}
 		}
 	}
 }
@@ -316,9 +336,13 @@ tech_societal_research_6 = {
 	
 	
 	ai_weight = {
+		weight = 10
 		modifier = {
-			factor = 1
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_bio_labs"
+			}
 		}
 	}
 }
@@ -337,9 +361,13 @@ tech_societal_research_7 = {
 	
 	
 	ai_weight = {
+		weight = 10
 		modifier = {
-			factor = 1
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_bio_labs"
+			}
 		}
 	}
 }
@@ -405,9 +433,13 @@ tech_societal_research_8 = {
 	
 	
 	ai_weight = {
+		weight = 10
 		modifier = {
-			factor = 1
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_bio_labs"
+			}
 		}
 	}
 }
@@ -426,9 +458,13 @@ tech_societal_research_9 = {
 	
 	
 	ai_weight = {
+		weight = 10
 		modifier = {
-			factor = 1
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_bio_labs"
+			}
 		}
 	}
 }
@@ -447,9 +483,13 @@ tech_societal_research_10 = {
 	
 	
 	ai_weight = {
+		weight = 10
 		modifier = {
-			factor = 1
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_bio_labs"
+			}
 		}
 	}
 }
@@ -468,9 +508,13 @@ tech_societal_research_11 = {
 	
 	
 	ai_weight = {
+		weight = 10
 		modifier = {
-			factor = 1
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_bio_labs"
+			}
 		}
 	}
 }
@@ -535,9 +579,13 @@ tech_societal_research_12 = {
 	
 	
 	ai_weight = {
+		weight = 10
 		modifier = {
-			factor = 1
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_bio_labs"
+			}
 		}
 	}
 }
@@ -556,9 +604,13 @@ tech_societal_research_13 = {
 	
 	
 	ai_weight = {
+		weight = 10
 		modifier = {
-			factor = 1
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_bio_labs"
+			}
 		}
 	}
 }
@@ -577,9 +629,13 @@ tech_societal_research_14 = {
 	
 	
 	ai_weight = {
+		weight = 10
 		modifier = {
-			factor = 1
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_bio_labs"
+			}
 		}
 	}
 }
@@ -598,9 +654,13 @@ tech_societal_research_15 = {
 	
 	
 	ai_weight = {
+		weight = 10
 		modifier = {
-			factor = 1
-			always = yes
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_bio_labs"
+			}
 		}
 	}
 }
