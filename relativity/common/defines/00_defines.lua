@@ -906,7 +906,7 @@ NDefines = {
 		RESETTLEMENT_COST_RESOURCES			= { "minerals" }, -- Resources for manual resettlement
 		RESETTLEMENT_COST_AMOUNTS			= { 50 }, -- Resource costs for manual resettlement
 		EXPANSION_COST_BASE 				= 0.0,		-- the influence base cost of colonzation and frontier outposts by this value.
-		EXPANSION_COST_DISTANCE_FREE 		= 30.0,		-- a certain amount of distance that is reduced from actual distance, in effect making a "free" distance
+		EXPANSION_COST_DISTANCE_FREE 		= 1000.0,		-- a certain amount of distance that is reduced from actual distance, in effect making a "free" distance
 		EXPANSION_COST_DISTANCE_COST		= 0,		-- each 1 range equals X of this define as an influence cost to colonize or build a frontier outpost
 		EXPANSION_COST_DISTANCE_SCALE 		= 0,		-- scaled cost for exponentially increased costs depending on range
 	},
