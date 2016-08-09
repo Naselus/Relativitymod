@@ -135,7 +135,7 @@ tech_fusion_power = {
 	}
 	
 	ai_weight = {
-		factor = 4 #important component
+		factor = 5 #important component
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -171,7 +171,7 @@ tech_cold_fusion_power = {
 	}	
 	
 	ai_weight = {
-		factor = 4 #important component
+		factor = 5 #important component
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -207,7 +207,7 @@ tech_antimatter_power = {
 	}
 	
 	ai_weight = {
-		factor = 4 #important component
+		factor = 5 #important component
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -243,7 +243,7 @@ tech_zero_point_power = {
 	}
 	
 	ai_weight = {
-		factor = 4 #important component
+		factor = 5 #important component
 		modifier = {
 			factor = 1.25
 			research_leader = {
