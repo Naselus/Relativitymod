@@ -666,7 +666,7 @@ tech_kinetic_artillery_1 = {
 	tier = 4
 	category = { ballistics }
 	ai_update_type = military	
-	prerequisites = { "tech_ballistics_16" }
+	prerequisites = { "tech_ballistics_16" "tech_cold_fusion_power"}
 	weight = @tier4weight1
 	
 	weight_modifier = {
@@ -790,7 +790,7 @@ tech_kinetic_artillery_2 = {
 	tier = 4
 	category = { ballistics }
 	ai_update_type = military	
-	prerequisites = { "tech_ballistics_17" }
+	prerequisites = { "tech_ballistics_17" "tech_antimatter_power"}
 	weight = @tier4weight3
 	
 	weight_modifier = {

@@ -21,7 +21,7 @@ weapon_component_template = {
 	tags = { weapon_type_energy }
 	
 	component_set = "SPACE_CLOUD_WEAPON_1"
-	prerequisites = { "tech_space_cloud_weapon_1" }
+	prerequisites = { "tech_space_cloud_weapon_1" "tech_fusion_power"}
 	cost = @critter_cost_value
 }
 
@@ -37,6 +37,6 @@ weapon_component_template = {
 	tags = { weapon_type_energy }
 	
 	component_set = "SPACE_CLOUD_WEAPON_1"
-	prerequisites = { "tech_space_cloud_weapon_1" }
+	prerequisites = { "tech_space_cloud_weapon_1" "tech_fusion_power"}
 	cost = @critter_cost_value
 }
