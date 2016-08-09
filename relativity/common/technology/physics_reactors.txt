@@ -113,10 +113,10 @@ tech_fission_power = {
 tech_fusion_power = {
 	area = physics
 	cost = @tier2cost1
-	tier = 1
+	tier = 2
 	category = { reactors }
 	ai_update_type = military	
-	prerequisites = { "tech_fission_power" }
+	prerequisites = { "tech_fission_power" "tech_power_plant_4"}
 	weight = @tier2weight1
 	
 	modifier = {
@@ -135,7 +135,7 @@ tech_fusion_power = {
 	}
 	
 	ai_weight = {
-		factor = 4 #important component
+		factor = 5 #important component
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -148,12 +148,12 @@ tech_fusion_power = {
 
 tech_cold_fusion_power = {
 	area = physics
-	cost = @tier3cost1
+	cost = @tier2cost4
 	tier = 2
 	category = { reactors }
 	ai_update_type = military
-	prerequisites = { "tech_fusion_power" }
-	weight = @tier3weight1
+	prerequisites = { "tech_fusion_power" "tech_power_plant_7"}
+	weight = @tier2weight4
 	
 	modifier = {
 		max_energy = 250
@@ -171,7 +171,7 @@ tech_cold_fusion_power = {
 	}	
 	
 	ai_weight = {
-		factor = 4 #important component
+		factor = 5 #important component
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -184,12 +184,12 @@ tech_cold_fusion_power = {
 
 tech_antimatter_power = {
 	area = physics
-	cost = @tier4cost1
+	cost = @tier3cost4
 	tier = 3
 	category = { reactors }
 	ai_update_type = military	
-	prerequisites = { "tech_cold_fusion_power" }
-	weight = @tier4weight1
+	prerequisites = { "tech_cold_fusion_power" "tech_power_plant_10"}
+	weight = @tier3weight4
 
 	modifier = {
 		max_energy = 250
@@ -207,7 +207,7 @@ tech_antimatter_power = {
 	}
 	
 	ai_weight = {
-		factor = 4 #important component
+		factor = 5 #important component
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -220,12 +220,12 @@ tech_antimatter_power = {
 
 tech_zero_point_power = {
 	area = physics
-	cost = @tier5cost1
+	cost = @tier4cost4
 	tier = 4
 	category = { reactors }
 	ai_update_type = military	
-	prerequisites = { "tech_antimatter_power" }
-	weight = @tier5weight1
+	prerequisites = { "tech_antimatter_power" "tech_power_plant_13"}
+	weight = @tier4weight4
 	
 	modifier = {
 		max_energy = 250
@@ -243,7 +243,7 @@ tech_zero_point_power = {
 	}
 	
 	ai_weight = {
-		factor = 4 #important component
+		factor = 5 #important component
 		modifier = {
 			factor = 1.25
 			research_leader = {

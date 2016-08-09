@@ -136,7 +136,7 @@ tech_missiles_1 = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.3
 			AND = {
 			years_passed = 20
 			OR = {

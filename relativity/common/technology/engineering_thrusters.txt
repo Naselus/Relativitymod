@@ -239,7 +239,7 @@ tech_thrusters_2 = {
 	tier = 2
 	category = { thrusters }
 	ai_update_type = all	
-	prerequisites = { "tech_thrusters_7" }
+	prerequisites = { "tech_thrusters_7" "tech_fusion_power"}
 	weight = @tier2weight2
 	
 	weight_modifier = {
@@ -445,7 +445,7 @@ tech_thrusters_3 = {
 	tier = 3
 	category = { thrusters }
 	ai_update_type = all	
-	prerequisites = { "tech_thrusters_11" }
+	prerequisites = { "tech_thrusters_11" "tech_cold_fusion_power"}
 	weight = @tier3weight2
 	
 	weight_modifier = {
@@ -651,7 +651,7 @@ tech_thrusters_4 = {
 	tier = 3
 	category = { thrusters }
 	ai_update_type = all	
-	prerequisites = { "tech_thrusters_15" }
+	prerequisites = { "tech_thrusters_15" "tech_antimatter_power"}
 	weight = @tier3weight4
 	
 	weight_modifier = {
@@ -856,7 +856,7 @@ tech_thrusters_20 = {
 	tier = 4
 	category = { thrusters }
 	prerequisites = { "tech_thrusters_19"}	
-	weight = @tier2weight4
+	weight = @tier4weight4
 	
 	modifier = {
 		ship_speed_mult = 0.05

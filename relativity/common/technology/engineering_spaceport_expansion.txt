@@ -169,7 +169,7 @@ tech_spaceport_2 = {
 	}
 	
 	ai_weight = {
-		factor = 100 #important tech - destroyers
+		factor = 90 #important tech - destroyers
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -225,7 +225,7 @@ tech_spaceport_3 = {
 	}
 	
 	ai_weight = {
-		factor = 100 #important tech
+		factor = 90 #important tech
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -281,7 +281,7 @@ tech_spaceport_4 = {
 	}
 	
 	ai_weight = {
-		factor = 100 #important tech
+		factor = 90 #important tech
 		modifier = {
 			factor = 1.25
 			research_leader = {
