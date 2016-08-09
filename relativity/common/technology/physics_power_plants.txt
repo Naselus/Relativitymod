@@ -750,11 +750,11 @@ tech_power_plant_14 = {
 
 tech_power_plant_15 = {
 	area = physics
-	cost = @tier5cost2
+	cost = @tier5cost1
 	tier = 5
 	category = { power_plants }
 	prerequisites = { "tech_power_plant_14"}	
-	weight = @tier5weight2
+	weight = @tier5weight1
 	
 	weight_modifier = {
 		modifier = {

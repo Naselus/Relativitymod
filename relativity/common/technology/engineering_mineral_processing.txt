@@ -124,7 +124,7 @@ tech_mineral_processing_1 = {
 	}
 	
 	ai_weight = {
-		factor = 10
+		weight = 10000
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -156,12 +156,12 @@ tech_mineral_processing_1 = {
 
 #Advanced Mineral Processing 2
 tech_mineral_processing_2 = {
-	cost = @tier2cost1
+	cost = @tier1cost3
 	area = engineering
-	tier = 2
+	tier = 1
 	category = { mineral_processing }	
 	prerequisites = { "tech_mineral_processing_1" }
-	weight = @tier2weight1
+	weight = @tier1weight3
 		
 	# unlock mineral processing plant 2	
 
@@ -177,7 +177,8 @@ tech_mineral_processing_2 = {
 	}
 	
 	ai_weight = {
-		factor = 10
+		weight = 10000
+		
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -230,7 +231,7 @@ tech_mineral_processing_3 = {
 	}
 	
 	ai_weight = {
-		factor = 10
+		weight = 500
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -283,7 +284,7 @@ tech_mineral_processing_4 = {
 	}
 	
 	ai_weight = {
-		factor = 10
+		factor = 150
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -336,7 +337,7 @@ tech_mineral_processing_5 = {
 	}
 	
 	ai_weight = {
-		factor = 10
+		factor = 150
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -389,7 +390,7 @@ tech_mineral_processing_6 = {
 	}
 	
 	ai_weight = {
-		factor = 7
+		factor = 150
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -442,7 +443,7 @@ tech_mineral_processing_7 = {
 	}
 	
 	ai_weight = {
-		factor = 7
+		factor = 150
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -491,7 +492,7 @@ tech_mineral_processing_8 = {
 	}
 	
 	ai_weight = {
-		factor = 7
+		factor = 150
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -539,7 +540,7 @@ tech_mineral_processing_9 = {
 	}
 	
 	ai_weight = {
-		factor = 7
+		factor = 150
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -588,7 +589,7 @@ tech_mineral_processing_10 = {
 	}
 	
 	ai_weight = {
-		factor = 7
+		factor = 150
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -638,7 +639,7 @@ tech_mineral_processing_11 = {
 	}
 	
 	ai_weight = {
-		factor = 5
+		factor = 100
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -687,7 +688,7 @@ tech_mineral_processing_12 = {
 	}
 	
 	ai_weight = {
-		factor = 5
+		factor = 100
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -736,7 +737,7 @@ tech_mineral_processing_13 = {
 	}
 	
 	ai_weight = {
-		factor = 5
+		factor = 100
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -785,7 +786,7 @@ tech_mineral_processing_14 = {
 	}
 	
 	ai_weight = {
-		factor = 5
+		factor = 100
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -834,7 +835,7 @@ tech_mineral_processing_15 = {
 	}
 	
 	ai_weight = {
-		factor = 5
+		factor = 100
 		modifier = {
 			factor = 1.25
 			research_leader = {

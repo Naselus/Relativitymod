@@ -342,7 +342,7 @@ tech_shields_2 = {
 	tier = 2
 	category = { field_manipulation }
 	ai_update_type = military
-	prerequisites = { "tech_field_manipulation_11" }
+	prerequisites = { "tech_field_manipulation_11" "tech_fusion_power"}
 	weight = @tier2weight2
 	
 	modifier = {
@@ -410,7 +410,7 @@ tech_shield_rechargers_1 = {
 	tier = 2
 	category = { field_manipulation }
 	ai_update_type = military	
-	prerequisites = { "tech_shields_2" }
+	prerequisites = { "tech_shields_2"}
 	weight = @tier2weight2
 	
 	weight_modifier = {
@@ -523,65 +523,6 @@ tech_field_manipulation_12 = {
 	}
 }
 
-tech_planetary_shield_generator = {
-	area = engineering
-	cost = @tier2cost4
-	tier = 2
-	category = { field_manipulation }
-	ai_update_type = military	
-	is_rare = yes
-	prerequisites = { "tech_field_manipulation_12" }
-	weight = @tier2weight4
-	
-	weight_modifier = {
-		factor = 0.25
-	}
-	
-	ai_weight = {
-		factor = 2 #good component
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_field_manipulation"
-			}
-		}
-		modifier = {
-			factor = 2
-			OR = {
-			has_trait = "trait_weak"
-			has_trait = "trait_resilient"
-			}
-		}
-		modifier = {
-			factor = 2
-			OR = {
-			has_ethic = "ethic_militarist"
-			has_ai_personality_behaviour = conqueror
-			has_ethic = "ethic_pacifist"		
-			}
-		}
-		modifier = {
-			factor = 2
-			OR = {
-			has_ai_personality = xenophobic_isolationists
-			has_ai_personality = hive_mind
-			has_ai_personality = decadent_hierarchy
-			has_ai_personality = federation_builders
-			}
-		}
-		modifier = {
-			factor = 4
-			has_ethic = "ethic_fanatic_militarist"
-		}
-		modifier = {
-			factor = 0.5
-			has_ethic = "ethic_fanatic_pacifist"
-		}
-	}
-	# unlocks building: planetary shield generator
-}
-
 tech_field_manipulation_13 = {
 	area = engineering
 	cost = @tier3cost1
@@ -645,7 +586,7 @@ tech_shields_3 = {
 	tier = 3
 	category = { field_manipulation }
 	ai_update_type = military
-	prerequisites = { "tech_field_manipulation_13" }
+	prerequisites = { "tech_field_manipulation_13"  "tech_cold_fusion_power"}
 	weight = @tier3weight1
 	
 	modifier = {
@@ -705,6 +646,65 @@ tech_shields_3 = {
 			has_ethic = "ethic_fanatic_pacifist"
 		}
 	}
+}
+
+tech_planetary_shield_generator = {
+	area = engineering
+	cost = @tier2cost4
+	tier = 2
+	category = { field_manipulation }
+	ai_update_type = military	
+	is_rare = yes
+	prerequisites = { "tech_shields_3"}
+	weight = @tier2weight4
+	
+	weight_modifier = {
+		factor = 0.25
+	}
+	
+	ai_weight = {
+		factor = 2 #good component
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_trait = "trait_weak"
+			has_trait = "trait_resilient"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = "ethic_militarist"
+			has_ai_personality_behaviour = conqueror
+			has_ethic = "ethic_pacifist"		
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = xenophobic_isolationists
+			has_ai_personality = hive_mind
+			has_ai_personality = decadent_hierarchy
+			has_ai_personality = federation_builders
+			}
+		}
+		modifier = {
+			factor = 4
+			has_ethic = "ethic_fanatic_militarist"
+		}
+		modifier = {
+			factor = 0.5
+			has_ethic = "ethic_fanatic_pacifist"
+		}
+	}
+	# unlocks building: planetary shield generator
 }
 
 tech_field_manipulation_14 = {
@@ -770,7 +770,7 @@ tech_shield_recharge_aura_1 = {
 	category = { field_manipulation }
 	ai_update_type = military	
 	is_rare = yes
-	prerequisites = { "tech_field_manipulation_14" }
+	prerequisites = { "tech_field_manipulation_14"}
 	weight = @tier3weight2
 	
 	weight_modifier = {
@@ -964,7 +964,7 @@ tech_shields_4 = {
 	tier = 3
 	category = { field_manipulation }
 	ai_update_type = military
-	prerequisites = { "tech_field_manipulation_16" }
+	prerequisites = { "tech_field_manipulation_16" "tech_antimatter_power"}
 	weight = @tier3weight4
 	
 	modifier = {
