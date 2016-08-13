@@ -1128,12 +1128,12 @@ NDefines = {
 		MIN_ARMY_BUDGET = 1,			-- Always add this amount to the army budget so we can have at least a few armies
 		
 		-- Below values are increased when mineral storage capacity goes up
-		MAX_MINERALS_STORED_MILITARY_STATIONS = 1000,	-- Minerals AI will store for mil stations when it needs more
-		MIN_MINERALS_STORED_MILITARY_STATIONS = 100,	-- Minerals AI will store for mil stations when it does not need more
-		MAX_MINERALS_STORED_NAVY = 1000,				-- Minerals AI will store for navy when it needs more
-		MIN_MINERALS_STORED_NAVY = 250,				-- Minerals AI will store for navy when it does not need more 
-		MAX_MINERALS_STORED_BUILDINGS = 1000,		-- Minerals AI will store for buildings when it needs more
-		MIN_MINERALS_STORED_BUILDINGS = 350,		-- Minerals AI will store for buildings when it does not need more
+		MAX_MINERALS_STORED_MILITARY_STATIONS = 500,	-- Minerals AI will store for mil stations when it needs more
+		MIN_MINERALS_STORED_MILITARY_STATIONS = 50,	-- Minerals AI will store for mil stations when it does not need more
+		MAX_MINERALS_STORED_NAVY = 500,				-- Minerals AI will store for navy when it needs more
+		MIN_MINERALS_STORED_NAVY = 50,				-- Minerals AI will store for navy when it does not need more 
+		MAX_MINERALS_STORED_BUILDINGS = 500,		-- Minerals AI will store for buildings when it needs more
+		MIN_MINERALS_STORED_BUILDINGS = 50,		-- Minerals AI will store for buildings when it does not need more
 		MAX_MINERALS_STORED_STATIONS = 500,			-- Minerals AI will store for stations when it needs more
 		MIN_MINERALS_STORED_STATIONS = 100,			-- Minerals AI will store for stations when it does not need more
 		MAX_MINERALS_STORED_SPACEPORT = 500,		-- Minerals AI will store for spaceport when it needs more

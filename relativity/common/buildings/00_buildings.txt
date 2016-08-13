@@ -880,6 +880,46 @@ building_basic_farm = {
 			}
 		}
 	}
+ai_special_building = yes
+	ai_weight = {
+		weight = 40
+		modifier = {
+			factor = 2
+			has_country_resource = {
+			type = sr_nutrients
+			amount < 1
+			}
+		}
+		modifier = {
+			factor = 0.75
+			has_country_resource = {
+			type = sr_nutrients
+			amount > 2
+			}
+		}
+		# modifier = {
+			# factor = 0
+			# tile = {
+				# OR = {
+					# has_deposit = "d_physics_deposit"
+					# has_deposit = "d_rich_physics_deposit"
+					# has_deposit = "d_vast_physics_deposit"
+					# has_deposit = "d_engineering_deposit"
+					# has_deposit = "d_rich_engineering_deposit"
+					# has_deposit = "d_vast_engineering_deposit"
+					# has_deposit = "d_society_deposit"
+					# has_deposit = "d_rich_society_deposit"
+					# has_deposit = "d_vast_society_deposit"
+					# has_deposit = "d_immense_society_deposit"
+					# has_deposit = "d_immense_physics_deposit"
+					# has_deposit = "d_immense_engineering_deposit"
+
+				# }
+			# }
+		# }
+	}	
+}	
+	
 }
 
 building_hydroponics_farm_1 = {
