@@ -138,9 +138,11 @@ tech_mass_drivers_1 = {
 			}
 		}
 		modifier = {
-			factor = 0.3
+			factor = 0
 			AND = {
-			years_passed = 20
+			NOT = {
+			years_passed > 20
+			}
 			OR = {
 			has_technology = tech_missiles_1
 			has_technology = tech_lasers_1
@@ -166,6 +168,18 @@ tech_mass_drivers_1 = {
 		modifier = {
 			factor = 1.5
 			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+		factor = 0
+			AND = {
+				NOT = {
+					years_passed > 35
+					}
+				OR = {
+					has_technology = tech_lasers_1
+					has_technology = tech_missiles_1
+				}
+			}
 		}
 	}
 }
@@ -207,7 +221,7 @@ tech_mass_drivers_2 = {
 	}
 	
 	ai_weight = {
-		factor = 2		#weapons are good
+		factor = 4		#weapons are good
 		modifier = {
 			factor = 2
 			has_ethic = "ethic_militarist"
@@ -247,7 +261,7 @@ tech_mass_drivers_2 = {
 tech_ballistics_13 = {
 	area = physics
 	cost = @tier2cost1
-	tier = 1
+	tier = 2
 	category = { ballistics }
 	prerequisites = {"tech_mass_drivers_2"}	
 	weight = @tier2weight1
@@ -258,7 +272,7 @@ tech_ballistics_13 = {
 	}
 	
 	ai_weight = {
-		factor = 2		#weapons are good
+		factor = 4		#weapons are good
 		modifier = {
 			factor = 2
 			has_ethic = "ethic_militarist"
@@ -332,7 +346,7 @@ tech_mass_drivers_3 = {
 	}
 	
 	ai_weight = {
-		factor = 2		#weapons are good
+		factor = 4		#weapons are good
 		modifier = {
 			factor = 0.65
 			has_ethic = ethic_fanatic_pacifist
@@ -373,7 +387,7 @@ tech_ballistics_14 = {
 	}
 	
 	ai_weight = {
-		factor = 2		#weapons are good
+		factor = 4		#weapons are good
 		modifier = {
 			factor = 2
 			has_ethic = "ethic_militarist"
@@ -447,7 +461,7 @@ tech_mass_drivers_4 = {
 	}
 	
 	ai_weight = {
-		factor = 2		#weapons are good
+		factor = 4		#weapons are good
 		modifier = {
 			factor = 2
 			has_ethic = "ethic_militarist"
@@ -498,7 +512,7 @@ tech_ballistics_15 = {
 	}
 	
 	ai_weight = {
-		factor = 2		#weapons are good
+		factor = 4		#weapons are good
 		modifier = {
 			factor = 2
 			has_ethic = "ethic_militarist"
@@ -572,7 +586,7 @@ tech_mass_drivers_5 = {
 	}
 	
 	ai_weight = {
-		factor = 2		#weapons are good
+		factor = 4		#weapons are good
 		modifier = {
 			factor = 2
 			has_ethic = "ethic_militarist"
@@ -623,7 +637,7 @@ tech_ballistics_16 = {
 	}
 	
 	ai_weight = {
-		factor = 2		#weapons are good
+		factor = 4		#weapons are good
 		modifier = {
 			factor = 2
 			has_ethic = "ethic_militarist"
@@ -696,7 +710,7 @@ tech_kinetic_artillery_1 = {
 	}
 	
 	ai_weight = {
-		factor = 2		#weapons are good
+		factor = 4		#weapons are good
 		modifier = {
 			factor = 2
 			has_ethic = "ethic_militarist"
@@ -747,7 +761,7 @@ tech_ballistics_17 = {
 	}
 	
 	ai_weight = {
-		factor = 2		#weapons are good
+		factor = 4		#weapons are good
 		modifier = {
 			factor = 2
 			has_ethic = "ethic_militarist"
@@ -820,7 +834,7 @@ tech_kinetic_artillery_2 = {
 	}
 	
 	ai_weight = {
-		factor = 2		#weapons are good
+		factor = 4		#weapons are good
 		modifier = {
 			factor = 2
 			has_ethic = "ethic_militarist"
@@ -901,7 +915,7 @@ tech_autocannons_1 = {
 	}
 	
 	ai_weight = {
-		factor = 2		#weapons are good
+		factor = 4		#weapons are good
 		modifier = {
 			factor = 2
 			has_ethic = "ethic_militarist"
@@ -974,7 +988,7 @@ tech_autocannons_2 = {
 	}
 	
 	ai_weight = {
-		factor = 2		#weapons are good
+		factor = 4		#weapons are good
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -1025,7 +1039,7 @@ tech_ballistics_18 = {
 	}
 	
 	ai_weight = {
-		factor = 2		#weapons are good
+		factor = 4		#weapons are good
 		modifier = {
 			factor = 2
 			has_ethic = "ethic_militarist"
@@ -1098,7 +1112,7 @@ tech_autocannons_3 = {
 	}
 	
 	ai_weight = {
-		factor = 2		#weapons are good
+		factor = 4		#weapons are good
 		modifier = {
 			factor = 2
 			has_ethic = "ethic_militarist"
@@ -1173,7 +1187,7 @@ tech_flak_batteries_1 = {
 	}
 	
 	ai_weight = {
-		factor = 2		#weapons are good
+		factor = 4		#weapons are good
 		modifier = {
 			factor = 2
 			OR = {
@@ -1230,7 +1244,7 @@ tech_ballistics_19 = {
 	}
 	
 	ai_weight = {
-		factor = 2		#weapons are good
+		factor = 4		#weapons are good
 		modifier = {
 			factor = 2
 			has_ethic = "ethic_militarist"
@@ -1303,7 +1317,7 @@ tech_flak_batteries_2 = {
 	}
 	
 	ai_weight = {
-		factor = 2		#weapons are good
+		factor = 4		#weapons are good
 		modifier = {
 			factor = 2
 			OR = {
@@ -1360,7 +1374,7 @@ tech_ballistics_20 = {
 	}
 	
 	ai_weight = {
-		factor = 2		#weapons are good
+		factor = 4		#weapons are good
 		modifier = {
 			factor = 2
 			has_ethic = "ethic_militarist"

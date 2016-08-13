@@ -129,6 +129,12 @@ tech_databank_uplinks = {
 			has_ai_personality = spiritual_seekers
 			}
 		}
+		modifier = {
+			factor = 0
+			NOT = {
+				years_passed > 25
+			}			
+		}
 	}
 }
 

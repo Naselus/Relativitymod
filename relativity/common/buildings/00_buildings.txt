@@ -143,8 +143,23 @@ building_power_plant_1 = {
 	}
 	ai_special_building = yes
 	ai_weight = {
-		weight = 50
+		weight = 45
 	
+		
+		modifier = {
+			factor = 2
+			has_country_resource = {
+			type = sr_plasma
+			amount < 2
+			}
+		}
+		modifier = {
+			factor = 0.75
+			has_country_resource = {
+			type = sr_plasma
+			amount > 2
+			}
+		}
 		modifier = {
 			factor = 0
 			tile = {
@@ -901,7 +916,21 @@ building_hydroponics_farm_1 = {
 ai_special_building = yes
 	ai_weight = {
 		weight = 40
-modifier = {
+		modifier = {
+			factor = 2
+			has_country_resource = {
+			type = sr_nutrients
+			amount < 1
+			}
+		}
+		modifier = {
+			factor = 0.75
+			has_country_resource = {
+			type = sr_nutrients
+			amount > 2
+			}
+		}
+		modifier = {
 			factor = 0
 			tile = {
 				OR = {
@@ -1745,7 +1774,7 @@ building_mineral_processing_plant_2T1 = {
 	}
 	ai_special_building = yes
 	ai_weight = {
-		weight = 80
+		weight = 120
 modifier = {
 			factor = 0
 			tile = {
@@ -2763,7 +2792,7 @@ building_capital_2 = {
 	}	
 	ai_special_building = yes
 	ai_weight = {
-		weight = 60
+		weight = 10000
 
 	}
 }
@@ -2818,7 +2847,7 @@ building_capital_3 = {
 	}	
 	ai_special_building = yes
 	ai_weight = {
-		weight = 60
+		weight = 150
 
 	}
 }
@@ -6016,7 +6045,7 @@ building_capital_4 = {
 	
 	ai_special_building = yes
 	ai_weight = {
-		weight = 60
+		weight = 100
 
 	}
 }
@@ -6070,7 +6099,7 @@ building_capital_5 = {
 	
 	ai_special_building = yes
 	ai_weight = {
-		weight = 60
+		weight = 80
 
 	}
 }

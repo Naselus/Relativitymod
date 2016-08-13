@@ -124,7 +124,7 @@ tech_sensors_2 = {
 	}
 	
 	ai_weight = {
-		factor = 1.25 #good component
+		factor = 7 #good component
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -191,7 +191,7 @@ tech_sensors_3 = {
 	}
 	
 	ai_weight = {
-		factor = 1.25 #good component
+		factor = 7 #good component
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -258,7 +258,7 @@ tech_sensors_4 = {
 	}	
 	
 	ai_weight = {
-		factor = 1.25 #good component
+		factor = 7 #good component
 		modifier = {
 			factor = 1.25
 			research_leader = {

@@ -397,12 +397,12 @@ tech_mine_living_metal = {
 
 #Betharian Refining
 tech_mine_betharian = {
-	cost = @tier1cost2
+	cost = @tier1cost3
 	area = physics
 	tier = 1
 	category = { mining }	
 	prerequisites = { "tech_space_construction" }
-	weight = @tier1weight2
+	weight = @tier1weight3
 	
 	weight_modifier = {
 		factor = 0.75
@@ -412,8 +412,14 @@ tech_mine_betharian = {
 				area = physics
 				has_trait = "leader_trait_expertise_mining"
 			}
-		}	
-	}
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				years_passed > 25
+				}
+			}
+		}
 	
 	ai_weight = {
 		factor = 2 #strategic resource
@@ -422,6 +428,12 @@ tech_mine_betharian = {
 			research_leader = {
 				area = physics
 				has_trait = "leader_trait_expertise_mining"
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				years_passed > 35
 			}
 		}
 	}	

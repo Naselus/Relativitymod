@@ -258,7 +258,7 @@ tech_neural_implants = {
 			}
 		}
 		modifier = {
-			factor = 1.25
+			factor = 4
 			OR = {
 				has_ethic = ethic_collectivist
 				has_ethic = ethic_fanatic_collectivist
@@ -474,6 +474,7 @@ tech_purity_campaigns = {
 	}
 	
 	ai_weight = {
+		factor = 10
 		modifier = {
 			factor = 3
 			has_ethic = ethic_fanatic_xenophobe
