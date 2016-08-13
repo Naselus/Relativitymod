@@ -34,7 +34,7 @@ honorbound_warriors = {
 	bravery = 1.5
 	
 	military_spending = 1.2
-	colony_spending = 0.9
+	colony_spending = 1.6
 	
 	alliance_acceptance = -10
 	federation_acceptance = -50
@@ -80,7 +80,7 @@ evangelising_zealots = {
 	bravery = 1.0
 	
 	military_spending = 1.1
-	colony_spending = 1.1	
+	colony_spending = 1.8	
 	
 	alliance_acceptance = -20
 	federation_acceptance = -20
@@ -157,7 +157,7 @@ erudite_explorers = {
 	bravery = 0.75
 	
 	military_spending = 0.9
-	colony_spending = 1.0	
+	colony_spending = 1.7	
 	
 	alliance_acceptance = 0
 	federation_acceptance = 10
@@ -245,7 +245,7 @@ spiritual_seekers = {
 	bravery = 0.75
 	
 	military_spending = 0.8
-	colony_spending = 1.0
+	colony_spending = 1.7
 	
 	alliance_acceptance = 10
 	federation_acceptance = 30
@@ -328,7 +328,7 @@ ruthless_capitalists = {
 	bravery = 0.5
 	
 	military_spending = 1.0
-	colony_spending = 1.1
+	colony_spending = 1.8
 	
 	alliance_acceptance = -10
 	federation_acceptance = -10
@@ -400,7 +400,7 @@ peaceful_traders = {
 	bravery = 0.5
 	
 	military_spending = 0.9
-	colony_spending = 1.1	
+	colony_spending = 1.8	
 	
 	alliance_acceptance = 10
 	federation_acceptance = 10
@@ -469,7 +469,7 @@ hegemonic_imperialists = {
 	bravery = 1.0
 	
 	military_spending = 1.1
-	colony_spending = 1.0	
+	colony_spending = 1.7	
 	
 	alliance_acceptance = -20
 	federation_acceptance = -30
@@ -523,7 +523,7 @@ slaving_despots = {
 	bravery = 0.5
 	
 	military_spending = 1.1
-	colony_spending = 0.9	
+	colony_spending = 1.6	
 	
 	alliance_acceptance = -10
 	federation_acceptance = -20
@@ -574,7 +574,7 @@ decadent_hierarchy = {
 	bravery = 0.5
 	
 	military_spending = 1.1
-	colony_spending = 0.9	
+	colony_spending = 1.6	
 	
 	alliance_acceptance = -30
 	federation_acceptance = -10
@@ -625,7 +625,7 @@ democratic_crusaders = {
 	bravery = 1.25
 	
 	military_spending = 1.2
-	colony_spending = 1.0	
+	colony_spending = 1.7	
 	
 	alliance_acceptance = 10
 	federation_acceptance = 10
@@ -676,7 +676,7 @@ harmonious_hierarchy = {
 	bravery = 0.75
 	
 	military_spending = 0.8
-	colony_spending = 1.1
+	colony_spending = 1.8
 	
 	alliance_acceptance = -30
 	federation_acceptance = 0
@@ -737,7 +737,7 @@ federation_builders = {
 	bravery = 1.25
 	
 	military_spending = 1.0
-	colony_spending = 1.0	
+	colony_spending = 1.7	
 	
 	alliance_acceptance = 10
 	federation_acceptance = 100
@@ -854,7 +854,7 @@ xenophobic_isolationists = {
 	bravery = 0.75
 	
 	military_spending = 1.2
-	colony_spending = 1.0
+	colony_spending = 1.7
 	
 	alliance_acceptance = -50
 	federation_acceptance = -50
@@ -941,7 +941,7 @@ fanatic_purifiers = {
 	bravery = 1.0
 	
 	military_spending = 1.2
-	colony_spending = 1.2	
+	colony_spending = 1.9	
 	
 	alliance_acceptance = -1000
 	federation_acceptance = -1000
@@ -987,7 +987,7 @@ hive_mind = {
 	bravery = 1.0
 
 	military_spending = 0.9
-	colony_spending = 1.2
+	colony_spending =1.9
 	
 	alliance_acceptance = -50
 	federation_acceptance = 0
@@ -1034,7 +1034,7 @@ migrating_flock = {
 	bravery = 0.5
 
 	military_spending = 0.8
-	colony_spending = 1.2
+	colony_spending = 1.9
 	
 	alliance_acceptance = 20
 	federation_acceptance = 50
@@ -1087,7 +1087,7 @@ metalhead = {
 	bravery = 10.0
 	
 	military_spending = 1.2
-	colony_spending = 1.2	
+	colony_spending = 1.9	
 	
 	alliance_acceptance = -1000
 	federation_acceptance = -1000
@@ -1132,7 +1132,7 @@ fanatic_befrienders = {
 	bravery = 1.5
 	
 	military_spending = 1.2
-	colony_spending = 1.0	
+	colony_spending = 1.7	
 	
 	alliance_acceptance = 100
 	federation_acceptance = 100
