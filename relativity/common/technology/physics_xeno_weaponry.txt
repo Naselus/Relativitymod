@@ -112,7 +112,7 @@ tech_extradimensional_weapon_1 = {
 	weight = 0
 	
 	ai_weight = {
-		factor = 2		#weapons are good
+		factor = 10		#weapons are good
 		modifier = {
 			factor = 0.65
 			has_ethic = ethic_fanatic_pacifist
@@ -136,6 +136,20 @@ tech_extradimensional_weapon_1 = {
 				has_trait = "leader_trait_expertise_particles"
 			}
 		}
+		modifier = {
+			factor = 0
+			OR = {
+			NOT = {
+				years_passed > 50
+			}
+			NOT = {
+			has_monthly_income = {
+			resource = physics_research
+			value > 30
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -148,7 +162,7 @@ tech_mining_drone_weapon_1 = {
 	weight = 0
 	
 	ai_weight = {
-		factor = 2		#weapons are good
+		factor = 0		#weapons are good
 		modifier = {
 			factor = 0.65
 			has_ethic = ethic_fanatic_pacifist
@@ -185,7 +199,7 @@ tech_space_cloud_weapon_1 = {
 	weight = 0
 	
 	ai_weight = {
-		factor = 2		#weapons are good
+		factor = 0.5		#weapons are good
 		modifier = {
 			factor = 0.65
 			has_ethic = ethic_fanatic_pacifist
@@ -209,6 +223,20 @@ tech_space_cloud_weapon_1 = {
 				has_trait = "leader_trait_expertise_particles"
 			}
 		}
+		modifier = {
+			factor = 0
+			OR = {
+			NOT = {
+				years_passed > 25
+			}
+			NOT = {
+			has_monthly_income = {
+			resource = physics_research
+			value > 10
+					}
+				}	
+			}
+		}
 	}
 }
 
@@ -221,7 +249,7 @@ tech_blue_crystal_weapon_1 = {
 	weight = 0
 	
 	ai_weight = {
-		factor = 2		#weapons are good
+		factor = 1.5		#weapons are good
 		modifier = {
 			factor = 0.65
 			has_ethic = ethic_fanatic_pacifist
@@ -257,7 +285,7 @@ tech_green_crystal_weapon_1 = {
 	weight = 0
 	
 	ai_weight = {
-		factor = 2		#weapons are good
+		factor = 1.5		#weapons are good
 		modifier = {
 			factor = 0.65
 			has_ethic = ethic_fanatic_pacifist
@@ -368,7 +396,7 @@ tech_amoeba_strike_craft_1 = {
 	weight = 0
 	
 	ai_weight = {
-		factor = 0.25
+		factor = 0.5
 		modifier = {
 			factor = 0.65
 			has_ethic = ethic_fanatic_pacifist
@@ -385,6 +413,20 @@ tech_amoeba_strike_craft_1 = {
 			factor = 1.5
 			has_ethic = ethic_fanatic_militarist
 		}
+		modifier = {
+			factor = 0
+			OR = {
+			NOT = {
+				years_passed > 30
+			}
+			NOT = {
+			has_monthly_income = {
+			resource = physics_research
+			value > 12
+					}
+				}	
+			}
+		}
 	}
 }
 
@@ -399,7 +441,7 @@ tech_swarm_strike_craft_1 = {
 	weight = 0
 	
 	ai_weight = {
-		factor = 0.25
+		factor = 0.5
 		modifier = {
 			factor = 0.65
 			has_ethic = ethic_fanatic_pacifist
@@ -453,8 +495,8 @@ tech_scourge_missile_1 = {
 # Space Whale Weapon
 tech_space_whale_weapon_1 = {
 	area = physics
-	cost = @tier3cost3
-	tier = 3
+	cost = @tier1cost3
+	tier = 1
 	category = { xeno_weaponry }
 	ai_update_type = military
 	weight = 0
@@ -518,6 +560,20 @@ tech_aura_quantum_destabilizer = {
 			research_leader = {
 				area = physics
 				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+			NOT = {
+				years_passed > 25
+			}
+			NOT = {
+			has_monthly_income = {
+			resource = physics_research
+			value > 10
+					}
+				}	
 			}
 		}
 	}

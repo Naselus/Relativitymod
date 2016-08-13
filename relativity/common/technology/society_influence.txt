@@ -155,7 +155,7 @@ tech_galactic_ambitions = {
 	}
 	
 	ai_weight = {
-		factor = 2
+		factor = 4
 		modifier = {
 			factor = 1.5
 			has_ethic = ethic_militarist
@@ -225,7 +225,7 @@ tech_manifest_destiny = {
 	}
 	
 	ai_weight = {
-		factor = 2
+		factor = 4
 		modifier = {
 			factor = 1.5
 			has_ethic = ethic_militarist
@@ -260,7 +260,7 @@ tech_influence_3 = {
 	}	
 
 	ai_weight = {
-		factor = 2
+		factor = 4
 		modifier = {
 			factor = 1.5
 			has_ethic = ethic_militarist
@@ -295,7 +295,7 @@ tech_influence_4 = {
 	}	
 	
 	ai_weight = {
-		factor = 2
+		factor = 4
 		modifier = {
 			factor = 1.5
 			has_ethic = ethic_militarist
@@ -330,7 +330,7 @@ tech_influence_5 = {
 	}	
 	
 	ai_weight = {
-		factor = 2
+		factor = 4
 		modifier = {
 			factor = 1.5
 			has_ethic = ethic_militarist
@@ -366,7 +366,7 @@ tech_influence_6 = {
 	}
 	
 	ai_weight = {
-		factor = 2
+		factor = 4
 		modifier = {
 			factor = 1.5
 			has_ethic = ethic_militarist
@@ -400,7 +400,7 @@ tech_influence_7 = {
 		country_border_mult = 0.05
 	}	
 	ai_weight = {
-		factor = 2
+		factor = 4
 		modifier = {
 			factor = 1.5
 			has_ethic = ethic_militarist
@@ -435,7 +435,7 @@ tech_influence_8 = {
 	}
 	
 	ai_weight = {
-		factor = 2
+		factor = 4
 		modifier = {
 			factor = 1.5
 			has_ethic = ethic_militarist
@@ -469,7 +469,7 @@ tech_influence_9 = {
 	}	
 
 	ai_weight = {
-		factor = 2
+		factor = 4
 		modifier = {
 			factor = 1.5
 			has_ethic = ethic_militarist
@@ -504,7 +504,7 @@ tech_influence_10 = {
 
 	
 	ai_weight = {
-		factor = 2
+		factor = 4
 		modifier = {
 			factor = 1.5
 			has_ethic = ethic_militarist
@@ -538,7 +538,7 @@ tech_influence_11 = {
 	}	
 
 	ai_weight = {
-		factor = 2
+		factor = 4
 		modifier = {
 			factor = 1.5
 			has_ethic = ethic_militarist
@@ -572,7 +572,7 @@ tech_influence_12 = {
 	}	
 
 	ai_weight = {
-		factor = 2
+		factor = 4
 		modifier = {
 			factor = 1.5
 			has_ethic = ethic_militarist
@@ -606,7 +606,7 @@ tech_influence_13 = {
 	}	
 		
 	ai_weight = {
-		factor = 2
+		factor = 4
 		modifier = {
 			factor = 1.5
 			has_ethic = ethic_militarist
@@ -640,7 +640,7 @@ tech_influence_14 = {
 	}	
 
 	ai_weight = {
-		factor = 2
+		factor = 4
 		modifier = {
 			factor = 1.5
 			has_ethic = ethic_militarist
@@ -675,7 +675,7 @@ tech_influence_15 = {
 	}
 	
 	ai_weight = {
-		factor = 2
+		factor = 4
 		modifier = {
 			factor = 1.5
 			has_ethic = ethic_militarist
@@ -710,7 +710,7 @@ tech_influence_16 = {
 	}
 	
 	ai_weight = {
-		factor = 2
+		factor = 4
 		modifier = {
 			factor = 1.5
 			has_ethic = ethic_militarist
@@ -745,7 +745,7 @@ tech_influence_17 = {
 	}
 	
 	ai_weight = {
-		factor = 2
+		factor = 4
 		modifier = {
 			factor = 1.5
 			has_ethic = ethic_militarist
@@ -780,7 +780,7 @@ tech_influence_18 = {
 	}
 	
 	ai_weight = {
-		factor = 2
+		factor = 4
 		modifier = {
 			factor = 1.5
 			has_ethic = ethic_militarist
@@ -815,7 +815,7 @@ tech_influence_19 = {
 	}
 	
 	ai_weight = {
-		factor = 2
+		factor = 4
 		modifier = {
 			factor = 1.5
 			has_ethic = ethic_militarist
@@ -850,7 +850,7 @@ tech_influence_20 = {
 	}
 	
 	ai_weight = {
-		factor = 2
+		factor = 4
 		modifier = {
 			factor = 1.5
 			has_ethic = ethic_militarist

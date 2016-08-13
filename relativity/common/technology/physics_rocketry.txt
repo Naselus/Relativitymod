@@ -136,9 +136,11 @@ tech_missiles_1 = {
 			}
 		}
 		modifier = {
-			factor = 0.3
+			factor = 0
 			AND = {
-			years_passed = 20
+			NOT = {
+			years_passed > 20
+			}
 			OR = {
 			has_technology = tech_lasers_1
 			has_technology = tech_mass_drivers_1
@@ -165,6 +167,18 @@ tech_missiles_1 = {
 			factor = 1.5
 			has_ethic = ethic_fanatic_militarist
 		}
+		modifier = {
+		factor = 0
+			AND = {
+				NOT = {
+					years_passed > 50
+					}
+				OR = {
+					has_technology = tech_lasers_1
+					has_technology = tech_mass_drivers_1
+				}
+			}
+		}	
 	}
 }
 
@@ -205,7 +219,7 @@ tech_missiles_2 = {
 	}
 	
 	ai_weight = {
-		factor = 2		#weapons are good
+		factor = 4		#weapons are good
 		modifier = {
 			factor = 2
 			has_ethic = "ethic_militarist"
@@ -256,7 +270,7 @@ tech_rocketry_11 = {
 	}
 	
 	ai_weight = {
-		factor = 2		#weapons are good
+		factor = 4		#weapons are good
 		modifier = {
 			factor = 2
 			has_ethic = "ethic_militarist"
@@ -330,7 +344,7 @@ tech_missiles_3 = {
 	}
 	
 	ai_weight = {
-		factor = 2		#weapons are good
+		factor = 4		#weapons are good
 		modifier = {
 			factor = 2
 			has_ethic = "ethic_militarist"
@@ -381,7 +395,7 @@ tech_rocketry_12 = {
 	}
 	
 	ai_weight = {
-		factor = 2		#weapons are good
+		factor = 4		#weapons are good
 		modifier = {
 			factor = 2
 			has_ethic = "ethic_militarist"
@@ -455,7 +469,7 @@ tech_missiles_4 = {
 	}
 	
 	ai_weight = {
-		factor = 2		#weapons are good
+		factor = 4		#weapons are good
 		modifier = {
 			factor = 2
 			has_ethic = "ethic_militarist"
@@ -506,7 +520,7 @@ tech_rocketry_13 = {
 	}
 	
 	ai_weight = {
-		factor = 2		#weapons are good
+		factor = 4		#weapons are good
 		modifier = {
 			factor = 2
 			has_ethic = "ethic_militarist"
@@ -580,7 +594,7 @@ tech_missiles_5 = {
 	}
 	
 	ai_weight = {
-		factor = 2		#weapons are good
+		factor = 4		#weapons are good
 		modifier = {
 			factor = 2
 			has_ethic = "ethic_militarist"
@@ -631,7 +645,7 @@ tech_rocketry_14 = {
 	}
 	
 	ai_weight = {
-		factor = 2		#weapons are good
+		factor = 4		#weapons are good
 		modifier = {
 			factor = 2
 			has_ethic = "ethic_militarist"
@@ -705,7 +719,7 @@ tech_swarmer_missiles_1 = {
 	}
 	
 	ai_weight = {
-		factor = 2		#weapons are good
+		factor = 4		#weapons are good
 		modifier = {
 			factor = 2
 			has_ethic = "ethic_militarist"
@@ -756,7 +770,7 @@ tech_rocketry_15 = {
 	}
 
 	ai_weight = {
-		factor = 2		#weapons are good
+		factor = 4		#weapons are good
 		modifier = {
 			factor = 2
 			has_ethic = "ethic_militarist"
@@ -907,7 +921,7 @@ tech_torpedoes_1 = {
 	}
 	
 	ai_weight = {
-		factor = 2		#weapons are good
+		factor = 4		#weapons are good
 		modifier = {
 			factor = 2
 			has_ethic = "ethic_militarist"
@@ -958,7 +972,7 @@ tech_rocketry_16 = {
 	}
 	
 	ai_weight = {
-		factor = 2		#weapons are good
+		factor = 4		#weapons are good
 		modifier = {
 			factor = 2
 			has_ethic = "ethic_militarist"
@@ -1032,7 +1046,7 @@ tech_torpedoes_2 = {
 	}
 	
 	ai_weight = {
-		factor = 2		#weapons are good
+		factor = 4		#weapons are good
 		modifier = {
 			factor = 2
 			has_ethic = "ethic_militarist"
@@ -1082,7 +1096,7 @@ tech_rocketry_17 = {
 		weapon_type_explosive_weapon_fire_rate_mult = 0.05
 	}
 	ai_weight = {
-		factor = 2		#weapons are good
+		factor = 4		#weapons are good
 		modifier = {
 			factor = 2
 			has_ethic = "ethic_militarist"
@@ -1156,7 +1170,7 @@ tech_torpedoes_3 = {
 	}
 	
 	ai_weight = {
-		factor = 2		#weapons are good
+		factor = 4		#weapons are good
 		modifier = {
 			factor = 2
 			has_ethic = "ethic_militarist"
@@ -1207,7 +1221,7 @@ tech_rocketry_18 = {
 	}
 	
 	ai_weight = {
-		factor = 2		#weapons are good
+		factor = 4		#weapons are good
 		modifier = {
 			factor = 2
 			has_ethic = "ethic_militarist"
@@ -1258,7 +1272,7 @@ tech_rocketry_19 = {
 	}
 
 	ai_weight = {
-		factor = 2		#weapons are good
+		factor = 4		#weapons are good
 		modifier = {
 			factor = 2
 			has_ethic = "ethic_militarist"
@@ -1309,7 +1323,7 @@ tech_rocketry_20 = {
 	}
 	
 	ai_weight = {
-		factor = 2		#weapons are good
+		factor = 4		#weapons are good
 		modifier = {
 			factor = 2
 			has_ethic = "ethic_militarist"

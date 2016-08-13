@@ -169,12 +169,18 @@ tech_spaceport_2 = {
 	}
 	
 	ai_weight = {
-		factor = 90 #important tech - destroyers
+		factor = 60 #important tech - destroyers
 		modifier = {
 			factor = 1.25
 			research_leader = {
 				area = engineering
 				has_trait = "leader_trait_expertise_spaceport_expansion"
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				years_passed > 25
 			}
 		}
 	}
@@ -225,12 +231,18 @@ tech_spaceport_3 = {
 	}
 	
 	ai_weight = {
-		factor = 90 #important tech
+		factor = 60 #important tech
 		modifier = {
 			factor = 1.25
 			research_leader = {
 				area = engineering
 				has_trait = "leader_trait_expertise_spaceport_expansion"
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				years_passed > 30
 			}
 		}
 	}
@@ -281,12 +293,18 @@ tech_spaceport_4 = {
 	}
 	
 	ai_weight = {
-		factor = 90 #important tech
+		factor = 60 #important tech
 		modifier = {
 			factor = 1.25
 			research_leader = {
 				area = engineering
 				has_trait = "leader_trait_expertise_spaceport_expansion"
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				years_passed > 50
 			}
 		}
 	}
@@ -343,6 +361,12 @@ tech_spaceport_5 = {
 			research_leader = {
 				area = engineering
 				has_trait = "leader_trait_expertise_spaceport_expansion"
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				years_passed > 70
 			}
 		}
 	}
@@ -448,7 +472,7 @@ tech_spaceport_7 = {
 	}
 	
 	ai_weight = {
-		factor = 5
+		factor = 20
 		modifier = {
 			factor = 1.25
 			research_leader = {

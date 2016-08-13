@@ -109,7 +109,7 @@ tech_colonization_1 = {
 	#start_tech = yes
 	category = { new_worlds }
 	prerequisites = { "tech_spaceport_1" }
-	weight = @tier1weight2
+	weight = @tier1weight1
 	
 	prereqfor_desc = {
 		ship = {
@@ -121,7 +121,7 @@ tech_colonization_1 = {
 	weight_modifier = {
 		factor = 3
 		modifier = {
-			factor = 10000
+			factor = 1000
 			is_ai = yes
 		}
 		modifier = {
@@ -150,7 +150,12 @@ tech_colonization_1 = {
 	}
 	
 	ai_weight = {
-		weight = 100000
+		weight = 10000
+
+		modifier = {
+			factor = 5
+			years_passed < 2
+		}
 	}
 }
 
@@ -178,6 +183,7 @@ tech_colonization_2 = {
 	}
 	
 	ai_weight = {
+		factor = 3
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -219,6 +225,7 @@ tech_colonization_3 = {
 	}
 	
 	weight_modifier = {
+	factor = 3
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -276,6 +283,7 @@ tech_frontier_health = {
 	}
 	
 	ai_weight = {
+		factor = 3
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -1181,7 +1189,7 @@ tech_colonization_17 = {
 	}
 	
 	ai_weight = {
-		factor = 3
+		factor = 4
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -1222,7 +1230,7 @@ tech_colonization_18 = {
 	}
 	
 	ai_weight = {
-		factor = 3
+		factor = 4
 		modifier = {
 			factor = 1.25
 			research_leader = {

@@ -110,7 +110,7 @@ tech_void_1 = {
 	
 	ai_weight = {
 		modifier = {
-			factor = 10
+			factor = 10000
 			always = yes
 		}
 	}
@@ -125,7 +125,7 @@ tech_void_2 = {
 	weight = @tier2weight4
 	ai_weight = {
 		modifier = {
-			factor = 10
+			factor = 10000
 			always = yes
 		}
 	}
@@ -140,7 +140,7 @@ tech_void_3 = {
 	weight = @tier3weight4
 	ai_weight = {
 		modifier = {
-			factor = 10
+			factor = 10000
 			always = yes
 		}
 	}
@@ -156,7 +156,7 @@ tech_void_4 = {
 	weight = @tier4weight2
 	ai_weight = {
 		modifier = {
-			factor = 10
+			factor = 10000
 			always = yes
 		}
 	}
@@ -178,7 +178,7 @@ tech_void_5 = {
 	}
 	ai_weight = {
 		modifier = {
-			factor = 10
+			factor = 10000
 			always = yes
 		}
 	}	

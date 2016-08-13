@@ -124,7 +124,7 @@ tech_mineral_processing_1 = {
 	}
 	
 	ai_weight = {
-		weight = 10000
+		weight = 100000
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -177,7 +177,7 @@ tech_mineral_processing_2 = {
 	}
 	
 	ai_weight = {
-		weight = 10000
+		weight = 100000
 		
 		modifier = {
 			factor = 1.25
@@ -231,7 +231,7 @@ tech_mineral_processing_3 = {
 	}
 	
 	ai_weight = {
-		weight = 500
+		weight = 10000
 		modifier = {
 			factor = 1.25
 			research_leader = {

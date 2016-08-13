@@ -109,7 +109,7 @@ tech_doctrine_fleet_size_1 = {
 	area = society
 	tier = 1
 	category = { military_theory }
-	weight = @tier1weight1
+	weight = 50
 	
 	modifier = {
 		navy_size_mult = 0.10
@@ -175,6 +175,12 @@ tech_doctrine_fleet_size_1 = {
 			research_leader = {
 				area = society
 				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+		modifier = {
+		factor = 0
+			NOT = {
+			years_passed > 25
 			}
 		}
 	}
@@ -456,6 +462,7 @@ tech_doctrine_command_matrix = {
 	}
 	
 	ai_weight = {
+		factor = 3
 		modifier = {
 			factor = 2
 			has_ethic = "ethic_militarist"
@@ -1315,6 +1322,12 @@ tech_centralized_command = {
 				has_trait = "leader_trait_expertise_military_theory"
 			}
 		}
+		modifier = {
+			factor = 0
+			NOT = {
+			years_passed > 25
+			}
+		}
 	}
 }
 
@@ -1438,6 +1451,7 @@ tech_virtual_combat_arena = {
 	}	
 	
 	ai_weight = {
+		weight = 2
 		modifier = {
 			factor = 2
 			has_ethic = "ethic_militarist"
