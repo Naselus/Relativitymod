@@ -395,3 +395,12 @@ Version 102.0.1
 * AI spending priorities tweaked a fair bit to encourage internal development over ships.
 * Added names for new gov types.
 
+0.99
+
+* Building AI added
+* personalities tweaked substantially
+* Reactor techs tied into the general powerplant line
+* higher-tier components now require better power plant tech
+* Loads of tech AI work done
+* rebalanced ship weapons so they all have equal average DPS.
+* lots of bug fixing. Just lots.

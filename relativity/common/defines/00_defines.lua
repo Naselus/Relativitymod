@@ -1100,25 +1100,25 @@ NDefines = {
 		
 		NON_MINED_RESOURCES_ENERGY_WANT_FACTOR = 0,	-- If 100% of AI's resources in space are unmined, increase desire for energy by this
 		
-		MILITARY_STATION_BUDGET_FRACTION = 0.1,	-- AI will spend this fraction of their income on military stations
+		MILITARY_STATION_BUDGET_FRACTION = 0.2,	-- AI will spend this fraction of their income on military stations
 		SAVINGS_BUDGET_FRACTION = 0.00, 		-- AI will spend this fraction of their income on savings (normally not needed as fleets in dock will result in energy surplus)
 		ARMY_BUDGET_FRACTION = 0.05,   			-- AI will spend this fraction of their income on armies
-		NAVY_BUDGET_FRACTION = 0.35, 			-- AI will spend this fraction of their income on ships
-		STATION_BUDGET_FRACTION = 0.35, 		-- AI will spend this fraction of their income on stations
-		BUILDING_BUDGET_FRACTION = 0.10, 		-- AI will spend this fraction of their income on buildings
+		NAVY_BUDGET_FRACTION = 0.25, 			-- AI will spend this fraction of their income on ships
+		STATION_BUDGET_FRACTION = 0.25, 		-- AI will spend this fraction of their income on stations
+		BUILDING_BUDGET_FRACTION = 0.20, 		-- AI will spend this fraction of their income on buildings
 		ROBOT_BUDGET_FRACTION = 0.05,			-- AI will spend this fraction of their income on robots (transfered to stations if they don't use robots)
 		
 		SHIPSIZE_BUDGET_FACTOR = 0.05,			-- For each ship size unlocked, increase navy budget by this amount
 		NAVAL_CAPACITY_BUDGET_MAX = 100,		-- At this naval capacity, AI puts max budget into ships
-		PLANET_BUDGET_FACTOR = 0.3,			-- When AI has few planets, it will decrease building/mil station budget by this and put it into colonies/stations instead
+		PLANET_BUDGET_FACTOR = 0.6,			-- When AI has few planets, it will decrease building/mil station budget by this and put it into colonies/stations instead
 		MAX_PLANETS_FOR_BUDGET_FACTOR = 4,		-- At this amount of planets, budget is normalized
 
 		MINERAL_MILITARY_STATION_BUDGET_FRACTION = 0.05, -- AI will spend this fraction of their stored minerals on military stations
-		MINERAL_NAVY_BUDGET_FRACTION = 0.20, 	-- AI will spend this fraction of their stored minerals on ships
+		MINERAL_NAVY_BUDGET_FRACTION = 0.10, 	-- AI will spend this fraction of their stored minerals on ships
 		MINERAL_STATION_BUDGET_FRACTION = 0.15, -- AI will spend this fraction of their stored minerals on stations (used for spaceport instead when it needs a new spaceport)
 		MINERAL_BUILDING_BUDGET_FRACTION = 0.2,-- AI will spend this fraction of their stored minerals on buildings (used for spaceport instead when it needs a new spaceport)
 		MINERAL_SPACEPORT_BUDGET_FRACTION = 0.05, -- AI will spend this fraction of their stored minerals on spaceport modules
-		MINERAL_COLONY_BUDGET_FRACTION = 0.2,
+		MINERAL_COLONY_BUDGET_FRACTION = 0.3,
 		MINERAL_ARMY_BUDGET_FRACTION = 0.02,	-- AI will spend this fraction on armies
 		MINERAL_TILE_BLOCKER_BUDGET_FRACTION = 0.1,	-- AI will spend this fraction on tile blockers
 		MINERAL_ROBOT_BUDGET_FRACTION = 0.03,	-- AI will spend this fraction of their stored minerals on robots (transfered to buildings if they don't use robots)
@@ -1128,7 +1128,7 @@ NDefines = {
 		MIN_ARMY_BUDGET = 1,			-- Always add this amount to the army budget so we can have at least a few armies
 		
 		-- Below values are increased when mineral storage capacity goes up
-		MAX_MINERALS_STORED_MILITARY_STATIONS = 500,	-- Minerals AI will store for mil stations when it needs more
+		MAX_MINERALS_STORED_MILITARY_STATIONS = 600,	-- Minerals AI will store for mil stations when it needs more
 		MIN_MINERALS_STORED_MILITARY_STATIONS = 50,	-- Minerals AI will store for mil stations when it does not need more
 		MAX_MINERALS_STORED_NAVY = 500,				-- Minerals AI will store for navy when it needs more
 		MIN_MINERALS_STORED_NAVY = 50,				-- Minerals AI will store for navy when it does not need more 
@@ -1155,12 +1155,12 @@ NDefines = {
 		MAX_MINERALS_STORED_SECTOR_POST_BUILDINGS = 1000,		-- Minerals AI will store for buildings
 		MAX_MINERALS_SPENT_ON_NAVY = 0.50,			-- Spend no more than this fraction of mineral income on navy maintenance
 
-		EXPECTED_MINERALS_BASE = 5,				-- AI expects to make this base amount in minerals
-		EXPECTED_MINERALS_PER_POP = 2,				-- AI expects to make about their num pops x this in minerals
+		EXPECTED_MINERALS_BASE = 25,				-- AI expects to make this base amount in minerals
+		EXPECTED_MINERALS_PER_POP = 0.5,				-- AI expects to make about their num pops x this in minerals
 		EXPECTED_TECH_BASE = 5,						-- AI expects to make this base amount in tech
 		EXPECTED_TECH_PER_POP = 2,					-- AI expects to make about their num pops x this in tech
-		EXPECTED_ENERGY_BASE = 5,					-- AI expects to make this base amount in energy
-		EXPECTED_ENERGY_PER_POP = 1.3,				-- AI expects to make about their num pops x this in energy
+		EXPECTED_ENERGY_BASE = 15,					-- AI expects to make this base amount in energy
+		EXPECTED_ENERGY_PER_POP = 1,				-- AI expects to make about their num pops x this in energy
 		EXPECTED_ENERGY_SURPLUS = 3,				-- AI wants a surplus of least this amount in monthly energy production (temporary spending such as colonies does not count)
 		EXPECTED_SECTOR_ENERGY_SURPLUS = 3,			-- As above, but for sectors
 		
