@@ -919,8 +919,6 @@ ai_special_building = yes
 		# }
 	}	
 }	
-	
-}
 
 building_hydroponics_farm_1 = {
 	base_buildtime = @b1time
