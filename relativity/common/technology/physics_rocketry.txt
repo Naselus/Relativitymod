@@ -182,7 +182,7 @@ tech_missiles_1 = {
 	}
 }
 
-# Fusion Missiles
+# Reaper Missiles
 tech_missiles_2 = {
 	area = physics
 	cost = @tier1cost3
@@ -307,14 +307,14 @@ tech_rocketry_11 = {
 	}
 }
 
-# Antimatter Missiles
+# Fusion Missiles
 tech_missiles_3 = {
 	area = physics
 	cost = @tier2cost3
 	tier = 2
 	category = { rocketry }
 	ai_update_type = military
-	prerequisites = { "tech_rocketry_11" }
+	prerequisites = { "tech_rocketry_11" "tech_fusion_power"}
 	weight = @tier2weight3
 	
 	weight_modifier = {
@@ -432,14 +432,14 @@ tech_rocketry_12 = {
 	}
 }
 
-# Heavy Missiles
+# Marauder Missiles
 tech_missiles_4 = {
 	area = physics
 	cost = @tier3cost1
 	tier = 3
 	category = { rocketry }
 	ai_update_type = military
-	prerequisites = { "tech_rocketry_12" }
+	prerequisites = { "tech_rocketry_12" "tech_cold_fusion_power"}
 	weight = @tier3weight1
 	
 	weight_modifier = {
@@ -564,7 +564,7 @@ tech_missiles_5 = {
 	tier = 3
 	category = { rocketry }
 	ai_update_type = military
-	prerequisites = { "tech_rocketry_13" }
+	prerequisites = { "tech_rocketry_13" "tech_antimatter_power"}
 	weight = @tier3weight4
 	
 	weight_modifier = {
@@ -758,11 +758,11 @@ tech_swarmer_missiles_1 = {
 
 tech_rocketry_15 = {
 	area = physics
-	cost = @tier3cost4
+	cost = @tier3cost3
 	tier = 3
 	category = { rocketry }
 	prerequisites = { "tech_swarmer_missiles_1" }
-	weight = @tier3weight4
+	weight = @tier3weight3
 	
 	modifier = {
 		weapon_type_explosive_weapon_damage_mult = 0.05
@@ -814,7 +814,7 @@ tech_swarmer_missiles_2 = {
 	tier = 3
 	category = { rocketry }
 	ai_update_type = military	
-	prerequisites = { "tech_rocketry_15" }
+	prerequisites = { "tech_rocketry_15" "tech_antimatter_power"}
 	weight = @tier3weight4
 	
 	weight_modifier = {
@@ -1085,11 +1085,11 @@ tech_torpedoes_2 = {
 
 tech_rocketry_17 = {
 	area = physics
-	cost = @tier4cost2
+	cost = @tier4cost3
 	tier = 4
 	category = { rocketry }
 	prerequisites = { "tech_torpedoes_2" }
-	weight = @tier4weight2
+	weight = @tier4weight3
 
 	modifier = {
 		weapon_type_explosive_weapon_damage_mult = 0.05
@@ -1136,12 +1136,12 @@ tech_rocketry_17 = {
 #Devastator Torpedoes
 tech_torpedoes_3 = {
 	area = physics
-	cost = @tier4cost3
+	cost = @tier4cost4
 	tier = 4
 	category = { rocketry }
 	ai_update_type = military	
-	prerequisites = { "tech_rocketry_17" }
-	weight = @tier4weight3
+	prerequisites = { "tech_rocketry_17" "tech_zero_point_power"}
+	weight = @tier4weight4
 	
 	weight_modifier = {
 		modifier = {
@@ -1209,11 +1209,11 @@ tech_torpedoes_3 = {
 
 tech_rocketry_18 = {
 	area = physics
-	cost = @tier4cost3
+	cost = @tier4cost4
 	tier = 4
 	category = { rocketry }
 	prerequisites = { "tech_torpedoes_3" }	
-	weight = @tier4weight3
+	weight = @tier4weight4
 
 	modifier = {
 		weapon_type_explosive_weapon_damage_mult = 0.05

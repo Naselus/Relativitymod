@@ -101,10 +101,385 @@
 ####Terraforming and Tileblockers
 ####################
 
+tech_tb_dangerous_wildlife = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { terraforming }
+	prerequisites = { "tech_colonization_1" }
+	weight = @tier2weight1
+	
+	weight_groups = {
+		tile_blockers
+	}
+	mod_weight_if_group_picked = {
+		repeatable = 0.01
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 2
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_owned_planet =  {
+					any_tile = {
+						has_blocker = "tb_dangerous_wildlife"
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+		modifier = {
+			factor = 0
+			num_owned_planets < 2
+		}
+	}
+	
+	ai_weight = {
+		factor = 5
+		modifier = {
+			factor = 0
+			NOT = {
+				any_owned_planet =  {
+					any_tile = {
+						has_blocker = "tb_dangerous_wildlife"
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+		modifier = {
+			factor = 0
+			num_owned_planets < 2
+		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_trait = "trait_rapid_breeders"
+			has_trait = "trait_nonadaptive"
+			}
+		}		
+	}
+}
+
+tech_tb_dense_jungle = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { terraforming }
+	prerequisites = { "tech_colonization_1" }
+	weight = @tier2weight1
+	
+	weight_groups = {
+		tile_blockers
+	}
+	mod_weight_if_group_picked = {
+		repeatable = 0.01
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 2
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_owned_planet =  {
+					any_tile = {
+						has_blocker = "tb_dense_jungle"
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+		modifier = {
+			factor = 0
+			num_owned_planets < 2
+		}
+	}
+	
+	ai_weight = {
+		factor = 5
+		modifier = {
+			factor = 0
+			NOT = {
+				any_owned_planet =  {
+					any_tile = {
+						has_blocker = "tb_dense_jungle"
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+		modifier = {
+			factor = 0
+			num_owned_planets < 2
+		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_trait = "trait_rapid_breeders"
+			has_trait = "trait_nonadaptive"
+			}
+		}
+	}
+}
+
+tech_tb_toxic_kelp = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { terraforming }
+	prerequisites = { "tech_colonization_1" }
+	weight = @tier2weight1
+	
+	weight_groups = {
+		tile_blockers
+	}
+	mod_weight_if_group_picked = {
+		repeatable = 0.01
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 2
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_owned_planet =  {
+					any_tile = {
+						has_blocker = "tb_toxic_kelp"
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+		modifier = {
+			factor = 0
+			num_owned_planets < 2
+		}
+	}
+	
+	ai_weight = {
+			factor = 5
+		modifier = {
+			factor = 0
+			NOT = {
+				any_owned_planet =  {
+					any_tile = {
+						has_blocker = "tb_toxic_kelp"
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_trait = "trait_rapid_breeders"
+			has_trait = "trait_nonadaptive"
+			}
+		}
+		modifier = {
+			factor = 0
+			num_owned_planets < 2
+		}	
+	}
+}
+
+tech_tb_deep_sinkhole = {
+	cost = @tier2cost2
+	area = engineering
+	tier = 2
+	category = { terraforming }
+	prerequisites = { "tech_colonization_2" }
+	weight = @tier2weight2
+	
+	weight_groups = {
+		tile_blockers
+	}
+	mod_weight_if_group_picked = {
+		repeatable = 0.01
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 2
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_owned_planet =  {
+					any_tile = {
+						has_blocker = "tb_deep_sinkhole"
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+		modifier = {
+			factor = 0
+			num_owned_planets < 2
+		}
+	}
+	
+	ai_weight = {
+		factor = 5
+		modifier = {
+			factor = 0
+			NOT = {
+				any_owned_planet =  {
+					any_tile = {
+						has_blocker = "tb_deep_sinkhole"
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_trait = "trait_rapid_breeders"
+			has_trait = "trait_nonadaptive"
+			}
+		}
+		modifier = {
+			factor = 0
+			num_owned_planets < 2
+		}	
+	}
+}
+
+tech_tb_quicksand_basin = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { terraforming }
+	prerequisites = { "tech_colonization_2" }
+	weight = @tier2weight1
+	
+	weight_groups = {
+		tile_blockers
+	}
+	mod_weight_if_group_picked = {
+		repeatable = 0.01
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 2
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_owned_planet =  {
+					any_tile = {
+						has_blocker = "tb_quicksand_basin"
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+		modifier = {
+			factor = 0
+			num_owned_planets < 2
+		}
+	}
+	
+	ai_weight = {
+		factor = 5
+		modifier = {
+			factor = 0
+			NOT = {
+				any_owned_planet =  {
+					any_tile = {
+						has_blocker = "tb_quicksand_basin"
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+		modifier = {
+			factor = 0
+			num_owned_planets < 2
+		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_trait = "trait_rapid_breeders"
+			has_trait = "trait_nonadaptive"
+			}
+		}
+	}
+}
+
 tech_tb_mountain_range = {
 	cost = @tier2cost2
 	area = engineering
-	tier = 1
+	tier = 2
 	category = { terraforming }
 	prerequisites = { "tech_colonization_2" }
 	weight = @tier2weight2
@@ -144,9 +519,7 @@ tech_tb_mountain_range = {
 	}
 	
 	ai_weight = {
-		modifier = {
-			factor = 3
-		}
+		factor = 5
 		modifier = {
 			factor = 0
 			NOT = {
@@ -177,6 +550,82 @@ tech_tb_mountain_range = {
 		}
 	}
 }
+
+tech_tb_noxious_swamp = {
+	cost = @tier2cost3
+	area = engineering
+	tier = 2
+	category = { terraforming }
+	prerequisites = { "tech_colonization_3" }
+	weight = @tier2weight3
+	
+	weight_groups = {
+		tile_blockers
+	}
+	mod_weight_if_group_picked = {
+		repeatable = 0.01
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 2
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_owned_planet =  {
+					any_tile = {
+						has_blocker = "tb_noxious_swamp"
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+		modifier = {
+			factor = 0
+			num_owned_planets < 2
+		}
+	}
+	
+	ai_weight = {
+		factor = 5
+		modifier = {
+			factor = 0
+			NOT = {
+				any_owned_planet =  {
+					any_tile = {
+						has_blocker = "tb_noxious_swamp"
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_trait = "trait_rapid_breeders"
+			has_trait = "trait_nonadaptive"
+			}
+		}
+		modifier = {
+			factor = 0
+			num_owned_planets < 2
+		}	
+	}
+}
+
 
 tech_tb_volcano = {
 	cost = @tier2cost3
@@ -222,9 +671,7 @@ tech_tb_volcano = {
 	}
 	
 	ai_weight = {
-		modifier = {
-			factor = 3
-		}
+		factor = 5
 		modifier = {
 			factor = 0
 			NOT = {
@@ -253,314 +700,6 @@ tech_tb_volcano = {
 			has_trait = "trait_nonadaptive"
 			}
 		}
-	}
-}
-
-tech_tb_dangerous_wildlife = {
-	cost = @tier2cost1
-	area = engineering
-	tier = 1
-	category = { terraforming }
-	prerequisites = { "tech_colonization_1" }
-	weight = @tier2weight1
-	
-	weight_groups = {
-		tile_blockers
-	}
-	mod_weight_if_group_picked = {
-		repeatable = 0.01
-	}
-	
-	weight_modifier = {
-		modifier = {
-			factor = 2
-		}
-		modifier = {
-			factor = 0
-			NOT = {
-				any_owned_planet =  {
-					any_tile = {
-						has_blocker = "tb_dangerous_wildlife"
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_new_worlds"
-			}
-		}
-		modifier = {
-			factor = 0
-			num_owned_planets < 2
-		}
-	}
-	
-	ai_weight = {
-		modifier = {
-			factor = 3
-		}
-		modifier = {
-			factor = 0
-			NOT = {
-				any_owned_planet =  {
-					any_tile = {
-						has_blocker = "tb_dangerous_wildlife"
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_new_worlds"
-			}
-		}
-		modifier = {
-			factor = 0
-			num_owned_planets < 2
-		}
-		modifier = {
-			factor = 3
-			OR = {
-			has_trait = "trait_rapid_breeders"
-			has_trait = "trait_nonadaptive"
-			}
-		}		
-	}
-}
-
-tech_tb_dense_jungle = {
-	cost = @tier2cost1
-	area = engineering
-	tier = 1
-	category = { terraforming }
-	prerequisites = { "tech_colonization_1" }
-	weight = @tier2weight1
-	
-	weight_groups = {
-		tile_blockers
-	}
-	mod_weight_if_group_picked = {
-		repeatable = 0.01
-	}
-	
-	weight_modifier = {
-		modifier = {
-			factor = 2
-		}
-		modifier = {
-			factor = 0
-			NOT = {
-				any_owned_planet =  {
-					any_tile = {
-						has_blocker = "tb_dense_jungle"
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_new_worlds"
-			}
-		}
-		modifier = {
-			factor = 0
-			num_owned_planets < 2
-		}
-	}
-	
-	ai_weight = {
-		modifier = {
-			factor = 3
-		}
-		modifier = {
-			factor = 0
-			NOT = {
-				any_owned_planet =  {
-					any_tile = {
-						has_blocker = "tb_dense_jungle"
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_new_worlds"
-			}
-		}
-		modifier = {
-			factor = 0
-			num_owned_planets < 2
-		}
-		modifier = {
-			factor = 3
-			OR = {
-			has_trait = "trait_rapid_breeders"
-			has_trait = "trait_nonadaptive"
-			}
-		}
-	}
-}
-
-tech_tb_quicksand_basin = {
-	cost = @tier2cost1
-	area = engineering
-	tier = 1
-	category = { terraforming }
-	prerequisites = { "tech_colonization_2" }
-	weight = @tier2weight1
-	
-	weight_groups = {
-		tile_blockers
-	}
-	mod_weight_if_group_picked = {
-		repeatable = 0.01
-	}
-	
-	weight_modifier = {
-		modifier = {
-			factor = 2
-		}
-		modifier = {
-			factor = 0
-			NOT = {
-				any_owned_planet =  {
-					any_tile = {
-						has_blocker = "tb_quicksand_basin"
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_new_worlds"
-			}
-		}
-		modifier = {
-			factor = 0
-			num_owned_planets < 2
-		}
-	}
-	
-	ai_weight = {
-		modifier = {
-			factor = 3
-		}
-		modifier = {
-			factor = 0
-			NOT = {
-				any_owned_planet =  {
-					any_tile = {
-						has_blocker = "tb_quicksand_basin"
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_new_worlds"
-			}
-		}
-		modifier = {
-			factor = 0
-			num_owned_planets < 2
-		}
-		modifier = {
-			factor = 3
-			OR = {
-			has_trait = "trait_rapid_breeders"
-			has_trait = "trait_nonadaptive"
-			}
-		}
-	}
-}
-
-tech_tb_noxious_swamp = {
-	cost = @tier2cost2
-	area = engineering
-	tier = 1
-	category = { terraforming }
-	prerequisites = { "tech_colonization_2" }
-	weight = @tier2weight2
-	
-	weight_groups = {
-		tile_blockers
-	}
-	mod_weight_if_group_picked = {
-		repeatable = 0.01
-	}
-	
-	weight_modifier = {
-		modifier = {
-			factor = 2
-		}
-		modifier = {
-			factor = 0
-			NOT = {
-				any_owned_planet =  {
-					any_tile = {
-						has_blocker = "tb_noxious_swamp"
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_new_worlds"
-			}
-		}
-		modifier = {
-			factor = 0
-			num_owned_planets < 2
-		}
-	}
-	
-	ai_weight = {
-		modifier = {
-			factor = 3
-		}
-		modifier = {
-			factor = 0
-			NOT = {
-				any_owned_planet =  {
-					any_tile = {
-						has_blocker = "tb_noxious_swamp"
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_new_worlds"
-			}
-		}
-		modifier = {
-			factor = 3
-			OR = {
-			has_trait = "trait_rapid_breeders"
-			has_trait = "trait_nonadaptive"
-			}
-		}
-		modifier = {
-			factor = 0
-			num_owned_planets < 2
-		}	
 	}
 }
 
@@ -607,9 +746,7 @@ tech_tb_massive_glacier = {
 	}
 	
 	ai_weight = {
-		modifier = {
-			factor = 3
-		}
+		factor = 5
 		modifier = {
 			factor = 0
 			NOT = {
@@ -641,159 +778,6 @@ tech_tb_massive_glacier = {
 	}
 }
 
-tech_tb_toxic_kelp = {
-	cost = @tier2cost3
-	area = engineering
-	tier = 1
-	category = { terraforming }
-	prerequisites = { "tech_colonization_1" }
-	weight = @tier2weight3
-	
-	weight_groups = {
-		tile_blockers
-	}
-	mod_weight_if_group_picked = {
-		repeatable = 0.01
-	}
-	
-	weight_modifier = {
-		modifier = {
-			factor = 2
-		}
-		modifier = {
-			factor = 0
-			NOT = {
-				any_owned_planet =  {
-					any_tile = {
-						has_blocker = "tb_toxic_kelp"
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_new_worlds"
-			}
-		}
-		modifier = {
-			factor = 0
-			num_owned_planets < 2
-		}
-	}
-	
-	ai_weight = {
-		modifier = {
-			factor = 3
-		}
-		modifier = {
-			factor = 0
-			NOT = {
-				any_owned_planet =  {
-					any_tile = {
-						has_blocker = "tb_toxic_kelp"
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_new_worlds"
-			}
-		}
-		modifier = {
-			factor = 3
-			OR = {
-			has_trait = "trait_rapid_breeders"
-			has_trait = "trait_nonadaptive"
-			}
-		}
-		modifier = {
-			factor = 0
-			num_owned_planets < 2
-		}	
-	}
-}
-
-tech_tb_deep_sinkhole = {
-	cost = @tier2cost2
-	area = engineering
-	tier = 1
-	category = { terraforming }
-	prerequisites = { "tech_colonization_3" }
-	weight = @tier2weight2
-	
-	weight_groups = {
-		tile_blockers
-	}
-	mod_weight_if_group_picked = {
-		repeatable = 0.01
-	}
-	
-	weight_modifier = {
-		modifier = {
-			factor = 2
-		}
-		modifier = {
-			factor = 0
-			NOT = {
-				any_owned_planet =  {
-					any_tile = {
-						has_blocker = "tb_deep_sinkhole"
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_new_worlds"
-			}
-		}
-		modifier = {
-			factor = 0
-			num_owned_planets < 2
-		}
-	}
-	
-	ai_weight = {
-		modifier = {
-			factor = 3
-		}
-		modifier = {
-			factor = 0
-			NOT = {
-				any_owned_planet =  {
-					any_tile = {
-						has_blocker = "tb_deep_sinkhole"
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_new_worlds"
-			}
-		}
-		modifier = {
-			factor = 3
-			OR = {
-			has_trait = "trait_rapid_breeders"
-			has_trait = "trait_nonadaptive"
-			}
-		}
-		modifier = {
-			factor = 0
-			num_owned_planets < 2
-		}	
-	}
-}
 
 #Climate Terraforming
 
@@ -802,7 +786,7 @@ tech_terrestrial_sculpting = {
 	area = engineering
 	tier = 3
 	category = { terraforming }
-	prerequisites = { "tech_tb_deep_sinkhole" "tech_tb_massive_glacier" "tech_tb_volcano"}
+	prerequisites = { "tech_tb_noxious_swamp" "tech_tb_massive_glacier" "tech_tb_volcano"}
 	weight = @tier3weight1
 	
 	feature_flags = {
@@ -844,12 +828,12 @@ tech_terrestrial_sculpting = {
 }
 
 tech_atmospheric_manipulation = {
-	cost = @tier3cost3
+	cost = @tier3cost2
 	area = engineering
 	tier = 3
 	category = { terraforming }
 	prerequisites = { "tech_terrestrial_sculpting" }
-	weight = @tier3weight3
+	weight = @tier3weight2
 	
 	# unlocks additional terraforming-options
 	
@@ -892,11 +876,11 @@ tech_atmospheric_manipulation = {
 
 tech_terraforming_12 = {
 	area = engineering
-	cost = @tier4cost1
-	tier = 4
+	cost = @tier3cost2
+	tier = 3
 	category = { new_worlds }
 	prerequisites = { "tech_arid_colonization" "tech_atmospheric_manipulation" }
-	weight = @tier4weight1
+	weight = @tier3weight2
 	
 	#Barren to Desert
 	
@@ -947,11 +931,11 @@ tech_terraforming_12 = {
 
 tech_terraforming_13 = {
 	area = engineering
-	cost = @tier4cost1
-	tier = 4
+	cost = @tier3cost2
+	tier = 3
 	category = { new_worlds }
 	prerequisites = { "tech_tundra_colonization" "tech_atmospheric_manipulation"}
-	weight = @tier4weight1
+	weight = @tier3weight2
 	
 	#Barren Cold to Tundra
 	
@@ -1002,11 +986,11 @@ tech_terraforming_13 = {
 
 tech_terraforming_14 = {
 	area = engineering
-	cost = @tier4cost3
-	tier = 4
+	cost = @tier3cost3
+	tier = 3
 	category = { terraforming }
 	prerequisites = { "tech_terraforming_12" }
-	weight = @tier4weight3
+	weight = @tier3weight3
 	
 	#Toxic to Barren
 	
@@ -1057,11 +1041,11 @@ tech_terraforming_14 = {
 
 tech_terraforming_15 = {
 	area = engineering
-	cost = @tier4cost3
-	tier = 4
+	cost = @tier3cost3
+	tier = 3
 	category = { terraforming }
 	prerequisites = { "tech_terraforming_13" }
-	weight = @tier4weight3
+	weight = @tier3weight3
 	
 	#Nuked to Barren_Cold
 	
@@ -1112,11 +1096,11 @@ tech_terraforming_15 = {
 
 tech_terraforming_16 = {
 	area = engineering
-	cost = @tier5cost1
-	tier = 5
+	cost = @tier4cost1
+	tier = 4
 	category = { terraforming }
 	prerequisites = { "tech_terraforming_14" }	
-	weight = @tier5weight1
+	weight = @tier4weight1
 	
 	#Molten to Barren
 
@@ -1167,11 +1151,11 @@ tech_terraforming_16 = {
 
 tech_terraforming_17 = {
 	area = engineering
-	cost = @tier5cost1
-	tier = 5
+	cost = @tier4cost1
+	tier = 4
 	category = { terraforming }
 	prerequisites = { "tech_terraforming_15" }	
-	weight = @tier5weight1
+	weight = @tier4weight1
 	
 	#Frozen to Barren_Cold
 

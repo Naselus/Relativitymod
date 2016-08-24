@@ -364,11 +364,11 @@ tech_thrusters_9 = {
 
 tech_thrusters_10 = {
 	area = engineering
-	cost = @tier3cost1
-	tier = 3
+	cost = @tier2cost4
+	tier = 2
 	category = { thrusters }
 	prerequisites = { "tech_thrusters_9"}	
-	weight = @tier3weight1
+	weight = @tier2weight4
 	
 	modifier = {
 		ship_speed_mult = 0.05
@@ -441,12 +441,12 @@ tech_thrusters_11 = {
 #Plasma Thrusters
 tech_thrusters_3 = {
 	area = engineering
-	cost = @tier3cost2
+	cost = @tier3cost1
 	tier = 3
 	category = { thrusters }
 	ai_update_type = all	
 	prerequisites = { "tech_thrusters_11" "tech_cold_fusion_power"}
-	weight = @tier3weight2
+	weight = @tier3weight1
 	
 	weight_modifier = {
 		factor = 1.25
@@ -855,7 +855,7 @@ tech_thrusters_20 = {
 	cost = @tier4cost4
 	tier = 4
 	category = { thrusters }
-	prerequisites = { "tech_thrusters_19"}	
+	prerequisites = { "tech_thrusters_19" "tech_zero_point_power"}	
 	weight = @tier4weight4
 	
 	modifier = {

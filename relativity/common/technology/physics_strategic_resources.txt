@@ -354,8 +354,8 @@ tech_mine_neutronium = {
 	area = physics
 	tier = 3
 	category = { mining }
-	prerequisites = { "tech_sensors_4" }
-	weight = 0
+	prerequisites = { "tech_sensors_4" "tech_mineral_processing_11"}
+	weight = @tier3weight3
 		
 	## unlock see neutronium ore
 	

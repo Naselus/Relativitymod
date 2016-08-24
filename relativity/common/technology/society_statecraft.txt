@@ -246,7 +246,7 @@ tech_colonial_centralization = {
 	area = society
 	tier = 1
 	category = { statecraft }
-	prerequisites = { "tech_planetary_unification" "tech_adaptive_bureaucracy"}
+	prerequisites = { "tech_adaptive_bureaucracy"}
 	weight = @tier1weight4
 	
 	# unlocks Planetary Capital
@@ -286,7 +286,7 @@ tech_living_state = {
 	area = society
 	tier = 2
 	category = { statecraft }
-	prerequisites = { "tech_colonial_centralization" "tech_adaptive_bureaucracy"}
+	prerequisites = { "tech_colonial_centralization" }
 	weight = @tier2weight2
 	
 	modifier = {
@@ -359,7 +359,7 @@ tech_galactic_administration = {
 	area = society
 	tier = 2
 	category = { statecraft }
-	prerequisites = { "tech_colonial_centralization" }
+	prerequisites = { "tech_living_state" }
 	weight = @tier2weight4
 	
 	# unlocks Empire Capital-Complex, advanced government forms
@@ -386,7 +386,7 @@ tech_galactic_administration = {
 	}
 	
 	ai_weight = {
-		factor = 10
+		factor = 100
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -403,7 +403,7 @@ tech_collective_self = {
 	area = society
 	tier = 3
 	category = { statecraft }
-	prerequisites = { "tech_living_state" "tech_galactic_administration" }
+	prerequisites = { "tech_galactic_administration" }
 	weight = @tier3weight2
 	
 	modifier = {
@@ -481,7 +481,7 @@ tech_statecraft_10 = {
 	cost = @tier3cost1
 	tier = 3
 	category = { statecraft }
-	prerequisites = { "tech_living_state" "tech_galactic_administration" }
+	prerequisites = { "tech_collective_self" }
 	weight = @tier3weight1
 	
 	modifier = {
