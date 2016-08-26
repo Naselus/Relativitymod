@@ -236,7 +236,7 @@ tech_ftl_19 = {
 	tier = 3
 	category = { ftl_travel }
 	prerequisites = { "tech_wormhole_generation_3"}	
-	weight = @tier3weight3
+	weight = @tier3weight4
 	
 	modifier = {
 		ship_ftl_wormhole_speed_mult = 0.1
@@ -261,7 +261,7 @@ tech_ftl_20 = {
 	tier = 4
 	category = { ftl_travel }
 	prerequisites = { "tech_ftl_19"}	
-	weight = @tier4weight1
+	weight = @tier4weight2
 	
 	modifier = {
 		ship_ftl_wormhole_speed_mult = 0.1
@@ -743,7 +743,7 @@ tech_hyperlane_mapping = {
 }
 
 tech_jump_drive_1 = {
-	cost = @tier3cost3
+	cost = @tier3cost4
 	area = physics
 	tier = 3
 	category = { ftl_travel }
@@ -751,12 +751,15 @@ tech_jump_drive_1 = {
 	is_reverse_engineerable = yes
 	is_rare = yes
 	is_dangerous = yes
-	weight = @tier3weight3
-	is_dangerous = yes
-	prerequisites = { "tech_wormhole_generation_3" }
+	weight = @tier3weight4
+	prerequisites = {"tech_antimatter_power"}
 	
 	weight_modifier = {
 		factor = 0.01
+		modifier = {
+			factor = 0
+			years_passed < 60
+		}
 	}
 	
 	ai_weight = {

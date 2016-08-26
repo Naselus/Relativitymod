@@ -114,6 +114,13 @@ tech_databank_uplinks = {
 	
 	feature_flags = { assist_research }
 	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			years_passed < 50
+		}
+	}
+	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -131,9 +138,7 @@ tech_databank_uplinks = {
 		}
 		modifier = {
 			factor = 0
-			NOT = {
-				years_passed > 25
-			}			
+				years_passed < 25			
 		}
 	}
 }
@@ -179,6 +184,13 @@ tech_improved_databank_uplinks = {
 			has_ai_personality = erudite_explorers
 			has_ai_personality = spiritual_seekers
 			}
+		}
+		modifier = {
+			factor = 0
+			AND = {
+				is_ai = yes
+				years_passed < 25	
+				}
 		}
 	}
 }

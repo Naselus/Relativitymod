@@ -7157,9 +7157,9 @@
 
  #Victory conditions
  VICTORY_CONDITION_DOMINATION_NAME:0 "Domination Victory"
- VICTORY_CONDITION_DOMINATION_DESC:0 "Win the game by owning §Y40%§! of all Colonizable Planets"
+ VICTORY_CONDITION_DOMINATION_DESC:0 "Win the game by owning §Y75%§! of all Colonizable Planets"
  VICTORY_CONDITION_DOMINATION_PROGRESS_TIP:0 "We own $OWNED|Y$ out of the $REQUIRED|Y$ Planets required!"
- VICTORY_CONDITION_DOMINATION_END_SCREEN:0 "$WINNER|Y$ has won the Game by Colonizing §Y40%§! of all Habitable Planets!"
+ VICTORY_CONDITION_DOMINATION_END_SCREEN:0 "$WINNER|Y$ has won the Game by Colonizing §Y75%§! of all Habitable Planets!"
 
  VICTORY_CONDITION_CONQUEST_NAME:0 "Conquest Victory"
  VICTORY_CONDITION_CONQUEST_DESC:1 "Win the game by conquering or subjugating all other Empires"

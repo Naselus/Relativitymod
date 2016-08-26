@@ -161,7 +161,7 @@ tech_robotic_workers = {
 	area = engineering
 	tier = 1
 	category = { ai }	
-	prerequisites = { "tech_powered_exoskeletons" }
+	prerequisites = { "tech_powered_exoskeletons" "tech_administrative_ai"}
 	weight = @tier1weight3
 		
 	## unlock robot POP lvl 1
@@ -474,6 +474,7 @@ tech_administrative_ai = {
 	}
 	
 	ai_weight = {
+		weight = 20
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -1032,7 +1033,7 @@ tech_synchronized_defences_2 = {
 	cost = @tier3cost1
 	category = { ai }
 	ai_update_type = military		
-	prerequisites = { "tech_synchronized_defences" "tech_self_aware_logic"}
+	prerequisites = { "tech_synchronized_defences" "tech_pd_tracking_2"}
 	is_rare = no
 	weight = @tier3weight1
 
@@ -1114,7 +1115,7 @@ tech_synchronized_defences_3 = {
 	cost = @tier4cost1
 	category = { ai }
 	ai_update_type = military		
-	prerequisites = { "tech_synchronized_defences_2" "tech_sentient_ai"}
+	prerequisites = { "tech_synchronized_defences_2" "tech_pd_tracking_3"}
 	is_rare = no
 	weight = @tier4weight1
 

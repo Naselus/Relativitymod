@@ -982,13 +982,13 @@ tech_frontier_commissars = {
 
 #Frontier Initiatives
 tech_frontier_initiatives = {
-	cost = @tier1cost3
+	cost = @tier2cost1
 	area = society
-	tier = 1
+	tier = 2
 	category = { new_worlds }
 	is_rare = yes	
 	prerequisites = { "tech_frontier_commissars" "tech_colonization_3"}
-	weight = @tier1weight3
+	weight = @tier2weight1
 		
 	feature_flags = {
 		colony_ship_rushed

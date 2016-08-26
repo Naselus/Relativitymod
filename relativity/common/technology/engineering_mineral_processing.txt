@@ -108,7 +108,7 @@ tech_mineral_processing_1 = {
 	category = { mineral_processing }	
 	weight = @tier1weight1
 		
-	# unlock mineral processing plant 1
+	# unlock mineral silo 2
 	modifier = {
 		tile_resource_minerals_mult = 0.05
 	}	
@@ -210,12 +210,12 @@ tech_mineral_processing_2 = {
 
 #Advanced Mineral Processing 3
 tech_mineral_processing_3 = {
-	cost = @tier2cost2
+	cost = @tier2cost1
 	area = engineering
 	tier = 2
 	category = { mineral_processing }	
 	prerequisites = { "tech_mineral_processing_2" "tech_colonial_centralization" }
-	weight = @tier2weight2
+	weight = @tier2weight1
 		
 	# unlock T1 mineral processing plant 3	
 
@@ -263,14 +263,14 @@ tech_mineral_processing_3 = {
 
 #Advanced Mineral Processing 4
 tech_mineral_processing_4 = {
-	cost = @tier2cost3
+	cost = @tier2cost2
 	area = engineering
 	tier = 2
 	category = { mineral_processing }	
-	prerequisites = { "tech_mineral_processing_3" "tech_colonial_centralization" }
-	weight = @tier2weight3
+	prerequisites = { "tech_mineral_processing_3" }
+	weight = @tier2weight2
 		
-	# unlock T1 mineral processing plant 3	
+	# unlock T1 mineral processing plant 4	
 
 	
 	weight_modifier = {
@@ -316,14 +316,14 @@ tech_mineral_processing_4 = {
 
 #Advanced Mineral Processing 5
 tech_mineral_processing_5 = {
-	cost = @tier2cost4
+	cost = @tier2cost3
 	area = engineering
 	tier = 2
 	category = { mineral_processing }	
-	prerequisites = { "tech_mineral_processing_4" "tech_colonial_centralization" }
-	weight = @tier2weight4
+	prerequisites = { "tech_mineral_processing_4" }
+	weight = @tier2weight3
 		
-	# unlock T1 mineral processing plant 3	
+	# unlock T1 mineral processing plant 5	
 
 	
 	weight_modifier = {
@@ -369,14 +369,14 @@ tech_mineral_processing_5 = {
 
 #Tier 2 Mineral Processing Start
 tech_mineral_processing_6 = {
-	cost = @tier3cost1
+	cost = @tier2cost3
 	area = engineering
-	tier = 3
+	tier = 2
 	category = { mineral_processing }	
 	prerequisites = { "tech_mineral_processing_5" "tech_mining_6" }
-	weight = @tier3weight1
+	weight = @tier2weight3
 		
-	# unlock T1 mineral processing plant 3	
+	# unlock T2 mineral processing plant 1	
 
 	
 	weight_modifier = {
@@ -422,14 +422,14 @@ tech_mineral_processing_6 = {
 
 #Advanced Mineral Processing 7
 tech_mineral_processing_7 = {
-	cost = @tier3cost1
+	cost = @tier2cost4
 	area = engineering
-	tier = 3
+	tier = 2
 	category = { mineral_processing }	
-	prerequisites = { "tech_mineral_processing_6" "tech_colonial_centralization" }
-	weight = @tier3weight1
+	prerequisites = { "tech_mineral_processing_6" }
+	weight = @tier2weight4
 		
-	# unlock T1 mineral processing plant 3	
+	
 
 	
 	weight_modifier = {
@@ -475,11 +475,11 @@ tech_mineral_processing_7 = {
 
 tech_mineral_processing_8 = {
 	area = engineering
-	cost = @tier3cost2
+	cost = @tier3cost1
 	tier = 3
 	category = { mineral_processing }
 	prerequisites = { "tech_mineral_processing_7"}	
-	weight = @tier3weight2
+	weight = @tier3weight1
 	
 	weight_modifier = {
 		modifier = {
@@ -524,10 +524,10 @@ tech_mineral_processing_8 = {
 
 tech_mineral_processing_9 = {
 	area = engineering
-	cost = @tier3cost3
+	cost = @tier3cost2
 	tier = 3
 	prerequisites = { "tech_mineral_processing_8"}	
-	weight = @tier3weight3
+	weight = @tier3weight2
 	
 	weight_modifier = {
 		modifier = {
@@ -572,11 +572,11 @@ tech_mineral_processing_9 = {
 
 tech_mineral_processing_10 = {
 	area = engineering
-	cost = @tier3cost4
+	cost = @tier3cost3
 	tier = 3
 	category = { mineral_processing }
 	prerequisites = { "tech_mineral_processing_9"}	
-	weight = @tier3weight4
+	weight = @tier3weight3
 	
 	weight_modifier = {
 		modifier = {
@@ -622,11 +622,11 @@ tech_mineral_processing_10 = {
 #Tier 3 Mineral_Processing
 tech_mineral_processing_11 = {
 	area = engineering
-	cost = @tier4cost1
-	tier = 4
+	cost = @tier3cost4
+	tier = 3
 	category = { mineral_processing }
-	prerequisites = { "tech_mineral_processing_10" "tech_mining_10"}	
-	weight = @tier4weight1
+	prerequisites = { "tech_mineral_processing_10" "tech_mining_11"}	
+	weight = @tier3weight4
 	
 	weight_modifier = {
 		modifier = {
@@ -671,11 +671,11 @@ tech_mineral_processing_11 = {
 
 tech_mineral_processing_12 = {
 	area = engineering
-	cost = @tier4cost2
+	cost = @tier4cost1
 	tier = 4
 	category = { mineral_processing }
 	prerequisites = { "tech_mineral_processing_11"}	
-	weight = @tier4weight2
+	weight = @tier4weight1
 	
 	weight_modifier = {
 		modifier = {
@@ -720,11 +720,11 @@ tech_mineral_processing_12 = {
 
 tech_mineral_processing_13 = {
 	area = engineering
-	cost = @tier4cost3
+	cost = @tier4cost2
 	tier = 4
 	category = { mineral_processing }
 	prerequisites = { "tech_mineral_processing_12"}	
-	weight = @tier4weight3
+	weight = @tier4weight2
 	
 	weight_modifier = {
 		modifier = {
@@ -769,11 +769,11 @@ tech_mineral_processing_13 = {
 
 tech_mineral_processing_14 = {
 	area = engineering
-	cost = @tier4cost4
+	cost = @tier4cost3
 	tier = 4
 	category = { mineral_processing }
 	prerequisites = { "tech_mineral_processing_13"}	
-	weight = @tier4weight4
+	weight = @tier4weight3
 	
 	weight_modifier = {
 		modifier = {
@@ -818,11 +818,11 @@ tech_mineral_processing_14 = {
 
 tech_mineral_processing_15 = {
 	area = engineering
-	cost = @tier5cost1
-	tier = 5
+	cost = @tier4cost4
+	tier = 4
 	category = { mineral_processing }
 	prerequisites = { "tech_mineral_processing_14"}	
-	weight = @tier5weight1
+	weight = @tier4weight4
 	
 	weight_modifier = {
 		modifier = {

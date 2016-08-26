@@ -128,6 +128,17 @@ tech_drop_pod = {
 	prerequisites = { "tech_assault_armies" }
 	weight = @tier1weight4
 	
+	weight_modifier = {
+		factor = 1
+		modifier = {
+			factor = 0
+			AND = {
+				is_ai = yes
+				years_passed < 50
+			}
+		}
+	}
+	
 	modifier = {
 		army_health = 0.05
 		army_damage_mult = 0.05
@@ -137,14 +148,14 @@ tech_drop_pod = {
 	ai_weight = { 
 		factor = 1
 		modifier = {
-			factor = 2
+			factor = 1.5
 			OR = {
 				has_trait = "trait_strong"
 				has_trait = "trait_very_strong"
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1.5
 			OR = {
 				has_ethic = "ethic_militarist"
 				has_ethic = "ethic_fanatic_militarist"
@@ -171,14 +182,14 @@ tech_army_4 = {
 	ai_weight = { 
 		factor = 1
 		modifier = {
-			factor = 2
+			factor = 1.5
 			OR = {
 				has_trait = "trait_strong"
 				has_trait = "trait_very_strong"
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1.5
 			OR = {
 				has_ethic = "ethic_militarist"
 				has_ethic = "ethic_fanatic_militarist"
@@ -219,14 +230,14 @@ tech_army_5 = {
 	ai_weight = { 
 		factor = 1
 		modifier = {
-			factor = 2
+			factor = 1.5
 			OR = {
 				has_trait = "trait_strong"
 				has_trait = "trait_very_strong"
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1.5
 			OR = {
 				has_ethic = "ethic_militarist"
 				has_ethic = "ethic_fanatic_militarist"
@@ -267,14 +278,14 @@ tech_army_6 = {
 	ai_weight = { 
 		factor = 1
 		modifier = {
-			factor = 2
+			factor = 1.5
 			OR = {
 				has_trait = "trait_strong"
 				has_trait = "trait_very_strong"
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1.5
 			OR = {
 				has_ethic = "ethic_militarist"
 				has_ethic = "ethic_fanatic_militarist"
@@ -301,14 +312,14 @@ tech_army_7 = {
 	ai_weight = { 
 		factor = 1
 		modifier = {
-			factor = 2
+			factor = 1.5
 			OR = {
 				has_trait = "trait_strong"
 				has_trait = "trait_very_strong"
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1.5
 			OR = {
 				has_ethic = "ethic_militarist"
 				has_ethic = "ethic_fanatic_militarist"
@@ -335,14 +346,14 @@ tech_army_8 = {
 	ai_weight = { 
 		factor = 1
 		modifier = {
-			factor = 2
+			factor = 1.5
 			OR = {
 				has_trait = "trait_strong"
 				has_trait = "trait_very_strong"
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1.5
 			OR = {
 				has_ethic = "ethic_militarist"
 				has_ethic = "ethic_fanatic_militarist"
@@ -369,14 +380,14 @@ tech_army_9 = {
 	ai_weight = { 
 		factor = 1
 		modifier = {
-			factor = 2
+			factor = 1.5
 			OR = {
 				has_trait = "trait_strong"
 				has_trait = "trait_very_strong"
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1.5
 			OR = {
 				has_ethic = "ethic_militarist"
 				has_ethic = "ethic_fanatic_militarist"
@@ -403,14 +414,14 @@ tech_army_10 = {
 	ai_weight = { 
 		factor = 1
 		modifier = {
-			factor = 2
+			factor = 1.5
 			OR = {
 				has_trait = "trait_strong"
 				has_trait = "trait_very_strong"
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1.5
 			OR = {
 				has_ethic = "ethic_militarist"
 				has_ethic = "ethic_fanatic_militarist"

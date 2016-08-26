@@ -316,7 +316,7 @@ tech_mass_drivers_3 = {
 	tier = 2
 	category = { ballistics }
 	ai_update_type = military	
-	prerequisites = { "tech_ballistics_13" }
+	prerequisites = { "tech_ballistics_13" "tech_fusion_power"}
 	weight = @tier2weight3
 	
 	weight_modifier = {
@@ -431,7 +431,7 @@ tech_mass_drivers_4 = {
 	tier = 3
 	category = { ballistics }
 	ai_update_type = military
-	prerequisites = { "tech_ballistics_14" }
+	prerequisites = { "tech_ballistics_14" "tech_cold_fusion_power"}
 	weight = @tier3weight1
 	
 	weight_modifier = {
@@ -556,7 +556,7 @@ tech_mass_drivers_5 = {
 	tier = 3
 	category = { ballistics }
 	ai_update_type = military
-	prerequisites = { "tech_ballistics_15" }
+	prerequisites = { "tech_ballistics_15" "tech_antimatter_power"}
 	weight = @tier3weight4
 	
 	weight_modifier = {
@@ -680,7 +680,7 @@ tech_kinetic_artillery_1 = {
 	tier = 4
 	category = { ballistics }
 	ai_update_type = military	
-	prerequisites = { "tech_ballistics_16" "tech_cold_fusion_power"}
+	prerequisites = { "tech_ballistics_16" }
 	weight = @tier4weight1
 	
 	weight_modifier = {
@@ -804,7 +804,7 @@ tech_kinetic_artillery_2 = {
 	tier = 4
 	category = { ballistics }
 	ai_update_type = military	
-	prerequisites = { "tech_ballistics_17" "tech_antimatter_power"}
+	prerequisites = { "tech_ballistics_17" }
 	weight = @tier4weight3
 	
 	weight_modifier = {
@@ -879,7 +879,7 @@ tech_autocannons_1 = {
 	tier = 2
 	category = { ballistics }	
 	ai_update_type = military
-	prerequisites = { "tech_ballistics_13" }
+	prerequisites = { "tech_ballistics_13" "tech_fusion_power"}
 	weight = @tier2weight2
 	
 	weight_modifier = {
@@ -1030,7 +1030,7 @@ tech_ballistics_18 = {
 	cost = @tier3cost2
 	tier = 3
 	category = { ballistics }
-	prerequisites = { "tech_autocannons_2"}	
+	prerequisites = { "tech_autocannons_2" "tech_cold_fusion_power"}	
 	weight = @tier3weight2
 	
 	modifier = {
@@ -1157,7 +1157,7 @@ tech_flak_batteries_1 = {
 	tier = 3
 	category = { ballistics }
 	ai_update_type = military	
-	prerequisites = { "tech_autocannons_3" }
+	prerequisites = { "tech_autocannons_3" "tech_antimatter_power"}
 	weight = @tier3weight4
 	
 	weight_modifier = {
@@ -1365,7 +1365,7 @@ tech_ballistics_20 = {
 	cost = @tier4cost4
 	tier = 4
 	category = { ballistics }
-	prerequisites = { "tech_flak_batteries_2"}	
+	prerequisites = { "tech_flak_batteries_2" "tech_zero_point_power"}	
 	weight = @tier4weight4
 	
 	modifier = {
