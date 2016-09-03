@@ -425,3 +425,27 @@ Version 102.0.1
 -Required to unlock T5 Armor (Armor 20)
 -Lots of Tech Localization Work
 -Changed Domination Victory Condition Localization to reflect mod requirement (75%, not 40%)
+-AI Work in Defines
+-AI Weights for Hyper-Entertain, Pure Monument, and Hospital 1 increased a lot
+-Mineral Proc 1 now a start tech
+-All SR techs now re-activated
+-Garanthium, Neutronium, Living Metal are now prereqs for T3,4,5 Armors.
+-Localized missile/armor components in l_english
+-Fixed frontier outpost issue
+-T3,T4,T5 armor now require Garanthium, Neutronium, Living Metal SR research unlocks before researching
+-AI Weights fixed for Voidcraft unlocks/spaceport expansion techs
+-Power plant tech costs rebalanced
+-Voidcraft/Spaceport Expansion tech costs lowered: took at least 110 years for cruisers to show up
+-Terraforming tech costs rebalanced a little
+-Military Theory/Naval Cap tech costs rebalanced
+-Military Theory/Naval Cap techs: first 5 techs get an additional -0.03 ship upkeep modifier.
+-Removed power prereqs for building xeno weapons
+-Tweaked prepreqs for power plants
+-Moved thrusters and shields from engineering to physics
+-Most spaceport modules maintenance removed for now
+-Fixed ship size issue
+-Building weights tweaks for labs
+-Fixing erroneous weights in tech
+-Tech AI weights rebalanced to encourage optimal research priorities
+-Lots of localization done for weapons, techs, economic buildings
+-A few icons connected to techs w/o icons
