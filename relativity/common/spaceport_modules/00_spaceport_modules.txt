@@ -128,9 +128,6 @@ observatory = {
 		minerals = 100
 	}
 	
-	required_resources = {
-		energy = 1
-	}
 	
 	planet_modifier = {
 		planet_sensor_range_mult = 0.5	
@@ -151,9 +148,6 @@ engineering_bay = {
 		minerals = 100
 	}
 	
-	required_resources = {
-		energy = 1
-	}
 	
 	orbit_modifier = {
 		ship_reparation_speed_mult = 0.25
@@ -193,9 +187,6 @@ synchronized_defenses = {
 		minerals = 150
 	}
 	
-	required_resources = {
-		energy = 1
-	}
 	
 	station_modifier = {
 		ship_fire_rate_mult = 0.25
@@ -218,9 +209,6 @@ corvette_assembly_yards = {
 		minerals = 100
 	}
 	
-	required_resources = {
-		energy = 1
-	}
 	
 	modifier = {
 		shipsize_corvette_construction_speed_mult = 0.25
@@ -406,9 +394,6 @@ destroyer_assembly_yards = {
 		minerals = 300
 	}
 	
-	required_resources = {
-		energy = 1
-	}
 	
 	modifier = {
 		shipsize_destroyer_construction_speed_mult = 0.25
@@ -464,9 +449,6 @@ pioneering_terminal = {
 		minerals = 300
 	}
 	
-	required_resources = {
-		energy = 2
-	}
 	
 	modifier = {
 		shipsize_colonizer_construction_speed_mult = 0.25
@@ -489,9 +471,6 @@ cruiser_assembly_yards = {
 		minerals = 400
 	}
 	
-	required_resources = {
-		energy = 3
-	}
 	
 	modifier = {
 		shipsize_cruiser_construction_speed_mult = 0.25
@@ -514,9 +493,6 @@ fleet_academy = {
 		minerals = 300
 	}
 	
-	required_resources = {
-		energy = 2
-	}
 	
 	ship_modifier = {
 		ship_evasion_add = 5
@@ -647,9 +623,6 @@ orbital_mind_control_laser = {
 		minerals = 400
 	}
 	
-	required_resources = {
-		energy = 5
-	}
 	
 	planet_modifier = {
 			pop_ethic_shift = -0.30
@@ -667,9 +640,6 @@ battleship_assembly_yards = {
 		minerals = 500
 	}	
 	
-	required_resources = {
-		energy = 4
-	}
 	
 	modifier = {
 		shipsize_battleship_construction_speed_mult = 0.25

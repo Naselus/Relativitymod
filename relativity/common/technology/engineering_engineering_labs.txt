@@ -152,7 +152,7 @@ tech_engineering_lab_1 = {
 	}
 	
 	ai_weight = {
-		weight = 10000
+		weight = 90
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -176,7 +176,7 @@ tech_engineering_lab_2 = {
 	}
 	
 	ai_weight = {
-		weight = 100
+		weight = 90
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -200,7 +200,7 @@ tech_engineering_lab_3 = {
 	}
 	
 	ai_weight = {
-		weight = 100
+		weight = 90
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -224,7 +224,7 @@ tech_engineering_lab_4 = {
 	}
 	
 	ai_weight = {
-		weight = 100
+		weight = 90
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -273,7 +273,7 @@ tech_engineering_lab_5 = {
 	}
 	
 	ai_weight = {
-		weight = 10000
+		weight = 90
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -297,7 +297,7 @@ tech_engineering_lab_6 = {
 	}
 	
 	ai_weight = {
-		weight = 100
+		weight = 50
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -321,7 +321,7 @@ tech_engineering_lab_7 = {
 	}
 	
 	ai_weight = {
-		weight = 10
+		weight = 50
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -345,7 +345,7 @@ tech_engineering_lab_8 = {
 	}
 	
 	ai_weight = {
-		weight = 10
+		weight = 50
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -369,7 +369,7 @@ tech_engineering_lab_9 = {
 	}
 	
 	ai_weight = {
-		weight = 10
+		weight = 50
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -418,7 +418,7 @@ tech_engineering_lab_10 = {
 	}
 	
 	ai_weight = {
-		weight = 1000
+		weight = 90
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -442,7 +442,7 @@ tech_engineering_lab_11 = {
 	}
 	
 	ai_weight = {
-		weight = 10
+		weight = 50
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -466,7 +466,7 @@ tech_engineering_lab_12 = {
 	}
 	
 	ai_weight = {
-		weight = 10
+		weight = 50
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -490,7 +490,7 @@ tech_engineering_lab_13 = {
 	}
 	
 	ai_weight = {
-		weight = 10
+		weight = 50
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -514,7 +514,7 @@ tech_engineering_lab_14 = {
 	}
 	
 	ai_weight = {
-		weight = 10
+		weight = 50
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -563,7 +563,7 @@ tech_engineering_lab_15 = {
 	}
 	
 	ai_weight = {
-		weight = 1000
+		weight = 90
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -587,7 +587,7 @@ tech_engineering_lab_16 = {
 	}
 	
 	ai_weight = {
-		weight = 10
+		weight = 50
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -611,7 +611,7 @@ tech_engineering_lab_17 = {
 	}
 	
 	ai_weight = {
-		weight = 10
+		weight = 50
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -635,7 +635,7 @@ tech_engineering_lab_18 = {
 	}
 	
 	ai_weight = {
-		weight = 10
+		weight = 50
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -659,7 +659,7 @@ tech_engineering_lab_19 = {
 	}
 	
 	ai_weight = {
-		weight = 10
+		weight = 50
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -708,7 +708,7 @@ tech_engineering_lab_20 = {
 	}
 	
 	ai_weight = {
-		weight = 10
+		weight = 90
 		modifier = {
 			factor = 1.25
 			research_leader = {

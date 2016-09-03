@@ -630,7 +630,7 @@ tech_tb_noxious_swamp = {
 tech_tb_volcano = {
 	cost = @tier2cost3
 	area = engineering
-	tier = 1
+	tier = 2
 	category = { terraforming }
 	prerequisites = { "tech_colonization_3" }
 	weight = @tier2weight3
@@ -706,7 +706,7 @@ tech_tb_volcano = {
 tech_tb_massive_glacier = {
 	cost = @tier2cost3
 	area = engineering
-	tier = 1
+	tier = 2
 	category = { terraforming }
 	prerequisites = { "tech_colonization_3" }
 	weight = @tier2weight3
@@ -782,12 +782,12 @@ tech_tb_massive_glacier = {
 #Climate Terraforming
 
 tech_terrestrial_sculpting = {
-	cost = @tier3cost1
+	cost = @tier2cost4
 	area = engineering
-	tier = 3
+	tier = 2
 	category = { terraforming }
 	prerequisites = { "tech_tb_noxious_swamp" "tech_tb_massive_glacier" "tech_tb_volcano"}
-	weight = @tier3weight1
+	weight = @tier2weight4
 	
 	feature_flags = {
 		build_terraform_station
@@ -828,12 +828,12 @@ tech_terrestrial_sculpting = {
 }
 
 tech_atmospheric_manipulation = {
-	cost = @tier3cost2
+	cost = @tier3cost1
 	area = engineering
 	tier = 3
 	category = { terraforming }
 	prerequisites = { "tech_terrestrial_sculpting" }
-	weight = @tier3weight2
+	weight = @tier3weight1
 	
 	# unlocks additional terraforming-options
 	
@@ -1096,11 +1096,11 @@ tech_terraforming_15 = {
 
 tech_terraforming_16 = {
 	area = engineering
-	cost = @tier4cost1
-	tier = 4
+	cost = @tier3cost4
+	tier = 3
 	category = { terraforming }
 	prerequisites = { "tech_terraforming_14" }	
-	weight = @tier4weight1
+	weight = @tier3weight4
 	
 	#Molten to Barren
 
@@ -1151,11 +1151,11 @@ tech_terraforming_16 = {
 
 tech_terraforming_17 = {
 	area = engineering
-	cost = @tier4cost1
-	tier = 4
+	cost = @tier3cost4
+	tier = 3
 	category = { terraforming }
 	prerequisites = { "tech_terraforming_15" }	
-	weight = @tier4weight1
+	weight = @tier3weight4
 	
 	#Frozen to Barren_Cold
 

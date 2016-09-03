@@ -140,6 +140,10 @@ tech_genome_mapping = {
 			has_trait = "trait_slow_breeders"
 			}
 		}
+		modifier = {
+			factor = 0
+			years_passed < 35
+		}
 	}
 }
 
@@ -183,6 +187,10 @@ tech_genetics_12 = {
 			has_ethic = "ethic_fanatic_spiritualist"
 			has_ai_personality = fanatic_purifiers
 			}
+		}
+		modifier = {
+			factor = 0
+			years_passed < 45
 		}
 	}
 }

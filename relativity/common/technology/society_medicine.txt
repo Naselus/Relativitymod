@@ -148,6 +148,10 @@ tech_medicine_2 = {
 			factor = 2
 			has_ai_personality = hive_mind
 		}
+		modifier = {
+			factor = 0
+			years_passed < 35
+		}
 	}
 }
 
@@ -175,6 +179,10 @@ tech_medicine_3 = {
 		modifier = {
 			factor = 2
 			has_ai_personality = hive_mind
+		}
+		modifier = {
+			factor = 0
+			years_passed < 45
 		}
 	}
 }

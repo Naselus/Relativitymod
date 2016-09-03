@@ -108,12 +108,12 @@
 
 #Garanthium Mining
 tech_mine_garanthium = {
-	cost = @tier1cost3
+	cost = @tier2cost2
 	area = physics
-	tier = 1
+	tier = 2
 	category = { mining }	
-	prerequisites = { "tech_sensors_2" }
-	weight = 0
+	prerequisites = { "tech_sensors_2" "tech_mineral_processing_4"}
+	weight = @tier2weight2
 	
 	weight_modifier = {
 		modifier = {
@@ -134,7 +134,7 @@ tech_mine_garanthium = {
 	}
 	
 	ai_weight = {
-		factor = 2 #strategic resource
+		factor = 100 #strategic resource
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -152,7 +152,7 @@ tech_lythuric_gas = {
 	tier = 1
 	category = { mining }
 	prerequisites = { "tech_sensors_2" }
-	weight = 0
+	weight = @tier1weight3
 		
 	## unlock see lythuric gas
 	
@@ -193,7 +193,7 @@ tech_engos_vapor = {
 	tier = 1
 	category = { mining }	
 	prerequisites = { "tech_sensors_2" }
-	weight = 0
+	weight = @tier1weight3
 	
 	weight_modifier = {
 		modifier = {
@@ -232,7 +232,7 @@ tech_mine_teldar = {
 	tier = 1
 	category = { mining }	
 	prerequisites = { "tech_sensors_2" }
-	weight = 0
+	weight = @tier1weight3
 	
 	weight_modifier = {
 		modifier = {
@@ -273,7 +273,7 @@ tech_pitharan_dust = {
 	tier = 1
 	category = { mining }	
 	prerequisites = { "tech_sensors_3" }
-	weight = 0
+	weight = @tier1weight3
 	
 	weight_modifier = {
 		modifier = {
@@ -312,7 +312,7 @@ tech_mine_orillium = {
 	tier = 1
 	category = { mining }	
 	prerequisites = { "tech_sensors_2" }
-	weight = 0
+	weight = @tier1weight3
 	
 	weight_modifier = {
 		modifier = {
@@ -350,12 +350,12 @@ tech_mine_orillium = {
 
 #Neutronium Extraction 
 tech_mine_neutronium = {
-	cost = @tier3cost3
+	cost = @tier3cost1
 	area = physics
 	tier = 3
 	category = { mining }
-	prerequisites = { "tech_sensors_4" "tech_mineral_processing_11"}
-	weight = @tier3weight3
+	prerequisites = { "tech_sensors_3" "tech_mineral_processing_7"}
+	weight = @tier3weight1
 		
 	## unlock see neutronium ore
 	
@@ -370,7 +370,7 @@ tech_mine_neutronium = {
 	}
 	
 	ai_weight = {
-		factor = 2 #strategic resource
+		factor = 100 #strategic resource
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -383,15 +383,32 @@ tech_mine_neutronium = {
 
 #Living Metal
 tech_mine_living_metal = {
-	cost = @tier3cost4
+	cost = @tier3cost3
 	area = physics
 	tier = 3
 	category = { mining }
-	prerequisites = { "tech_space_construction" }
-	weight = 0
+	prerequisites = { "tech_sensors_4" "tech_mineral_processing_11"}
+	weight = @tier3weight3
 	
 	weight_modifier = {
-		factor = 0
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_mining"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 100 #strategic resource
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_mining"
+			}
+		}
 	}
 }
 
@@ -401,7 +418,7 @@ tech_mine_betharian = {
 	area = physics
 	tier = 1
 	category = { mining }	
-	prerequisites = { "tech_space_construction" }
+	prerequisites = { "tech_space_construction" "tech_power_plant_3"}
 	weight = @tier1weight3
 	
 	weight_modifier = {
@@ -422,7 +439,7 @@ tech_mine_betharian = {
 		}
 	
 	ai_weight = {
-		factor = 2 #strategic resource
+		factor = 5 #strategic resource
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -433,7 +450,7 @@ tech_mine_betharian = {
 		modifier = {
 			factor = 0
 			NOT = {
-				years_passed > 35
+				years_passed > 50
 			}
 		}
 	}	
@@ -491,7 +508,7 @@ tech_mine_satramene = {
 	tier = 2
 	category = { mining }	
 	prerequisites = { "tech_sensors_3" }
-	weight = 0
+	weight = @tier2weight1
 	
 	weight_modifier = {
 		modifier = {

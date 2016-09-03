@@ -133,7 +133,7 @@ tech_power_plant_2 = {
 	}
 	
 	ai_weight = {
-		factor = 5	#power plants are good
+		factor = 100	#power plants are good
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -159,17 +159,21 @@ tech_power_plant_2 = {
 			has_ethic = "ethic_fanatic_collectivist"
 			}
 		}
+		modifier = {
+			factor = 5
+			years_passed > 7
+		}
 	}
 }
 
 #Power Plant III
 tech_power_plant_3 = {
-	cost = @tier2cost1
+	cost = @tier1cost4
 	area = physics
-	tier = 2
+	tier = 1
 	category = { power_plants }
-	prerequisites = { "tech_power_plant_2" "tech_colonial_centralization"}
-	weight = @tier2weight1
+	prerequisites = { "tech_power_plant_2" "tech_adaptive_bureaucracy"}
+	weight = @tier1weight4
 		
 	## unlock power plant lvl 3
 	
@@ -185,7 +189,7 @@ tech_power_plant_3 = {
 	}
 	
 	ai_weight = {
-		factor = 5	#power plants are good
+		factor = 100	#power plants are good
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -211,17 +215,21 @@ tech_power_plant_3 = {
 			has_ethic = "ethic_fanatic_collectivist"
 			}
 		}
+		modifier = {
+			factor = 5
+			years_passed > 25
+		}
 	}
 }
 
 #Power Plant IV
 tech_power_plant_4 = {
-	cost = @tier2cost3
+	cost = @tier2cost1
 	area = physics
 	tier = 2
 	category = { power_plants }
-	prerequisites = { "tech_power_plant_3" "tech_galactic_administration"}
-	weight = @tier2weight3
+	prerequisites = { "tech_power_plant_3" }
+	weight = @tier2weight1
 		
 	## unlock power plant lvl 4
 	
@@ -236,7 +244,7 @@ tech_power_plant_4 = {
 	}
 	
 	ai_weight = {
-		factor = 5	#power plants are good
+		factor = 100	#power plants are good
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -262,17 +270,21 @@ tech_power_plant_4 = {
 			has_ethic = "ethic_fanatic_collectivist"
 			}
 		}
+		modifier = {
+			factor = 5
+			years_passed > 35
+		}
 	}
 }
 
 #Power Plant V
 tech_power_plant_5 = {
-	cost = @tier2cost4
+	cost = @tier2cost2
 	area = physics
 	tier = 2
 	category = { power_plants }
-	prerequisites = { "tech_power_plant_4" "tech_galactic_administration"}
-	weight = @tier2weight4
+	prerequisites = { "tech_power_plant_4" }
+	weight = @tier2weight2
 		
 	## unlock power plant lvl 5
 	
@@ -287,7 +299,7 @@ tech_power_plant_5 = {
 	}
 	
 	ai_weight = {
-		factor = 5	#power plants are good
+		factor = 100	#power plants are good
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -313,15 +325,129 @@ tech_power_plant_5 = {
 			has_ethic = "ethic_fanatic_collectivist"
 			}
 		}
+		modifier = {
+			factor = 0
+			NOT = {
+				has_technology = "tech_fusion_power"
+			}
+		}
+		modifier = {
+			factor = 5
+			years_passed > 50
+		}
 	}
 }
 
 tech_power_plant_6 = {
 	area = physics
+	cost = @tier2cost3
+	tier = 2
+	category = { power_plants }
+	prerequisites = { "tech_power_plant_5" "tech_colonial_centralization"}	
+	weight = @tier2weight3
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_power_plants"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 100	#power plants are good
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_power_plants"
+			}
+		}
+		modifier = {
+			factor = 1.5
+			has_trait = "trait_industrious"
+		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_ai_personality = peaceful_traders
+			has_ai_personality = ruthless_capitalists
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = "ethic_collectivist"
+			has_ethic = "ethic_fanatic_collectivist"
+			}
+		}
+		modifier = {
+			factor = 5
+			years_passed > 60
+		}
+	}
+}
+
+tech_power_plant_7 = {
+	area = physics
+	cost = @tier2cost4
+	tier = 2
+	category = { power_plants }
+	prerequisites = { "tech_power_plant_6"}	
+	weight = @tier2weight4
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_power_plants"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 100	#power plants are good
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_power_plants"
+			}
+		}
+		modifier = {
+			factor = 1.5
+			has_trait = "trait_industrious"
+		}
+		modifier = {
+			factor = 3
+			OR = {
+			has_ai_personality = peaceful_traders
+			has_ai_personality = ruthless_capitalists
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ethic = "ethic_collectivist"
+			has_ethic = "ethic_fanatic_collectivist"
+			}
+		}
+		modifier = {
+			factor = 5
+			years_passed > 70
+		}
+	}
+}
+
+tech_power_plant_8 = {
+	area = physics
 	cost = @tier3cost1
 	tier = 3
 	category = { power_plants }
-	prerequisites = { "tech_power_plant_5"}	
+	prerequisites = { "tech_power_plant_7"}	
 	weight = @tier3weight1
 	
 	weight_modifier = {
@@ -335,7 +461,7 @@ tech_power_plant_6 = {
 	}
 	
 	ai_weight = {
-		factor = 5	#power plants are good
+		factor = 100	#power plants are good
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -361,15 +487,19 @@ tech_power_plant_6 = {
 			has_ethic = "ethic_fanatic_collectivist"
 			}
 		}
+		modifier = {
+			factor = 5
+			years_passed > 80
+		}
 	}
 }
 
-tech_power_plant_7 = {
+tech_power_plant_9 = {
 	area = physics
 	cost = @tier3cost2
 	tier = 3
 	category = { power_plants }
-	prerequisites = { "tech_power_plant_6"}	
+	prerequisites = { "tech_power_plant_8" "tech_galactic_administration"}	
 	weight = @tier3weight2
 	
 	weight_modifier = {
@@ -383,7 +513,7 @@ tech_power_plant_7 = {
 	}
 	
 	ai_weight = {
-		factor = 5	#power plants are good
+		factor = 100	#power plants are good
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -409,15 +539,19 @@ tech_power_plant_7 = {
 			has_ethic = "ethic_fanatic_collectivist"
 			}
 		}
+		modifier = {
+			factor = 5
+			years_passed > 90
+		}
 	}
 }
 
-tech_power_plant_8 = {
+tech_power_plant_10 = {
 	area = physics
 	cost = @tier3cost3
 	tier = 3
 	category = { power_plants }
-	prerequisites = { "tech_power_plant_7"}	
+	prerequisites = { "tech_power_plant_9"}	
 	weight = @tier3weight3
 	
 	weight_modifier = {
@@ -431,7 +565,7 @@ tech_power_plant_8 = {
 	}
 	
 	ai_weight = {
-		factor = 5	#power plants are good
+		factor = 100	#power plants are good
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -457,15 +591,19 @@ tech_power_plant_8 = {
 			has_ethic = "ethic_fanatic_collectivist"
 			}
 		}
+		modifier = {
+			factor = 5
+			years_passed > 100
+		}
 	}
 }
 
-tech_power_plant_9 = {
+tech_power_plant_11 = {
 	area = physics
 	cost = @tier3cost4
 	tier = 3
 	category = { power_plants }
-	prerequisites = { "tech_power_plant_8"}	
+	prerequisites = { "tech_power_plant_10"}	
 	weight = @tier3weight4
 	
 	weight_modifier = {
@@ -479,7 +617,7 @@ tech_power_plant_9 = {
 	}
 	
 	ai_weight = {
-		factor = 5	#power plants are good
+		factor = 100	#power plants are good
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -505,15 +643,19 @@ tech_power_plant_9 = {
 			has_ethic = "ethic_fanatic_collectivist"
 			}
 		}
+		modifier = {
+			factor = 5
+			years_passed > 110
+		}
 	}
 }
 
-tech_power_plant_10 = {
+tech_power_plant_12 = {
 	area = physics
 	cost = @tier4cost1
 	tier = 4
 	category = { power_plants }
-	prerequisites = { "tech_power_plant_9"}	
+	prerequisites = { "tech_power_plant_11"}	
 	weight = @tier4weight1
 	
 	weight_modifier = {
@@ -527,7 +669,7 @@ tech_power_plant_10 = {
 	}
 	
 	ai_weight = {
-		factor = 5	#power plants are good
+		factor = 100	#power plants are good
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -553,15 +695,19 @@ tech_power_plant_10 = {
 			has_ethic = "ethic_fanatic_collectivist"
 			}
 		}
+		modifier = {
+			factor = 5
+			years_passed > 120
+		}
 	}
 }
 
-tech_power_plant_11 = {
+tech_power_plant_13 = {
 	area = physics
 	cost = @tier4cost2
 	tier = 4
 	category = { power_plants }
-	prerequisites = { "tech_power_plant_10"}	
+	prerequisites = { "tech_power_plant_12"}	
 	weight = @tier4weight2
 	
 	weight_modifier = {
@@ -575,7 +721,7 @@ tech_power_plant_11 = {
 	}
 	
 	ai_weight = {
-		factor = 5	#power plants are good
+		factor = 100	#power plants are good
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -601,15 +747,19 @@ tech_power_plant_11 = {
 			has_ethic = "ethic_fanatic_collectivist"
 			}
 		}
+		modifier = {
+			factor = 5
+			years_passed > 130
+		}
 	}
 }
 
-tech_power_plant_12 = {
+tech_power_plant_14 = {
 	area = physics
 	cost = @tier4cost3
 	tier = 4
 	category = { power_plants }
-	prerequisites = { "tech_power_plant_11"}	
+	prerequisites = { "tech_power_plant_13"}	
 	weight = @tier4weight3
 	
 	weight_modifier = {
@@ -623,7 +773,7 @@ tech_power_plant_12 = {
 	}
 	
 	ai_weight = {
-		factor = 5	#power plants are good
+		factor = 100	#power plants are good
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -649,15 +799,19 @@ tech_power_plant_12 = {
 			has_ethic = "ethic_fanatic_collectivist"
 			}
 		}
+		modifier = {
+			factor = 5
+			years_passed > 140
+		}
 	}
 }
 
-tech_power_plant_13 = {
+tech_power_plant_15 = {
 	area = physics
 	cost = @tier4cost4
 	tier = 4
 	category = { power_plants }
-	prerequisites = { "tech_power_plant_12"}	
+	prerequisites = { "tech_power_plant_14"}	
 	weight = @tier4weight4
 	
 	weight_modifier = {
@@ -671,7 +825,7 @@ tech_power_plant_13 = {
 	}
 	
 	ai_weight = {
-		factor = 5	#power plants are good
+		factor = 100	#power plants are good
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -697,101 +851,9 @@ tech_power_plant_13 = {
 			has_ethic = "ethic_fanatic_collectivist"
 			}
 		}
-	}
-}
-
-tech_power_plant_14 = {
-	area = physics
-	cost = @tier5cost1
-	tier = 5
-	category = { power_plants }
-	prerequisites = { "tech_power_plant_13"}	
-	weight = @tier5weight1
-	
-	weight_modifier = {
 		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_power_plants"
-			}
-		}
-	}
-	
-	ai_weight = {
-		factor = 5	#power plants are good
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_power_plants"
-			}
-		}
-		modifier = {
-			factor = 1.5
-			has_trait = "trait_industrious"
-		}
-		modifier = {
-			factor = 3
-			OR = {
-			has_ai_personality = peaceful_traders
-			has_ai_personality = ruthless_capitalists
-			}
-		}
-		modifier = {
-			factor = 2
-			OR = {
-			has_ethic = "ethic_collectivist"
-			has_ethic = "ethic_fanatic_collectivist"
-			}
-		}
-	}
-}
-
-tech_power_plant_15 = {
-	area = physics
-	cost = @tier5cost1
-	tier = 5
-	category = { power_plants }
-	prerequisites = { "tech_power_plant_14"}	
-	weight = @tier5weight1
-	
-	weight_modifier = {
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_power_plants"
-			}
-		}
-	}
-	
-	ai_weight = {
-		factor = 5	#power plants are good
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_power_plants"
-			}
-		}
-		modifier = {
-			factor = 1.5
-			has_trait = "trait_industrious"
-		}
-		modifier = {
-			factor = 3
-			OR = {
-			has_ai_personality = peaceful_traders
-			has_ai_personality = ruthless_capitalists
-			}
-		}
-		modifier = {
-			factor = 2
-			OR = {
-			has_ethic = "ethic_collectivist"
-			has_ethic = "ethic_fanatic_collectivist"
-			}
+			factor = 5
+			years_passed > 150
 		}
 	}
 }

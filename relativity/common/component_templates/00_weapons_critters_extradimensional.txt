@@ -18,7 +18,7 @@ weapon_component_template = {
 	tags = { weapon_type_energy }
 	
 	component_set = "EXTRADIMENSIONAL_1"
-	prerequisites = { "tech_extradimensional_weapon_1" "tech_antimatter_power"}
+	prerequisites = { "tech_extradimensional_weapon_1"}
 	cost = @critter_cost_value
 }
 
@@ -34,7 +34,7 @@ weapon_component_template = {
 	tags = { weapon_type_energy }
 	
 	component_set = "EXTRADIMENSIONAL_1"
-	prerequisites = { "tech_extradimensional_weapon_1" "tech_antimatter_power"}
+	prerequisites = { "tech_extradimensional_weapon_1" }
 	cost = @critter_cost_value
 }
 
@@ -50,7 +50,7 @@ weapon_component_template = {
 	tags = { weapon_type_energy }
 	
 	component_set = "EXTRADIMENSIONAL_1"
-	prerequisites = { "tech_extradimensional_weapon_1" "tech_antimatter_power"}
+	prerequisites = { "tech_extradimensional_weapon_1" }
 	cost = @critter_cost_value
 }
 

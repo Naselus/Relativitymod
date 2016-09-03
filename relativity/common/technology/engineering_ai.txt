@@ -474,7 +474,7 @@ tech_administrative_ai = {
 	}
 	
 	ai_weight = {
-		weight = 20
+		weight = 90
 		modifier = {
 			factor = 1.25
 			research_leader = {

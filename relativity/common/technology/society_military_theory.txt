@@ -143,7 +143,7 @@ tech_doctrine_fleet_size_1 = {
 	}
 	
 	ai_weight = {
-		factor = 3
+		factor = 80
 		modifier = {
 			factor = 2
 			has_ethic = "ethic_militarist"
@@ -273,10 +273,11 @@ tech_doctrine_fleet_size_2 = {
 	
 	modifier = {
 		navy_size_mult = 0.10
+		ship_upkeep_mult = -0.03
 	}
 	
 	weight_modifier = {
-		factor = 3
+		factor = 50
 		modifier = {
 			factor = 0.65
 			has_ethic = ethic_fanatic_pacifist
@@ -303,7 +304,7 @@ tech_doctrine_fleet_size_2 = {
 	}
 	
 	ai_weight = {
-		factor = 3
+		factor = 80
 		modifier = {
 			factor = 2
 			has_ethic = "ethic_militarist"
@@ -421,6 +422,7 @@ tech_doctrine_command_matrix = {
 	category = { military_theory }
 	prerequisites = { "tech_doctrine_fleet_size_2" }
 	weight = @tier2weight2
+	is_rare = yes
 	
 	modifier = { 
 		ship_upkeep_mult = -0.1 
@@ -462,7 +464,7 @@ tech_doctrine_command_matrix = {
 	}
 	
 	ai_weight = {
-		factor = 3
+		factor = 80
 		modifier = {
 			factor = 2
 			has_ethic = "ethic_militarist"
@@ -501,15 +503,16 @@ tech_doctrine_command_matrix = {
 
 #Doctrine: Interstellar Warfare
 tech_doctrine_fleet_size_3 = {
-	cost = @tier2cost3
+	cost = @tier2cost1
 	area = society
 	tier = 2
 	category = { military_theory }
 	prerequisites = { "tech_doctrine_fleet_size_2" }
-	weight = @tier2weight3
+	weight = @tier2weight1
 	
 	modifier = {
 		navy_size_mult = 0.10
+		ship_upkeep_mult = -0.03
 	}
 	
 	weight_modifier = {
@@ -540,7 +543,7 @@ tech_doctrine_fleet_size_3 = {
 	}
 	
 	ai_weight = {
-		factor = 3
+		factor = 80
 		modifier = {
 			factor = 2
 			has_ethic = "ethic_militarist"
@@ -579,12 +582,12 @@ tech_doctrine_fleet_size_3 = {
 
 #Doctrine: Refit Standards
 tech_doctrine_refit_standards = {
-	cost = @tier3cost2
+	cost = @tier3cost1
 	area = society
 	tier = 3
 	category = { military_theory }
 	prerequisites = { "tech_doctrine_fleet_size_3" }
-	weight = @tier3weight2
+	weight = @tier3weight1
 	
 	modifier = { 
 		country_ship_upgrade_cost_mult = -0.15
@@ -655,15 +658,16 @@ tech_doctrine_refit_standards = {
 
 #Doctrine: Fluid Fleet Templates
 tech_doctrine_fleet_size_4 = {
-	cost = @tier3cost3
+	cost = @tier2cost3
 	area = society
-	tier = 3
+	tier = 2
 	category = { military_theory }
 	prerequisites = { "tech_doctrine_fleet_size_3" }
-	weight = @tier3weight3
+	weight = @tier2weight3
 	
 	modifier = {
 		navy_size_mult = 0.10
+		ship_upkeep_mult = -0.03
 	}
 	
 	weight_modifier = {
@@ -694,7 +698,7 @@ tech_doctrine_fleet_size_4 = {
 	}
 	
 	ai_weight = {
-		factor = 3
+		factor = 100
 		modifier = {
 			factor = 2
 			has_ethic = "ethic_militarist"
@@ -733,15 +737,16 @@ tech_doctrine_fleet_size_4 = {
 
 #Doctrine: Armada Battle Formation
 tech_doctrine_fleet_size_5 = {
-	cost = @tier3cost4
+	cost = @tier2cost4
 	area = society
-	tier = 3
+	tier = 2
 	category = { military_theory }
 	prerequisites = { "tech_doctrine_fleet_size_4" }
-	weight = @tier3weight4
+	weight = @tier2weight4
 	
 	modifier = {
 		navy_size_mult = 0.10
+		ship_upkeep_mult = -0.03
 	}
 	
 	weight_modifier = {
@@ -772,7 +777,7 @@ tech_doctrine_fleet_size_5 = {
 	}
 	
 	ai_weight = {
-		factor = 3
+		factor = 100
 		modifier = {
 			factor = 2
 			has_ethic = "ethic_militarist"
@@ -811,16 +816,16 @@ tech_doctrine_fleet_size_5 = {
 
 tech_military_supremacy = {
 	area = society
-	cost = @tier4cost1
-	tier = 4
+	cost = @tier3cost4
+	tier = 3
 	category = { military_theory }
 	is_rare = yes
 	is_dangerous = yes
 	prerequisites = { "tech_doctrine_fleet_size_5" }
-	weight = @tier4weight1
+	weight = @tier3weight4
 	
 	modifier = {
-		navy_size_mult = 0.02
+		navy_size_mult = 0.1
 		ship_upkeep_mult = -0.02
 	}
 	
@@ -855,7 +860,7 @@ tech_military_supremacy = {
 	}
 	
 	ai_weight = {
-		factor = 2
+		factor = 50
 		modifier = {
 			factor = 2
 			has_ethic = "ethic_militarist"
@@ -894,19 +899,19 @@ tech_military_supremacy = {
 
 tech_military_theory_14 = {
 	area = society
-	cost = @tier4cost1
-	tier = 4
+	cost = @tier3cost1
+	tier = 3
 	category = { military_theory }
-	weight = @tier4weight1
+	weight = @tier3weight1
 	prerequisites = { "tech_military_supremacy" }
 	
 	modifier = {
-		navy_size_mult = 0.02
+		navy_size_mult = 0.1
 		ship_upkeep_mult = -0.02
 	}
 	
 	ai_weight = {
-		factor = 2
+		factor = 50
 		modifier = {
 			factor = 2
 			has_ethic = "ethic_militarist"
@@ -945,19 +950,19 @@ tech_military_theory_14 = {
 
 tech_military_theory_15 = {
 	area = society
-	cost = @tier4cost2
-	tier = 4
+	cost = @tier3cost2
+	tier = 3
 	category = { military_theory }
 	prerequisites = { "tech_military_theory_14" }
-	weight = @tier4weight2
+	weight = @tier3weight2
 
 	modifier = {
-		navy_size_mult = 0.02
+		navy_size_mult = 0.1
 		ship_upkeep_mult = -0.02
 	}
 	
 	ai_weight = {
-		factor = 2
+		factor = 50
 		modifier = {
 			factor = 2
 			has_ethic = "ethic_militarist"
@@ -996,19 +1001,19 @@ tech_military_theory_15 = {
 
 tech_military_theory_16 = {
 	area = society
-	cost = @tier4cost2
-	tier = 4
+	cost = @tier3cost3
+	tier = 3
 	category = { military_theory }
 	prerequisites = { "tech_military_theory_15" }
-	weight = @tier4weight2
+	weight = @tier3weight3
 
 	modifier = {
-		navy_size_mult = 0.02
+		navy_size_mult = 0.1
 		ship_upkeep_mult = -0.02
 	}
 	
 	ai_weight = {
-		factor = 2
+		factor = 50
 		modifier = {
 			factor = 2
 			has_ethic = "ethic_militarist"
@@ -1047,19 +1052,19 @@ tech_military_theory_16 = {
 
 tech_military_theory_17 = {
 	area = society
-	cost = @tier4cost3
-	tier = 4
+	cost = @tier3cost4
+	tier = 3
 	category = { military_theory }
 	prerequisites = { "tech_military_theory_16" }	
-	weight = @tier4weight3
+	weight = @tier3weight4
 
 	modifier = {
-		navy_size_mult = 0.02
+		navy_size_mult = 0.1
 		ship_upkeep_mult = -0.02
 	}
 	
 	ai_weight = {
-		factor = 2
+		factor = 50
 		modifier = {
 			factor = 2
 			has_ethic = "ethic_militarist"
@@ -1098,19 +1103,19 @@ tech_military_theory_17 = {
 
 tech_military_theory_18 = {
 	area = society
-	cost = @tier4cost3
+	cost = @tier4cost1
 	tier = 4
 	category = { military_theory }
 	prerequisites = { "tech_military_theory_17" }	
-	weight = @tier4weight3
+	weight = @tier4weight1
 
 	modifier = {
-		navy_size_mult = 0.02
+		navy_size_mult = 0.1
 		ship_upkeep_mult = -0.02
 	}
 	
 	ai_weight = {
-		factor = 2
+		factor = 50
 		modifier = {
 			factor = 2
 			has_ethic = "ethic_militarist"
@@ -1149,19 +1154,19 @@ tech_military_theory_18 = {
 
 tech_military_theory_19 = {
 	area = society
-	cost = @tier4cost4
+	cost = @tier4cost2
 	tier = 4
 	category = { military_theory }
 	prerequisites = { "tech_military_theory_18" }
-	weight = @tier4weight4
+	weight = @tier4weight2
 
 	modifier = {
-		navy_size_mult = 0.02
+		navy_size_mult = 0.1
 		ship_upkeep_mult = -0.02
 	}
 	
 	ai_weight = {
-		factor = 2
+		factor = 50
 		modifier = {
 			factor = 2
 			has_ethic = "ethic_militarist"
@@ -1200,19 +1205,19 @@ tech_military_theory_19 = {
 
 tech_military_theory_20 = {
 	area = society
-	cost = @tier5cost1
-	tier = 5
+	cost = @tier4cost3
+	tier = 4
 	category = { military_theory }
 	prerequisites = { "tech_military_theory_19" }	
-	weight = @tier5weight1
+	weight = @tier4weight3
 
 	modifier = {
-		navy_size_mult = 0.02
+		navy_size_mult = 0.1
 		ship_upkeep_mult = -0.02
 	}
 	
 	ai_weight = {
-		factor = 2
+		factor = 50
 		modifier = {
 			factor = 2
 			has_ethic = "ethic_militarist"
@@ -1325,7 +1330,7 @@ tech_centralized_command = {
 		modifier = {
 			factor = 0
 			NOT = {
-			years_passed > 25
+			years_passed > 35
 			}
 		}
 	}

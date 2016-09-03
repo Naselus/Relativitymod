@@ -141,9 +141,9 @@ building_power_plant_1 = {
 			}
 		}
 	}
-	ai_special_building = yes
+	#ai_special_building = yes
 	ai_weight = {
-		weight = 45
+		weight = 40
 	
 		
 		modifier = {
@@ -160,26 +160,26 @@ building_power_plant_1 = {
 			amount > 2
 			}
 		}
-		# modifier = {
-			# factor = 0
-			# tile = {
+		#modifier = {
+			 #factor = 0
+			 #tile = {
 				# OR = {
-					# has_deposit = "d_physics_deposit"
-					# has_deposit = "d_rich_physics_deposit"
-					# has_deposit = "d_vast_physics_deposit"
-					# has_deposit = "d_engineering_deposit"
-					# has_deposit = "d_rich_engineering_deposit"
-					# has_deposit = "d_vast_engineering_deposit"
-					# has_deposit = "d_society_deposit"
-					# has_deposit = "d_rich_society_deposit"
-					# has_deposit = "d_vast_society_deposit"
-					# has_deposit = "d_immense_society_deposit"
-					# has_deposit = "d_immense_physics_deposit"
-					# has_deposit = "d_immense_engineering_deposit"
+				#	 has_deposit = "d_physics_deposit"
+				#	 has_deposit = "d_rich_physics_deposit"
+				#	 has_deposit = "d_vast_physics_deposit"
+				#	 has_deposit = "d_engineering_deposit"
+				#	 has_deposit = "d_rich_engineering_deposit"
+				#	 has_deposit = "d_vast_engineering_deposit"
+				#	 has_deposit = "d_society_deposit"
+				#	 has_deposit = "d_rich_society_deposit"
+				#	 has_deposit = "d_vast_society_deposit"
+				#	 has_deposit = "d_immense_society_deposit"
+				#	 has_deposit = "d_immense_physics_deposit"
+				#	 has_deposit = "d_immense_engineering_deposit"
 
-				# }
-			# }
-		# }
+				 #}
+			 #}
+		 #}
 	}
 }
 
@@ -447,29 +447,29 @@ betharian_power_plant_1 = {
 		}
 	}
 	
-	ai_special_building = yes
+	#ai_special_building = yes
 	ai_weight = {
 		weight = 60
-# # modifier = {
-			# # factor = 0
-			# # tile = {
-				# # OR = {
-					# # has_deposit = "d_physics_deposit"
-					# # has_deposit = "d_rich_physics_deposit"
-					# # has_deposit = "d_vast_physics_deposit"
-					# # has_deposit = "d_engineering_deposit"
-					# # has_deposit = "d_rich_engineering_deposit"
-					# # has_deposit = "d_vast_engineering_deposit"
-					# # has_deposit = "d_society_deposit"
-					# # has_deposit = "d_rich_society_deposit"
-					# # has_deposit = "d_vast_society_deposit"
-					# # has_deposit = "d_immense_society_deposit"
-					# # has_deposit = "d_immense_physics_deposit"
-					# # has_deposit = "d_immense_engineering_deposit"
+#modifier = {
+			 #factor = 0
+			 #tile = {
+				# OR = {
+				#	 has_deposit = "d_physics_deposit"
+				#	 has_deposit = "d_rich_physics_deposit"
+				#	 has_deposit = "d_vast_physics_deposit"
+				#	 has_deposit = "d_engineering_deposit"
+				#	 has_deposit = "d_rich_engineering_deposit"
+				#	 has_deposit = "d_vast_engineering_deposit"
+				#	 has_deposit = "d_society_deposit"
+				#	 has_deposit = "d_rich_society_deposit"
+				#	 has_deposit = "d_vast_society_deposit"
+				#	 has_deposit = "d_immense_society_deposit"
+				#	 has_deposit = "d_immense_physics_deposit"
+				#	 has_deposit = "d_immense_engineering_deposit"
 
-				# # }
-			# # }
-		# # }
+				 #}
+			 #}
+		 #}
 	}
 }
 
@@ -767,29 +767,29 @@ building_power_hub_1 = {
 		"tech_power_hub_1"
 	}
 	
-	ai_special_building = yes
+	#ai_special_building = yes
 	ai_weight = {
 		weight = 60
-# modifier = {
-			# factor = 0
-			# tile = {
+#modifier = {
+			 #factor = 0
+			 #tile = {
 				# OR = {
-					# has_deposit = "d_physics_deposit"
-					# has_deposit = "d_rich_physics_deposit"
-					# has_deposit = "d_vast_physics_deposit"
-					# has_deposit = "d_engineering_deposit"
-					# has_deposit = "d_rich_engineering_deposit"
-					# has_deposit = "d_vast_engineering_deposit"
-					# has_deposit = "d_society_deposit"
-					# has_deposit = "d_rich_society_deposit"
-					# has_deposit = "d_vast_society_deposit"
-					# has_deposit = "d_immense_society_deposit"
-					# has_deposit = "d_immense_physics_deposit"
-					# has_deposit = "d_immense_engineering_deposit"
+				#	 has_deposit = "d_physics_deposit"
+				#	 has_deposit = "d_rich_physics_deposit"
+				#	 has_deposit = "d_vast_physics_deposit"
+				#	 has_deposit = "d_engineering_deposit"
+				#	 has_deposit = "d_rich_engineering_deposit"
+				#	 has_deposit = "d_vast_engineering_deposit"
+				#	 has_deposit = "d_society_deposit"
+				#	 has_deposit = "d_rich_society_deposit"
+				#	 has_deposit = "d_vast_society_deposit"
+				#	 has_deposit = "d_immense_society_deposit"
+				#	 has_deposit = "d_immense_physics_deposit"
+				#	 has_deposit = "d_immense_engineering_deposit"
 
-				# }
-			# }
-		# }
+				 #}
+			 #}
+		 #}
 	}
 }
 
@@ -951,7 +951,7 @@ building_hydroponics_farm_1 = {
 			}
 		}
 	}
-ai_special_building = yes
+#ai_special_building = yes
 	ai_weight = {
 		weight = 40
 		modifier = {
@@ -968,26 +968,26 @@ ai_special_building = yes
 			amount > 2
 			}
 		}
-		# modifier = {
-			# factor = 0
-			# tile = {
+		#modifier = {
+			 #factor = 0
+			 #tile = {
 				# OR = {
-					# has_deposit = "d_physics_deposit"
-					# has_deposit = "d_rich_physics_deposit"
-					# has_deposit = "d_vast_physics_deposit"
-					# has_deposit = "d_engineering_deposit"
-					# has_deposit = "d_rich_engineering_deposit"
-					# has_deposit = "d_vast_engineering_deposit"
-					# has_deposit = "d_society_deposit"
-					# has_deposit = "d_rich_society_deposit"
-					# has_deposit = "d_vast_society_deposit"
-					# has_deposit = "d_immense_society_deposit"
-					# has_deposit = "d_immense_physics_deposit"
-					# has_deposit = "d_immense_engineering_deposit"
+				#	 has_deposit = "d_physics_deposit"
+				#	 has_deposit = "d_rich_physics_deposit"
+				#	 has_deposit = "d_vast_physics_deposit"
+				#	 has_deposit = "d_engineering_deposit"
+				#	 has_deposit = "d_rich_engineering_deposit"
+				#	 has_deposit = "d_vast_engineering_deposit"
+				#	 has_deposit = "d_society_deposit"
+				#	 has_deposit = "d_rich_society_deposit"
+				#	 has_deposit = "d_vast_society_deposit"
+				#	 has_deposit = "d_immense_society_deposit"
+				#	 has_deposit = "d_immense_physics_deposit"
+				#	 has_deposit = "d_immense_engineering_deposit"
 
-				# }
-			# }
-		# }
+				 #}
+			 #}
+		 #}
 	}	
 }
 
@@ -1236,29 +1236,29 @@ building_mineral_silo_1 = {
 		building_mineral_silo_2
 	}		
 	
-	ai_special_building = yes
+	#ai_special_building = yes
 	ai_weight = {
 		weight = 30
-# modifier = {
-			# factor = 0
-			# tile = {
+#modifier = {
+			 #factor = 0
+			 #tile = {
 				# OR = {
-					# has_deposit = "d_physics_deposit"
-					# has_deposit = "d_rich_physics_deposit"
-					# has_deposit = "d_vast_physics_deposit"
-					# has_deposit = "d_engineering_deposit"
-					# has_deposit = "d_rich_engineering_deposit"
-					# has_deposit = "d_vast_engineering_deposit"
-					# has_deposit = "d_society_deposit"
-					# has_deposit = "d_rich_society_deposit"
-					# has_deposit = "d_vast_society_deposit"
-					# has_deposit = "d_immense_society_deposit"
-					# has_deposit = "d_immense_physics_deposit"
-					# has_deposit = "d_immense_engineering_deposit"
+				#	 has_deposit = "d_physics_deposit"
+				#	 has_deposit = "d_rich_physics_deposit"
+				#	 has_deposit = "d_vast_physics_deposit"
+				#	 has_deposit = "d_engineering_deposit"
+				#	 has_deposit = "d_rich_engineering_deposit"
+				#	 has_deposit = "d_vast_engineering_deposit"
+				#	 has_deposit = "d_society_deposit"
+				#	 has_deposit = "d_rich_society_deposit"
+				#	 has_deposit = "d_vast_society_deposit"
+				#	 has_deposit = "d_immense_society_deposit"
+				#	 has_deposit = "d_immense_physics_deposit"
+				#	 has_deposit = "d_immense_engineering_deposit"
 
-				# }
-			# }
-		# }
+				 #}
+			 #}
+		 #}
 	}
 }
 
@@ -1446,29 +1446,29 @@ building_mining_network_1 = {
 			}
 		}
 	}
-	ai_special_building = yes
+	#ai_special_building = yes
 	ai_weight = {
-		weight = 40
-# modifier = {
-			# factor = 0
-			# tile = {
+		weight = 20
+#modifier = {
+			 #factor = 0
+			 #tile = {
 				# OR = {
-					# has_deposit = "d_physics_deposit"
-					# has_deposit = "d_rich_physics_deposit"
-					# has_deposit = "d_vast_physics_deposit"
-					# has_deposit = "d_engineering_deposit"
-					# has_deposit = "d_rich_engineering_deposit"
-					# has_deposit = "d_vast_engineering_deposit"
-					# has_deposit = "d_society_deposit"
-					# has_deposit = "d_rich_society_deposit"
-					# has_deposit = "d_vast_society_deposit"
-					# has_deposit = "d_immense_society_deposit"
-					# has_deposit = "d_immense_physics_deposit"
-					# has_deposit = "d_immense_engineering_deposit"
+				#	 has_deposit = "d_physics_deposit"
+				#	 has_deposit = "d_rich_physics_deposit"
+				#	 has_deposit = "d_vast_physics_deposit"
+				#	 has_deposit = "d_engineering_deposit"
+				#	 has_deposit = "d_rich_engineering_deposit"
+				#	 has_deposit = "d_vast_engineering_deposit"
+				#	 has_deposit = "d_society_deposit"
+				#	 has_deposit = "d_rich_society_deposit"
+				#	 has_deposit = "d_vast_society_deposit"
+				#	 has_deposit = "d_immense_society_deposit"
+				#	 has_deposit = "d_immense_physics_deposit"
+				#	 has_deposit = "d_immense_engineering_deposit"
 
-				# }
-			# }
-		# }
+				 #}
+			 #}
+		 #}
 	}
 }
 
@@ -1508,9 +1508,9 @@ building_mining_network_2 = {
 	prerequisites = {
 		"tech_mining_network_2"
 	}	
-	ai_special_building = yes
+	#ai_special_building = yes
 	ai_weight = {
-		weight = 40
+		weight = 20
 # modifier = {
 			# factor = 0
 			# tile = {
@@ -1569,9 +1569,9 @@ building_mining_network_3 = {
 	prerequisites = {
 		"tech_mining_network_3"
 	}	
-	ai_special_building = yes
+	#ai_special_building = yes
 	ai_weight = {
-		weight = 40
+		weight = 20
 # modifier = {
 			# factor = 0
 			# tile = {
@@ -1630,9 +1630,9 @@ building_mining_network_4 = {
 	prerequisites = {
 		"tech_mining_network_4"
 	}	
-	ai_special_building = yes
+	#ai_special_building = yes
 	ai_weight = {
-		weight = 40
+		weight = 20
 # modifier = {
 			# factor = 0
 			# tile = {
@@ -1684,9 +1684,9 @@ building_mining_network_5 = {
 	prerequisites = {
 		"tech_mining_network_5"
 	}	
-	ai_special_building = yes
+	#ai_special_building = yes
 	ai_weight = {
-		weight = 40
+		weight = 20
 # modifier = {
 			# factor = 0
 			# tile = {
@@ -1741,29 +1741,29 @@ building_mineral_processing_plant_1T1 = {
 	prerequisites = {
 	}
 	
-	ai_special_building = yes
+	#ai_special_building = yes
 	ai_weight = {
 		weight = 80
-# modifier = {
-			# factor = 0
-			# tile = {
+#modifier = {
+			 #factor = 0
+			 #tile = {
 				# OR = {
-					# has_deposit = "d_physics_deposit"
-					# has_deposit = "d_rich_physics_deposit"
-					# has_deposit = "d_vast_physics_deposit"
-					# has_deposit = "d_engineering_deposit"
-					# has_deposit = "d_rich_engineering_deposit"
-					# has_deposit = "d_vast_engineering_deposit"
-					# has_deposit = "d_society_deposit"
-					# has_deposit = "d_rich_society_deposit"
-					# has_deposit = "d_vast_society_deposit"
-					# has_deposit = "d_immense_society_deposit"
-					# has_deposit = "d_immense_physics_deposit"
-					# has_deposit = "d_immense_engineering_deposit"
+				#	 has_deposit = "d_physics_deposit"
+				#	 has_deposit = "d_rich_physics_deposit"
+				#	 has_deposit = "d_vast_physics_deposit"
+				#	 has_deposit = "d_engineering_deposit"
+				#	 has_deposit = "d_rich_engineering_deposit"
+				#	 has_deposit = "d_vast_engineering_deposit"
+				#	 has_deposit = "d_society_deposit"
+				#	 has_deposit = "d_rich_society_deposit"
+				#	 has_deposit = "d_vast_society_deposit"
+				#	 has_deposit = "d_immense_society_deposit"
+				#	 has_deposit = "d_immense_physics_deposit"
+				#	 has_deposit = "d_immense_engineering_deposit"
 
-				# }
-			# }
-		# }
+				 #}
+			 #}
+		 #}
 	}
 }
 
@@ -2070,6 +2070,10 @@ building_basic_science_lab_1 = {
 	
 	prerequisites = {
 		"tech_basic_science_lab_1"
+	}
+	ai_weight = {
+		weight = 90
+
 	}	
 }
 
@@ -2114,9 +2118,9 @@ building_engineering_facility_1 = {
 	prerequisites = {
 		"tech_engineering_lab_1"
 	}
-	ai_special_building = yes
+	#ai_special_building = yes
 	ai_weight = {
-		weight = 60
+		weight = 150
 
 	}
 }
@@ -2158,7 +2162,7 @@ building_engineering_facility_2 = {
 	}	
 	ai_special_building = yes
 	ai_weight = {
-		weight = 60
+		weight = 80
 
 	}
 }
@@ -2314,9 +2318,9 @@ building_physics_lab_1 = {
 	prerequisites = {
 		"tech_physics_lab_1"
 	}	
-	ai_special_building = yes
+	#ai_special_building = yes
 	ai_weight = {
-		weight = 60
+		weight = 150
 
 	}
 }
@@ -2356,9 +2360,9 @@ building_physics_lab_2 = {
 	prerequisites = {
 		"tech_physics_lab_5"
 	}	
-	ai_special_building = yes
+	#ai_special_building = yes
 	ai_weight = {
-		weight = 60
+		weight = 80
 
 	}
 }
@@ -2398,9 +2402,9 @@ building_physics_lab_3 = {
 	prerequisites = {
 		"tech_physics_lab_10"
 	}	
-	ai_special_building = yes
+	#ai_special_building = yes
 	ai_weight = {
-		weight = 60
+		weight = 80
 
 	}
 }
@@ -2437,9 +2441,9 @@ building_physics_lab_4 = {
 	prerequisites = {
 		"tech_physics_lab_15"
 	}	
-	ai_special_building = yes
+	#ai_special_building = yes
 	ai_weight = {
-		weight = 60
+		weight = 80
 
 	}
 }
@@ -2472,9 +2476,9 @@ building_physics_lab_5 = {
 	prerequisites = {
 		"tech_physics_lab_20"
 	}	
-	ai_special_building = yes
+	#ai_special_building = yes
 	ai_weight = {
-		weight = 60
+		weight = 80
 
 	}
 }
@@ -2518,9 +2522,9 @@ building_biolab_1 = {
 	prerequisites = {
 		"tech_biolab_1"
 	}	
-	ai_special_building = yes
+	#ai_special_building = yes
 	ai_weight = {
-		weight = 60
+		weight = 150
 
 	}
 }
@@ -2560,9 +2564,9 @@ building_biolab_2 = {
 	prerequisites = {
 		"tech_biolab_2"
 	}	
-	ai_special_building = yes
+	#ai_special_building = yes
 	ai_weight = {
-		weight = 60
+		weight = 80
 
 	}
 }
@@ -2602,9 +2606,9 @@ building_biolab_3 = {
 	prerequisites = {
 		"tech_biolab_3"
 	}	
-	ai_special_building = yes
+	#ai_special_building = yes
 	ai_weight = {
-		weight = 60
+		weight = 80
 
 	}
 }
@@ -2641,9 +2645,9 @@ building_biolab_4 = {
 	prerequisites = {
 		"tech_biolab_4"
 	}	
-	ai_special_building = yes
+	#ai_special_building = yes
 	ai_weight = {
-		weight = 60
+		weight = 80
 
 	}
 }
@@ -2676,9 +2680,9 @@ building_biolab_5 = {
 	prerequisites = {
 		"tech_biolab_5"
 	}	
-	ai_special_building = yes
+	#ai_special_building = yes
 	ai_weight = {
-		weight = 60
+		weight = 80
 
 	}
 }
@@ -2768,7 +2772,7 @@ building_capital_1 = {
 	}
 
 	required_resources = {
-		sr_nutrients = 2
+		#sr_nutrients = 2
 	}
 	
 	upgrades = {
@@ -2819,7 +2823,7 @@ building_capital_2 = {
 		tile_resource_energy_mult = 0.5
 	}
 	required_resources = {
-		sr_nutrients = 4
+		#sr_nutrients = 4
 	}	
 	upgrades = {
 		building_capital_3
@@ -2872,7 +2876,7 @@ building_capital_3 = {
 		building_capital_4
 	}		
 	required_resources = {
-		sr_nutrients = 8
+		#sr_nutrients = 8
 	}
 	
 	adjacency_bonus = {
@@ -3387,6 +3391,11 @@ building_clinic = {
 	prerequisites = {
 		"tech_frontier_health"
 	}
+	ai_special_building = yes
+	ai_weight = {
+			weight = 100
+			
+	}
 }
 
 building_military_academy = {
@@ -3539,7 +3548,7 @@ building_hyper_entertainment_forum = {
 	}
 	
 	ai_weight = {
-		weight = 110
+		weight = 500
 	}
 	
 	ai_special_building = yes
@@ -3565,7 +3574,8 @@ building_monument_purity = {
 	}
 	
 	ai_weight = {
-		weight = 100
+		weight = 500
+
 	}
 	
 	ai_special_building = yes
@@ -3595,7 +3605,7 @@ building_virtual_combat_arena = {
 	
 	ai_weight = {
 		modifier = {
-			weight = 150
+			weight = 100
 			OR = {
 				has_ethic = "ethic_militarist"
 				has_ethic = "ethic_fanatic_militarist"
@@ -3838,29 +3848,29 @@ dm_power_plant_1 = {
 	prerequisites = {
 			"tech_power_plant_11"
 	}
-	ai_special_building = yes
+	#ai_special_building = yes
 	ai_weight = {
 		weight = 60
-# modifier = {
-			# factor = 0
-			# tile = {
+#modifier = {
+			 #factor = 0
+			 #tile = {
 				# OR = {
-					# has_deposit = "d_physics_deposit"
-					# has_deposit = "d_rich_physics_deposit"
-					# has_deposit = "d_vast_physics_deposit"
-					# has_deposit = "d_engineering_deposit"
-					# has_deposit = "d_rich_engineering_deposit"
-					# has_deposit = "d_vast_engineering_deposit"
-					# has_deposit = "d_society_deposit"
-					# has_deposit = "d_rich_society_deposit"
-					# has_deposit = "d_vast_society_deposit"
-					# has_deposit = "d_immense_society_deposit"
-					# has_deposit = "d_immense_physics_deposit"
-					# has_deposit = "d_immense_engineering_deposit"
+				#	 has_deposit = "d_physics_deposit"
+				#	 has_deposit = "d_rich_physics_deposit"
+				#	 has_deposit = "d_vast_physics_deposit"
+				#	 has_deposit = "d_engineering_deposit"
+				#	 has_deposit = "d_rich_engineering_deposit"
+				#	 has_deposit = "d_vast_engineering_deposit"
+				#	 has_deposit = "d_society_deposit"
+				#	 has_deposit = "d_rich_society_deposit"
+				#	 has_deposit = "d_vast_society_deposit"
+				#	 has_deposit = "d_immense_society_deposit"
+				#	 has_deposit = "d_immense_physics_deposit"
+				#	 has_deposit = "d_immense_engineering_deposit"
 
-				# }
-			# }
-		# }
+				 #}
+			 #}
+		 #}
 	}
 }
 
@@ -4151,29 +4161,29 @@ building_mining2_network_1 = {
 			}
 		}
 	}
-	ai_special_building = yes
+	#ai_special_building = yes
 	ai_weight = {
 		weight = 40
-# modifier = {
-			# factor = 0
-			# tile = {
+#modifier = {
+			 #factor = 0
+			 #tile = {
 				# OR = {
-					# has_deposit = "d_physics_deposit"
-					# has_deposit = "d_rich_physics_deposit"
-					# has_deposit = "d_vast_physics_deposit"
-					# has_deposit = "d_engineering_deposit"
-					# has_deposit = "d_rich_engineering_deposit"
-					# has_deposit = "d_vast_engineering_deposit"
-					# has_deposit = "d_society_deposit"
-					# has_deposit = "d_rich_society_deposit"
-					# has_deposit = "d_vast_society_deposit"
-					# has_deposit = "d_immense_society_deposit"
-					# has_deposit = "d_immense_physics_deposit"
-					# has_deposit = "d_immense_engineering_deposit"
+				#	 has_deposit = "d_physics_deposit"
+				#	 has_deposit = "d_rich_physics_deposit"
+				#	 has_deposit = "d_vast_physics_deposit"
+				#	 has_deposit = "d_engineering_deposit"
+				#	 has_deposit = "d_rich_engineering_deposit"
+				#	 has_deposit = "d_vast_engineering_deposit"
+				#	 has_deposit = "d_society_deposit"
+				#	 has_deposit = "d_rich_society_deposit"
+				#	 has_deposit = "d_vast_society_deposit"
+				#	 has_deposit = "d_immense_society_deposit"
+				#	 has_deposit = "d_immense_physics_deposit"
+				#	 has_deposit = "d_immense_engineering_deposit"
 
-				# }
-			# }
-		# }
+				 #}
+			 #}
+		 #}
 	}
 }
 
@@ -4455,29 +4465,29 @@ building_mining3_network_1 = {
 			}
 		}
 	}
-	ai_special_building = yes
+	#ai_special_building = yes
 	ai_weight = {
 		weight = 40
-# modifier = {
-			# factor = 0
-			# tile = {
+#modifier = {
+			 #factor = 0
+			 #tile = {
 				# OR = {
-					# has_deposit = "d_physics_deposit"
-					# has_deposit = "d_rich_physics_deposit"
-					# has_deposit = "d_vast_physics_deposit"
-					# has_deposit = "d_engineering_deposit"
-					# has_deposit = "d_rich_engineering_deposit"
-					# has_deposit = "d_vast_engineering_deposit"
-					# has_deposit = "d_society_deposit"
-					# has_deposit = "d_rich_society_deposit"
-					# has_deposit = "d_vast_society_deposit"
-					# has_deposit = "d_immense_society_deposit"
-					# has_deposit = "d_immense_physics_deposit"
-					# has_deposit = "d_immense_engineering_deposit"
+				#	 has_deposit = "d_physics_deposit"
+				#	 has_deposit = "d_rich_physics_deposit"
+				#	 has_deposit = "d_vast_physics_deposit"
+				#	 has_deposit = "d_engineering_deposit"
+				#	 has_deposit = "d_rich_engineering_deposit"
+				#	 has_deposit = "d_vast_engineering_deposit"
+				#	 has_deposit = "d_society_deposit"
+				#	 has_deposit = "d_rich_society_deposit"
+				#	 has_deposit = "d_vast_society_deposit"
+				#	 has_deposit = "d_immense_society_deposit"
+				#	 has_deposit = "d_immense_physics_deposit"
+				#	 has_deposit = "d_immense_engineering_deposit"
 
-				# }
-			# }
-		# }
+				 #}
+			 #}
+		 #}
 	}
 }
 
@@ -4767,29 +4777,29 @@ building_mineral_processing_plant_1T2 = {
 		"tech_mineral_processing_6"
 	}
 	
-	ai_special_building = yes
+	#ai_special_building = yes
 	ai_weight = {
 		weight = 80
-# modifier = {
-			# factor = 0
-			# tile = {
+#modifier = {
+			 #factor = 0
+			 #tile = {
 				# OR = {
-					# has_deposit = "d_physics_deposit"
-					# has_deposit = "d_rich_physics_deposit"
-					# has_deposit = "d_vast_physics_deposit"
-					# has_deposit = "d_engineering_deposit"
-					# has_deposit = "d_rich_engineering_deposit"
-					# has_deposit = "d_vast_engineering_deposit"
-					# has_deposit = "d_society_deposit"
-					# has_deposit = "d_rich_society_deposit"
-					# has_deposit = "d_vast_society_deposit"
-					# has_deposit = "d_immense_society_deposit"
-					# has_deposit = "d_immense_physics_deposit"
-					# has_deposit = "d_immense_engineering_deposit"
+				#	 has_deposit = "d_physics_deposit"
+				#	 has_deposit = "d_rich_physics_deposit"
+				#	 has_deposit = "d_vast_physics_deposit"
+				#	 has_deposit = "d_engineering_deposit"
+				#	 has_deposit = "d_rich_engineering_deposit"
+				#	 has_deposit = "d_vast_engineering_deposit"
+				#	 has_deposit = "d_society_deposit"
+				#	 has_deposit = "d_rich_society_deposit"
+				#	 has_deposit = "d_vast_society_deposit"
+				#	 has_deposit = "d_immense_society_deposit"
+				#	 has_deposit = "d_immense_physics_deposit"
+				#	 has_deposit = "d_immense_engineering_deposit"
 
-				# }
-			# }
-		# }
+				 #}
+			 #}
+		 #}
 	}
 }
 
@@ -5115,29 +5125,29 @@ building_mineral_processing_plant_1T3 = {
 		"tech_mineral_processing_11"
 	}
 	
-	ai_special_building = yes
+	#ai_special_building = yes
 	ai_weight = {
 		weight = 80
-# modifier = {
-			# factor = 0
-			# tile = {
+#modifier = {
+			 #factor = 0
+			 #tile = {
 				# OR = {
-					# has_deposit = "d_physics_deposit"
-					# has_deposit = "d_rich_physics_deposit"
-					# has_deposit = "d_vast_physics_deposit"
-					# has_deposit = "d_engineering_deposit"
-					# has_deposit = "d_rich_engineering_deposit"
-					# has_deposit = "d_vast_engineering_deposit"
-					# has_deposit = "d_society_deposit"
-					# has_deposit = "d_rich_society_deposit"
-					# has_deposit = "d_vast_society_deposit"
-					# has_deposit = "d_immense_society_deposit"
-					# has_deposit = "d_immense_physics_deposit"
-					# has_deposit = "d_immense_engineering_deposit"
+				#	 has_deposit = "d_physics_deposit"
+				#	 has_deposit = "d_rich_physics_deposit"
+				#	 has_deposit = "d_vast_physics_deposit"
+				#	 has_deposit = "d_engineering_deposit"
+				#	 has_deposit = "d_rich_engineering_deposit"
+				#	 has_deposit = "d_vast_engineering_deposit"
+				#	 has_deposit = "d_society_deposit"
+				#	 has_deposit = "d_rich_society_deposit"
+				#	 has_deposit = "d_vast_society_deposit"
+				#	 has_deposit = "d_immense_society_deposit"
+				#	 has_deposit = "d_immense_physics_deposit"
+				#	 has_deposit = "d_immense_engineering_deposit"
 
-				# }
-			# }
-		# }
+				 #}
+			 #}
+		 #}
 	}
 	
 }
@@ -5459,29 +5469,29 @@ building_bank = {
 		}
 	}
 	
-	ai_special_building = yes
+	#ai_special_building = yes
 	ai_weight = {
 		weight = 60
-# modifier = {
-			# factor = 0
-			# tile = {
+#modifier = {
+			 #factor = 0
+			 #tile = {
 				# OR = {
-					# has_deposit = "d_physics_deposit"
-					# has_deposit = "d_rich_physics_deposit"
-					# has_deposit = "d_vast_physics_deposit"
-					# has_deposit = "d_engineering_deposit"
-					# has_deposit = "d_rich_engineering_deposit"
-					# has_deposit = "d_vast_engineering_deposit"
-					# has_deposit = "d_society_deposit"
-					# has_deposit = "d_rich_society_deposit"
-					# has_deposit = "d_vast_society_deposit"
-					# has_deposit = "d_immense_society_deposit"
-					# has_deposit = "d_immense_physics_deposit"
-					# has_deposit = "d_immense_engineering_deposit"
+				#	 has_deposit = "d_physics_deposit"
+				#	 has_deposit = "d_rich_physics_deposit"
+				#	 has_deposit = "d_vast_physics_deposit"
+				#	 has_deposit = "d_engineering_deposit"
+				#	 has_deposit = "d_rich_engineering_deposit"
+				#	 has_deposit = "d_vast_engineering_deposit"
+				#	 has_deposit = "d_society_deposit"
+				#	 has_deposit = "d_rich_society_deposit"
+				#	 has_deposit = "d_vast_society_deposit"
+				#	 has_deposit = "d_immense_society_deposit"
+				#	 has_deposit = "d_immense_physics_deposit"
+				#	 has_deposit = "d_immense_engineering_deposit"
 
-				# }
-			# }
-		# }
+				 #}
+			 #}
+		 #}
 	}
 }
 
@@ -5774,27 +5784,28 @@ building_basic_hospital = {
  
  ai_special_building = yes
 	ai_weight = {
-		weight = 70
-# modifier = {
-			# factor = 0
-			# tile = {
+		weight = 500
+		
+#modifier = {
+			 #factor = 0
+			 #tile = {
 				# OR = {
-					# has_deposit = "d_physics_deposit"
-					# has_deposit = "d_rich_physics_deposit"
-					# has_deposit = "d_vast_physics_deposit"
-					# has_deposit = "d_engineering_deposit"
-					# has_deposit = "d_rich_engineering_deposit"
-					# has_deposit = "d_vast_engineering_deposit"
-					# has_deposit = "d_society_deposit"
-					# has_deposit = "d_rich_society_deposit"
-					# has_deposit = "d_vast_society_deposit"
-					# has_deposit = "d_immense_society_deposit"
-					# has_deposit = "d_immense_physics_deposit"
-					# has_deposit = "d_immense_engineering_deposit"
+				#	 has_deposit = "d_physics_deposit"
+				#	 has_deposit = "d_rich_physics_deposit"
+				#	 has_deposit = "d_vast_physics_deposit"
+				#	 has_deposit = "d_engineering_deposit"
+				#	 has_deposit = "d_rich_engineering_deposit"
+				#	 has_deposit = "d_vast_engineering_deposit"
+				#	 has_deposit = "d_society_deposit"
+				#	 has_deposit = "d_rich_society_deposit"
+				#	 has_deposit = "d_vast_society_deposit"
+				#	 has_deposit = "d_immense_society_deposit"
+				#	 has_deposit = "d_immense_physics_deposit"
+				#	 has_deposit = "d_immense_engineering_deposit"
 
-				# }
-			# }
-		# }
+				 #}
+			 #}
+		 #}
 	}
 }
 
@@ -6067,7 +6078,7 @@ building_capital_4 = {
 	}
 	
 	required_resources = {
-		sr_nutrients = 16
+		#sr_nutrients = 16
 	}
 	upgrades = {
 		building_capital_5
@@ -6123,7 +6134,7 @@ building_capital_5 = {
 	}
 	
 	required_resources = {
-		sr_nutrients = 32
+		#sr_nutrients = 32
 	}
 	
 	adjacency_bonus = {

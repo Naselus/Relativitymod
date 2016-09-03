@@ -148,6 +148,13 @@ tech_lasers_1 = {
 			}
 			}
 		}
+		modifier = {
+			factor = 0
+			AND = {
+			is_ai = yes
+			years_passed < 50
+			}
+		}
 	}
 	
 	ai_weight = {
@@ -171,9 +178,7 @@ tech_lasers_1 = {
 		modifier = {
 		factor = 0
 			AND = {
-				NOT = {
-					years_passed > 50
-					}
+					years_passed < 50
 				OR = {
 					has_technology = tech_mass_drivers_1
 					has_technology = tech_missiles_1
@@ -246,6 +251,13 @@ tech_lasers_2 = {
 		modifier = {
 			factor = 0.5
 			has_ethic = "ethic_fanatic_pacifist"
+		}
+		modifier = {
+			factor = 0
+			AND = {
+				is_ai = yes
+				years_passed < 10
+			}
 		}
 		modifier = {
 			factor = 1.25

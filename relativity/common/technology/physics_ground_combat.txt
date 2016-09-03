@@ -162,6 +162,20 @@ tech_drop_pod = {
 				has_ai_personality_behaviour = conqueror
 			}
 		}
+		modifier = {
+			factor = 0
+			OR = {
+			NOT = {
+				years_passed > 50
+			}
+			NOT = {
+			has_monthly_income = {
+			resource = physics_research
+			value > 8
+					}
+				}	
+			}
+		}
 	}
 }
 
@@ -172,6 +186,17 @@ tech_army_4 = {
 	category = { ground_combat }
 	prerequisites = { "tech_drop_pod" }
 	weight = @tier2weight1
+	
+	weight_modifier = {
+		factor = 1
+		modifier = {
+			factor = 0
+			AND = {
+				is_ai = yes
+				years_passed < 60
+			}
+		}
+	}
 	
 	modifier = {
 		army_upkeep_mult = -0.05
@@ -200,12 +225,12 @@ tech_army_4 = {
 			factor = 0
 			OR = {
 			NOT = {
-				years_passed > 30
+				years_passed > 60
 			}
 			NOT = {
 			has_monthly_income = {
 			resource = physics_research
-			value > 8
+			value > 12
 					}
 				}	
 			}
@@ -220,6 +245,17 @@ tech_army_5 = {
 	category = { ground_combat }
 	prerequisites = { "tech_army_4" }
 	weight = @tier2weight1
+	
+	weight_modifier = {
+		factor = 1
+		modifier = {
+			factor = 0
+			AND = {
+				is_ai = yes
+				years_passed < 70
+			}
+		}
+	}
 	
 	modifier = {
 		army_health = 0.05
@@ -248,12 +284,12 @@ tech_army_5 = {
 			factor = 0
 			OR = {
 			NOT = {
-				years_passed > 40
+				years_passed > 70
 			}
 			NOT = {
 			has_monthly_income = {
 			resource = physics_research
-			value > 8
+			value > 15
 					}
 				}	
 			}

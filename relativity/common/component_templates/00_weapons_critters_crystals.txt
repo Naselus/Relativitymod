@@ -68,7 +68,7 @@ weapon_component_template = {
 	tags = { weapon_type_energy }
 			
 	component_set = "GREEN_CRYSTAL_WEAPON_1"
-	prerequisites = { "tech_green_crystal_weapon_1" "tech_fusion_power"}
+	prerequisites = { "tech_green_crystal_weapon_1" }
 	cost = @critter_cost_value
 }
 
@@ -84,7 +84,7 @@ weapon_component_template = {
 	tags = { weapon_type_energy }
 				
 	component_set = "GREEN_CRYSTAL_WEAPON_1"
-	prerequisites = { "tech_green_crystal_weapon_1" "tech_fusion_power"}
+	prerequisites = { "tech_green_crystal_weapon_1" }
 	cost = @critter_cost_value
 }
 
@@ -100,7 +100,7 @@ weapon_component_template = {
 	tags = { weapon_type_energy }
 				
 	component_set = "GREEN_CRYSTAL_WEAPON_1"
-	prerequisites = { "tech_green_crystal_weapon_1" "tech_fusion_power"}
+	prerequisites = { "tech_green_crystal_weapon_1" }
 	cost = @critter_cost_value
 }
 
@@ -116,7 +116,7 @@ weapon_component_template = {
 	tags = { weapon_type_energy }
 				
 	component_set = "YELLOW_CRYSTAL_WEAPON_1"
-	prerequisites = { "tech_yellow_crystal_weapon_1" "tech_cold_fusion_power"}
+	prerequisites = { "tech_yellow_crystal_weapon_1" }
 	cost = @critter_cost_value
 }
 
@@ -132,7 +132,7 @@ weapon_component_template = {
 	tags = { weapon_type_energy }
 				
 	component_set = "YELLOW_CRYSTAL_WEAPON_1"
-	prerequisites = { "tech_yellow_crystal_weapon_1" "tech_cold_fusion_power"}
+	prerequisites = { "tech_yellow_crystal_weapon_1" }
 	cost = @critter_cost_value
 }
 
@@ -148,7 +148,7 @@ weapon_component_template = {
 	tags = { weapon_type_energy }
 				
 	component_set = "YELLOW_CRYSTAL_WEAPON_1"
-	prerequisites = { "tech_yellow_crystal_weapon_1" "tech_cold_fusion_power"}
+	prerequisites = { "tech_yellow_crystal_weapon_1" }
 	cost = @critter_cost_value
 }
 
@@ -164,7 +164,7 @@ weapon_component_template = {
 	tags = { weapon_type_energy }
 				
 	component_set = "RED_CRYSTAL_WEAPON_1"
-	prerequisites = { "tech_red_crystal_weapon_1" "tech_antimatter_power"}
+	prerequisites = { "tech_red_crystal_weapon_1" }
 	cost = @critter_cost_value
 }
 
@@ -180,7 +180,7 @@ weapon_component_template = {
 	tags = { weapon_type_energy }
 				
 	component_set = "RED_CRYSTAL_WEAPON_1"
-	prerequisites = { "tech_red_crystal_weapon_1" "tech_antimatter_power"}
+	prerequisites = { "tech_red_crystal_weapon_1" }
 	cost = @critter_cost_value
 }
 
@@ -196,7 +196,7 @@ weapon_component_template = {
 	tags = { weapon_type_energy }
 				
 	component_set = "RED_CRYSTAL_WEAPON_1"
-	prerequisites = { "tech_red_crystal_weapon_1" "tech_antimatter_power"}
+	prerequisites = { "tech_red_crystal_weapon_1"}
 	cost = @critter_cost_value
 }
 

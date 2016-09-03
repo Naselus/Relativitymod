@@ -104,6 +104,7 @@
 tech_mineral_processing_1 = {
 	cost = @tier1cost1
 	area = engineering
+	start_tech = yes
 	tier = 1
 	category = { mineral_processing }	
 	weight = @tier1weight1
@@ -124,7 +125,7 @@ tech_mineral_processing_1 = {
 	}
 	
 	ai_weight = {
-		weight = 100000
+		weight = 100
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -177,7 +178,7 @@ tech_mineral_processing_2 = {
 	}
 	
 	ai_weight = {
-		weight = 100000
+		weight = 100
 		
 		modifier = {
 			factor = 1.25
@@ -214,11 +215,13 @@ tech_mineral_processing_3 = {
 	area = engineering
 	tier = 2
 	category = { mineral_processing }	
-	prerequisites = { "tech_mineral_processing_2" "tech_colonial_centralization" }
+	prerequisites = { "tech_mineral_processing_2" "tech_adaptive_bureaucracy" }
 	weight = @tier2weight1
 		
 	# unlock T1 mineral processing plant 3	
-
+	modifier = {
+		max_minerals = 500
+	}
 	
 	weight_modifier = {
 		modifier = {
@@ -231,7 +234,7 @@ tech_mineral_processing_3 = {
 	}
 	
 	ai_weight = {
-		weight = 10000
+		weight = 90
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -271,7 +274,9 @@ tech_mineral_processing_4 = {
 	weight = @tier2weight2
 		
 	# unlock T1 mineral processing plant 4	
-
+	modifier = {
+		max_minerals = 500
+	}
 	
 	weight_modifier = {
 		modifier = {
@@ -284,7 +289,7 @@ tech_mineral_processing_4 = {
 	}
 	
 	ai_weight = {
-		factor = 150
+		factor = 90
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -324,7 +329,9 @@ tech_mineral_processing_5 = {
 	weight = @tier2weight3
 		
 	# unlock T1 mineral processing plant 5	
-
+	modifier = {
+		max_minerals = 500
+	}
 	
 	weight_modifier = {
 		modifier = {
@@ -337,7 +344,7 @@ tech_mineral_processing_5 = {
 	}
 	
 	ai_weight = {
-		factor = 150
+		factor = 90
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -373,7 +380,7 @@ tech_mineral_processing_6 = {
 	area = engineering
 	tier = 2
 	category = { mineral_processing }	
-	prerequisites = { "tech_mineral_processing_5" "tech_mining_6" }
+	prerequisites = { "tech_mineral_processing_5" "tech_mining_6" "tech_colonial_centralization"}
 	weight = @tier2weight3
 		
 	# unlock T2 mineral processing plant 1	
@@ -390,7 +397,7 @@ tech_mineral_processing_6 = {
 	}
 	
 	ai_weight = {
-		factor = 150
+		factor = 90
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -443,7 +450,7 @@ tech_mineral_processing_7 = {
 	}
 	
 	ai_weight = {
-		factor = 150
+		factor = 90
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -481,6 +488,10 @@ tech_mineral_processing_8 = {
 	prerequisites = { "tech_mineral_processing_7"}	
 	weight = @tier3weight1
 	
+	modifier = {
+		max_minerals = 500
+	}
+	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -492,7 +503,7 @@ tech_mineral_processing_8 = {
 	}
 	
 	ai_weight = {
-		factor = 150
+		factor = 90
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -526,8 +537,12 @@ tech_mineral_processing_9 = {
 	area = engineering
 	cost = @tier3cost2
 	tier = 3
-	prerequisites = { "tech_mineral_processing_8"}	
+	prerequisites = { "tech_mineral_processing_8" "tech_galactic_administration"}	
 	weight = @tier3weight2
+	
+	modifier = {
+		max_minerals = 500
+	}
 	
 	weight_modifier = {
 		modifier = {
@@ -540,7 +555,7 @@ tech_mineral_processing_9 = {
 	}
 	
 	ai_weight = {
-		factor = 150
+		factor = 90
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -578,6 +593,10 @@ tech_mineral_processing_10 = {
 	prerequisites = { "tech_mineral_processing_9"}	
 	weight = @tier3weight3
 	
+	modifier = {
+		max_minerals = 500
+	}
+	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -589,7 +608,7 @@ tech_mineral_processing_10 = {
 	}
 	
 	ai_weight = {
-		factor = 150
+		factor = 90
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -726,6 +745,10 @@ tech_mineral_processing_13 = {
 	prerequisites = { "tech_mineral_processing_12"}	
 	weight = @tier4weight2
 	
+	modifier = {
+		max_minerals = 500
+	}
+	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -775,6 +798,10 @@ tech_mineral_processing_14 = {
 	prerequisites = { "tech_mineral_processing_13"}	
 	weight = @tier4weight3
 	
+	modifier = {
+		max_minerals = 500
+	}
+	
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -823,6 +850,10 @@ tech_mineral_processing_15 = {
 	category = { mineral_processing }
 	prerequisites = { "tech_mineral_processing_14"}	
 	weight = @tier4weight4
+	
+	modifier = {
+		max_minerals = 500
+	}
 	
 	weight_modifier = {
 		modifier = {

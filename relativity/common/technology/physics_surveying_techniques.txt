@@ -117,7 +117,11 @@ tech_databank_uplinks = {
 	weight_modifier = {
 		modifier = {
 			factor = 0
-			years_passed < 50
+			years_passed < 40
+		}
+		modifier = {
+			factor = 0
+			is_ai = yes
 		}
 	}
 	
@@ -138,7 +142,7 @@ tech_databank_uplinks = {
 		}
 		modifier = {
 			factor = 0
-				years_passed < 25			
+				years_passed < 90			
 		}
 	}
 }
