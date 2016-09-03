@@ -404,3 +404,48 @@ Version 102.0.1
 * Loads of tech AI work done
 * rebalanced ship weapons so they all have equal average DPS.
 * lots of bug fixing. Just lots.
+
+
+1.0
+
+-Prereq tweaks to Lasers, Ballistics, 
+-Wormhole Filler tech costs increased slightly, at least until 3rd wormhole filler tech is added
+-Removed excess is_dangerous = yes line from jump drive tech
+-Jump Drive now only requires knowing antimatter reactors
+-Hull Techs now require the previuos Hull tech to unlock, in addition to spaceport tech
+-Terraforming Tree re-worked = First 3 Colonizations techs now unlock 3 tile blockers each. Dropped Tech Costs for terraforming the extreme worlds several levels.
+-AI prereqs re-worked - Robots require administrative AI, Each level of PD tracking unlocks the next level of Sync'd Defenses
+-Statecraft prereqs fixed - Several redundancies removed, Galactic Admin now unlocked by Living State, Filler now unlocked by Collecftive Self
+-More Prereq work
+-Laser Tree Reworked
+-Blue Lasers no longer requires Fusion power, UV Lasers now only need Fusion Power instead of Cold Fusion
+-End-game Laser filler now moved to be filler between T2-3, T3-4, T4-5 Lasers
+-Laser Tech Costs reworked to balance with other 2 branches
+-Neutronium Ore Tech now re-activated, requires Sensors 4 and Mineral Processing 11
+-Required to unlock T5 Armor (Armor 20)
+-Lots of Tech Localization Work
+-Changed Domination Victory Condition Localization to reflect mod requirement (75%, not 40%)
+-AI Work in Defines
+-AI Weights for Hyper-Entertain, Pure Monument, and Hospital 1 increased a lot
+-Mineral Proc 1 now a start tech
+-All SR techs now re-activated
+-Garanthium, Neutronium, Living Metal are now prereqs for T3,4,5 Armors.
+-Localized missile/armor components in l_english
+-Fixed frontier outpost issue
+-T3,T4,T5 armor now require Garanthium, Neutronium, Living Metal SR research unlocks before researching
+-AI Weights fixed for Voidcraft unlocks/spaceport expansion techs
+-Power plant tech costs rebalanced
+-Voidcraft/Spaceport Expansion tech costs lowered: took at least 110 years for cruisers to show up
+-Terraforming tech costs rebalanced a little
+-Military Theory/Naval Cap tech costs rebalanced
+-Military Theory/Naval Cap techs: first 5 techs get an additional -0.03 ship upkeep modifier.
+-Removed power prereqs for building xeno weapons
+-Tweaked prepreqs for power plants
+-Moved thrusters and shields from engineering to physics
+-Most spaceport modules maintenance removed for now
+-Fixed ship size issue
+-Building weights tweaks for labs
+-Fixing erroneous weights in tech
+-Tech AI weights rebalanced to encourage optimal research priorities
+-Lots of localization done for weapons, techs, economic buildings
+-A few icons connected to techs w/o icons
