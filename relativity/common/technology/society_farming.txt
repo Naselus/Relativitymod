@@ -176,7 +176,7 @@ tech_gene_crops = {
 	area = society
 	tier = 2
 	category = { farming }
-	prerequisites = { "tech_hydroponics" "tech_colonial_centralization"}
+	prerequisites = { "tech_hydroponics" "tech_adaptive_bureaucracy"}
 	weight = @tier2weight3
 	
 	# unlocks farms level 3
@@ -232,7 +232,7 @@ tech_nano_vitality_crops = {
 	area = society
 	tier = 3
 	category = { farming }	
-	prerequisites = { "tech_gene_crops" "tech_galactic_administration"}
+	prerequisites = { "tech_gene_crops" "tech_colonial_centralization"}
 	weight = @tier3weight2
 	
 	# unlocks farms level 4
@@ -287,7 +287,7 @@ tech_nutrient_replication = {
 	area = society
 	tier = 4
 	category = { farming }
-	prerequisites = { "tech_nano_vitality_crops" }
+	prerequisites = { "tech_nano_vitality_crops" "tech_galactic_administration"}
 	weight = @tier4weight2
 		
 	modifier = {

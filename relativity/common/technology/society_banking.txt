@@ -209,7 +209,7 @@ tech_galactic_markets = {
 	area = society
 	tier = 2
 	category = { statecraft }
-	prerequisites = { "tech_banking_3"}
+	prerequisites = { "tech_banking_3" "tech_adaptive_bureaucracy"}
 	weight = @tier2weight1
 	
 	# unlocks Galactic Stock Exchange empire wonder
@@ -384,7 +384,7 @@ tech_banking_8 = {
 	cost = @tier2cost4
 	tier = 2
 	category = { banking }
-	prerequisites = { "tech_banking_7"}
+	prerequisites = { "tech_banking_7" "tech_colonial_centralization"}
 	weight = @tier2weight4
 	
 	modifier = {
@@ -486,7 +486,7 @@ tech_banking_11 = {
 	cost = @tier3cost2
 	tier = 3
 	category = { banking }
-	prerequisites = { "tech_banking_10"}	
+	prerequisites = { "tech_banking_10" "tech_galactic_administration"}	
 	weight = @tier3weight2
 
 	modifier = {

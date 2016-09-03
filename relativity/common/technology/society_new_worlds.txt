@@ -183,7 +183,7 @@ tech_colonization_2 = {
 	}
 	
 	ai_weight = {
-		factor = 3
+		factor = 10
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -213,24 +213,35 @@ tech_colonization_2 = {
 
 #
 tech_colonization_3 = {
-	cost = @tier2cost4
+	cost = @tier2cost3
 	area = society
 	tier = 2
 	category = { new_worlds }
 	prerequisites = { "tech_colonization_2" }
-	weight = @tier2weight4
+	weight = @tier2weight3
 	
 	modifier = {
 		pop_environment_tolerance = 0.05
 	}
 	
 	weight_modifier = {
-	factor = 3
+	factor = 10
 		modifier = {
 			factor = 1.25
 			research_leader = {
 				area = society
 				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+		modifier = {
+			factor = 0.5
+			years_passed < 20
+		}
+		modifier = {
+			factor = 0
+		AND = {
+			is_ai = yes
+			years_passed < 40
 			}
 		}
 	}
@@ -260,6 +271,15 @@ tech_colonization_3 = {
 			has_ai_personality_behaviour = conqueror
 			}
 		}
+		modifier = {
+			factor = 0
+			NOT = {
+			has_monthly_income = {
+			resource = society_research
+			value > 12
+					}
+				}
+		}
 	}
 }
 
@@ -283,7 +303,7 @@ tech_frontier_health = {
 	}
 	
 	ai_weight = {
-		factor = 3
+		factor = 50
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -1148,7 +1168,7 @@ tech_colonization_16 = {
 	}
 	
 	ai_weight = {
-		factor = 3
+		factor = 5
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -1178,18 +1198,18 @@ tech_colonization_16 = {
 
 tech_colonization_17 = {
 	area = society
-	cost = @tier4cost1
-	tier = 4
+	cost = @tier3cost4
+	tier = 3
 	category = { new_worlds }
 	prerequisites = { "tech_colonization_16" }
-	weight = @tier4weight1
+	weight = @tier3weight4
 	
 	modifier = {
 		pop_environment_tolerance = 0.05
 	}
 	
 	ai_weight = {
-		factor = 4
+		factor = 5
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -1219,11 +1239,11 @@ tech_colonization_17 = {
 
 tech_colonization_18 = {
 	area = society
-	cost = @tier4cost2
+	cost = @tier4cost1
 	tier = 4
 	category = { new_worlds }
 	prerequisites = { "tech_colonization_17" }
-	weight = @tier4weight2
+	weight = @tier4weight1
 	
 	modifier = {
 		pop_environment_tolerance = 0.05
@@ -1260,11 +1280,11 @@ tech_colonization_18 = {
 
 tech_colonization_19 = {
 	area = society
-	cost = @tier4cost3
+	cost = @tier4cost2
 	tier = 4
 	category = { new_worlds }
 	prerequisites = { "tech_colonization_18" }
-	weight = @tier4weight3
+	weight = @tier4weight2
 	
 	modifier = {
 		pop_environment_tolerance = 0.05
@@ -1301,11 +1321,11 @@ tech_colonization_19 = {
 
 tech_colonization_20 = {
 	area = society
-	cost = @tier5cost1
-	tier = 5
+	cost = @tier4cost3
+	tier = 4
 	category = { new_worlds }
 	prerequisites = { "tech_colonization_19" }	
-	weight = @tier5weight1
+	weight = @tier4weight3
 	
 	modifier = {
 		pop_environment_tolerance = 0.05

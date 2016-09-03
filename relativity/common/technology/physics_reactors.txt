@@ -135,13 +135,21 @@ tech_fusion_power = {
 	}
 	
 	ai_weight = {
-		factor = 5 #important component
+		factor = 100 #important component
 		modifier = {
 			factor = 1.25
 			research_leader = {
 				area = physics
 				has_trait = "leader_trait_expertise_reactors"
 			}
+		}
+		modifier = {
+			factor = 5
+			years_passed > 30
+		}
+		modifier = {
+			factor = 10
+			years_passed > 35
 		}
 	}
 }
@@ -171,13 +179,21 @@ tech_cold_fusion_power = {
 	}	
 	
 	ai_weight = {
-		factor = 5 #important component
+		factor = 100 #important component
 		modifier = {
 			factor = 1.25
 			research_leader = {
 				area = physics
 				has_trait = "leader_trait_expertise_reactors"
 			}
+		}
+		modifier = {
+			factor = 5
+			years_passed > 70
+		}
+		modifier = {
+			factor = 10
+			years_passed > 75
 		}
 	}
 }
@@ -207,13 +223,21 @@ tech_antimatter_power = {
 	}
 	
 	ai_weight = {
-		factor = 5 #important component
+		factor = 100 #important component
 		modifier = {
 			factor = 1.25
 			research_leader = {
 				area = physics
 				has_trait = "leader_trait_expertise_reactors"
 			}
+		}
+		modifier = {
+			factor = 5
+			years_passed > 110
+		}
+		modifier = {
+			factor = 10
+			years_passed > 115
 		}
 	}
 }
@@ -243,13 +267,21 @@ tech_zero_point_power = {
 	}
 	
 	ai_weight = {
-		factor = 5 #important component
+		factor = 100 #important component
 		modifier = {
 			factor = 1.25
 			research_leader = {
 				area = physics
 				has_trait = "leader_trait_expertise_reactors"
 			}
+		}
+		modifier = {
+			factor = 5
+			years_passed > 130
+		}
+		modifier = {
+			factor = 10
+			years_passed > 135
 		}
 	}
 }

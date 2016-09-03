@@ -579,14 +579,14 @@ tech_ship_armor_12 = {
 }
 
 
-#Plasteel armor
+#Garanthium armor
 tech_ship_armor_3 = {
 	area = engineering
 	cost = @tier3cost1
 	tier = 3
 	category = { armor }
 	ai_update_type = military	
-	prerequisites = { "tech_ship_armor_12" }
+	prerequisites = { "tech_ship_armor_12" "tech_mine_garanthium"}
 	weight = @tier3weight1
 	
 	weight_modifier = {
@@ -843,14 +843,14 @@ tech_ship_armor_16 = {
 	}
 }
 
-#Durasteel armor
+#Neutronium armor
 tech_ship_armor_4 = {
 	area = engineering
 	cost = @tier3cost4
 	tier = 3
 	category = { armor }
 	ai_update_type = military	
-	prerequisites = { "tech_ship_armor_16" }
+	prerequisites = { "tech_ship_armor_16" "tech_mine_neutronium"}
 	weight = @tier3weight4
 	
 	weight_modifier = {
@@ -1111,14 +1111,14 @@ tech_ship_armor_20 = {
 	}
 }
 
-#Neutronium armor
+#Living Armor
 tech_ship_armor_5 = {
 	area = engineering
 	cost = @tier4cost4
 	tier = 4
 	category = { armor }
 	ai_update_type = military	
-	prerequisites = { "tech_ship_armor_20" "tech_mine_neutronium" }
+	prerequisites = { "tech_ship_armor_20" "tech_mine_living_metal" }
 	weight = @tier4weight4
 	
 	weight_modifier = {

@@ -140,7 +140,7 @@ tech_planetary_unification = {
 	}
 	
 	ai_weight = {
-		factor = 2
+		factor = 50
 		modifier = {
 			factor = 0.75
 			NOT = {
@@ -177,12 +177,12 @@ tech_planetary_unification = {
 
 #Adaptive Bureaucracy
 tech_adaptive_bureaucracy = {
-	cost = @tier1cost2
+	cost = @tier1cost3
 	area = society
 	tier = 1
 	category = { statecraft }
 	prerequisites = { "tech_planetary_unification" }
-	weight = @tier1weight2
+	weight = @tier1weight3
 	
 	modifier = {
 		country_leader_cap = 1
@@ -215,6 +215,7 @@ tech_adaptive_bureaucracy = {
 	}
 	
 	ai_weight = {
+		factor = 100
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -237,17 +238,21 @@ tech_adaptive_bureaucracy = {
 			has_ai_personality = hegemonic_imperialists
 			}
 		}
+		modifier = {
+			factor = 5
+			years_passed > 10
+		}
 	}
 }
 
 #Colonial Centralization
 tech_colonial_centralization = {
-	cost = @tier1cost4
+	cost = @tier2cost1
 	area = society
-	tier = 1
+	tier = 2
 	category = { statecraft }
 	prerequisites = { "tech_adaptive_bureaucracy"}
-	weight = @tier1weight4
+	weight = @tier2weight1
 	
 	# unlocks Planetary Capital
 	# unlocks production-targets edict
@@ -269,13 +274,17 @@ tech_colonial_centralization = {
 	}
 	
 	ai_weight = {
-		factor = 10
+		factor = 100
 		modifier = {
 			factor = 1.25
 			research_leader = {
 				area = society
 				has_trait = "leader_trait_expertise_new_worlds"
 			}
+		}
+		modifier = {
+			factor = 5
+			years_passed > 15
 		}
 	}
 }
@@ -328,6 +337,7 @@ tech_living_state = {
 	}
 	
 	ai_weight = {
+		factor = 100
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -355,12 +365,12 @@ tech_living_state = {
 
 #Galactic Administration
 tech_galactic_administration = {
-	cost = @tier2cost4
+	cost = @tier2cost3
 	area = society
 	tier = 2
 	category = { statecraft }
 	prerequisites = { "tech_living_state" }
-	weight = @tier2weight4
+	weight = @tier2weight3
 	
 	# unlocks Empire Capital-Complex, advanced government forms
 	prereqfor_desc = {
@@ -399,12 +409,12 @@ tech_galactic_administration = {
 
 #Collective Self
 tech_collective_self = {
-	cost = @tier3cost2
+	cost = @tier2cost4
 	area = society
-	tier = 3
+	tier = 2
 	category = { statecraft }
 	prerequisites = { "tech_galactic_administration" }
-	weight = @tier3weight2
+	weight = @tier2weight4
 	
 	modifier = {
 		country_leader_cap = 2
@@ -528,11 +538,11 @@ tech_statecraft_10 = {
 
 tech_statecraft_11 = {
 	area = society
-	cost = @tier3cost2
+	cost = @tier3cost1
 	tier = 3
 	category = { statecraft }
 	prerequisites = { "tech_statecraft_10" }
-	weight = @tier3weight2
+	weight = @tier3weight1
 	
 	modifier = {
 		country_leader_cap = 1
@@ -578,11 +588,11 @@ tech_statecraft_11 = {
 
 tech_statecraft_12 = {
 	area = society
-	cost = @tier3cost3
+	cost = @tier3cost2
 	tier = 3
 	category = { statecraft }
 	prerequisites = { "tech_statecraft_11" }
-	weight = @tier3weight3
+	weight = @tier3weight2
 	
 		modifier = {
 		country_leader_cap = 1
@@ -618,11 +628,11 @@ tech_statecraft_12 = {
 
 tech_statecraft_13 = {
 	area = society
-	cost = @tier3cost4
+	cost = @tier3cost2
 	tier = 3
 	category = { statecraft }
 	prerequisites = { "tech_statecraft_12" }
-	weight = @tier3weight4
+	weight = @tier3weight2
 	
 		modifier = {
 		country_leader_cap = 1
@@ -658,11 +668,11 @@ tech_statecraft_13 = {
 
 tech_statecraft_14 = {
 	area = society
-	cost = @tier4cost1
-	tier = 4
+	cost = @tier3cost3
+	tier = 3
 	category = { statecraft }
 	prerequisites = { "tech_statecraft_13" }
-	weight = @tier4weight1
+	weight = @tier3weight3
 	
 	modifier = {
 		country_leader_cap = 1
@@ -698,11 +708,11 @@ tech_statecraft_14 = {
 
 tech_statecraft_15 = {
 	area = society
-	cost = @tier4cost2
-	tier = 4
+	cost = @tier3cost4
+	tier = 3
 	category = { statecraft }
 	prerequisites = { "tech_statecraft_14" }
-	weight = @tier4weight2
+	weight = @tier3weight4
 	
 	modifier = {
 		country_leader_cap = 1
@@ -738,11 +748,11 @@ tech_statecraft_15 = {
 
 tech_statecraft_16 = {
 	area = society
-	cost = @tier4cost3
-	tier = 4
+	cost = @tier3cost4
+	tier = 3
 	category = { statecraft }
 	prerequisites = { "tech_statecraft_15" }
-	weight = @tier4weight3
+	weight = @tier3weight4
 	
 	modifier = {
 		country_leader_cap = 1
@@ -778,11 +788,11 @@ tech_statecraft_16 = {
 
 tech_statecraft_17 = {
 	area = society
-	cost = @tier4cost4
+	cost = @tier4cost1
 	tier = 4
 	category = { statecraft }
 	prerequisites = { "tech_statecraft_16" }
-	weight = @tier4weight4
+	weight = @tier4weight1
 	modifier = {
 		country_leader_cap = 1
 	}		
@@ -818,11 +828,11 @@ tech_statecraft_17 = {
 
 tech_statecraft_18 = {
 	area = society
-	cost = @tier5cost1
-	tier = 5
+	cost = @tier4cost2
+	tier = 4
 	category = { statecraft }
 	prerequisites = { "tech_statecraft_17" }
-	weight = @tier5weight1
+	weight = @tier4weight2
 	modifier = {
 		country_leader_cap = 1
 	}		
@@ -858,11 +868,11 @@ tech_statecraft_18 = {
 
 tech_statecraft_19 = {
 	area = society
-	cost = @tier5cost1
-	tier = 5
+	cost = @tier4cost3
+	tier = 4
 	category = { statecraft }
 	prerequisites = { "tech_statecraft_18" }
-	weight = @tier5weight1
+	weight = @tier4weight3
 	modifier = {
 		country_leader_cap = 1
 	}		
@@ -897,11 +907,11 @@ tech_statecraft_19 = {
 
 tech_statecraft_20 = {
 	area = society
-	cost = @tier5cost2
-	tier = 5
+	cost = @tier4cost4
+	tier = 4
 	category = { statecraft }
 	prerequisites = { "tech_statecraft_19" }
-	weight = @tier5weight2
+	weight = @tier4weight4
 	
 	modifier = {
 		country_leader_cap = 1

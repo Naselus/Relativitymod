@@ -145,9 +145,6 @@ corvette_assembly_yards2 = {
 		minerals = 300
 	}
 	
-	required_resources = {
-		sr_plasma = 2
-	}
 	
 	modifier = {
 		shipsize_corvette_construction_speed_mult = 0.45
@@ -178,9 +175,6 @@ destroyer_assembly_yards2 = {
 		minerals = 600
 	}
 	
-	required_resources = {
-		sr_plasma = 3
-	}
 	
 	modifier = {
 		shipsize_destroyer_construction_speed_mult = 0.45
@@ -210,9 +204,6 @@ cruiser_assembly_yards2 = {
 		minerals = 800
 	}
 	
-	required_resources = {
-		sr_plasma = 5
-	}
 	
 	modifier = {
 		shipsize_cruiser_construction_speed_mult = 0.45
@@ -252,9 +243,6 @@ synchronized_defenses_2 = {
 		minerals = 450
 	}
 	
-	required_resources = {
-		sr_plasma = 4
-	}
 	
 	station_modifier = {
 		ship_fire_rate_mult = 0.75
@@ -273,9 +261,7 @@ synchronized_defenses_3 = {
 		minerals = 1000
 	}
 	
-	required_resources = {
-		sr_plasma = 8
-	}
+
 	
 	station_modifier = {
 		ship_fire_rate_mult = 1.5
@@ -294,9 +280,6 @@ engineering_bay_2 = {
 		minerals = 400
 	}
 	
-	required_resources = {
-		sr_plasma = 3
-	}
 	
 	orbit_modifier = {
 		ship_reparation_speed_mult = 0.45
@@ -319,9 +302,6 @@ ship_assembly_yards = {
 		minerals = 350
 	}	
 	
-	required_resources = {
-		sr_plasma = 1
-	}
 	
 	modifier = {
 		shipsize_corvette_construction_speed_mult = 0.15
@@ -341,9 +321,6 @@ ship_assembly_yards_2 = {
 		minerals = 450
 	}	
 	
-	required_resources = {
-		sr_plasma = 3
-	}
 	
 	modifier = {
 		shipsize_corvette_construction_speed_mult = 0.20
@@ -365,9 +342,6 @@ ship_assembly_yards_3 = {
 		minerals = 600
 	}	
 	
-	required_resources = {
-		sr_plasma = 5
-	}
 	
 	modifier = {
 		shipsize_corvette_construction_speed_mult = 0.25
@@ -391,9 +365,6 @@ ship_assembly_yards_4 = {
 		minerals = 800
 	}	
 	
-	required_resources = {
-		sr_plasma = 7
-	}
 	
 	modifier = {
 		shipsize_corvette_construction_speed_mult = 0.30
@@ -418,9 +389,6 @@ crew_quarters_2 = {
 		minerals = 300
 	}
 	
-		required_resources = {
-		sr_plasma = 1
-	}
 	
 	orbit_modifier = {
 		ship_upkeep_mult = -0.30

@@ -225,7 +225,7 @@ tech_mining_network_4 = {
 	area = engineering
 	tier = 2
 	category = { mining }
-	prerequisites = { "tech_mining_network_3" "tech_colonial_centralization" }
+	prerequisites = { "tech_mining_network_3" "tech_adaptive_bureaucracy" }
 	weight = @tier2weight2
 	
 
@@ -329,7 +329,7 @@ tech_mining_6 = {
 	cost = @tier2cost4
 	tier = 2
 	category = { mining }
-	prerequisites = { "tech_mining_network_5" "tech_galactic_administration"}	
+	prerequisites = { "tech_mining_network_5" "tech_colonial_centralization"}	
 	weight = @tier2weight4
 
 
@@ -481,7 +481,7 @@ tech_mining_9 = {
 	cost = @tier3cost2
 	tier = 3
 	category = { mining }
-	prerequisites = { "tech_mining_8"}	
+	prerequisites = { "tech_mining_8" "tech_galactic_administration"}	
 	weight = @tier3weight2
 
 	

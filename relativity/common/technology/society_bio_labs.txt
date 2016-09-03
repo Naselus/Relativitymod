@@ -142,7 +142,7 @@ tech_biolab_1 = {
 	}
 	
 	ai_weight = {
-		weight = 10000
+		weight = 90
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -164,7 +164,7 @@ tech_societal_research_1 = {
 		}
 
 	ai_weight = {
-		weight = 100
+		weight = 90
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -189,7 +189,7 @@ tech_societal_research_2 = {
 	
 	
 	ai_weight = {
-		weight = 100
+		weight = 90
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -214,7 +214,7 @@ tech_societal_research_3 = {
 	
 	
 	ai_weight = {
-		weight = 100
+		weight = 90
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -261,7 +261,7 @@ tech_biolab_2 = {
 	}	
 	
 	ai_weight = {
-		weight = 10000
+		weight = 90
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -286,7 +286,7 @@ tech_societal_research_4 = {
 	
 	
 	ai_weight = {
-		weight = 100
+		weight = 50
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -311,7 +311,7 @@ tech_societal_research_5 = {
 	
 	
 	ai_weight = {
-		weight = 10
+		weight = 50
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -336,7 +336,7 @@ tech_societal_research_6 = {
 	
 	
 	ai_weight = {
-		weight = 10
+		weight = 50
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -361,7 +361,7 @@ tech_societal_research_7 = {
 	
 	
 	ai_weight = {
-		weight = 10
+		weight = 50
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -408,7 +408,7 @@ tech_biolab_3 = {
 	}
 	
 	ai_weight = {
-		weight = 10000
+		weight = 90
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -433,7 +433,7 @@ tech_societal_research_8 = {
 	
 	
 	ai_weight = {
-		weight = 10
+		weight = 50
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -458,7 +458,7 @@ tech_societal_research_9 = {
 	
 	
 	ai_weight = {
-		weight = 10
+		weight = 50
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -483,7 +483,7 @@ tech_societal_research_10 = {
 	
 	
 	ai_weight = {
-		weight = 10
+		weight = 50
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -508,7 +508,7 @@ tech_societal_research_11 = {
 	
 	
 	ai_weight = {
-		weight = 10
+		weight = 50
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -554,7 +554,7 @@ tech_biolab_4 = {
 	}
 	
 	ai_weight = {
-		weight = 1000
+		weight = 90
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -579,7 +579,7 @@ tech_societal_research_12 = {
 	
 	
 	ai_weight = {
-		weight = 10
+		weight = 50
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -604,7 +604,7 @@ tech_societal_research_13 = {
 	
 	
 	ai_weight = {
-		weight = 10
+		weight = 50
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -629,7 +629,7 @@ tech_societal_research_14 = {
 	
 	
 	ai_weight = {
-		weight = 10
+		weight = 50
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -654,7 +654,7 @@ tech_societal_research_15 = {
 	
 	
 	ai_weight = {
-		weight = 10
+		weight = 50
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -700,7 +700,7 @@ tech_biolab_5 = {
 	}
 	
 	ai_weight = {
-		weight = 10
+		weight = 90
 		modifier = {
 			factor = 1.25
 			research_leader = {

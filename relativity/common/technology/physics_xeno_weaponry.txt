@@ -225,16 +225,11 @@ tech_space_cloud_weapon_1 = {
 		}
 		modifier = {
 			factor = 0
-			OR = {
-			NOT = {
-				years_passed > 25
-			}
 			NOT = {
 			has_monthly_income = {
 			resource = physics_research
 			value > 10
-					}
-				}	
+				}
 			}
 		}
 	}
@@ -495,7 +490,7 @@ tech_scourge_missile_1 = {
 # Space Whale Weapon
 tech_space_whale_weapon_1 = {
 	area = physics
-	cost = @tier1cost3
+	cost = @tier1cost2
 	tier = 1
 	category = { xeno_weaponry }
 	ai_update_type = military
@@ -518,6 +513,20 @@ tech_space_whale_weapon_1 = {
 		modifier = {
 			factor = 1.5
 			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 0
+			OR = {
+			has_technology = "tech_mass_drivers_2"
+			has_technology = "tech_missiles_2"
+			has_technology = "tech_lasers_2"
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+			years_passed < 20
+			}
 		}
 	}
 }
