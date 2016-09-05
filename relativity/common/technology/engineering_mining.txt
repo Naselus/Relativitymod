@@ -278,7 +278,7 @@ tech_mining_network_5 = {
 	cost = @tier2cost3
 	tier = 2
 	category = { mining }
-	prerequisites = { "tech_mining_network_4" "tech_living_state"}	
+	prerequisites = { "tech_mining_network_4" }	
 	weight = @tier2weight3
 
 
@@ -481,7 +481,7 @@ tech_mining_9 = {
 	cost = @tier3cost2
 	tier = 3
 	category = { mining }
-	prerequisites = { "tech_mining_8" "tech_galactic_administration"}	
+	prerequisites = { "tech_mining_8" "tech_living_state"}	
 	weight = @tier3weight2
 
 	
@@ -583,7 +583,7 @@ tech_mining_11 = {
 	cost = @tier3cost4
 	tier = 3
 	category = { mining }
-	prerequisites = { "tech_mining_10"}	
+	prerequisites = { "tech_mining_10" "tech_galactic_administration"}	
 	weight = @tier3weight4
 
 	
@@ -633,7 +633,7 @@ tech_mining_12 = {
 	cost = @tier4cost1
 	tier = 4
 	category = { mining }
-	prerequisites = { "tech_mining_11"}	
+	prerequisites = { "tech_mining_11" }	
 	weight = @tier4weight1
 	
 	
@@ -683,7 +683,7 @@ tech_mining_13 = {
 	cost = @tier4cost2
 	tier = 4
 	category = { mining }
-	prerequisites = { "tech_mining_12"}	
+	prerequisites = { "tech_mining_12" "tech_collective_self"}	
 	weight = @tier4weight2
 
 	
