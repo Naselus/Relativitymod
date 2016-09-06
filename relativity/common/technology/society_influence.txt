@@ -111,7 +111,7 @@ tech_galactic_ambitions = {
 	weight = @tier1weight4
 	
 	modifier = {
-		country_border_mult = 0.05
+		country_border_mult = 0.03
 	}
 	
 	prereqfor_desc = {
@@ -188,7 +188,7 @@ tech_manifest_destiny = {
 	weight = @tier2weight2
 		
 	modifier = {
-		country_border_mult = 0.05
+		country_border_mult = 0.03
 	}
 	
 	prereqfor_desc = {
@@ -362,7 +362,7 @@ tech_influence_6 = {
 	
 	
 	modifier = {
-		country_border_mult = 0.03
+		country_border_mult = 0.04
 	}
 	
 	ai_weight = {
@@ -397,7 +397,7 @@ tech_influence_7 = {
 	weight = @tier3weight2
 	
 	modifier = {
-		country_border_mult = 0.03
+		country_border_mult = 0.04
 	}	
 	ai_weight = {
 		factor = 4
@@ -431,7 +431,7 @@ tech_influence_8 = {
 	weight = @tier3weight2
 	
 	modifier = {
-		country_border_mult = 0.03
+		country_border_mult = 0.04
 	}
 	
 	ai_weight = {
@@ -465,7 +465,7 @@ tech_influence_9 = {
 	prerequisites = { "tech_influence_8" }		
 	weight = @tier3weight3
 	modifier = {
-		country_border_mult = 0.03
+		country_border_mult = 0.04
 	}	
 
 	ai_weight = {
@@ -499,7 +499,7 @@ tech_influence_10 = {
 	prerequisites = { "tech_influence_9" }	
 	weight = @tier3weight3
 		modifier = {
-		country_border_mult = 0.03
+		country_border_mult = 0.04
 	}
 
 	
@@ -534,7 +534,7 @@ tech_influence_11 = {
 	prerequisites = { "tech_influence_10" }	
 	weight = @tier3weight3
 	modifier = {
-		country_border_mult = 0.03
+		country_border_mult = 0.05
 	}	
 
 	ai_weight = {
@@ -568,7 +568,7 @@ tech_influence_12 = {
 	prerequisites = { "tech_influence_11" }	
 	weight = @tier3weight4
 	modifier = {
-		country_border_mult = 0.03
+		country_border_mult = 0.05
 	}	
 
 	ai_weight = {
@@ -602,7 +602,7 @@ tech_influence_13 = {
 	prerequisites = { "tech_influence_12" }	
 	weight = @tier3weight4
 	modifier = {
-		country_border_mult = 0.03
+		country_border_mult = 0.05
 	}	
 		
 	ai_weight = {
@@ -636,7 +636,7 @@ tech_influence_14 = {
 	prerequisites = { "tech_influence_13" }		
 	weight = @tier3weight4
 	modifier = {
-		country_border_mult = 0.03
+		country_border_mult = 0.05
 	}	
 
 	ai_weight = {
@@ -671,7 +671,7 @@ tech_influence_15 = {
 	weight = @tier4weight1
 	
 	modifier = {
-		country_border_mult = 0.03
+		country_border_mult = 0.05
 	}
 	
 	ai_weight = {
@@ -706,7 +706,7 @@ tech_influence_16 = {
 	weight = @tier4weight1
 	
 	modifier = {
-		country_border_mult = 0.03
+		country_border_mult = 0.06
 	}
 	
 	ai_weight = {
@@ -741,7 +741,7 @@ tech_influence_17 = {
 	weight = @tier4weight1
 	
 	modifier = {
-		country_border_mult = 0.03
+		country_border_mult = 0.06
 	}
 	
 	ai_weight = {
@@ -776,7 +776,7 @@ tech_influence_18 = {
 	weight = @tier4weight2
 	
 	modifier = {
-		country_border_mult = 0.03
+		country_border_mult = 0.06
 	}
 	
 	ai_weight = {
@@ -811,7 +811,7 @@ tech_influence_19 = {
 	weight = @tier4weight3
 	
 	modifier = {
-		country_border_mult = 0.03
+		country_border_mult = 0.06
 	}
 	
 	ai_weight = {
@@ -846,7 +846,7 @@ tech_influence_20 = {
 	weight = @tier4weight4
 	
 	modifier = {
-		country_border_mult = 0.03
+		country_border_mult = 0.06
 	}
 	
 	ai_weight = {

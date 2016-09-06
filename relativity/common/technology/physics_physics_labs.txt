@@ -347,7 +347,7 @@ tech_physics_lab_6 = {
 	weight = @tier2weight3
 	
 	modifier = {
-		country_physics_tech_research_speed = 0.03
+		country_physics_tech_research_speed = 0.06
 	}
 	
 	ai_weight = {
@@ -371,7 +371,7 @@ tech_physics_lab_7 = {
 	weight = @tier3weight1
 	
 	modifier = {
-		country_physics_tech_research_speed = 0.03
+		country_physics_tech_research_speed = 0.06
 	}
 	
 	ai_weight = {
@@ -395,7 +395,7 @@ tech_physics_lab_8 = {
 	weight = @tier3weight1
 	
 	modifier = {
-		country_physics_tech_research_speed = 0.03
+		country_physics_tech_research_speed = 0.06
 	}
 	
 	ai_weight = {
@@ -419,7 +419,7 @@ tech_physics_lab_9 = {
 	weight = @tier3weight2
 	
 	modifier = {
-		country_physics_tech_research_speed = 0.03
+		country_physics_tech_research_speed = 0.06
 	}
 	
 	ai_weight = {
@@ -491,7 +491,7 @@ tech_physics_lab_11 = {
 	weight = @tier3weight3
 	
 	modifier = {
-		country_physics_tech_research_speed = 0.03
+		country_physics_tech_research_speed = 0.09
 	}
 	
 	ai_weight = {
@@ -515,7 +515,7 @@ tech_physics_lab_12 = {
 	weight = @tier3weight4
 	
 	modifier = {
-		country_physics_tech_research_speed = 0.03
+		country_physics_tech_research_speed = 0.09
 	}
 	
 	ai_weight = {
@@ -539,7 +539,7 @@ tech_physics_lab_13 = {
 	weight = @tier3weight4
 	
 	modifier = {
-		country_physics_tech_research_speed = 0.03
+		country_physics_tech_research_speed = 0.09
 	}
 	
 	ai_weight = {
@@ -563,7 +563,7 @@ tech_physics_lab_14 = {
 	weight = @tier4weight1
 	
 	modifier = {
-		country_physics_tech_research_speed = 0.03
+		country_physics_tech_research_speed = 0.09
 	}
 	
 	ai_weight = {
@@ -635,7 +635,7 @@ tech_physics_lab_16 = {
 	weight = @tier4weight2
 	
 	modifier = {
-		country_physics_tech_research_speed = 0.03
+		country_physics_tech_research_speed = 0.12
 	}
 	
 	ai_weight = {
@@ -659,7 +659,7 @@ tech_physics_lab_17 = {
 	weight = @tier4weight2
 	
 	modifier = {
-		country_physics_tech_research_speed = 0.03
+		country_physics_tech_research_speed = 0.12
 	}
 	
 	ai_weight = {
@@ -683,7 +683,7 @@ tech_physics_lab_18 = {
 	weight = @tier4weight2
 	
 	modifier = {
-		country_physics_tech_research_speed = 0.03
+		country_physics_tech_research_speed = 0.12
 	}
 	
 	ai_weight = {
@@ -707,7 +707,7 @@ tech_physics_lab_19 = {
 	weight = @tier4weight3
 	
 	modifier = {
-		country_physics_tech_research_speed = 0.03
+		country_physics_tech_research_speed = 0.12
 	}
 	
 	ai_weight = {

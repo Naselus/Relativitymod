@@ -519,8 +519,8 @@ tech_ballistics_15 = {
 	weight = @tier3weight3
 	
 	modifier = {
-		weapon_type_kinetic_weapon_damage_mult = 0.05
-		weapon_type_kinetic_weapon_fire_rate_mult = 0.05
+		weapon_type_kinetic_weapon_damage_mult = 0.075
+		weapon_type_kinetic_weapon_fire_rate_mult = 0.075
 	}
 	
 	ai_weight = {
@@ -644,8 +644,8 @@ tech_ballistics_16 = {
 	weight = @tier3weight4
 	
 	modifier = {
-		weapon_type_kinetic_weapon_damage_mult = 0.05
-		weapon_type_kinetic_weapon_fire_rate_mult = 0.05
+		weapon_type_kinetic_weapon_damage_mult = 0.075
+		weapon_type_kinetic_weapon_fire_rate_mult = 0.075
 	}
 	
 	ai_weight = {
@@ -768,8 +768,8 @@ tech_ballistics_17 = {
 	weight = @tier4weight2
 	
 	modifier = {
-		weapon_type_kinetic_weapon_damage_mult = 0.05
-		weapon_type_kinetic_weapon_fire_rate_mult = 0.05
+		weapon_type_kinetic_weapon_damage_mult = 0.1
+		weapon_type_kinetic_weapon_fire_rate_mult = 0.1
 	}
 	
 	ai_weight = {
@@ -1046,8 +1046,8 @@ tech_ballistics_18 = {
 	weight = @tier3weight2
 	
 	modifier = {
-		weapon_type_kinetic_weapon_damage_mult = 0.05
-		weapon_type_kinetic_weapon_fire_rate_mult = 0.05
+		weapon_type_kinetic_weapon_damage_mult = 0.1
+		weapon_type_kinetic_weapon_fire_rate_mult = 0.1
 	}
 	
 	ai_weight = {
@@ -1251,8 +1251,8 @@ tech_ballistics_19 = {
 	weight = @tier4weight1
 	
 	modifier = {
-		weapon_type_kinetic_weapon_damage_mult = 0.05
-		weapon_type_kinetic_weapon_fire_rate_mult = 0.05
+		weapon_type_kinetic_weapon_damage_mult = 0.1
+		weapon_type_kinetic_weapon_fire_rate_mult = 0.1
 	}
 	
 	ai_weight = {
@@ -1381,8 +1381,8 @@ tech_ballistics_20 = {
 	weight = @tier4weight4
 	
 	modifier = {
-		weapon_type_kinetic_weapon_damage_mult = 0.05
-		weapon_type_kinetic_weapon_fire_rate_mult = 0.05
+		weapon_type_kinetic_weapon_damage_mult = 0.125
+		weapon_type_kinetic_weapon_fire_rate_mult = 0.125
 	}
 	
 	ai_weight = {

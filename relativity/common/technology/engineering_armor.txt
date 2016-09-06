@@ -383,7 +383,7 @@ tech_ship_armor_9 = {
 	weight = @tier2weight2
 	
 	modifier = {
-		ship_armor_mult = 0.05
+		ship_armor_mult = 0.075
 	}
 	
 	ai_weight = {
@@ -434,7 +434,7 @@ tech_ship_armor_10 = {
 	weight = @tier2weight3
 	
 	modifier = {
-		ship_armor_mult = 0.05
+		ship_armor_mult = 0.075
 	}
 	
 	ai_weight = {
@@ -485,7 +485,7 @@ tech_ship_armor_11 = {
 	weight = @tier2weight4
 	
 	modifier = {
-		ship_armor_mult = 0.05
+		ship_armor_mult = 0.075
 	}
 	
 	ai_weight = {
@@ -536,7 +536,7 @@ tech_ship_armor_12 = {
 	weight = @tier3weight1
 	
 	modifier = {
-		ship_armor_mult = 0.05
+		ship_armor_mult = 0.075
 	}
 	
 	ai_weight = {
@@ -648,7 +648,7 @@ tech_ship_armor_13 = {
 	weight = @tier3weight1
 	
 	modifier = {
-		ship_armor_mult = 0.05
+		ship_armor_mult = 0.1
 	}
 	
 	ai_weight = {
@@ -699,7 +699,7 @@ tech_ship_armor_14 = {
 	weight = @tier3weight2
 	
 	modifier = {
-		ship_armor_mult = 0.05
+		ship_armor_mult = 0.1
 	}
 	
 	ai_weight = {
@@ -750,7 +750,7 @@ tech_ship_armor_15 = {
 	weight = @tier3weight2
 	
 	modifier = {
-		ship_armor_mult = 0.05
+		ship_armor_mult = 0.1
 	}
 	
 	ai_weight = {
@@ -801,7 +801,7 @@ tech_ship_armor_16 = {
 	weight = @tier3weight3
 	
 	modifier = {
-		ship_armor_mult = 0.05
+		ship_armor_mult = 0.1
 	}
 	
 	ai_weight = {
@@ -912,7 +912,7 @@ tech_ship_armor_17 = {
 	weight = @tier3weight4
 	
 	modifier = {
-		ship_armor_mult = 0.05
+		ship_armor_mult = 0.125
 	}
 	
 	ai_weight = {
@@ -963,7 +963,7 @@ tech_ship_armor_18 = {
 	weight = @tier4weight1
 	
 	modifier = {
-		ship_armor_mult = 0.05
+		ship_armor_mult = 0.125
 	}
 	
 	ai_weight = {
@@ -1014,7 +1014,7 @@ tech_ship_armor_19 = {
 	weight = @tier4weight2
 	
 	modifier = {
-		ship_armor_mult = 0.05
+		ship_armor_mult = 0.125
 	}
 	
 	ai_weight = {
@@ -1065,7 +1065,7 @@ tech_ship_armor_20 = {
 	weight = @tier4weight3
 	
 	modifier = {
-		ship_armor_mult = 0.05
+		ship_armor_mult = 0.125
 	}
 	
 	ai_weight = {

@@ -154,7 +154,7 @@ tech_alien_life_studies = {
 		modifier = {
 			factor = 0
 			NOT = {
-				years_passed > 20
+				years_passed > 50
 			}
 		}
 	}

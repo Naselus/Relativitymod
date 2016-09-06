@@ -19,7 +19,7 @@ utility_component_template = {
 	component_set = "ship_sensor_components"
 	
 	ai_weight = {
-		weight = 1
+		weight = 70
 	}	
 }
 
@@ -32,7 +32,7 @@ utility_component_template = {
 	cost = 10
 	sensor_range = @sensor2
 	
-	prerequisites = { "tech_sensors_2" }
+	prerequisites = { "tech_sensors_8" }
 	component_set = "ship_sensor_components"
 	
 	ship_modifier = {
@@ -40,7 +40,7 @@ utility_component_template = {
 	}
 	
 	ai_weight = {
-		weight = 10
+		weight = 80
 	}	
 }
 
@@ -53,7 +53,7 @@ utility_component_template = {
 	cost = 10
 	sensor_range = @sensor3
 	
-	prerequisites = { "tech_sensors_3" }
+	prerequisites = { "tech_sensors_12" }
 	component_set = "ship_sensor_components"
 	
 	ship_modifier = {
@@ -61,7 +61,7 @@ utility_component_template = {
 	}
 	
 	ai_weight = {
-		weight = 100
+		weight = 90
 	}	
 }
 
@@ -82,7 +82,7 @@ utility_component_template = {
 	component_set = "ship_sensor_components"
 	
 	ai_weight = {
-		weight = 1000
+		weight = 100
 	}	
 }
 
@@ -115,11 +115,11 @@ utility_component_template = {
 		ship_accuracy_add = @hit2
 	}
 	
-	prerequisites = { "tech_sensors_2" }
+	prerequisites = { "tech_sensors_8" }
 	component_set = "station_sensor_components"
 	
 	ai_weight = {
-		weight = 10
+		weight = 80
 	}	
 }
 
@@ -136,11 +136,11 @@ utility_component_template = {
 		ship_accuracy_add = @hit3
 	}
 	
-	prerequisites = { "tech_sensors_3" }
+	prerequisites = { "tech_sensors_12" }
 	component_set = "station_sensor_components"
 	
 	ai_weight = {
-		weight = 100
+		weight = 90
 	}	
 }
 
@@ -161,6 +161,6 @@ utility_component_template = {
 	component_set = "station_sensor_components"
 	
 	ai_weight = {
-		weight = 1000
+		weight = 100
 	}	
 }

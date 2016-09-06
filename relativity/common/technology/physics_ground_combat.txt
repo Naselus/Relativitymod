@@ -199,7 +199,7 @@ tech_army_4 = {
 	}
 	
 	modifier = {
-		army_upkeep_mult = -0.05
+		army_upkeep_mult = -0.03
 		army_morale = 0.05
 	}
 	
@@ -306,7 +306,7 @@ tech_army_6 = {
 	weight = @tier2weight2
 	
 	modifier = {
-		army_upkeep_mult = -0.05
+		army_upkeep_mult = -0.03
 		army_morale = 0.05
 	}
 	
@@ -374,7 +374,7 @@ tech_army_8 = {
 	weight = @tier2weight3
 	
 	modifier = {
-		army_upkeep_mult = -0.05
+		army_upkeep_mult = -0.03
 		army_morale = 0.05
 	}
 	
@@ -443,7 +443,7 @@ tech_army_10 = {
 	
 	modifier = {
 		army_upkeep_mult = -0.05
-		army_morale = 0.05
+		army_morale = 0.07
 	}
 	
 	
@@ -477,8 +477,8 @@ tech_army_11 = {
 	weight = @tier2weight4
 	
 	modifier = {
-		army_health = 0.05
-		army_damage_mult = 0.05
+		army_health = 0.07
+		army_damage_mult = 0.07
 	}
 	
 	
@@ -512,7 +512,7 @@ tech_army_12 = {
 	
 	modifier = {
 		army_upkeep_mult = -0.05
-		army_morale = 0.05
+		army_morale = 0.07
 	}
 	
 	
@@ -545,8 +545,8 @@ tech_army_13 = {
 	weight = @tier3weight2
 	
 	modifier = {
-		army_health = 0.05
-		army_damage_mult = 0.05
+		army_health = 0.07
+		army_damage_mult = 0.07
 	}
 	
 	
@@ -580,7 +580,7 @@ tech_army_14 = {
 	
 	modifier = {
 		army_upkeep_mult = -0.05
-		army_morale = 0.05
+		army_morale = 0.07
 	}
 	
 	
@@ -613,8 +613,8 @@ tech_army_15 = {
 	weight = @tier3weight3
 	
 	modifier = {
-		army_health = 0.05
-		army_damage_mult = 0.05
+		army_health = 0.07
+		army_damage_mult = 0.07
 	}
 	
 	
@@ -647,8 +647,8 @@ tech_army_16 = {
 	weight = @tier3weight4
 	
 	modifier = {
-		army_upkeep_mult = -0.05
-		army_morale = 0.05
+		army_upkeep_mult = -0.07
+		army_morale = 0.1
 	}
 	
 	
@@ -681,8 +681,8 @@ tech_army_17 = {
 	weight = @tier4weight1
 	
 	modifier = {
-		army_health = 0.05
-		army_damage_mult = 0.05
+		army_health = 0.1
+		army_damage_mult = 0.1
 	}
 	
 	
@@ -715,8 +715,8 @@ tech_army_18 = {
 	weight = @tier4weight2
 	
 	modifier = {
-		army_upkeep_mult = -0.05
-		army_morale = 0.05
+		army_upkeep_mult = -0.07
+		army_morale = 0.1
 	}
 	
 	
@@ -749,8 +749,8 @@ tech_army_19 = {
 	weight = @tier4weight3
 	
 	modifier = {
-		army_health = 0.05
-		army_damage_mult = 0.05
+		army_health = 0.1
+		army_damage_mult = 0.1
 	}
 	
 	
@@ -783,8 +783,8 @@ tech_army_20 = {
 	weight = @tier4weight3
 	
 	modifier = {
-		army_upkeep_mult = -0.05
-		army_morale = 0.05
+		army_upkeep_mult = -0.07
+		army_morale = 0.1
 	}
 	
 	

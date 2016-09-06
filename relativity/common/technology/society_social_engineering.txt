@@ -326,7 +326,7 @@ tech_synthetic_thought_patterns = {
 	weight = @tier2weight4
 	
 	modifier = {
-		pop_resettlement_cost_mult = -0.1
+		pop_resettlement_cost_mult = -0.15
 	}
 	
 	weight_modifier = {
@@ -643,7 +643,7 @@ tech_social_engineering_10 = {
 	weight = @tier3weight2
 	
 		modifier = {	
-		pop_ethic_shift = -0.03	
+		pop_ethic_shift = -0.04	
 		}	
 	
 	
@@ -678,7 +678,7 @@ tech_social_engineering_11 = {
 	weight = @tier3weight2
 	
 		modifier = {	
-		pop_ethic_shift = -0.03	
+		pop_ethic_shift = -0.04	
 		}	
 	
 	
@@ -713,7 +713,7 @@ tech_social_engineering_12 = {
 	weight = @tier3weight3
 	
 		modifier = {	
-		pop_ethic_shift = -0.03	
+		pop_ethic_shift = -0.04	
 		}	
 	
 	
@@ -748,7 +748,7 @@ tech_social_engineering_13 = {
 	weight = @tier3weight3
 	
 		modifier = {	
-		pop_ethic_shift = -0.03	
+		pop_ethic_shift = -0.04	
 		}	
 	
 	
@@ -784,7 +784,7 @@ tech_social_engineering_14 = {
 	
 	
 		modifier = {	
-		pop_ethic_shift = -0.03	
+		pop_ethic_shift = -0.04	
 		}	
 	
 	ai_weight = {
@@ -818,7 +818,7 @@ tech_social_engineering_15 = {
 	weight = @tier3weight4
 	
 		modifier = {	
-		pop_ethic_shift = -0.03	
+		pop_ethic_shift = -0.05	
 		}	
 	
 	
@@ -853,7 +853,7 @@ tech_social_engineering_16 = {
 	weight = @tier3weight4
 	
 		modifier = {	
-		pop_ethic_shift = -0.03	
+		pop_ethic_shift = -0.05	
 		}	
 	
 	
@@ -888,7 +888,7 @@ tech_social_engineering_17 = {
 	weight = @tier4weight1
 	
 		modifier = {	
-		pop_ethic_shift = -0.03	
+		pop_ethic_shift = -0.05	
 		}	
 	
 	
@@ -923,7 +923,7 @@ tech_social_engineering_18 = {
 	weight = @tier4weight2
 	
 		modifier = {	
-		pop_ethic_shift = -0.03	
+		pop_ethic_shift = -0.05	
 		}	
 	
 	
@@ -958,7 +958,7 @@ tech_social_engineering_19 = {
 	weight = @tier4weight3
 	
 		modifier = {	
-		pop_ethic_shift = -0.03	
+		pop_ethic_shift = -0.05	
 		}	
 	
 	
@@ -993,7 +993,7 @@ tech_social_engineering_20 = {
 	weight = @tier4weight4
 	
 		modifier = {	
-		pop_ethic_shift = -0.03	
+		pop_ethic_shift = -0.05	
 		}	
 	
 	

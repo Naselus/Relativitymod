@@ -208,6 +208,13 @@ tech_colonization_2 = {
 			has_ai_personality_behaviour = conqueror
 			}
 		}
+		modifier = {
+			factor = 0
+		AND = {
+			is_ai = yes
+			years_passed < 40
+			}
+		}
 	}
 }
 
@@ -241,7 +248,7 @@ tech_colonization_3 = {
 			factor = 0
 		AND = {
 			is_ai = yes
-			years_passed < 40
+			years_passed < 50
 			}
 		}
 	}
@@ -921,13 +928,13 @@ tech_frontier_collectives = {
 }
 
 tech_frontier_commissars = {
-	 cost = @tier2cost4
+	 cost = @tier2cost1
 	 area = society
 	 tier = 2
 	 category = { new_worlds }
 	 is_rare = yes	
 	 prerequisites = { "tech_frontier_collectives" }
-	weight = @tier2weight4
+	weight = @tier2weight1
 	
 	 weight_modifier = {
 		 modifier = {
@@ -1002,17 +1009,18 @@ tech_frontier_commissars = {
 
 #Frontier Initiatives
 tech_frontier_initiatives = {
-	cost = @tier2cost1
+	cost = @tier2cost2
 	area = society
 	tier = 2
 	category = { new_worlds }
 	is_rare = yes	
 	prerequisites = { "tech_frontier_commissars" "tech_colonization_3"}
-	weight = @tier2weight1
+	weight = @tier2weight2
 		
 	feature_flags = {
 		colony_ship_rushed
 	}
+	
 	
 	weight_modifier = {
 		modifier = {
@@ -1082,13 +1090,13 @@ tech_frontier_initiatives = {
 
 #Frontier Traditions
 tech_frontier_traditions = {
-	cost = @tier2cost4
+	cost = @tier2cost3
 	area = society
 	tier = 2
 	category = { new_worlds }
 	is_rare = yes	
 	prerequisites = { "tech_frontier_initiatives" }
-	weight = @tier2weight4
+	weight = @tier2weight3
 	
 	#unlocks pioneering terminal module
 	

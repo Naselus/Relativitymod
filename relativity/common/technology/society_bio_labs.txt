@@ -281,7 +281,7 @@ tech_societal_research_4 = {
 	weight = @tier2weight3
 	
 		modifier = {
-		country_society_tech_research_speed = 0.03	
+		country_society_tech_research_speed = 0.06	
 		}	
 	
 	
@@ -306,7 +306,7 @@ tech_societal_research_5 = {
 	weight = @tier3weight1
 	
 			modifier = {
-		country_society_tech_research_speed = 0.03	
+		country_society_tech_research_speed = 0.06	
 		}
 	
 	
@@ -331,7 +331,7 @@ tech_societal_research_6 = {
 	weight = @tier3weight1
 	
 		modifier = {
-		country_society_tech_research_speed = 0.03	
+		country_society_tech_research_speed = 0.06	
 		}	
 	
 	
@@ -356,7 +356,7 @@ tech_societal_research_7 = {
 	weight = @tier3weight2
 	
 		modifier = {
-		country_society_tech_research_speed = 0.03	
+		country_society_tech_research_speed = 0.06	
 		}
 	
 	
@@ -428,7 +428,7 @@ tech_societal_research_8 = {
 	weight = @tier3weight3
 	
 		modifier = {
-		country_society_tech_research_speed = 0.03	
+		country_society_tech_research_speed = 0.09	
 		}	
 	
 	
@@ -453,7 +453,7 @@ tech_societal_research_9 = {
 	weight = @tier3weight4
 	
 		modifier = {
-		country_society_tech_research_speed = 0.03	
+		country_society_tech_research_speed = 0.09	
 		}	
 	
 	
@@ -478,7 +478,7 @@ tech_societal_research_10 = {
 	weight = @tier3weight4
 	
 		modifier = {
-		country_society_tech_research_speed = 0.03	
+		country_society_tech_research_speed = 0.09	
 		}	
 	
 	
@@ -503,7 +503,7 @@ tech_societal_research_11 = {
 	weight = @tier4weight1
 	
 		modifier = {
-		country_society_tech_research_speed = 0.03	
+		country_society_tech_research_speed = 0.09	
 		}	
 	
 	
@@ -574,7 +574,7 @@ tech_societal_research_12 = {
 	weight = @tier4weight2
 	
 		modifier = {
-		country_society_tech_research_speed = 0.03	
+		country_society_tech_research_speed = 0.12	
 		}	
 	
 	
@@ -599,7 +599,7 @@ tech_societal_research_13 = {
 	weight = @tier4weight2
 	
 		modifier = {
-		country_society_tech_research_speed = 0.03	
+		country_society_tech_research_speed = 0.12	
 		}	
 	
 	
@@ -624,7 +624,7 @@ tech_societal_research_14 = {
 	weight = @tier4weight2
 	
 		modifier = {
-		country_society_tech_research_speed = 0.03	
+		country_society_tech_research_speed = 0.12	
 		}	
 	
 	
@@ -649,7 +649,7 @@ tech_societal_research_15 = {
 	weight = @tier4weight3
 	
 			modifier = {
-		country_society_tech_research_speed = 0.03	
+		country_society_tech_research_speed = 0.12	
 		}
 	
 	

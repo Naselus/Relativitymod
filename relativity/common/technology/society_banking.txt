@@ -109,7 +109,7 @@ tech_banking_2 = {
 	weight = @tier1weight1
 		
 	modifier = {
-		tile_resource_energy_mult = 0.05
+		tile_resource_energy_mult = 0.04
 	}
 	
 	weight_modifier = {
@@ -161,7 +161,7 @@ tech_banking_3 = {
 	weight = @tier1weight3
 		
 	modifier = {
-		tile_resource_energy_mult = 0.05
+		tile_resource_energy_mult = 0.04
 	}
 	
 	weight_modifier = {
@@ -285,7 +285,7 @@ tech_banking_5 = {
 	weight = @tier2weight2
 	
 	modifier = {
-		tile_resource_energy_mult = 0.05
+		tile_resource_energy_mult = 0.06
 	}	
 
 	ai_weight = {
@@ -327,7 +327,7 @@ tech_banking_6 = {
 	weight = @tier2weight3
 	
 	modifier = {
-		tile_resource_energy_mult = 0.05
+		tile_resource_energy_mult = 0.06
 	}
 	
 	ai_weight = {
@@ -409,7 +409,7 @@ tech_banking_8 = {
 	weight = @tier3weight1
 	
 	modifier = {
-		tile_resource_energy_mult = 0.05
+		tile_resource_energy_mult = 0.08
 	}
 	
 	ai_weight = {
@@ -451,7 +451,7 @@ tech_banking_9 = {
 	weight = @tier3weight2
 	
 	modifier = {
-		tile_resource_energy_mult = 0.05
+		tile_resource_energy_mult = 0.08
 	}
 
 	ai_weight = {
@@ -533,7 +533,7 @@ tech_banking_11 = {
 	weight = @tier3weight4
 
 	modifier = {
-		tile_resource_energy_mult = 0.05
+		tile_resource_energy_mult = 0.1
 	}
 	
 	ai_weight = {
@@ -575,7 +575,7 @@ tech_banking_12 = {
 	weight = @tier4weight1
 
 	modifier = {
-		tile_resource_energy_mult = 0.05
+		tile_resource_energy_mult = 0.1
 	}
 	
 	ai_weight = {
@@ -657,7 +657,7 @@ tech_banking_14 = {
 	weight = @tier4weight3
 
 	modifier = {
-		tile_resource_energy_mult = 0.05
+		tile_resource_energy_mult = 0.15
 	}
 	
 	ai_weight = {
@@ -699,7 +699,7 @@ tech_banking_15 = {
 	weight = @tier4weight4
 
 	modifier = {
-		tile_resource_energy_mult = 0.05
+		tile_resource_energy_mult = 0.15
 	}
 	
 	ai_weight = {

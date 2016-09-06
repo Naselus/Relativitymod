@@ -1296,6 +1296,13 @@ tech_centralized_command = {
 				has_trait = "leader_trait_expertise_military_theory"
 			}
 		}
+		modifier = {
+			factor = 0
+			AND = {
+			is_ai = yes
+			years_passed < 40
+			}
+		}
 	}
 	
 	ai_weight = {

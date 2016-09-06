@@ -451,7 +451,7 @@ tech_genetics_13 = {
 	prerequisites = { "tech_cloning" }
 	weight = @tier2weight4
 	modifier = {
-		 leader_age = 10
+		 leader_age = 15
 	}
 	ai_weight = {
 		modifier = {
@@ -823,7 +823,7 @@ tech_selected_lineages = {
 	
 	# Modifiers from this tech is added through a policy-option
 	modifier = {
-		 leader_age = 10
+		 leader_age = 15
 	}
 	
 	weight_modifier = {
@@ -895,7 +895,7 @@ tech_genetics_15 = {
 	weight = @tier3weight2
 	
 	modifier = {
-		 leader_age = 10
+		 leader_age = 15
 	}	
 
 	
@@ -1098,7 +1098,7 @@ tech_genetics_16 = {
 	weight = @tier4weight2
 	
 		modifier = {
-		 leader_age = 10
+		 leader_age = 20
 	}
 	
 	ai_weight = {
@@ -1188,7 +1188,7 @@ tech_genetics_18 = {
 	prerequisites = { "tech_genetics_17" }	
 	weight = @tier4weight3
 	modifier = {
-		 leader_age = 10
+		 leader_age = 20
 	}	
 	
 	
@@ -1233,7 +1233,7 @@ tech_genetics_19 = {
 	prerequisites = { "tech_genetics_18" }	
 	weight = @tier4weight3
 	modifier = {
-		 leader_age = 10
+		 leader_age = 20
 	}
 	
 	ai_weight = {
@@ -1278,7 +1278,7 @@ tech_genetics_20 = {
 	weight = @tier4weight4
 
 		modifier = {
-		trait_points = 1
+		trait_points = 2
 	}
 	
 	ai_weight = {

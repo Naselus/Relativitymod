@@ -307,7 +307,7 @@ tech_thrusters_8 = {
 	weight = @tier2weight2
 	
 	modifier = {
-		ship_speed_mult = 0.05
+		ship_speed_mult = 0.08
 	}
 	
 	ai_weight = {
@@ -345,7 +345,7 @@ tech_thrusters_9 = {
 	weight = @tier2weight3
 	
 	modifier = {
-		ship_speed_mult = 0.05
+		ship_speed_mult = 0.08
 	}
 	
 	ai_weight = {
@@ -383,7 +383,7 @@ tech_thrusters_10 = {
 	weight = @tier2weight3
 	
 	modifier = {
-		ship_speed_mult = 0.05
+		ship_speed_mult = 0.08
 	}
 	
 	ai_weight = {
@@ -421,7 +421,7 @@ tech_thrusters_11 = {
 	weight = @tier2weight4
 	
 	modifier = {
-		ship_speed_mult = 0.05
+		ship_speed_mult = 0.08
 	}
 	
 	ai_weight = {
@@ -513,7 +513,7 @@ tech_thrusters_12 = {
 	weight = @tier2weight1
 	
 	modifier = {
-		ship_speed_mult = 0.05
+		ship_speed_mult = 0.1
 	}
 	
 	ai_weight = {
@@ -551,7 +551,7 @@ tech_thrusters_13 = {
 	weight = @tier3weight1
 	
 	modifier = {
-		ship_speed_mult = 0.05
+		ship_speed_mult = 0.1
 	}
 	
 	ai_weight = {
@@ -589,7 +589,7 @@ tech_thrusters_14 = {
 	weight = @tier3weight2
 	
 	modifier = {
-		ship_speed_mult = 0.05
+		ship_speed_mult = 0.1
 	}
 	
 	ai_weight = {
@@ -627,7 +627,7 @@ tech_thrusters_15 = {
 	weight = @tier3weight3
 	
 	modifier = {
-		ship_speed_mult = 0.05
+		ship_speed_mult = 0.1
 	}
 	
 	ai_weight = {
@@ -719,7 +719,7 @@ tech_thrusters_16 = {
 	weight = @tier3weight4
 	
 	modifier = {
-		ship_speed_mult = 0.05
+		ship_speed_mult = 0.15
 	}
 	
 	ai_weight = {
@@ -757,7 +757,7 @@ tech_thrusters_17 = {
 	weight = @tier4weight1
 	
 	modifier = {
-		ship_speed_mult = 0.05
+		ship_speed_mult = 0.15
 	}
 	
 	ai_weight = {
@@ -795,7 +795,7 @@ tech_thrusters_18 = {
 	weight = @tier4weight2
 	
 	modifier = {
-		ship_speed_mult = 0.05
+		ship_speed_mult = 0.2
 	}
 	
 	ai_weight = {
@@ -833,7 +833,7 @@ tech_thrusters_19 = {
 	weight = @tier4weight3
 	
 	modifier = {
-		ship_speed_mult = 0.05
+		ship_speed_mult = 0.2
 	}
 	
 	ai_weight = {
@@ -871,7 +871,7 @@ tech_thrusters_20 = {
 	weight = @tier4weight4
 	
 	modifier = {
-		ship_speed_mult = 0.05
+		ship_speed_mult = 0.2
 	}
 	
 	ai_weight = {
