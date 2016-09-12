@@ -5503,7 +5503,21 @@ building_bank = {
 	
 	#ai_special_building = yes
 	ai_weight = {
-		weight = 60
+		weight = 50
+		modifier = {
+			factor = 2
+			has_country_resource = {
+			type = energy
+			amount < 8
+			}
+		}
+		modifier = {
+			factor = 0
+			has_country_resource = {
+			type = energy
+			amount > 8
+			}
+		}
 #modifier = {
 			 #factor = 0
 			 #tile = {

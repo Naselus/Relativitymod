@@ -172,7 +172,7 @@ tech_strike_craft_2 = {
 	tier = 3
 	ai_update_type = military
 	category = { voidcraft }	
-	prerequisites = { "tech_strike_craft_1" }
+	prerequisites = { "tech_strike_craft_1" "tech_cold_fusion_power"}
 	weight = @tier3weight1
 	
 	weight_modifier = {
@@ -238,7 +238,7 @@ tech_strike_craft_3 = {
 	tier = 3
 	ai_update_type = military
 	category = { voidcraft }	
-	prerequisites = { "tech_strike_craft_2" }
+	prerequisites = { "tech_strike_craft_2" "tech_antimatter_power"}
 	weight = @tier3weight4
 	
 	weight_modifier = {

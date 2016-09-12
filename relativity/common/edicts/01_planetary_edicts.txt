@@ -242,7 +242,7 @@ planet_edict = {
 			factor = 0
 			has_resource = {
 				type = energy
-				amount > 15
+				amount < 15
 			}
 		}		
 	}	
@@ -294,7 +294,7 @@ planet_edict = {
 			factor = 0
 			has_resource = {
 				type = minerals
-				amount > 7
+				amount < 7
 			}
 		}
 	}	
@@ -441,6 +441,13 @@ planet_edict = {
 		modifier = {
 			factor = 0
 			num_pops < 10
+		}
+		modifier = {
+			factor = 0
+			has_resource = {
+				type = energy
+				amount < 15
+			}
 		}		
 	}	
 }
@@ -647,8 +654,12 @@ planet_edict = {
 		}
 		modifier = {
 			factor = 0
-			planet_size < 10
-		}			
+			planet_size < 12
+		}
+		modifier = {
+			factor = 5
+			colony_age < 36
+		}
 	}	
 }
 
