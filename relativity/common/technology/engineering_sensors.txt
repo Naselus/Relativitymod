@@ -103,14 +103,14 @@
 
 tech_sensors_2 = {
 	area = engineering
-	cost = @tier1cost1
+	cost = @tier1cost2
 	tier = 1
 	category = { voidcraft }
 	ai_update_type = all
-	weight = @tier1weight1
+	weight = @tier1weight2
 	
 	modifier = {
-		science_ship_survey_speed = 0.15
+		ship_sensor_range_mult = 0.05
 	}
 	
 	weight_modifier = {
@@ -124,7 +124,7 @@ tech_sensors_2 = {
 	}
 	
 	ai_weight = {
-		factor = 7 #good component
+		weight = 3
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -158,7 +158,188 @@ tech_sensors_2 = {
 			}
 		}
 	}
+}
+
+tech_sensors_6 = {
+	area = engineering
+	cost = @tier1cost3
+	tier = 1
+	category = { sensors }
+	prerequisites = { "tech_sensors_2"}	
+	weight = @tier1weight3
 	
+	modifier = {
+		ship_sensor_range_mult = 0.05
+	}
+	
+	ai_weight = {
+		weight = 3
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+		modifier = {
+			factor = 2
+			has_trait = "trait_intelligent"
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = spiritual_seekers
+			has_ai_personality = erudite_explorers
+			}
+		}
+	}
+}
+
+tech_orbital_sensor_array = {
+	area = engineering
+	cost = @tier1cost4
+	tier = 1
+	category = { voidcraft }
+	#is_rare = yes	
+	prerequisites = { "tech_sensors_6" }
+	weight = @tier1weight4
+	
+	# unlocks observatory orbital module
+	
+	weight_modifier = {
+		#modifier = {
+			#factor = 0.25
+			#NOT = {
+			#	research_leader = {
+			#		area = engineering
+			#		has_trait = "leader_trait_expertise_voidcraft"
+			#	}
+			#}
+		#}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+				has_level > 2
+			}
+		}
+		modifier = {
+			factor = 1.50
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+				has_level > 3
+			}
+		}
+		modifier = {
+			factor = 1.10
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_maniacal"
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_spark_of_genius"
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 50
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+		modifier = {
+			factor = 2
+			has_trait = "trait_intelligent"
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = spiritual_seekers
+			has_ai_personality = erudite_explorers
+			}
+		}
+	}
+}
+
+tech_sensors_7 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { sensors }
+	prerequisites = { "tech_sensors_6"}	
+	weight = @tier2weight1
+	
+	modifier = {
+		ship_sensor_range_mult = 0.08
+	}
+	
+	ai_weight = {
+		weight = 3
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+		modifier = {
+			factor = 2
+			has_trait = "trait_intelligent"
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = spiritual_seekers
+			has_ai_personality = erudite_explorers
+			}
+		}
+	}
+}
+
+tech_sensors_8 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { sensors }
+	prerequisites = { "tech_sensors_7" "tech_fusion_power"}	
+	weight = @tier2weight1
+	
+	modifier = {
+		ship_sensor_range_mult = 0.08
+	}
+	
+	ai_weight = {
+	weight = 10
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+		modifier = {
+			factor = 2
+			has_trait = "trait_intelligent"
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = spiritual_seekers
+			has_ai_personality = erudite_explorers
+			}
+		}
+	}
+		
 	prereqfor_desc = {
 		component = {
 			title = "TECH_UNLOCK_SENSOR_2_TITLE"
@@ -169,15 +350,15 @@ tech_sensors_2 = {
 
 tech_sensors_3 = {
 	area = engineering
-	cost = @tier2cost1
+	cost = @tier2cost2
 	tier = 2
 	category = { voidcraft }
 	ai_update_type = all	
-	prerequisites = { "tech_sensors_2" }
-	weight = @tier2weight1
-	
+	prerequisites = { "tech_sensors_8" }
+	weight = @tier2weight2
+	#Sensor 2
 	modifier = {
-		science_ship_survey_speed = 0.05
+		ship_sensor_range_mult = 0.08
 	}
 	
 	weight_modifier = {
@@ -191,7 +372,7 @@ tech_sensors_3 = {
 	}
 	
 	ai_weight = {
-		factor = 7 #good component
+		weight = 3
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -225,7 +406,146 @@ tech_sensors_3 = {
 			}
 		}
 	}
+}
+
+tech_sensors_9 = {
+	area = engineering
+	cost = @tier2cost2
+	tier = 2
+	category = { sensors }
+	prerequisites = { "tech_sensors_3"}	
+	weight = @tier2weight2
 	
+	modifier = {
+		ship_sensor_range_mult = 0.1
+	}
+	
+	ai_weight = {
+		weight = 3
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+		modifier = {
+			factor = 2
+			has_trait = "trait_intelligent"
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = spiritual_seekers
+			has_ai_personality = erudite_explorers
+			}
+		}
+	}
+}
+
+tech_sensors_10 = {
+	area = engineering
+	cost = @tier2cost3
+	tier = 2
+	category = { sensors }
+	prerequisites = { "tech_sensors_9" }	
+	weight = @tier2weight3
+	
+	modifier = {
+		ship_sensor_range_mult = 0.1
+	}
+	
+	ai_weight = {
+		weight = 3
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+		modifier = {
+			factor = 2
+			has_trait = "trait_intelligent"
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = spiritual_seekers
+			has_ai_personality = erudite_explorers
+			}
+		}
+	}
+}
+
+tech_sensors_11 = {
+	area = engineering
+	cost = @tier2cost3
+	tier = 2
+	category = { sensors }
+	prerequisites = { "tech_sensors_10"}	
+	weight = @tier2weight3
+	
+	modifier = {
+		ship_sensor_range_mult = 0.1
+	}
+	
+	ai_weight = {
+		weight = 3
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+		modifier = {
+			factor = 2
+			has_trait = "trait_intelligent"
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = spiritual_seekers
+			has_ai_personality = erudite_explorers
+			}
+		}
+	}
+}
+
+tech_sensors_12 = {
+	area = engineering
+	cost = @tier2cost4
+	tier = 2
+	category = { sensors }
+	prerequisites = { "tech_sensors_11" "tech_cold_fusion_power"}	
+	weight = @tier2weight4
+	
+	modifier = {
+		ship_sensor_range_mult = 0.1
+	}
+	
+	ai_weight = {
+	weight = 10
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+		modifier = {
+			factor = 2
+			has_trait = "trait_intelligent"
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = spiritual_seekers
+			has_ai_personality = erudite_explorers
+			}
+		}
+	}
 	prereqfor_desc = {
 		component = {
 			title = "TECH_UNLOCK_SENSOR_3_TITLE"
@@ -234,17 +554,157 @@ tech_sensors_3 = {
 	}
 }
 
+tech_sensors_13 = {
+	area = engineering
+	cost = @tier3cost1
+	tier = 3
+	category = { sensors }
+	prerequisites = { "tech_sensors_12"}	
+	weight = @tier3weight1
+	
+	modifier = {
+		ship_sensor_range_mult = 0.13
+	}
+	
+	ai_weight = {
+		weight = 3
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+		modifier = {
+			factor = 2
+			has_trait = "trait_intelligent"
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = spiritual_seekers
+			has_ai_personality = erudite_explorers
+			}
+		}
+	}
+}
+
+tech_sensors_14 = {
+	area = engineering
+	cost = @tier3cost1
+	tier = 3
+	category = { sensors }
+	prerequisites = { "tech_sensors_13"}	
+	weight = @tier3weight1
+	
+	modifier = {
+		ship_sensor_range_mult = 0.13
+	}
+	
+	ai_weight = {
+		weight = 3
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+		modifier = {
+			factor = 2
+			has_trait = "trait_intelligent"
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = spiritual_seekers
+			has_ai_personality = erudite_explorers
+			}
+		}
+	}
+}
+
+tech_sensors_15= {
+	area = engineering
+	cost = @tier3cost2
+	tier = 3
+	category = { sensors }
+	prerequisites = { "tech_sensors_14"}	
+	weight = @tier3weight2
+	
+	modifier = {
+		ship_sensor_range_mult = 0.13
+	}
+	
+	ai_weight = {
+		weight = 3
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+		modifier = {
+			factor = 2
+			has_trait = "trait_intelligent"
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = spiritual_seekers
+			has_ai_personality = erudite_explorers
+			}
+		}
+	}
+}
+
+tech_sensors_16 = {
+	area = engineering
+	cost = @tier3cost3
+	tier = 3
+	category = { sensors }
+	prerequisites = { "tech_sensors_15"}	
+	weight = @tier3weight3
+	
+	modifier = {
+		ship_sensor_range_mult = 0.15
+	}
+	
+	ai_weight = {
+		weight = 3
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+		modifier = {
+			factor = 2
+			has_trait = "trait_intelligent"
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = spiritual_seekers
+			has_ai_personality = erudite_explorers
+			}
+		}
+	}
+}
+
 tech_sensors_4 = {
 	area = engineering
-	cost = @tier2cost3
-	tier = 2
+	cost = @tier3cost3
+	tier = 3
 	category = { voidcraft }
 	ai_update_type = all	
-	prerequisites = { "tech_sensors_3" }
-	weight = @tier2weight3
-		
+	prerequisites = { "tech_sensors_16" "tech_antimatter_power"}
+	weight = @tier3weight3
+	#Sensor 4
 	modifier = {
-		science_ship_survey_speed = 0.05
+		ship_sensor_range_mult = 0.15
 	}
 	
 	weight_modifier = {
@@ -258,7 +718,7 @@ tech_sensors_4 = {
 	}	
 	
 	ai_weight = {
-		factor = 7 #good component
+		factor = 10 
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -301,469 +761,20 @@ tech_sensors_4 = {
 	}
 }
 
-tech_orbital_sensor_array = {
-	area = engineering
-	cost = @tier2cost4
-	tier = 2
-	category = { voidcraft }
-	is_rare = yes	
-	prerequisites = { "tech_sensors_4" }
-	weight = @tier2weight4
-	
-	# unlocks observatory orbital module
-	
-	weight_modifier = {
-		modifier = {
-			factor = 0.25
-			NOT = {
-				research_leader = {
-					area = engineering
-					has_trait = "leader_trait_expertise_voidcraft"
-				}
-			}
-		}
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-				has_level > 2
-			}
-		}
-		modifier = {
-			factor = 1.50
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-				has_level > 3
-			}
-		}
-		modifier = {
-			factor = 1.10
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_maniacal"
-			}
-		}
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_spark_of_genius"
-			}
-		}
-	}
-	
-	ai_weight = {
-		factor = 3	#rare tech
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
-		}
-		modifier = {
-			factor = 2
-			has_trait = "trait_intelligent"
-		}
-		modifier = {
-			factor = 2
-			OR = {
-			has_ai_personality = spiritual_seekers
-			has_ai_personality = erudite_explorers
-			}
-		}
-	}
-}
-
-tech_sensors_6 = {
-	area = engineering
-	cost = @tier2cost4
-	tier = 2
-	category = { sensors }
-	prerequisites = { "tech_orbital_sensor_array"}	
-	weight = @tier2weight4
-	
-	modifier = {
-		ship_sensor_range_mult = 0.05
-	}
-	
-	ai_weight = {
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
-		}
-		modifier = {
-			factor = 2
-			has_trait = "trait_intelligent"
-		}
-		modifier = {
-			factor = 2
-			OR = {
-			has_ai_personality = spiritual_seekers
-			has_ai_personality = erudite_explorers
-			}
-		}
-	}
-}
-
-tech_sensors_7 = {
-	area = engineering
-	cost = @tier3cost1
-	tier = 3
-	category = { sensors }
-	prerequisites = { "tech_sensors_6"}	
-	weight = @tier3weight1
-	
-	modifier = {
-		ship_sensor_range_mult = 0.05
-	}
-	
-	ai_weight = {
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
-		}
-		modifier = {
-			factor = 2
-			has_trait = "trait_intelligent"
-		}
-		modifier = {
-			factor = 2
-			OR = {
-			has_ai_personality = spiritual_seekers
-			has_ai_personality = erudite_explorers
-			}
-		}
-	}
-}
-
-tech_sensors_8 = {
-	area = engineering
-	cost = @tier3cost1
-	tier = 3
-	category = { sensors }
-	prerequisites = { "tech_sensors_7"}	
-	weight = @tier3weight1
-	
-	modifier = {
-		ship_sensor_range_mult = 0.05
-	}
-	
-	ai_weight = {
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
-		}
-		modifier = {
-			factor = 2
-			has_trait = "trait_intelligent"
-		}
-		modifier = {
-			factor = 2
-			OR = {
-			has_ai_personality = spiritual_seekers
-			has_ai_personality = erudite_explorers
-			}
-		}
-	}
-}
-
-tech_sensors_9 = {
-	area = engineering
-	cost = @tier3cost2
-	tier = 3
-	category = { sensors }
-	prerequisites = { "tech_sensors_8"}	
-	weight = @tier3weight2
-	
-	modifier = {
-		ship_sensor_range_mult = 0.05
-	}
-	
-	ai_weight = {
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
-		}
-		modifier = {
-			factor = 2
-			has_trait = "trait_intelligent"
-		}
-		modifier = {
-			factor = 2
-			OR = {
-			has_ai_personality = spiritual_seekers
-			has_ai_personality = erudite_explorers
-			}
-		}
-	}
-}
-
-tech_sensors_10 = {
-	area = engineering
-	cost = @tier3cost3
-	tier = 3
-	category = { sensors }
-	prerequisites = { "tech_sensors_9"}	
-	weight = @tier3weight3
-	
-	modifier = {
-		ship_sensor_range_mult = 0.05
-	}
-	
-	ai_weight = {
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
-		}
-		modifier = {
-			factor = 2
-			has_trait = "trait_intelligent"
-		}
-		modifier = {
-			factor = 2
-			OR = {
-			has_ai_personality = spiritual_seekers
-			has_ai_personality = erudite_explorers
-			}
-		}
-	}
-}
-
-tech_sensors_11 = {
-	area = engineering
-	cost = @tier3cost3
-	tier = 3
-	category = { sensors }
-	prerequisites = { "tech_sensors_10"}	
-	weight = @tier3weight3
-	
-	modifier = {
-		ship_sensor_range_mult = 0.05
-	}
-	
-	ai_weight = {
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
-		}
-		modifier = {
-			factor = 2
-			has_trait = "trait_intelligent"
-		}
-		modifier = {
-			factor = 2
-			OR = {
-			has_ai_personality = spiritual_seekers
-			has_ai_personality = erudite_explorers
-			}
-		}
-	}
-}
-
-tech_sensors_12 = {
-	area = engineering
-	cost = @tier3cost4
-	tier = 3
-	category = { sensors }
-	prerequisites = { "tech_sensors_11"}	
-	weight = @tier3weight4
-	
-	modifier = {
-		ship_sensor_range_mult = 0.05
-	}
-	
-	ai_weight = {
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
-		}
-		modifier = {
-			factor = 2
-			has_trait = "trait_intelligent"
-		}
-		modifier = {
-			factor = 2
-			OR = {
-			has_ai_personality = spiritual_seekers
-			has_ai_personality = erudite_explorers
-			}
-		}
-	}
-}
-
-tech_sensors_13 = {
-	area = engineering
-	cost = @tier3cost4
-	tier = 3
-	category = { sensors }
-	prerequisites = { "tech_sensors_12"}	
-	weight = @tier3weight4
-	
-	modifier = {
-		ship_sensor_range_mult = 0.05
-	}
-	
-	ai_weight = {
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
-		}
-		modifier = {
-			factor = 2
-			has_trait = "trait_intelligent"
-		}
-		modifier = {
-			factor = 2
-			OR = {
-			has_ai_personality = spiritual_seekers
-			has_ai_personality = erudite_explorers
-			}
-		}
-	}
-}
-
-tech_sensors_14 = {
-	area = engineering
-	cost = @tier4cost1
-	tier = 4
-	category = { sensors }
-	prerequisites = { "tech_sensors_13"}	
-	weight = @tier4weight1
-	
-	modifier = {
-		ship_sensor_range_mult = 0.05
-	}
-	
-	ai_weight = {
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
-		}
-		modifier = {
-			factor = 2
-			has_trait = "trait_intelligent"
-		}
-		modifier = {
-			factor = 2
-			OR = {
-			has_ai_personality = spiritual_seekers
-			has_ai_personality = erudite_explorers
-			}
-		}
-	}
-}
-
-tech_sensors_15= {
-	area = engineering
-	cost = @tier4cost1
-	tier = 4
-	category = { sensors }
-	prerequisites = { "tech_sensors_14"}	
-	weight = @tier4weight1
-	
-	modifier = {
-		ship_sensor_range_mult = 0.05
-	}
-	
-	ai_weight = {
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
-		}
-		modifier = {
-			factor = 2
-			has_trait = "trait_intelligent"
-		}
-		modifier = {
-			factor = 2
-			OR = {
-			has_ai_personality = spiritual_seekers
-			has_ai_personality = erudite_explorers
-			}
-		}
-	}
-}
-
-tech_sensors_16 = {
-	area = engineering
-	cost = @tier4cost2
-	tier = 4
-	category = { sensors }
-	prerequisites = { "tech_sensors_15"}	
-	weight = @tier4weight2
-	
-	modifier = {
-		ship_sensor_range_mult = 0.05
-	}
-	
-	ai_weight = {
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
-		}
-		modifier = {
-			factor = 2
-			has_trait = "trait_intelligent"
-		}
-		modifier = {
-			factor = 2
-			OR = {
-			has_ai_personality = spiritual_seekers
-			has_ai_personality = erudite_explorers
-			}
-		}
-	}
-}
-
 tech_sensors_17 = {
 	area = engineering
-	cost = @tier4cost2
-	tier = 4
+	cost = @tier3cost4
+	tier = 3
 	category = { sensors }
 	prerequisites = { "tech_sensors_16"}	
-	weight = @tier2weight2
+	weight = @tier3weight4
 	
 	modifier = {
-		ship_sensor_range_mult = 0.05
+		ship_sensor_range_mult = 0.15
 	}
 	
 	ai_weight = {
+		weight = 3
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -787,17 +798,18 @@ tech_sensors_17 = {
 
 tech_sensors_18 = {
 	area = engineering
-	cost = @tier4cost3
+	cost = @tier4cost1
 	tier = 4
 	category = { sensors }
 	prerequisites = { "tech_sensors_17"}	
-	weight = @tier2weight3
+	weight = @tier4weight1
 	
 	modifier = {
-		ship_sensor_range_mult = 0.05
+		ship_sensor_range_mult = 0.2
 	}
 	
 	ai_weight = {
+		weight = 3
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -821,17 +833,18 @@ tech_sensors_18 = {
 
 tech_sensors_19 = {
 	area = engineering
-	cost = @tier4cost3
+	cost = @tier4cost2
 	tier = 4
 	category = { sensors }
 	prerequisites = { "tech_sensors_18"}	
-	weight = @tier4weight3
+	weight = @tier4weight2
 	
 	modifier = {
-		ship_sensor_range_mult = 0.05
+		ship_sensor_range_mult = 0.2
 	}
 	
 	ai_weight = {
+		weight = 3
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -855,17 +868,18 @@ tech_sensors_19 = {
 
 tech_sensors_20 = {
 	area = engineering
-	cost = @tier4cost4
+	cost = @tier4cost3
 	tier = 4
 	category = { sensors }
-	prerequisites = { "tech_sensors_19"}	
-	weight = @tier4weight4
+	prerequisites = { "tech_sensors_19" "tech_zero_point_power"}	
+	weight = @tier4weight3
 	
 	modifier = {
-		ship_sensor_range_mult = 0.05
+		ship_sensor_range_mult = 0.2
 	}
 	
 	ai_weight = {
+		weight = 3
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -889,14 +903,18 @@ tech_sensors_20 = {
 
 tech_sensors_21 = {
 	area = engineering
-	cost = @tier5cost1
-	tier = 5
+	cost = @tier4cost4
+	tier = 4
 	category = { sensors }
-	prerequisites = { "tech_sensors_20"}	
-	weight = @tier5weight1
+	prerequisites = { "tech_sensors_20" }	
+	weight = @tier4weight4
 	
+	modifier = {
+		ship_sensor_range_mult = 0.2
+	}
 	
 	ai_weight = {
+		weight = 3
 		modifier = {
 			factor = 1.25
 			research_leader = {

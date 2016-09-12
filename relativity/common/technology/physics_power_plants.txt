@@ -103,7 +103,7 @@
 
 tech_power_plant_1 = {
 	cost = 0
-	area = engineering
+	area = physics
 	tier = 0
 	category = { power_plants }
 	start_tech = yes
@@ -123,6 +123,7 @@ tech_power_plant_2 = {
 	## unlock power plant lvl 2	
 
 	weight_modifier = {
+		factor = 1.2
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -179,6 +180,7 @@ tech_power_plant_3 = {
 	
 
 	weight_modifier = {
+	factor = 1.2
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -234,6 +236,7 @@ tech_power_plant_4 = {
 	## unlock power plant lvl 4
 	
 	weight_modifier = {
+	factor = 1.2
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -289,6 +292,7 @@ tech_power_plant_5 = {
 	## unlock power plant lvl 5
 	
 	weight_modifier = {
+	factor = 1.2
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -499,7 +503,7 @@ tech_power_plant_9 = {
 	cost = @tier3cost2
 	tier = 3
 	category = { power_plants }
-	prerequisites = { "tech_power_plant_8" "tech_galactic_administration"}	
+	prerequisites = { "tech_power_plant_8" "tech_living_state"}	
 	weight = @tier3weight2
 	
 	weight_modifier = {
@@ -603,7 +607,7 @@ tech_power_plant_11 = {
 	cost = @tier3cost4
 	tier = 3
 	category = { power_plants }
-	prerequisites = { "tech_power_plant_10"}	
+	prerequisites = { "tech_power_plant_10" "tech_galactic_administration"}	
 	weight = @tier3weight4
 	
 	weight_modifier = {
@@ -707,7 +711,7 @@ tech_power_plant_13 = {
 	cost = @tier4cost2
 	tier = 4
 	category = { power_plants }
-	prerequisites = { "tech_power_plant_12"}	
+	prerequisites = { "tech_power_plant_12" "tech_collective_self"}	
 	weight = @tier4weight2
 	
 	weight_modifier = {

@@ -111,7 +111,7 @@ tech_galactic_ambitions = {
 	weight = @tier1weight4
 	
 	modifier = {
-		country_border_mult = 0.05
+		country_border_mult = 0.03
 	}
 	
 	prereqfor_desc = {
@@ -179,16 +179,16 @@ tech_galactic_ambitions = {
 
 #Manifest Destiny
 tech_manifest_destiny = {
-	cost = @tier2cost3
+	cost = @tier2cost2
 	area = society
 	category = { influence }
 	tier = 2
 	is_rare = yes	
-	prerequisites = { "tech_galactic_ambitions" "tech_colonial_centralization" }
-	weight = @tier2weight3
+	prerequisites = { "tech_galactic_ambitions" "tech_adaptive_bureaucracy" }
+	weight = @tier2weight2
 		
 	modifier = {
-		country_border_mult = 0.05
+		country_border_mult = 0.03
 	}
 	
 	prereqfor_desc = {
@@ -249,14 +249,14 @@ tech_manifest_destiny = {
 
 tech_influence_3 = {
 	area = society
-	cost = @tier3cost1
-	tier = 3
+	cost = @tier2cost4
+	tier = 2
 	category = { influence }
-	prerequisites = { "tech_manifest_destiny" "tech_galactic_administration"}
-	weight = @tier3weight1
+	prerequisites = { "tech_manifest_destiny" "tech_living_state"}
+	weight = @tier2weight4
 
 	modifier = {
-		country_border_mult = 0.05
+		country_border_mult = 0.03
 	}	
 
 	ai_weight = {
@@ -287,11 +287,11 @@ tech_influence_4 = {
 	cost = @tier3cost1
 	tier = 3
 	category = { influence }
-	prerequisites = { "tech_influence_3" "tech_galactic_administration"}
+	prerequisites = { "tech_influence_3" }
 	weight = @tier3weight1
 	
 	modifier = {
-		country_border_mult = 0.05
+		country_border_mult = 0.03
 	}	
 	
 	ai_weight = {
@@ -322,11 +322,11 @@ tech_influence_5 = {
 	cost = @tier3cost1
 	tier = 3
 	category = { influence }
-	prerequisites = { "tech_influence_4" }
+	prerequisites = { "tech_influence_4" "tech_galactic_administration"}
 	weight = @tier3weight1
 	
 	modifier = {
-		country_border_mult = 0.05
+		country_border_mult = 0.03
 	}	
 	
 	ai_weight = {
@@ -362,7 +362,7 @@ tech_influence_6 = {
 	
 	
 	modifier = {
-		country_border_mult = 0.05
+		country_border_mult = 0.04
 	}
 	
 	ai_weight = {
@@ -390,14 +390,14 @@ tech_influence_6 = {
 
 tech_influence_7 = {
 	area = society
-	cost = @tier3cost3
+	cost = @tier3cost2
 	tier = 3
 	category = { influence }
 	prerequisites = { "tech_influence_6" }	
-	weight = @tier3weight3
+	weight = @tier3weight2
 	
 	modifier = {
-		country_border_mult = 0.05
+		country_border_mult = 0.04
 	}	
 	ai_weight = {
 		factor = 4
@@ -424,14 +424,14 @@ tech_influence_7 = {
 
 tech_influence_8 = {
 	area = society
-	cost = @tier3cost3
+	cost = @tier3cost2
 	tier = 3
 	category = { influence }
-	prerequisites = { "tech_influence_7" }		
-	weight = @tier3weight3
+	prerequisites = { "tech_influence_7" "tech_collective_self"}		
+	weight = @tier3weight2
 	
 	modifier = {
-		country_border_mult = 0.05
+		country_border_mult = 0.04
 	}
 	
 	ai_weight = {
@@ -459,13 +459,13 @@ tech_influence_8 = {
 
 tech_influence_9 = {
 	area = society
-	cost = @tier3cost4
+	cost = @tier3cost3
 	tier = 3
 	category = { influence }
 	prerequisites = { "tech_influence_8" }		
-	weight = @tier3weight4
+	weight = @tier3weight3
 	modifier = {
-		country_border_mult = 0.05
+		country_border_mult = 0.04
 	}	
 
 	ai_weight = {
@@ -493,13 +493,13 @@ tech_influence_9 = {
 
 tech_influence_10 = {
 	area = society
-	cost = @tier3cost4
+	cost = @tier3cost3
 	tier = 3
 	category = { influence }
 	prerequisites = { "tech_influence_9" }	
-	weight = @tier3weight4
+	weight = @tier3weight3
 		modifier = {
-		country_border_mult = 0.05
+		country_border_mult = 0.04
 	}
 
 	
@@ -528,11 +528,11 @@ tech_influence_10 = {
 
 tech_influence_11 = {
 	area = society
-	cost = @tier4cost1
-	tier = 4
+	cost = @tier3cost3
+	tier = 3
 	category = { influence }
 	prerequisites = { "tech_influence_10" }	
-	weight = @tier4weight1
+	weight = @tier3weight3
 	modifier = {
 		country_border_mult = 0.05
 	}	
@@ -562,11 +562,11 @@ tech_influence_11 = {
 
 tech_influence_12 = {
 	area = society
-	cost = @tier4cost1
-	tier = 4
+	cost = @tier3cost4
+	tier = 3
 	category = { influence }
 	prerequisites = { "tech_influence_11" }	
-	weight = @tier4weight1
+	weight = @tier3weight4
 	modifier = {
 		country_border_mult = 0.05
 	}	
@@ -596,11 +596,11 @@ tech_influence_12 = {
 
 tech_influence_13 = {
 	area = society
-	cost = @tier4cost2
-	tier = 4
+	cost = @tier3cost4
+	tier = 3
 	category = { influence }
 	prerequisites = { "tech_influence_12" }	
-	weight = @tier4weight2
+	weight = @tier3weight4
 	modifier = {
 		country_border_mult = 0.05
 	}	
@@ -630,11 +630,11 @@ tech_influence_13 = {
 
 tech_influence_14 = {
 	area = society
-	cost = @tier4cost2
-	tier = 4
+	cost = @tier3cost4
+	tier = 3
 	category = { influence }
 	prerequisites = { "tech_influence_13" }		
-	weight = @tier4weight2
+	weight = @tier3weight4
 	modifier = {
 		country_border_mult = 0.05
 	}	
@@ -664,11 +664,11 @@ tech_influence_14 = {
 
 tech_influence_15 = {
 	area = society
-	cost = @tier4cost3
+	cost = @tier4cost1
 	tier = 4
 	category = { influence }
 	prerequisites = { "tech_influence_14" }			
-	weight = @tier4weight3
+	weight = @tier4weight1
 	
 	modifier = {
 		country_border_mult = 0.05
@@ -699,14 +699,14 @@ tech_influence_15 = {
 
 tech_influence_16 = {
 	area = society
-	cost = @tier4cost4
+	cost = @tier4cost1
 	tier = 4
 	category = { influence }
 	prerequisites = { "tech_influence_15" }		
-	weight = @tier4weight4
+	weight = @tier4weight1
 	
 	modifier = {
-		country_border_mult = 0.05
+		country_border_mult = 0.06
 	}
 	
 	ai_weight = {
@@ -734,14 +734,14 @@ tech_influence_16 = {
 
 tech_influence_17 = {
 	area = society
-	cost = @tier5cost1
-	tier = 5
+	cost = @tier4cost1
+	tier = 4
 	category = { influence }
 	prerequisites = { "tech_influence_16" }		
-	weight = @tier5weight1
+	weight = @tier4weight1
 	
 	modifier = {
-		country_border_mult = 0.05
+		country_border_mult = 0.06
 	}
 	
 	ai_weight = {
@@ -769,14 +769,14 @@ tech_influence_17 = {
 
 tech_influence_18 = {
 	area = society
-	cost = @tier5cost2
-	tier = 5
+	cost = @tier4cost2
+	tier = 4
 	category = { influence }
 	prerequisites = { "tech_influence_17" }		
-	weight = @tier5weight2
+	weight = @tier4weight2
 	
 	modifier = {
-		country_border_mult = 0.05
+		country_border_mult = 0.06
 	}
 	
 	ai_weight = {
@@ -804,14 +804,14 @@ tech_influence_18 = {
 
 tech_influence_19 = {
 	area = society
-	cost = @tier5cost3
-	tier = 5
+	cost = @tier4cost3
+	tier = 4
 	category = { influence }
 	prerequisites = { "tech_influence_18" }		
-	weight = @tier5weight3
+	weight = @tier4weight3
 	
 	modifier = {
-		country_border_mult = 0.05
+		country_border_mult = 0.06
 	}
 	
 	ai_weight = {
@@ -839,14 +839,14 @@ tech_influence_19 = {
 
 tech_influence_20 = {
 	area = society
-	cost = @tier5cost4
-	tier = 5
+	cost = @tier4cost4
+	tier = 4
 	category = { influence }
 	prerequisites = { "tech_influence_19" }		
-	weight = @tier5weight4
+	weight = @tier4weight4
 	
 	modifier = {
-		country_border_mult = 0.05
+		country_border_mult = 0.06
 	}
 	
 	ai_weight = {

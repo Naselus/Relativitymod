@@ -376,7 +376,7 @@ tech_synthetic_leaders = {
 	area = engineering
 	tier = 3
 	category = { ai }
-	prerequisites = { "tech_synthetic_workers" }
+	prerequisites = { "tech_synthetic_workers" "tech_collective_self"}
 	is_rare = yes
 	weight = @tier3weight3
 		

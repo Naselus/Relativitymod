@@ -527,8 +527,8 @@ tech_rocketry_13 = {
 	weight = @tier3weight3
 	
 	modifier = {
-		weapon_type_explosive_weapon_damage_mult = 0.05
-		weapon_type_explosive_weapon_fire_rate_mult = 0.05
+		weapon_type_explosive_weapon_damage_mult = 0.075
+		weapon_type_explosive_weapon_fire_rate_mult = 0.075
 	}
 	
 	ai_weight = {
@@ -652,8 +652,8 @@ tech_rocketry_14 = {
 	weight = @tier3weight4
 	
 	modifier = {
-		weapon_type_explosive_weapon_damage_mult = 0.05
-		weapon_type_explosive_weapon_fire_rate_mult = 0.05
+		weapon_type_explosive_weapon_damage_mult = 0.075
+		weapon_type_explosive_weapon_fire_rate_mult = 0.075
 	}
 	
 	ai_weight = {
@@ -777,8 +777,8 @@ tech_rocketry_15 = {
 	weight = @tier3weight3
 	
 	modifier = {
-		weapon_type_explosive_weapon_damage_mult = 0.05
-		weapon_type_explosive_weapon_fire_rate_mult = 0.05
+		weapon_type_explosive_weapon_damage_mult = 0.075
+		weapon_type_explosive_weapon_fire_rate_mult = 0.075
 	}
 
 	ai_weight = {
@@ -979,8 +979,8 @@ tech_rocketry_16 = {
 	weight = @tier4weight1
 
 	modifier = {
-		weapon_type_explosive_weapon_damage_mult = 0.05
-		weapon_type_explosive_weapon_fire_rate_mult = 0.05
+		weapon_type_explosive_weapon_damage_mult = 0.1
+		weapon_type_explosive_weapon_fire_rate_mult = 0.1
 	}
 	
 	ai_weight = {
@@ -1104,8 +1104,8 @@ tech_rocketry_17 = {
 	weight = @tier4weight3
 
 	modifier = {
-		weapon_type_explosive_weapon_damage_mult = 0.05
-		weapon_type_explosive_weapon_fire_rate_mult = 0.05
+		weapon_type_explosive_weapon_damage_mult = 0.1
+		weapon_type_explosive_weapon_fire_rate_mult = 0.1
 	}
 	ai_weight = {
 		factor = 4		#weapons are good
@@ -1228,8 +1228,8 @@ tech_rocketry_18 = {
 	weight = @tier4weight4
 
 	modifier = {
-		weapon_type_explosive_weapon_damage_mult = 0.05
-		weapon_type_explosive_weapon_fire_rate_mult = 0.05
+		weapon_type_explosive_weapon_damage_mult = 0.1
+		weapon_type_explosive_weapon_fire_rate_mult = 0.1
 	}
 	
 	ai_weight = {
@@ -1279,8 +1279,8 @@ tech_rocketry_19 = {
 	weight = @tier4weight4
 	
 	modifier = {
-		weapon_type_explosive_weapon_damage_mult = 0.05
-		weapon_type_explosive_weapon_fire_rate_mult = 0.05
+		weapon_type_explosive_weapon_damage_mult = 0.125
+		weapon_type_explosive_weapon_fire_rate_mult = 0.125
 	}
 
 	ai_weight = {
@@ -1330,8 +1330,8 @@ tech_rocketry_20 = {
 	weight = @tier4weight4
 	
 	modifier = {
-		weapon_type_explosive_weapon_damage_mult = 0.05
-		weapon_type_explosive_weapon_fire_rate_mult = 0.05
+		weapon_type_explosive_weapon_damage_mult = 0.125
+		weapon_type_explosive_weapon_fire_rate_mult = 0.125
 	}
 	
 	ai_weight = {

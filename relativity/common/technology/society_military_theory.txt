@@ -109,7 +109,7 @@ tech_doctrine_fleet_size_1 = {
 	area = society
 	tier = 1
 	category = { military_theory }
-	weight = 50
+	weight = @tier1weight1
 	
 	modifier = {
 		navy_size_mult = 0.10
@@ -117,6 +117,10 @@ tech_doctrine_fleet_size_1 = {
 	
 	weight_modifier = {
 		factor = 3
+		modifier = {
+			factor = 0
+			
+		}
 		modifier = {
 			factor = 0.65
 			has_ethic = ethic_fanatic_pacifist
@@ -415,92 +419,6 @@ tech_interstellar_fleet_traditions = {
 	}
 }
 
-tech_doctrine_command_matrix = {
-	cost = @tier2cost2
-	area = society
-	tier = 2
-	category = { military_theory }
-	prerequisites = { "tech_doctrine_fleet_size_2" }
-	weight = @tier2weight2
-	is_rare = yes
-	
-	modifier = { 
-		ship_upkeep_mult = -0.1 
-	}
-	
-	weight_modifier = {
-		modifier = {
-			factor = 0
-			NOT = {
-				research_leader = {
-					area = society
-					has_trait = "leader_trait_expertise_military_theory"
-				}
-			}
-		}
-		modifier = {
-			factor = 0.65
-			has_ethic = ethic_fanatic_pacifist
-		}
-		modifier = {
-			factor = 0.8
-			has_ethic = ethic_pacifist
-		}
-		modifier = {
-			factor = 1.25
-			has_ethic = ethic_militarist
-		}
-		modifier = {
-			factor = 1.5
-			has_ethic = ethic_fanatic_militarist
-		}
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
-			}
-		}
-	}
-	
-	ai_weight = {
-		factor = 80
-		modifier = {
-			factor = 2
-			has_ethic = "ethic_militarist"
-		}
-		modifier = {
-			factor = 2
-			OR = {
-			has_ai_personality = hegemonic_imperialists
-			has_ai_personality = honorbound_warriors
-			has_ai_personality = fanatic_purifiers
-			has_ai_personality = evangelising_zealots
-			has_ai_personality = slaving_despots
-			}
-		}
-		modifier = {
-			factor = 4
-			has_ethic = "ethic_fanatic_militarist"
-		}
-		modifier = {
-			factor = 0.75
-			has_ethic = "ethic_pacifist"
-		}
-		modifier = {
-			factor = 0.5
-			has_ethic = "ethic_fanatic_pacifist"
-		}
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
-			}
-		}
-	}
-}
-
 #Doctrine: Interstellar Warfare
 tech_doctrine_fleet_size_3 = {
 	cost = @tier2cost1
@@ -699,6 +617,93 @@ tech_doctrine_fleet_size_4 = {
 	
 	ai_weight = {
 		factor = 100
+		modifier = {
+			factor = 2
+			has_ethic = "ethic_militarist"
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			has_ai_personality = hegemonic_imperialists
+			has_ai_personality = honorbound_warriors
+			has_ai_personality = fanatic_purifiers
+			has_ai_personality = evangelising_zealots
+			has_ai_personality = slaving_despots
+			}
+		}
+		modifier = {
+			factor = 4
+			has_ethic = "ethic_fanatic_militarist"
+		}
+		modifier = {
+			factor = 0.75
+			has_ethic = "ethic_pacifist"
+		}
+		modifier = {
+			factor = 0.5
+			has_ethic = "ethic_fanatic_pacifist"
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+}
+
+tech_doctrine_command_matrix = {
+	cost = @tier3cost1
+	area = society
+	tier = 3
+	category = { military_theory }
+	prerequisites = { "tech_doctrine_fleet_size_4" }
+	weight = @tier3weight1
+	is_rare = yes
+	
+	modifier = { 
+		ship_upkeep_mult = -0.1 
+	}
+	
+	weight_modifier = {
+		factor = 0.1
+		modifier = {
+			factor = 0
+			NOT = {
+				research_leader = {
+					area = society
+					has_trait = "leader_trait_expertise_military_theory"
+				}
+			}
+		}
+		modifier = {
+			factor = 0.25
+			has_ethic = ethic_fanatic_pacifist
+		}
+		modifier = {
+			factor = 0.5
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 1.05
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 80
 		modifier = {
 			factor = 2
 			has_ethic = "ethic_militarist"
@@ -1291,6 +1296,13 @@ tech_centralized_command = {
 				has_trait = "leader_trait_expertise_military_theory"
 			}
 		}
+		modifier = {
+			factor = 0
+			AND = {
+			is_ai = yes
+			years_passed < 40
+			}
+		}
 	}
 	
 	ai_weight = {
@@ -1330,7 +1342,7 @@ tech_centralized_command = {
 		modifier = {
 			factor = 0
 			NOT = {
-			years_passed > 35
+			years_passed > 40
 			}
 		}
 	}

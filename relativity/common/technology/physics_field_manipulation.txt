@@ -476,7 +476,7 @@ tech_field_manipulation_12 = {
 	weight = @tier2weight3
 	
 	modifier = {
-		ship_shield_hp_mult = 0.05
+		ship_shield_hp_mult = 0.075
 	}
 	
 	ai_weight = {
@@ -532,7 +532,7 @@ tech_field_manipulation_13 = {
 	weight = @tier3weight1
 	
 	modifier = {
-		ship_shield_hp_mult = 0.05
+		ship_shield_hp_mult = 0.075
 	}
 	
 	ai_weight = {
@@ -716,7 +716,7 @@ tech_field_manipulation_14 = {
 	weight = @tier3weight1
 	
 	modifier = {
-		ship_shield_hp_mult = 0.05
+		ship_shield_hp_mult = 0.1
 	}
 	
 	ai_weight = {
@@ -854,7 +854,7 @@ tech_field_manipulation_15 = {
 	weight = @tier3weight2
 	
 	modifier = {
-		ship_shield_hp_mult = 0.05
+		ship_shield_hp_mult = 0.1
 	}
 	
 	ai_weight = {
@@ -910,7 +910,7 @@ tech_field_manipulation_16 = {
 	weight = @tier3weight3
 	
 	modifier = {
-		ship_shield_hp_mult = 0.05
+		ship_shield_hp_mult = 0.1
 	}
 	
 	ai_weight = {
@@ -1035,7 +1035,7 @@ tech_field_manipulation_17 = {
 	weight = @tier3weight4
 	
 	modifier = {
-		ship_shield_hp_mult = 0.05
+		ship_shield_hp_mult = 0.15
 	}
 	
 	ai_weight = {
@@ -1091,7 +1091,7 @@ tech_field_manipulation_18 = {
 	weight = @tier4weight1
 	
 	modifier = {
-		ship_shield_hp_mult = 0.05
+		ship_shield_hp_mult = 0.15
 	}
 	
 	ai_weight = {
@@ -1147,7 +1147,7 @@ tech_field_manipulation_19 = {
 	weight = @tier4weight2
 	
 	modifier = {
-		ship_shield_hp_mult = 0.05
+		ship_shield_hp_mult = 0.15
 	}
 	
 	ai_weight = {
@@ -1203,7 +1203,7 @@ tech_field_manipulation_20 = {
 	weight = @tier4weight3
 	
 	modifier = {
-		ship_shield_hp_mult = 0.05
+		ship_shield_hp_mult = 0.15
 	}
 	
 	ai_weight = {
@@ -1260,7 +1260,7 @@ tech_shields_5 = {
 	weight = @tier4weight4
 	
 	modifier = {
-		planet_fortification_strength = 0.2
+		planet_fortification_strength = 0.3
 	}
 	
 	weight_modifier = {

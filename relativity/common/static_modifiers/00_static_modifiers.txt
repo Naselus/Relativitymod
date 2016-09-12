@@ -1005,48 +1005,48 @@ nomad_strength = {
 	ship_hitpoints_mult = 2
 }
 
-edict1_active = {
+Reeducation_Campaign = {
 	influence_gain_add = -0.25
 }
-edict2_active = {
+Propaganda = {
 	influence_gain_add = -0.25
 }
-edict3_active = {
+Farming_Subsidies = {
 	influence_gain_add = -0.25
 }
-edict4_active = {
+Land_of_Opportunity = {
 	influence_gain_add = -0.25
 }
-edict5_active = {
+Capacity_Overload = {
 	influence_gain_add = -0.25
 }
-edict6_active = {
+Production_Targets = {
 	influence_gain_add = -0.25
 }
-edict7_active = {
+Infrastructure_Projects = {
 	influence_gain_add = -0.25
 }
-edict8_active = {
+Social_Engineering = {
 	influence_gain_add = -0.25
 }
-edict9_active = {
+Privatization_Campaign = {
 	influence_gain_add = -0.25
 }
-edict10_active = {
+Peace_Festivals = {
 	influence_gain_add = -0.25
 }
-edict11_active = {
+Arms_Race = {
 	influence_gain_add = -0.25
 }
-edict12_active = {
+Legal_Aliens = {
 	influence_gain_add = -0.25
 }
-edict13_active = {
+Illegal_Aliens = {
 	influence_gain_add = -0.25
 }
-edict14_active = {
+Religious_Unity = {
 	influence_gain_add = -0.25
 }
-edict15_active = {
+Spirit_of_Science = {
 	influence_gain_add = -0.25
 }

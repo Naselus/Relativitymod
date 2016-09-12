@@ -962,7 +962,7 @@ NDefines = {
 		THREAT_OPINION_MIN = 0.75,
 		
 		COLONIZE_NON_ADJACENT = 1,				-- If enabled, AI will colonize far away systems (will result in border gore)
-		COLONIZE_NON_ADJACENT_DIV = 5,			-- If colony is far away, divide priority to colonize it by this
+		COLONIZE_NON_ADJACENT_DIV = 10,			-- If colony is far away, divide priority to colonize it by this
 	
 		AI_AGGRESSIVENESS_LOW_MULT = 0.5,		
 		AI_AGGRESSIVENESS_HIGH_MULT = 2.0,		
@@ -1100,7 +1100,7 @@ NDefines = {
 		
 		NON_MINED_RESOURCES_ENERGY_WANT_FACTOR = 0,	-- If 100% of AI's resources in space are unmined, increase desire for energy by this
 		
-		MILITARY_STATION_BUDGET_FRACTION = 0.2,	-- AI will spend this fraction of their income on military stations
+		MILITARY_STATION_BUDGET_FRACTION = 0.20,	-- AI will spend this fraction of their income on military stations
 		SAVINGS_BUDGET_FRACTION = 0.00, 		-- AI will spend this fraction of their income on savings (normally not needed as fleets in dock will result in energy surplus)
 		ARMY_BUDGET_FRACTION = 0.05,   			-- AI will spend this fraction of their income on armies
 		NAVY_BUDGET_FRACTION = 0.25, 			-- AI will spend this fraction of their income on ships
@@ -1108,19 +1108,19 @@ NDefines = {
 		BUILDING_BUDGET_FRACTION = 0.20, 		-- AI will spend this fraction of their income on buildings
 		ROBOT_BUDGET_FRACTION = 0.05,			-- AI will spend this fraction of their income on robots (transfered to stations if they don't use robots)
 		
-		SHIPSIZE_BUDGET_FACTOR = 0.1,			-- For each ship size unlocked, increase navy budget by this amount
+		SHIPSIZE_BUDGET_FACTOR = 0.10,			-- For each ship size unlocked, increase navy budget by this amount
 		NAVAL_CAPACITY_BUDGET_MAX = 100,		-- At this naval capacity, AI puts max budget into ships
-		PLANET_BUDGET_FACTOR = 0.3,			-- When AI has few planets, it will decrease building/mil station budget by this and put it into colonies/stations instead
+		PLANET_BUDGET_FACTOR = 0.30,			-- When AI has few planets, it will decrease building/mil station budget by this and put it into colonies/stations instead
 		MAX_PLANETS_FOR_BUDGET_FACTOR = 3,		-- At this amount of planets, budget is normalized
 
 		MINERAL_MILITARY_STATION_BUDGET_FRACTION = 0.05, -- AI will spend this fraction of their stored minerals on military stations
 		MINERAL_NAVY_BUDGET_FRACTION = 0.15, 	-- AI will spend this fraction of their stored minerals on ships
-		MINERAL_STATION_BUDGET_FRACTION = 0.15, -- AI will spend this fraction of their stored minerals on stations (used for spaceport instead when it needs a new spaceport)
-		MINERAL_BUILDING_BUDGET_FRACTION = 0.2,-- AI will spend this fraction of their stored minerals on buildings (used for spaceport instead when it needs a new spaceport)
-		MINERAL_SPACEPORT_BUDGET_FRACTION = 0.05, -- AI will spend this fraction of their stored minerals on spaceport modules
+		MINERAL_STATION_BUDGET_FRACTION = 0.20, -- AI will spend this fraction of their stored minerals on stations (used for spaceport instead when it needs a new spaceport)
+		MINERAL_BUILDING_BUDGET_FRACTION = 0.20,-- AI will spend this fraction of their stored minerals on buildings (used for spaceport instead when it needs a new spaceport)
+		MINERAL_SPACEPORT_BUDGET_FRACTION = 0.02, -- AI will spend this fraction of their stored minerals on spaceport modules
 		MINERAL_COLONY_BUDGET_FRACTION = 0.25,
 		MINERAL_ARMY_BUDGET_FRACTION = 0.02,	-- AI will spend this fraction on armies
-		MINERAL_TILE_BLOCKER_BUDGET_FRACTION = 0.1,	-- AI will spend this fraction on tile blockers
+		MINERAL_TILE_BLOCKER_BUDGET_FRACTION = 0.08,	-- AI will spend this fraction on tile blockers
 		MINERAL_ROBOT_BUDGET_FRACTION = 0.03,	-- AI will spend this fraction of their stored minerals on robots (transfered to buildings if they don't use robots)
 		
 		DISBAND_THRESHOLD = 0.8,			-- If budget does not cover at least this fraction of the navy maintenance, disband ships & stations
@@ -1139,7 +1139,7 @@ NDefines = {
 		MAX_MINERALS_STORED_SPACEPORT = 500,		-- Minerals AI will store for spaceport when it needs more
 		MIN_MINERALS_STORED_SPACEPORT = 50,		-- Minerals AI will store for spaceport when it does not need more
 		MAX_MINERALS_STORED_COLONIES = 250,		-- Minerals AI will store for colonies when it needs more
-		MIN_MINERALS_STORED_COLONIES = 150,			-- Minerals AI will store for colonies when it does not need more		
+		MIN_MINERALS_STORED_COLONIES = 100,			-- Minerals AI will store for colonies when it does not need more		
 		MAX_MINERALS_STORED_ARMIES = 300,			-- Minerals AI will store for armies when it needs more
 		MIN_MINERALS_STORED_ARMIES = 0,			-- Minerals AI will store for armies when it does not need more		
 		MAX_MINERALS_STORED_TILE_BLOCKERS = 200,	-- Minerals AI will store for tile blockers when it needs more
@@ -1181,7 +1181,7 @@ NDefines = {
 		THRESHOLD_DISBAND_SHIPS = 2,			-- AI will disband ships if wanted + this value < owned
 
 		COLONIZER_SHIPS_MAX = 2,				-- Maximum number of colonizer ships of AI
-		RESEARCH_SHIPS_MAX = 1,					-- Maximum number of research ships of AI
+		RESEARCH_SHIPS_MAX = 0,					-- Maximum number of research ships of AI
 		CONSTRUCTOR_SHIPS_MAX = 1,				-- Maximum number of constructor ships of AI
 
 		LEADER_FRACTION_SCIENTIST = 0.6,		-- Fraction of AI Leaders that should be scientists
@@ -1190,7 +1190,7 @@ NDefines = {
 		LEADER_FRACTION_GOVERNOR = 0.2,			-- Fraction of governor
 		LEADER_FRACTION_CHANGE_CAP = 11,		-- Leader cap > this will decrease scientist fraction and increase other
 
-		ABORT_MISSION_LIMIT = 0.40,				-- MilitaryPower fraction below this level will result in AI escaping battle
+		ABORT_MISSION_LIMIT = 0.50,				-- MilitaryPower fraction below this level will result in AI escaping battle
 
 		PEACE_MIN_WARSCORE_TO_DEMAND = 20,
 		PEACE_LENGTH_OF_WAR_MONTHS = 60,			
@@ -1225,7 +1225,7 @@ NDefines = {
 		ENEMY_FLEET_POWER_HOME_SYSTEM_MULT = 1.1, -- AI will need the fleet power of the enemy multiplied by this value to attack hostiles in own systems
 		PRIO_BASE_FRACTION = 0.80,				-- Prio base fraction, for example if prio is assault, arsenal fraction will be set to this value
 
-		START_WEAPON_TECH_AREA_MULT = 1000,		-- Weapons within the same tech area as the start weapon will be weighted (multiplied) by this value when deciding tech strategies
+		START_WEAPON_TECH_AREA_MULT = 100,		-- Weapons within the same tech area as the start weapon will be weighted (multiplied) by this value when deciding tech strategies
 		FRACTION_PERSONALITY_MULT = 2,			-- Techs that apply to a certain personality will be multiplied by this value + tolerance/hierarchical value (interval: -2, +2) divided by this value
 		MINERALS_MULT = 50,						-- Mult used to promote building manufactories
 		BUILDING_ENERGY_MAX = 1000,				-- Used to calc AI want for buildings with energy
@@ -1259,8 +1259,8 @@ NDefines = {
 
 		AI_COMMUNICATIONS_RANDOM_VALUE = 60,		-- AI communications days will vary with +- these many days
 		
-		OUTPOST_STATION_RESOURCES_BUILD = 5,			-- AI should build outpost station if system has more than this many resources
-		OUTPOST_STATION_RESOURCES_NEIGHBORS_BUILD = 15, -- AI should build oupost station if neighboring systems have these many resources
+		OUTPOST_STATION_RESOURCES_BUILD = 9,			-- AI should build outpost station if system has more than this many resources
+		OUTPOST_STATION_RESOURCES_NEIGHBORS_BUILD = 17, -- AI should build oupost station if neighboring systems have these many resources
 		OUTPOST_STATION_DISTANCE_MIN = 30,			-- AI consideres station in neighboring system if square distance is less than this value
 		OUTPOST_STATION_DISTANCE_MAX = 50,			-- AI consideres station in neighboring system if square distance is higher than this value from a colony
 		OUTPOST_STATION_RANGE = 20,					-- AI consider outpost station to be able to extrude border about this far

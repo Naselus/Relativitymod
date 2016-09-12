@@ -326,7 +326,7 @@ tech_synthetic_thought_patterns = {
 	weight = @tier2weight4
 	
 	modifier = {
-		pop_resettlement_cost_mult = -0.1
+		pop_resettlement_cost_mult = -0.15
 	}
 	
 	weight_modifier = {
@@ -498,11 +498,11 @@ tech_purity_campaigns = {
 
 tech_social_engineering_6 = {
 	area = society
-	cost = @tier3cost3
-	tier = 3
+	cost = @tier2cost4
+	tier = 2
 	category = { social_engineering }
 	prerequisites = { "tech_galactic_administration" }
-	weight = @tier3weight3
+	weight = @tier2weight4
 		modifier = {	
 		pop_ethic_shift = -0.03	
 		}
@@ -531,11 +531,11 @@ tech_social_engineering_6 = {
 
 tech_social_engineering_7 = {
 	area = society
-	cost = @tier3cost3
-	tier = 3
+	cost = @tier2cost4
+	tier = 2
 	category = { social_engineering }
 	prerequisites = { "tech_social_engineering_6" }		
-	weight = @tier3weight3
+	weight = @tier2weight4
 	
 		modifier = {	
 		pop_ethic_shift = -0.03	
@@ -566,11 +566,11 @@ tech_social_engineering_7 = {
 
 tech_social_engineering_8 = {
 	area = society
-	cost = @tier3cost3
+	cost = @tier3cost1
 	tier = 3
 	category = { social_engineering }
 	prerequisites = { "tech_social_engineering_7" }			
-	weight = @tier3weight3
+	weight = @tier3weight1
 	
 		modifier = {	
 		pop_ethic_shift = -0.03	
@@ -601,11 +601,11 @@ tech_social_engineering_8 = {
 
 tech_social_engineering_9 = {
 	area = society
-	cost = @tier3cost4
+	cost = @tier3cost1
 	tier = 3
 	category = { social_engineering }
 	prerequisites = { "tech_social_engineering_8" }		
-	weight = @tier3weight4
+	weight = @tier3weight1
 	
 			modifier = {	
 		pop_ethic_shift = -0.03	
@@ -636,14 +636,14 @@ tech_social_engineering_9 = {
 
 tech_social_engineering_10 = {
 	area = society
-	cost = @tier3cost4
+	cost = @tier3cost2
 	tier = 3
 	category = { social_engineering }
 	prerequisites = { "tech_social_engineering_9" }		
-	weight = @tier3weight4
+	weight = @tier3weight2
 	
 		modifier = {	
-		pop_ethic_shift = -0.03	
+		pop_ethic_shift = -0.04	
 		}	
 	
 	
@@ -671,14 +671,14 @@ tech_social_engineering_10 = {
 
 tech_social_engineering_11 = {
 	area = society
-	cost = @tier4cost1
-	tier = 4
+	cost = @tier3cost2
+	tier = 3
 	category = { social_engineering }
 	prerequisites = { "tech_social_engineering_10" }		
-	weight = @tier4weight1
+	weight = @tier3weight2
 	
 		modifier = {	
-		pop_ethic_shift = -0.03	
+		pop_ethic_shift = -0.04	
 		}	
 	
 	
@@ -706,14 +706,14 @@ tech_social_engineering_11 = {
 
 tech_social_engineering_12 = {
 	area = society
-	cost = @tier4cost1
-	tier = 4
+	cost = @tier3cost3
+	tier = 3
 	category = { social_engineering }
 	prerequisites = { "tech_social_engineering_11" }		
-	weight = @tier4weight1
+	weight = @tier3weight3
 	
 		modifier = {	
-		pop_ethic_shift = -0.03	
+		pop_ethic_shift = -0.04	
 		}	
 	
 	
@@ -741,14 +741,14 @@ tech_social_engineering_12 = {
 
 tech_social_engineering_13 = {
 	area = society
-	cost = @tier4cost2
-	tier = 4
+	cost = @tier3cost3
+	tier = 3
 	category = { social_engineering }
 	prerequisites = { "tech_social_engineering_12" }		
-	weight = @tier4weight2
+	weight = @tier3weight3
 	
 		modifier = {	
-		pop_ethic_shift = -0.03	
+		pop_ethic_shift = -0.04	
 		}	
 	
 	
@@ -776,15 +776,15 @@ tech_social_engineering_13 = {
 
 tech_social_engineering_14 = {
 	area = society
-	cost = @tier4cost2
-	tier = 4
+	cost = @tier3cost4
+	tier = 3
 	category = { social_engineering }
 	prerequisites = { "tech_social_engineering_13" }		
-	weight = @tier4weight2
+	weight = @tier3weight4
 	
 	
 		modifier = {	
-		pop_ethic_shift = -0.03	
+		pop_ethic_shift = -0.04	
 		}	
 	
 	ai_weight = {
@@ -811,14 +811,14 @@ tech_social_engineering_14 = {
 
 tech_social_engineering_15 = {
 	area = society
-	cost = @tier4cost3
-	tier = 4
+	cost = @tier3cost4
+	tier = 3
 	category = { social_engineering }
 	prerequisites = { "tech_social_engineering_14" }		
-	weight = @tier4weight3
+	weight = @tier3weight4
 	
 		modifier = {	
-		pop_ethic_shift = -0.03	
+		pop_ethic_shift = -0.05	
 		}	
 	
 	
@@ -846,14 +846,14 @@ tech_social_engineering_15 = {
 
 tech_social_engineering_16 = {
 	area = society
-	cost = @tier4cost3
-	tier = 4
+	cost = @tier3cost4
+	tier = 3
 	category = { social_engineering }
 	prerequisites = { "tech_social_engineering_15" }		
-	weight = @tier4weight3
+	weight = @tier3weight4
 	
 		modifier = {	
-		pop_ethic_shift = -0.03	
+		pop_ethic_shift = -0.05	
 		}	
 	
 	
@@ -881,14 +881,14 @@ tech_social_engineering_16 = {
 
 tech_social_engineering_17 = {
 	area = society
-	cost = @tier4cost4
+	cost = @tier4cost1
 	tier = 4
 	category = { social_engineering }
 	prerequisites = { "tech_social_engineering_16" }		
-	weight = @tier4weight4
+	weight = @tier4weight1
 	
 		modifier = {	
-		pop_ethic_shift = -0.03	
+		pop_ethic_shift = -0.05	
 		}	
 	
 	
@@ -916,14 +916,14 @@ tech_social_engineering_17 = {
 
 tech_social_engineering_18 = {
 	area = society
-	cost = @tier4cost4
+	cost = @tier4cost2
 	tier = 4
 	category = { social_engineering }
 	prerequisites = { "tech_social_engineering_17" }		
-	weight = @tier4weight4
+	weight = @tier4weight2
 	
 		modifier = {	
-		pop_ethic_shift = -0.03	
+		pop_ethic_shift = -0.05	
 		}	
 	
 	
@@ -951,14 +951,14 @@ tech_social_engineering_18 = {
 
 tech_social_engineering_19 = {
 	area = society
-	cost = @tier5cost1
-	tier = 5
+	cost = @tier4cost3
+	tier = 4
 	category = { social_engineering }
 	prerequisites = { "tech_social_engineering_18" }		
-	weight = @tier5weight1
+	weight = @tier4weight3
 	
 		modifier = {	
-		pop_ethic_shift = -0.03	
+		pop_ethic_shift = -0.05	
 		}	
 	
 	
@@ -986,14 +986,14 @@ tech_social_engineering_19 = {
 
 tech_social_engineering_20 = {
 	area = society
-	cost = @tier5cost1
-	tier = 5
+	cost = @tier4cost4
+	tier = 4
 	category = { social_engineering }
 	prerequisites = { "tech_social_engineering_19" }		
-	weight = @tier5weight1
+	weight = @tier4weight4
 	
 		modifier = {	
-		pop_ethic_shift = -0.03	
+		pop_ethic_shift = -0.05	
 		}	
 	
 	

@@ -42,10 +42,14 @@ planet_edict = {
 	}
 	
 	ai_weight = {
-		weight = 1			# I hope this means "always do if not ..."
+		weight = 1			
 		modifier = {
 			factor = 0
 			free_pop_tiles < 5
+		}
+		modifier = {
+			factor = 0
+			years_passed < 60
 		}
 	}	
 }

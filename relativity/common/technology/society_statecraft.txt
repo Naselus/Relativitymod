@@ -121,26 +121,18 @@ tech_planetary_unification = {
 	weight = @tier1weight1
 	
 	modifier = {
-		influence_gain_add = 0.5
+		influence_gain_add = 0.30
 		country_leader_cap = 1
 	}
 	# also unlocks planet-happiness edict
 	
 	weight_modifier = {
-		factor = 4
-		modifier = {
-			factor = 0.75
-			NOT = {
-				OR = {
-					has_ethic = ethic_pacifist
-					has_ethic = ethic_fanatic_pacifist
-				}
-			}
-		}
+		factor = 10
+		
 	}
 	
 	ai_weight = {
-		factor = 50
+		factor = 100
 		modifier = {
 			factor = 0.75
 			NOT = {
@@ -185,6 +177,7 @@ tech_adaptive_bureaucracy = {
 	weight = @tier1weight3
 	
 	modifier = {
+		influence_gain_add = 0.50
 		country_leader_cap = 1
 	}
 	
@@ -194,15 +187,15 @@ tech_adaptive_bureaucracy = {
 			num_owned_planets < 2
 		}
 		modifier = {
-			factor = 1.5
+			factor = 3
 			num_owned_planets > 2
 		}		
 		modifier = {
-			factor = 1.5
+			factor = 5
 			num_owned_planets > 3
 		}
 		modifier = {
-			factor = 1.5
+			factor = 10
 			num_owned_planets > 4
 		}	
 		modifier = {
@@ -299,11 +292,13 @@ tech_living_state = {
 	weight = @tier2weight2
 	
 	modifier = {
+		influence_gain_add = 0.25
 		country_leader_cap = 1
 		country_leader_pool_size = 1
 	}
 	
 	weight_modifier = {
+		factor = 4
 		modifier = {
 			factor = 0.5
 			num_owned_planets < 5
@@ -381,6 +376,7 @@ tech_galactic_administration = {
 	}
 	
 	modifier = {
+		influence_gain_add = 0.5
 		country_leader_cap = 1
 	}	
 	
@@ -417,6 +413,7 @@ tech_collective_self = {
 	weight = @tier2weight4
 	
 	modifier = {
+		influence_gain_add = 0.25
 		country_leader_cap = 2
 	}
 	
@@ -495,6 +492,7 @@ tech_statecraft_10 = {
 	weight = @tier3weight1
 	
 	modifier = {
+		influence_gain_add = 0.5
 		country_leader_cap = 1
 	}	
 	
@@ -545,6 +543,7 @@ tech_statecraft_11 = {
 	weight = @tier3weight1
 	
 	modifier = {
+		influence_gain_add = 0.5
 		country_leader_cap = 1
 	}	
 	
@@ -595,6 +594,7 @@ tech_statecraft_12 = {
 	weight = @tier3weight2
 	
 		modifier = {
+		influence_gain_add = 0.5
 		country_leader_cap = 1
 	}	
 	
@@ -635,6 +635,7 @@ tech_statecraft_13 = {
 	weight = @tier3weight2
 	
 		modifier = {
+		influence_gain_add = 0.5
 		country_leader_cap = 1
 	}	
 	
@@ -675,6 +676,7 @@ tech_statecraft_14 = {
 	weight = @tier3weight3
 	
 	modifier = {
+		influence_gain_add = 0.5
 		country_leader_cap = 1
 	}		
 	
@@ -715,6 +717,7 @@ tech_statecraft_15 = {
 	weight = @tier3weight4
 	
 	modifier = {
+		influence_gain_add = 0.5
 		country_leader_cap = 1
 	}		
 	
@@ -755,6 +758,7 @@ tech_statecraft_16 = {
 	weight = @tier3weight4
 	
 	modifier = {
+		influence_gain_add = 0.5
 		country_leader_cap = 1
 	}		
 	
@@ -794,6 +798,7 @@ tech_statecraft_17 = {
 	prerequisites = { "tech_statecraft_16" }
 	weight = @tier4weight1
 	modifier = {
+		influence_gain_add = 0.5
 		country_leader_cap = 1
 	}		
 	
@@ -834,6 +839,7 @@ tech_statecraft_18 = {
 	prerequisites = { "tech_statecraft_17" }
 	weight = @tier4weight2
 	modifier = {
+		influence_gain_add = 0.5
 		country_leader_cap = 1
 	}		
 	
@@ -874,6 +880,7 @@ tech_statecraft_19 = {
 	prerequisites = { "tech_statecraft_18" }
 	weight = @tier4weight3
 	modifier = {
+		influence_gain_add = 0.5
 		country_leader_cap = 1
 	}		
 	
@@ -914,6 +921,7 @@ tech_statecraft_20 = {
 	weight = @tier4weight4
 	
 	modifier = {
+		influence_gain_add = 0.5
 		country_leader_cap = 1
 	}		
 	

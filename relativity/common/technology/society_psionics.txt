@@ -398,7 +398,6 @@ tech_psi_jump_drive_1 = {
 	is_dangerous = yes
 	prerequisites = { "tech_precognition_interface" }
 	weight = @tier3weight4
-	is_dangerous = yes
 	
 	prereqfor_desc = {
 		component = {

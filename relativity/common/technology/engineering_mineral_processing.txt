@@ -537,7 +537,7 @@ tech_mineral_processing_9 = {
 	area = engineering
 	cost = @tier3cost2
 	tier = 3
-	prerequisites = { "tech_mineral_processing_8" "tech_galactic_administration"}	
+	prerequisites = { "tech_mineral_processing_8" "tech_living_state"}	
 	weight = @tier3weight2
 	
 	modifier = {
@@ -644,7 +644,7 @@ tech_mineral_processing_11 = {
 	cost = @tier3cost4
 	tier = 3
 	category = { mineral_processing }
-	prerequisites = { "tech_mineral_processing_10" "tech_mining_11"}	
+	prerequisites = { "tech_mineral_processing_10" "tech_mining_11" "tech_galactic_administration"}	
 	weight = @tier3weight4
 	
 	weight_modifier = {
@@ -742,7 +742,7 @@ tech_mineral_processing_13 = {
 	cost = @tier4cost2
 	tier = 4
 	category = { mineral_processing }
-	prerequisites = { "tech_mineral_processing_12"}	
+	prerequisites = { "tech_mineral_processing_12" "tech_collective_self"}	
 	weight = @tier4weight2
 	
 	modifier = {

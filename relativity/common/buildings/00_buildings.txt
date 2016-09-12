@@ -141,23 +141,22 @@ building_power_plant_1 = {
 			}
 		}
 	}
-	#ai_special_building = yes
+	ai_special_building = yes
 	ai_weight = {
-		weight = 40
-	
-		
+		weight = 20
+
 		modifier = {
-			factor = 2
+			factor = 5
 			has_country_resource = {
 			type = sr_plasma
-			amount < 2
+			amount < 4
 			}
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0
 			has_country_resource = {
 			type = sr_plasma
-			amount > 2
+			amount > 4
 			}
 		}
 		#modifier = {
@@ -449,7 +448,7 @@ betharian_power_plant_1 = {
 	
 	#ai_special_building = yes
 	ai_weight = {
-		weight = 60
+		weight = 50
 #modifier = {
 			 #factor = 0
 			 #tile = {
@@ -891,7 +890,7 @@ ai_special_building = yes
 			}
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0
 			has_country_resource = {
 			type = sr_nutrients
 			amount > 2
@@ -951,18 +950,18 @@ building_hydroponics_farm_1 = {
 			}
 		}
 	}
-#ai_special_building = yes
+ai_special_building = yes
 	ai_weight = {
 		weight = 40
 		modifier = {
 			factor = 2
 			has_country_resource = {
 			type = sr_nutrients
-			amount < 1
+			amount < 2
 			}
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0
 			has_country_resource = {
 			type = sr_nutrients
 			amount > 2
@@ -1446,9 +1445,23 @@ building_mining_network_1 = {
 			}
 		}
 	}
-	#ai_special_building = yes
+	ai_special_building = yes
 	ai_weight = {
-		weight = 20
+		weight = 10
+		modifier = {
+			factor = 4
+			has_country_resource = {
+			type = sr_steel
+			amount < 5
+			}
+		}
+		modifier = {
+			factor = 0
+			has_country_resource = {
+			type = sr_steel
+			amount > 5
+			}
+		}
 #modifier = {
 			 #factor = 0
 			 #tile = {
@@ -1743,7 +1756,7 @@ building_mineral_processing_plant_1T1 = {
 	
 	#ai_special_building = yes
 	ai_weight = {
-		weight = 80
+		weight = 75
 #modifier = {
 			 #factor = 0
 			 #tile = {
@@ -1812,7 +1825,7 @@ building_mineral_processing_plant_2T1 = {
 	}
 	ai_special_building = yes
 	ai_weight = {
-		weight = 120
+		weight = 80
 # modifier = {
 			# factor = 0
 			# tile = {
@@ -2057,6 +2070,9 @@ building_basic_science_lab_1 = {
 	
 	produced_resources = {
 		engineering_research = @science1
+		sr_plasma = 0.01
+		sr_nutrients = 0.01
+		sr_steel = 0.01
 	}
 	
 	required_resources = {
@@ -2071,8 +2087,9 @@ building_basic_science_lab_1 = {
 	prerequisites = {
 		"tech_basic_science_lab_1"
 	}
+	#ai_special_building = yes
 	ai_weight = {
-		weight = 90
+		weight = 100
 
 	}	
 }
@@ -2104,6 +2121,9 @@ building_engineering_facility_1 = {
 	
 	produced_resources = {
 		engineering_research = @science2
+		sr_plasma = 0.01
+		sr_nutrients = 0.01
+		sr_steel = 0.01
 
 	}
 	
@@ -2120,7 +2140,7 @@ building_engineering_facility_1 = {
 	}
 	#ai_special_building = yes
 	ai_weight = {
-		weight = 150
+		weight = 90
 
 	}
 }
@@ -2305,6 +2325,9 @@ building_physics_lab_1 = {
 	
 	produced_resources = {
 		physics_research = @science2
+		sr_plasma = 0.01
+		sr_nutrients = 0.01
+		sr_steel = 0.01
 	}
 	
 	required_resources = {
@@ -2320,7 +2343,7 @@ building_physics_lab_1 = {
 	}	
 	#ai_special_building = yes
 	ai_weight = {
-		weight = 150
+		weight = 90
 
 	}
 }
@@ -2509,6 +2532,9 @@ building_biolab_1 = {
 	
 	produced_resources = {
 		society_research = @science2
+		sr_plasma = 0.01
+		sr_nutrients = 0.01
+		sr_steel = 0.01
 	}
 	
 	required_resources = {
@@ -2524,7 +2550,7 @@ building_biolab_1 = {
 	}	
 	#ai_special_building = yes
 	ai_weight = {
-		weight = 150
+		weight = 90
 
 	}
 }
@@ -2726,7 +2752,7 @@ building_colony_shelter = {
 	}
 
 	required_resources = {
-		sr_nutrients = 1
+		#sr_nutrients = 1
 	}
 	
 	upgrades = {
@@ -2889,7 +2915,7 @@ building_capital_3 = {
 	}	
 	ai_special_building = yes
 	ai_weight = {
-		weight = 150
+		weight = 100
 
 	}
 }
@@ -3762,6 +3788,9 @@ building_basic_science_lab_2 = {
 	
 	produced_resources = {
 		physics_research = @science1
+		#sr_plasma = 0.01
+		#sr_nutrients = 0.01
+		#sr_steel = 0.01
 	}
 	
 	required_resources = {
@@ -3777,7 +3806,7 @@ building_basic_science_lab_2 = {
 	}	
 	ai_special_building = yes
 	ai_weight = {
-		weight = 60
+		weight = 100
 
 	}
 }
@@ -3791,6 +3820,9 @@ building_basic_science_lab_3 = {
 	
 	produced_resources = {
 		society_research = @science1
+		#sr_plasma = 0.01
+		#sr_nutrients = 0.01
+		#sr_steel = 0.01
 	}
 	
 	required_resources = {
@@ -3806,7 +3838,7 @@ building_basic_science_lab_3 = {
 	}	
 	ai_special_building = yes
 	ai_weight = {
-		weight = 60
+		weight = 100
 
 	}
 }
@@ -5514,7 +5546,7 @@ building_bank_2 = {
 	}
 	
 	prerequisites = {
-		"tech_banking_5"
+		"tech_galactic_markets"
 	}
 	
 	required_resources = {
@@ -5583,7 +5615,7 @@ building_bank_3 = {
 	}
 	
 	prerequisites = {
-		"tech_banking_10"
+		"tech_banking_7"
 	}
 	
 	allow = {
@@ -5640,7 +5672,7 @@ building_bank_4 = {
 	
 
 	prerequisites = {
-		"tech_banking_15"
+		"tech_banking_10"
 	}
 
 	required_resources = {
@@ -5703,7 +5735,7 @@ building_bank_5 = {
 	
 
 	prerequisites = {
-		"tech_banking_20"
+		"tech_banking_13"
 	}
 
 	required_resources = {
@@ -5784,7 +5816,7 @@ building_basic_hospital = {
  
  ai_special_building = yes
 	ai_weight = {
-		weight = 500
+		weight = 100
 		
 #modifier = {
 			 #factor = 0
