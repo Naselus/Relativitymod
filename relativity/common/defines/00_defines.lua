@@ -1213,8 +1213,8 @@ NDefines = {
 		
 		INFLUENCE_MAX_STORED_PER_POST = 00,				-- Max stored in any single influence budget post
 		
-		INFLUENCE_BUDGET_STATIONS = 0.35,			-- Fraction of monthly influence that is used on stations (frontier outposts)
-		INFLUENCE_BUDGET_EDICTS = 0.65,				-- Fraction of monthly influence that is used on edicts
+		INFLUENCE_BUDGET_STATIONS = 0.20,			-- Fraction of monthly influence that is used on stations (frontier outposts)
+		INFLUENCE_BUDGET_EDICTS = 0.80,				-- Fraction of monthly influence that is used on edicts
 		INFLUENCE_BUDGET_SAVINGS = 0.0,				-- Fraction of monthly influence that is saved
 
 		THREAT_TRUCE_MONTHS = 12,				-- AI will not consider the opponent a threat if this many months are left on a truce

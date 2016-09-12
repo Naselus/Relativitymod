@@ -954,6 +954,7 @@ economic_policy = {
 		}		
 		modifier = {
 			tile_resource_energy_mult = 0.25
+			tile_resource_minerals_mult = -0.10
 		}
 		valid = {
 			NOT = {
@@ -1003,6 +1004,10 @@ economic_policy = {
 		}		
 		valid = {
 		}	
+		modifier = {
+			tile_resource_energy_mult = 0.07
+			tile_resource_minerals_mult = 0.07
+		}
 		AI_weight = {
 			modifier = {
 				factor = 10
@@ -1044,6 +1049,7 @@ economic_policy = {
 		}	
 		modifier = {
 			tile_resource_minerals_mult = 0.25
+			tile_resource_energy_mult = -0.10
 		}		
 		pop_happiness = {
 			base = 0
@@ -1102,6 +1108,9 @@ foreign_policy = {
 			has_ethic = "ethic_fanatic_xenophile"
 			}
 		}	
+		modifier = {
+			influence_gain_add = 0.1
+		}
 		pop_happiness = {
 			base = 0
 			modifier = {
@@ -1145,6 +1154,9 @@ foreign_policy = {
 		}		
 		valid = {
 		}	
+		modifier = {
+			max_rivalries = 1
+		}
 		AI_weight = {
 			modifier = {
 				factor = 10
@@ -1182,6 +1194,9 @@ foreign_policy = {
 			has_ethic = "ethic_fanatic_xenophobe"
 			}
 		}	
+		modifier = {
+			max_embassies = 1
+		}
 		pop_happiness = {
 			base = 0
 			modifier = {
@@ -1283,6 +1298,9 @@ religious_policy = {
 		}		
 		valid = {
 		}	
+		modifier = {
+			pop_happiness = 0.1
+		}
 		AI_weight = {
 			modifier = {
 				factor = 10
