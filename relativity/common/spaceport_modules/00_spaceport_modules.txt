@@ -135,6 +135,13 @@ observatory = {
 		tile_resource_society_research_mult = 0.1
 		tile_resource_engineering_research_mult = 0.1
 	}
+	ai_weight = {
+		weight = 30
+		modifier = {
+		factor = 0
+		years_passed < 30
+		}
+	}
 }
 
 engineering_bay = {
@@ -156,6 +163,14 @@ engineering_bay = {
 	
 	ship_modifier = {
 		ship_upkeep_mult = -0.10
+	}
+	
+	ai_weight = {
+		weight = 1
+			modifier = {
+				factor = 0
+				years_passed < 60
+			}
 	}
 }
 
@@ -191,6 +206,12 @@ synchronized_defenses = {
 	station_modifier = {
 		ship_fire_rate_mult = 0.25
 		ship_weapon_damage = 0.25
+	}
+	ai_weight = {
+		modifier = {
+		factor = 0
+		years_passed < 60
+		}
 	}
 }
 
@@ -404,8 +425,8 @@ destroyer_assembly_yards = {
 		modifier = {
 			weight = 0
 			OR = {
-				has_technology = tech_spaceport_5
 				has_technology = tech_spaceport_6
+				has_technology = tech_spaceport_7
 			}
 		}
 	}
@@ -443,7 +464,7 @@ pioneering_terminal = {
 	section = "SCIENCE_SPACEPORT_SECTION"
 	construction_days = 360
 	prerequisites = { "tech_frontier_traditions" }	
-	spaceport_level = 3
+	spaceport_level = 2
 	
 	cost = {
 		minerals = 300
@@ -457,6 +478,10 @@ pioneering_terminal = {
 	
 	planet_modifier = {
 			pop_migration_speed = -0.25
+	}
+	
+	ai_weight = {
+		weight = 5
 	}
 }
 

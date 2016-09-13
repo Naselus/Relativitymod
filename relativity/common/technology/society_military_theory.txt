@@ -118,10 +118,6 @@ tech_doctrine_fleet_size_1 = {
 	weight_modifier = {
 		factor = 3
 		modifier = {
-			factor = 0
-			
-		}
-		modifier = {
 			factor = 0.65
 			has_ethic = ethic_fanatic_pacifist
 		}

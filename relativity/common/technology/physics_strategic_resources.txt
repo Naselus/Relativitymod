@@ -418,7 +418,7 @@ tech_mine_betharian = {
 	area = physics
 	tier = 1
 	category = { mining }	
-	prerequisites = { "tech_space_construction" "tech_power_plant_3"}
+	prerequisites = { "tech_sensors_2" "tech_power_plant_3"}
 	weight = @tier1weight3
 	
 	weight_modifier = {
