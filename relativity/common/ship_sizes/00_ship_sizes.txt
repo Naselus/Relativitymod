@@ -190,14 +190,14 @@ colonizer = {
 	combat_max_speed = @civilian_ships_combat_speed
 	combat_rotation_speed = 0.2
 	max_hitpoints = 300
-	potential = {
-		owner = {
-			has_monthly_income = {
-				resource = influence
-				value > 0.26
-			}
-		}
-	}
+	#potential = {
+	#	owner = {
+		#	has_monthly_income = {
+		#		resource = influence
+		#		value > 0.26
+	#		}
+	#	}
+	#}
 	modifier = {
 		ship_armor_add = 10
 	}
