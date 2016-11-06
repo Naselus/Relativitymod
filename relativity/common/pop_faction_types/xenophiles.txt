@@ -124,7 +124,7 @@ xenophile_faction = {
 								skill = 0
 								traits = {
 								trait = leader_fxenophile
-								trait = random_traits
+								add_random_leader_trait = yes
 								}
 							}
 							last_created_leader = {

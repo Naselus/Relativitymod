@@ -8,7 +8,7 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_bow"
 	
 	# Lasers
-	weapon_preferences = { weapon_type_energy }
+	#weapon_preferences = { weapon_type_energy }
 	ai_weight = {
 		modifier = {
 			factor = 5.0
@@ -59,7 +59,7 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_bow"
 	
 	# Guns
-	weapon_preferences = { weapon_type_kinetic }
+	#weapon_preferences = { weapon_type_kinetic }
 	ai_weight = {
 		modifier = {
 			factor = 5.0
@@ -115,7 +115,7 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_bow"
 	
 	# Missiles
-	weapon_preferences = { weapon_type_explosive }
+	#weapon_preferences = { weapon_type_explosive }
 	ai_weight = {
 		modifier = {
 			factor = 5.0
@@ -172,7 +172,7 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_mid"
 	
 	# Guns & Strike Craft
-	weapon_preferences = { weapon_type_kinetic weapon_type_point_defense }
+	#weapon_preferences = { weapon_type_kinetic weapon_type_point_defense }
 	ai_weight = {
 		modifier = {
 			factor = 5.0
@@ -239,7 +239,7 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_mid"
 	
 	# Big lasers
-	weapon_preferences = { weapon_type_energy }
+	#weapon_preferences = { weapon_type_energy }
 	ai_weight = {
 		modifier = {
 			factor = 5.0
@@ -303,7 +303,7 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_mid"
 	
 	# Missiles
-	weapon_preferences = { weapon_type_explosive }
+	#weapon_preferences = { weapon_type_explosive }
 	ai_weight = {
 		modifier = {
 			factor = 5.0
@@ -373,7 +373,7 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_mid"
 	
 	# Small lasers
-	weapon_preferences = { weapon_type_energy weapon_type_point_defense }
+	#weapon_preferences = { weapon_type_energy weapon_type_point_defense }
 	ai_weight = {
 		modifier = {
 			factor = 5.0
@@ -510,7 +510,7 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_stern"
 	
 	# Point defense
-	weapon_preferences = { weapon_type_point_defense }
+	#weapon_preferences = { weapon_type_point_defense }
 	ai_weight = {
 		modifier = {
 			factor = 100.0

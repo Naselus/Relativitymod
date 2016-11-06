@@ -1286,7 +1286,7 @@ tech_colonization_18 = {
 	}
 }
 
-tech_colonization_19 = {
+tech_climate_restoration= {
 	area = society
 	cost = @tier4cost2
 	tier = 4
@@ -1327,12 +1327,12 @@ tech_colonization_19 = {
 	}
 }
 
-tech_colonization_20 = {
+tech_gaia_creation= {
 	area = society
 	cost = @tier4cost3
 	tier = 4
 	category = { new_worlds }
-	prerequisites = { "tech_colonization_19" }	
+	prerequisites = { "tech_climate_restoration"}	
 	weight = @tier4weight3
 	
 	modifier = {

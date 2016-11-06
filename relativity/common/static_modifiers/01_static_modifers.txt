@@ -201,6 +201,9 @@ humiliated = {
 	influence_gain_mult = -0.33
 }
 
+drone_processing = {
+	tile_resource_minerals_mult = 0.10
+}
 ##########################################################################
 # Pop Modifiers
 ##########################################################################
@@ -361,6 +364,38 @@ cloudbuster = {
 	damage_vs_country_type_cloud_mult = 0.1
 }
 
+dreadnought_power = {
+	ship_shield_hp_mult = 4
+	ship_weapon_damage = 8
+	ship_hitpoints_mult = 4
+}
+
+pirate_power = {
+	ship_fire_rate_mult = 1
+	ship_auto_repair_add = 0.02
+}
+
+cloud_power = {
+	ship_weapon_damage = 2
+	ship_auto_repair_add = 0.01
+}
+
+enigmatic_power = {
+	ship_weapon_damage = 3
+	ship_armor_add = 11
+	ship_tracking_add = 50
+	ship_auto_repair_add = 0.02
+}
+
+sanctuary_power = {
+	ship_fire_rate_mult = 1
+	ship_auto_repair_add = 0.02
+}
+
+technosphere_power = {
+	ship_weapon_damage = 1.5
+	ship_shield_hp_mult = 5
+}
 ##########################################################################
 # Edict Modifiers
 ##########################################################################

@@ -787,6 +787,19 @@ sector_separatist_supporter = {
 	icon_frame = 3
 }
 
+stellarite_high_temp = {
+	pop_happiness = -0.25
+	pop_environment_tolerance = -0.25
+	icon = "gfx/interface/icons/planet_modifiers/pm_unstable_tectonics.dds"
+	icon_frame = 3
+}
+
+stellarite_low_temp = {
+	pop_happiness = -0.25
+	pop_environment_tolerance = -0.25
+	icon = "gfx/interface/icons/planet_modifiers/pm_carbon_world.dds"
+	icon_frame = 3
+}
 ##########################################################################
 # Leader Skill Modifiers
 ##########################################################################
@@ -1049,4 +1062,30 @@ Religious_Unity = {
 }
 Spirit_of_Science = {
 	influence_gain_add = -0.25
+}
+
+fallen_empire_gift_databanks = {
+	tile_resource_physics_research_mult = 0.25
+	tile_resource_society_research_mult = 0.25
+	tile_resource_engineering_research_mult = 0.25
+}
+
+gave_up_scientist_xenophobe = {
+	pop_happiness = -0.1
+}
+
+gave_up_pop = {
+	pop_happiness = -0.1
+}
+
+gave_up_pop_xenophile = {
+	pop_happiness = -0.05
+}
+
+gave_up_pop_xenophobe = {
+	pop_happiness = -0.2
+}
+
+fe_gift_ship = {
+	ship_upkeep_mult = -0.33
 }

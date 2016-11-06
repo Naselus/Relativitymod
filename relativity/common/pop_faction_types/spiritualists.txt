@@ -125,7 +125,7 @@ spiritualist_faction = {
 								skill = 0
 								traits = {
 								trait = leader_fspiritualist
-								trait = random_traits
+								add_random_leader_trait = yes
 								}
 							}
 							last_created_leader = {

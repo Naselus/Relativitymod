@@ -77,6 +77,7 @@ NDefines = {
 		FOCUSED_MAX_PITCH						= 80.0, -- in degrees, used when focused on planet/ship
 		FOCUSED_MIN_ZOOM_BASE					= 20.0, -- base min zoom
 		FOCUSED_MIN_ZOOM_MULT					= 0.5, -- min zoom is base + entity radius * FOCUSED_MIN_ZOOM_MULT
+		FOCUSED_PLANET_MIN_ZOOM_MULT			= 1.6,
 		FOCUSED_ZOOM_RATE						= 0.2, -- higher values means faster zoom in/out
 		FOCUS_START_ZOOM_STEP					= 4, 	-- which zoom step will be used when focusing on a new object
 
@@ -407,6 +408,7 @@ NDefines = {
 		WORMHOLE_OPEN_SPEED = 1.3,					-- Wormhole opening speed. Wormhole capacity is incremented with this every micro update
 		WORMHOLES_PER_STATION = 1,					-- How many wormholes a station can open at a time
 		WORMHOLE_BASE_CAPACITY_REQUIREMENT = 200,		-- Required wormhole capacity for a jump is base(this one!) + fleet size
+		WORMHOLE_CAPREQ_OUTSIDE_BORDERS = 0.3,		-- Percentage malus when opening wormholes to systems outside owner borders 
 		FTL_TRAIL_DAYS = 360,						-- FLT Trail lifetime in days
 
 		NORMAL_TAX_LEVEL 		= 0.25,				-- Tax level without happiness penalty
@@ -770,7 +772,7 @@ NDefines = {
 		
 		FALLEN_EMPIRE_MAINTENANCE_MULT		= 0.25,
 		AWAKENED_FALLEN_EMPIRE_MAINTENANCE_MULT		= 0.5,
-		FALLEN_EMPIRE_NAVAL_CAPACITY_MULT 	= 10,
+		FALLEN_EMPIRE_NAVAL_CAPACITY_MIN 	= 500,
 
 		MOVE_SHIP_TO_FLEET_MAX_DIST			= 50.0,
 		COST_SECTION_MUL					= 0.25,
@@ -992,7 +994,7 @@ NDefines = {
 	
 		MAX_TRUST = 100,								-- trust can never be more than this
 		MAX_TRUST_DEFENSIVE_PACT = 75,					-- trust can tick up to this if defensive pact
-		MAX_TRUST_NO_ALLIANCE = 50,						-- trust can tick up to this if no alliance or defensive pact
+		MAX_TRUST_ASSOCIATE = 100,						-- trust can tick up to this if federation associate = 50,						-- trust can tick up to this if no alliance or defensive pact
 		MAX_TRUST_NAP = 75,								-- trust can tick up to this if non-aggression pact
 		MAX_TRUST_MIN = 50,						-- trust can always tick up to at least this
 		BASE_TRUST_CHANGE = -0.25,						-- only applied if no other factor is changing trust
@@ -1003,7 +1005,7 @@ NDefines = {
 		MONTHLY_TRUST_ASSOCIATION_STATUS = 0.50,
 		MONTHLY_TRUST_DEFENSIVE_PACT = 0.75,				
 		MONTHLY_TRUST_SUBJECT = 0.5,				
-		MONTHLY_TRUST_ALLIANCE = 1.00,				
+		MONTHLY_TRUST_FEDERATION = 1.00,				
 		MONTHLY_TRUST_AT_WAR = -2.00,
 		MONTHLY_TRUST_RIVAL = -2.00,
 		
@@ -1089,7 +1091,7 @@ NDefines = {
 		DEFENSIVE_PACT_ACCEPTANCE_ATTITUDE_ALLIANCE = 50,
 		DEFENSIVE_PACT_ACCEPTANCE_ATTITUDE_COEXIST = 20, 
 		DEFENSIVE_PACT_ACCEPTANCE_OTHER_ATTITUDE = -50,
-		DEFENSIVE_PACT_ACCEPTANCE_SHARED_RIVAL = 25, -- per rival
+		DEFENSIVE_PACT_ACCEPTANCE_NUM_PACTS = 25, -- per rival
 		DEFENSIVE_PACT_ACCEPTANCE_SHARED_RIVAL = 50, -- per rival
 		DEFENSIVE_PACT_ACCEPTANCE_SHARED_ALLY = 30, -- per shared ally
 		DEFENSIVE_PACT_ACCEPTANCE_SHARED_THREAT = 1,	-- scales with actual threat
@@ -1165,8 +1167,8 @@ NDefines = {
 		TRADE_VALUE_SUPPORT_INDEPENDENCE = 3, -- Multiplied by relative power
 		TRADE_VALUE_SUPPORT_INDEPENDENCE_MAX = 10, -- Multiplied by treaty years
 
-		TRADE_VALUE_TRADE_ACCESS = 0.1, -- Per system within their borders
-		TRADE_VALUE_TRADE_ACCESS_MAX = 2.5, -- Multiplied by treaty years
+		TRADE_VALUE_WORMHOLE_ACCESS = 0.1, -- Per system within their borders
+		TRADE_VALUE_WORMHOLE_ACCESS_MAX = 1, -- Multiplied by treaty years
 		TRADE_VALUE_MIGRATION_ACCESS = 0.5, -- Per planet they own
 		TRADE_VALUE_MIGRATION_ACCESS_MAX = 5, -- Multiplied by treaty years
 		TRADE_VALUE_RESEARCH_AGREEMENT = 0.25, -- Per tech they have that we don't
@@ -1298,8 +1300,7 @@ NDefines = {
 		INFLUENCE_FRACTION_EDICTS = 0.40,		-- Fraction of AI Influence that goes to edicts
 		INFLUENCE_FRACTION_FACTIONS = 0.30,		-- Fraction of AI Influence that is used on fractions
 		INFLUENCE_FRACTION_SAVINGS = 0.25,		-- Fraction of AI influence that is saved
-		INFLUENCE_FRACTION_SAVINGS = 0.0,			-- Fraction of AI influence that is saved
-		
+		INFLUENCE_FRACTION_RESETTLEMENT = 0.20,	-- Fraction of AI influence that is saved		
 		INFLUENCE_MAX_STORED_PER_POST = 00,				-- Max stored in any single influence budget post
 		
 		INFLUENCE_BUDGET_STATIONS = 0.20,			-- Fraction of monthly influence that is used on stations (frontier outposts)

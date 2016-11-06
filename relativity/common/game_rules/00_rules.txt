@@ -251,25 +251,7 @@ can_declare_war = {
 #Root = country
 #This = planet
 can_colonize_planet = {
-	if = {
-		limit = { 
-			AND = {
-				has_modifier = "stone_age_civilization"
-				ROOT = {
-					NOT = {
-						has_policy_flag = interference_full
-					}
-				}
-			}
-		}
-		custom_tooltip = {
-			text = "NONINTERFERENCE_DIRECTIVE"
-			always = no
-		}
-		else = {
-			always = yes
-		}
-	}
+	always = yes
 }
 
 #Root = country
@@ -362,22 +344,12 @@ can_resettle_pop_planet = {
 		exists = this
 		is_under_colonization = no
 	}
-	custom_tooltip = {
-		text = "RESETTLEMENT_PLANETARY_ADMINISTRATION"
-		exists = this
-		any_tile = {
-			OR = {
-				has_building = "building_capital_1"
-				has_building = "building_capital_2"
-				has_building = "building_capital_3"
-			}
-		}
-	}
 }
 
 # Checks if a pop can procreate
 # This = Pop
 can_pop_procreate = {
+	is_sentient = yes
 	OR = {
 		is_enslaved = no
 		owner = {
@@ -392,4 +364,10 @@ can_pop_procreate = {
 # This = Gamestate
 exists_any_crisis = {
 	has_global_flag = galactic_crisis_happened
+}
+
+#Checks if a country can have alien leadership
+#This = country
+primary_leaders_only = {
+	has_policy_flag = leadership_allow_dominant_only
 }

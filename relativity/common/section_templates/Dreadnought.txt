@@ -9,7 +9,7 @@ ship_section_template = {
 	icon_frame = 1
 	
 	# Big guns
-	weapon_preferences = { weapon_type_kinetic }
+	#weapon_preferences = { weapon_type_kinetic }
 	ai_weight = {
 		modifier = {
 			factor = 8.0
@@ -99,7 +99,7 @@ ship_section_template = {
 	icon_frame = 1
 	
 	# Big missiles
-	weapon_preferences = { weapon_type_explosive }
+	#weapon_preferences = { weapon_type_explosive }
 	ai_weight = {
 		modifier = {
 			factor = 8.0
@@ -187,7 +187,7 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_bow"
 	
 	# Big lasers
-	weapon_preferences = { weapon_type_energy }
+	#weapon_preferences = { weapon_type_energy }
 	ai_weight = {
 		modifier = {
 			factor = 8.0
@@ -278,7 +278,7 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_bow"
 	
 	# Missiles & Strike Craft
-	weapon_preferences = { weapon_type_explosive }
+	#weapon_preferences = { weapon_type_explosive }
 	ai_weight = {
 		modifier = {
 			factor = 8.0
@@ -367,7 +367,7 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_bow"
 	
 	# Small guns
-	weapon_preferences = { weapon_type_kinetic }
+	#weapon_preferences = { weapon_type_kinetic }
 	ai_weight = {
 		modifier = {
 			factor = 8.0
@@ -455,7 +455,7 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_bow"
 	
 	# Small lasers
-	weapon_preferences = { weapon_type_energy }
+	#weapon_preferences = { weapon_type_energy }
 	ai_weight = {
 		modifier = {
 			factor = 8.0
@@ -539,7 +539,7 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_mid"
 	
 	# Big lasers
-	weapon_preferences = { weapon_type_energy }
+	#weapon_preferences = { weapon_type_energy }
 	ai_weight = {
 		modifier = {
 			factor = 8.0
@@ -624,7 +624,7 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_mid"
 	
 	# Small guns
-	weapon_preferences = { weapon_type_kinetic }
+	#weapon_preferences = { weapon_type_kinetic }
 	ai_weight = {
 		modifier = {
 			factor = 8.0
@@ -705,7 +705,7 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_mid"
 	
 	# Big missiles
-	weapon_preferences = { weapon_type_explosive }
+	#weapon_preferences = { weapon_type_explosive }
 	ai_weight = {
 		modifier = {
 			factor = 8.0
@@ -785,7 +785,7 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_mid"
 	
 	# Big guns
-	weapon_preferences = { weapon_type_kinetic }
+	#weapon_preferences = { weapon_type_kinetic }
 	ai_weight = {
 		modifier = {
 			factor = 8.0
@@ -874,7 +874,7 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_mid"
 	
 	# Lasers & Strike Craft
-	weapon_preferences = { weapon_type_energy }
+	#weapon_preferences = { weapon_type_energy }
 	ai_weight = {
 		modifier = {
 			factor = 8.0
@@ -963,7 +963,7 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_mid"
 	
 	# Missiles & Strike Craft
-	weapon_preferences = { weapon_type_explosive }
+	#weapon_preferences = { weapon_type_explosive }
 	ai_weight = {
 		modifier = {
 			factor = 8.0
@@ -1063,7 +1063,7 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_stern"
 	
 	# Guns
-	weapon_preferences = { weapon_type_kinetic weapon_type_point_defense }
+	#weapon_preferences = { weapon_type_kinetic weapon_type_point_defense }
 	ai_weight = {
 		modifier = {
 			factor = 8.0
@@ -1147,7 +1147,7 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_stern"
 	
 	# Lasers
-	weapon_preferences = { weapon_type_energy }
+	#weapon_preferences = { weapon_type_energy }
 	ai_weight = {
 		modifier = {
 			factor = 8.0
@@ -1240,7 +1240,7 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_stern"
 	
 	# Missiles
-	weapon_preferences = { weapon_type_explosive }
+	#weapon_preferences = { weapon_type_explosive }
 	ai_weight = {
 		modifier = {
 			factor = 100.0
@@ -1333,7 +1333,7 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_stern"
 	
 	# Point Defense
-	weapon_preferences = { weapon_type_point_defense }
+	#weapon_preferences = { weapon_type_point_defense }
 	ai_weight = {
 		factor = 1
 		modifier = {
