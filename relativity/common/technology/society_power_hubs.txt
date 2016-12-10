@@ -102,7 +102,8 @@
 ###########
 #Global Energy Management
 tech_power_hub_1 = {
-	cost = @tier2cost1
+	icon = "tech_power_hub_1"
+ 	cost = @tier2cost1
 	area = society
 	tier = 2
 	category = { power_hubs }	
@@ -152,7 +153,8 @@ tech_power_hub_1 = {
 
 #Planetary Power Grid
 tech_power_hub_2 = {
-	cost = @tier2cost3
+	icon = "tech_power_hub_1"
+ 	cost = @tier2cost3
 	area = society
 	tier = 2
 	category = { power_hubs }	
@@ -202,7 +204,8 @@ tech_power_hub_2 = {
 
 tech_power_hub_3 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_power_hub_1"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { power_hubs }
 	prerequisites = { "tech_power_hub_2"}	
@@ -214,7 +217,8 @@ tech_power_hub_3 = {
 
 tech_power_hub_4 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_power_hub_1"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { power_hubs }
 	prerequisites = { "tech_power_hub_3"}	
@@ -226,7 +230,8 @@ tech_power_hub_4 = {
 
 tech_power_hub_5 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_power_hub_1"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { power_hubs }
 	prerequisites = { "tech_power_hub_4"}	
@@ -238,7 +243,8 @@ tech_power_hub_5 = {
 
 tech_power_hub_6 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_power_hub_1"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { power_hubs }
 	prerequisites = { "tech_power_hub_5"}	
@@ -250,7 +256,8 @@ tech_power_hub_6 = {
 
 tech_power_hub_7 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_power_hub_1"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { power_hubs }
 	prerequisites = { "tech_power_hub_6"}	
@@ -262,7 +269,8 @@ tech_power_hub_7 = {
 
 tech_power_hub_8 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_power_hub_1"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { power_hubs }
 	prerequisites = { "tech_power_hub_7"}	
@@ -274,7 +282,8 @@ tech_power_hub_8 = {
 
 tech_power_hub_9 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_power_hub_1"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { power_hubs }
 	prerequisites = { "tech_power_hub_8"}	
@@ -286,7 +295,8 @@ tech_power_hub_9 = {
 
 tech_power_hub_10 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_power_hub_1"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { power_hubs }
 	prerequisites = { "tech_power_hub_9"}	
@@ -298,7 +308,8 @@ tech_power_hub_10 = {
 
 tech_power_hub_11 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_power_hub_1"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { power_hubs }
 	prerequisites = { "tech_power_hub_10"}	
@@ -310,7 +321,8 @@ tech_power_hub_11 = {
 
 tech_power_hub_12 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_power_hub_1"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { power_hubs }
 	prerequisites = { "tech_power_hub_11"}	
@@ -322,7 +334,8 @@ tech_power_hub_12 = {
 
 tech_power_hub_13 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_power_hub_1"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { power_hubs }
 	prerequisites = { "tech_power_hub_12"}	
@@ -334,7 +347,8 @@ tech_power_hub_13 = {
 
 tech_power_hub_14 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_power_hub_1"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { power_hubs }
 	prerequisites = { "tech_power_hub_13"}	
@@ -346,7 +360,8 @@ tech_power_hub_14 = {
 
 tech_power_hub_15 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_power_hub_1"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { power_hubs }
 	prerequisites = { "tech_power_hub_14"}	
@@ -358,7 +373,8 @@ tech_power_hub_15 = {
 
 tech_power_hub_16 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_power_hub_1"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { power_hubs }
 	prerequisites = { "tech_power_hub_15"}	
@@ -370,7 +386,8 @@ tech_power_hub_16 = {
 
 tech_power_hub_17 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_power_hub_1"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { power_hubs }
 	prerequisites = { "tech_power_hub_16"}	
@@ -382,7 +399,8 @@ tech_power_hub_17 = {
 
 tech_power_hub_18 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_power_hub_1"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { power_hubs }
 	prerequisites = { "tech_power_hub_17"}	
@@ -394,7 +412,8 @@ tech_power_hub_18 = {
 
 tech_power_hub_19 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_power_hub_1"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { power_hubs }
 	prerequisites = { "tech_power_hub_18"}	
@@ -406,7 +425,8 @@ tech_power_hub_19 = {
 
 tech_power_hub_20 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_power_hub_1"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { power_hubs }
 	prerequisites = { "tech_power_hub_19"}	

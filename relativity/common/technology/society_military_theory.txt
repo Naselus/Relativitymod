@@ -105,7 +105,8 @@
 
 #Doctrine: Space Combat
 tech_doctrine_fleet_size_1 = {
-	cost = @tier1cost1
+	icon = "tech_doctrine_fleet_size_1"
+ 	cost = @tier1cost1
 	area = society
 	tier = 1
 	category = { military_theory }
@@ -188,7 +189,8 @@ tech_doctrine_fleet_size_1 = {
 
 #Doctrine: Fleet Support 
 tech_doctrine_fleet_support = {
-	cost = @tier1cost2
+	icon = "tech_doctrine_fleet_size_1"
+ 	cost = @tier1cost2
 	area = society
 	tier = 1
 	category = { military_theory }
@@ -264,7 +266,8 @@ tech_doctrine_fleet_support = {
 
 #Doctrine: Reactive Formations
 tech_doctrine_fleet_size_2 = {
-	cost = @tier1cost3
+	icon = "tech_doctrine_fleet_size_1"
+ 	cost = @tier1cost3
 	area = society
 	tier = 1
 	category = { military_theory }
@@ -343,7 +346,8 @@ tech_doctrine_fleet_size_2 = {
 
 #Interstellar Fleet Traditions
 tech_interstellar_fleet_traditions = {
-	cost = @tier1cost4
+	icon = "tech_doctrine_fleet_size_1"
+ 	cost = @tier1cost4
 	area = society
 	tier = 1
 	category = { military_theory }
@@ -417,7 +421,8 @@ tech_interstellar_fleet_traditions = {
 
 #Doctrine: Interstellar Warfare
 tech_doctrine_fleet_size_3 = {
-	cost = @tier2cost1
+	icon = "tech_doctrine_fleet_size_1"
+ 	cost = @tier2cost1
 	area = society
 	tier = 2
 	category = { military_theory }
@@ -496,7 +501,8 @@ tech_doctrine_fleet_size_3 = {
 
 #Doctrine: Refit Standards
 tech_doctrine_refit_standards = {
-	cost = @tier3cost1
+	icon = "tech_doctrine_fleet_size_1"
+ 	cost = @tier3cost1
 	area = society
 	tier = 3
 	category = { military_theory }
@@ -572,7 +578,8 @@ tech_doctrine_refit_standards = {
 
 #Doctrine: Fluid Fleet Templates
 tech_doctrine_fleet_size_4 = {
-	cost = @tier2cost3
+	icon = "tech_doctrine_fleet_size_1"
+ 	cost = @tier2cost3
 	area = society
 	tier = 2
 	category = { military_theory }
@@ -650,7 +657,8 @@ tech_doctrine_fleet_size_4 = {
 }
 
 tech_doctrine_command_matrix = {
-	cost = @tier3cost1
+	icon = "tech_doctrine_fleet_size_1"
+ 	cost = @tier3cost1
 	area = society
 	tier = 3
 	category = { military_theory }
@@ -738,7 +746,8 @@ tech_doctrine_command_matrix = {
 
 #Doctrine: Armada Battle Formation
 tech_doctrine_fleet_size_5 = {
-	cost = @tier2cost4
+	icon = "tech_doctrine_fleet_size_1"
+ 	cost = @tier2cost4
 	area = society
 	tier = 2
 	category = { military_theory }
@@ -817,7 +826,8 @@ tech_doctrine_fleet_size_5 = {
 
 tech_military_supremacy = {
 	area = society
-	cost = @tier3cost4
+	icon = "tech_doctrine_fleet_size_1"
+ 	cost = @tier3cost4
 	tier = 3
 	category = { military_theory }
 	is_rare = yes
@@ -900,7 +910,8 @@ tech_military_supremacy = {
 
 tech_military_theory_14 = {
 	area = society
-	cost = @tier3cost1
+	icon = "tech_doctrine_fleet_size_1"
+ 	cost = @tier3cost1
 	tier = 3
 	category = { military_theory }
 	weight = @tier3weight1
@@ -951,7 +962,8 @@ tech_military_theory_14 = {
 
 tech_military_theory_15 = {
 	area = society
-	cost = @tier3cost2
+	icon = "tech_doctrine_fleet_size_1"
+ 	cost = @tier3cost2
 	tier = 3
 	category = { military_theory }
 	prerequisites = { "tech_military_theory_14" }
@@ -1002,7 +1014,8 @@ tech_military_theory_15 = {
 
 tech_military_theory_16 = {
 	area = society
-	cost = @tier3cost3
+	icon = "tech_doctrine_fleet_size_1"
+ 	cost = @tier3cost3
 	tier = 3
 	category = { military_theory }
 	prerequisites = { "tech_military_theory_15" }
@@ -1053,7 +1066,8 @@ tech_military_theory_16 = {
 
 tech_military_theory_17 = {
 	area = society
-	cost = @tier3cost4
+	icon = "tech_doctrine_fleet_size_1"
+ 	cost = @tier3cost4
 	tier = 3
 	category = { military_theory }
 	prerequisites = { "tech_military_theory_16" }	
@@ -1104,7 +1118,8 @@ tech_military_theory_17 = {
 
 tech_military_theory_18 = {
 	area = society
-	cost = @tier4cost1
+	icon = "tech_doctrine_fleet_size_1"
+ 	cost = @tier4cost1
 	tier = 4
 	category = { military_theory }
 	prerequisites = { "tech_military_theory_17" }	
@@ -1155,7 +1170,8 @@ tech_military_theory_18 = {
 
 tech_military_theory_19 = {
 	area = society
-	cost = @tier4cost2
+	icon = "tech_doctrine_fleet_size_1"
+ 	cost = @tier4cost2
 	tier = 4
 	category = { military_theory }
 	prerequisites = { "tech_military_theory_18" }
@@ -1206,7 +1222,8 @@ tech_military_theory_19 = {
 
 tech_military_theory_20 = {
 	area = society
-	cost = @tier4cost3
+	icon = "tech_doctrine_fleet_size_1"
+ 	cost = @tier4cost3
 	tier = 4
 	category = { military_theory }
 	prerequisites = { "tech_military_theory_19" }	
@@ -1258,7 +1275,8 @@ tech_military_theory_20 = {
 # Army Organization
 # ##################
 tech_centralized_command = {
-	cost = @tier1cost1
+	icon = "tech_doctrine_fleet_size_1"
+ 	cost = @tier1cost1
 	area = society
 	tier = 1
 	category = { military_theory }
@@ -1346,7 +1364,8 @@ tech_centralized_command = {
 
 #Combat Training
 tech_combat_training = {
-	cost = @tier1cost4
+	icon = "tech_doctrine_fleet_size_1"
+ 	cost = @tier1cost4
 	area = society
 	tier = 1
 	category = { military_theory }
@@ -1423,7 +1442,8 @@ tech_combat_training = {
 }
 #Virtual Combat Simulations
 tech_virtual_combat_arena = {
-	cost = @tier2cost3
+	icon = "tech_doctrine_fleet_size_1"
+ 	cost = @tier2cost3
 	area = society
 	tier = 2
 	category = { military_theory }

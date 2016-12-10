@@ -104,7 +104,8 @@
 #Nanocomposite armor
 tech_ship_armor_1 = {
 	area = engineering
-	cost = @tier1cost2
+	icon = "tech_ship_armor_1"
+ 	cost = @tier1cost2
 	tier = 1
 	category = { armor }
 	ai_update_type = military	
@@ -163,7 +164,8 @@ tech_ship_armor_1 = {
 
 tech_ship_armor_6 = {
 	area = engineering
-	cost = @tier1cost3
+	icon = "tech_ship_armor_1"
+ 	cost = @tier1cost3
 	tier = 1
 	category = { armor }
 	prerequisites = { "tech_ship_armor_1"}	
@@ -214,7 +216,8 @@ tech_ship_armor_6 = {
 
 tech_ship_armor_7 = {
 	area = engineering
-	cost = @tier1cost4
+	icon = "tech_ship_armor_1"
+ 	cost = @tier1cost4
 	tier = 1
 	category = { armor }
 	prerequisites = { "tech_ship_armor_6"}	
@@ -265,7 +268,8 @@ tech_ship_armor_7 = {
 
 tech_ship_armor_8 = {
 	area = engineering
-	cost = @tier2cost1
+	icon = "tech_ship_armor_1"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { armor }
 	prerequisites = { "tech_ship_armor_7"}	
@@ -317,7 +321,8 @@ tech_ship_armor_8 = {
 #Ceramo-Metal armor
 tech_ship_armor_2 = {
 	area = engineering
-	cost = @tier2cost2
+	icon = "tech_ship_armor_1"
+ 	cost = @tier2cost2
 	tier = 2
 	category = { armor }
 	ai_update_type = military	
@@ -376,7 +381,8 @@ tech_ship_armor_2 = {
 
 tech_ship_armor_9 = {
 	area = engineering
-	cost = @tier2cost2
+	icon = "tech_ship_armor_1"
+ 	cost = @tier2cost2
 	tier = 2
 	category = { armor }
 	prerequisites = { "tech_ship_armor_2"}	
@@ -427,7 +433,8 @@ tech_ship_armor_9 = {
 
 tech_ship_armor_10 = {
 	area = engineering
-	cost = @tier2cost3
+	icon = "tech_ship_armor_1"
+ 	cost = @tier2cost3
 	tier = 2
 	category = { armor }
 	prerequisites = { "tech_ship_armor_9"}	
@@ -478,7 +485,8 @@ tech_ship_armor_10 = {
 
 tech_ship_armor_11 = {
 	area = engineering
-	cost = @tier2cost4
+	icon = "tech_ship_armor_1"
+ 	cost = @tier2cost4
 	tier = 2
 	category = { armor }
 	prerequisites = { "tech_ship_armor_10"}	
@@ -529,7 +537,8 @@ tech_ship_armor_11 = {
 
 tech_ship_armor_12 = {
 	area = engineering
-	cost = @tier3cost1
+	icon = "tech_ship_armor_1"
+ 	cost = @tier3cost1
 	tier = 3
 	category = { armor }
 	prerequisites = { "tech_ship_armor_11"}	
@@ -582,7 +591,8 @@ tech_ship_armor_12 = {
 #Garanthium armor
 tech_ship_armor_3 = {
 	area = engineering
-	cost = @tier3cost1
+	icon = "tech_ship_armor_1"
+ 	cost = @tier3cost1
 	tier = 3
 	category = { armor }
 	ai_update_type = military	
@@ -641,7 +651,8 @@ tech_ship_armor_3 = {
 
 tech_ship_armor_13 = {
 	area = engineering
-	cost = @tier3cost1
+	icon = "tech_ship_armor_1"
+ 	cost = @tier3cost1
 	tier = 3
 	category = { armor }
 	prerequisites = { "tech_ship_armor_3"}	
@@ -692,7 +703,8 @@ tech_ship_armor_13 = {
 
 tech_ship_armor_14 = {
 	area = engineering
-	cost = @tier3cost2
+	icon = "tech_ship_armor_1"
+ 	cost = @tier3cost2
 	tier = 3
 	category = { armor }
 	prerequisites = { "tech_ship_armor_13"}	
@@ -743,7 +755,8 @@ tech_ship_armor_14 = {
 
 tech_ship_armor_15 = {
 	area = engineering
-	cost = @tier3cost2
+	icon = "tech_ship_armor_1"
+ 	cost = @tier3cost2
 	tier = 3
 	category = { armor }
 	prerequisites = { "tech_ship_armor_14"}	
@@ -794,7 +807,8 @@ tech_ship_armor_15 = {
 
 tech_ship_armor_16 = {
 	area = engineering
-	cost = @tier3cost3
+	icon = "tech_ship_armor_1"
+ 	cost = @tier3cost3
 	tier = 3
 	category = { armor }
 	prerequisites = { "tech_ship_armor_15"}	
@@ -846,7 +860,8 @@ tech_ship_armor_16 = {
 #Neutronium armor
 tech_ship_armor_4 = {
 	area = engineering
-	cost = @tier3cost4
+	icon = "tech_ship_armor_1"
+ 	cost = @tier3cost4
 	tier = 3
 	category = { armor }
 	ai_update_type = military	
@@ -905,7 +920,8 @@ tech_ship_armor_4 = {
 
 tech_ship_armor_17 = {
 	area = engineering
-	cost = @tier3cost4
+	icon = "tech_ship_armor_1"
+ 	cost = @tier3cost4
 	tier = 3
 	category = { armor }
 	prerequisites = { "tech_ship_armor_4"}	
@@ -956,7 +972,8 @@ tech_ship_armor_17 = {
 
 tech_ship_armor_18 = {
 	area = engineering
-	cost = @tier4cost1
+	icon = "tech_ship_armor_1"
+ 	cost = @tier4cost1
 	tier = 4
 	category = { armor }
 	prerequisites = { "tech_ship_armor_17"}	
@@ -1007,7 +1024,8 @@ tech_ship_armor_18 = {
 
 tech_ship_armor_19 = {
 	area = engineering
-	cost = @tier4cost2
+	icon = "tech_ship_armor_1"
+ 	cost = @tier4cost2
 	tier = 4
 	category = { armor }
 	prerequisites = { "tech_ship_armor_18"}	
@@ -1058,7 +1076,8 @@ tech_ship_armor_19 = {
 
 tech_ship_armor_20 = {
 	area = engineering
-	cost = @tier4cost3
+	icon = "tech_ship_armor_1"
+ 	cost = @tier4cost3
 	tier = 4
 	category = { armor }
 	prerequisites = { "tech_ship_armor_19"}	
@@ -1114,7 +1133,8 @@ tech_ship_armor_20 = {
 #Living Armor
 tech_ship_armor_5 = {
 	area = engineering
-	cost = @tier4cost4
+	icon = "tech_ship_armor_1"
+ 	cost = @tier4cost4
 	tier = 4
 	category = { armor }
 	ai_update_type = military	

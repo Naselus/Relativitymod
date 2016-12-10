@@ -103,7 +103,8 @@
 
 tech_shields_1 = {
 	area = physics
-	cost = @tier1cost2
+	icon = "tech_shields_1"
+ 	cost = @tier1cost2
 	tier = 1
 	category = { field_manipulation }
 	ai_update_type = military
@@ -170,7 +171,8 @@ tech_shields_1 = {
 
 tech_field_manipulation_9 = {
 	area = physics
-	cost = @tier1cost3
+	icon = "tech_shields_1"
+ 	cost = @tier1cost3
 	tier = 1
 	category = { field_manipulation }
 	prerequisites = { "tech_shields_1"}	
@@ -226,7 +228,8 @@ tech_field_manipulation_9 = {
 
 tech_field_manipulation_10 = {
 	area = physics
-	cost = @tier1cost4
+	icon = "tech_shields_1"
+ 	cost = @tier1cost4
 	tier = 1
 	category = { field_manipulation }
 	prerequisites = { "tech_field_manipulation_9"}	
@@ -282,7 +285,8 @@ tech_field_manipulation_10 = {
 
 tech_field_manipulation_11 = {
 	area = physics
-	cost = @tier2cost1
+	icon = "tech_shields_1"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { field_manipulation }
 	prerequisites = { "tech_field_manipulation_10"}	
@@ -338,7 +342,8 @@ tech_field_manipulation_11 = {
 
 tech_shields_2 = {
 	area = physics
-	cost = @tier2cost2
+	icon = "tech_shields_1"
+ 	cost = @tier2cost2
 	tier = 2
 	category = { field_manipulation }
 	ai_update_type = military
@@ -406,7 +411,8 @@ tech_shields_2 = {
 
 tech_shield_rechargers_1 = {
 	area = physics
-	cost = @tier2cost2
+	icon = "tech_shields_1"
+ 	cost = @tier2cost2
 	tier = 2
 	category = { field_manipulation }
 	ai_update_type = military	
@@ -469,7 +475,8 @@ tech_shield_rechargers_1 = {
 
 tech_field_manipulation_12 = {
 	area = physics
-	cost = @tier2cost3
+	icon = "tech_shields_1"
+ 	cost = @tier2cost3
 	tier = 2
 	category = { field_manipulation }
 	prerequisites = { "tech_shield_rechargers_1"}	
@@ -525,7 +532,8 @@ tech_field_manipulation_12 = {
 
 tech_field_manipulation_13 = {
 	area = physics
-	cost = @tier3cost1
+	icon = "tech_shields_1"
+ 	cost = @tier3cost1
 	tier = 3
 	category = { field_manipulation }
 	prerequisites = { "tech_field_manipulation_12"}	
@@ -582,7 +590,8 @@ tech_field_manipulation_13 = {
 
 tech_shields_3 = {
 	area = physics
-	cost = @tier3cost1
+	icon = "tech_shields_1"
+ 	cost = @tier3cost1
 	tier = 3
 	category = { field_manipulation }
 	ai_update_type = military
@@ -650,7 +659,8 @@ tech_shields_3 = {
 
 tech_planetary_shield_generator = {
 	area = physics
-	cost = @tier2cost4
+	icon = "tech_shields_1"
+ 	cost = @tier2cost4
 	tier = 2
 	category = { field_manipulation }
 	ai_update_type = military	
@@ -709,7 +719,8 @@ tech_planetary_shield_generator = {
 
 tech_field_manipulation_14 = {
 	area = physics
-	cost = @tier3cost1
+	icon = "tech_shields_1"
+ 	cost = @tier3cost1
 	tier = 3
 	category = { field_manipulation }
 	prerequisites = { "tech_shields_3"}	
@@ -765,7 +776,8 @@ tech_field_manipulation_14 = {
 
 tech_shield_recharge_aura_1 = {
 	area = physics
-	cost = @tier3cost2
+	icon = "tech_shields_1"
+ 	cost = @tier3cost2
 	tier = 3
 	category = { field_manipulation }
 	ai_update_type = military	
@@ -847,7 +859,8 @@ tech_shield_recharge_aura_1 = {
 
 tech_field_manipulation_15 = {
 	area = physics
-	cost = @tier3cost2
+	icon = "tech_shields_1"
+ 	cost = @tier3cost2
 	tier = 3
 	category = { field_manipulation }
 	prerequisites = { "tech_field_manipulation_14"}	
@@ -903,7 +916,8 @@ tech_field_manipulation_15 = {
 
 tech_field_manipulation_16 = {
 	area = physics
-	cost = @tier3cost3
+	icon = "tech_shields_1"
+ 	cost = @tier3cost3
 	tier = 3
 	category = { field_manipulation }
 	prerequisites = { "tech_field_manipulation_15"}	
@@ -960,7 +974,8 @@ tech_field_manipulation_16 = {
 
 tech_shields_4 = {
 	area = physics
-	cost = @tier3cost4
+	icon = "tech_shields_1"
+ 	cost = @tier3cost4
 	tier = 3
 	category = { field_manipulation }
 	ai_update_type = military
@@ -1028,7 +1043,8 @@ tech_shields_4 = {
 
 tech_field_manipulation_17 = {
 	area = physics
-	cost = @tier3cost4
+	icon = "tech_shields_1"
+ 	cost = @tier3cost4
 	tier = 3
 	category = { field_manipulation }
 	prerequisites = { "tech_shields_4"}	
@@ -1084,7 +1100,8 @@ tech_field_manipulation_17 = {
 
 tech_field_manipulation_18 = {
 	area = physics
-	cost = @tier4cost1
+	icon = "tech_shields_1"
+ 	cost = @tier4cost1
 	tier = 4
 	category = { field_manipulation }
 	prerequisites = { "tech_field_manipulation_17"}	
@@ -1140,7 +1157,8 @@ tech_field_manipulation_18 = {
 
 tech_field_manipulation_19 = {
 	area = physics
-	cost = @tier4cost2
+	icon = "tech_shields_1"
+ 	cost = @tier4cost2
 	tier = 4
 	category = { field_manipulation }
 	prerequisites = { "tech_field_manipulation_18"}	
@@ -1196,7 +1214,8 @@ tech_field_manipulation_19 = {
 
 tech_field_manipulation_20 = {
 	area = physics
-	cost = @tier4cost3
+	icon = "tech_shields_1"
+ 	cost = @tier4cost3
 	tier = 4
 	category = { field_manipulation }
 	prerequisites = { "tech_field_manipulation_19"}	
@@ -1252,7 +1271,8 @@ tech_field_manipulation_20 = {
 
 tech_shields_5 = {
 	area = physics
-	cost = @tier4cost4
+	icon = "tech_shields_1"
+ 	cost = @tier4cost4
 	tier = 4
 	category = { field_manipulation }
 	ai_update_type = military

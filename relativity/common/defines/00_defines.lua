@@ -590,6 +590,7 @@ NDefines = {
 		PRESCRIPTED_PLANETS_NUM				= 2,	-- The number of prescripted ideal colonies in empire_initializers.txt (don't change one without changing the other)
 		PRESCRIPTED_PLANETS_MAX_DISTANCE 	= 50,	-- Max distance of prescripted ideal colonies in empire_initializers.txt (don't change one without changing the other)
 		
+		START_POPS = 7,						-- This amount of extra pops is generated for starting empires on top of the capital pop
 		ADVANCED_EMPIRE_EXTRA_POPS_MIN = 1,		-- How many extra pops does advanced empires get on their homeworld?
 		ADVANCED_EMPIRE_EXTRA_POPS_MAX = 3,	
 		ADVANCED_EMPIRE_EXTRA_MINERALS_MIN = 1000, -- How much extra minerals does advanced empires start with?
@@ -772,6 +773,7 @@ NDefines = {
 		
 		FALLEN_EMPIRE_MAINTENANCE_MULT		= 0.25,
 		AWAKENED_FALLEN_EMPIRE_MAINTENANCE_MULT		= 0.5,
+		AWAKENED_FALLEN_EMPIRE_NAVAL_CAPACITY_MIN 	= 1000,
 		FALLEN_EMPIRE_NAVAL_CAPACITY_MIN 	= 500,
 
 		MOVE_SHIP_TO_FLEET_MAX_DIST			= 50.0,
@@ -991,6 +993,10 @@ NDefines = {
 		
 		MAX_SHIPS_BUILD_PER_WEEK = 10,					
 		MAX_SHIPS_DISBAND_PER_WEEK = 5,
+	
+		
+		MIN_GIFT_SIZE = 25,								-- in opinion impact
+		MAX_GIFT_SIZE = 50,
 	
 		MAX_TRUST = 100,								-- trust can never be more than this
 		MAX_TRUST_DEFENSIVE_PACT = 75,					-- trust can tick up to this if defensive pact
@@ -1296,6 +1302,8 @@ NDefines = {
 
 		TECH_NEED_MULT_VALUE = 10,				-- Tech need value will multiplied by this value e.g. when certain diplomacy techs are needed
 
+		MIN_WANTED_SCIENTISTS = 4,						-- Below this, AI prioritizes influence spending to get more scientists
+	
 		INFLUENCE_FRACTION_LEADERS = 0.30,		-- Fraction of AI Influence that goes to electing new leader
 		INFLUENCE_FRACTION_EDICTS = 0.40,		-- Fraction of AI Influence that goes to edicts
 		INFLUENCE_FRACTION_FACTIONS = 0.30,		-- Fraction of AI Influence that is used on fractions
@@ -1325,7 +1333,7 @@ NDefines = {
 
 		WORMHOLE_STATION_OFFSET = 150.0,		-- Used to place wormhole stations in system
 
-		COLONIZE_HABITABILITY_MIN = 0.40,		-- Planet habitability must be at least this value in order for AI to colonize
+	--	COLONIZE_HABITABILITY_MIN = 0.40,		-- Planet habitability must be at least this value in order for AI to colonize
 
 		CRISIS_FLEET_SIZE_LIMIT_LOWER = 130,	-- Swarm fleet will aim for this size before attacking targets
 		CRISIS_NAVY_SIZE_LIMIT = 130,			-- Swarm fleet will aim for this size before attacking targets
@@ -1368,6 +1376,8 @@ NDefines = {
 		AUTO_EXPLORE_ATTRACTION_SCORE = 200,		-- Attraction score to auto explore a system will descrease by this much if system is owned by you or has a planet owned by you
 		
 		MAX_COLONIZATION_RANGE = 120,				-- Range from borders AI will colonize planet (influence cost)
+		OPTIMAL_OUTPOST_DISTANCE = 3000,			-- Range from borders ED will build outpost (square distance)
+		ED_MIL_STATIONS_IN_SYSTEMS = 4,				-- Fraction of systems within borders that will have military stations in it for ED
 		
 		NO_WARS_FLAG = "ai_no_wars",
 		NO_LEAVE_FED_FLAG = "ai_no_leave_fed",

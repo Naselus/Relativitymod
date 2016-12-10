@@ -103,7 +103,8 @@
 
 # Spaceport
 tech_spaceport_1 = {
-	cost = 0
+	icon = "tech_spaceport_1"
+ 	cost = 0
 	area = engineering
 	start_tech = yes
 	category = { spaceport_expansion }
@@ -131,7 +132,8 @@ tech_spaceport_1 = {
 }
 
 tech_spaceport_2 = {
-	cost = @tier1cost2
+	icon = "tech_spaceport_1"
+ 	cost = @tier1cost2
 	area = engineering
 	tier = 1
 	category = { spaceport_expansion }
@@ -176,7 +178,8 @@ tech_spaceport_2 = {
 }
 
 tech_spaceport_3 = {
-	cost = @tier1cost4
+	icon = "tech_spaceport_1"
+ 	cost = @tier1cost4
 	area = engineering
 	tier = 1
 	category = { spaceport_expansion }	
@@ -224,7 +227,8 @@ tech_spaceport_3 = {
 }
 
 tech_spaceport_4 = {
-	cost = @tier2cost1
+	icon = "tech_spaceport_1"
+ 	cost = @tier2cost1
 	area = engineering
 	tier = 2
 	category = { spaceport_expansion }	
@@ -268,7 +272,8 @@ tech_spaceport_4 = {
 }
 
 tech_spaceport_5 = {
-	cost = @tier2cost2
+	icon = "tech_spaceport_1"
+ 	cost = @tier2cost2
 	area = engineering
 	tier = 2
 	category = { spaceport_expansion }	
@@ -317,7 +322,8 @@ tech_spaceport_5 = {
 }
 
 tech_spaceport_6 = {
-	cost = @tier2cost4
+	icon = "tech_spaceport_1"
+ 	cost = @tier2cost4
 	area = engineering
 	tier = 3
 	category = { spaceport_expansion }	
@@ -362,7 +368,8 @@ tech_spaceport_6 = {
 
 tech_spaceport_7 = {
 	area = engineering
-	cost = @tier3cost2
+	icon = "tech_spaceport_1"
+ 	cost = @tier3cost2
 	tier = 3
 	category = { spaceport_expansion }
 	prerequisites = { "tech_spaceport_6"}	
@@ -404,7 +411,8 @@ tech_spaceport_7 = {
 
 tech_spaceport_8 = {
 	area = engineering
-	cost = @tier3cost3
+	icon = "tech_spaceport_1"
+ 	cost = @tier3cost3
 	tier = 3
 	category = { spaceport_expansion }
 	prerequisites = { "tech_spaceport_7" "tech_void_3"}	
@@ -449,7 +457,8 @@ tech_spaceport_8 = {
 
 tech_spaceport_9 = {
 	area = engineering
-	cost = @tier3cost4
+	icon = "tech_spaceport_1"
+ 	cost = @tier3cost4
 	tier = 3
 	category = { spaceport_expansion }
 	prerequisites = { "tech_spaceport_8"}	
@@ -497,7 +506,8 @@ tech_spaceport_9 = {
 
 tech_spaceport_10 = {
 	area = engineering
-	cost = @tier4cost1
+	icon = "tech_spaceport_1"
+ 	cost = @tier4cost1
 	tier = 4
 	category = { spaceport_expansion }
 	prerequisites = { "tech_spaceport_9" "tech_void_4"}	
@@ -546,7 +556,8 @@ tech_spaceport_10 = {
 
 tech_spaceport_11 = {
 	area = engineering
-	cost = @tier4cost2
+	icon = "tech_spaceport_1"
+ 	cost = @tier4cost2
 	tier = 4
 	category = { spaceport_expansion }
 	prerequisites = { "tech_spaceport_10" }	
@@ -598,7 +609,8 @@ tech_spaceport_11 = {
 
 tech_spaceport_12 = {
 	area = engineering
-	cost = @tier2cost1
+	icon = "tech_spaceport_1"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { spaceport_expansion }
 	prerequisites = { "tech_spaceport_11"}	
@@ -650,7 +662,8 @@ tech_spaceport_12 = {
 
 tech_solar_panel_network = { #unused; spawns an error if absent
 	area = engineering
-	cost = @tier1cost1
+	icon = "tech_spaceport_1"
+ 	cost = @tier1cost1
 	tier = 1
 	category = { spaceport_expansion }
 	prerequisites = { "tech_spaceport_12"}	

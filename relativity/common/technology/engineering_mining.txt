@@ -102,7 +102,8 @@
 #################
 
 tech_basic_industry = {
-	cost = 0
+	icon = "tech_mining_network_2"
+ 	cost = 0
 	area = engineering
 	start_tech = yes
 	category = { mining }
@@ -114,7 +115,8 @@ tech_basic_industry = {
 
 #Mining Network 2
 tech_mining_network_2 = {
-	cost = @tier1cost4
+	icon = "tech_mining_network_2"
+ 	cost = @tier1cost4
 	area = engineering
 	tier = 1
 	category = { mining }	
@@ -167,7 +169,8 @@ tech_mining_network_2 = {
 
 #Mining Network 3
 tech_mining_network_3 = {
-	cost = @tier2cost1
+	icon = "tech_mining_network_2"
+ 	cost = @tier2cost1
 	area = engineering
 	tier = 2
 	category = { mining }
@@ -221,7 +224,8 @@ tech_mining_network_3 = {
 
 #Mining Network 4
 tech_mining_network_4 = {
-	cost = @tier2cost2
+	icon = "tech_mining_network_2"
+ 	cost = @tier2cost2
 	area = engineering
 	tier = 2
 	category = { mining }
@@ -275,7 +279,8 @@ tech_mining_network_4 = {
 
 tech_mining_network_5 = {
 	area = engineering
-	cost = @tier2cost3
+	icon = "tech_mining_network_2"
+ 	cost = @tier2cost3
 	tier = 2
 	category = { mining }
 	prerequisites = { "tech_mining_network_4" }	
@@ -326,7 +331,8 @@ tech_mining_network_5 = {
 #Steel 2 Start
 tech_mining_6 = {
 	area = engineering
-	cost = @tier2cost4
+	icon = "tech_mining_network_2"
+ 	cost = @tier2cost4
 	tier = 2
 	category = { mining }
 	prerequisites = { "tech_mining_network_5" "tech_colonial_centralization"}	
@@ -377,7 +383,8 @@ tech_mining_6 = {
 
 tech_mining_7 = {
 	area = engineering
-	cost = @tier3cost1
+	icon = "tech_mining_network_2"
+ 	cost = @tier3cost1
 	tier = 3
 	category = { mining }
 	prerequisites = { "tech_mining_6"}	
@@ -428,7 +435,8 @@ tech_mining_7 = {
 
 tech_mining_8 = {
 	area = engineering
-	cost = @tier3cost1
+	icon = "tech_mining_network_2"
+ 	cost = @tier3cost1
 	tier = 3
 	category = { mining }
 	prerequisites = { "tech_mining_7"}	
@@ -478,7 +486,8 @@ tech_mining_8 = {
 
 tech_mining_9 = {
 	area = engineering
-	cost = @tier3cost2
+	icon = "tech_mining_network_2"
+ 	cost = @tier3cost2
 	tier = 3
 	category = { mining }
 	prerequisites = { "tech_mining_8" "tech_living_state"}	
@@ -529,7 +538,8 @@ tech_mining_9 = {
 
 tech_mining_10 = {
 	area = engineering
-	cost = @tier3cost3
+	icon = "tech_mining_network_2"
+ 	cost = @tier3cost3
 	tier = 3
 	category = { mining }
 	prerequisites = { "tech_mining_9"}	
@@ -580,7 +590,8 @@ tech_mining_10 = {
 #Steel 3 Start
 tech_mining_11 = {
 	area = engineering
-	cost = @tier3cost4
+	icon = "tech_mining_network_2"
+ 	cost = @tier3cost4
 	tier = 3
 	category = { mining }
 	prerequisites = { "tech_mining_10" "tech_galactic_administration"}	
@@ -630,7 +641,8 @@ tech_mining_11 = {
 
 tech_mining_12 = {
 	area = engineering
-	cost = @tier4cost1
+	icon = "tech_mining_network_2"
+ 	cost = @tier4cost1
 	tier = 4
 	category = { mining }
 	prerequisites = { "tech_mining_11" }	
@@ -680,7 +692,8 @@ tech_mining_12 = {
 
 tech_mining_13 = {
 	area = engineering
-	cost = @tier4cost2
+	icon = "tech_mining_network_2"
+ 	cost = @tier4cost2
 	tier = 4
 	category = { mining }
 	prerequisites = { "tech_mining_12" "tech_collective_self"}	
@@ -730,7 +743,8 @@ tech_mining_13 = {
 
 tech_mining_14 = {
 	area = engineering
-	cost = @tier4cost3
+	icon = "tech_mining_network_2"
+ 	cost = @tier4cost3
 	tier = 4
 	category = { mining }
 	prerequisites = { "tech_mining_13"}	
@@ -780,7 +794,8 @@ tech_mining_14 = {
 
 tech_mining_15 = {
 	area = engineering
-	cost = @tier4cost4
+	icon = "tech_mining_network_2"
+ 	cost = @tier4cost4
 	tier = 4
 	category = { mining }
 	prerequisites = { "tech_mining_14"}	

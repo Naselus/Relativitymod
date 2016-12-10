@@ -123,7 +123,7 @@ materialist_faction = {
 								skill = 0
 								traits = {
 								has_trait = leader_fmaterialist
-								add_random_leader_trait = yes
+								trait = random_trait
 								}
 							}
 							last_created_leader = {

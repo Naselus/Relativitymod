@@ -102,7 +102,8 @@
 # ##################
 
 tech_wormhole_generation_1  = {
-	cost = 0
+	icon = "tech_warp_drive_1"
+ 	cost = 0
 	area = physics
 	tier = 0
 	category = { ftl_travel }
@@ -129,7 +130,8 @@ tech_wormhole_generation_1  = {
 }
 
 tech_wormhole_generation_2  = {
-	cost = @tier2cost2
+	icon = "tech_warp_drive_1"
+ 	cost = @tier2cost2
 	area = physics
 	tier = 2
 	category = { ftl_travel }
@@ -180,7 +182,8 @@ tech_wormhole_generation_2  = {
 }
 
 tech_wormhole_generation_3  = {
-	cost = @tier3cost1
+	icon = "tech_warp_drive_1"
+ 	cost = @tier3cost1
 	area = physics
 	tier = 3
 	category = { ftl_travel }
@@ -232,7 +235,8 @@ tech_wormhole_generation_3  = {
 
 tech_ftl_19 = {
 	area = physics
-	cost = @tier3cost3
+	icon = "tech_warp_drive_1"
+ 	cost = @tier3cost3
 	tier = 3
 	category = { ftl_travel }
 	prerequisites = { "tech_wormhole_generation_3"}	
@@ -257,7 +261,8 @@ tech_ftl_19 = {
 
 tech_ftl_20 = {
 	area = physics
-	cost = @tier4cost1
+	icon = "tech_warp_drive_1"
+ 	cost = @tier4cost1
 	tier = 4
 	category = { ftl_travel }
 	prerequisites = { "tech_ftl_19"}	
@@ -281,7 +286,8 @@ tech_ftl_20 = {
 }
 
 tech_hyper_drive_1  = {
-	cost = 0
+	icon = "tech_warp_drive_1"
+ 	cost = 0
 	area = physics
 	tier = 0
 	category = { ftl_travel }
@@ -312,7 +318,8 @@ tech_hyper_drive_1  = {
 }
 
 tech_hyper_drive_2 = {
-	cost = @tier2cost2
+	icon = "tech_warp_drive_1"
+ 	cost = @tier2cost2
 	area = physics
 	tier = 2
 	category = { ftl_travel }
@@ -365,7 +372,8 @@ tech_hyper_drive_2 = {
 }
 
 tech_hyper_drive_3 = {
-	cost = @tier3cost1
+	icon = "tech_warp_drive_1"
+ 	cost = @tier3cost1
 	area = physics
 	tier = 3
 	category = { ftl_travel }
@@ -419,7 +427,8 @@ tech_hyper_drive_3 = {
 
 tech_ftl_16 = {
 	area = physics
-	cost = @tier3cost2
+	icon = "tech_warp_drive_1"
+ 	cost = @tier3cost2
 	tier = 3
 	category = { ftl_travel }
 	prerequisites = { "tech_hyper_drive_3"}	
@@ -443,7 +452,8 @@ tech_ftl_16 = {
 
 tech_ftl_17 = {
 	area = physics
-	cost = @tier3cost4
+	icon = "tech_warp_drive_1"
+ 	cost = @tier3cost4
 	tier = 3
 	category = { ftl_travel }
 	prerequisites = { "tech_ftl_16"}	
@@ -467,7 +477,8 @@ tech_ftl_17 = {
 
 tech_ftl_18 = {
 	area = physics
-	cost = @tier4cost1
+	icon = "tech_warp_drive_1"
+ 	cost = @tier4cost1
 	tier = 4
 	category = { ftl_travel }
 	prerequisites = { "tech_ftl_17"}	
@@ -490,7 +501,8 @@ tech_ftl_18 = {
 }
 
 tech_warp_drive_1 = {
-	cost = 0
+	icon = "tech_warp_drive_1"
+ 	cost = 0
 	area = physics
 	tier = 0
 	category = { ftl_travel }
@@ -510,7 +522,8 @@ tech_warp_drive_1 = {
 }
 
 tech_warp_drive_2 = {
-	cost = @tier2cost2
+	icon = "tech_warp_drive_1"
+ 	cost = @tier2cost2
 	area = physics
 	tier = 2
 	category = { ftl_travel }
@@ -563,7 +576,8 @@ tech_warp_drive_2 = {
 }
 
 tech_warp_drive_3 = {
-	cost = @tier3cost1
+	icon = "tech_warp_drive_1"
+ 	cost = @tier3cost1
 	area = physics
 	tier = 3
 	category = { ftl_travel }
@@ -617,7 +631,8 @@ tech_warp_drive_3 = {
 
 tech_ftl_13 = {
 	area = physics
-	cost = @tier3cost3
+	icon = "tech_warp_drive_1"
+ 	cost = @tier3cost3
 	tier = 3
 	category = { ftl_travel }
 	prerequisites = { "tech_warp_drive_3"}	
@@ -641,7 +656,8 @@ tech_ftl_13 = {
 
 tech_ftl_14 = {
 	area = physics
-	cost = @tier3cost4
+	icon = "tech_warp_drive_1"
+ 	cost = @tier3cost4
 	tier = 3
 	category = { ftl_travel }
 	prerequisites = { "tech_ftl_13"}	
@@ -665,7 +681,8 @@ tech_ftl_14 = {
 
 tech_ftl_15 = {
 	area = physics
-	cost = @tier4cost1
+	icon = "tech_warp_drive_1"
+ 	cost = @tier4cost1
 	tier = 4
 	category = { ftl_travel }
 	prerequisites = { "tech_ftl_14"}	
@@ -688,7 +705,8 @@ tech_ftl_15 = {
 }
 
 tech_hyperlane_mapping = {
-	cost = @tier2cost1
+	icon = "tech_warp_drive_1"
+ 	cost = @tier2cost1
 	area = physics
 	tier = 2
 	category = { ftl_travel }
@@ -743,7 +761,8 @@ tech_hyperlane_mapping = {
 }
 
 tech_jump_drive_1 = {
-	cost = @tier3cost4
+	icon = "tech_warp_drive_1"
+ 	cost = @tier3cost4
 	area = physics
 	tier = 3
 	category = { ftl_travel }

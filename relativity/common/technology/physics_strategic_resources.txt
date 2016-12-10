@@ -108,7 +108,8 @@
 
 #Garanthium Mining
 tech_mine_garanthium = {
-	cost = @tier2cost2
+	icon = "tech_mine_neutronium"
+ 	cost = @tier2cost2
 	area = physics
 	tier = 2
 	category = { mining }	
@@ -147,7 +148,8 @@ tech_mine_garanthium = {
 
 #Lythuric Gas Refining
 tech_lythuric_gas = {
-	cost = @tier1cost3
+	icon = "tech_mine_neutronium"
+ 	cost = @tier1cost3
 	area = physics
 	tier = 1
 	category = { mining }
@@ -188,7 +190,8 @@ tech_lythuric_gas = {
 
 #Engos Vapor Refining
 tech_engos_vapor = {
-	cost = @tier1cost3
+	icon = "tech_mine_neutronium"
+ 	cost = @tier1cost3
 	area = physics
 	tier = 1
 	category = { mining }	
@@ -227,7 +230,8 @@ tech_engos_vapor = {
 
 #Teldar Crystal Mining
 tech_mine_teldar = {
-	cost = @tier1cost3
+	icon = "tech_mine_neutronium"
+ 	cost = @tier1cost3
 	area = physics
 	tier = 1
 	category = { mining }	
@@ -268,7 +272,8 @@ tech_mine_teldar = {
 
 #Pitharan Dust Refining
 tech_pitharan_dust = {
-	cost = @tier1cost3
+	icon = "tech_mine_neutronium"
+ 	cost = @tier1cost3
 	area = physics
 	tier = 1
 	category = { mining }	
@@ -307,7 +312,8 @@ tech_pitharan_dust = {
 
 #Orillium Extraction
 tech_mine_orillium = {
-	cost = @tier1cost3
+	icon = "tech_mine_neutronium"
+ 	cost = @tier1cost3
 	area = physics
 	tier = 1
 	category = { mining }	
@@ -350,7 +356,8 @@ tech_mine_orillium = {
 
 #Neutronium Extraction 
 tech_mine_neutronium = {
-	cost = @tier3cost1
+	icon = "tech_mine_neutronium"
+ 	cost = @tier3cost1
 	area = physics
 	tier = 3
 	category = { mining }
@@ -383,7 +390,8 @@ tech_mine_neutronium = {
 
 #Living Metal
 tech_mine_living_metal = {
-	cost = @tier3cost3
+	icon = "tech_mine_neutronium"
+ 	cost = @tier3cost3
 	area = physics
 	tier = 3
 	category = { mining }
@@ -414,7 +422,8 @@ tech_mine_living_metal = {
 
 #Betharian Refining
 tech_mine_betharian = {
-	cost = @tier1cost3
+	icon = "tech_mine_neutronium"
+ 	cost = @tier1cost3
 	area = physics
 	tier = 1
 	category = { mining }	
@@ -457,7 +466,8 @@ tech_mine_betharian = {
 }
 
 tech_mine_zro = {
-	cost = @tier2cost4
+	icon = "tech_mine_neutronium"
+ 	cost = @tier2cost4
 	area = physics
 	tier = 2
 	category = { psionics }
@@ -503,7 +513,8 @@ tech_mine_zro = {
 
 #Satramene Refining
 tech_mine_satramene = {
-	cost = @tier2cost1
+	icon = "tech_mine_neutronium"
+ 	cost = @tier2cost1
 	area = physics
 	tier = 2
 	category = { mining }	
@@ -534,7 +545,8 @@ tech_mine_satramene = {
 
 #Dark Matter Drawing
 tech_mine_dark_matter = {
-	cost = @tier3cost2
+	icon = "tech_mine_neutronium"
+ 	cost = @tier3cost2
 	area = physics
 	tier = 3
 	category = { mining }

@@ -103,7 +103,8 @@
 
 #New Worlds Protocol
 tech_colonization_1 = {
-	cost = @tier1cost2
+	icon = "tech_colonization_1"
+ 	cost = @tier1cost2
 	area = society
 	tier = 1
 	#start_tech = yes
@@ -161,7 +162,8 @@ tech_colonization_1 = {
 
 #
 tech_colonization_2 = {
-	cost = @tier2cost1
+	icon = "tech_colonization_1"
+ 	cost = @tier2cost1
 	area = society
 	tier = 2
 	category = { new_worlds }
@@ -220,7 +222,8 @@ tech_colonization_2 = {
 
 #
 tech_colonization_3 = {
-	cost = @tier2cost3
+	icon = "tech_colonization_1"
+ 	cost = @tier2cost3
 	area = society
 	tier = 2
 	category = { new_worlds }
@@ -292,7 +295,8 @@ tech_colonization_3 = {
 
 #Frontier Health
 tech_frontier_health = {
-	cost = @tier1cost2
+	icon = "tech_colonization_1"
+ 	cost = @tier1cost2
 	area = society
 	tier = 1
 	category = { new_worlds }
@@ -339,7 +343,8 @@ tech_frontier_health = {
 }
 
 tech_desert_colonization = {
-	cost = @tier2cost1
+	icon = "tech_colonization_1"
+ 	cost = @tier2cost1
 	area = engineering
 	tier = 2
 	category = { new_worlds }
@@ -413,7 +418,8 @@ tech_desert_colonization = {
 }
 
 tech_tropical_colonization = {
-	cost = @tier2cost1
+	icon = "tech_colonization_1"
+ 	cost = @tier2cost1
 	area = engineering
 	tier = 2
 	category = { new_worlds }
@@ -487,7 +493,8 @@ tech_tropical_colonization = {
 }
 
 tech_continental_colonization = {
-	cost = @tier2cost1
+	icon = "tech_colonization_1"
+ 	cost = @tier2cost1
 	area = engineering
 	tier = 2
 	category = { new_worlds }
@@ -561,7 +568,8 @@ tech_continental_colonization = {
 }
 
 tech_ocean_colonization = {
-	cost = @tier2cost1
+	icon = "tech_colonization_1"
+ 	cost = @tier2cost1
 	area = engineering
 	tier = 2
 	category = { new_worlds }
@@ -635,7 +643,8 @@ tech_ocean_colonization = {
 }
 
 tech_arctic_colonization = {
-	cost = @tier2cost1
+	icon = "tech_colonization_1"
+ 	cost = @tier2cost1
 	area = engineering
 	tier = 2
 	category = { new_worlds }
@@ -709,7 +718,8 @@ tech_arctic_colonization = {
 }
 
 tech_tundra_colonization = {
-	cost = @tier2cost1
+	icon = "tech_colonization_1"
+ 	cost = @tier2cost1
 	area = engineering
 	tier = 2
 	category = { new_worlds }
@@ -782,7 +792,8 @@ tech_tundra_colonization = {
 	}
 }
 tech_arid_colonization = {
-	cost = @tier2cost1
+	icon = "tech_colonization_1"
+ 	cost = @tier2cost1
 	area = engineering
 	tier = 2
 	category = { new_worlds }
@@ -856,7 +867,8 @@ tech_arid_colonization = {
 }
 
 tech_frontier_collectives = {
-	cost = @tier1cost3
+	icon = "tech_colonization_1"
+ 	cost = @tier1cost3
 	area = society
 	tier = 1
 	category = { new_worlds }
@@ -928,7 +940,8 @@ tech_frontier_collectives = {
 }
 
 tech_frontier_commissars = {
-	 cost = @tier2cost1
+	 icon = "tech_colonization_1"
+ 	cost = @tier2cost1
 	 area = society
 	 tier = 2
 	 category = { new_worlds }
@@ -1009,7 +1022,8 @@ tech_frontier_commissars = {
 
 #Frontier Initiatives
 tech_frontier_initiatives = {
-	cost = @tier2cost2
+	icon = "tech_colonization_1"
+ 	cost = @tier2cost2
 	area = society
 	tier = 2
 	category = { new_worlds }
@@ -1090,7 +1104,8 @@ tech_frontier_initiatives = {
 
 #Frontier Traditions
 tech_frontier_traditions = {
-	cost = @tier2cost3
+	icon = "tech_colonization_1"
+ 	cost = @tier2cost3
 	area = society
 	tier = 2
 	category = { new_worlds }
@@ -1164,7 +1179,8 @@ tech_frontier_traditions = {
 
 tech_colonization_16 = {
 	area = society
-	cost = @tier3cost3
+	icon = "tech_colonization_1"
+ 	cost = @tier3cost3
 	tier = 3
 	category = { new_worlds }
 	prerequisites = { "tech_colonization_3"}
@@ -1206,7 +1222,8 @@ tech_colonization_16 = {
 
 tech_colonization_17 = {
 	area = society
-	cost = @tier3cost4
+	icon = "tech_colonization_1"
+ 	cost = @tier3cost4
 	tier = 3
 	category = { new_worlds }
 	prerequisites = { "tech_colonization_16" }
@@ -1247,7 +1264,8 @@ tech_colonization_17 = {
 
 tech_colonization_18 = {
 	area = society
-	cost = @tier4cost1
+	icon = "tech_colonization_1"
+ 	cost = @tier4cost1
 	tier = 4
 	category = { new_worlds }
 	prerequisites = { "tech_colonization_17" }
@@ -1288,7 +1306,8 @@ tech_colonization_18 = {
 
 tech_climate_restoration= {
 	area = society
-	cost = @tier4cost2
+	icon = "tech_colonization_1"
+ 	cost = @tier4cost2
 	tier = 4
 	category = { new_worlds }
 	prerequisites = { "tech_colonization_18" }
@@ -1329,7 +1348,8 @@ tech_climate_restoration= {
 
 tech_gaia_creation= {
 	area = society
-	cost = @tier4cost3
+	icon = "tech_colonization_1"
+ 	cost = @tier4cost3
 	tier = 4
 	category = { new_worlds }
 	prerequisites = { "tech_climate_restoration"}	

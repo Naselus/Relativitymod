@@ -103,7 +103,8 @@
 
 #Genome Mapping
 tech_genome_mapping = {
-	cost = @tier1cost2
+	icon = "tech_genome_mapping"
+ 	cost = @tier1cost2
 	area = society
 	tier = 1
 	category = { genetics }
@@ -149,7 +150,8 @@ tech_genome_mapping = {
 
 tech_genetics_12 = {
 	area = society
-	cost = @tier1cost4
+	icon = "tech_genome_mapping"
+ 	cost = @tier1cost4
 	tier = 1
 	category = { genetics }
 	prerequisites = { "tech_genome_mapping" }
@@ -197,7 +199,8 @@ tech_genetics_12 = {
 
 #Epigenetic Triggers
 tech_epigenetic_triggers = {
-	cost = @tier2cost2
+	icon = "tech_genome_mapping"
+ 	cost = @tier2cost2
 	area = society
 	tier = 2
 	category = { genetics }
@@ -279,7 +282,8 @@ tech_epigenetic_triggers = {
 
 #Gene Tailoring
 tech_gene_tailoring = {
-	cost = @tier2cost2
+	icon = "tech_genome_mapping"
+ 	cost = @tier2cost2
 	area = society
 	tier = 2
 	category = { genetics }	
@@ -333,7 +337,8 @@ tech_gene_tailoring = {
 
 #Targeted Gene Expressions
 tech_gene_expressions = {
-	cost = @tier2cost4
+	icon = "tech_genome_mapping"
+ 	cost = @tier2cost4
 	area = society
 	category = { genetics }
 	tier = 2
@@ -407,7 +412,8 @@ tech_gene_expressions = {
 
 #Cloning
 tech_cloning = {
-	cost = @tier2cost3
+	icon = "tech_genome_mapping"
+ 	cost = @tier2cost3
 	area = society
 	tier = 2
 	category = { genetics }	
@@ -445,7 +451,8 @@ tech_cloning = {
 
 tech_genetics_13 = {
 	area = society
-	cost = @tier2cost4
+	icon = "tech_genome_mapping"
+ 	cost = @tier2cost4
 	tier = 2
 	category = { genetics }
 	prerequisites = { "tech_cloning" }
@@ -488,7 +495,8 @@ tech_genetics_13 = {
 
 #Gene Banks
 tech_gene_banks = {
-	cost = @tier3cost1
+	icon = "tech_genome_mapping"
+ 	cost = @tier3cost1
 	area = society
 	tier = 3
 	category = { genetics }
@@ -550,7 +558,8 @@ tech_gene_banks = {
 }
 
 tech_gene_seed_purification = {
-	cost = @tier3cost2
+	icon = "tech_genome_mapping"
+ 	cost = @tier3cost2
 	area = society
 	category = { genetics }
 	tier = 3
@@ -656,7 +665,8 @@ tech_gene_seed_purification = {
 
 tech_genetics_14 = {
 	area = society
-	cost = @tier3cost3
+	icon = "tech_genome_mapping"
+ 	cost = @tier3cost3
 	tier = 3
 	category = { genetics }
 	prerequisites = { "tech_gene_seed_purification" }
@@ -701,7 +711,8 @@ tech_genetics_14 = {
 }
 
 tech_morphogenetic_field_mastery = {
-	cost = @tier3cost4
+	icon = "tech_genome_mapping"
+ 	cost = @tier3cost4
 	area = society
 	category = { genetics }
 	tier = 3
@@ -813,7 +824,8 @@ tech_morphogenetic_field_mastery = {
 
 #Selected Lineages
 tech_selected_lineages = {
-	cost = @tier2cost2
+	icon = "tech_genome_mapping"
+ 	cost = @tier2cost2
 	area = society
 	category = { genetics }
 	tier = 2
@@ -888,7 +900,8 @@ tech_selected_lineages = {
 
 tech_genetics_15 = {
 	area = society
-	cost = @tier3cost2
+	icon = "tech_genome_mapping"
+ 	cost = @tier3cost2
 	tier = 3
 	category = { genetics }
 	prerequisites = { "tech_selected_lineages" }	
@@ -934,7 +947,8 @@ tech_genetics_15 = {
 
 #Capacity Boosters
 tech_capacity_boosters = {
-	cost = @tier3cost3
+	icon = "tech_genome_mapping"
+ 	cost = @tier3cost3
 	area = society
 	category = { genetics }
 	tier = 3
@@ -945,7 +959,7 @@ tech_capacity_boosters = {
 	# Modifiers from this tech is added through a policy-option
 	modifier = {
 		# leader_skill_levels = 2
-		# leader_influence_cost = 0.35
+		# leader_influence_icon = "tech_genome_mapping"
 	}
 	
 	weight_modifier = {
@@ -1019,7 +1033,8 @@ tech_capacity_boosters = {
 
 tech_xenoplague = {
 	area = society
-	cost = @tier4cost1
+	icon = "tech_genome_mapping"
+ 	cost = @tier4cost1
 	tier = 4
 	is_rare = yes
 	is_dangerous = yes
@@ -1091,7 +1106,8 @@ tech_xenoplague = {
 
 tech_genetics_16 = {
 	area = society
-	cost = @tier4cost2
+	icon = "tech_genome_mapping"
+ 	cost = @tier4cost2
 	tier = 4
 	category = { genetics }
 	prerequisites = { "tech_genetics_15" }
@@ -1136,7 +1152,8 @@ tech_genetics_16 = {
 
 tech_genetics_17 = {
 	area = society
-	cost = @tier4cost2
+	icon = "tech_genome_mapping"
+ 	cost = @tier4cost2
 	tier = 4
 	category = { genetics }
 	prerequisites = { "tech_genetics_16" }	
@@ -1182,7 +1199,8 @@ tech_genetics_17 = {
 
 tech_genetics_18 = {
 	area = society
-	cost = @tier4cost3
+	icon = "tech_genome_mapping"
+ 	cost = @tier4cost3
 	tier = 4
 	category = { genetics }
 	prerequisites = { "tech_genetics_17" }	
@@ -1227,7 +1245,8 @@ tech_genetics_18 = {
 
 tech_genetics_19 = {
 	area = society
-	cost = @tier4cost3
+	icon = "tech_genome_mapping"
+ 	cost = @tier4cost3
 	tier = 4
 	category = { genetics }
 	prerequisites = { "tech_genetics_18" }	
@@ -1271,7 +1290,8 @@ tech_genetics_19 = {
 
 tech_genetics_20 = {
 	area = society
-	cost = @tier4cost4
+	icon = "tech_genome_mapping"
+ 	cost = @tier4cost4
 	tier = 4
 	category = { genetics }
 	prerequisites = { "tech_genetics_19" }	

@@ -104,7 +104,8 @@
 # Nuclear Missiles
 tech_missiles_1 = {
 	area = physics
-	cost = @tier1cost1
+	icon = "tech_missiles_1"
+ 	cost = @tier1cost1
 	tier = 1
 	category = { rocketry }
 	ai_update_type = military
@@ -190,7 +191,8 @@ tech_missiles_1 = {
 # Reaper Missiles
 tech_missiles_2 = {
 	area = physics
-	cost = @tier1cost3
+	icon = "tech_missiles_1"
+ 	cost = @tier1cost3
 	tier = 1
 	category = { rocketry }
 	ai_update_type = military
@@ -270,7 +272,8 @@ tech_missiles_2 = {
 
 tech_rocketry_11 = {
 	area = physics
-	cost = @tier2cost1
+	icon = "tech_missiles_1"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { rocketry }
 	prerequisites = { "tech_missiles_2" }
@@ -322,7 +325,8 @@ tech_rocketry_11 = {
 # Fusion Missiles
 tech_missiles_3 = {
 	area = physics
-	cost = @tier2cost3
+	icon = "tech_missiles_1"
+ 	cost = @tier2cost3
 	tier = 2
 	category = { rocketry }
 	ai_update_type = military
@@ -395,7 +399,8 @@ tech_missiles_3 = {
 
 tech_rocketry_12 = {
 	area = physics
-	cost = @tier2cost4
+	icon = "tech_missiles_1"
+ 	cost = @tier2cost4
 	tier = 2
 	category = { rocketry }
 	prerequisites = { "tech_missiles_3" }
@@ -447,7 +452,8 @@ tech_rocketry_12 = {
 # Marauder Missiles
 tech_missiles_4 = {
 	area = physics
-	cost = @tier3cost1
+	icon = "tech_missiles_1"
+ 	cost = @tier3cost1
 	tier = 3
 	category = { rocketry }
 	ai_update_type = military
@@ -520,7 +526,8 @@ tech_missiles_4 = {
 
 tech_rocketry_13 = {
 	area = physics
-	cost = @tier3cost3
+	icon = "tech_missiles_1"
+ 	cost = @tier3cost3
 	tier = 3
 	category = { rocketry }
 	prerequisites = { "tech_missiles_4" }
@@ -572,7 +579,8 @@ tech_rocketry_13 = {
 # Marauder Missiles
 tech_missiles_5 = {
 	area = physics
-	cost = @tier3cost4
+	icon = "tech_missiles_1"
+ 	cost = @tier3cost4
 	tier = 3
 	category = { rocketry }
 	ai_update_type = military
@@ -645,7 +653,8 @@ tech_missiles_5 = {
 
 tech_rocketry_14 = {
 	area = physics
-	cost = @tier3cost4
+	icon = "tech_missiles_1"
+ 	cost = @tier3cost4
 	tier = 3
 	category = { rocketry }
 	prerequisites = { "tech_missiles_5" }
@@ -697,7 +706,8 @@ tech_rocketry_14 = {
 #Swarmer Missiles
 tech_swarmer_missiles_1 = {
 	area = physics
-	cost = @tier3cost1
+	icon = "tech_missiles_1"
+ 	cost = @tier3cost1
 	tier = 3
 	category = { rocketry }
 	ai_update_type = military	
@@ -770,7 +780,8 @@ tech_swarmer_missiles_1 = {
 
 tech_rocketry_15 = {
 	area = physics
-	cost = @tier3cost3
+	icon = "tech_missiles_1"
+ 	cost = @tier3cost3
 	tier = 3
 	category = { rocketry }
 	prerequisites = { "tech_swarmer_missiles_1" }
@@ -822,7 +833,8 @@ tech_rocketry_15 = {
 #Whirlwind Missiles
 tech_swarmer_missiles_2 = {
 	area = physics
-	cost = @tier3cost4
+	icon = "tech_missiles_1"
+ 	cost = @tier3cost4
 	tier = 3
 	category = { rocketry }
 	ai_update_type = military	
@@ -899,7 +911,8 @@ tech_swarmer_missiles_2 = {
 #Space Torpedoes
 tech_torpedoes_1 = {
 	area = physics
-	cost = @tier3cost4
+	icon = "tech_missiles_1"
+ 	cost = @tier3cost4
 	tier = 3
 	category = { rocketry }
 	prerequisites = { "tech_rocketry_14" }	
@@ -972,7 +985,8 @@ tech_torpedoes_1 = {
 
 tech_rocketry_16 = {
 	area = physics
-	cost = @tier4cost1
+	icon = "tech_missiles_1"
+ 	cost = @tier4cost1
 	tier = 4
 	category = { rocketry }
 	prerequisites = { "tech_torpedoes_1" }
@@ -1024,7 +1038,8 @@ tech_rocketry_16 = {
 #Armored Torpedoes
 tech_torpedoes_2 = {
 	area = physics
-	cost = @tier4cost2
+	icon = "tech_missiles_1"
+ 	cost = @tier4cost2
 	tier = 4
 	category = { rocketry }
 	ai_update_type = military
@@ -1097,7 +1112,8 @@ tech_torpedoes_2 = {
 
 tech_rocketry_17 = {
 	area = physics
-	cost = @tier4cost3
+	icon = "tech_missiles_1"
+ 	cost = @tier4cost3
 	tier = 4
 	category = { rocketry }
 	prerequisites = { "tech_torpedoes_2" }
@@ -1148,7 +1164,8 @@ tech_rocketry_17 = {
 #Devastator Torpedoes
 tech_torpedoes_3 = {
 	area = physics
-	cost = @tier4cost4
+	icon = "tech_missiles_1"
+ 	cost = @tier4cost4
 	tier = 4
 	category = { rocketry }
 	ai_update_type = military	
@@ -1221,7 +1238,8 @@ tech_torpedoes_3 = {
 
 tech_rocketry_18 = {
 	area = physics
-	cost = @tier4cost4
+	icon = "tech_missiles_1"
+ 	cost = @tier4cost4
 	tier = 4
 	category = { rocketry }
 	prerequisites = { "tech_torpedoes_3" }	
@@ -1272,7 +1290,8 @@ tech_rocketry_18 = {
 
 tech_rocketry_19 = {
 	area = physics
-	cost = @tier4cost4
+	icon = "tech_missiles_1"
+ 	cost = @tier4cost4
 	tier = 4
 	category = { rocketry }
 	prerequisites = { "tech_rocketry_18" }	
@@ -1323,7 +1342,8 @@ tech_rocketry_19 = {
 
 tech_rocketry_20 = {
 	area = physics
-	cost = @tier4cost4
+	icon = "tech_missiles_1"
+ 	cost = @tier4cost4
 	tier = 4
 	category = { rocketry }
 	prerequisites = { "tech_rocketry_19" }	

@@ -126,6 +126,8 @@ militarist_faction = {
 								traits = {
 								has_trait = leader_fmilitarist
 								add_random_leader_trait = yes
+								trait = random_trait
+
 								}
 							}
 							last_created_leader = {

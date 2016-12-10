@@ -46,6 +46,25 @@ difficulty_hard_special = {
 	ship_hitpoints_mult = 0.5
 	ship_shield_hp_mult = 0.5
 }
+
+##########################################################################
+# FE Modifiers
+##########################################################################
+mod_fallen_empire = {
+	country_border_mult = -0.5
+}
+
+mod_awakened_fallen_empire = {
+	tile_resource_energy_mult = 0.5
+	tile_resource_minerals_mult = 0.5
+	country_border_mult = -0.5
+}
+
+mod_war_in_heaven = {
+	tile_resource_energy_mult = 1
+	tile_resource_minerals_mult = 1
+	country_border_mult = -0.5
+}
 ##########################################################################
 # Pop Modifiers
 ##########################################################################
@@ -917,6 +936,9 @@ extradimensionals_defeated = {
 	pop_happiness = 0.2
 }
 
+prethoryn_defeated = {
+	pop_happiness = 0.2
+}
 subterranean_tech_transaction = {
 	tile_resource_engineering_research_mult = -0.30
 	icon = "gfx/interface/icons/modifiers/tile_resource_engineering_research_mult.dds"
@@ -1064,6 +1086,9 @@ Spirit_of_Science = {
 	influence_gain_add = -0.25
 }
 
+ed_anchor_buildspeed = {
+	shipsize_anchor_station_construction_speed_mult = -0.9
+}
 fallen_empire_gift_databanks = {
 	tile_resource_physics_research_mult = 0.25
 	tile_resource_society_research_mult = 0.25

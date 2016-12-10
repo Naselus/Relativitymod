@@ -103,7 +103,8 @@
 
 #Psionic Theory
 tech_psionic_theory = {
-	cost = @tier2cost4
+	icon = "tech_psionic_theory"
+ 	cost = @tier2cost4
 	area = society
 	tier = 2
 	category = { psionics }
@@ -204,7 +205,8 @@ tech_psionic_theory = {
 
 #Telepathy
 tech_telepathy = {
-	cost = @tier3cost1
+	icon = "tech_psionic_theory"
+ 	cost = @tier3cost1
 	area = society
 	tier = 3
 	category = { psionics }
@@ -287,7 +289,8 @@ tech_telepathy = {
 }
 
 tech_precognition_interface = {
-	cost = @tier3cost2
+	icon = "tech_psionic_theory"
+ 	cost = @tier3cost2
 	area = society
 	tier = 3
 	category = { psionics }
@@ -388,7 +391,8 @@ tech_precognition_interface = {
 
 #Psi Jump Drive 1
 tech_psi_jump_drive_1 = {
-	cost = @tier3cost4
+	icon = "tech_psionic_theory"
+ 	cost = @tier3cost4
 	area = society
 	tier = 3
 	category = { psionics }
@@ -413,7 +417,8 @@ tech_psi_jump_drive_1 = {
 
 tech_psionics_6 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_psionic_theory"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { psionics }
 	prerequisites = { "tech_precognition_interface" }
@@ -425,7 +430,8 @@ tech_psionics_6 = {
 
 tech_psionics_7 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_psionic_theory"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { psionics }
 	prerequisites = { "tech_psionics_6" }
@@ -436,7 +442,8 @@ tech_psionics_7 = {
 
 tech_psionics_8 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_psionic_theory"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { psionics }
 	prerequisites = { "tech_psionics_7" }
@@ -447,7 +454,8 @@ tech_psionics_8 = {
 
 tech_psionics_9 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_psionic_theory"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { psionics }
 	prerequisites = { "tech_psionics_8" }
@@ -458,7 +466,8 @@ tech_psionics_9 = {
 
 tech_psionics_10 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_psionic_theory"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { psionics }
 	prerequisites = { "tech_psionics_9" }
@@ -469,7 +478,8 @@ tech_psionics_10 = {
 
 tech_psionics_11 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_psionic_theory"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { psionics }
 	prerequisites = { "tech_psionics_10" }
@@ -481,7 +491,8 @@ tech_psionics_11 = {
 
 tech_psionics_12 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_psionic_theory"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { psionics }
 	prerequisites = { "tech_psionics_11" }
@@ -493,7 +504,8 @@ tech_psionics_12 = {
 
 tech_psionics_13 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_psionic_theory"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { psionics }
 	prerequisites = { "tech_psionics_12" }
@@ -504,7 +516,8 @@ tech_psionics_13 = {
 
 tech_psionics_14 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_psionic_theory"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { psionics }
 	prerequisites = { "tech_psionics_13" }
@@ -516,7 +529,8 @@ tech_psionics_14 = {
 
 tech_psionics_15 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_psionic_theory"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { psionics }
 	prerequisites = { "tech_psionics_14" }
@@ -528,7 +542,8 @@ tech_psionics_15 = {
 
 tech_psionics_16 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_psionic_theory"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { psionics }
 	prerequisites = { "tech_psionics_15" }
@@ -540,7 +555,8 @@ tech_psionics_16 = {
 
 tech_psionics_17 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_psionic_theory"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { psionics }
 	prerequisites = { "tech_psionics_16" }
@@ -551,7 +567,8 @@ tech_psionics_17 = {
 
 tech_psionics_18 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_psionic_theory"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { psionics }
 	prerequisites = { "tech_psionics_17" }
@@ -563,7 +580,8 @@ tech_psionics_18 = {
 
 tech_psionics_19 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_psionic_theory"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { psionics }
 	prerequisites = { "tech_psionics_18" }
@@ -574,7 +592,8 @@ tech_psionics_19 = {
 
 tech_psionics_20 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_psionic_theory"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { psionics }
 	prerequisites = { "tech_psionics_19" }
