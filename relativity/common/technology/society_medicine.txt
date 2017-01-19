@@ -98,6 +98,7 @@
 @tier9weight4 = 30
 
 tech_medicine_1 = {
+	icon = "tech_gene_tailoring"
 	area = society
 	cost = @tier1cost3
 	tier = 1
@@ -124,6 +125,7 @@ tech_medicine_1 = {
 }
 
 tech_medicine_2 = {
+	icon = "tech_gene_tailoring"
 	area = society
 	cost = @tier2cost1
 	tier = 2
@@ -156,6 +158,7 @@ tech_medicine_2 = {
 }
 
 tech_medicine_3 = {
+	icon = "tech_gene_tailoring"
 	area = society
 	cost = @tier2cost2
 	tier = 2
@@ -188,6 +191,7 @@ tech_medicine_3 = {
 }
 
 tech_medicine_4 = {
+	icon = "tech_gene_tailoring"
 	area = society
 	cost = @tier2cost3
 	tier = 2
@@ -216,6 +220,7 @@ tech_medicine_4 = {
 }
 
 tech_medicine_5 = {
+	icon = "tech_gene_tailoring"
 	area = society
 	cost = @tier2cost4
 	tier = 2
@@ -243,6 +248,7 @@ tech_medicine_5 = {
 }
 
 tech_medicine_6 = {
+	icon = "tech_gene_tailoring"
 	area = society
 	cost = @tier2cost4
 	tier = 2
@@ -271,6 +277,7 @@ tech_medicine_6 = {
 }
 
 tech_medicine_7 = {
+	icon = "tech_gene_tailoring"
 	area = society
 	cost = @tier2cost4
 	tier = 2
@@ -299,6 +306,7 @@ tech_medicine_7 = {
 }
 
 tech_medicine_8 = {
+	icon = "tech_gene_tailoring"
 	area = society
 	cost = @tier3cost1
 	tier = 3
@@ -327,6 +335,7 @@ tech_medicine_8 = {
 }
 
 tech_medicine_9 = {
+	icon = "tech_gene_tailoring"
 	area = society
 	cost = @tier3cost1
 	tier = 3
@@ -355,6 +364,7 @@ tech_medicine_9 = {
 }
 
 tech_medicine_10 = {
+	icon = "tech_gene_tailoring"
 	area = society
 	cost = @tier3cost2
 	tier = 3
@@ -382,6 +392,7 @@ tech_medicine_10 = {
 }
 
 tech_medicine_11 = {
+	icon = "tech_gene_tailoring"
 	area = society
 	cost = @tier3cost2
 	tier = 3
@@ -410,6 +421,7 @@ tech_medicine_11 = {
 }
 
 tech_medicine_12 = {
+	icon = "tech_gene_tailoring"
 	area = society
 	cost = @tier3cost3
 	tier = 3
@@ -438,6 +450,7 @@ tech_medicine_12 = {
 }
 
 tech_medicine_13 = {
+	icon = "tech_gene_tailoring"
 	area = society
 	cost = @tier3cost3
 	tier = 3
@@ -466,6 +479,7 @@ tech_medicine_13 = {
 }
 
 tech_medicine_14 = {
+	icon = "tech_gene_tailoring"
 	area = society
 	cost = @tier3cost4
 	tier = 3
@@ -494,6 +508,7 @@ tech_medicine_14 = {
 }
 
 tech_medicine_15 = {
+	icon = "tech_gene_tailoring"
 	area = society
 	cost = @tier3cost4
 	tier = 3
@@ -521,6 +536,7 @@ tech_medicine_15 = {
 }
 
 tech_medicine_16 = {
+	icon = "tech_gene_tailoring"
 	area = society
 	cost = @tier4cost1
 	tier = 4
@@ -549,6 +565,7 @@ tech_medicine_16 = {
 }
 
 tech_medicine_17 = {
+	icon = "tech_gene_tailoring"
 	area = society
 	cost = @tier4cost1
 	tier = 4
@@ -577,6 +594,7 @@ tech_medicine_17 = {
 }
 
 tech_medicine_18 = {
+	icon = "tech_gene_tailoring"
 	area = society
 	cost = @tier4cost2
 	tier = 4
@@ -605,6 +623,7 @@ tech_medicine_18 = {
 }
 
 tech_medicine_19 = {
+	icon = "tech_gene_tailoring"
 	area = society
 	cost = @tier4cost3
 	tier = 4
@@ -633,6 +652,7 @@ tech_medicine_19 = {
 }
 
 tech_medicine_20 = {
+	icon = "tech_gene_tailoring"
 	area = society
 	cost = @tier4cost4
 	tier = 4

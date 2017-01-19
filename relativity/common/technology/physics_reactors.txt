@@ -103,7 +103,8 @@
 
 tech_fission_power = {
 	area = physics
-	cost = 0
+	icon = "tech_fission_power"
+ 	cost = 0
 	tier = 0
 	start_tech = yes
 	category = { reactors }
@@ -112,7 +113,8 @@ tech_fission_power = {
 
 tech_fusion_power = {
 	area = physics
-	cost = @tier2cost1
+	icon = "tech_fission_power"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { reactors }
 	ai_update_type = military	
@@ -156,7 +158,8 @@ tech_fusion_power = {
 
 tech_cold_fusion_power = {
 	area = physics
-	cost = @tier2cost4
+	icon = "tech_fission_power"
+ 	cost = @tier2cost4
 	tier = 2
 	category = { reactors }
 	ai_update_type = military
@@ -200,7 +203,8 @@ tech_cold_fusion_power = {
 
 tech_antimatter_power = {
 	area = physics
-	cost = @tier3cost4
+	icon = "tech_fission_power"
+ 	cost = @tier3cost4
 	tier = 3
 	category = { reactors }
 	ai_update_type = military	
@@ -244,7 +248,8 @@ tech_antimatter_power = {
 
 tech_zero_point_power = {
 	area = physics
-	cost = @tier4cost4
+	icon = "tech_fission_power"
+ 	cost = @tier4cost4
 	tier = 4
 	category = { reactors }
 	ai_update_type = military	
@@ -288,7 +293,8 @@ tech_zero_point_power = {
 
 tech_reactors_6 = {
 	area = physics
-	cost = @tier2cost1
+	icon = "tech_fission_power"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { reactors }
 	prerequisites = { "tech_zero_point_power"}	
@@ -300,7 +306,8 @@ tech_reactors_6 = {
 
 tech_reactors_7 = {
 	area = physics
-	cost = @tier2cost1
+	icon = "tech_fission_power"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { reactors }
 	prerequisites = { "tech_reactors_6"}	
@@ -312,7 +319,8 @@ tech_reactors_7 = {
 
 tech_reactors_8 = {
 	area = physics
-	cost = @tier2cost1
+	icon = "tech_fission_power"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { reactors }
 	prerequisites = { "tech_reactors_7"}	
@@ -324,7 +332,8 @@ tech_reactors_8 = {
 
 tech_reactors_9 = {
 	area = physics
-	cost = @tier2cost1
+	icon = "tech_fission_power"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { reactors }
 	prerequisites = { "tech_reactors_8"}	
@@ -336,7 +345,8 @@ tech_reactors_9 = {
 
 tech_reactors_10 = {
 	area = physics
-	cost = @tier2cost1
+	icon = "tech_fission_power"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { reactors }
 	prerequisites = { "tech_reactors_9"}	
@@ -348,7 +358,8 @@ tech_reactors_10 = {
 
 tech_reactors_11 = {
 	area = physics
-	cost = @tier2cost1
+	icon = "tech_fission_power"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { reactors }
 	prerequisites = { "tech_reactors_10"}	
@@ -360,7 +371,8 @@ tech_reactors_11 = {
 
 tech_reactors_12 = {
 	area = physics
-	cost = @tier2cost1
+	icon = "tech_fission_power"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { reactors }
 	prerequisites = { "tech_reactors_11"}	
@@ -372,7 +384,8 @@ tech_reactors_12 = {
 
 tech_reactors_13 = {
 	area = physics
-	cost = @tier2cost1
+	icon = "tech_fission_power"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { reactors }
 	prerequisites = { "tech_reactors_12"}	
@@ -384,7 +397,8 @@ tech_reactors_13 = {
 
 tech_reactors_14 = {
 	area = physics
-	cost = @tier2cost1
+	icon = "tech_fission_power"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { reactors }
 	prerequisites = { "tech_reactors_13"}	
@@ -396,7 +410,8 @@ tech_reactors_14 = {
 
 tech_reactors_15 = {
 	area = physics
-	cost = @tier2cost1
+	icon = "tech_fission_power"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { reactors }
 	prerequisites = { "tech_reactors_14"}	
@@ -408,7 +423,8 @@ tech_reactors_15 = {
 
 tech_reactors_16 = {
 	area = physics
-	cost = @tier2cost1
+	icon = "tech_fission_power"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { reactors }
 	prerequisites = { "tech_reactors_15"}	
@@ -420,7 +436,8 @@ tech_reactors_16 = {
 
 tech_reactors_17 = {
 	area = physics
-	cost = @tier2cost1
+	icon = "tech_fission_power"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { reactors }
 	prerequisites = { "tech_reactors_16"}	
@@ -432,7 +449,8 @@ tech_reactors_17 = {
 
 tech_reactors_18 = {
 	area = physics
-	cost = @tier2cost1
+	icon = "tech_fission_power"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { reactors }
 	prerequisites = { "tech_reactors_17"}	
@@ -444,7 +462,8 @@ tech_reactors_18 = {
 
 tech_reactors_19 = {
 	area = physics
-	cost = @tier2cost1
+	icon = "tech_fission_power"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { reactors }
 	prerequisites = { "tech_reactors_18"}	
@@ -456,7 +475,8 @@ tech_reactors_19 = {
 
 tech_reactors_20 = {
 	area = physics
-	cost = @tier2cost1
+	icon = "tech_fission_power"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { reactors }
 	prerequisites = { "tech_reactors_19"}	

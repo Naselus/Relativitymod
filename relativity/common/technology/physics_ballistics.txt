@@ -106,7 +106,8 @@
 # Mass Drivers
 tech_mass_drivers_1 = {
 	area = physics
-	cost = @tier1cost1
+	icon = "tech_mass_drivers_1"
+ 	cost = @tier1cost1
 	tier = 1
 	category = { ballistics }
 	ai_update_type = military
@@ -192,7 +193,8 @@ tech_mass_drivers_1 = {
 # Coilguns
 tech_mass_drivers_2 = {
 	area = physics
-	cost = @tier1cost3
+	icon = "tech_mass_drivers_1"
+ 	cost = @tier1cost3
 	tier = 1
 	category = { ballistics }
 	ai_update_type = military
@@ -272,7 +274,8 @@ tech_mass_drivers_2 = {
 
 tech_ballistics_13 = {
 	area = physics
-	cost = @tier2cost1
+	icon = "tech_mass_drivers_1"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { ballistics }
 	prerequisites = {"tech_mass_drivers_2"}	
@@ -324,7 +327,8 @@ tech_ballistics_13 = {
 # Railguns
 tech_mass_drivers_3 = {
 	area = physics
-	cost = @tier2cost3
+	icon = "tech_mass_drivers_1"
+ 	cost = @tier2cost3
 	tier = 2
 	category = { ballistics }
 	ai_update_type = military	
@@ -387,7 +391,8 @@ tech_mass_drivers_3 = {
 
 tech_ballistics_14 = {
 	area = physics
-	cost = @tier2cost4
+	icon = "tech_mass_drivers_1"
+ 	cost = @tier2cost4
 	tier = 2
 	category = { ballistics }
 	prerequisites = { "tech_mass_drivers_3"}	
@@ -439,7 +444,8 @@ tech_ballistics_14 = {
 # Advanced Railguns
 tech_mass_drivers_4 = {
 	area = physics
-	cost = @tier3cost1
+	icon = "tech_mass_drivers_1"
+ 	cost = @tier3cost1
 	tier = 3
 	category = { ballistics }
 	ai_update_type = military
@@ -512,7 +518,8 @@ tech_mass_drivers_4 = {
 
 tech_ballistics_15 = {
 	area = physics
-	cost = @tier3cost3
+	icon = "tech_mass_drivers_1"
+ 	cost = @tier3cost3
 	tier = 3
 	category = { ballistics }
 	prerequisites = { "tech_mass_drivers_4"}	
@@ -564,7 +571,8 @@ tech_ballistics_15 = {
 # Gauss Cannons
 tech_mass_drivers_5 = {
 	area = physics
-	cost = @tier3cost4
+	icon = "tech_mass_drivers_1"
+ 	cost = @tier3cost4
 	tier = 3
 	category = { ballistics }
 	ai_update_type = military
@@ -637,7 +645,8 @@ tech_mass_drivers_5 = {
 
 tech_ballistics_16 = {
 	area = physics
-	cost = @tier3cost4
+	icon = "tech_mass_drivers_1"
+ 	cost = @tier3cost4
 	tier = 3
 	category = { ballistics }
 	prerequisites = { "tech_mass_drivers_5"}	
@@ -688,7 +697,8 @@ tech_ballistics_16 = {
 
 tech_kinetic_artillery_1 = {
 	area = physics
-	cost = @tier4cost1
+	icon = "tech_mass_drivers_1"
+ 	cost = @tier4cost1
 	tier = 4
 	category = { ballistics }
 	ai_update_type = military	
@@ -761,7 +771,8 @@ tech_kinetic_artillery_1 = {
 
 tech_ballistics_17 = {
 	area = physics
-	cost = @tier4cost2
+	icon = "tech_mass_drivers_1"
+ 	cost = @tier4cost2
 	tier = 4
 	category = { ballistics }
 	prerequisites = { "tech_kinetic_artillery_1"}	
@@ -812,7 +823,8 @@ tech_ballistics_17 = {
 
 tech_kinetic_artillery_2 = {
 	area = physics
-	cost = @tier4cost3
+	icon = "tech_mass_drivers_1"
+ 	cost = @tier4cost3
 	tier = 4
 	category = { ballistics }
 	ai_update_type = military	
@@ -887,7 +899,8 @@ tech_kinetic_artillery_2 = {
 
 tech_autocannons_1 = {
 	area = physics
-	cost = @tier2cost2
+	icon = "tech_mass_drivers_1"
+ 	cost = @tier2cost2
 	tier = 2
 	category = { ballistics }	
 	ai_update_type = military
@@ -966,7 +979,8 @@ tech_autocannons_1 = {
 
 tech_autocannons_2 = {
 	area = physics
-	cost = @tier2cost4
+	icon = "tech_mass_drivers_1"
+ 	cost = @tier2cost4
 	tier = 2
 	category = { ballistics }
 	ai_update_type = military	
@@ -1039,7 +1053,8 @@ tech_autocannons_2 = {
 
 tech_ballistics_18 = {
 	area = physics
-	cost = @tier3cost2
+	icon = "tech_mass_drivers_1"
+ 	cost = @tier3cost2
 	tier = 3
 	category = { ballistics }
 	prerequisites = { "tech_autocannons_2" "tech_cold_fusion_power"}	
@@ -1090,7 +1105,8 @@ tech_ballistics_18 = {
 
 tech_autocannons_3 = {
 	area = physics
-	cost = @tier3cost3
+	icon = "tech_mass_drivers_1"
+ 	cost = @tier3cost3
 	tier = 3
 	category = { ballistics }
 	ai_update_type = military	
@@ -1165,7 +1181,8 @@ tech_autocannons_3 = {
 
 tech_flak_batteries_1 = {
 	area = physics
-	cost = @tier3cost4
+	icon = "tech_mass_drivers_1"
+ 	cost = @tier3cost4
 	tier = 3
 	category = { ballistics }
 	ai_update_type = military	
@@ -1244,7 +1261,8 @@ tech_flak_batteries_1 = {
 
 tech_ballistics_19 = {
 	area = physics
-	cost = @tier4cost1
+	icon = "tech_mass_drivers_1"
+ 	cost = @tier4cost1
 	tier = 4
 	category = { ballistics }
 	prerequisites = { "tech_flak_batteries_1"}	
@@ -1295,7 +1313,8 @@ tech_ballistics_19 = {
 
 tech_flak_batteries_2 = {
 	area = physics
-	cost = @tier4cost2
+	icon = "tech_mass_drivers_1"
+ 	cost = @tier4cost2
 	tier = 4
 	category = { ballistics }
 	ai_update_type = military	
@@ -1374,7 +1393,8 @@ tech_flak_batteries_2 = {
 
 tech_ballistics_20 = {
 	area = physics
-	cost = @tier4cost4
+	icon = "tech_mass_drivers_1"
+ 	cost = @tier4cost4
 	tier = 4
 	category = { ballistics }
 	prerequisites = { "tech_flak_batteries_2" "tech_zero_point_power"}	

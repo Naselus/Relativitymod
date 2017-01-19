@@ -102,7 +102,8 @@
 ##################
 
 tech_alien_life_studies = {
-	cost = @tier1cost3
+	icon = "tech_alien_life_studies"
+ 	cost = @tier1cost3
 	area = society
 	tier = 1
 	category = { xenology }
@@ -162,7 +163,8 @@ tech_alien_life_studies = {
 
 #Xeno Zoo
 tech_xeno_zoo = {
-	cost = @tier1cost4
+	icon = "tech_alien_life_studies"
+ 	cost = @tier1cost4
 	area = society
 	tier = 1
 	category = { xenology }
@@ -231,7 +233,8 @@ tech_xeno_zoo = {
 
 #Xeno Integration
 tech_xeno_integration = {
-	cost = @tier2cost1
+	icon = "tech_alien_life_studies"
+ 	cost = @tier2cost1
 	area = society
 	category = { xenology }
 	tier = 2	
@@ -288,7 +291,8 @@ tech_xeno_integration = {
 
 tech_xenology_4 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_alien_life_studies"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { xenology }
 	prerequisites = { "tech_xeno_integration" }
@@ -302,7 +306,8 @@ tech_xenology_4 = {
 
 tech_xenology_5 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_alien_life_studies"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { xenology }
 	prerequisites = { "tech_xenology_4" }
@@ -316,7 +321,8 @@ tech_xenology_5 = {
 
 tech_xenology_6 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_alien_life_studies"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { xenology }
 	prerequisites = { "tech_xenology_5" }	
@@ -330,7 +336,8 @@ tech_xenology_6 = {
 
 tech_xenology_7 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_alien_life_studies"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { xenology }
 	prerequisites = { "tech_xenology_6" }	
@@ -343,7 +350,8 @@ tech_xenology_7 = {
 }
 tech_xenology_8 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_alien_life_studies"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { xenology }
 	prerequisites = { "tech_xenology_7" }	
@@ -357,7 +365,8 @@ tech_xenology_8 = {
 
 tech_xenology_9 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_alien_life_studies"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { xenology }
 	prerequisites = { "tech_xenology_8" }	
@@ -371,7 +380,8 @@ tech_xenology_9 = {
 
 tech_xenology_10 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_alien_life_studies"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { xenology }
 	prerequisites = { "tech_xenology_9" }	
@@ -385,7 +395,8 @@ tech_xenology_10 = {
 
 tech_xenology_11 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_alien_life_studies"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { xenology }
 	prerequisites = { "tech_xenology_10" }	
@@ -399,7 +410,8 @@ tech_xenology_11 = {
 
 tech_xenology_12 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_alien_life_studies"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { xenology }
 	prerequisites = { "tech_xenology_11" }	
@@ -413,7 +425,8 @@ tech_xenology_12 = {
 
 tech_xenology_13 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_alien_life_studies"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { xenology }
 	prerequisites = { "tech_xenology_12" }	
@@ -427,7 +440,8 @@ tech_xenology_13 = {
 
 tech_xenology_14 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_alien_life_studies"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { xenology }
 	prerequisites = { "tech_xenology_13" }	
@@ -441,7 +455,8 @@ tech_xenology_14 = {
 
 tech_xenology_15 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_alien_life_studies"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { xenology }
 	prerequisites = { "tech_xenology_14" }	
@@ -455,7 +470,8 @@ tech_xenology_15 = {
 
 tech_xenology_16 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_alien_life_studies"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { xenology }
 	prerequisites = { "tech_xenology_15" }	
@@ -469,7 +485,8 @@ tech_xenology_16 = {
 
 tech_xenology_17 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_alien_life_studies"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { xenology }
 	prerequisites = { "tech_xenology_16" }	
@@ -483,7 +500,8 @@ tech_xenology_17 = {
 
 tech_xenology_18 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_alien_life_studies"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { xenology }
 	prerequisites = { "tech_xenology_17" }	
@@ -497,7 +515,8 @@ tech_xenology_18 = {
 
 tech_xenology_19 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_alien_life_studies"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { xenology }
 	prerequisites = { "tech_xenology_18" }	
@@ -511,7 +530,8 @@ tech_xenology_19 = {
 
 tech_xenology_20 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_alien_life_studies"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { xenology }
 	prerequisites = { "tech_xenology_19" }	

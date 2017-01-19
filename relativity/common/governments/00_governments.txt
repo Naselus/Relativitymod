@@ -2205,3 +2205,48 @@ machine_consciousness = {
 	
 	ruler_title = RT_EMPEROR
 }
+
+### Curator Enclave Government
+curator_government = {
+	icon = "gfx/interface/icons/governments/science_directorate.dds"
+	potential = {
+		is_country_type = enclave
+	}
+	
+	modifier = {
+	}
+	
+	pickable_at_start = no
+	
+	ruler_title = RT_HIGH_CURATOR
+}
+
+### Trader Enclave Government
+trader_government = {
+	icon = "gfx/interface/icons/governments/plutocratic_oligarchy.dds"
+	potential = {
+		is_country_type = enclave
+	}
+	
+	modifier = {
+	}
+	
+	pickable_at_start = no
+	
+	ruler_title = RT_HIGH_TRADER
+}
+
+### Artist Enclave Government
+artist_government = {
+	icon = "gfx/interface/icons/governments/moral_democracy.dds"
+	potential = {
+		is_country_type = enclave
+	}
+	
+	modifier = {
+	}
+	
+	pickable_at_start = no
+	
+	ruler_title = RT_HIGH_ARTIST
+}

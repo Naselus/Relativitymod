@@ -102,7 +102,8 @@
 #################
 tech_void_1 = {
 	area = engineering
-	cost = @tier1cost4
+	icon = "tech_destroyers"
+ 	cost = @tier1cost4
 	tier = 1
 	category = { voidcraft }
 	prerequisites = { "tech_spaceport_3"}	
@@ -142,7 +143,8 @@ tech_void_1 = {
 
 tech_void_2 = {
 	area = engineering
-	cost = @tier2cost2
+	icon = "tech_destroyers"
+ 	cost = @tier2cost2
 	tier = 2
 	category = { voidcraft }
 	prerequisites = {"tech_spaceport_5" "tech_void_1"}	
@@ -183,7 +185,8 @@ tech_void_2 = {
 
 tech_void_3 = {
 	area = engineering
-	cost = @tier3cost1
+	icon = "tech_destroyers"
+ 	cost = @tier3cost1
 	tier = 3
 	category = { voidcraft }
 	prerequisites = {"tech_spaceport_7" "tech_void_2"}
@@ -225,7 +228,8 @@ tech_void_3 = {
 
 tech_void_4 = {
 	area = engineering
-	cost = @tier3cost4
+	icon = "tech_destroyers"
+ 	cost = @tier3cost4
 	tier = 3
 	category = { voidcraft }
 	prerequisites = {"tech_spaceport_9" "tech_void_3"}
@@ -266,7 +270,8 @@ tech_void_4 = {
 
 tech_void_5 = {
 	area = engineering
-	cost = @tier4cost2
+	icon = "tech_destroyers"
+ 	cost = @tier4cost2
 	tier = 4
 	category = { voidcraft }
 	prerequisites = {"tech_spaceport_11" "tech_void_4"}

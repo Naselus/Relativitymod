@@ -102,7 +102,8 @@
 # ##################
 
 tech_defense_army = {
-	cost = 0
+	icon = "tech_assault_armies"
+ 	cost = 0
 	area = physics
 	start_tech = yes
 	category = { military_theory }
@@ -112,7 +113,8 @@ tech_defense_army = {
 }
 
 tech_assault_armies = {
-	cost = @tier1cost1
+	icon = "tech_assault_armies"
+ 	cost = @tier1cost1
 	area = physics
 	tier = 0
 	category = { voidcraft }
@@ -122,7 +124,8 @@ tech_assault_armies = {
 
 tech_drop_pod = {
 	area = physics
-	cost = @tier1cost3
+	icon = "tech_assault_armies"
+ 	cost = @tier1cost3
 	tier = 1
 	category = { ground_combat }
 	prerequisites = { "tech_assault_armies" }
@@ -181,7 +184,8 @@ tech_drop_pod = {
 
 tech_army_4 = {
 	area = physics
-	cost = @tier1cost4
+	icon = "tech_assault_armies"
+ 	cost = @tier1cost4
 	tier = 1
 	category = { ground_combat }
 	prerequisites = { "tech_drop_pod" }
@@ -240,7 +244,8 @@ tech_army_4 = {
 
 tech_army_5 = {
 	area = physics
-	cost = @tier2cost1
+	icon = "tech_assault_armies"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { ground_combat }
 	prerequisites = { "tech_army_4" }
@@ -299,7 +304,8 @@ tech_army_5 = {
 
 tech_army_6 = {
 	area = physics
-	cost = @tier2cost2
+	icon = "tech_assault_armies"
+ 	cost = @tier2cost2
 	tier = 2
 	category = { ground_combat }
 	prerequisites = { "tech_army_5" }
@@ -333,7 +339,8 @@ tech_army_6 = {
 
 tech_army_7 = {
 	area = physics
-	cost = @tier2cost2
+	icon = "tech_assault_armies"
+ 	cost = @tier2cost2
 	tier = 2
 	category = { ground_combat }
 	prerequisites = { "tech_army_6" }
@@ -367,7 +374,8 @@ tech_army_7 = {
 
 tech_army_8 = {
 	area = physics
-	cost = @tier2cost3
+	icon = "tech_assault_armies"
+ 	cost = @tier2cost3
 	tier = 2
 	category = { ground_combat }
 	prerequisites = { "tech_army_7" }
@@ -401,7 +409,8 @@ tech_army_8 = {
 
 tech_army_9 = {
 	area = physics
-	cost = @tier2cost3
+	icon = "tech_assault_armies"
+ 	cost = @tier2cost3
 	tier = 2
 	category = { ground_combat }
 	prerequisites = { "tech_army_8" }
@@ -435,7 +444,8 @@ tech_army_9 = {
 
 tech_army_10 = {
 	area = physics
-	cost = @tier2cost4
+	icon = "tech_assault_armies"
+ 	cost = @tier2cost4
 	tier = 2
 	category = { ground_combat }
 	prerequisites = { "tech_army_9" }
@@ -470,7 +480,8 @@ tech_army_10 = {
 
 tech_army_11 = {
 	area = physics
-	cost = @tier2cost4
+	icon = "tech_assault_armies"
+ 	cost = @tier2cost4
 	tier = 2
 	category = { ground_combat }
 	prerequisites = { "tech_army_10" }
@@ -504,7 +515,8 @@ tech_army_11 = {
 
 tech_army_12 = {
 	area = physics
-	cost = @tier3cost1
+	icon = "tech_assault_armies"
+ 	cost = @tier3cost1
 	tier = 3
 	category = { ground_combat }
 	prerequisites = { "tech_army_11" }
@@ -538,7 +550,8 @@ tech_army_12 = {
 
 tech_army_13 = {
 	area = physics
-	cost = @tier3cost2
+	icon = "tech_assault_armies"
+ 	cost = @tier3cost2
 	tier = 3
 	category = { ground_combat }
 	prerequisites = { "tech_army_12" }
@@ -572,7 +585,8 @@ tech_army_13 = {
 
 tech_army_14 = {
 	area = physics
-	cost = @tier3cost2
+	icon = "tech_assault_armies"
+ 	cost = @tier3cost2
 	tier = 3
 	category = { ground_combat }
 	prerequisites = { "tech_army_13" }
@@ -606,7 +620,8 @@ tech_army_14 = {
 
 tech_army_15 = {
 	area = physics
-	cost = @tier3cost3
+	icon = "tech_assault_armies"
+ 	cost = @tier3cost3
 	tier = 3
 	category = { ground_combat }
 	prerequisites = { "tech_army_14" }
@@ -640,7 +655,8 @@ tech_army_15 = {
 
 tech_army_16 = {
 	area = physics
-	cost = @tier3cost4
+	icon = "tech_assault_armies"
+ 	cost = @tier3cost4
 	tier = 3
 	category = { ground_combat }
 	prerequisites = { "tech_army_15" }
@@ -674,7 +690,8 @@ tech_army_16 = {
 
 tech_army_17 = {
 	area = physics
-	cost = @tier4cost1
+	icon = "tech_assault_armies"
+ 	cost = @tier4cost1
 	tier = 4
 	category = { ground_combat }
 	prerequisites = { "tech_army_16" }
@@ -708,7 +725,8 @@ tech_army_17 = {
 
 tech_army_18 = {
 	area = physics
-	cost = @tier4cost2
+	icon = "tech_assault_armies"
+ 	cost = @tier4cost2
 	tier = 4
 	category = { ground_combat }
 	prerequisites = { "tech_army_17" }
@@ -742,7 +760,8 @@ tech_army_18 = {
 
 tech_army_19 = {
 	area = physics
-	cost = @tier4cost3
+	icon = "tech_assault_armies"
+ 	cost = @tier4cost3
 	tier = 4
 	category = { ground_combat }
 	prerequisites = { "tech_army_18" }
@@ -776,7 +795,8 @@ tech_army_19 = {
 
 tech_army_20 = {
 	area = physics
-	cost = @tier4cost3
+	icon = "tech_assault_armies"
+ 	cost = @tier4cost3
 	tier = 4
 	category = { ground_combat }
 	prerequisites = { "tech_army_19" }

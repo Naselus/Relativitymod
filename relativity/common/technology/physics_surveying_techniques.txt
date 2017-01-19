@@ -105,7 +105,8 @@
 
 tech_surveying_techniques_1 = {
 	area = physics
-	cost = @tier1cost3
+	icon = "tech_databank_uplinks"
+ 	cost = @tier1cost3
 	tier = 1
 	category = { surveying_techniques }
 	prerequisites = { }
@@ -124,7 +125,8 @@ tech_surveying_techniques_1 = {
 
 tech_databank_uplinks = {
 	area = physics
-	cost = @tier2cost1
+	icon = "tech_databank_uplinks"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { surveying_techniques }
 	prerequisites = { "tech_surveying_techniques_1" }
@@ -165,7 +167,8 @@ tech_databank_uplinks = {
 
 tech_surveying_techniques_3 = {
 	area = physics
-	cost = @tier2cost2
+	icon = "tech_databank_uplinks"
+ 	cost = @tier2cost2
 	tier = 2
 	category = { surveying_techniques }
 	prerequisites = { "tech_databank_uplinks" }
@@ -193,7 +196,8 @@ tech_surveying_techniques_3 = {
 
 tech_surveying_techniques_4 = {
 	area = physics
-	cost = @tier2cost3
+	icon = "tech_databank_uplinks"
+ 	cost = @tier2cost3
 	tier = 2
 	category = { surveying_techniques }
 	prerequisites = { "tech_surveying_techniques_3" }
@@ -222,7 +226,8 @@ tech_surveying_techniques_4 = {
 
 tech_surveying_techniques_5 = {
 	area = physics
-	cost = @tier2cost4
+	icon = "tech_databank_uplinks"
+ 	cost = @tier2cost4
 	tier = 2
 	category = { surveying_techniques }
 	prerequisites = { "tech_surveying_techniques_4" }
@@ -241,7 +246,8 @@ tech_surveying_techniques_5 = {
 
 tech_improved_databank_uplinks = {
 	area = physics
-	cost = @tier3cost1
+	icon = "tech_databank_uplinks"
+ 	cost = @tier3cost1
 	tier = 3
 	category = { surveying_techniques }
 	prerequisites = { "tech_surveying_techniques_5" }
@@ -293,7 +299,8 @@ tech_improved_databank_uplinks = {
 
 tech_surveying_techniques_6 = {
 	area = physics
-	cost = @tier3cost2
+	icon = "tech_databank_uplinks"
+ 	cost = @tier3cost2
 	tier = 3
 	category = { surveying_techniques }
 	prerequisites = { "tech_surveying_techniques_5" }
@@ -313,7 +320,8 @@ tech_surveying_techniques_6 = {
 
 tech_surveying_techniques_8 = {
 	area = physics
-	cost = @tier3cost3
+	icon = "tech_databank_uplinks"
+ 	cost = @tier3cost3
 	tier = 3
 	category = { surveying_techniques }
 	prerequisites = { "tech_surveying_techniques_6" }
@@ -327,7 +335,8 @@ tech_surveying_techniques_8 = {
 
 tech_surveying_techniques_9 = {
 	area = physics
-	cost = @tier3cost3
+	icon = "tech_databank_uplinks"
+ 	cost = @tier3cost3
 	tier = 3
 	category = { surveying_techniques }
 	prerequisites = { "tech_surveying_techniques_8" }
@@ -340,7 +349,8 @@ tech_surveying_techniques_9 = {
 
 tech_surveying_techniques_10 = {
 	area = physics
-	cost = @tier3cost4
+	icon = "tech_databank_uplinks"
+ 	cost = @tier3cost4
 	tier = 3
 	category = { surveying_techniques }
 	prerequisites = { "tech_surveying_techniques_9" }
@@ -353,7 +363,8 @@ tech_surveying_techniques_10 = {
 
 tech_surveying_techniques_11 = {
 	area = physics
-	cost = @tier3cost4
+	icon = "tech_databank_uplinks"
+ 	cost = @tier3cost4
 	tier = 3
 	category = { surveying_techniques }
 	prerequisites = { "tech_surveying_techniques_10" }
@@ -368,7 +379,8 @@ tech_surveying_techniques_11 = {
 
 tech_surveying_techniques_12 = {
 	area = physics
-	cost = @tier3cost4
+	icon = "tech_databank_uplinks"
+ 	cost = @tier3cost4
 	tier = 3
 	category = { surveying_techniques }
 	prerequisites = { "tech_surveying_techniques_11" }
@@ -382,7 +394,8 @@ tech_surveying_techniques_12 = {
 
 tech_surveying_techniques_13 = {
 	area = physics
-	cost = @tier4cost1
+	icon = "tech_databank_uplinks"
+ 	cost = @tier4cost1
 	tier = 4
 	category = { surveying_techniques }
 	prerequisites = { "tech_surveying_techniques_12" }
@@ -395,7 +408,8 @@ tech_surveying_techniques_13 = {
 
 tech_surveying_techniques_14 = {
 	area = physics
-	cost = @tier4cost1
+	icon = "tech_databank_uplinks"
+ 	cost = @tier4cost1
 	tier = 4
 	category = { surveying_techniques }
 	prerequisites = { "tech_surveying_techniques_13" }	
@@ -409,7 +423,8 @@ tech_surveying_techniques_14 = {
 
 tech_surveying_techniques_15 = {
 	area = physics
-	cost = @tier4cost2
+	icon = "tech_databank_uplinks"
+ 	cost = @tier4cost2
 	tier = 4
 	prerequisites = { "tech_surveying_techniques_14" }	
 	category = { surveying_techniques }
@@ -424,7 +439,8 @@ tech_surveying_techniques_15 = {
 
 tech_surveying_techniques_16 = {
 	area = physics
-	cost = @tier4cost2
+	icon = "tech_databank_uplinks"
+ 	cost = @tier4cost2
 	tier = 4
 	category = { surveying_techniques }
 	prerequisites = { "tech_surveying_techniques_15" }
@@ -439,7 +455,8 @@ tech_surveying_techniques_16 = {
 
 tech_surveying_techniques_17 = {
 	area = physics
-	cost = @tier4cost3
+	icon = "tech_databank_uplinks"
+ 	cost = @tier4cost3
 	tier = 4
 	category = { surveying_techniques }
 	prerequisites = { "tech_surveying_techniques_16" }	
@@ -454,7 +471,8 @@ tech_surveying_techniques_17 = {
 
 tech_surveying_techniques_18 = {
 	area = physics
-	cost = @tier4cost3
+	icon = "tech_databank_uplinks"
+ 	cost = @tier4cost3
 	tier = 4
 	category = { surveying_techniques }
 	prerequisites = { "tech_surveying_techniques_17" }	
@@ -468,7 +486,8 @@ tech_surveying_techniques_18 = {
 
 tech_surveying_techniques_19 = {
 	area = physics
-	cost = @tier2cost4
+	icon = "tech_databank_uplinks"
+ 	cost = @tier2cost4
 	tier = 4
 	category = { surveying_techniques }
 	prerequisites = { "tech_surveying_techniques_18" }
@@ -482,7 +501,8 @@ tech_surveying_techniques_19 = {
 
 tech_surveying_techniques_20 = {
 	area = physics
-	cost = @tier5cost1
+	icon = "tech_databank_uplinks"
+ 	cost = @tier5cost1
 	tier = 5
 	category = { surveying_techniques }
 	prerequisites = { "tech_surveying_techniques_19" }	

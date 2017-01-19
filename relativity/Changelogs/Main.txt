@@ -449,3 +449,13 @@ Version 102.0.1
 -Tech AI weights rebalanced to encourage optimal research priorities
 -Lots of localization done for weapons, techs, economic buildings
 -A few icons connected to techs w/o icons
+- Updated to 1.3 defines.
+- removed planetclasses.txt
+- removed terraform.txt
+- removed fn_wargoals (will be re-introduced later)
+- dropped our personalities.
+- added approximately 1900 lines of scripted effects 
+- removed 'weapon preference' from secitontypes.txt, since it has apparently been removed.
+- removed 'colour' from weapons_templates.txt.
+- added Riggan luxury resources
+- imported guardian tech

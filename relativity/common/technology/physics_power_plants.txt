@@ -102,7 +102,8 @@
 ####################
 
 tech_power_plant_1 = {
-	cost = 0
+	icon = "tech_power_plant_1"
+ 	cost = 0
 	area = physics
 	tier = 0
 	category = { power_plants }
@@ -113,7 +114,8 @@ tech_power_plant_1 = {
 
 #Power Plant II
 tech_power_plant_2 = {
-	cost = @tier1cost2
+	icon = "tech_power_plant_1"
+ 	cost = @tier1cost2
 	area = physics
 	tier = 1
 	category = { power_plants }	
@@ -169,7 +171,8 @@ tech_power_plant_2 = {
 
 #Power Plant III
 tech_power_plant_3 = {
-	cost = @tier1cost4
+	icon = "tech_power_plant_1"
+ 	cost = @tier1cost4
 	area = physics
 	tier = 1
 	category = { power_plants }
@@ -226,7 +229,8 @@ tech_power_plant_3 = {
 
 #Power Plant IV
 tech_power_plant_4 = {
-	cost = @tier2cost1
+	icon = "tech_power_plant_1"
+ 	cost = @tier2cost1
 	area = physics
 	tier = 2
 	category = { power_plants }
@@ -282,7 +286,8 @@ tech_power_plant_4 = {
 
 #Power Plant V
 tech_power_plant_5 = {
-	cost = @tier2cost2
+	icon = "tech_power_plant_1"
+ 	cost = @tier2cost2
 	area = physics
 	tier = 2
 	category = { power_plants }
@@ -344,7 +349,8 @@ tech_power_plant_5 = {
 
 tech_power_plant_6 = {
 	area = physics
-	cost = @tier2cost3
+	icon = "tech_power_plant_1"
+ 	cost = @tier2cost3
 	tier = 2
 	category = { power_plants }
 	prerequisites = { "tech_power_plant_5" "tech_colonial_centralization"}	
@@ -396,7 +402,8 @@ tech_power_plant_6 = {
 
 tech_power_plant_7 = {
 	area = physics
-	cost = @tier2cost4
+	icon = "tech_power_plant_1"
+ 	cost = @tier2cost4
 	tier = 2
 	category = { power_plants }
 	prerequisites = { "tech_power_plant_6"}	
@@ -448,7 +455,8 @@ tech_power_plant_7 = {
 
 tech_power_plant_8 = {
 	area = physics
-	cost = @tier3cost1
+	icon = "tech_power_plant_1"
+ 	cost = @tier3cost1
 	tier = 3
 	category = { power_plants }
 	prerequisites = { "tech_power_plant_7"}	
@@ -500,7 +508,8 @@ tech_power_plant_8 = {
 
 tech_power_plant_9 = {
 	area = physics
-	cost = @tier3cost2
+	icon = "tech_power_plant_1"
+ 	cost = @tier3cost2
 	tier = 3
 	category = { power_plants }
 	prerequisites = { "tech_power_plant_8" "tech_living_state"}	
@@ -552,7 +561,8 @@ tech_power_plant_9 = {
 
 tech_power_plant_10 = {
 	area = physics
-	cost = @tier3cost3
+	icon = "tech_power_plant_1"
+ 	cost = @tier3cost3
 	tier = 3
 	category = { power_plants }
 	prerequisites = { "tech_power_plant_9"}	
@@ -604,7 +614,8 @@ tech_power_plant_10 = {
 
 tech_power_plant_11 = {
 	area = physics
-	cost = @tier3cost4
+	icon = "tech_power_plant_1"
+ 	cost = @tier3cost4
 	tier = 3
 	category = { power_plants }
 	prerequisites = { "tech_power_plant_10" "tech_galactic_administration"}	
@@ -656,7 +667,8 @@ tech_power_plant_11 = {
 
 tech_power_plant_12 = {
 	area = physics
-	cost = @tier4cost1
+	icon = "tech_power_plant_1"
+ 	cost = @tier4cost1
 	tier = 4
 	category = { power_plants }
 	prerequisites = { "tech_power_plant_11"}	
@@ -708,7 +720,8 @@ tech_power_plant_12 = {
 
 tech_power_plant_13 = {
 	area = physics
-	cost = @tier4cost2
+	icon = "tech_power_plant_1"
+ 	cost = @tier4cost2
 	tier = 4
 	category = { power_plants }
 	prerequisites = { "tech_power_plant_12" "tech_collective_self"}	
@@ -760,7 +773,8 @@ tech_power_plant_13 = {
 
 tech_power_plant_14 = {
 	area = physics
-	cost = @tier4cost3
+	icon = "tech_power_plant_1"
+ 	cost = @tier4cost3
 	tier = 4
 	category = { power_plants }
 	prerequisites = { "tech_power_plant_13"}	
@@ -812,7 +826,8 @@ tech_power_plant_14 = {
 
 tech_power_plant_15 = {
 	area = physics
-	cost = @tier4cost4
+	icon = "tech_power_plant_1"
+ 	cost = @tier4cost4
 	tier = 4
 	category = { power_plants }
 	prerequisites = { "tech_power_plant_14"}	
@@ -864,7 +879,8 @@ tech_power_plant_15 = {
 
 tech_power_plant_16 = {
 	area = physics
-	cost = @tier4cost1
+	icon = "tech_power_plant_1"
+ 	cost = @tier4cost1
 	tier = 2
 	category = { power_plants }
 	prerequisites = { "tech_power_plant_15"}	
@@ -881,7 +897,8 @@ tech_power_plant_16 = {
 
 tech_power_plant_17 = {
 	area = physics
-	cost = @tier2cost1
+	icon = "tech_power_plant_1"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { power_plants }
 	prerequisites = { "tech_power_plant_16"}	
@@ -898,7 +915,8 @@ tech_power_plant_17 = {
 
 tech_power_plant_18 = {
 	area = physics
-	cost = @tier2cost1
+	icon = "tech_power_plant_1"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { power_plants }
 	prerequisites = { "tech_power_plant_17"}	
@@ -915,7 +933,8 @@ tech_power_plant_18 = {
 
 tech_power_plant_19 = {
 	area = physics
-	cost = @tier2cost1
+	icon = "tech_power_plant_1"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { power_plants }
 	prerequisites = { "tech_power_plant_18"}	
@@ -932,7 +951,8 @@ tech_power_plant_19 = {
 
 tech_power_plant_20 = {
 	area = physics
-	cost = @tier2cost1
+	icon = "tech_power_plant_1"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { power_plants }
 	prerequisites = { "tech_power_plant_19"}	

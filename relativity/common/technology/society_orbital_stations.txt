@@ -102,7 +102,8 @@
 # ##################
 
 tech_space_construction = {
-	cost = 0
+	icon = "tech_space_construction"
+ 	cost = 0
 	area = society
 	tier = 0
 	category = { orbital_stations }
@@ -151,7 +152,8 @@ tech_space_construction = {
 
 tech_orbital_stations_2 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_space_construction"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { orbital_stations }
 	prerequisites = { "tech_space_construction"}	
@@ -163,7 +165,8 @@ tech_orbital_stations_2 = {
 
 tech_orbital_stations_3 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_space_construction"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { orbital_stations }
 	prerequisites = { "tech_orbital_stations_2"}	
@@ -175,7 +178,8 @@ tech_orbital_stations_3 = {
 
 tech_orbital_stations_4 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_space_construction"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { orbital_stations }
 	prerequisites = { "tech_orbital_stations_3"}	
@@ -187,7 +191,8 @@ tech_orbital_stations_4 = {
 
 tech_orbital_stations_5 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_space_construction"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { orbital_stations }
 	prerequisites = { "tech_orbital_stations_4"}	
@@ -199,7 +204,8 @@ tech_orbital_stations_5 = {
 
 tech_orbital_stations_6 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_space_construction"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { orbital_stations }
 	prerequisites = { "tech_orbital_stations_5"}	
@@ -211,7 +217,8 @@ tech_orbital_stations_6 = {
 
 tech_orbital_stations_7 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_space_construction"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { orbital_stations }
 	prerequisites = { "tech_orbital_stations_6"}	
@@ -223,7 +230,8 @@ tech_orbital_stations_7 = {
 
 tech_orbital_stations_8 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_space_construction"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { orbital_stations }
 	prerequisites = { "tech_orbital_stations_7"}	
@@ -235,7 +243,8 @@ tech_orbital_stations_8 = {
 
 tech_orbital_stations_9 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_space_construction"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { orbital_stations }
 	prerequisites = { "tech_orbital_stations_8"}	
@@ -247,7 +256,8 @@ tech_orbital_stations_9 = {
 
 tech_orbital_stations_10 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_space_construction"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { orbital_stations }
 	prerequisites = { "tech_orbital_stations_9"}	
@@ -259,7 +269,8 @@ tech_orbital_stations_10 = {
 
 tech_orbital_stations_11 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_space_construction"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { orbital_stations }
 	prerequisites = { "tech_orbital_stations_10"}	
@@ -271,7 +282,8 @@ tech_orbital_stations_11 = {
 
 tech_orbital_stations_12 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_space_construction"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { orbital_stations }
 	prerequisites = { "tech_orbital_stations_11"}	
@@ -283,7 +295,8 @@ tech_orbital_stations_12 = {
 
 tech_orbital_stations_13 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_space_construction"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { orbital_stations }
 	prerequisites = { "tech_orbital_stations_12"}	
@@ -295,7 +308,8 @@ tech_orbital_stations_13 = {
 
 tech_orbital_stations_14 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_space_construction"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { orbital_stations }
 	prerequisites = { "tech_orbital_stations_13"}	
@@ -307,7 +321,8 @@ tech_orbital_stations_14 = {
 
 tech_orbital_stations_15 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_space_construction"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { orbital_stations }
 	prerequisites = { "tech_orbital_stations_14"}	
@@ -319,7 +334,8 @@ tech_orbital_stations_15 = {
 
 tech_orbital_stations_16 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_space_construction"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { orbital_stations }
 	prerequisites = { "tech_orbital_stations_15"}	
@@ -331,7 +347,8 @@ tech_orbital_stations_16 = {
 
 tech_orbital_stations_17 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_space_construction"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { orbital_stations }
 	prerequisites = { "tech_orbital_stations_16"}	
@@ -343,7 +360,8 @@ tech_orbital_stations_17 = {
 
 tech_orbital_stations_18 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_space_construction"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { orbital_stations }
 	prerequisites = { "tech_orbital_stations_17"}	
@@ -355,7 +373,8 @@ tech_orbital_stations_18 = {
 
 tech_orbital_stations_19 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_space_construction"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { orbital_stations }
 	prerequisites = { "tech_orbital_stations_18"}	
@@ -367,7 +386,8 @@ tech_orbital_stations_19 = {
 
 tech_orbital_stations_20 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_space_construction"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { orbital_stations }
 	prerequisites = { "tech_orbital_stations_19"}	

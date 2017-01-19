@@ -124,7 +124,7 @@ individualist_faction = {
 								skill = 0
 								traits = {
 								has_trait = leader_findividualist
-								trait = random_traits
+								trait = random_trait
 								}
 							}
 							last_created_leader = {

@@ -101,7 +101,8 @@
 # Engineering Labs
 # ##################
 tech_basic_science_lab_1 = {
-	cost = 0
+	icon = "tech_engineering_lab_1"
+ 	cost = 0
 	area = engineering
 	tier = 0
 	category = { engineering_labs }
@@ -113,7 +114,8 @@ tech_basic_science_lab_1 = {
 
 #Engineering Lab 1
 tech_engineering_lab_1 = {
-	cost = @tier1cost1
+	icon = "tech_engineering_lab_1"
+ 	cost = @tier1cost1
 	area = engineering
 	tier = 1
 	category = { engineering_labs }
@@ -165,7 +167,8 @@ tech_engineering_lab_1 = {
 
 tech_engineering_lab_2 = {
 	area = engineering
-	cost = @tier1cost3
+	icon = "tech_engineering_lab_1"
+ 	cost = @tier1cost3
 	tier = 1
 	category = { engineering_labs }
 	prerequisites = { "tech_engineering_lab_1"}	
@@ -189,7 +192,8 @@ tech_engineering_lab_2 = {
 
 tech_engineering_lab_3 = {
 	area = engineering
-	cost = @tier1cost4
+	icon = "tech_engineering_lab_1"
+ 	cost = @tier1cost4
 	tier = 1
 	category = { engineering_labs }
 	prerequisites = { "tech_engineering_lab_2"}	
@@ -213,7 +217,8 @@ tech_engineering_lab_3 = {
 
 tech_engineering_lab_4 = {
 	area = engineering
-	cost = @tier2cost1
+	icon = "tech_engineering_lab_1"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { engineering_labs }
 	prerequisites = { "tech_engineering_lab_3"}	
@@ -237,7 +242,8 @@ tech_engineering_lab_4 = {
 
 #Engineering Lab 2
 tech_engineering_lab_5 = {
-	cost = @tier2cost2
+	icon = "tech_engineering_lab_1"
+ 	cost = @tier2cost2
 	area = engineering
 	tier = 2
 	category = { engineering_labs }	
@@ -286,7 +292,8 @@ tech_engineering_lab_5 = {
 
 tech_engineering_lab_6 = {
 	area = engineering
-	cost = @tier2cost3
+	icon = "tech_engineering_lab_1"
+ 	cost = @tier2cost3
 	tier = 2
 	category = { engineering_labs }
 	prerequisites = { "tech_engineering_lab_5"}	
@@ -310,7 +317,8 @@ tech_engineering_lab_6 = {
 
 tech_engineering_lab_7 = {
 	area = engineering
-	cost = @tier3cost1
+	icon = "tech_engineering_lab_1"
+ 	cost = @tier3cost1
 	tier = 3
 	category = { engineering_labs }
 	prerequisites = { "tech_engineering_lab_6"}	
@@ -334,7 +342,8 @@ tech_engineering_lab_7 = {
 
 tech_engineering_lab_8 = {
 	area = engineering
-	cost = @tier3cost1
+	icon = "tech_engineering_lab_1"
+ 	cost = @tier3cost1
 	tier = 3
 	category = { engineering_labs }
 	prerequisites = { "tech_engineering_lab_7"}	
@@ -358,7 +367,8 @@ tech_engineering_lab_8 = {
 
 tech_engineering_lab_9 = {
 	area = engineering
-	cost = @tier3cost2
+	icon = "tech_engineering_lab_1"
+ 	cost = @tier3cost2
 	tier = 3
 	category = { engineering_labs }
 	prerequisites = { "tech_engineering_lab_8"}	
@@ -382,7 +392,8 @@ tech_engineering_lab_9 = {
 
 #Engineering Lab 3
 tech_engineering_lab_10 = {
-	cost = @tier4cost3
+	icon = "tech_engineering_lab_1"
+ 	cost = @tier4cost3
 	area = engineering
 	tier = 3
 	category = { engineering_labs }	
@@ -431,7 +442,8 @@ tech_engineering_lab_10 = {
 
 tech_engineering_lab_11 = {
 	area = engineering
-	cost = @tier3cost3
+	icon = "tech_engineering_lab_1"
+ 	cost = @tier3cost3
 	tier = 3
 	category = { engineering_labs }
 	prerequisites = { "tech_engineering_lab_10"}	
@@ -455,7 +467,8 @@ tech_engineering_lab_11 = {
 
 tech_engineering_lab_12 = {
 	area = engineering
-	cost = @tier3cost4
+	icon = "tech_engineering_lab_1"
+ 	cost = @tier3cost4
 	tier = 3
 	category = { engineering_labs }
 	prerequisites = { "tech_engineering_lab_11"}	
@@ -479,7 +492,8 @@ tech_engineering_lab_12 = {
 
 tech_engineering_lab_13 = {
 	area = engineering
-	cost = @tier3cost4
+	icon = "tech_engineering_lab_1"
+ 	cost = @tier3cost4
 	tier = 3
 	category = { engineering_labs }
 	prerequisites = { "tech_engineering_lab_12"}	
@@ -503,7 +517,8 @@ tech_engineering_lab_13 = {
 
 tech_engineering_lab_14 = {
 	area = engineering
-	cost = @tier4cost1
+	icon = "tech_engineering_lab_1"
+ 	cost = @tier4cost1
 	tier = 4
 	category = { engineering_labs }
 	prerequisites = { "tech_engineering_lab_13"}	
@@ -527,7 +542,8 @@ tech_engineering_lab_14 = {
 
 #Engineering Lab 4
 tech_engineering_lab_15 = {
-	cost = @tier4cost1
+	icon = "tech_engineering_lab_1"
+ 	cost = @tier4cost1
 	area = engineering
 	tier = 4
 	category = { engineering_labs }	
@@ -576,7 +592,8 @@ tech_engineering_lab_15 = {
 
 tech_engineering_lab_16 = {
 	area = engineering
-	cost = @tier4cost2
+	icon = "tech_engineering_lab_1"
+ 	cost = @tier4cost2
 	tier = 4
 	category = { engineering_labs }
 	prerequisites = { "tech_engineering_lab_15"}	
@@ -600,7 +617,8 @@ tech_engineering_lab_16 = {
 
 tech_engineering_lab_17 = {
 	area = engineering
-	cost = @tier4cost2
+	icon = "tech_engineering_lab_1"
+ 	cost = @tier4cost2
 	tier = 4
 	category = { engineering_labs }
 	prerequisites = { "tech_engineering_lab_16"}	
@@ -624,7 +642,8 @@ tech_engineering_lab_17 = {
 
 tech_engineering_lab_18 = {
 	area = engineering
-	cost = @tier4cost2
+	icon = "tech_engineering_lab_1"
+ 	cost = @tier4cost2
 	tier = 4
 	category = { engineering_labs }
 	prerequisites = { "tech_engineering_lab_17"}	
@@ -648,7 +667,8 @@ tech_engineering_lab_18 = {
 
 tech_engineering_lab_19 = {
 	area = engineering
-	cost = @tier4cost3
+	icon = "tech_engineering_lab_1"
+ 	cost = @tier4cost3
 	tier = 4
 	category = { engineering_labs }
 	prerequisites = { "tech_engineering_lab_18"}	
@@ -672,7 +692,8 @@ tech_engineering_lab_19 = {
 
 #Engineering Lab 5
 tech_engineering_lab_20 = {
-	cost = @tier4cost4
+	icon = "tech_engineering_lab_1"
+ 	cost = @tier4cost4
 	area = engineering
 	tier = 4
 	category = { engineering_labs }	

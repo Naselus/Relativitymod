@@ -124,7 +124,7 @@ xenophobe_faction = {
 								skill = 0
 								traits = {
 								trait = leader_fxenophobe
-								trait = random_traits
+								trait = random_trait
 								}
 							}
 							last_created_leader = {

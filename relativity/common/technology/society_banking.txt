@@ -102,7 +102,8 @@
 # ##################
 
 tech_banking_2 = {
-	cost = @tier1cost1
+	icon = "tech_galactic_markets"
+ 	cost = @tier1cost1
 	area = society
 	tier = 1
 	category = { banking }	
@@ -153,7 +154,8 @@ tech_banking_2 = {
 }
 
 tech_banking_3 = {
-	cost = @tier1cost3
+	icon = "tech_galactic_markets"
+ 	cost = @tier1cost3
 	area = society
 	tier = 1
 	category = { banking }	
@@ -205,7 +207,8 @@ tech_banking_3 = {
 }
 
 tech_galactic_markets = {
-	cost = @tier2cost1
+	icon = "tech_galactic_markets"
+ 	cost = @tier2cost1
 	area = society
 	tier = 2
 	category = { statecraft }
@@ -278,7 +281,8 @@ tech_galactic_markets = {
 
 tech_banking_5 = {
 	area = society
-	cost = @tier2cost2
+	icon = "tech_galactic_markets"
+ 	cost = @tier2cost2
 	tier = 2
 	category = { banking }
 	prerequisites = { "tech_galactic_markets"}
@@ -320,7 +324,8 @@ tech_banking_5 = {
 
 tech_banking_6 = {
 	area = society
-	cost = @tier2cost3
+	icon = "tech_galactic_markets"
+ 	cost = @tier2cost3
 	tier = 2
 	category = { banking }
 	prerequisites = { "tech_banking_5" }	
@@ -362,7 +367,8 @@ tech_banking_6 = {
 
 tech_banking_7 = {
 	area = society
-	cost = @tier2cost4
+	icon = "tech_galactic_markets"
+ 	cost = @tier2cost4
 	tier = 2
 	category = { banking }
 	prerequisites = { "tech_banking_6" "tech_colonial_centralization"}	
@@ -402,7 +408,8 @@ tech_banking_7 = {
 
 tech_banking_8 = {
 	area = society
-	cost = @tier3cost1
+	icon = "tech_galactic_markets"
+ 	cost = @tier3cost1
 	tier = 3
 	category = { banking }
 	prerequisites = { "tech_banking_7" }
@@ -444,7 +451,8 @@ tech_banking_8 = {
 
 tech_banking_9 = {
 	area = society
-	cost = @tier3cost2
+	icon = "tech_galactic_markets"
+ 	cost = @tier3cost2
 	tier = 3
 	category = { banking }
 	prerequisites = { "tech_banking_8" }	
@@ -486,7 +494,8 @@ tech_banking_9 = {
 
 tech_banking_10 = {
 	area = society
-	cost = @tier3cost3
+	icon = "tech_galactic_markets"
+ 	cost = @tier3cost3
 	tier = 3
 	category = { banking }
 	prerequisites = { "tech_banking_9" "tech_living_state"}
@@ -526,7 +535,8 @@ tech_banking_10 = {
 
 tech_banking_11 = {
 	area = society
-	cost = @tier3cost4
+	icon = "tech_galactic_markets"
+ 	cost = @tier3cost4
 	tier = 3
 	category = { banking }
 	prerequisites = { "tech_banking_10" }	
@@ -568,7 +578,8 @@ tech_banking_11 = {
 
 tech_banking_12 = {
 	area = society
-	cost = @tier4cost1
+	icon = "tech_galactic_markets"
+ 	cost = @tier4cost1
 	tier = 4
 	category = { banking }
 	prerequisites = { "tech_banking_11"}	
@@ -610,7 +621,8 @@ tech_banking_12 = {
 
 tech_banking_13 = {
 	area = society
-	cost = @tier4cost2
+	icon = "tech_galactic_markets"
+ 	cost = @tier4cost2
 	tier = 4
 	category = { banking }
 	prerequisites = { "tech_banking_12" "tech_galactic_administration"}	
@@ -650,7 +662,8 @@ tech_banking_13 = {
 
 tech_banking_14 = {
 	area = society
-	cost = @tier4cost3
+	icon = "tech_galactic_markets"
+ 	cost = @tier4cost3
 	tier = 4
 	category = { banking }
 	prerequisites = { "tech_banking_13" }	
@@ -692,7 +705,8 @@ tech_banking_14 = {
 
 tech_banking_15 = {
 	area = society
-	cost = @tier4cost4
+	icon = "tech_galactic_markets"
+ 	cost = @tier4cost4
 	tier = 4
 	category = { banking }
 	prerequisites = { "tech_banking_14"}	

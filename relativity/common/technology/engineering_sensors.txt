@@ -103,7 +103,8 @@
 
 tech_sensors_2 = {
 	area = engineering
-	cost = @tier1cost2
+	icon = "tech_sensors_2"
+ 	cost = @tier1cost2
 	tier = 1
 	category = { voidcraft }
 	ai_update_type = all
@@ -162,7 +163,8 @@ tech_sensors_2 = {
 
 tech_sensors_6 = {
 	area = engineering
-	cost = @tier1cost3
+	icon = "tech_sensors_2"
+ 	cost = @tier1cost3
 	tier = 1
 	category = { sensors }
 	prerequisites = { "tech_sensors_2"}	
@@ -197,7 +199,8 @@ tech_sensors_6 = {
 
 tech_orbital_sensor_array = {
 	area = engineering
-	cost = @tier1cost4
+	icon = "tech_sensors_2"
+ 	cost = @tier1cost4
 	tier = 1
 	category = { voidcraft }
 	#is_rare = yes	
@@ -273,7 +276,8 @@ tech_orbital_sensor_array = {
 
 tech_sensors_7 = {
 	area = engineering
-	cost = @tier2cost1
+	icon = "tech_sensors_2"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { sensors }
 	prerequisites = { "tech_sensors_6"}	
@@ -308,7 +312,8 @@ tech_sensors_7 = {
 
 tech_sensors_8 = {
 	area = engineering
-	cost = @tier2cost1
+	icon = "tech_sensors_2"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { sensors }
 	prerequisites = { "tech_sensors_7" "tech_fusion_power"}	
@@ -350,7 +355,8 @@ tech_sensors_8 = {
 
 tech_sensors_3 = {
 	area = engineering
-	cost = @tier2cost2
+	icon = "tech_sensors_2"
+ 	cost = @tier2cost2
 	tier = 2
 	category = { voidcraft }
 	ai_update_type = all	
@@ -410,7 +416,8 @@ tech_sensors_3 = {
 
 tech_sensors_9 = {
 	area = engineering
-	cost = @tier2cost2
+	icon = "tech_sensors_2"
+ 	cost = @tier2cost2
 	tier = 2
 	category = { sensors }
 	prerequisites = { "tech_sensors_3"}	
@@ -445,7 +452,8 @@ tech_sensors_9 = {
 
 tech_sensors_10 = {
 	area = engineering
-	cost = @tier2cost3
+	icon = "tech_sensors_2"
+ 	cost = @tier2cost3
 	tier = 2
 	category = { sensors }
 	prerequisites = { "tech_sensors_9" }	
@@ -480,7 +488,8 @@ tech_sensors_10 = {
 
 tech_sensors_11 = {
 	area = engineering
-	cost = @tier2cost3
+	icon = "tech_sensors_2"
+ 	cost = @tier2cost3
 	tier = 2
 	category = { sensors }
 	prerequisites = { "tech_sensors_10"}	
@@ -515,7 +524,8 @@ tech_sensors_11 = {
 
 tech_sensors_12 = {
 	area = engineering
-	cost = @tier2cost4
+	icon = "tech_sensors_2"
+ 	cost = @tier2cost4
 	tier = 2
 	category = { sensors }
 	prerequisites = { "tech_sensors_11" "tech_cold_fusion_power"}	
@@ -556,7 +566,8 @@ tech_sensors_12 = {
 
 tech_sensors_13 = {
 	area = engineering
-	cost = @tier3cost1
+	icon = "tech_sensors_2"
+ 	cost = @tier3cost1
 	tier = 3
 	category = { sensors }
 	prerequisites = { "tech_sensors_12"}	
@@ -591,7 +602,8 @@ tech_sensors_13 = {
 
 tech_sensors_14 = {
 	area = engineering
-	cost = @tier3cost1
+	icon = "tech_sensors_2"
+ 	cost = @tier3cost1
 	tier = 3
 	category = { sensors }
 	prerequisites = { "tech_sensors_13"}	
@@ -626,7 +638,8 @@ tech_sensors_14 = {
 
 tech_sensors_15= {
 	area = engineering
-	cost = @tier3cost2
+	icon = "tech_sensors_2"
+ 	cost = @tier3cost2
 	tier = 3
 	category = { sensors }
 	prerequisites = { "tech_sensors_14"}	
@@ -661,7 +674,8 @@ tech_sensors_15= {
 
 tech_sensors_16 = {
 	area = engineering
-	cost = @tier3cost3
+	icon = "tech_sensors_2"
+ 	cost = @tier3cost3
 	tier = 3
 	category = { sensors }
 	prerequisites = { "tech_sensors_15"}	
@@ -696,7 +710,8 @@ tech_sensors_16 = {
 
 tech_sensors_4 = {
 	area = engineering
-	cost = @tier3cost3
+	icon = "tech_sensors_2"
+ 	cost = @tier3cost3
 	tier = 3
 	category = { voidcraft }
 	ai_update_type = all	
@@ -763,7 +778,8 @@ tech_sensors_4 = {
 
 tech_sensors_17 = {
 	area = engineering
-	cost = @tier3cost4
+	icon = "tech_sensors_2"
+ 	cost = @tier3cost4
 	tier = 3
 	category = { sensors }
 	prerequisites = { "tech_sensors_16"}	
@@ -798,7 +814,8 @@ tech_sensors_17 = {
 
 tech_sensors_18 = {
 	area = engineering
-	cost = @tier4cost1
+	icon = "tech_sensors_2"
+ 	cost = @tier4cost1
 	tier = 4
 	category = { sensors }
 	prerequisites = { "tech_sensors_17"}	
@@ -833,7 +850,8 @@ tech_sensors_18 = {
 
 tech_sensors_19 = {
 	area = engineering
-	cost = @tier4cost2
+	icon = "tech_sensors_2"
+ 	cost = @tier4cost2
 	tier = 4
 	category = { sensors }
 	prerequisites = { "tech_sensors_18"}	
@@ -868,7 +886,8 @@ tech_sensors_19 = {
 
 tech_sensors_20 = {
 	area = engineering
-	cost = @tier4cost3
+	icon = "tech_sensors_2"
+ 	cost = @tier4cost3
 	tier = 4
 	category = { sensors }
 	prerequisites = { "tech_sensors_19" "tech_zero_point_power"}	
@@ -903,7 +922,8 @@ tech_sensors_20 = {
 
 tech_sensors_21 = {
 	area = engineering
-	cost = @tier4cost4
+	icon = "tech_sensors_2"
+ 	cost = @tier4cost4
 	tier = 4
 	category = { sensors }
 	prerequisites = { "tech_sensors_20" }	

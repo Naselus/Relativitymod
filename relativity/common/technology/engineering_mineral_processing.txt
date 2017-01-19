@@ -102,7 +102,8 @@
 ####################
 
 tech_mineral_processing_1 = {
-	cost = @tier1cost1
+	icon = "tech_mineral_processing_1"
+ 	cost = @tier1cost1
 	area = engineering
 	start_tech = yes
 	tier = 1
@@ -157,7 +158,8 @@ tech_mineral_processing_1 = {
 
 #Advanced Mineral Processing 2
 tech_mineral_processing_2 = {
-	cost = @tier1cost3
+	icon = "tech_mineral_processing_1"
+ 	cost = @tier1cost3
 	area = engineering
 	tier = 1
 	category = { mineral_processing }	
@@ -211,7 +213,8 @@ tech_mineral_processing_2 = {
 
 #Advanced Mineral Processing 3
 tech_mineral_processing_3 = {
-	cost = @tier2cost1
+	icon = "tech_mineral_processing_1"
+ 	cost = @tier2cost1
 	area = engineering
 	tier = 2
 	category = { mineral_processing }	
@@ -266,7 +269,8 @@ tech_mineral_processing_3 = {
 
 #Advanced Mineral Processing 4
 tech_mineral_processing_4 = {
-	cost = @tier2cost2
+	icon = "tech_mineral_processing_1"
+ 	cost = @tier2cost2
 	area = engineering
 	tier = 2
 	category = { mineral_processing }	
@@ -321,7 +325,8 @@ tech_mineral_processing_4 = {
 
 #Advanced Mineral Processing 5
 tech_mineral_processing_5 = {
-	cost = @tier2cost3
+	icon = "tech_mineral_processing_1"
+ 	cost = @tier2cost3
 	area = engineering
 	tier = 2
 	category = { mineral_processing }	
@@ -376,7 +381,8 @@ tech_mineral_processing_5 = {
 
 #Tier 2 Mineral Processing Start
 tech_mineral_processing_6 = {
-	cost = @tier2cost3
+	icon = "tech_mineral_processing_1"
+ 	cost = @tier2cost3
 	area = engineering
 	tier = 2
 	category = { mineral_processing }	
@@ -429,7 +435,8 @@ tech_mineral_processing_6 = {
 
 #Advanced Mineral Processing 7
 tech_mineral_processing_7 = {
-	cost = @tier2cost4
+	icon = "tech_mineral_processing_1"
+ 	cost = @tier2cost4
 	area = engineering
 	tier = 2
 	category = { mineral_processing }	
@@ -482,7 +489,8 @@ tech_mineral_processing_7 = {
 
 tech_mineral_processing_8 = {
 	area = engineering
-	cost = @tier3cost1
+	icon = "tech_mineral_processing_1"
+ 	cost = @tier3cost1
 	tier = 3
 	category = { mineral_processing }
 	prerequisites = { "tech_mineral_processing_7"}	
@@ -535,7 +543,8 @@ tech_mineral_processing_8 = {
 
 tech_mineral_processing_9 = {
 	area = engineering
-	cost = @tier3cost2
+	icon = "tech_mineral_processing_1"
+ 	cost = @tier3cost2
 	tier = 3
 	prerequisites = { "tech_mineral_processing_8" "tech_living_state"}	
 	weight = @tier3weight2
@@ -587,7 +596,8 @@ tech_mineral_processing_9 = {
 
 tech_mineral_processing_10 = {
 	area = engineering
-	cost = @tier3cost3
+	icon = "tech_mineral_processing_1"
+ 	cost = @tier3cost3
 	tier = 3
 	category = { mineral_processing }
 	prerequisites = { "tech_mineral_processing_9"}	
@@ -641,7 +651,8 @@ tech_mineral_processing_10 = {
 #Tier 3 Mineral_Processing
 tech_mineral_processing_11 = {
 	area = engineering
-	cost = @tier3cost4
+	icon = "tech_mineral_processing_1"
+ 	cost = @tier3cost4
 	tier = 3
 	category = { mineral_processing }
 	prerequisites = { "tech_mineral_processing_10" "tech_mining_11" "tech_galactic_administration"}	
@@ -690,7 +701,8 @@ tech_mineral_processing_11 = {
 
 tech_mineral_processing_12 = {
 	area = engineering
-	cost = @tier4cost1
+	icon = "tech_mineral_processing_1"
+ 	cost = @tier4cost1
 	tier = 4
 	category = { mineral_processing }
 	prerequisites = { "tech_mineral_processing_11"}	
@@ -739,7 +751,8 @@ tech_mineral_processing_12 = {
 
 tech_mineral_processing_13 = {
 	area = engineering
-	cost = @tier4cost2
+	icon = "tech_mineral_processing_1"
+ 	cost = @tier4cost2
 	tier = 4
 	category = { mineral_processing }
 	prerequisites = { "tech_mineral_processing_12" "tech_collective_self"}	
@@ -792,7 +805,8 @@ tech_mineral_processing_13 = {
 
 tech_mineral_processing_14 = {
 	area = engineering
-	cost = @tier4cost3
+	icon = "tech_mineral_processing_1"
+ 	cost = @tier4cost3
 	tier = 4
 	category = { mineral_processing }
 	prerequisites = { "tech_mineral_processing_13"}	
@@ -845,7 +859,8 @@ tech_mineral_processing_14 = {
 
 tech_mineral_processing_15 = {
 	area = engineering
-	cost = @tier4cost4
+	icon = "tech_mineral_processing_1"
+ 	cost = @tier4cost4
 	tier = 4
 	category = { mineral_processing }
 	prerequisites = { "tech_mineral_processing_14"}	

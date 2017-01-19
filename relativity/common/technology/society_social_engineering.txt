@@ -103,7 +103,8 @@
 
 #Galactic Benevolence
 tech_galactic_benevolence = {
-	cost = @tier2cost2
+	icon = "tech_galactic_benevolence"
+ 	cost = @tier2cost2
 	area = society
 	tier = 2
 	category = { social_engineering }	
@@ -164,7 +165,8 @@ tech_galactic_benevolence = {
 }
 
 tech_ethical_equations = {
-	cost = @tier1cost2
+	icon = "tech_galactic_benevolence"
+ 	cost = @tier1cost2
 	area = society
 	tier = 0
 	category = { social_engineering }
@@ -213,7 +215,8 @@ tech_ethical_equations = {
 
 #Neural Implants
 tech_neural_implants = {
-	cost = @tier1cost4
+	icon = "tech_galactic_benevolence"
+ 	cost = @tier1cost4
 	area = society
 	tier = 1
 	category = { social_engineering }
@@ -276,7 +279,8 @@ tech_neural_implants = {
 
 #Artificial Moral Codes
 tech_artificial_moral_codes = {
-	cost = @tier2cost2
+	icon = "tech_galactic_benevolence"
+ 	cost = @tier2cost2
 	area = society
 	tier = 2
 	category = { social_engineering }
@@ -317,7 +321,8 @@ tech_artificial_moral_codes = {
 
 #Synthetic Thought Patterns
 tech_synthetic_thought_patterns = {
-	cost = @tier2cost4
+	icon = "tech_galactic_benevolence"
+ 	cost = @tier2cost4
 	area = society
 	tier = 2
 	category = { social_engineering }
@@ -366,7 +371,8 @@ tech_synthetic_thought_patterns = {
 
 #Will to Power
 tech_will_to_power = {
-	cost = @tier3cost3
+	icon = "tech_galactic_benevolence"
+ 	cost = @tier3cost3
 	area = society
 	tier = 3
 	category = { social_engineering }
@@ -430,7 +436,8 @@ tech_will_to_power = {
 
 #Purity Campaigns
 tech_purity_campaigns = {
-	cost = @tier1cost2
+	icon = "tech_galactic_benevolence"
+ 	cost = @tier1cost2
 	area = society
 	tier = 1
 	category = { social_engineering }	
@@ -498,7 +505,8 @@ tech_purity_campaigns = {
 
 tech_social_engineering_6 = {
 	area = society
-	cost = @tier2cost4
+	icon = "tech_galactic_benevolence"
+ 	cost = @tier2cost4
 	tier = 2
 	category = { social_engineering }
 	prerequisites = { "tech_galactic_administration" }
@@ -531,7 +539,8 @@ tech_social_engineering_6 = {
 
 tech_social_engineering_7 = {
 	area = society
-	cost = @tier2cost4
+	icon = "tech_galactic_benevolence"
+ 	cost = @tier2cost4
 	tier = 2
 	category = { social_engineering }
 	prerequisites = { "tech_social_engineering_6" }		
@@ -566,7 +575,8 @@ tech_social_engineering_7 = {
 
 tech_social_engineering_8 = {
 	area = society
-	cost = @tier3cost1
+	icon = "tech_galactic_benevolence"
+ 	cost = @tier3cost1
 	tier = 3
 	category = { social_engineering }
 	prerequisites = { "tech_social_engineering_7" }			
@@ -601,7 +611,8 @@ tech_social_engineering_8 = {
 
 tech_social_engineering_9 = {
 	area = society
-	cost = @tier3cost1
+	icon = "tech_galactic_benevolence"
+ 	cost = @tier3cost1
 	tier = 3
 	category = { social_engineering }
 	prerequisites = { "tech_social_engineering_8" }		
@@ -636,7 +647,8 @@ tech_social_engineering_9 = {
 
 tech_social_engineering_10 = {
 	area = society
-	cost = @tier3cost2
+	icon = "tech_galactic_benevolence"
+ 	cost = @tier3cost2
 	tier = 3
 	category = { social_engineering }
 	prerequisites = { "tech_social_engineering_9" }		
@@ -671,7 +683,8 @@ tech_social_engineering_10 = {
 
 tech_social_engineering_11 = {
 	area = society
-	cost = @tier3cost2
+	icon = "tech_galactic_benevolence"
+ 	cost = @tier3cost2
 	tier = 3
 	category = { social_engineering }
 	prerequisites = { "tech_social_engineering_10" }		
@@ -706,7 +719,8 @@ tech_social_engineering_11 = {
 
 tech_social_engineering_12 = {
 	area = society
-	cost = @tier3cost3
+	icon = "tech_galactic_benevolence"
+ 	cost = @tier3cost3
 	tier = 3
 	category = { social_engineering }
 	prerequisites = { "tech_social_engineering_11" }		
@@ -741,7 +755,8 @@ tech_social_engineering_12 = {
 
 tech_social_engineering_13 = {
 	area = society
-	cost = @tier3cost3
+	icon = "tech_galactic_benevolence"
+ 	cost = @tier3cost3
 	tier = 3
 	category = { social_engineering }
 	prerequisites = { "tech_social_engineering_12" }		
@@ -776,7 +791,8 @@ tech_social_engineering_13 = {
 
 tech_social_engineering_14 = {
 	area = society
-	cost = @tier3cost4
+	icon = "tech_galactic_benevolence"
+ 	cost = @tier3cost4
 	tier = 3
 	category = { social_engineering }
 	prerequisites = { "tech_social_engineering_13" }		
@@ -811,7 +827,8 @@ tech_social_engineering_14 = {
 
 tech_social_engineering_15 = {
 	area = society
-	cost = @tier3cost4
+	icon = "tech_galactic_benevolence"
+ 	cost = @tier3cost4
 	tier = 3
 	category = { social_engineering }
 	prerequisites = { "tech_social_engineering_14" }		
@@ -846,7 +863,8 @@ tech_social_engineering_15 = {
 
 tech_social_engineering_16 = {
 	area = society
-	cost = @tier3cost4
+	icon = "tech_galactic_benevolence"
+ 	cost = @tier3cost4
 	tier = 3
 	category = { social_engineering }
 	prerequisites = { "tech_social_engineering_15" }		
@@ -881,7 +899,8 @@ tech_social_engineering_16 = {
 
 tech_social_engineering_17 = {
 	area = society
-	cost = @tier4cost1
+	icon = "tech_galactic_benevolence"
+ 	cost = @tier4cost1
 	tier = 4
 	category = { social_engineering }
 	prerequisites = { "tech_social_engineering_16" }		
@@ -916,7 +935,8 @@ tech_social_engineering_17 = {
 
 tech_social_engineering_18 = {
 	area = society
-	cost = @tier4cost2
+	icon = "tech_galactic_benevolence"
+ 	cost = @tier4cost2
 	tier = 4
 	category = { social_engineering }
 	prerequisites = { "tech_social_engineering_17" }		
@@ -951,7 +971,8 @@ tech_social_engineering_18 = {
 
 tech_social_engineering_19 = {
 	area = society
-	cost = @tier4cost3
+	icon = "tech_galactic_benevolence"
+ 	cost = @tier4cost3
 	tier = 4
 	category = { social_engineering }
 	prerequisites = { "tech_social_engineering_18" }		
@@ -986,7 +1007,8 @@ tech_social_engineering_19 = {
 
 tech_social_engineering_20 = {
 	area = society
-	cost = @tier4cost4
+	icon = "tech_galactic_benevolence"
+ 	cost = @tier4cost4
 	tier = 4
 	category = { social_engineering }
 	prerequisites = { "tech_social_engineering_19" }		

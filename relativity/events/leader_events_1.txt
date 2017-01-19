@@ -41,7 +41,7 @@ country_event = {
 					name = random
 					skill = 201
 					traits = {
-						trait = random_traits
+						add_random_leader_trait = yes
 					}
 				}
 				last_created_leader = { save_event_target_as = officer }
@@ -53,7 +53,7 @@ country_event = {
 					name = random
 					skill = 301
 					traits = {
-						trait = random_traits
+						add_random_leader_trait = yes
 					}
 				}
 				last_created_leader = { save_event_target_as = officer }
@@ -65,7 +65,7 @@ country_event = {
 					name = random
 					skill = 401
 					traits = {
-						trait = random_traits
+						add_random_leader_trait = yes
 					}
 				}
 				last_created_leader = { save_event_target_as = officer }
@@ -77,7 +77,7 @@ country_event = {
 					name = random
 					skill = 250
 					traits = {
-						trait = random_traits
+						add_random_leader_trait = yes
 					}
 				}
 				last_created_leader = { save_event_target_as = officer }

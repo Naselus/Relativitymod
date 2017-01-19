@@ -113,7 +113,8 @@ tech_planetary_government = {
 
 #Planetary Unification
 tech_planetary_unification = {
-	cost = @tier1cost1
+	icon = "tech_planetary_unification"
+ 	cost = @tier1cost1
 	area = society
 	tier = 1
 	category = { statecraft }
@@ -169,7 +170,8 @@ tech_planetary_unification = {
 
 #Adaptive Bureaucracy
 tech_adaptive_bureaucracy = {
-	cost = @tier1cost3
+	icon = "tech_planetary_unification"
+ 	cost = @tier1cost3
 	area = society
 	tier = 1
 	category = { statecraft }
@@ -240,7 +242,8 @@ tech_adaptive_bureaucracy = {
 
 #Colonial Centralization
 tech_colonial_centralization = {
-	cost = @tier2cost1
+	icon = "tech_planetary_unification"
+ 	cost = @tier2cost1
 	area = society
 	tier = 2
 	category = { statecraft }
@@ -284,7 +287,8 @@ tech_colonial_centralization = {
 
 #Living State
 tech_living_state = {
-	cost = @tier2cost2
+	icon = "tech_planetary_unification"
+ 	cost = @tier2cost2
 	area = society
 	tier = 2
 	category = { statecraft }
@@ -360,7 +364,8 @@ tech_living_state = {
 
 #Galactic Administration
 tech_galactic_administration = {
-	cost = @tier2cost3
+	icon = "tech_planetary_unification"
+ 	cost = @tier2cost3
 	area = society
 	tier = 2
 	category = { statecraft }
@@ -405,7 +410,8 @@ tech_galactic_administration = {
 
 #Collective Self
 tech_collective_self = {
-	cost = @tier2cost4
+	icon = "tech_planetary_unification"
+ 	cost = @tier2cost4
 	area = society
 	tier = 2
 	category = { statecraft }
@@ -485,7 +491,8 @@ tech_collective_self = {
 
 tech_statecraft_10 = {
 	area = society
-	cost = @tier3cost1
+	icon = "tech_planetary_unification"
+ 	cost = @tier3cost1
 	tier = 3
 	category = { statecraft }
 	prerequisites = { "tech_collective_self" }
@@ -536,7 +543,8 @@ tech_statecraft_10 = {
 
 tech_statecraft_11 = {
 	area = society
-	cost = @tier3cost1
+	icon = "tech_planetary_unification"
+ 	cost = @tier3cost1
 	tier = 3
 	category = { statecraft }
 	prerequisites = { "tech_statecraft_10" }
@@ -587,7 +595,8 @@ tech_statecraft_11 = {
 
 tech_statecraft_12 = {
 	area = society
-	cost = @tier3cost2
+	icon = "tech_planetary_unification"
+ 	cost = @tier3cost2
 	tier = 3
 	category = { statecraft }
 	prerequisites = { "tech_statecraft_11" }
@@ -628,7 +637,8 @@ tech_statecraft_12 = {
 
 tech_statecraft_13 = {
 	area = society
-	cost = @tier3cost2
+	icon = "tech_planetary_unification"
+ 	cost = @tier3cost2
 	tier = 3
 	category = { statecraft }
 	prerequisites = { "tech_statecraft_12" }
@@ -669,7 +679,8 @@ tech_statecraft_13 = {
 
 tech_statecraft_14 = {
 	area = society
-	cost = @tier3cost3
+	icon = "tech_planetary_unification"
+ 	cost = @tier3cost3
 	tier = 3
 	category = { statecraft }
 	prerequisites = { "tech_statecraft_13" }
@@ -710,7 +721,8 @@ tech_statecraft_14 = {
 
 tech_statecraft_15 = {
 	area = society
-	cost = @tier3cost4
+	icon = "tech_planetary_unification"
+ 	cost = @tier3cost4
 	tier = 3
 	category = { statecraft }
 	prerequisites = { "tech_statecraft_14" }
@@ -751,7 +763,8 @@ tech_statecraft_15 = {
 
 tech_statecraft_16 = {
 	area = society
-	cost = @tier3cost4
+	icon = "tech_planetary_unification"
+ 	cost = @tier3cost4
 	tier = 3
 	category = { statecraft }
 	prerequisites = { "tech_statecraft_15" }
@@ -792,7 +805,8 @@ tech_statecraft_16 = {
 
 tech_statecraft_17 = {
 	area = society
-	cost = @tier4cost1
+	icon = "tech_planetary_unification"
+ 	cost = @tier4cost1
 	tier = 4
 	category = { statecraft }
 	prerequisites = { "tech_statecraft_16" }
@@ -833,7 +847,8 @@ tech_statecraft_17 = {
 
 tech_statecraft_18 = {
 	area = society
-	cost = @tier4cost2
+	icon = "tech_planetary_unification"
+ 	cost = @tier4cost2
 	tier = 4
 	category = { statecraft }
 	prerequisites = { "tech_statecraft_17" }
@@ -874,7 +889,8 @@ tech_statecraft_18 = {
 
 tech_statecraft_19 = {
 	area = society
-	cost = @tier4cost3
+	icon = "tech_planetary_unification"
+ 	cost = @tier4cost3
 	tier = 4
 	category = { statecraft }
 	prerequisites = { "tech_statecraft_18" }
@@ -914,7 +930,8 @@ tech_statecraft_19 = {
 
 tech_statecraft_20 = {
 	area = society
-	cost = @tier4cost4
+	icon = "tech_planetary_unification"
+ 	cost = @tier4cost4
 	tier = 4
 	category = { statecraft }
 	prerequisites = { "tech_statecraft_19" }

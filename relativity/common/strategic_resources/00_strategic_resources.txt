@@ -239,6 +239,7 @@ sr_plasma2 = {
 	is_rare = yes
 }
 
+
 sr_plasma3 = {
 	AI_category = minerals
 	collect_if_wrong_building = no
@@ -262,4 +263,51 @@ sr_luxurynutrients = {
 	collect_if_wrong_building = no
 	tradable = yes
 	is_rare = yes
+}
+
+#################
+#   Enclaves    #
+#################
+
+#Riggan Spice
+sr_riggan = {
+	AI_category = strategic_resource
+
+
+	tradable = yes
+	is_rare = yes
+	is_global = yes
+	
+	modifier = {		
+		pop_happiness = 0.05
+	}
+}
+
+
+
+
+sr_xuran = {
+	AI_category = strategic_resource
+
+	tradable = yes
+	is_rare = yes
+
+	is_global = yes
+	
+	modifier = {	
+		pop_environment_tolerance = 0.05		
+	}
+}
+
+
+sr_muutagan = {
+	AI_category = strategic_resource
+
+	tradable = yes
+	is_rare = yes
+	is_global = yes
+	
+	modifier = {		
+		pop_ethic_shift = -0.1
+	}
 }

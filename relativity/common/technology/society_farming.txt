@@ -103,7 +103,8 @@
 
 #Eco Simulation
 tech_eco_simulation = {
-	cost = 0
+	icon = "tech_hydroponics"
+ 	cost = 0
 	area = society
 	tier = 0
 	category = { farming }
@@ -116,7 +117,8 @@ tech_eco_simulation = {
 
 #Hydroponics
 tech_hydroponics = {
-	cost = @tier1cost4
+	icon = "tech_hydroponics"
+ 	cost = @tier1cost4
 	area = society
 	tier = 1
 	category = { farming }
@@ -172,7 +174,8 @@ tech_hydroponics = {
 
 #Gene Crops
 tech_gene_crops = {
-	cost = @tier2cost3
+	icon = "tech_hydroponics"
+ 	cost = @tier2cost3
 	area = society
 	tier = 2
 	category = { farming }
@@ -228,7 +231,8 @@ tech_gene_crops = {
 
 #Nano-Vitality Crops
 tech_nano_vitality_crops = {
-	cost = @tier3cost2
+	icon = "tech_hydroponics"
+ 	cost = @tier3cost2
 	area = society
 	tier = 3
 	category = { farming }	
@@ -283,7 +287,8 @@ tech_nano_vitality_crops = {
 }
 
 tech_nutrient_replication = {
-	cost = @tier4cost2
+	icon = "tech_hydroponics"
+ 	cost = @tier4cost2
 	area = society
 	tier = 4
 	category = { farming }
@@ -341,7 +346,8 @@ tech_nutrient_replication = {
 
 tech_farming_6 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_hydroponics"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { farming }
 	prerequisites = { "tech_nutrient_replication"}	
@@ -353,7 +359,8 @@ tech_farming_6 = {
 
 tech_farming_7 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_hydroponics"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { farming }
 	prerequisites = { "tech_farming_6"}	
@@ -365,7 +372,8 @@ tech_farming_7 = {
 
 tech_farming_8 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_hydroponics"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { farming }
 	prerequisites = { "tech_farming_7"}	
@@ -377,7 +385,8 @@ tech_farming_8 = {
 
 tech_farming_9 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_hydroponics"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { farming }
 	prerequisites = { "tech_farming_8"}	
@@ -389,7 +398,8 @@ tech_farming_9 = {
 
 tech_farming_10 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_hydroponics"
+ 	cost = @tier2cost1
 	tier = 2
 	prerequisites = { "tech_farming_9"}	
 	weight = @tier2weight1
@@ -400,7 +410,8 @@ tech_farming_10 = {
 
 tech_farming_11 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_hydroponics"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { farming }
 	prerequisites = { "tech_farming_10"}	
@@ -412,7 +423,8 @@ tech_farming_11 = {
 
 tech_farming_12 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_hydroponics"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { farming }
 	prerequisites = { "tech_farming_11"}	
@@ -424,7 +436,8 @@ tech_farming_12 = {
 
 tech_farming_13 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_hydroponics"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { farming }
 	prerequisites = { "tech_farming_12"}	
@@ -436,7 +449,8 @@ tech_farming_13 = {
 
 tech_farming_14 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_hydroponics"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { farming }
 	prerequisites = { "tech_farming_13"}	
@@ -448,7 +462,8 @@ tech_farming_14 = {
 
 tech_farming_15 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_hydroponics"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { farming }
 	prerequisites = { "tech_farming_14"}	
@@ -460,7 +475,8 @@ tech_farming_15 = {
 
 tech_farming_16 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_hydroponics"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { farming }
 	prerequisites = { "tech_farming_15"}	
@@ -472,7 +488,8 @@ tech_farming_16 = {
 
 tech_farming_17 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_hydroponics"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { farming }
 	prerequisites = { "tech_farming_16"}	
@@ -484,7 +501,8 @@ tech_farming_17 = {
 
 tech_farming_18 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_hydroponics"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { farming }
 	prerequisites = { "tech_farming_17"}	
@@ -496,7 +514,8 @@ tech_farming_18 = {
 
 tech_farming_19 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_hydroponics"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { farming }
 	prerequisites = { "tech_farming_18"}	
@@ -508,7 +527,8 @@ tech_farming_19 = {
 
 tech_farming_20 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_hydroponics"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { farming }
 	prerequisites = { "tech_farming_19"}	

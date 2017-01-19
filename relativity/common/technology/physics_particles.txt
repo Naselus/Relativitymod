@@ -105,7 +105,8 @@
 # Red Lasers
 tech_lasers_1 = {
 	area = physics
-	cost = @tier1cost1
+	icon = "tech_lasers_1"
+ 	cost = @tier1cost1
 	tier = 1
 	category = { particles }
 	ai_update_type = military
@@ -191,7 +192,8 @@ tech_lasers_1 = {
 # Blue Lasers
 tech_lasers_2 = {
 	area = physics
-	cost = @tier1cost3
+	icon = "tech_lasers_1"
+ 	cost = @tier1cost3
 	tier = 1
 	category = { particles }
 	ai_update_type = military
@@ -271,7 +273,8 @@ tech_lasers_2 = {
 
 tech_lasers_18 = {
 	area = physics
-	cost = @tier2cost1
+	icon = "tech_lasers_1"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { particles }
 	prerequisites = { "tech_lasers_2" }	
@@ -323,7 +326,8 @@ tech_lasers_18 = {
 # UV Lasers
 tech_lasers_3 = {
 	area = physics
-	cost = @tier2cost3
+	icon = "tech_lasers_1"
+ 	cost = @tier2cost3
 	tier = 2
 	category = { particles }
 	ai_update_type = military	
@@ -396,7 +400,8 @@ tech_lasers_3 = {
 
 tech_lasers_19 = {
 	area = physics
-	cost = @tier2cost4
+	icon = "tech_lasers_1"
+ 	cost = @tier2cost4
 	tier = 2
 	category = { particles }
 	prerequisites = { "tech_lasers_3"}	
@@ -448,7 +453,8 @@ tech_lasers_19 = {
 # X-Ray Lasers
 tech_lasers_4 = {
 	area = physics
-	cost = @tier3cost1
+	icon = "tech_lasers_1"
+ 	cost = @tier3cost1
 	tier = 3
 	category = { particles }
 	ai_update_type = military
@@ -521,7 +527,8 @@ tech_lasers_4 = {
 
 tech_lasers_20 = {
 	area = physics
-	cost = @tier3cost3
+	icon = "tech_lasers_1"
+ 	cost = @tier3cost3
 	tier = 3
 	prerequisites = { "tech_lasers_4"}	
 	weight = @tier3weight3
@@ -572,7 +579,8 @@ tech_lasers_20 = {
 # Gamma Lasers
 tech_lasers_5 = {
 	area = physics
-	cost = @tier3cost4
+	icon = "tech_lasers_1"
+ 	cost = @tier3cost4
 	tier = 3	
 	category = { particles }
 	ai_update_type = military
@@ -645,7 +653,8 @@ tech_lasers_5 = {
 
 tech_energy_lance_1 = {
 	area = physics
-	cost = @tier4cost1
+	icon = "tech_lasers_1"
+ 	cost = @tier4cost1
 	tier = 4
 	category = { particles }
 	ai_update_type = military	
@@ -718,7 +727,8 @@ tech_energy_lance_1 = {
 
 tech_energy_lance_2 = {
 	area = physics
-	cost = @tier4cost3
+	icon = "tech_lasers_1"
+ 	cost = @tier4cost3
 	tier = 4
 	category = { particles }
 	ai_update_type = military
@@ -795,7 +805,8 @@ tech_energy_lance_2 = {
 
 tech_plasma_1 = {
 	area = physics
-	cost = @tier3cost1
+	icon = "tech_lasers_1"
+ 	cost = @tier3cost1
 	tier = 3
 	category = { particles }
 	prerequisites = { "tech_lasers_4" }
@@ -874,7 +885,8 @@ tech_plasma_1 = {
 
 tech_plasma_2 = {
 	area = physics
-	cost = @tier3cost2
+	icon = "tech_lasers_1"
+ 	cost = @tier3cost2
 	tier = 3
 	category = { particles }
 	ai_update_type = military	
@@ -947,7 +959,8 @@ tech_plasma_2 = {
 
 tech_plasma_3 = {
 	area = physics
-	cost = @tier3cost4
+	icon = "tech_lasers_1"
+ 	cost = @tier3cost4
 	tier = 3
 	category = { particles }
 	ai_update_type = military	
@@ -1020,7 +1033,8 @@ tech_plasma_3 = {
 
 tech_arc_emitter_1 = {
 	area = physics
-	cost = @tier4cost1
+	icon = "tech_lasers_1"
+ 	cost = @tier4cost1
 	tier = 4
 	category = { particles }
 	ai_update_type = military	
@@ -1099,7 +1113,8 @@ tech_arc_emitter_1 = {
 
 tech_arc_emitter_2 = {
 	area = physics
-	cost = @tier4cost4
+	icon = "tech_lasers_1"
+ 	cost = @tier4cost4
 	tier = 4
 	category = { particles }
 	ai_update_type = military	
@@ -1176,7 +1191,8 @@ tech_arc_emitter_2 = {
 
 tech_disruptors_1 = {
 	area = physics
-	cost = @tier2cost3
+	icon = "tech_lasers_1"
+ 	cost = @tier2cost3
 	tier = 2
 	category = { particles }
 	prerequisites = { "tech_lasers_4"}
@@ -1255,7 +1271,8 @@ tech_disruptors_1 = {
 
 tech_disruptors_2 = {
 	area = physics
-	cost = @tier3cost2
+	icon = "tech_lasers_1"
+ 	cost = @tier3cost2
 	tier = 3
 	category = { particles }
 	ai_update_type = military	
@@ -1328,7 +1345,8 @@ tech_disruptors_2 = {
 
 tech_disruptors_3 = {
 	area = physics
-	cost = @tier4cost1
+	icon = "tech_lasers_1"
+ 	cost = @tier4cost1
 	tier = 4
 	category = { particles }
 	ai_update_type = military
@@ -1405,7 +1423,8 @@ tech_disruptors_3 = {
 
 tech_energy_torpedoes_1 = {
 	area = physics
-	cost = @tier3cost1
+	icon = "tech_lasers_1"
+ 	cost = @tier3cost1
 	tier = 3
 	category = { particles }
 	ai_update_type = military	
@@ -1484,7 +1503,8 @@ tech_energy_torpedoes_1 = {
 
 tech_energy_torpedoes_2 = {
 	area = physics
-	cost = @tier4cost1
+	icon = "tech_lasers_1"
+ 	cost = @tier4cost1
 	tier = 4
 	category = { particles }
 	ai_update_type = military	

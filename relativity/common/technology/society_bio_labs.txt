@@ -105,7 +105,8 @@
 
 #Bio Lab 1
 tech_biolab_1 = {
-	cost = @tier1cost1
+	icon = "tech_biolab_1"
+ 	cost = @tier1cost1
 	area = society
 	tier = 1
 	category = { bio_labs }
@@ -154,7 +155,8 @@ tech_biolab_1 = {
 }
 tech_societal_research_1 = {
 	area = society
-	cost = @tier1cost3
+	icon = "tech_biolab_1"
+ 	cost = @tier1cost3
 	tier = 1
 	category = { bio_labs }
 	prerequisites = { tech_biolab_1}
@@ -177,7 +179,8 @@ tech_societal_research_1 = {
 
 tech_societal_research_2 = {
 	area = society
-	cost = @tier1cost4
+	icon = "tech_biolab_1"
+ 	cost = @tier1cost4
 	tier = 1
 	category = { bio_labs }
 	prerequisites = { "tech_societal_research_1" }			
@@ -202,7 +205,8 @@ tech_societal_research_2 = {
 
 tech_societal_research_3 = {
 	area = society
-	cost = @tier2cost1
+	icon = "tech_biolab_1"
+ 	cost = @tier2cost1
 	tier = 2
 	category = { bio_labs }
 	prerequisites = { "tech_societal_research_2" }		
@@ -227,7 +231,8 @@ tech_societal_research_3 = {
 
 #Bio Lab 2
 tech_biolab_2 = {
-	cost = @tier2cost2
+	icon = "tech_biolab_1"
+ 	cost = @tier2cost2
 	area = society
 	tier = 2
 	category = { bio_labs }
@@ -274,7 +279,8 @@ tech_biolab_2 = {
 
 tech_societal_research_4 = {
 	area = society
-	cost = @tier2cost3
+	icon = "tech_biolab_1"
+ 	cost = @tier2cost3
 	tier = 2
 	category = { bio_labs }
 	prerequisites = { "tech_biolab_2" }		
@@ -299,7 +305,8 @@ tech_societal_research_4 = {
 
 tech_societal_research_5 = {
 	area = society
-	cost = @tier3cost1
+	icon = "tech_biolab_1"
+ 	cost = @tier3cost1
 	tier = 3
 	category = { bio_labs }
 	prerequisites = { "tech_societal_research_4" }		
@@ -324,7 +331,8 @@ tech_societal_research_5 = {
 
 tech_societal_research_6 = {
 	area = society
-	cost = @tier3cost1
+	icon = "tech_biolab_1"
+ 	cost = @tier3cost1
 	tier = 3
 	category = { bio_labs }
 	prerequisites = { "tech_societal_research_5" }		
@@ -349,7 +357,8 @@ tech_societal_research_6 = {
 
 tech_societal_research_7 = {
 	area = society
-	cost = @tier3cost2
+	icon = "tech_biolab_1"
+ 	cost = @tier3cost2
 	tier = 3
 	category = { bio_labs }
 	prerequisites = { "tech_societal_research_6" }		
@@ -374,7 +383,8 @@ tech_societal_research_7 = {
 
 #Bio Lab 3
 tech_biolab_3 = {
-	cost = @tier3cost3
+	icon = "tech_biolab_1"
+ 	cost = @tier3cost3
 	area = society
 	tier = 3
 	category = { bio_labs }	
@@ -421,7 +431,8 @@ tech_biolab_3 = {
 
 tech_societal_research_8 = {
 	area = society
-	cost = @tier3cost3
+	icon = "tech_biolab_1"
+ 	cost = @tier3cost3
 	tier = 3
 	category = { bio_labs }
 	prerequisites = { "tech_societal_research_7" }		
@@ -446,7 +457,8 @@ tech_societal_research_8 = {
 
 tech_societal_research_9 = {
 	area = society
-	cost = @tier3cost4
+	icon = "tech_biolab_1"
+ 	cost = @tier3cost4
 	tier = 3
 	category = { bio_labs }
 	prerequisites = { "tech_societal_research_8" }		
@@ -471,7 +483,8 @@ tech_societal_research_9 = {
 
 tech_societal_research_10 = {
 	area = society
-	cost = @tier3cost4
+	icon = "tech_biolab_1"
+ 	cost = @tier3cost4
 	tier = 3
 	category = { bio_labs }
 	prerequisites = { "tech_societal_research_9" }		
@@ -496,7 +509,8 @@ tech_societal_research_10 = {
 
 tech_societal_research_11 = {
 	area = society
-	cost = @tier4cost1
+	icon = "tech_biolab_1"
+ 	cost = @tier4cost1
 	tier = 4
 	category = { bio_labs }
 	prerequisites = { "tech_societal_research_10" }		
@@ -521,7 +535,8 @@ tech_societal_research_11 = {
 
 tech_biolab_4 = {
 	area = society
-	cost = @tier4cost1
+	icon = "tech_biolab_1"
+ 	cost = @tier4cost1
 	tier = 4
 	category = { bio_labs }
 	prerequisites = { "tech_societal_research_11" "tech_power_plant_11" }	
@@ -567,7 +582,8 @@ tech_biolab_4 = {
 
 tech_societal_research_12 = {
 	area = society
-	cost = @tier4cost2
+	icon = "tech_biolab_1"
+ 	cost = @tier4cost2
 	tier = 4
 	category = { bio_labs }
 	prerequisites = { "tech_societal_research_11" }		
@@ -592,7 +608,8 @@ tech_societal_research_12 = {
 
 tech_societal_research_13 = {
 	area = society
-	cost = @tier4cost2
+	icon = "tech_biolab_1"
+ 	cost = @tier4cost2
 	tier = 4
 	category = { bio_labs }
 	prerequisites = { "tech_societal_research_12" }		
@@ -617,7 +634,8 @@ tech_societal_research_13 = {
 
 tech_societal_research_14 = {
 	area = society
-	cost = @tier4cost2
+	icon = "tech_biolab_1"
+ 	cost = @tier4cost2
 	tier = 4
 	category = { bio_labs }
 	prerequisites = { "tech_societal_research_13" }		
@@ -642,7 +660,8 @@ tech_societal_research_14 = {
 
 tech_societal_research_15 = {
 	area = society
-	cost = @tier4cost3
+	icon = "tech_biolab_1"
+ 	cost = @tier4cost3
 	tier = 4
 	category = { bio_labs }
 	prerequisites = { "tech_societal_research_14" }		
@@ -667,7 +686,8 @@ tech_societal_research_15 = {
 
 tech_biolab_5 = {
 	area = society
-	cost = @tier4cost4
+	icon = "tech_biolab_1"
+ 	cost = @tier4cost4
 	tier = 4
 	category = { bio_labs }
 	prerequisites = { "tech_societal_research_15" "tech_galactic_administration" }	
