@@ -1422,8 +1422,8 @@ abolish_slavery = {
 		parameter:country = {		
 			hidden_effect = {
 				set_policy = {
-					policy = citizenship_policy
-					option = None
+					policy = slavery
+					option = slavery_not_allowed
 					cooldown = yes
 				}
 			}		
@@ -1474,8 +1474,8 @@ abolish_purge = {
 		parameter:country = {		
 			hidden_effect = {
 				set_policy = {
-					policy = citizenship_policy
-					option = None
+					policy = purge
+					option = purge_not_allowed
 					cooldown = yes
 				}
 			}		

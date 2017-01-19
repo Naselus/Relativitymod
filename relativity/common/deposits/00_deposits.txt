@@ -1238,7 +1238,12 @@ d_enormous3_mineral_deposit = {
 	orbital_weight = { weight = 0 }
 	drop_weight = { weight = 0 }
 }
-
+d_worm_deposit = {
+	resources = { society_research = 20 }
+	station = shipclass_research_station
+	orbital_weight = { weight = 0 }
+	drop_weight = { weight = 0 }
+}
 
 ##################################
 ########## TERRAFORMING ##########

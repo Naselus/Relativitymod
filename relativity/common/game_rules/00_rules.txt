@@ -13,13 +13,16 @@ can_enslave_pop = {
 					ROOT = {
 						OR = {
 							has_policy_flag = slavery_allowed_all
+							has_policy_flag = slavery_allowed_regulated
 						}
 					}
 					NOT = { is_species = "ROBOT_POP_SPECIES_3" }
 				}
 				AND = {
 					OR = {
+						
 						ROOT = { has_policy_flag = slavery_allowed_xenos_only }
+						ROOT = { has_policy_flag = slavery_allowed_regulated_xenos_only }
 					}
 					NOT = { 
 						is_same_species = ROOT 
@@ -370,4 +373,36 @@ exists_any_crisis = {
 #This = country
 primary_leaders_only = {
 	has_policy_flag = leadership_allow_dominant_only
+}
+can_orbital_bombard = {
+	exists = FROM.OWNER
+	OR = {
+		AND = {
+			ROOT.OWNER = {
+				NOT = { has_communications = FROM.OWNER }
+			}
+			FROM.OWNER = {
+				NOT = { is_country_type = primitive }
+			}
+		}
+		AND = {
+			ROOT.OWNER = {
+				NOR = {
+					has_policy_flag = interference_passive
+					has_policy_flag = interference_active
+				}
+			}
+			FROM.OWNER = { is_country_type = primitive }
+		}
+		ROOT.OWNER = { is_at_war_with = FROM.CONTROLLER }
+		FROM = { is_planet_class = pc_infested }
+		ROOT.OWNER = {
+			OR = {
+				is_country_type = extradimensional
+				is_country_type = extradimensional_2
+				is_country_type = extradimensional_3
+				is_country_type = swarm
+			}
+		}
+	}
 }

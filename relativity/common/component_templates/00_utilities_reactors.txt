@@ -35,17 +35,17 @@
 @cost_M2 = 20
 @cost_L2 = 40
 
-@cost_S3 = 20
-@cost_M3 = 40
-@cost_L3 = 80
+@cost_S3 = 15
+@cost_M3 = 30
+@cost_L3 = 60
 
-@cost_S4 = 40
-@cost_M4 = 80
-@cost_L4 = 160
+@cost_S4 = 20
+@cost_M4 = 40
+@cost_L4 = 80
 
-@cost_S5 = 80
-@cost_M5 = 160
-@cost_L5 = 320
+@cost_S5 = 25
+@cost_M5 = 50
+@cost_L5 = 100
 
 #############
 # UTILITIES #
@@ -64,6 +64,7 @@ utility_component_template = {
 	
 	prerequisites = { "tech_fission_power" }
 	component_set = "FISSION_REACTOR"
+	upgrades_to = "SMALL_FUSION_REACTOR"
 }
 
 utility_component_template = {
@@ -76,6 +77,7 @@ utility_component_template = {
 	
 	prerequisites = { "tech_fission_power" }
 	component_set = "FISSION_REACTOR"
+	upgrades_to = "MEDIUM_FUSION_REACTOR"
 }
 
 utility_component_template = {
@@ -88,6 +90,7 @@ utility_component_template = {
 	
 	prerequisites = { "tech_fission_power" }
 	component_set = "FISSION_REACTOR"
+	upgrades_to = "LARGE_FUSION_REACTOR"
 }
 
 # Fusion Reactors
@@ -101,6 +104,7 @@ utility_component_template = {
 	
 	prerequisites = { "tech_fusion_power" }
 	component_set = "FUSION_REACTOR"
+	upgrades_to = "SMALL_COLD_FUSION_REACTOR"
 }
 
 utility_component_template = {
@@ -113,6 +117,7 @@ utility_component_template = {
 	
 	prerequisites = { "tech_fusion_power" }
 	component_set = "FUSION_REACTOR"
+	upgrades_to = "MEDIUM_COLD_FUSION_REACTOR"
 }
 
 utility_component_template = {
@@ -125,6 +130,7 @@ utility_component_template = {
 	
 	prerequisites = { "tech_fusion_power" }
 	component_set = "FUSION_REACTOR"
+	upgrades_to = "LARGE_COLD_FUSION_REACTOR"
 }
 
 # Cold Fusion Reactors
@@ -138,6 +144,7 @@ utility_component_template = {
 	
 	prerequisites = { "tech_cold_fusion_power" }
 	component_set = "COLD_FUSION_REACTOR"
+	upgrades_to = "SMALL_ANTIMATTER_REACTOR"
 }
 
 utility_component_template = {
@@ -150,6 +157,7 @@ utility_component_template = {
 	
 	prerequisites = { "tech_cold_fusion_power" }
 	component_set = "COLD_FUSION_REACTOR"
+	upgrades_to = "MEDIUM_ANTIMATTER_REACTOR"
 }
 
 utility_component_template = {
@@ -162,6 +170,7 @@ utility_component_template = {
 	
 	prerequisites = { "tech_cold_fusion_power" }
 	component_set = "COLD_FUSION_REACTOR"
+	upgrades_to = "LARGE_ANTIMATTER_REACTOR"
 }
 
 # Antimatter Reactors
@@ -175,6 +184,7 @@ utility_component_template = {
 	
 	prerequisites = { "tech_antimatter_power" }
 	component_set = "ANTIMATTER_REACTOR"
+	upgrades_to = "SMALL_ZERO_POINT_REACTOR"
 }
 
 utility_component_template = {
@@ -187,6 +197,7 @@ utility_component_template = {
 	
 	prerequisites = { "tech_antimatter_power" }
 	component_set = "ANTIMATTER_REACTOR"
+	upgrades_to = "MEDIUM_ZERO_POINT_REACTOR"
 }
 
 utility_component_template = {
@@ -199,6 +210,7 @@ utility_component_template = {
 	
 	prerequisites = { "tech_antimatter_power" }
 	component_set = "ANTIMATTER_REACTOR"
+	upgrades_to = "LARGE_ZERO_POINT_REACTOR"
 }
 
 # Zero-Point Reactors
@@ -212,6 +224,7 @@ utility_component_template = {
 	
 	prerequisites = { "tech_zero_point_power" }
 	component_set = "ZERO_POINT_REACTOR"
+	upgrades_to = "SMALL_ENIGMATIC_POWER_CORE"
 }
 
 utility_component_template = {
@@ -224,6 +237,7 @@ utility_component_template = {
 	
 	prerequisites = { "tech_zero_point_power" }
 	component_set = "ZERO_POINT_REACTOR"
+	upgrades_to = "MEDIUM_ENIGMATIC_POWER_CORE"
 }
 
 utility_component_template = {
@@ -236,4 +250,5 @@ utility_component_template = {
 	
 	prerequisites = { "tech_zero_point_power"  }
 	component_set = "ZERO_POINT_REACTOR"
+	upgrades_to = "LARGE_ENIGMATIC_POWER_CORE"
 }

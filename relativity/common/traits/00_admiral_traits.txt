@@ -196,3 +196,15 @@ leader_trait_dimensional_stutter = {
 	leader_class = { admiral }
 	initial = no
 }
+leader_trait_dragonslayer = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_glory_seeker.dds"
+	modifier = {
+		ship_combat_speed_mult = 0.1
+		ship_fire_rate_mult = 0.1
+	}
+	leader_trait = yes
+	leader_class = { admiral }
+	initial = no
+}

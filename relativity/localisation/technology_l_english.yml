@@ -296,6 +296,10 @@
  tech_thrusters_19_desc:0 "\n\n"
  tech_thrusters_20:0 "Propulsion Rocketry XX"
  tech_thrusters_20_desc:0 "\n\n"
+ tech_afterburners_1:0 "Afterburners"
+ tech_afterburners_1_desc:0 "These powerful thrusters provide additional combat speed but consume a great deal of power."
+ tech_afterburners_2:0 "Advanced Afterburners"
+ tech_afterburners_2_desc:0 "This improved version of the standard afterburners provide an even greater boost to a ship's combat speed."
  
  # Engineering Labs
  tech_engineering_lab_1:0 "Nanomechanics" # Could also be Nanomatter
@@ -555,7 +559,10 @@
  tech_ballistics_19_desc:0 "\n\n"
  tech_ballistics_20:0 "Flak Artillery Optimizations"
  tech_ballistics_20_desc:0 "\n\n"
-
+ tech_mass_accelerator_1:0 "Mega Cannon"
+ tech_mass_accelerator_1_desc:0 "An enormous mass accelerator cannon that can only be placed in a spinal mount and fires monstrously powerful rounds over vast distances.\n\n"
+ tech_mass_accelerator_2:0 "Giga Cannon"
+ tech_mass_accelerator_2_desc:0 "An even more powerful mass accelerator cannon that can rip through even the toughest shields.\n\n"
 
  # Rocketry
  
@@ -2170,6 +2177,13 @@
  #tech_event_super_sensors:0 "a"
  #tech_event_super_sensors_desc:0 "a"
 
+ #####################################
+ # Enclave Techs
+ #####################################
+ tech_curator_lab:0 "Curator Exploration Lab"
+ tech_curator_lab_desc:0 "These shipboard lab facilities incorporates advanced technologies from the ancient Curator Order to further increase survey speeds.\n\n"
+ tech_archeology_lab:0 "Curator Archeology Lab"
+ tech_archeology_lab_desc:0 "A shipboard lab with advanced archaeological equipment, including a vast database supplied by the Curator Order where new discoveries can easily be cross-referenced.\n\n"
  
   # ###################################
  # Engineering - Weapons

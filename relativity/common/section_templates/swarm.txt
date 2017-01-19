@@ -47,6 +47,7 @@ ship_section_template = {
 	
 	medium_utility_slots = 1
 	large_utility_slots = 2
+	aux_utility_slots = 1
 }
 
 # Swarm Carrier Ship Section
@@ -96,6 +97,7 @@ ship_section_template = {
 	
 	medium_utility_slots = 1
 	large_utility_slots = 2
+	aux_utility_slots = 1
 }
 
 # Swarm Small Ship Section
@@ -129,6 +131,7 @@ ship_section_template = {
 	}
 
 	medium_utility_slots = 2
+	aux_utility_slots = 1
 }
 
 # Swarm Large Station Section
@@ -220,6 +223,7 @@ ship_section_template = {
 
 	large_utility_slots = 4
 	medium_utility_slots = 1
+	aux_utility_slots = 1
 }
 
 # Swarm Small Station Section
@@ -274,6 +278,7 @@ ship_section_template = {
 	}
 
 	medium_utility_slots = 4
+	aux_utility_slots = 1
 }
 
 # Swarm Queen Section
@@ -347,6 +352,7 @@ ship_section_template = {
 
 	medium_utility_slots = 1
 	large_utility_slots = 3
+	aux_utility_slots = 1
 }
 
 # Swarm Colonizer Section
@@ -360,6 +366,7 @@ ship_section_template = {
 	
 	small_utility_slots = 4
 	medium_utility_slots = 1
+	aux_utility_slots = 1
 }
 
 # Swarm Transport Section
@@ -373,6 +380,7 @@ ship_section_template = {
 	
 	small_utility_slots = 4
 	medium_utility_slots = 1
+	aux_utility_slots = 1
 }
 
 # Swarm Constructor Section
@@ -386,4 +394,5 @@ ship_section_template = {
 	
 	small_utility_slots = 4
 	medium_utility_slots = 1
+	aux_utility_slots = 1
 }

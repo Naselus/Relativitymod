@@ -673,3 +673,173 @@ tech_solar_panel_network = { #unused; spawns an error if absent
 		factor = 0
 	}
 }
+# ##################
+# Defense Stations
+# ##################
+
+#Defense Platform
+tech_space_defense_station_1 = {
+	cost = 0
+	tier = 0
+	area = engineering
+	start_tech = yes
+	category = { voidcraft }	
+	prerequisites = { "tech_space_construction" }
+}
+
+#Defense Station
+tech_space_defense_station_2 = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { voidcraft }	
+	prerequisites = { "tech_space_defense_station_1" }
+	weight = @tier2weight1
+	
+	weight_modifier = {
+		modifier = {
+			factor = 2
+			is_ai = yes
+		}		
+		modifier = {
+			factor = 5
+			has_technology = tech_spaceport_4
+		}		
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_spaceport_expansion"
+			}
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_ethic = ethic_militarist
+				has_ethic = ethic_fanatic_militarist
+			}
+		}
+	}
+	
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_UNLOCK_DEFENSE_STATION_TITLE"
+			desc = "TECH_UNLOCK_DEFENSE_STATION_DESC"
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_spaceport_expansion"
+			}
+		}
+	}
+		
+	## unlock defense station
+}
+
+#Fortress
+tech_space_defense_station_3 = {
+	cost = @tier3cost1
+	area = engineering
+	tier = 3
+	category = { voidcraft }	
+	prerequisites = { "tech_space_defense_station_2" }
+	weight = @tier3weight1
+	
+	weight_modifier = {
+		modifier = {
+			factor = 5
+			has_technology = tech_spaceport_6
+		}		
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_spaceport_expansion"
+			}
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_ethic = ethic_militarist
+				has_ethic = ethic_fanatic_militarist
+			}
+		}
+	}
+	
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_UNLOCK_FORTRESS_TITLE"
+			desc = "TECH_UNLOCK_FORTRESS_DESC"
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_spaceport_expansion"
+			}
+		}
+	}
+		
+	## unlock space fortress
+}
+
+#Corps of Engineers
+tech_space_defense_station_improvement = {
+	cost = @tier2cost3
+	area = engineering
+	tier = 2
+	category = { voidcraft }		
+	prerequisites = { "tech_space_defense_station_2" }
+	is_rare = yes
+	weight = @tier2weight3
+	
+	# unlocks spaceport-module - reinforced hull layers	
+	# unlock defense station +25% HP and -10% cost
+	
+	modifier = {
+		shipclass_military_station_build_cost_mult = -0.15
+		shipclass_military_station_hit_points_mult = 0.25
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0.25
+			NOR = {
+				research_leader = {
+					area = engineering
+					has_trait = "leader_trait_expertise_spaceport_expansion"
+				}
+				research_leader = {
+					area = engineering
+					has_trait = "leader_trait_curator"
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_ethic = ethic_militarist
+				has_ethic = ethic_fanatic_militarist
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+}

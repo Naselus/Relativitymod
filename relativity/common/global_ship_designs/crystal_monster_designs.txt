@@ -15,12 +15,20 @@ ship_design = {
 			template = "SMALL_CRYSTAL_SHIP_BLUE_LIGHTNING"
 		}
 		component = {
-			slot = "MEDIUM_GUN_01"
-			template = "MEDIUM_CRYSTAL_SHIP_BLUE_LIGHTNING"
+			slot = "SMALL_GUN_02"
+			template = "SMALL_CRYSTAL_SHIP_BLUE_LIGHTNING"
 		}
 		component = {
-			slot = "SMALL_UTILITY_1"
-			template = "SMALL_AUTO_REPAIR"
+			slot = "SMALL_GUN_03"
+			template = "SMALL_CRYSTAL_SHIP_BLUE_LIGHTNING"
+		}
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "AUTO_REPAIR"
+		}
+		component = {
+			slot = "AUX_UTILITY_2"
+			template = "CRYSTAL_ARMOR_1"
 		}
 	}
 }
@@ -39,12 +47,28 @@ ship_design = {
 			template = "MEDIUM_CRYSTAL_SHIP_BLUE_LIGHTNING"
 		}
 		component = {
-			slot = "MEDIUM_GUN_01"
-			template = "MEDIUM_CRYSTAL_SHIP_BLUE_LIGHTNING"
+			slot = "SMALL_GUN_01"
+			template = "SMALL_CRYSTAL_SHIP_BLUE_LIGHTNING"
 		}
 		component = {
-			slot = "SMALL_UTILITY_1"
-			template = "SMALL_AUTO_REPAIR"
+			slot = "SMALL_GUN_02"
+			template = "SMALL_CRYSTAL_SHIP_BLUE_LIGHTNING"
+		}
+		component = {
+			slot = "SMALL_GUN_03"
+			template = "SMALL_CRYSTAL_SHIP_BLUE_LIGHTNING"
+		}
+		component = {
+			slot = "SMALL_GUN_04"
+			template = "SMALL_CRYSTAL_SHIP_BLUE_LIGHTNING"
+		}
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "AUTO_REPAIR"
+		}
+		component = {
+			slot = "AUX_UTILITY_2"
+			template = "CRYSTAL_ARMOR_1"
 		}
 	}
 }
@@ -61,10 +85,30 @@ ship_design = {
 		component = {
 			slot = "LARGE_GUN_01"
 			template = "LARGE_CRYSTAL_SHIP_BLUE_LIGHTNING"
+		}		
+		component = {
+			slot = "MEDIUM_GUN_01"
+			template = "MEDIUM_CRYSTAL_SHIP_BLUE_LIGHTNING"
+		}		
+		component = {
+			slot = "MEDIUM_GUN_02"
+			template = "MEDIUM_CRYSTAL_SHIP_BLUE_LIGHTNING"
+		}		
+		component = {
+			slot = "MEDIUM_GUN_03"
+			template = "MEDIUM_CRYSTAL_SHIP_BLUE_LIGHTNING"
+		}		
+		component = {
+			slot = "MEDIUM_GUN_04"
+			template = "MEDIUM_CRYSTAL_SHIP_BLUE_LIGHTNING"
 		}
 		component = {
-			slot = "SMALL_UTILITY_1"
-			template = "SMALL_AUTO_REPAIR"
+			slot = "AUX_UTILITY_1"
+			template = "AUTO_REPAIR"
+		}
+		component = {
+			slot = "AUX_UTILITY_2"
+			template = "CRYSTAL_ARMOR_1"
 		}
 	}
 }
@@ -84,12 +128,20 @@ ship_design = {
 			template = "SMALL_CRYSTAL_SHIP_GREEN_LIGHTNING"
 		}
 		component = {
-			slot = "MEDIUM_GUN_01"
-			template = "MEDIUM_CRYSTAL_SHIP_GREEN_LIGHTNING"
+			slot = "SMALL_GUN_02"
+			template = "SMALL_CRYSTAL_SHIP_GREEN_LIGHTNING"
 		}
 		component = {
-			slot = "SMALL_UTILITY_1"
-			template = "SMALL_AUTO_REPAIR"
+			slot = "SMALL_GUN_03"
+			template = "SMALL_CRYSTAL_SHIP_GREEN_LIGHTNING"
+		}
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "AUTO_REPAIR"
+		}
+		component = {
+			slot = "AUX_UTILITY_2"
+			template = "CRYSTAL_ARMOR_1"
 		}
 	}
 }
@@ -106,14 +158,30 @@ ship_design = {
 		component = {
 			slot = "MEDIUM_GUN_01"
 			template = "MEDIUM_CRYSTAL_SHIP_GREEN_LIGHTNING"
+		}		
+		component = {
+			slot = "SMALL_GUN_01"
+			template = "SMALL_CRYSTAL_SHIP_GREEN_LIGHTNING"
 		}
 		component = {
-			slot = "MEDIUM_GUN_01"
-			template = "MEDIUM_CRYSTAL_SHIP_GREEN_LIGHTNING"
+			slot = "SMALL_GUN_02"
+			template = "SMALL_CRYSTAL_SHIP_GREEN_LIGHTNING"
 		}
 		component = {
-			slot = "SMALL_UTILITY_1"
-			template = "SMALL_AUTO_REPAIR"
+			slot = "SMALL_GUN_03"
+			template = "SMALL_CRYSTAL_SHIP_GREEN_LIGHTNING"
+		}
+		component = {
+			slot = "SMALL_GUN_04"
+			template = "SMALL_CRYSTAL_SHIP_GREEN_LIGHTNING"
+		}
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "AUTO_REPAIR"
+		}
+		component = {
+			slot = "AUX_UTILITY_2"
+			template = "CRYSTAL_ARMOR_1"
 		}
 	}
 }
@@ -132,8 +200,28 @@ ship_design = {
 			template = "LARGE_CRYSTAL_SHIP_GREEN_LIGHTNING"
 		}
 		component = {
-			slot = "SMALL_UTILITY_1"
-			template = "SMALL_AUTO_REPAIR"
+			slot = "MEDIUM_GUN_01"
+			template = "MEDIUM_CRYSTAL_SHIP_GREEN_LIGHTNING"
+		}
+		component = {
+			slot = "MEDIUM_GUN_02"
+			template = "MEDIUM_CRYSTAL_SHIP_GREEN_LIGHTNING"
+		}
+		component = {
+			slot = "MEDIUM_GUN_03"
+			template = "MEDIUM_CRYSTAL_SHIP_GREEN_LIGHTNING"
+		}
+		component = {
+			slot = "MEDIUM_GUN_04"
+			template = "MEDIUM_CRYSTAL_SHIP_GREEN_LIGHTNING"
+		}
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "AUTO_REPAIR"
+		}
+		component = {
+			slot = "AUX_UTILITY_2"
+			template = "CRYSTAL_ARMOR_1"
 		}
 	}
 }
@@ -153,12 +241,20 @@ ship_design = {
 			template = "SMALL_CRYSTAL_SHIP_YELLOW_LIGHTNING"
 		}
 		component = {
-			slot = "MEDIUM_GUN_01"
-			template = "MEDIUM_CRYSTAL_SHIP_YELLOW_LIGHTNING"
+			slot = "SMALL_GUN_02"
+			template = "SMALL_CRYSTAL_SHIP_YELLOW_LIGHTNING"
 		}
 		component = {
-			slot = "SMALL_UTILITY_1"
-			template = "SMALL_AUTO_REPAIR"
+			slot = "SMALL_GUN_03"
+			template = "SMALL_CRYSTAL_SHIP_YELLOW_LIGHTNING"
+		}
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "AUTO_REPAIR"
+		}
+		component = {
+			slot = "AUX_UTILITY_2"
+			template = "CRYSTAL_ARMOR_1"
 		}
 	}
 }
@@ -177,12 +273,28 @@ ship_design = {
 			template = "MEDIUM_CRYSTAL_SHIP_YELLOW_LIGHTNING"
 		}
 		component = {
-			slot = "MEDIUM_GUN_01"
-			template = "MEDIUM_CRYSTAL_SHIP_YELLOW_LIGHTNING"
+			slot = "SMALL_GUN_01"
+			template = "SMALL_CRYSTAL_SHIP_YELLOW_LIGHTNING"
+		}		
+		component = {
+			slot = "SMALL_GUN_02"
+			template = "SMALL_CRYSTAL_SHIP_YELLOW_LIGHTNING"
 		}
 		component = {
-			slot = "SMALL_UTILITY_1"
-			template = "SMALL_AUTO_REPAIR"
+			slot = "SMALL_GUN_03"
+			template = "SMALL_CRYSTAL_SHIP_YELLOW_LIGHTNING"
+		}
+		component = {
+			slot = "SMALL_GUN_04"
+			template = "SMALL_CRYSTAL_SHIP_YELLOW_LIGHTNING"
+		}
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "AUTO_REPAIR"
+		}
+		component = {
+			slot = "AUX_UTILITY_2"
+			template = "CRYSTAL_ARMOR_1"
 		}
 	}
 }
@@ -199,10 +311,30 @@ ship_design = {
 		component = {
 			slot = "LARGE_GUN_01"
 			template = "LARGE_CRYSTAL_SHIP_YELLOW_LIGHTNING"
+		}		
+		component = {
+			slot = "MEDIUM_GUN_01"
+			template = "MEDIUM_CRYSTAL_SHIP_YELLOW_LIGHTNING"
+		}		
+		component = {
+			slot = "MEDIUM_GUN_02"
+			template = "MEDIUM_CRYSTAL_SHIP_YELLOW_LIGHTNING"
+		}		
+		component = {
+			slot = "MEDIUM_GUN_03"
+			template = "MEDIUM_CRYSTAL_SHIP_YELLOW_LIGHTNING"
+		}		
+		component = {
+			slot = "MEDIUM_GUN_04"
+			template = "MEDIUM_CRYSTAL_SHIP_YELLOW_LIGHTNING"
 		}
 		component = {
-			slot = "SMALL_UTILITY_1"
-			template = "SMALL_AUTO_REPAIR"
+			slot = "AUX_UTILITY_1"
+			template = "AUTO_REPAIR"
+		}
+		component = {
+			slot = "AUX_UTILITY_2"
+			template = "CRYSTAL_ARMOR_1"
 		}
 	}
 }
@@ -222,12 +354,20 @@ ship_design = {
 			template = "SMALL_CRYSTAL_SHIP_RED_LIGHTNING"
 		}
 		component = {
-			slot = "MEDIUM_GUN_01"
+			slot = "SMALL_GUN_02"
 			template = "SMALL_CRYSTAL_SHIP_RED_LIGHTNING"
 		}
 		component = {
-			slot = "SMALL_UTILITY_1"
-			template = "SMALL_AUTO_REPAIR"
+			slot = "SMALL_GUN_03"
+			template = "SMALL_CRYSTAL_SHIP_RED_LIGHTNING"
+		}
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "AUTO_REPAIR"
+		}
+		component = {
+			slot = "AUX_UTILITY_2"
+			template = "CRYSTAL_ARMOR_1"
 		}
 	}
 }
@@ -246,12 +386,28 @@ ship_design = {
 			template = "MEDIUM_CRYSTAL_SHIP_RED_LIGHTNING"
 		}
 		component = {
-			slot = "MEDIUM_GUN_01"
-			template = "MEDIUM_CRYSTAL_SHIP_RED_LIGHTNING"
+			slot = "SMALL_GUN_01"
+			template = "SMALL_CRYSTAL_SHIP_RED_LIGHTNING"
 		}
 		component = {
-			slot = "SMALL_UTILITY_1"
-			template = "SMALL_AUTO_REPAIR"
+			slot = "SMALL_GUN_02"
+			template = "SMALL_CRYSTAL_SHIP_RED_LIGHTNING"
+		}
+		component = {
+			slot = "SMALL_GUN_03"
+			template = "SMALL_CRYSTAL_SHIP_RED_LIGHTNING"
+		}
+		component = {
+			slot = "SMALL_GUN_04"
+			template = "SMALL_CRYSTAL_SHIP_RED_LIGHTNING"
+		}
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "AUTO_REPAIR"
+		}
+		component = {
+			slot = "AUX_UTILITY_2"
+			template = "CRYSTAL_ARMOR_1"
 		}
 	}
 }
@@ -270,8 +426,28 @@ ship_design = {
 			template = "LARGE_CRYSTAL_SHIP_RED_LIGHTNING"
 		}
 		component = {
-			slot = "SMALL_UTILITY_1"
-			template = "SMALL_AUTO_REPAIR"
+			slot = "MEDIUM_GUN_01"
+			template = "MEDIUM_CRYSTAL_SHIP_RED_LIGHTNING"
+		}
+		component = {
+			slot = "MEDIUM_GUN_02"
+			template = "MEDIUM_CRYSTAL_SHIP_RED_LIGHTNING"
+		}
+		component = {
+			slot = "MEDIUM_GUN_03"
+			template = "MEDIUM_CRYSTAL_SHIP_RED_LIGHTNING"
+		}
+		component = {
+			slot = "MEDIUM_GUN_04"
+			template = "MEDIUM_CRYSTAL_SHIP_RED_LIGHTNING"
+		}
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "AUTO_REPAIR"
+		}
+		component = {
+			slot = "AUX_UTILITY_2"
+			template = "CRYSTAL_ARMOR_1"
 		}
 	}
 }
@@ -291,15 +467,24 @@ ship_design = {
 			template = "SMALL_CRYSTAL_SHIP_BLUE_ELITE_LIGHTNING"
 		}
 		component = {
-			slot = "MEDIUM_GUN_01"
-			template = "MEDIUM_CRYSTAL_SHIP_BLUE_ELITE_LIGHTNING"
+			slot = "SMALL_GUN_02"
+			template = "SMALL_CRYSTAL_SHIP_BLUE_ELITE_LIGHTNING"
 		}
 		component = {
-			slot = "SMALL_UTILITY_1"
-			template = "SMALL_AUTO_REPAIR"
+			slot = "SMALL_GUN_03"
+			template = "SMALL_CRYSTAL_SHIP_BLUE_ELITE_LIGHTNING"
+		}
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "AUTO_REPAIR"
+		}
+		component = {
+			slot = "AUX_UTILITY_2"
+			template = "CRYSTAL_ARMOR_1"
 		}
 	}
 }
+
 # Medium Crystal Entity - Blue - ELITE
 ship_design = {
 	name = "Medium Crystal Entity Blue Elite"
@@ -315,16 +500,28 @@ ship_design = {
 			template = "MEDIUM_CRYSTAL_SHIP_BLUE_ELITE_LIGHTNING"
 		}
 		component = {
-			slot = "MEDIUM_GUN_01"
-			template = "MEDIUM_CRYSTAL_SHIP_BLUE_ELITE_LIGHTNING"
+			slot = "SMALL_GUN_01"
+			template = "SMALL_CRYSTAL_SHIP_BLUE_ELITE_LIGHTNING"
 		}
 		component = {
-			slot = "SMALL_UTILITY_1"
-			template = "SMALL_AUTO_REPAIR"
+			slot = "SMALL_GUN_02"
+			template = "SMALL_CRYSTAL_SHIP_BLUE_ELITE_LIGHTNING"
 		}
 		component = {
-			slot = "MEDIUM_UTILITY_1"
-			template = "MEDIUM_CRYSTAL_ARMOR_1"
+			slot = "SMALL_GUN_03"
+			template = "SMALL_CRYSTAL_SHIP_BLUE_ELITE_LIGHTNING"
+		}
+		component = {
+			slot = "SMALL_GUN_04"
+			template = "SMALL_CRYSTAL_SHIP_BLUE_ELITE_LIGHTNING"
+		}
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "AUTO_REPAIR"
+		}
+		component = {
+			slot = "AUX_UTILITY_2"
+			template = "CRYSTAL_ARMOR_1"
 		}
 	}
 }
@@ -343,12 +540,28 @@ ship_design = {
 			template = "LARGE_CRYSTAL_SHIP_BLUE_ELITE_LIGHTNING"
 		}
 		component = {
-			slot = "SMALL_UTILITY_1"
-			template = "SMALL_AUTO_REPAIR"
+			slot = "MEDIUM_GUN_01"
+			template = "MEDIUM_CRYSTAL_SHIP_BLUE_ELITE_LIGHTNING"
 		}
 		component = {
-			slot = "LARGE_UTILITY_1"
-			template = "LARGE_CRYSTAL_ARMOR_1"
+			slot = "MEDIUM_GUN_02"
+			template = "MEDIUM_CRYSTAL_SHIP_BLUE_ELITE_LIGHTNING"
+		}
+		component = {
+			slot = "MEDIUM_GUN_03"
+			template = "MEDIUM_CRYSTAL_SHIP_BLUE_ELITE_LIGHTNING"
+		}
+		component = {
+			slot = "MEDIUM_GUN_04"
+			template = "MEDIUM_CRYSTAL_SHIP_BLUE_ELITE_LIGHTNING"
+		}
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "AUTO_REPAIR"
+		}
+		component = {
+			slot = "AUX_UTILITY_2"
+			template = "CRYSTAL_ARMOR_1"
 		}
 	}
 }
@@ -368,12 +581,20 @@ ship_design = {
 			template = "SMALL_CRYSTAL_SHIP_GREEN_ELITE_LIGHTNING"
 		}
 		component = {
-			slot = "MEDIUM_GUN_01"
-			template = "MEDIUM_CRYSTAL_SHIP_GREEN_ELITE_LIGHTNING"
+			slot = "SMALL_GUN_02"
+			template = "SMALL_CRYSTAL_SHIP_GREEN_ELITE_LIGHTNING"
 		}
 		component = {
-			slot = "SMALL_UTILITY_1"
-			template = "SMALL_AUTO_REPAIR"
+			slot = "SMALL_GUN_03"
+			template = "SMALL_CRYSTAL_SHIP_GREEN_ELITE_LIGHTNING"
+		}
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "AUTO_REPAIR"
+		}
+		component = {
+			slot = "AUX_UTILITY_2"
+			template = "CRYSTAL_ARMOR_1"
 		}
 	}
 }
@@ -392,16 +613,28 @@ ship_design = {
 			template = "MEDIUM_CRYSTAL_SHIP_GREEN_ELITE_LIGHTNING"
 		}
 		component = {
-			slot = "MEDIUM_GUN_01"
-			template = "MEDIUM_CRYSTAL_SHIP_GREEN_ELITE_LIGHTNING"
+			slot = "SMALL_GUN_01"
+			template = "SMALL_CRYSTAL_SHIP_GREEN_ELITE_LIGHTNING"
 		}
 		component = {
-			slot = "SMALL_UTILITY_1"
-			template = "SMALL_AUTO_REPAIR"
+			slot = "SMALL_GUN_02"
+			template = "SMALL_CRYSTAL_SHIP_GREEN_ELITE_LIGHTNING"
 		}
 		component = {
-			slot = "MEDIUM_UTILITY_1"
-			template = "MEDIUM_CRYSTAL_ARMOR_1"
+			slot = "SMALL_GUN_03"
+			template = "SMALL_CRYSTAL_SHIP_GREEN_ELITE_LIGHTNING"
+		}
+		component = {
+			slot = "SMALL_GUN_04"
+			template = "SMALL_CRYSTAL_SHIP_GREEN_ELITE_LIGHTNING"
+		}
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "AUTO_REPAIR"
+		}
+		component = {
+			slot = "AUX_UTILITY_2"
+			template = "CRYSTAL_ARMOR_1"
 		}
 	}
 }
@@ -420,12 +653,28 @@ ship_design = {
 			template = "LARGE_CRYSTAL_SHIP_GREEN_ELITE_LIGHTNING"
 		}
 		component = {
-			slot = "SMALL_UTILITY_1"
-			template = "SMALL_AUTO_REPAIR"
+			slot = "MEDIUM_GUN_01"
+			template = "MEDIUM_CRYSTAL_SHIP_GREEN_ELITE_LIGHTNING"
 		}
 		component = {
-			slot = "LARGE_UTILITY_1"
-			template = "LARGE_CRYSTAL_ARMOR_1"
+			slot = "MEDIUM_GUN_02"
+			template = "MEDIUM_CRYSTAL_SHIP_GREEN_ELITE_LIGHTNING"
+		}
+		component = {
+			slot = "MEDIUM_GUN_03"
+			template = "MEDIUM_CRYSTAL_SHIP_GREEN_ELITE_LIGHTNING"
+		}
+		component = {
+			slot = "MEDIUM_GUN_04"
+			template = "MEDIUM_CRYSTAL_SHIP_GREEN_ELITE_LIGHTNING"
+		}
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "AUTO_REPAIR"
+		}
+		component = {
+			slot = "AUX_UTILITY_2"
+			template = "CRYSTAL_ARMOR_1"
 		}
 	}
 }
@@ -445,12 +694,20 @@ ship_design = {
 			template = "SMALL_CRYSTAL_SHIP_YELLOW_ELITE_LIGHTNING"
 		}
 		component = {
-			slot = "MEDIUM_GUN_01"
-			template = "MEDIUM_CRYSTAL_SHIP_YELLOW_ELITE_LIGHTNING"
+			slot = "SMALL_GUN_02"
+			template = "SMALL_CRYSTAL_SHIP_YELLOW_ELITE_LIGHTNING"
 		}
 		component = {
-			slot = "SMALL_UTILITY_1"
-			template = "SMALL_AUTO_REPAIR"
+			slot = "SMALL_GUN_03"
+			template = "SMALL_CRYSTAL_SHIP_YELLOW_ELITE_LIGHTNING"
+		}
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "AUTO_REPAIR"
+		}
+		component = {
+			slot = "AUX_UTILITY_2"
+			template = "CRYSTAL_ARMOR_1"
 		}
 	}
 }
@@ -469,16 +726,28 @@ ship_design = {
 			template = "MEDIUM_CRYSTAL_SHIP_YELLOW_ELITE_LIGHTNING"
 		}
 		component = {
-			slot = "MEDIUM_GUN_01"
-			template = "MEDIUM_CRYSTAL_SHIP_YELLOW_ELITE_LIGHTNING"
+			slot = "SMALL_GUN_01"
+			template = "SMALL_CRYSTAL_SHIP_YELLOW_ELITE_LIGHTNING"
 		}
 		component = {
-			slot = "SMALL_UTILITY_1"
-			template = "SMALL_AUTO_REPAIR"
+			slot = "SMALL_GUN_02"
+			template = "SMALL_CRYSTAL_SHIP_YELLOW_ELITE_LIGHTNING"
 		}
 		component = {
-			slot = "MEDIUM_UTILITY_1"
-			template = "MEDIUM_CRYSTAL_ARMOR_2"
+			slot = "SMALL_GUN_03"
+			template = "SMALL_CRYSTAL_SHIP_YELLOW_ELITE_LIGHTNING"
+		}
+		component = {
+			slot = "SMALL_GUN_04"
+			template = "SMALL_CRYSTAL_SHIP_YELLOW_ELITE_LIGHTNING"
+		}
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "AUTO_REPAIR"
+		}
+		component = {
+			slot = "AUX_UTILITY_2"
+			template = "CRYSTAL_ARMOR_1"
 		}
 	}
 }
@@ -497,12 +766,28 @@ ship_design = {
 			template = "LARGE_CRYSTAL_SHIP_YELLOW_ELITE_LIGHTNING"
 		}
 		component = {
-			slot = "SMALL_UTILITY_1"
-			template = "SMALL_AUTO_REPAIR"
+			slot = "MEDIUM_GUN_01"
+			template = "MEDIUM_CRYSTAL_SHIP_YELLOW_ELITE_LIGHTNING"
 		}
 		component = {
-			slot = "LARGE_UTILITY_1"
-			template = "LARGE_CRYSTAL_ARMOR_2"
+			slot = "MEDIUM_GUN_02"
+			template = "MEDIUM_CRYSTAL_SHIP_YELLOW_ELITE_LIGHTNING"
+		}
+		component = {
+			slot = "MEDIUM_GUN_03"
+			template = "MEDIUM_CRYSTAL_SHIP_YELLOW_ELITE_LIGHTNING"
+		}
+		component = {
+			slot = "MEDIUM_GUN_04"
+			template = "MEDIUM_CRYSTAL_SHIP_YELLOW_ELITE_LIGHTNING"
+		}
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "AUTO_REPAIR"
+		}
+		component = {
+			slot = "AUX_UTILITY_2"
+			template = "CRYSTAL_ARMOR_1"
 		}
 	}
 }
@@ -516,18 +801,26 @@ ship_design = {
 	section = {
 		template = "crystal_ship_small_red_elite_section"
 		slot = "mid"
-		
+
 		component = {
 			slot = "SMALL_GUN_01"
 			template = "SMALL_CRYSTAL_SHIP_RED_ELITE_LIGHTNING"
 		}
 		component = {
-			slot = "MEDIUM_GUN_01"
+			slot = "SMALL_GUN_02"
 			template = "SMALL_CRYSTAL_SHIP_RED_ELITE_LIGHTNING"
 		}
 		component = {
-			slot = "SMALL_UTILITY_1"
-			template = "SMALL_AUTO_REPAIR"
+			slot = "SMALL_GUN_03"
+			template = "SMALL_CRYSTAL_SHIP_RED_ELITE_LIGHTNING"
+		}
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "AUTO_REPAIR"
+		}
+		component = {
+			slot = "AUX_UTILITY_2"
+			template = "CRYSTAL_ARMOR_1"
 		}
 	}
 }
@@ -546,16 +839,28 @@ ship_design = {
 			template = "MEDIUM_CRYSTAL_SHIP_RED_ELITE_LIGHTNING"
 		}
 		component = {
-			slot = "MEDIUM_GUN_01"
-			template = "MEDIUM_CRYSTAL_SHIP_RED_ELITE_LIGHTNING"
+			slot = "SMALL_GUN_01"
+			template = "SMALL_CRYSTAL_SHIP_RED_ELITE_LIGHTNING"
 		}
 		component = {
-			slot = "SMALL_UTILITY_1"
-			template = "SMALL_AUTO_REPAIR"
+			slot = "SMALL_GUN_02"
+			template = "SMALL_CRYSTAL_SHIP_RED_ELITE_LIGHTNING"
+		}		
+		component = {
+			slot = "SMALL_GUN_03"
+			template = "SMALL_CRYSTAL_SHIP_RED_ELITE_LIGHTNING"
 		}
 		component = {
-			slot = "MEDIUM_UTILITY_1"
-			template = "MEDIUM_CRYSTAL_ARMOR_2"
+			slot = "SMALL_GUN_04"
+			template = "SMALL_CRYSTAL_SHIP_RED_ELITE_LIGHTNING"
+		}
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "AUTO_REPAIR"
+		}
+		component = {
+			slot = "AUX_UTILITY_2"
+			template = "CRYSTAL_ARMOR_1"
 		}
 	}
 }
@@ -574,12 +879,96 @@ ship_design = {
 			template = "LARGE_CRYSTAL_SHIP_RED_ELITE_LIGHTNING"
 		}
 		component = {
-			slot = "SMALL_UTILITY_1"
-			template = "SMALL_AUTO_REPAIR"
+			slot = "MEDIUM_GUN_01"
+			template = "MEDIUM_CRYSTAL_SHIP_RED_ELITE_LIGHTNING"
 		}
 		component = {
-			slot = "LARGE_UTILITY_1"
-			template = "LARGE_CRYSTAL_ARMOR_2"
+			slot = "MEDIUM_GUN_02"
+			template = "MEDIUM_CRYSTAL_SHIP_RED_ELITE_LIGHTNING"
+		}
+		component = {
+			slot = "MEDIUM_GUN_03"
+			template = "MEDIUM_CRYSTAL_SHIP_RED_ELITE_LIGHTNING"
+		}
+		component = {
+			slot = "MEDIUM_GUN_04"
+			template = "MEDIUM_CRYSTAL_SHIP_RED_ELITE_LIGHTNING"
+		}
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "AUTO_REPAIR"
+		}
+		component = {
+			slot = "AUX_UTILITY_2"
+			template = "CRYSTAL_ARMOR_1"
+		}
+	}
+}
+
+ship_design = {
+	name = "Crystal Nidus"
+	ship_size = crystal_station_large
+	hide_size = yes
+
+	section = {
+		template = "crystal_station_large_section"
+		slot = "mid"
+		
+		component = {
+			slot = "LARGE_GUN_01"
+			template = "LARGE_CRYSTAL_SHIP_RED_ELITE_LIGHTNING"
+		}
+		component = {
+			slot = "LARGE_GUN_02"
+			template = "LARGE_CRYSTAL_SHIP_YELLOW_ELITE_LIGHTNING"
+		}
+		component = {
+			slot = "LARGE_GUN_03"
+			template = "LARGE_CRYSTAL_SHIP_GREEN_ELITE_LIGHTNING"
+		}
+		component = {
+			slot = "LARGE_GUN_04"
+			template = "LARGE_CRYSTAL_SHIP_BLUE_ELITE_LIGHTNING"
+		}		
+		component = {
+			slot = "MEDIUM_GUN_01"
+			template = "MEDIUM_CRYSTAL_SHIP_RED_ELITE_LIGHTNING"
+		}
+		component = {
+			slot = "MEDIUM_GUN_02"
+			template = "MEDIUM_CRYSTAL_SHIP_YELLOW_ELITE_LIGHTNING"
+		}
+		component = {
+			slot = "MEDIUM_GUN_03"
+			template = "MEDIUM_CRYSTAL_SHIP_GREEN_ELITE_LIGHTNING"
+		}
+		component = {
+			slot = "MEDIUM_GUN_04"
+			template = "MEDIUM_CRYSTAL_SHIP_BLUE_ELITE_LIGHTNING"
+		}		
+		component = {
+			slot = "SMALL_GUN_01"
+			template = "SMALL_CRYSTAL_SHIP_RED_ELITE_LIGHTNING"
+		}
+		component = {
+			slot = "SMALL_GUN_02"
+			template = "SMALL_CRYSTAL_SHIP_YELLOW_ELITE_LIGHTNING"
+		}
+		component = {
+			slot = "SMALL_GUN_03"
+			template = "SMALL_CRYSTAL_SHIP_GREEN_ELITE_LIGHTNING"
+		}
+		component = {
+			slot = "SMALL_GUN_04"
+			template = "SMALL_CRYSTAL_SHIP_BLUE_ELITE_LIGHTNING"
+		}		
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "AUTO_REPAIR"
+		}
+		component = {
+			slot = "AUX_UTILITY_2"
+			template = "CRYSTAL_ARMOR_2"
 		}
 	}
 }

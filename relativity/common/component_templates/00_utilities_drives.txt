@@ -6,9 +6,9 @@
 @ftl4 = 30
 
 @power1 = -5
-@power2 = -10
-@power3 = -15
-@power4 = -30
+@power2 = -7.5
+@power3 = -10
+@power4 = -10
 
 #############
 # UTILITIES #
@@ -212,5 +212,29 @@ utility_component_template = {
 
 	class_restriction = { shipclass_military shipclass_constructor shipclass_colonizer shipclass_science_ship shipclass_transport }
 	prerequisites = { "tech_psi_jump_drive_1" }
+	component_set = "ftl_components"
+}
+
+utility_component_template = {
+	key = "NOMAD_WARP_DRIVE"
+	hidden = yes
+	size = small
+	icon = "GFX_ship_part_warp_drive_3"
+	icon_frame = 1
+	power = @power3
+	cost = @ftl3
+	ftl = warp
+	ship_modifier = {
+		ship_ftl_warp_range_mult = 1.0
+		ship_interstellar_speed_mult = 0.10
+		ship_winddown_mult = -3
+	}
+	
+	ai_weight = {
+		weight = 3
+	}
+
+	class_restriction = { shipclass_military shipclass_constructor shipclass_colonizer shipclass_science_ship shipclass_transport }
+	#prerequisites = { "tech_warp_drive_3" }
 	component_set = "ftl_components"
 }

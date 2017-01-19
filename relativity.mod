@@ -8,5 +8,5 @@ tags={
 	"Gameplay"
 }
 picture="relativity-icon.jpg"
-supported_version="1.2.*"
+supported_version="1.4.*"
 replace_path = "common/technology"`

@@ -1,11 +1,11 @@
-@hit2 = 2
-@hit3 = 4
-@hit4 = 6
+@hit2 = 3
+@hit3 = 6
+@hit4 = 9
 
 @sensor1 = 20
-@sensor2 = 25
-@sensor3 = 30
-@sensor4 = 40
+@sensor2 = 30
+@sensor3 = 40
+@sensor4 = 50
 
 utility_component_template = {
 	key = "SHIP_SENSOR_1"
@@ -19,7 +19,7 @@ utility_component_template = {
 	component_set = "ship_sensor_components"
 	
 	ai_weight = {
-		weight = 70
+		weight = 1
 	}	
 }
 
@@ -28,19 +28,19 @@ utility_component_template = {
 	size = medium
 	icon = "GFX_ship_part_sensor_2"
 	icon_frame = 1
-	power = 0
+	power = -5
 	cost = 10
 	sensor_range = @sensor2
 	
-	prerequisites = { "tech_sensors_8" }
+	prerequisites = { "tech_sensors_2" }
 	component_set = "ship_sensor_components"
 	
 	ship_modifier = {
-		ship_accuracy_add = @hit2
+		ship_tracking_add = @hit2
 	}
 	
 	ai_weight = {
-		weight = 80
+		weight = 10
 	}	
 }
 
@@ -49,19 +49,19 @@ utility_component_template = {
 	size = medium
 	icon = "GFX_ship_part_sensor_3"
 	icon_frame = 1
-	power = 0
+	power = -10
 	cost = 10
 	sensor_range = @sensor3
 	
-	prerequisites = { "tech_sensors_12" }
+	prerequisites = { "tech_sensors_3" }
 	component_set = "ship_sensor_components"
 	
 	ship_modifier = {
-		ship_accuracy_add = @hit3
+		ship_tracking_add = @hit3
 	}
 	
 	ai_weight = {
-		weight = 90
+		weight = 100
 	}	
 }
 
@@ -70,19 +70,19 @@ utility_component_template = {
 	size = medium
 	icon = "GFX_ship_part_sensor_4"
 	icon_frame = 1
-	power = 0
+	power = -15
 	cost = 10
 	sensor_range = @sensor4
 	
 	ship_modifier = {
-		ship_accuracy_add = @hit4
+		ship_tracking_add = @hit4
 	}
 	
 	prerequisites = { "tech_sensors_4" }
 	component_set = "ship_sensor_components"
 	
 	ai_weight = {
-		weight = 100
+		weight = 1000
 	}	
 }
 
@@ -107,19 +107,19 @@ utility_component_template = {
 	size = medium
 	icon = "GFX_ship_part_sensor_2"
 	icon_frame = 1
-	power = 0
+	power = -5
 	cost = 10
 	sensor_range = @sensor2
 	
 	ship_modifier = {
-		ship_accuracy_add = @hit2
+		ship_tracking_add = @hit2
 	}
 	
-	prerequisites = { "tech_sensors_8" }
+	prerequisites = { "tech_sensors_2" }
 	component_set = "station_sensor_components"
 	
 	ai_weight = {
-		weight = 80
+		weight = 10
 	}	
 }
 
@@ -128,19 +128,19 @@ utility_component_template = {
 	size = medium
 	icon = "GFX_ship_part_sensor_3"
 	icon_frame = 1
-	power = 0
+	power = -10
 	cost = 10
 	sensor_range = @sensor3
 	
 	ship_modifier = {
-		ship_accuracy_add = @hit3
+		ship_tracking_add = @hit3
 	}
 	
-	prerequisites = { "tech_sensors_12" }
+	prerequisites = { "tech_sensors_3" }
 	component_set = "station_sensor_components"
 	
 	ai_weight = {
-		weight = 90
+		weight = 100
 	}	
 }
 
@@ -149,18 +149,18 @@ utility_component_template = {
 	size = medium
 	icon = "GFX_ship_part_sensor_4"
 	icon_frame = 1
-	power = 0
+	power = -15
 	cost = 10
 	sensor_range = @sensor4
 	
 	ship_modifier = {
-		ship_accuracy_add = @hit4
+		ship_tracking_add = @hit4
 	}
 	
 	prerequisites = { "tech_sensors_4" }
 	component_set = "station_sensor_components"
 	
 	ai_weight = {
-		weight = 100
+		weight = 1000
 	}	
 }

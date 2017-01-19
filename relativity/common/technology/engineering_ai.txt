@@ -523,6 +523,62 @@ tech_administrative_ai = {
 	}
 }
 
+tech_combat_computers_1 = {
+	area = engineering
+	tier = 1
+	cost = @tier1cost2
+	category = { ai }	
+	ai_update_type = military
+	prerequisites = { "tech_administrative_ai" }
+	weight = @tier1weight2
+	
+	# unlocks aggressive / defensive combat computers
+	
+	weight_modifier = {
+		modifier = {
+			factor = 2
+			has_technology = tech_spaceport_3
+		}
+		modifier = {
+			factor = 2
+			has_technology = tech_spaceport_4
+		}		
+		modifier = {
+			factor = 2
+			has_technology = tech_spaceport_5
+		}		
+		modifier = {
+			factor = 2
+			has_technology = tech_spaceport_6
+		}		
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_ai"
+			}
+		}
+	}
+	
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_COMBAT_COMPUTERS_1_TITLE"
+			desc = "TECH_UNLOCK_COMBAT_COMPUTERS_1_DESC"
+		}
+	}
+	
+	ai_weight = {
+		weight = 3
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_ai"
+			}
+		}
+	}
+}
+
 #AI-Controlled Colony Ships
 tech_cryostasis_1 = {
 	icon = "tech_robotic_workers"
@@ -670,6 +726,45 @@ tech_self_aware_logic = {
 	}
 }
 
+tech_combat_computers_2 = {
+	area = engineering
+	tier = 2
+	cost = @tier2cost2
+	category = { ai }
+	ai_update_type = military
+	prerequisites = { "tech_combat_computers_1" "tech_self_aware_logic" }
+	weight = @tier2weight2
+	
+	# unlocks additional combat computers
+	
+	weight_modifier = {	
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_ai"
+			}
+		}
+	}
+	
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_COMBAT_COMPUTERS_2_TITLE"
+			desc = "TECH_UNLOCK_COMBAT_COMPUTERS_2_DESC"
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_ai"
+			}
+		}
+	}
+}
+
 tech_sentient_ai = {
 	area = engineering
 	tier = 3
@@ -753,7 +848,66 @@ tech_sentient_ai = {
 	}
 }
 
-#Combat AI
+tech_combat_computers_3 = {
+	area = engineering
+	tier = 3
+	cost = @tier3cost2
+	category = { ai }
+	ai_update_type = military
+	is_rare = yes	
+	prerequisites = { "tech_combat_computers_2" "tech_sentient_ai" }
+	weight = @tier3weight2
+	
+	# unlocks sentient combat computers
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0.10
+			NOR = {
+				research_leader = {
+					area = physics
+					has_trait = "leader_trait_expertise_ai"
+				}
+				research_leader = {
+					area = physics
+					has_trait = "leader_trait_curator"
+				}
+				research_leader = {
+					area = physics
+					has_trait = "leader_trait_maniacal"
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_ai"
+				has_level > 2
+			}
+		}
+		#BREAKTHROUGH - check for scientist
+	}
+	
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_COMBAT_COMPUTERS_3_TITLE"
+			desc = "TECH_UNLOCK_COMBAT_COMPUTERS_3_DESC"
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_ai"
+			}
+		}
+	}
+}
+
+
 ###############
 ####Combat AI
 ###############
