@@ -138,7 +138,7 @@ tech_thrusters_5 = {
 			factor = 1.25
 			research_leader = {
 				area = engineering
-				has_trait = "leader_trait_expertise_rocketry"
+				has_trait = "leader_trait_expertise_thrusters"
 			}
 		}
 		modifier = {
@@ -177,7 +177,7 @@ tech_thrusters_6 = {
 			factor = 1.25
 			research_leader = {
 				area = engineering
-				has_trait = "leader_trait_expertise_rocketry"
+				has_trait = "leader_trait_expertise_thrusters"
 			}
 		}
 		modifier = {
@@ -196,6 +196,56 @@ tech_thrusters_6 = {
 		}
 	}
 }
+
+
+#Afterburners 1
+tech_afterburners_1 = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { rocketry }
+	ai_update_type = all	
+	prerequisites = { "tech_thrusters_6" }
+	weight = @tier2weight1
+	
+	weight_modifier = {
+		factor = 1.25
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_thrusters"
+			}
+		}
+		modifier = {
+			factor = 2
+			has_technology = tech_thrusters_2
+		}
+		modifier = {
+			factor = 2
+			has_technology = tech_thrusters_3
+		}
+	}
+	
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_AFTERBURNER_1_TITLE"
+			desc = "TECH_UNLOCK_AFTERBURNER_1_DESC"
+		}
+	}
+	
+	ai_weight = {
+		factor = 2 #important component
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_thrusters"
+			}
+		}
+	}
+}
+
 
 tech_thrusters_7 = {
 	area = engineering
@@ -216,7 +266,7 @@ tech_thrusters_7 = {
 			factor = 1.25
 			research_leader = {
 				area = engineering
-				has_trait = "leader_trait_expertise_rocketry"
+				has_trait = "leader_trait_expertise_thrusters"
 			}
 		}
 		modifier = {
@@ -253,7 +303,7 @@ tech_thrusters_2 = {
 			factor = 1.25
 			research_leader = {
 				area = engineering
-				has_trait = "leader_trait_expertise_rocketry"
+				has_trait = "leader_trait_expertise_thrusters"
 			}
 		}
 	}
@@ -271,7 +321,7 @@ tech_thrusters_2 = {
 			factor = 1.25
 			research_leader = {
 				area = engineering
-				has_trait = "leader_trait_expertise_rocketry"
+				has_trait = "leader_trait_expertise_thrusters"
 			}
 		}
 		modifier = {
@@ -310,7 +360,7 @@ tech_thrusters_8 = {
 			factor = 1.25
 			research_leader = {
 				area = engineering
-				has_trait = "leader_trait_expertise_rocketry"
+				has_trait = "leader_trait_expertise_thrusters"
 			}
 		}
 		modifier = {
@@ -349,7 +399,7 @@ tech_thrusters_9 = {
 			factor = 1.25
 			research_leader = {
 				area = engineering
-				has_trait = "leader_trait_expertise_rocketry"
+				has_trait = "leader_trait_expertise_thrusters"
 			}
 		}
 		modifier = {
@@ -365,6 +415,46 @@ tech_thrusters_9 = {
 		modifier = {
 			factor = 2
 			has_ethic = "ethic_fanatic_militarist"
+		}
+	}
+}
+
+#Advanced Afterburners
+tech_afterburners_2 = {
+	area = engineering
+	cost = @tier3cost1
+	tier = 3
+	category = { rocketry }
+	ai_update_type = all	
+	prerequisites = { "tech_afterburners_1" "tech_thrusters_9" }
+	weight = @tier3weight1
+	
+	weight_modifier = {
+		factor = 1.25
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_thrusters"
+			}
+		}
+	}
+	
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_AFTERBURNER_2_TITLE"
+			desc = "TECH_UNLOCK_AFTERBURNER_2_DESC"
+		}
+	}
+	
+	ai_weight = {
+		factor = 1.25 #important component
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_thrusters"
+			}
 		}
 	}
 }
@@ -388,7 +478,7 @@ tech_thrusters_10 = {
 			factor = 1.25
 			research_leader = {
 				area = engineering
-				has_trait = "leader_trait_expertise_rocketry"
+				has_trait = "leader_trait_expertise_thrusters"
 			}
 		}
 		modifier = {
@@ -427,7 +517,7 @@ tech_thrusters_11 = {
 			factor = 1.25
 			research_leader = {
 				area = engineering
-				has_trait = "leader_trait_expertise_rocketry"
+				has_trait = "leader_trait_expertise_thrusters"
 			}
 		}
 		modifier = {
@@ -464,7 +554,7 @@ tech_thrusters_3 = {
 			factor = 1.25
 			research_leader = {
 				area = engineering
-				has_trait = "leader_trait_expertise_rocketry"
+				has_trait = "leader_trait_expertise_thrusters"
 			}
 		}
 	}
@@ -482,7 +572,7 @@ tech_thrusters_3 = {
 			factor = 1.25
 			research_leader = {
 				area = engineering
-				has_trait = "leader_trait_expertise_rocketry"
+				has_trait = "leader_trait_expertise_thrusters"
 			}
 		}
 		modifier = {
@@ -521,7 +611,7 @@ tech_thrusters_12 = {
 			factor = 1.25
 			research_leader = {
 				area = engineering
-				has_trait = "leader_trait_expertise_rocketry"
+				has_trait = "leader_trait_expertise_thrusters"
 			}
 		}
 		modifier = {
@@ -560,7 +650,7 @@ tech_thrusters_13 = {
 			factor = 1.25
 			research_leader = {
 				area = engineering
-				has_trait = "leader_trait_expertise_rocketry"
+				has_trait = "leader_trait_expertise_thrusters"
 			}
 		}
 		modifier = {
@@ -599,7 +689,7 @@ tech_thrusters_14 = {
 			factor = 1.25
 			research_leader = {
 				area = engineering
-				has_trait = "leader_trait_expertise_rocketry"
+				has_trait = "leader_trait_expertise_thrusters"
 			}
 		}
 		modifier = {
@@ -638,7 +728,7 @@ tech_thrusters_15 = {
 			factor = 1.25
 			research_leader = {
 				area = engineering
-				has_trait = "leader_trait_expertise_rocketry"
+				has_trait = "leader_trait_expertise_thrusters"
 			}
 		}
 		modifier = {
@@ -675,7 +765,7 @@ tech_thrusters_4 = {
 			factor = 1.25
 			research_leader = {
 				area = engineering
-				has_trait = "leader_trait_expertise_rocketry"
+				has_trait = "leader_trait_expertise_thrusters"
 			}
 		}
 	}
@@ -693,7 +783,7 @@ tech_thrusters_4 = {
 			factor = 1.25
 			research_leader = {
 				area = engineering
-				has_trait = "leader_trait_expertise_rocketry"
+				has_trait = "leader_trait_expertise_thrusters"
 			}
 		}
 		modifier = {
@@ -732,7 +822,7 @@ tech_thrusters_16 = {
 			factor = 1.25
 			research_leader = {
 				area = engineering
-				has_trait = "leader_trait_expertise_rocketry"
+				has_trait = "leader_trait_expertise_thrusters"
 			}
 		}
 		modifier = {
@@ -771,7 +861,7 @@ tech_thrusters_17 = {
 			factor = 1.25
 			research_leader = {
 				area = engineering
-				has_trait = "leader_trait_expertise_rocketry"
+				has_trait = "leader_trait_expertise_thrusters"
 			}
 		}
 		modifier = {
@@ -810,7 +900,7 @@ tech_thrusters_18 = {
 			factor = 1.25
 			research_leader = {
 				area = engineering
-				has_trait = "leader_trait_expertise_rocketry"
+				has_trait = "leader_trait_expertise_thrusters"
 			}
 		}
 		modifier = {
@@ -849,7 +939,7 @@ tech_thrusters_19 = {
 			factor = 1.25
 			research_leader = {
 				area = engineering
-				has_trait = "leader_trait_expertise_rocketry"
+				has_trait = "leader_trait_expertise_thrusters"
 			}
 		}
 		modifier = {
@@ -888,7 +978,7 @@ tech_thrusters_20 = {
 			factor = 1.25
 			research_leader = {
 				area = engineering
-				has_trait = "leader_trait_expertise_rocketry"
+				has_trait = "leader_trait_expertise_thrusters"
 			}
 		}
 		modifier = {

@@ -344,6 +344,50 @@ tech_physics_lab_5 = {
 	}
 }
 
+tech_curator_lab = {
+	area = physics
+	category = { physics_labs }
+	prerequisites = { "tech_physics_lab_5" }
+	tier = 2
+	cost = @tier2cost3
+	is_reverse_engineerable = no
+	is_rare = yes
+	weight = @tier2weight3
+	
+	#unlocks Curator Exploration Lab
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0.50
+				has_modifier = "curator_insight"
+		}
+		modifier = {
+			factor = 3
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_curator"
+			}
+		}
+		modifier = {
+			factor = 0
+			NOR = {
+				research_leader = {
+					area = physics
+					has_trait = "leader_trait_curator"
+				}
+				has_modifier = "curator_insight"	
+			}
+		}
+	}
+		
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_CURATOR_LAB_1_TITLE"
+			desc = "TECH_UNLOCK_CURATOR_LAB_1_DESC"
+		}
+	}
+}
+
 tech_physics_lab_6 = {
 	area = physics
 	icon = "tech_physics_lab_1"

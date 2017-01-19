@@ -277,6 +277,50 @@ tech_biolab_2 = {
 	}
 }
 
+tech_archeology_lab = {
+	area = society
+	category = { bio_labs }
+	prerequisites = { "tech_biolab_2" }
+	tier = 2
+	cost = @tier2cost3
+	is_reverse_engineerable = no
+	is_rare = yes
+	weight = @tier2weight3
+	
+	#unlocks Curator Archeology Lab
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0.50
+				has_modifier = "curator_insight"
+		}
+		modifier = {
+			factor = 3
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_curator"
+			}
+		}
+		modifier = {
+			factor = 0
+			NOR = {
+				research_leader = {
+					area = physics
+					has_trait = "leader_trait_curator"
+				}
+				has_modifier = "curator_insight"	
+			}
+		}
+	}
+		
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_CURATOR_LAB_2_TITLE"
+			desc = "TECH_UNLOCK_CURATOR_LAB_2_DESC"
+		}
+	}
+}
+
 tech_societal_research_4 = {
 	area = society
 	icon = "tech_biolab_1"

@@ -4,25 +4,25 @@
 #	ARMOR	#
 #############
 
-@armor_1S = 1
-@armor_1M = 2
-@armor_1L = 4
+@armor_1S = 2
+@armor_1M = 4
+@armor_1L = 8
 
-@armor_2S = 2
-@armor_2M = 4
-@armor_2L = 8
+@armor_2S = 2.5
+@armor_2M = 5
+@armor_2L = 10
 
 @armor_3S = 3
 @armor_3M = 6
 @armor_3L = 12
 
-@armor_4S = 4
-@armor_4M = 8
-@armor_4L = 16
+@armor_4S = 3.5
+@armor_4M = 7
+@armor_4L = 14
 
-@armor_5S = 5
-@armor_5M = 10
-@armor_5L = 20
+@armor_5S = 4
+@armor_5M = 8
+@armor_5L = 16
 
 #############
 #	COST	#
@@ -36,17 +36,17 @@
 @cost_2M = 8
 @cost_2L = 16
 
-@cost_3S = 8
-@cost_3M = 16
-@cost_3L = 32
+@cost_3S = 6
+@cost_3M = 12
+@cost_3L = 24
 
-@cost_4S = 16
-@cost_4M = 32
-@cost_4L = 64
+@cost_4S = 8
+@cost_4M = 16
+@cost_4L = 32
 
-@cost_5S = 32
-@cost_5M = 64
-@cost_5L = 128
+@cost_5S = 10
+@cost_5M = 20
+@cost_5L = 40
 
 #############
 # UTILITIES #
@@ -82,6 +82,7 @@ utility_component_template = {
 	
 	prerequisites = { "tech_ship_armor_1" }
 	component_set = "ARMOR_1"
+	upgrades_to = "SMALL_ARMOR_2"
 }
 
 utility_component_template = {
@@ -95,6 +96,7 @@ utility_component_template = {
 	
 	prerequisites = { "tech_ship_armor_1" }
 	component_set = "ARMOR_1"
+	upgrades_to = "MEDIUM_ARMOR_2"
 }
 
 utility_component_template = {
@@ -108,6 +110,7 @@ utility_component_template = {
 	
 	prerequisites = { "tech_ship_armor_1" }
 	component_set = "ARMOR_1"
+	upgrades_to = "LARGE_ARMOR_2"
 }
 
 # Durasteel Armor
@@ -122,6 +125,7 @@ utility_component_template = {
 	
 	prerequisites = { "tech_ship_armor_2" }
 	component_set = "ARMOR_2"
+	upgrades_to = "SMALL_ARMOR_3"
 }
 
 utility_component_template = {
@@ -135,6 +139,7 @@ utility_component_template = {
 	
 	prerequisites = { "tech_ship_armor_2" }
 	component_set = "ARMOR_2"
+	upgrades_to = "MEDIUM_ARMOR_3"
 }
 
 utility_component_template = {
@@ -148,6 +153,7 @@ utility_component_template = {
 	
 	prerequisites = { "tech_ship_armor_2" }
 	component_set = "ARMOR_2"
+	upgrades_to = "LARGE_ARMOR_3"
 }
 
 # Ceramo-Metal Armor
@@ -162,6 +168,7 @@ utility_component_template = {
 	
 	prerequisites = { "tech_ship_armor_3" }
 	component_set = "ARMOR_3"
+	upgrades_to = "SMALL_ARMOR_4"
 }
 
 utility_component_template = {
@@ -175,6 +182,7 @@ utility_component_template = {
 	
 	prerequisites = { "tech_ship_armor_3" }
 	component_set = "ARMOR_3"
+	upgrades_to = "MEDIUM_ARMOR_4"
 }
 
 utility_component_template = {
@@ -188,6 +196,7 @@ utility_component_template = {
 	
 	prerequisites = { "tech_ship_armor_3" }
 	component_set = "ARMOR_3"
+	upgrades_to = "LARGE_ARMOR_4"
 }
 
 # Nanocomposite Armor
@@ -202,6 +211,7 @@ utility_component_template = {
 	
 	prerequisites = { "tech_ship_armor_4" }
 	component_set = "ARMOR_4"
+	upgrades_to = "SMALL_ARMOR_5"
 }
 
 utility_component_template = {
@@ -215,6 +225,7 @@ utility_component_template = {
 	
 	prerequisites = { "tech_ship_armor_4" }
 	component_set = "ARMOR_4"
+	upgrades_to = "MEDIUM_ARMOR_5"
 }
 
 utility_component_template = {
@@ -228,6 +239,7 @@ utility_component_template = {
 	
 	prerequisites = { "tech_ship_armor_4" }
 	component_set = "ARMOR_4"
+	upgrades_to = "LARGE_ARMOR_5"
 }
 
 # Neutronium Armor
@@ -270,104 +282,6 @@ utility_component_template = {
 	component_set = "ARMOR_5"
 }
 
-# Crystal-Infused Plating 
-utility_component_template = {
-	key = "SMALL_CRYSTAL_ARMOR_1"
-	size = small
-	icon = "GFX_ship_part_crystal_armor_1"
-	icon_frame = 1
-	power = 0
-	cost = @cost_3S
-	
-	modifier = {
-		ship_hitpoints_add = 50
-	}
-	
-	prerequisites = { "tech_crystal_armor_1" }
-	component_set = "CRYSTAL_ARMOR_1"
-}
-
-utility_component_template = {
-	key = "MEDIUM_CRYSTAL_ARMOR_1"
-	size = medium
-	icon = "GFX_ship_part_crystal_armor_1"
-	icon_frame = 1
-	power = 0
-	cost = @cost_3M
-	
-	modifier = {
-		ship_hitpoints_add = 100
-	}
-	
-	prerequisites = { "tech_crystal_armor_1" }
-	component_set = "CRYSTAL_ARMOR_1"
-}
-
-utility_component_template = {
-	key = "LARGE_CRYSTAL_ARMOR_1"
-	size = large
-	icon = "GFX_ship_part_crystal_armor_1"
-	icon_frame = 1
-	power = 0
-	cost = @cost_3L
-	
-	modifier = {
-		ship_hitpoints_add = 200
-	}
-	
-	prerequisites = { "tech_crystal_armor_1" }
-	component_set = "CRYSTAL_ARMOR_1"
-}
-
-# Crystal-Forged Plating 
-utility_component_template = {
-	key = "SMALL_CRYSTAL_ARMOR_2"
-	size = small
-	icon = "GFX_ship_part_crystal_armor_2"
-	icon_frame = 1
-	power = 0
-	cost = @cost_5S
-	
-	modifier = {
-		ship_hitpoints_add = 100
-	}
-	
-	prerequisites = { "tech_crystal_armor_2" }
-	component_set = "CRYSTAL_ARMOR_2"
-}
-
-utility_component_template = {
-	key = "MEDIUM_CRYSTAL_ARMOR_2"
-	size = medium
-	icon = "GFX_ship_part_crystal_armor_2"
-	icon_frame = 1
-	power = 0
-	cost = @cost_5M
-	
-	modifier = {
-		ship_hitpoints_add = 200
-	}
-	
-	prerequisites = { "tech_crystal_armor_2" }
-	component_set = "CRYSTAL_ARMOR_2"
-}
-
-utility_component_template = {
-	key = "LARGE_CRYSTAL_ARMOR_2"
-	size = large
-	icon = "GFX_ship_part_crystal_armor_2"
-	icon_frame = 1
-	power = 0
-	cost = @cost_5L
-	
-	modifier = {
-		ship_hitpoints_add = 400
-	}
-	
-	prerequisites = { "tech_crystal_armor_2" }
-	component_set = "CRYSTAL_ARMOR_2"
-}
-
 utility_component_template = {
 	key = "BORDER_EXTRUDER_1"
 	size = medium
@@ -375,7 +289,7 @@ utility_component_template = {
 	icon_frame = 1
 	power = 0
 	cost = 20
-	border_extrusion_range = 15
+	border_extrusion_range = 20
 	class_restriction = { shipclass_outpost_station }
 	
 	component_set = "border_extruders"
@@ -383,6 +297,8 @@ utility_component_template = {
 	ai_weight = {
 		weight = 1
 	}
+	
+	upgrades_to = "BORDER_EXTRUDER_2"
 }
 
 utility_component_template = {
@@ -401,6 +317,8 @@ utility_component_template = {
 	ai_weight = {
 		weight = 2
 	}
+	
+	upgrades_to = "BORDER_EXTRUDER_3"
 }
 
 utility_component_template = {
@@ -420,4 +338,40 @@ utility_component_template = {
 		weight = 3
 	}
 }
+
+# Extradimensional Border Extruder
+utility_component_template = {
+	key = "BORDER_EXTRUDER_ED"
+	size = medium
+	icon = "GFX_ship_part_border_extruder_3"
+	icon_frame = 1
+	power = 0
+	cost = 20
+	border_extrusion_range = 50
+	class_restriction = { shipclass_outpost_station }
+	hidden = yes
+	
+	component_set = "border_extruders"
+	
+	ai_weight = {
+		weight = 3
+	}
+}
+
+#utility_component_template = {
+#	key = "AUX_ARMOR"
+#	size = aux
+#	icon = "GFX_ship_part_border_extruder_3"
+#	icon_frame = 1
+#	power = 0
+#	cost = 20
+#	armor_value = 50
+#	hidden = yes
+#	
+#	component_set = "ARMOR_1"
+#	
+#	ai_weight = {
+#		weight = 3
+#	}
+#}
 

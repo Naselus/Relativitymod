@@ -4,25 +4,25 @@
 #	POWER	#
 #############
 
-@power_S1 = -5
-@power_M1 = -10
-@power_L1 = -20
+@power_S1 = -2.5
+@power_M1 = -5
+@power_L1 = -10
              
-@power_S2 = -7.5
-@power_M2 = -15
-@power_L2 = -30
+@power_S2 = -5
+@power_M2 = -10
+@power_L2 = -20
              
-@power_S3 = -10
-@power_M3 = -20
-@power_L3 = -40
+@power_S3 = -7.5
+@power_M3 = -15
+@power_L3 = -30
              
-@power_S4 = -12.5
-@power_M4 = -25
-@power_L4 = -50
+@power_S4 = -10
+@power_M4 = -20
+@power_L4 = -40
              
-@power_S5 = -15
-@power_M5 = -30
-@power_L5 = -60
+@power_S5 = -12.5
+@power_M5 = -25
+@power_L5 = -50
 
 #############
 #	COST	#
@@ -32,45 +32,45 @@
 @cost_M1 = 10
 @cost_L1 = 20
            
-@cost_S2 = 10
-@cost_M2 = 20
-@cost_L2 = 40
+@cost_S2 = 7.5
+@cost_M2 = 15
+@cost_L2 = 30
            
-@cost_S3 = 20
-@cost_M3 = 40
-@cost_L3 = 80
+@cost_S3 = 10
+@cost_M3 = 20
+@cost_L3 = 40
            
-@cost_S4 = 40
-@cost_M4 = 80
-@cost_L4 = 160
+@cost_S4 = 12.5
+@cost_M4 = 25
+@cost_L4 = 50
            
-@cost_S5 = 80
-@cost_M5 = 160
-@cost_L5 = 320
+@cost_S5 = 15
+@cost_M5 = 30
+@cost_L5 = 60
 
 #############
 #	SHIELD	#
 #############
 
-@shield_S1 = 25
-@shield_M1 = 50
-@shield_L1 = 100
+@shield_S1 = 20
+@shield_M1 = 40
+@shield_L1 = 80
 
-@shield_S2 = 50
-@shield_M2 = 100
-@shield_L2 = 200
+@shield_S2 = 30
+@shield_M2 = 60
+@shield_L2 = 120
 
-@shield_S3 = 100
-@shield_M3 = 200
-@shield_L3 = 400
+@shield_S3 = 45
+@shield_M3 = 90
+@shield_L3 = 180
 
-@shield_S4 = 200
-@shield_M4 = 400
-@shield_L4 = 800
+@shield_S4 = 70
+@shield_M4 = 140
+@shield_L4 = 280
 
-@shield_S5 = 400
-@shield_M5 = 800
-@shield_L5 = 1600
+@shield_S5 = 105
+@shield_M5 = 210
+@shield_L5 = 420
 
 #############
 # UTILITIES #
@@ -90,6 +90,7 @@ utility_component_template = {
 	}
 	prerequisites = { "tech_shields_1" }
 	component_set = "SHIELD_1"
+	upgrades_to = "SMALL_SHIELD_2"
 }
 
 utility_component_template = {
@@ -105,6 +106,7 @@ utility_component_template = {
 	}
 	prerequisites = { "tech_shields_1" }
 	component_set = "SHIELD_1"
+	upgrades_to = "MEDIUM_SHIELD_2"
 }
 
 utility_component_template = {
@@ -120,6 +122,7 @@ utility_component_template = {
 	}
 	prerequisites = { "tech_shields_1" }
 	component_set = "SHIELD_1"
+	upgrades_to = "LARGE_SHIELD_2"
 }
 
 # Advanced Deflectors
@@ -136,6 +139,7 @@ utility_component_template = {
 	}
 	prerequisites = { "tech_shields_2" }
 	component_set = "SHIELD_2"
+	upgrades_to = "SMALL_SHIELD_3"
 }
 
 utility_component_template = {
@@ -151,6 +155,7 @@ utility_component_template = {
 	}
 	prerequisites = { "tech_shields_2" }
 	component_set = "SHIELD_2"
+	upgrades_to = "MEDIUM_SHIELD_3"
 }
 
 utility_component_template = {
@@ -166,6 +171,7 @@ utility_component_template = {
 	}
 	prerequisites = { "tech_shields_2" }
 	component_set = "SHIELD_2"
+	upgrades_to = "LARGE_SHIELD_3"
 }
 
 # Shields
@@ -182,6 +188,7 @@ utility_component_template = {
 	}
 	prerequisites = { "tech_shields_3" }
 	component_set = "SHIELD_3"
+	upgrades_to = "SMALL_SHIELD_4"
 }
 
 utility_component_template = {
@@ -197,6 +204,7 @@ utility_component_template = {
 	}
 	prerequisites = { "tech_shields_3" }
 	component_set = "SHIELD_3"
+	upgrades_to = "MEDIUM_SHIELD_4"
 }
 
 utility_component_template = {
@@ -212,6 +220,7 @@ utility_component_template = {
 	}
 	prerequisites = { "tech_shields_3" }
 	component_set = "SHIELD_3"
+	upgrades_to = "LARGE_SHIELD_4"
 }
 
 # Advanced Shields
@@ -228,6 +237,7 @@ utility_component_template = {
 	}
 	prerequisites = { "tech_shields_4" }
 	component_set = "SHIELD_4"
+	upgrades_to = "SMALL_SHIELD_5"
 }
 
 utility_component_template = {
@@ -243,6 +253,7 @@ utility_component_template = {
 	}
 	prerequisites = { "tech_shields_4" }
 	component_set = "SHIELD_4"
+	upgrades_to = "MEDIUM_SHIELD_5"
 }
 
 utility_component_template = {
@@ -258,6 +269,7 @@ utility_component_template = {
 	}
 	prerequisites = { "tech_shields_4" }
 	component_set = "SHIELD_4"
+	upgrades_to = "LARGE_SHIELD_5"
 }
 
 # Hyper Shields
@@ -273,6 +285,7 @@ utility_component_template = {
 		ship_shield_regen_add = 3.6 #Regeneration per day
 	}
 	prerequisites = { "tech_shields_5" }
+	upgrades_to = "SMALL_ENIGMATIC_SHIELD"
 	component_set = "SHIELD_5"
 }
 
@@ -288,6 +301,7 @@ utility_component_template = {
 		ship_shield_regen_add = 5.6 #Regeneration per day
 	}
 	prerequisites = { "tech_shields_5" }
+	upgrades_to = "MEDIUM_ENIGMATIC_SHIELD"
 	component_set = "SHIELD_5"
 }
 
@@ -303,51 +317,6 @@ utility_component_template = {
 		ship_shield_regen_add = 7.6 #Regeneration per day
 	}
 	prerequisites = { "tech_shields_5" }
+	upgrades_to = "LARGE_ENIGMATIC_SHIELD"
 	component_set = "SHIELD_5"
-}
-
-# Shield Recharger
-utility_component_template = {
-	can_recharge_shield = yes
-	key = "SMALL_SHIELD_RECHARGER"
-	size = small
-	icon = "GFX_ship_part_shield_recharger"
-	icon_frame = 1
-	power = @power_S4
-	cost = @cost_S4
-	modifier = {
-		ship_shield_regen_add = 5 #Regeneration per day
-	}
-	prerequisites = { "tech_shield_rechargers_1" }
-	component_set = "SHIELD_RECHARGER"
-}
-
-utility_component_template = {
-	can_recharge_shield = yes
-	key = "MEDIUM_SHIELD_RECHARGER"
-	size = medium
-	icon = "GFX_ship_part_shield_recharger"
-	icon_frame = 1
-	power = @power_M4
-	cost = @cost_M4
-	modifier = {
-		ship_shield_regen_add = 10.0 #Regeneration per day
-	}
-	prerequisites = { "tech_shield_rechargers_1" }
-	component_set = "SHIELD_RECHARGER"
-}
-
-utility_component_template = {
-	can_recharge_shield = yes
-	key = "LARGE_SHIELD_RECHARGER"
-	size = large
-	icon = "GFX_ship_part_shield_recharger"
-	icon_frame = 1
-	power = @power_L4
-	cost = @cost_L4
-	modifier = {
-		ship_shield_regen_add = 15.0 #Regeneration per day
-	}
-	prerequisites = { "tech_shield_rechargers_1" }
-	component_set = "SHIELD_RECHARGER"
 }

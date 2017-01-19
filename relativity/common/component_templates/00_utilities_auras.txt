@@ -85,8 +85,9 @@ utility_component_template = {
 	size = medium
 	icon = "GFX_ship_part_aura_nanobot"
 	icon_frame = 1
-	power = -200
-	cost = 250
+	power = 0
+	cost = 0
+	hidden = yes
 	
 	component_set = "ship_aura_components"
 	
@@ -249,8 +250,9 @@ utility_component_template = {
 	size = medium
 	icon = "GFX_ship_part_aura_shield_recharger"
 	icon_frame = 1
-	power = -200
-	cost = 250
+	power = 0
+	cost = 0
+	hidden = yes
 	
 	component_set = "ship_aura_components"
 	
@@ -283,7 +285,6 @@ utility_component_template = {
 	ai_weight = {
 		weight = 0
 	}
-	prerequisites = { "tech_shield_recharge_aura_1" }
 }
 
 utility_component_template = {
@@ -295,6 +296,7 @@ utility_component_template = {
 	cost = 0
 	
 	component_set = "station_small_aura_components"
+	prerequisites = { "tech_shield_recharge_aura_1" }
 	
 	friendly_aura = {
 		name = "aura_shield_recharger"
@@ -325,7 +327,6 @@ utility_component_template = {
 	ai_weight = {
 		weight = 3
 	}
-	prerequisites = { "tech_shield_recharge_aura_1" }
 }
 
 utility_component_template = {
@@ -337,6 +338,7 @@ utility_component_template = {
 	cost = 0
 	
 	component_set = "station_medium_aura_components"
+	prerequisites = { "tech_shield_recharge_aura_1" }
 	
 	friendly_aura = {
 		name = "aura_shield_recharger"
@@ -367,7 +369,6 @@ utility_component_template = {
 	ai_weight = {
 		weight = 3
 	}
-	prerequisites = { "tech_shield_recharge_aura_1" }
 }
 
 utility_component_template = {
@@ -379,6 +380,7 @@ utility_component_template = {
 	cost = 0
 	
 	component_set = "station_large_aura_components"
+	prerequisites = { "tech_shield_recharge_aura_1" }
 	
 	friendly_aura = {
 		name = "aura_shield_recharger"
@@ -409,7 +411,6 @@ utility_component_template = {
 	ai_weight = {
 		weight = 3
 	}
-	prerequisites = { "tech_shield_recharge_aura_1" }
 }
 
 # #################
@@ -421,8 +422,9 @@ utility_component_template = {
 	size = medium
 	icon = "GFX_ship_part_aura_shield_dampener"
 	icon_frame = 1
-	power = -200
-	cost = 250
+	power = 0
+	cost = 0
+	hidden = yes
 	
 	component_set = "ship_aura_components"
 	
@@ -601,8 +603,9 @@ utility_component_template = {
 	size = medium
 	icon = "GFX_ship_part_aura_quantum_destabilizer"
 	icon_frame = 1
-	power = -200
-	cost = 250
+	power = 0
+	cost = 0
+	hidden = yes
 	
 	component_set = "ship_aura_components"
 	
@@ -635,8 +638,6 @@ utility_component_template = {
 	ai_weight = {
 		weight = 0
 	}
-	
-	prerequisites = {"tech_aura_quantum_destabilizer"}
 }
 
 utility_component_template = {
@@ -648,6 +649,7 @@ utility_component_template = {
 	cost = 0
 	
 	component_set = "station_small_aura_components"
+	prerequisites = {"tech_aura_quantum_destabilizer"}
 	
 	hostile_aura = {
 		name = "aura_quantum_destabilizer"
@@ -677,9 +679,7 @@ utility_component_template = {
 	
 	ai_weight = {
 		weight = 4
-	}
-	
-	prerequisites = {"tech_aura_quantum_destabilizer"}
+	}	
 }
 
 utility_component_template = {
@@ -690,7 +690,8 @@ utility_component_template = {
 	power = 0
 	cost = 0
 	
-	component_set = "station_medium_aura_components"
+	component_set = "station_medium_aura_components"	
+	prerequisites = {"tech_aura_quantum_destabilizer"}
 	
 	hostile_aura = {
 		name = "aura_quantum_destabilizer"
@@ -721,8 +722,6 @@ utility_component_template = {
 	ai_weight = {
 		weight = 4
 	}
-	
-	prerequisites = {"tech_aura_quantum_destabilizer"}
 }
 
 utility_component_template = {
@@ -733,7 +732,8 @@ utility_component_template = {
 	power = 0
 	cost = 0
 	
-	component_set = "station_large_aura_components"
+	component_set = "station_large_aura_components"	
+	prerequisites = {"tech_aura_quantum_destabilizer"}
 	
 	hostile_aura = {
 		name = "aura_quantum_destabilizer"
@@ -764,8 +764,6 @@ utility_component_template = {
 	ai_weight = {
 		weight = 4
 	}
-	
-	prerequisites = {"tech_aura_quantum_destabilizer"}
 }
 
 utility_component_template = {
@@ -773,8 +771,9 @@ utility_component_template = {
 	size = medium
 	icon = "GFX_ship_part_aura_snare"
 	icon_frame = 1
-	power = -200
-	cost = 250
+	power = 0
+	cost = 0
+	hidden = yes
 	
 	component_set = "ship_aura_components"
 	

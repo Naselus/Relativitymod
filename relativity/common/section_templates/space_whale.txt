@@ -1,4 +1,4 @@
-# Large Space Whale Section
+# Space Whale Cow Section
 ship_section_template = {
 	key = "space_whale_1_section"
 	ship_size = space_whale_1
@@ -7,16 +7,41 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_mid"
 	
 	component_slot = {
-		name = "LARGE_GUN_01"
-		slot_size = large
+		name = "SMALL_GUN_01"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_02"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_03"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_04"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_05"
+		slot_size = small
 		slot_type = weapon
 		locatorname = "gun_01"
 	}
 	
 	small_utility_slots = 1
+	aux_utility_slots = 1
 }
 
-# Medium Space Whale Section
+# Space Whale Bull Section
 ship_section_template = {
 	key = "space_whale_2_section"
 	ship_size = space_whale_2
@@ -25,16 +50,41 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_mid"
 	
 	component_slot = {
-		name = "MEDIUM_GUN_01"
-		slot_size = medium
+		name = "SMALL_GUN_01"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_02"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_03"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_04"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_05"
+		slot_size = small
 		slot_type = weapon
 		locatorname = "gun_01"
 	}
 	
 	small_utility_slots = 1
+	aux_utility_slots = 1
 }
 
-# Small Space Whale Section
+# Space Whale Calf Section
 ship_section_template = {
 	key = "space_whale_3_section"
 	ship_size = space_whale_3
@@ -48,11 +98,24 @@ ship_section_template = {
 		slot_type = weapon
 		locatorname = "gun_01"
 	}
+	component_slot = {
+		name = "SMALL_GUN_02"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_03"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "gun_01"
+	}
 	
 	small_utility_slots = 1
+	aux_utility_slots = 1
 }
 
-# Matriarch Space Whale Section
+# Matriarch Space Whale Section (Unused)
 ship_section_template = {
 	key = "space_whale_4_section"
 	ship_size = space_whale_4
@@ -60,24 +123,44 @@ ship_section_template = {
 	entity = "space_whale_albino_section_entity"
 	icon = "GFX_ship_part_core_mid"
 	
+	
 	component_slot = {
-		name = "LARGE_GUN_01"
-		slot_size = large
+		name = "SMALL_GUN_01"
+		slot_size = small
 		slot_type = weapon
 		locatorname = "gun_01"
 	}
 	component_slot = {
-		name = "LARGE_GUN_02"
-		slot_size = large
+		name = "SMALL_GUN_02"
+		slot_size = small
 		slot_type = weapon
 		locatorname = "gun_01"
 	}
 	component_slot = {
-		name = "LARGE_GUN_03"
-		slot_size = large
+		name = "SMALL_GUN_03"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_04"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_05"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_06"
+		slot_size = small
 		slot_type = weapon
 		locatorname = "gun_01"
 	}
 	
-	large_utility_slots = 3
+	large_utility_slots = 1
+	aux_utility_slots = 1
 }

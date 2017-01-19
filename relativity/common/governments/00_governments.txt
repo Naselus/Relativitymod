@@ -14,7 +14,12 @@ military_dictatorship = {
 	icon = "gfx/interface/icons/governments/militarist_empire.dds"
 	
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+		hidden_trigger = { 
+			NOR = { 
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire 
+			} 		
+		}
 	}
 
 	ethics = {
@@ -66,7 +71,12 @@ martial_empire = {
 	prerequisites = { "tech_galactic_administration" }
 	
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+		hidden_trigger = { 
+			NOR = { 
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire 
+			} 		
+		}
 	}
 
 	ethics = {
@@ -118,7 +128,12 @@ martial_empire = {
 military_junta = {
 	icon = "gfx/interface/icons/governments/militarist_oligarchy.dds"
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+		hidden_trigger = { 
+			NOR = { 
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire 
+			} 		
+		}
 	}
 
 	ethics = {
@@ -174,7 +189,12 @@ ordered_stratocracy = {
 	prerequisites = { "tech_galactic_administration" }
 
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+		hidden_trigger = { 
+			NOR = { 
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire 
+			} 		
+		}
 	}
 
 	ethics = {
@@ -228,7 +248,12 @@ ordered_stratocracy = {
 military_republic = {
 	icon = "gfx/interface/icons/governments/militarist_democracy.dds"
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+		hidden_trigger = { 
+			NOR = { 
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire 
+			} 		
+		}
 	}
 
 	ethics = {
@@ -259,7 +284,12 @@ martial_demarchy = {
 	prerequisites = { "tech_galactic_administration" }
 	
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+		hidden_trigger = { 
+			NOR = { 
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire 
+			} 		
+		}
 	}
 
 	ethics = {
@@ -294,7 +324,12 @@ martial_demarchy = {
 moral_democracy = {
 icon = "gfx/interface/icons/governments/pacifist_democracy.dds"
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+		hidden_trigger = { 
+			NOR = { 
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire 
+			} 		
+		}
 	}
 
 	ethics = {
@@ -325,7 +360,12 @@ icon = "gfx/interface/icons/governments/pacifist_democracy_adv.dds"
 	prerequisites = { "tech_galactic_administration" }
 
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+		hidden_trigger = { 
+			NOR = { 
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire 
+			} 		
+		}
 	}
 
 	ethics = {
@@ -355,7 +395,12 @@ icon = "gfx/interface/icons/governments/pacifist_democracy_adv.dds"
 peaceful_bureaucracy = {
 icon = "gfx/interface/icons/governments/pacifist_oligarchy.dds"
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+		hidden_trigger = { 
+			NOR = { 
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire 
+			} 		
+		}
 	}
 
 	ethics = {
@@ -408,7 +453,12 @@ icon = "gfx/interface/icons/governments/pacifist_oligarchy_adv.dds"
 	prerequisites = { "tech_galactic_administration" }
 	
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+		hidden_trigger = { 
+			NOR = { 
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire 
+			} 		
+		}
 	}
 
 	ethics = {
@@ -464,7 +514,12 @@ icon = "gfx/interface/icons/governments/pacifist_empire.dds"
 	dynastic_last_names = yes
 	
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+		hidden_trigger = { 
+			NOR = { 
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire 
+			} 		
+		}
 	}
 
 	ethics = {
@@ -496,7 +551,12 @@ icon = "gfx/interface/icons/governments/pacifist_empire_adv.dds"
 	dynastic_last_names = yes
 	
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+		hidden_trigger = { 
+			NOR = { 
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire 
+			} 		
+		}
 	}
 
 	ethics = {
@@ -532,7 +592,12 @@ divine_mandate = {
 	dynastic_last_names = yes
 	
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+		hidden_trigger = { 
+			NOR = { 
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire 
+			} 		
+		}
 	}
 
 	ethics = {
@@ -564,7 +629,12 @@ transcendent_empire = {
 	dynastic_last_names = yes
 	
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+		hidden_trigger = { 
+			NOR = { 
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire 
+			} 		
+		}
 	}
 
 	ethics = {
@@ -591,7 +661,12 @@ transcendent_empire = {
 theocratic_oligarchy = {
 	icon = "gfx/interface/icons/governments/spiritualist_oligarchy.dds"
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+		hidden_trigger = { 
+			NOR = { 
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire 
+			} 		
+		}
 	}
 
 	ethics = {
@@ -645,7 +720,12 @@ transcendent_oligarchy = {
 	prerequisites = { "tech_galactic_administration" }
 
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+		hidden_trigger = { 
+			NOR = { 
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire 
+			} 		
+		}
 	}
 
 	ethics = {
@@ -699,7 +779,12 @@ transcendent_oligarchy = {
 theocratic_republic = {
 	icon = "gfx/interface/icons/governments/spiritualist_democracy.dds"
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+		hidden_trigger = { 
+			NOR = { 
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire 
+			} 		
+		}
 	}
 
 	ethics = {
@@ -730,7 +815,12 @@ transcendent_republic = {
 	prerequisites = { "tech_galactic_administration" }
 	
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+		hidden_trigger = { 
+			NOR = { 
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire 
+			} 		
+		}
 	}
 
 	ethics = {
@@ -766,7 +856,12 @@ transcendent_republic = {
 direct_democracy = {
 	icon = "gfx/interface/icons/governments/materialist_democracy.dds"
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+		hidden_trigger = { 
+			NOR = { 
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire 
+			} 		
+		}
 	}
 
 	ethics = {
@@ -797,7 +892,12 @@ icon = "gfx/interface/icons/governments/materialist_democracy_adv.dds"
 	prerequisites = { "tech_galactic_administration" }
 	
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+		hidden_trigger = { 
+			NOR = { 
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire 
+			} 		
+		}
 	}
 
 	ethics = {
@@ -827,7 +927,12 @@ icon = "gfx/interface/icons/governments/materialist_democracy_adv.dds"
 science_directorate = {
 icon = "gfx/interface/icons/governments/materialist_oligarchy.dds"
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+		hidden_trigger = { 
+			NOR = { 
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire 
+			} 		
+		}
 	}
 
 	ethics = {
@@ -880,7 +985,12 @@ icon = "gfx/interface/icons/governments/materialist_oligarchy_adv.dds"
 	prerequisites = { "tech_galactic_administration" }
 	
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+		hidden_trigger = { 
+			NOR = { 
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire 
+			} 		
+		}
 	}
 
 	ethics = {
@@ -937,7 +1047,12 @@ icon = "gfx/interface/icons/governments/materialist_empire.dds"
 	dynastic_last_names = yes
 	
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+		hidden_trigger = { 
+			NOR = { 
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire 
+			} 		
+		}
 	}
 
 	ethics = {
@@ -967,7 +1082,12 @@ icon = "gfx/interface/icons/governments/materialist_empire_adv.dds"
 	dynastic_last_names = yes
 		
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+		hidden_trigger = { 
+			NOR = { 
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire 
+			} 		
+		}
 	}
 
 	ethics = {
@@ -999,7 +1119,12 @@ individualist_empire = {
 	dynastic_last_names = yes
 	
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+		hidden_trigger = { 
+			NOR = { 
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire 
+			} 		
+		}
 	}
 
 	ethics = {
@@ -1033,7 +1158,12 @@ individualist_empire_adv = {
 	dynastic_last_names = yes
 	
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+		hidden_trigger = { 
+			NOR = { 
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire 
+			} 		
+		}
 	}
 
 	ethics = {
@@ -1060,7 +1190,12 @@ individualist_empire_adv = {
 #  Oligarchy
 individualist_oligarchy = {
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+		hidden_trigger = { 
+			NOR = { 
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire 
+			} 		
+		}
 	}
 	ethics = {
 		OR = {
@@ -1111,7 +1246,12 @@ individualist_oligarchy_adv = {
 	prerequisites = { "tech_galactic_administration" }
 	
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+		hidden_trigger = { 
+			NOR = { 
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire 
+			} 		
+		}
 	}
 
 	ethics = {
@@ -1162,7 +1302,12 @@ individualist_oligarchy_adv = {
 
 individualist_democracy = {
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+		hidden_trigger = { 
+			NOR = { 
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire 
+			} 		
+		}
 	}
 
 	ethics = {
@@ -1193,7 +1338,12 @@ individualist_democracy_adv = {
 	prerequisites = { "tech_galactic_administration" }
 	
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+		hidden_trigger = { 
+			NOR = { 
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire 
+			} 		
+		}
 	}
 
 	ethics = {
@@ -1224,7 +1374,12 @@ individualist_democracy_adv = {
 
 collectivist_democracy = {
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+		hidden_trigger = { 
+			NOR = { 
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire 
+			} 		
+		}
 	}
 
 	ethics = {
@@ -1255,7 +1410,12 @@ collectivist_democracy_adv = {
 	prerequisites = { "tech_galactic_administration" }
 	
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+		hidden_trigger = { 
+			NOR = { 
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire 
+			} 		
+		}
 	}
 
 	ethics = {
@@ -1284,7 +1444,12 @@ collectivist_democracy_adv = {
 #  Oligarchy
 collectivist_oligarchy = {
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+		hidden_trigger = { 
+			NOR = { 
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire 
+			} 		
+		}
 	}
 	ethics = {
 		OR = {
@@ -1335,7 +1500,12 @@ collectivist_oligarchy_adv = {
 	prerequisites = { "tech_galactic_administration" }
 	
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+		hidden_trigger = { 
+			NOR = { 
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire 
+			} 		
+		}
 	}
 
 	ethics = {
@@ -1391,7 +1561,12 @@ collectivist_empire = {
 	dynastic_last_names = yes
 	
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+		hidden_trigger = { 
+			NOR = { 
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire 
+			} 		
+		}
 	}
 
 	ethics = {
@@ -1425,7 +1600,12 @@ collectivist_empire_adv = {
 	dynastic_last_names = yes
 	
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+		hidden_trigger = { 
+			NOR = { 
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire 
+			} 		
+		}
 	}
 
 	ethics = {
@@ -1459,7 +1639,12 @@ xenophobe_empire = {
 	dynastic_last_names = yes
 	
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+		hidden_trigger = { 
+			NOR = { 
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire 
+			} 		
+		}
 	}
 
 	ethics = {
@@ -1493,7 +1678,12 @@ xenophobe_empire_adv = {
 	dynastic_last_names = yes
 	
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+		hidden_trigger = { 
+			NOR = { 
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire 
+			} 		
+		}
 	}
 
 	ethics = {
@@ -1520,7 +1710,12 @@ xenophobe_empire_adv = {
 #  Oligarchy
 xenophobe_oligarchy = {
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+		hidden_trigger = { 
+			NOR = { 
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire 
+			} 		
+		}
 	}
 	ethics = {
 		OR = {
@@ -1571,7 +1766,12 @@ xenophobe_oligarchy_adv = {
 	prerequisites = { "tech_galactic_administration" }
 	
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+		hidden_trigger = { 
+			NOR = { 
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire 
+			} 		
+		}
 	}
 
 	ethics = {
@@ -1621,7 +1821,12 @@ xenophobe_oligarchy_adv = {
 
 xenophobe_democracy = {
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+		hidden_trigger = { 
+			NOR = { 
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire 
+			} 		
+		}
 	}
 
 	ethics = {
@@ -1652,7 +1857,12 @@ xenophobe_democracy_adv = {
 	prerequisites = { "tech_galactic_administration" }
 	
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+		hidden_trigger = { 
+			NOR = { 
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire 
+			} 		
+		}
 	}
 
 	ethics = {
@@ -1685,7 +1895,12 @@ xenophobe_democracy_adv = {
 
 xenophile_democracy = {
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+		hidden_trigger = { 
+			NOR = { 
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire 
+			} 		
+		}
 	}
 
 	ethics = {
@@ -1716,7 +1931,12 @@ xenophile_democracy_adv = {
 	prerequisites = { "tech_galactic_administration" }
 	
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+		hidden_trigger = { 
+			NOR = { 
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire 
+			} 		
+		}
 	}
 
 	ethics = {
@@ -1745,7 +1965,12 @@ xenophile_democracy_adv = {
 #  Oligarchy
 xenophile_oligarchy = {
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+		hidden_trigger = { 
+			NOR = { 
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire 
+			} 		
+		}
 	}
 	ethics = {
 		OR = {
@@ -1796,7 +2021,12 @@ xenophile_oligarchy_adv = {
 	prerequisites = { "tech_galactic_administration" }
 	
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+		hidden_trigger = { 
+			NOR = { 
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire 
+			} 		
+		}
 	}
 
 	ethics = {
@@ -1852,7 +2082,12 @@ xenophile_empire = {
 	dynastic_last_names = yes
 	
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+		hidden_trigger = { 
+			NOR = { 
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire 
+			} 		
+		}
 	}
 
 	ethics = {
@@ -1886,7 +2121,12 @@ xenophile_empire_adv = {
 	dynastic_last_names = yes
 	
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+		hidden_trigger = { 
+			NOR = { 
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire 
+			} 		
+		}
 	}
 
 	ethics = {
@@ -1921,7 +2161,12 @@ xenophile_empire_adv = {
 # Generic Democracy
 indirect_democracy = {
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+		hidden_trigger = { 
+			NOR = { 
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire 
+			} 		
+		}
 	}
 
 	modifier = {
@@ -1944,7 +2189,12 @@ democratic_utopia = {
 	prerequisites = { "tech_galactic_administration" }
 	
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+		hidden_trigger = { 
+			NOR = { 
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire 
+			} 		
+		}
 	}
 
 	
@@ -1966,7 +2216,12 @@ democratic_utopia = {
 # Generic Oligarchy
 plutocratic_oligarchy = {
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+		hidden_trigger = { 
+			NOR = { 
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire 
+			} 		
+		}
 	}
 
 	
@@ -2011,7 +2266,12 @@ mega_corporation = {
 	prerequisites = { "tech_galactic_administration" }
 	
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+		hidden_trigger = { 
+			NOR = { 
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire 
+			} 		
+		}
 	}
 
 	
@@ -2060,7 +2320,12 @@ despotic_empire = {
 	dynastic_last_names = yes
 	
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+		hidden_trigger = { 
+			NOR = { 
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire 
+			} 		
+		}
 	}
 	
 	ruler_title = RT_EMPEROR
@@ -2086,7 +2351,12 @@ star_empire = {
 	dynastic_last_names = yes
 	
 	potential = {
-		hidden_trigger = { NOT = { is_country_type = fallen_empire } }
+		hidden_trigger = { 
+			NOR = { 
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire 
+			} 		
+		}
 	}
 	
 	modifier = {
@@ -2168,6 +2438,24 @@ stagnated_ascendancy = {
 	pickable_at_start = no
 	
 	ruler_title = RT_EMPEROR
+}
+
+### Awakened Fallen Empire Government
+awakened_ascendancy = {
+	has_heir = yes
+	potential = {
+		is_country_type = awakened_fallen_empire
+	}
+	
+	modifier = {
+	}	
+	
+	pickable_at_start = no
+	
+	ruler_title = RT_EMPEROR
+	ruler_title_female = RT_EMPRESS
+	heir_title = HT_CROWN_PRINCE
+	heir_title_female = HT_CROWN_PRINCESS
 }
 
 ### Sentinels Government

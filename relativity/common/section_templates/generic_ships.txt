@@ -46,6 +46,7 @@ ship_section_template = {
 	small_utility_slots = 3
 	medium_utility_slots = 3
 	large_utility_slots = 2
+	aux_utility_slots = 1
 }
 
 # Event Ship 2 (Corvette)
@@ -77,6 +78,7 @@ ship_section_template = {
 	
 	small_utility_slots = 3
 	medium_utility_slots = 1
+	aux_utility_slots = 1
 }
 
 # Event Ship 3 (Battleship)
@@ -133,6 +135,7 @@ ship_section_template = {
 	small_utility_slots = 4
 	medium_utility_slots = 4
 	large_utility_slots = 4
+	aux_utility_slots = 1
 }
 
 # Event Ship 4 Blue (Battleship)
@@ -201,6 +204,7 @@ ship_section_template = {
 	small_utility_slots = 4
 	medium_utility_slots = 4
 	large_utility_slots = 4
+	aux_utility_slots = 1
 }
 
 # Event Ship 4 Yellow (Battleship)
@@ -269,6 +273,7 @@ ship_section_template = {
 	small_utility_slots = 4
 	medium_utility_slots = 4
 	large_utility_slots = 4
+	aux_utility_slots = 1
 }
 
 # Event Ship 4 Green (Battleship)
@@ -337,6 +342,7 @@ ship_section_template = {
 	small_utility_slots = 4
 	medium_utility_slots = 4
 	large_utility_slots = 4
+	aux_utility_slots = 1
 }
 
 # Event Ship 4 Red (Battleship)
@@ -405,6 +411,7 @@ ship_section_template = {
 	small_utility_slots = 4
 	medium_utility_slots = 4
 	large_utility_slots = 4
+	aux_utility_slots = 1
 }
 
 # Event Ship 4 Yellow-Green (Battleship)
@@ -473,6 +480,7 @@ ship_section_template = {
 	small_utility_slots = 4
 	medium_utility_slots = 4
 	large_utility_slots = 4
+	aux_utility_slots = 1
 }
 
 # Event Ship 5 (Cruiser)
@@ -523,6 +531,7 @@ ship_section_template = {
 	small_utility_slots = 3
 	medium_utility_slots = 3
 	large_utility_slots = 2
+	aux_utility_slots = 1
 }
 
 # Event Ship 6 (Destroyer)
@@ -555,6 +564,7 @@ ship_section_template = {
 	small_utility_slots = 2
 	medium_utility_slots = 2
 	large_utility_slots = 1
+	aux_utility_slots = 1
 }
 
 # Event Ship 7 (Destroyer)
@@ -593,6 +603,7 @@ ship_section_template = {
 	small_utility_slots = 6
 	medium_utility_slots = 6
 	large_utility_slots = 6
+	aux_utility_slots = 1
 }
 
 # Civilian Freighter
@@ -621,6 +632,7 @@ ship_section_template = {
 	small_utility_slots = 3
 	medium_utility_slots = 3
 	large_utility_slots = 3
+	aux_utility_slots = 1
 }
 
 # Space Ark
@@ -653,6 +665,7 @@ ship_section_template = {
 	small_utility_slots = 1
 	medium_utility_slots = 1
 	large_utility_slots = 1
+	aux_utility_slots = 1
 }
 
 # Passenger Liner
@@ -666,6 +679,7 @@ ship_section_template = {
 	small_utility_slots = 1
 	medium_utility_slots = 1
 	large_utility_slots = 1
+	aux_utility_slots = 1
 }
 
 # Primitive Space Station
@@ -677,6 +691,7 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_mid"
 	
 	small_utility_slots = 1
+	aux_utility_slots = 1
 }
 
 # Generic Starbase Section
@@ -750,6 +765,7 @@ ship_section_template = {
 
 	large_utility_slots = 6
 	medium_utility_slots = 6
+	aux_utility_slots = 1
 }
 
 # Sensor Station Section
@@ -774,4 +790,5 @@ ship_section_template = {
 	}
 
 	medium_utility_slots = 2
+	aux_utility_slots = 1
 }

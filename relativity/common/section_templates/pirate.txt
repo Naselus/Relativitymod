@@ -13,8 +13,7 @@ ship_section_template = {
 		slot_size = small
 		slot_type = weapon
 		locatorname = "small_gun_01"
-	}
-	
+	}	
 	component_slot = {
 		name = "MEDIUM_GUN_01"
 		slot_size = medium
@@ -22,7 +21,9 @@ ship_section_template = {
 		locatorname = "medium_gun_01"
 	}
 	
-	small_utility_slots = 5
+	small_utility_slots = 3
+	medium_utility_slots = 2
+	aux_utility_slots = 1
 }
 
 ship_section_template = {
@@ -37,15 +38,13 @@ ship_section_template = {
 		slot_size = small
 		slot_type = weapon
 		locatorname = "small_gun_01"
-	}
-	
+	}	
 	component_slot = {
 		name = "SMALL_GUN_02"
 		slot_size = small
 		slot_type = weapon
 		locatorname = "small_gun_02"
-	}
-	
+	}	
 	component_slot = {
 		name = "SMALL_GUN_03"
 		slot_size = small
@@ -53,7 +52,9 @@ ship_section_template = {
 		locatorname = "small_gun_03"
 	}
 	
-	small_utility_slots = 5
+	small_utility_slots = 3
+	medium_utility_slots = 2
+	aux_utility_slots = 1
 }
 
 ship_section_template = {
@@ -70,8 +71,9 @@ ship_section_template = {
 		locatorname = "small_gun_01"
 	}
 	
-	small_utility_slots = 4
-	medium_utility_slots = 1
+	small_utility_slots = 3
+	medium_utility_slots = 3
+	aux_utility_slots = 1
 }
 
 ### Destroyer
@@ -87,15 +89,13 @@ ship_section_template = {
 		slot_size = large
 		slot_type = weapon
 		locatorname = "large_gun_01"
-	}
-	
+	}	
 	component_slot = {
 		name = "SMALL_GUN_01"
 		slot_size = small
 		slot_type = weapon
 		locatorname = "small_gun_01"
-	}
-	
+	}	
 	component_slot = {
 		name = "SMALL_GUN_02"
 		slot_size = small
@@ -103,8 +103,9 @@ ship_section_template = {
 		locatorname = "small_gun_02"
 	}	
 	
-	small_utility_slots = 5
-	medium_utility_slots = 3
+	small_utility_slots = 4
+	medium_utility_slots = 4
+	aux_utility_slots = 1
 }
 
 ship_section_template = {
@@ -120,14 +121,62 @@ ship_section_template = {
 		slot_type = weapon
 		locatorname = "medium_gun_01"
 	}
-	
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		slot_size = medium
+		slot_type = weapon
+		locatorname = "medium_gun_02"
+	}
 	component_slot = {
 		name = "SMALL_GUN_01"
 		slot_size = small
 		slot_type = weapon
 		locatorname = "small_gun_01"
 	}
+	component_slot = {
+		name = "PD_01"
+		slot_size = point_defence
+		slot_type = weapon
+		locatorname = "small_gun_02"
+	}
 	
+	small_utility_slots = 4
+	medium_utility_slots = 4
+	aux_utility_slots = 1
+}
+
+### Pirate Cruiser
+ship_section_template = {
+	key = "PIRATE_CRUISER_TEMPLATE"
+	ship_size = pirate_cruiser
+	fits_on_slot = mid
+	entity = "pirate_01_cruiser_hull_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	component_slot = {
+		name = "LARGE_GUN_01"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "large_gun_01"
+	}	
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		slot_size = medium
+		slot_type = weapon
+		locatorname = "medium_gun_01"
+	}	
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		slot_size = medium
+		slot_type = weapon
+		locatorname = "medium_gun_02"
+	}	
+	component_slot = {
+		name = "SMALL_GUN_01"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "small_gun_01"
+	}	
 	component_slot = {
 		name = "SMALL_GUN_02"
 		slot_size = small
@@ -135,16 +184,14 @@ ship_section_template = {
 		locatorname = "small_gun_02"
 	}	
 	
-	component_slot = {
-		name = "MEDIUM_GUN_02"
-		slot_size = medium
-		slot_type = weapon
-		locatorname = "medium_gun_02"
-	}	
-	
-	small_utility_slots = 2
-	medium_utility_slots = 2
+	medium_utility_slots = 6
+	large_utility_slots = 3
+	aux_utility_slots = 2
 }
+
+
+
+
 
 ### Station
 ship_section_template = {
@@ -162,8 +209,8 @@ ship_section_template = {
 	}
 	
 	component_slot = {
-		name = "SMALL_GUN_02"
-		slot_size = small
+		name = "PD_01"
+		slot_size = point_defence
 		slot_type = weapon
 		locatorname = "small_gun_02"
 	}
@@ -177,4 +224,35 @@ ship_section_template = {
 	}
 
 	large_utility_slots = 3
+}
+
+
+### Hideout
+ship_section_template = {
+	key = "PIRATE_HIDEOUT_SECTION"
+	ship_size = pirate_station
+	fits_on_slot = west
+	entity = "pirate_base_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	component_slot = {
+		name = "PD_01"
+		slot_size = point_defence
+		slot_type = weapon
+		locatorname = "small_gun_01"
+	}	
+	component_slot = {
+		name = "LARGE_GUN_01"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "small_gun_02"
+	}  
+	component_slot = {
+		name = "LARGE_GUN_02"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "small_gun_03"
+	}
+
+	large_utility_slots = 6
 }

@@ -12,11 +12,11 @@ ship_design = {
 		}
 		component = {
 			slot = "LARGE_GUN_01"
-			template = "LARGE_ENERGY_TORPEDO_2"
+			template = "LARGE_GAMMA_LASER"
 		}
 		component = {
 			slot = "LARGE_GUN_02"
-			template = "LARGE_ENERGY_TORPEDO_2"
+			template = "LARGE_GAMMA_LASER"
 		}
 		component = {
 			slot = "MEDIUM_GUN_01"
@@ -49,7 +49,8 @@ ship_design = {
 	}
 	required_component="WARP_DRIVE_3"
 	required_component="COMBAT_COMPUTER_DEFAULT"
-	required_component="SHIP_THRUSTER_3"
+	required_component="SHIP_THRUSTER_4"
+	required_component="SHIP_SENSOR_4"
 }
 
 # AI Small Ship
@@ -91,12 +92,13 @@ ship_design = {
 	}
 	required_component="WARP_DRIVE_3"
 	required_component="COMBAT_COMPUTER_DEFAULT"
-	required_component="SHIP_THRUSTER_3"
+	required_component="SHIP_THRUSTER_4"
+	required_component="SHIP_SENSOR_4"
 }
 
 # AI Large Station
 ship_design = {
-	name = "AI_1"
+	name = "AI 1"
 	ship_size = military_station_large_ai
 	section = {
 		template = "ai_station_large_key"
@@ -151,11 +153,12 @@ ship_design = {
 			template = "LARGE_ARMOR_5"
 		}
 	}
+	required_component="SHIP_SENSOR_4"
 }
 
 # AI Small Station
 ship_design = {
-	name = "AI_2"
+	name = "AI 2"
 	ship_size = military_station_small_ai
 	section = {
 		template = "ai_station_small_key"
@@ -170,8 +173,8 @@ ship_design = {
 			template = "SMALL_PLASMA_3"
 		}
 		component = {
-			slot = "SMALL_GUN_03"
-			template = "POINT_DEFENCE_1"
+			slot = "PD_01"
+			template = "POINT_DEFENCE_3"
 		}
 		component = {
 			slot = "MEDIUM_GUN_01"
@@ -198,6 +201,7 @@ ship_design = {
 			template = "MEDIUM_SHIELD_5"
 		}
 	}
+	required_component="SHIP_SENSOR_4"
 }
 
 # AI Core
@@ -266,6 +270,7 @@ ship_design = {
 			template = "LARGE_ARMOR_5"
 		}
 	}
+	required_component="SHIP_SENSOR_4"
 }
 
 # AI Transport
@@ -279,13 +284,14 @@ ship_design = {
 		slot = "mid"
 		
 		component = {
-			slot = "MEDIUM_UTILITY_1"
-			template = "MEDIUM_AUTO_REPAIR"
+			slot = "AUX_UTILITY_1"
+			template = "AUTO_REPAIR"
 		}
 	}
 	
 	required_component="WARP_DRIVE_3"
-	required_component="SHIP_THRUSTER_3"
+	required_component="SHIP_THRUSTER_4"
+	required_component="SHIP_SENSOR_4"
 }
 
 # AI Colonizer
@@ -299,13 +305,14 @@ ship_design = {
 		slot = "mid"
 		
 		component = {
-			slot = "MEDIUM_UTILITY_1"
-			template = "MEDIUM_AUTO_REPAIR"
+			slot = "AUX_UTILITY_1"
+			template = "AUTO_REPAIR"
 		}
 	}
 	
 	required_component="WARP_DRIVE_3"
-	required_component="SHIP_THRUSTER_3"
+	required_component="SHIP_THRUSTER_4"
+	required_component="SHIP_SENSOR_4"
 }
 
 # AI Constructor
@@ -319,11 +326,12 @@ ship_design = {
 		slot = "mid"
 		
 		component = {
-			slot = "MEDIUM_UTILITY_1"
-			template = "MEDIUM_AUTO_REPAIR"
+			slot = "AUX_UTILITY_1"
+			template = "AUTO_REPAIR"
 		}
 	}
 	
 	required_component="WARP_DRIVE_3"
-	required_component="SHIP_THRUSTER_3"
+	required_component="SHIP_THRUSTER_4"
+	required_component="SHIP_SENSOR_4"
 }
